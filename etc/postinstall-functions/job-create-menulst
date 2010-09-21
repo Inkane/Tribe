@@ -1,0 +1,134 @@
+#!/bin/bash
+
+job_create_menulst()
+{
+	# initialize error handling
+	trap error_handler ERR
+
+	msg_job_start "job_create_menulst"
+
+	msg "copying menu.lst from livesystem to target"
+	cp -v -f /boot/grub/menu.lst ${mountpoint}/boot/grub
+
+	msg "cleaning target menu.lst at first"
+	cat ${mountpoint}/boot/grub/menu.lst | grep -v title | grep -v root | grep -v kernel | grep -v initrd | grep -v map | grep -v chainloader | grep -v makeactive | grep -v splashimage | grep -v Arch >> ${mountpoint}/boot/grub/menu.lst.new
+
+	msg "starting menu.lst config"
+
+	if [ "${use_swap}" = "yes" ] ; then
+
+	msg "we are using swap partition"
+
+		_sdevice=`echo /dev/${target_swap}`
+		_suuid=`blkid "${_sdevice}" -s UUID -o value`
+	fi
+
+	if [ "${use_boot}" = "yes" ] ; then
+
+		msg "we are using a separate /boot partition"
+
+		_device=`echo /dev/${target_root}`
+		_uuid=`blkid "${_device}" -s UUID -o value`
+
+		# add options
+		echo " " >>${mountpoint}/boot/grub/menu.lst.new
+		echo "hiddenmenu" >>${mountpoint}/boot/grub/menu.lst.new
+		echo "default 0" >>${mountpoint}/boot/grub/menu.lst.new
+		echo "timeout 1" >>${mountpoint}/boot/grub/menu.lst.new
+
+		# standard startup entry
+		msg "adding standard entry"
+		echo " " >>${mountpoint}/boot/grub/menu.lst.new
+		echo "# (0) Chakra GNU/Linux" >>${mountpoint}/boot/grub/menu.lst.new
+		echo "title Chakra GNU/Linux" >>${mountpoint}/boot/grub/menu.lst.new
+
+		_real_boot=$(echo ${target_boot} | cut -c 4)
+		_real_grub_partition=$(($_real_boot-1))
+
+		# FIXME we need to detect the grub partition here
+		echo "root (hd${grub_device},${_real_grub_partition})" >>${mountpoint}/boot/grub/menu.lst.new
+		if [ "${use_swap}" = "yes" ] ; then
+			echo "kernel /vmlinuz26 resume=/dev/disk/by-uuid/${_suuid} root=/dev/disk/by-uuid/${_uuid} ro" >>${mountpoint}/boot/grub/menu.lst.new
+		else
+			echo "kernel /vmlinuz26 root=/dev/disk/by-uuid/${_uuid} ro" >>${mountpoint}/boot/grub/menu.lst.new
+		fi
+		echo "initrd /kernel26.img" >>${mountpoint}/boot/grub/menu.lst.new
+
+		# fallback startup entry
+		msg "adding fallback entry"
+		echo " " >>${mountpoint}/boot/grub/menu.lst.new
+		echo "# (0) Chakra GNU/Linux Fallback" >>${mountpoint}/boot/grub/menu.lst.new
+		echo "title Chakra GNU/Linux Fallback" >>${mountpoint}/boot/grub/menu.lst.new
+
+		# FIXME we need to detect the grub partition here
+		echo "root (hd${grub_device},${_real_grub_partition})" >>${mountpoint}/boot/grub/menu.lst.new
+		if [ "${use_swap}" = "yes" ] ; then
+			echo "kernel /vmlinuz26 resume=/dev/disk/by-uuid/${_suuid} root=/dev/disk/by-uuid/${_uuid} ro" >>${mountpoint}/boot/grub/menu.lst.new
+		else
+			echo "kernel /vmlinuz26 root=/dev/disk/by-uuid/${_uuid} ro" >>${mountpoint}/boot/grub/menu.lst.new
+		fi
+		echo "initrd /kernel26-fallback.img" >>${mountpoint}/boot/grub/menu.lst.new
+
+		# install new menu.lst
+		msg "installing menu.lst to target"
+		rm -rf ${mountpoint}/boot/grub/menu.lst
+		mv ${mountpoint}/boot/grub/menu.lst.new ${mountpoint}/boot/grub/menu.lst
+
+		unset _uuid
+		unset _device
+
+	else
+
+		msg "we are not using a separate /boot partition"
+
+		_device=`echo /dev/${target_root}`
+		_uuid=`blkid "${_device}" -s UUID -o value`
+
+		# add options
+		echo " " >>${mountpoint}/boot/grub/menu.lst.new
+		echo "hiddenmenu" >>${mountpoint}/boot/grub/menu.lst.new
+		echo "default 0" >>${mountpoint}/boot/grub/menu.lst.new
+		echo "timeout 1" >>${mountpoint}/boot/grub/menu.lst.new
+		
+		# standard startup entry
+		msg "adding standard entry"
+		echo " " >>${mountpoint}/boot/grub/menu.lst.new
+		echo "# (0) Chakra GNU/Linux" >>${mountpoint}/boot/grub/menu.lst.new
+		echo "title Chakra GNU/Linux" >>${mountpoint}/boot/grub/menu.lst.new
+
+		# FIXME we need to detect the grub partition here
+		echo "root (hd${grub_device},${grub_partition})" >>${mountpoint}/boot/grub/menu.lst.new
+		if [ "${use_swap}" = "yes" ] ; then
+			echo "kernel /boot/vmlinuz26 resume=/dev/disk/by-uuid/${_suuid} root=/dev/disk/by-uuid/${_uuid} ro" >>${mountpoint}/boot/grub/menu.lst.new
+		else
+			echo "kernel /boot/vmlinuz26 root=/dev/disk/by-uuid/${_uuid} ro" >>${mountpoint}/boot/grub/menu.lst.new
+		fi
+		echo "initrd /boot/kernel26.img" >>${mountpoint}/boot/grub/menu.lst.new
+
+		# fallback startup entry
+		msg "adding fallback entry"
+		echo " " >>${mountpoint}/boot/grub/menu.lst.new
+		echo "# (1) Chakra GNU/Linux Fallback" >>${mountpoint}/boot/grub/menu.lst.new
+		echo "title Chakra GNU/Linux Fallback" >>${mountpoint}/boot/grub/menu.lst.new
+
+		# FIXME we need to detect the grub partition here
+		echo "root (hd${grub_device},${grub_partition})" >>${mountpoint}/boot/grub/menu.lst.new
+		if [ "${use_swap}" = "yes" ] ; then
+			echo "kernel /boot/vmlinuz26 resume=/dev/disk/by-uuid/${_suuid} root=/dev/disk/by-uuid/${_uuid} ro" >>${mountpoint}/boot/grub/menu.lst.new
+		else
+			echo "kernel /boot/vmlinuz26 root=/dev/disk/by-uuid/${_uuid} ro" >>${mountpoint}/boot/grub/menu.lst.new
+		fi
+		echo "initrd /boot/kernel26-fallback.img" >>${mountpoint}/boot/grub/menu.lst.new
+
+		# install new menu.lst
+		msg "installing menu.lst to target"
+		rm -rf ${mountpoint}/boot/grub/menu.lst
+		mv ${mountpoint}/boot/grub/menu.lst.new ${mountpoint}/boot/grub/menu.lst
+
+		unset _uuid
+		unset _device
+
+	fi
+
+	msg_job_done
+}

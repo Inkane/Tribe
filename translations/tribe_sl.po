@@ -1,0 +1,2251 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Jure Repinc <jlp@holodeck1.com>, 2008, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: tribe\n"
+"Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
+"POT-Creation-Date: 2009-09-27 20:36+0200\n"
+"PO-Revision-Date: 2009-03-28 17:39+0100\n"
+"Last-Translator: Jure Repinc <jlp@holodeck1.com>\n"
+"Language-Team: Slovenian <lugos-slo@lugos.si>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 0.3\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
+"%100==4 ? 3 : 0);\n"
+
+#: launcher/src/TribeLauncher.cpp:83
+#, fuzzy
+msgid "Setting up Tribe..."
+msgstr "Nastavljanje uporabnika root ..."
+
+#: launcher/src/TribeLauncher.cpp:95
+msgid ""
+"It looks like you were not authorized to launch Tribe. Please contact your "
+"system administrator for further details"
+msgstr ""
+
+#: launcher/src/TribeLauncher.cpp:102
+msgid ""
+"It looks like an unclean start of Tribe has taken place. Please kill all "
+"instances of tribe, tribelauncher and tribelauncherworker and try again"
+msgstr ""
+
+#: launcher/src/TribeLauncher.cpp:168
+msgid ""
+"A newer version of Tribe is available.\n"
+"It is strongly advised to upgrade it. Do you want to upgrade Tribe now?"
+msgstr ""
+"Na voljo je novejša različica programa Tribe.\n"
+"Močno priporočamo, da ga nadgradite. Ali želite nadgraditi Tribe?"
+
+#: launcher/src/TribeLauncher.cpp:171
+msgid ""
+"A newer version of Arxin is available.\n"
+"Even though not fundamental, upgrading it is recommended. Do you want to "
+"upgrade Arxin now?"
+msgstr ""
+"Na voljo je novejša različica programa Arxin.\n"
+"Čeprav ni osnoven, priporočamo, da ga nadgradite. Ali želite nadgraditi "
+"Arxin?"
+
+#: launcher/src/TribeLauncher.cpp:194
+#, fuzzy
+msgid "Please Wait, Upgrading Chakra Installer..."
+msgstr "Prosimo počakajte, nadgrajevanje paketov ..."
+
+#: launcher/src/TribeLauncher.cpp:232
+msgctxt ""
+"You just have to translate 'remaining' here. Leave everything else as it is."
+msgid "%p% (%1 KB/s, %2 remaining)"
+msgstr "%p % (%1 KiB/s, preostaja %2)"
+
+#: launcher/src/TribeLauncher.cpp:248
+msgid "Installing..."
+msgstr "Nameščanje ..."
+
+#: launcher/src/TribeLauncher.cpp:259
+msgid "Please Wait, Installing Packages..."
+msgstr "Prosimo počakajte, nameščanje paketov ..."
+
+#: launcher/src/TribeLauncher.cpp:262
+msgid "Please Wait, Upgrading Packages..."
+msgstr "Prosimo počakajte, nadgrajevanje paketov ..."
+
+#: launcher/src/TribeLauncher.cpp:265
+msgid "Please Wait, Downloading Packages..."
+msgstr "Prosimo počakajte, prenašanje paketov ..."
+
+#: launcher/src/TribeLauncher.cpp:276
+#, fuzzy
+msgid ""
+"An error occurred while trying to upgrade.\n"
+"Do you want to run Tribe anyway?"
+msgstr ""
+"Pri nadgrajevanju je prišlo do sledeče napake:\n"
+"%1\n"
+"Ali kljub temu želite zagnati Tribe?"
+
+#: launcher/src/TribeLauncher.cpp:296
+#, fuzzy
+msgid "Please wait, Tribe is being started..."
+msgstr "Prosimo počakajte, branje tabele razdelkov ..."
+
+#. i18n: file: launcher/ui/gui.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, tribeLauncherUi)
+#: launcher/src/main.cpp:32 rc.cpp:3
+msgid "Tribe Launcher"
+msgstr "Zaganjalnik Tribe"
+
+#: launcher/src/main.cpp:33
+msgid "An auto updater and launcher for Tribe"
+msgstr "Samo-posodobljevalnik in zaganjalnik za Tribe"
+
+#: launcher/src/main.cpp:34 src/main.cpp:44
+msgid "(c) 2008 the Chakra Development Team"
+msgstr "© 2008 razvojna ekipa projekta Chakra"
+
+#: launcher/src/main.cpp:34
+msgid "team@chakra-project.org"
+msgstr "team@chakra-project.org"
+
+#: launcher/src/main.cpp:36 src/main.cpp:46
+msgid "Dario Freddi"
+msgstr "Dario Freddi"
+
+#: launcher/src/main.cpp:36 src/main.cpp:47
+msgid "Developer"
+msgstr "Razvijalec"
+
+#: src/CrashHandler.cpp:218
+msgid ""
+"We appreciate your dedication, but your backtrace has already been "
+"successfully sent"
+msgstr "Cenimo vašo zavzetost, a ta povratna sled je že bila uspešno poslana"
+
+#: src/CrashHandler.cpp:234
+msgid ""
+"Thanks! Your backtrace was successfully submitted. Now just wait for us to "
+"fix this!"
+msgstr ""
+"Hvala! Povratna sled je bila uspešno poslana. Sedaj morate počakati, da to "
+"popravimo."
+
+#: src/CrashHandler.cpp:238
+msgid ""
+"There was an error while sending your backtrace!! Probably we could not "
+"connect to the server: you can retry, but the best thing to do would be "
+"saving the backtrace and attaching it to a bug report later."
+msgstr ""
+"Med pošiljanjem povratne sledi je prišlo do napake. Verjetno se ni bilo moč "
+"povezati s strežnikom. Lahko poskusite znova, a najbolje je, da povratno "
+"sled shranite in jo potem priložite poročilu o napaki."
+
+#: src/InstallationHandler.cpp:79 src/InstallationHandler.cpp:649
+msgid ""
+"Tribe was not able to initialize needed directories. You probably do not "
+"have enough privileges, please restart Tribe as root."
+msgstr ""
+"Tribe ni mogel inicializirati potrebnih map. Verjetno nimate potrebnih "
+"pravic. Znova zaženite Tribe kot uporabnik root."
+
+#: src/InstallationHandler.cpp:141
+msgid "Installing the system ..."
+msgstr "Nameščanje sistema ..."
+
+#: src/InstallationHandler.cpp:161
+msgid "Preparing installation, this might take some time ..."
+msgstr "Pripravljanje namestitve, to lahko traja dlje časa ..."
+
+#: src/InstallationHandler.cpp:186
+msgid "Error copying files"
+msgstr "Napaka pri kopiranju datotek"
+
+#: src/InstallationHandler.cpp:193
+msgid "Removing packages whose license has been declined ..."
+msgstr "Odstranjevanje paketov, za katere ne sprejemate licenčnih pogojev ..."
+
+#: src/InstallationHandler.cpp:250
+msgid "Initializing target ..."
+msgstr "Inicializacija cilja ..."
+
+#: src/InstallationHandler.cpp:342
+msgid "Please wait, configuring and starting PostInstall ..."
+msgstr "Prosimo počakajte, nastavljanje in zaganjanje PostInstall ..."
+
+#: src/InstallationHandler.cpp:391
+msgid "Error in Postinstall script. See log for more details"
+msgstr "Napaka v skriptu PostInstall. Za podrobnosti si oglejte dnevnik."
+
+#: src/InstallationHandler.cpp:402
+msgid ""
+"Detecting best mirror server & configuring pacman, this may take a bit..."
+msgstr ""
+"Zaznavanje najboljšega zrcalnega strežnika in nastavljanje Pacmana, to lahko "
+"traja dlje časa ..."
+
+#: src/InstallationHandler.cpp:406
+msgid "Removing superfluous packages..."
+msgstr "Odstranjevanje odvečnih paketov ..."
+
+#: src/InstallationHandler.cpp:410
+msgid "Installing additional packages..."
+msgstr "Nameščanje dodatnih paketov ..."
+
+#: src/InstallationHandler.cpp:414
+msgid "Setting up X.Org configuration..."
+msgstr "Nastavljanje grafičnega strežnika X.Org ..."
+
+#: src/InstallationHandler.cpp:418
+msgid ""
+"Downloading and installing localization packages, this may take a bit..."
+msgstr ""
+"Prenašanje in nameščanje paketov s prevodi, to lahko traja dlje časa ..."
+
+#: src/InstallationHandler.cpp:422
+msgid ""
+"Downloading and installing documentation packages, this may take a bit..."
+msgstr ""
+"Prenašanje in nameščanje paketov z dokumentacijo, to lahko traja dlje "
+"časa ..."
+
+#: src/InstallationHandler.cpp:426
+msgid "Setting up localization..."
+msgstr "Nastavljanje področnih nastavitev ..."
+
+#: src/InstallationHandler.cpp:430
+msgid "Creating daemon configuration..."
+msgstr "Nastavljanje pritajenih programov ..."
+
+#: src/InstallationHandler.cpp:434
+msgid "Creating network configuration..."
+msgstr "Nastavljanje omrežja ..."
+
+#: src/InstallationHandler.cpp:438
+msgid "Creating fstab..."
+msgstr "Ustvarjanje seznama datotečnih sistemov ..."
+
+#: src/InstallationHandler.cpp:442
+msgid "Configuring hardware..."
+msgstr "Nastavljanje strojne opreme ..."
+
+#: src/InstallationHandler.cpp:446
+msgid ""
+"Creating initial ramdisk images. This may take a lot of time, stay tuned..."
+msgstr "Ustvarjanje začetnih slik ramdisk. To lahko traja dlje časa ..."
+
+#: src/InstallationHandler.cpp:450
+msgid "Regenerating locales..."
+msgstr "Ponovno ustvarjanje področnih nastavitev ..."
+
+#: src/InstallationHandler.cpp:454
+msgid "Removing superfluous localizations..."
+msgstr "Odstranjevanje odvečnih prevodov ..."
+
+#: src/InstallationHandler.cpp:458
+msgid "Removing superfluous drivers..."
+msgstr "Odstranjevanje odvečnih gonilnikov ..."
+
+#: src/InstallationHandler.cpp:462
+msgid "Finishing installation..."
+msgstr "Zaključevanje nameščanja ..."
+
+#: src/InstallationHandler.cpp:466
+msgid "Installation complete!"
+msgstr "Namestitev je zaključena."
+
+#: src/InstallationHandler.cpp:592
+msgid "Could not format %1"
+msgstr "Ni moč sformatirati %1"
+
+#: src/InstallationHandler.cpp:672
+msgid "Could not mount %1"
+msgstr "Ni moč priklopiti %1"
+
+#: src/InstallationHandler.h:188
+msgid "No Further details given"
+msgstr "Nadaljnih podrobnosti ni bilo podanih"
+
+#: src/MainWindow.cpp:121
+msgid "Do you really want to quit the installation?"
+msgstr "Ali res želite končati namestitev?"
+
+#: src/MainWindow.cpp:139
+msgid "Do you really want to abort the installation?"
+msgstr "Ali res želite prekiniti namestitev?"
+
+#: src/MainWindow.cpp:785
+msgid ""
+"Installation failed! The following error has been reported: %1.\n"
+"Tribe will now quit, please check the installation logs in /tmp\n"
+"or ask for help in our forums."
+msgstr ""
+"Namestitev ni uspela. Sporočena je bila sledeča napaka: %1\n"
+"Tribe se bo sedaj zaprl. Preverite dnevnik namestitve v /tmp\n"
+"ali pa za pomoč povprašajte na forumu."
+
+#. i18n: file: ui/tribeBase.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, TribeBase)
+#: src/main.cpp:42 rc.cpp:48
+msgid "Tribe"
+msgstr "Tribe"
+
+#: src/main.cpp:43
+msgid "LiveCD Installer for Chakra"
+msgstr "Namestilnik za Chakra LiveCD"
+
+#: src/main.cpp:44
+#, fuzzy
+msgid "chakra@chakra-project.org"
+msgstr "team@chakra-project.org"
+
+#: src/main.cpp:46
+msgid "Maintainer"
+msgstr ""
+
+#: src/main.cpp:47
+msgid "Lukas Appelhans"
+msgstr "Lukas Appelhans"
+
+#: src/main.cpp:48
+msgid "Jan Mette"
+msgstr "Jan Mette"
+
+#: src/main.cpp:48
+msgid "PostInstall Backend and Artwork"
+msgstr "Hrbtenica PostInstall in grafika"
+
+#: src/main.cpp:69
+msgid ""
+"It looks like your power adaptor is unplugged. Installation is a delicate "
+"and lenghty process, hence it is strongly advised to have your PC connected "
+"to AC to minimize possible risks."
+msgstr ""
+"Kot kaže računalnik ni priključen v električno omrežje. Nameščanje je "
+"občutljiv in dolgotrajen postopek. Da bi se izognili možnim težavam, močno "
+"priporočamo, da računalnik priključite v električno omrežje."
+
+#: src/pages/BootloaderPage.cpp:54
+msgid "Installing bootloader..."
+msgstr "Nameščanje zagonskega nalagalnika ..."
+
+#: src/pages/BootloaderPage.cpp:87
+msgid "Creating menu.lst..."
+msgstr "Ustvarjanje zagonskega menija ..."
+
+#: src/pages/LicensePage.cpp:53
+msgid "Adobe Flash Plugin"
+msgstr "Vstavek Adobe Flash"
+
+#: src/pages/LicensePage.cpp:54
+msgid "Microsoft Core TTF Fonts"
+msgstr "Pisave Microsoft Core TTF"
+
+#: src/pages/LicensePage.cpp:57
+msgid "Proprietary ATI Driver"
+msgstr "Zaprto-koden ATI-jev gonilnik"
+
+#: src/pages/LicensePage.cpp:61
+msgid "Proprietary NVidia Driver"
+msgstr "Zaprto-koden NVidiin gonilnik"
+
+#: src/pages/LicensePage.cpp:120
+msgid "Accept license for: "
+msgstr "Sprejmi licenčne pogoje za:"
+
+#: src/pages/LocaleSelectorPage.cpp:229
+msgid "You need to select a Timezone."
+msgstr "Izbrati morate časovni pas."
+
+#: src/pages/LocaleSelectorPage.cpp:229 src/pages/PartitioningPage.cpp:85
+#: src/pages/PartitioningPage.cpp:107 src/pages/PartitioningPage.cpp:124
+#: src/pages/SelectPartitionPage.cpp:285 src/pages/SelectPartitionPage.cpp:294
+#: src/pages/SelectPartitionPage.cpp:310 src/pages/UserCreationPage.cpp:97
+#: src/pages/UserCreationPage.cpp:101
+msgid "Error"
+msgstr "Napaka"
+
+#: src/pages/PartitioningPage.cpp:73
+#, fuzzy
+msgid ""
+"You still have pending operations, please apply or revert them before "
+"continuing"
+msgstr "Nekateri postopki še niso zaključeni. Ali res želite nadaljevati?"
+
+#: src/pages/PartitioningPage.cpp:83
+msgid ""
+"It looks like you have selected the mountpoint %1 twice. You can assign only "
+"one partition to a mountpoint"
+msgstr ""
+
+#: src/pages/PartitioningPage.cpp:93
+msgid ""
+"Formatting the '/' partition is strongly advised. Going ahead without "
+"formatting it might lead to a non working system after the installation"
+msgstr ""
+
+#: src/pages/PartitioningPage.cpp:104
+msgid ""
+"You have chosen %1 to be used as swap, however you need a special filesystem "
+"for that. Please mark it for being formatted to continue"
+msgstr ""
+
+#: src/pages/PartitioningPage.cpp:110
+msgid ""
+"The partition %1 you have chosen to use as swap has a filesystem which is "
+"not linuxswap. Please note that this will be changed during installation "
+"procedure"
+msgstr ""
+
+#: src/pages/PartitioningPage.cpp:123
+#, fuzzy
+msgid ""
+"It looks like you did not assign a partition to '/'. You have to select a "
+"mount point at least for it"
+msgstr "Vsaj en razdelek mora imeti priklopno točko »/«."
+
+#: src/pages/PartitioningPage.cpp:129
+msgid ""
+"You did not select a partition to be used as swap space. A swap partition is "
+"strongly advised, especially on laptops and system with limited amount of RAM"
+msgstr ""
+
+#: src/pages/PreparePartitionsPage.cpp:56
+msgid "Formatting %1 with %2..."
+msgstr "Formatiranje %1 z %2 ..."
+
+#: src/pages/PreparePartitionsPage.cpp:71
+msgid "Mounting %1 on %2..."
+msgstr "Priklapljanje %1 v %2 ..."
+
+#: src/pages/ReadyInstallPage.cpp:63
+msgid "%1 will be used as %2"
+msgstr "%1 bo uporabljen kot %2"
+
+#: src/pages/ReadyInstallPage.cpp:75
+msgid "%1 will be formatted with %2"
+msgstr "%1 bo formatiran z %2"
+
+#: src/pages/ReadyInstallPage.cpp:94
+msgid ""
+"The following partitions appear mounted: %1. To let the installation happen "
+"correctly, Tribe will now unmount them."
+msgstr ""
+"Kot kaže so sledeči razdelki priklopljeni: %1. Da bo namestitev potekala "
+"pravilno, jih bo namestitveni program Tribe odklopil."
+
+#: src/pages/ReadyInstallPage.cpp:97
+msgid "Partitions mounted"
+msgstr "Priklopljeni razdelki"
+
+#: src/pages/RootPage.cpp:61
+msgid "Setting up root user ..."
+msgstr "Nastavljanje uporabnika root ..."
+
+#: src/pages/RootPage.cpp:88 src/pages/RootPage.cpp:111
+msgid "Configuring users ..."
+msgstr "Nastavljanje uporabnikov ..."
+
+#. i18n: file: ui/createUserWidget.ui:141
+#. i18n: ectx: property (text), widget (QLabel, statusLabel)
+#. i18n: file: ui/tribeRoot.ui:176
+#. i18n: ectx: property (text), widget (QLabel, statusLabel)
+#: src/pages/RootPage.cpp:134 src/widgets/UserCreationWidget.cpp:51 rc.cpp:42
+#: rc.cpp:412
+msgid "Password is empty"
+msgstr "Polje za geslo je prazno"
+
+#: src/pages/RootPage.cpp:141 src/widgets/UserCreationWidget.cpp:58
+msgid "Password has to be at least 6 characters"
+msgstr "Geslo mora biti dolgo vsaj 6 znakov"
+
+#: src/pages/RootPage.cpp:148 src/widgets/UserCreationWidget.cpp:65
+msgid "Passwords do not match"
+msgstr "Gesli se ne ujemata"
+
+#: src/pages/RootPage.cpp:155 src/widgets/UserCreationWidget.cpp:72
+msgid "Passwords match"
+msgstr "Gesli se ujemata"
+
+#: src/pages/SelectPartitionPage.cpp:139
+msgid "Please wait, reading partition table ..."
+msgstr "Prosimo počakajte, branje tabele razdelkov ..."
+
+#: src/pages/SelectPartitionPage.cpp:169
+msgid "Configuring swap space, this could take some time ..."
+msgstr "Nastavljanje izmenjalnega prostora, to lahko traja dlje časa ..."
+
+#: src/pages/SelectPartitionPage.cpp:284
+msgid ""
+"You have selected the partition %1 to be mounted twice.\n"
+"Please correct your selection."
+msgstr ""
+"Razdelek %1 ste za priklapljanje izbrali dvakrat.\n"
+"Izberite samo eno priklopno točko."
+
+#: src/pages/SelectPartitionPage.cpp:293
+msgid ""
+"You have to chosen mount point '%1' for two partitions.\n"
+"Please correct your selection."
+msgstr ""
+"Priklopno točko »%1« ste izbrali za dva razdelka.\n"
+"Izberite jo samo za en razdelek."
+
+#: src/pages/SelectPartitionPage.cpp:310
+msgid "You have to select a mount point at least for '/'!"
+msgstr "Vsaj en razdelek mora imeti priklopno točko »/«."
+
+#: src/pages/SettingsPage.cpp:53
+msgid "chakra-laptop"
+msgstr "chakra-prenosnik"
+
+#: src/pages/SettingsPage.cpp:56
+msgid "chakra-desktop"
+msgstr "chakra-namiznik"
+
+#: src/pages/UserCreationPage.cpp:96
+#, fuzzy
+msgid ""
+"You have not configured a username for one user.\n"
+"Please correct your settings."
+msgstr ""
+"Priklopno točko »%1« ste izbrali za dva razdelka.\n"
+"Izberite jo samo za en razdelek."
+
+#: src/pages/UserCreationPage.cpp:100
+#, fuzzy
+msgid ""
+"You have not configured a password for user %1.\n"
+"Please correct your settings."
+msgstr ""
+"Priklopno točko »%1« ste izbrali za dva razdelka.\n"
+"Izberite jo samo za en razdelek."
+
+#: src/pages/UserCreationPage.cpp:109
+#, fuzzy
+msgid "Creating account for new user..."
+msgid_plural "Creating accounts for new users..."
+msgstr[0] "Ustvarjanje računa za novega uporabnika ..."
+msgstr[1] "Ustvarjanje računa za novega uporabnika ..."
+msgstr[2] "Ustvarjanje računa za novega uporabnika ..."
+msgstr[3] "Ustvarjanje računa za novega uporabnika ..."
+
+#: src/pages/UserCreationPage.cpp:151
+msgid "Setting up password ..."
+msgstr "Nastavljanje gesla ..."
+
+#: src/pages/UserCreationPage.cpp:192
+msgid "Creating configurations ..."
+msgstr "Ustvarjanje nastavitev ..."
+
+#. i18n: file: launcher/ui/gui.ui:73
+#. i18n: ectx: property (text), widget (KPushButton, yesButton)
+#: rc.cpp:6
+msgid "Yes"
+msgstr ""
+
+#. i18n: file: launcher/ui/gui.ui:80
+#. i18n: ectx: property (text), widget (KPushButton, noButton)
+#: rc.cpp:9
+msgid "No"
+msgstr ""
+
+#. i18n: file: launcher/ui/gui.ui:102
+#. i18n: ectx: property (text), widget (QLabel, m_label)
+#: rc.cpp:12
+msgid "Please Wait, checking Tribe Updates..."
+msgstr "Prosimo počakajte, preverjanje posodobitev za Tribe ..."
+
+#. i18n: file: ui/crashWindow.ui:19
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:15
+msgid ""
+"Tribe has crashed due to a fatal error. We are extremely sorry about that, "
+"as this should not happen. However, Tribe collected some important "
+"informations about the crash that will be extremely useful to developers for "
+"fixing this problem. The fastest way to report this, if you have an active "
+"internet connection, is clicking \"Send report to developers\". Otherwise, "
+"you can copy/paste the text below and send it to bugs@chakra-project.org. No "
+"personal informations are included, you can see the log for details."
+msgstr ""
+"Zaradi usodne napake se je program za nameščanje sesul. Za to se vam iskreno "
+"opravičujemo, ne bi se smelo zgoditi. Program je zbral pomembne podatke o "
+"sesutju, ki lahko zelo pomagajo razvijalcem pri odpravi napake. Če imate "
+"delujočo internetno povezavo, lahko poročilo o napaki najhitreje pošljete s "
+"klikom na gumb »Pošlji poročilo razvijalcem«. V nasprotnem primeru lahko "
+"skopirate spodnje besedilo in ga po e-pošti pošljete na bugs@chakra-project."
+"org. Poslan ne bo noben oseben podatek. Za podrobnosti si lahko ogledate "
+"dnevnik."
+
+#. i18n: file: ui/crashWindow.ui:50
+#. i18n: ectx: property (text), widget (KPushButton, copyButton)
+#: rc.cpp:18
+msgid "Copy to clipboard"
+msgstr "Skopiraj na odložišče"
+
+#. i18n: file: ui/crashWindow.ui:57
+#. i18n: ectx: property (text), widget (KPushButton, sendButton)
+#: rc.cpp:21
+msgid "Send report to developers"
+msgstr "Pošlji poročilo razvijalcem"
+
+#. i18n: file: ui/createUserWidget.ui:32
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:24
+msgid "Name:"
+msgstr "Ime:"
+
+#. i18n: file: ui/createUserWidget.ui:39
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:27
+msgid "Surname:"
+msgstr "Priimek:"
+
+#. i18n: file: ui/createUserWidget.ui:55
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:30
+msgid "Login:"
+msgstr "Prijava:"
+
+#. i18n: file: ui/createUserWidget.ui:65
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:33
+msgid "Password:"
+msgstr "Geslo:"
+
+#. i18n: file: ui/createUserWidget.ui:79
+#. i18n: ectx: property (text), widget (QLabel, confirmLabel)
+#: rc.cpp:36
+msgid "Confirm Password:"
+msgstr "Potrditev gesla:"
+
+#. i18n: file: ui/createUserWidget.ui:111
+#. i18n: ectx: property (text), widget (QCheckBox, sudoBox)
+#: rc.cpp:39
+msgid "Administrator"
+msgstr "Skrbnik"
+
+#. i18n: file: ui/createUserWidget.ui:160
+#. i18n: ectx: property (text), widget (QPushButton, deleteButton)
+#: rc.cpp:45
+msgid "Delete"
+msgstr "Zbriši"
+
+#. i18n: file: ui/tribeBase.ui:166
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:51
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Welcome</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Dobrodošli</span></p></body></html>"
+
+#. i18n: file: ui/tribeBase.ui:192
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: file: ui/tribeReleaseNotes.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, tribeReleaseNotes)
+#: rc.cpp:58 rc.cpp:371
+msgid "Release Notes"
+msgstr "Opombe ob izdaji"
+
+#. i18n: file: ui/tribeBase.ui:218
+#. i18n: ectx: property (text), widget (QLabel, licenseLabel)
+#: rc.cpp:61
+msgid "License Approval"
+msgstr "Potrditev licenčnih pogojev"
+
+#. i18n: file: ui/tribeBase.ui:255
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: rc.cpp:64
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Preparation</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Pripravljanje</span></p></body></html>"
+
+#. i18n: file: ui/tribeBase.ui:262
+#. i18n: ectx: property (text), widget (QLabel, label_10)
+#: rc.cpp:71
+msgid "Ready to Install"
+msgstr "Pripravljen na namestitev"
+
+#. i18n: file: ui/tribeBase.ui:288
+#. i18n: ectx: property (text), widget (QLabel, label_19)
+#. i18n: file: ui/tribeInit.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, tribeInit)
+#: rc.cpp:74 rc.cpp:191
+msgid "Ramdisk"
+msgstr "Ramdisk"
+
+#. i18n: file: ui/tribeBase.ui:314
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:77
+msgid "System Settings"
+msgstr "Sistemske nastavitve"
+
+#. i18n: file: ui/tribeBase.ui:334
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:80
+msgid "Language & Time"
+msgstr "Jezik in čas"
+
+#. i18n: file: ui/tribeBase.ui:348
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: rc.cpp:83
+msgid "Disk setup"
+msgstr ""
+
+#. i18n: file: ui/tribeBase.ui:404
+#. i18n: ectx: property (text), widget (QLabel, label_11)
+#: rc.cpp:86
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Installation</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Namestitev</span></p></body></html>"
+
+#. i18n: file: ui/tribeBase.ui:430
+#. i18n: ectx: property (text), widget (QLabel, label_12)
+#: rc.cpp:93
+msgid "Prepare Partitions"
+msgstr "Pripravi razdelke"
+
+#. i18n: file: ui/tribeBase.ui:456
+#. i18n: ectx: property (text), widget (QLabel, label_13)
+#: rc.cpp:96
+msgid "Install System"
+msgstr "Namesti sistem"
+
+#. i18n: file: ui/tribeBase.ui:493
+#. i18n: ectx: property (text), widget (QLabel, label_14)
+#: rc.cpp:99
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Configuration</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Nastavitev</span></p></body></html>"
+
+#. i18n: file: ui/tribeBase.ui:519
+#. i18n: ectx: property (text), widget (QLabel, label_15)
+#: rc.cpp:106
+msgid "Create User"
+msgstr "Ustvari uporabnika"
+
+#. i18n: file: ui/tribeBase.ui:526
+#. i18n: ectx: property (text), widget (QLabel, label_17)
+#: rc.cpp:109
+msgid "Bootloader"
+msgstr "Zagonski nalagalnik"
+
+#. i18n: file: ui/tribeBase.ui:552
+#. i18n: ectx: property (text), widget (QLabel, label_18)
+#: rc.cpp:112
+msgid "Root Password"
+msgstr "Geslo uporabnika root"
+
+#. i18n: file: ui/tribeBase.ui:578
+#. i18n: ectx: property (text), widget (QLabel, label_16)
+#. i18n: file: ui/tribeFinish.ui:132
+#. i18n: ectx: property (text), widget (QPushButton, configureButton)
+#: rc.cpp:115 rc.cpp:188
+msgid "Configure System"
+msgstr "Nastavi sistem"
+
+#. i18n: file: ui/tribeBase.ui:658
+#. i18n: ectx: property (text), widget (QPushButton, abortButton)
+#: rc.cpp:118
+msgid "Abort installation"
+msgstr "Prekini namestitev"
+
+#. i18n: file: ui/tribeBase.ui:690
+#. i18n: ectx: property (text), widget (QPushButton, previousButton)
+#: rc.cpp:121
+msgctxt "Previous Page"
+msgid "Previous"
+msgstr "Predhodna"
+
+#. i18n: file: ui/tribeBase.ui:709
+#. i18n: ectx: property (text), widget (QPushButton, nextButton)
+#: rc.cpp:124
+msgctxt "Next Page"
+msgid "Next"
+msgstr "Naslednja"
+
+#. i18n: file: ui/tribeBootloader.ui:49
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:127
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Bootloader Installation</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Namestitev zagonskega nalagalnika</span></p></body></html>"
+
+#. i18n: file: ui/tribeBootloader.ui:60
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:134
+msgid ""
+"You can now install GRUB as your main bootloader.\n"
+"\n"
+"If you are unsure where you should install the bootloader to, just leave the "
+"default value (hd0)."
+msgstr ""
+"Sedaj lahko namestite GRUBa kot glavni zagonski nalagalnik.\n"
+"\n"
+"Če niste prepričani, kam bi namestili nalagalnik, pustite nastavljeno "
+"privzeto vrednost (hd0)."
+
+#. i18n: file: ui/tribeBootloader.ui:73
+#. i18n: ectx: property (text), widget (QCheckBox, checkBox)
+#: rc.cpp:139
+msgid "Install Bootloader"
+msgstr "Namesti zagonski nalagalnik"
+
+#. i18n: file: ui/tribeBootloader.ui:91
+#. i18n: ectx: property (text), widget (QPushButton, pushButton)
+#: rc.cpp:142
+msgid "Advanced..."
+msgstr "Napredno ..."
+
+#. i18n: file: ui/tribeBootloader.ui:137
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:145
+msgid "Install to:"
+msgstr "Namesti na:"
+
+#. i18n: file: ui/tribeBootloader.ui:144
+#. i18n: ectx: property (text), widget (QLineEdit, lineEdit)
+#: rc.cpp:148
+msgid "hd0"
+msgstr "hd0"
+
+#. i18n: file: ui/tribeConfiguration.ui:44
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:151
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Configure System</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Nastavi sistem</span></p></body></html>"
+
+#. i18n: file: ui/tribeConfiguration.ui:51
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:158
+msgid ""
+"Although the installer has created a usable default configuration suitable "
+"for most users, you can now configure your newly installed system. Please "
+"take some time to step through each section and configure your system the "
+"way you want it."
+msgstr ""
+"Čeprav je namestilnik ustvaril uporabno privzeto nastavitev, ki je primerna "
+"za večino uporabnikov, lahko sedaj dodatno nastavite svoj računalnik. "
+"Vzemite si nekaj časa in pojdite skozi razdelke za nastavitev računalnika po "
+"meri."
+
+#. i18n: file: ui/tribeFinish.ui:49
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:161
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Installation Completed !</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Namestitev je zaključena.</span></p></body></html>"
+
+#. i18n: file: ui/tribeFinish.ui:69
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:168
+msgid ""
+"Congratulations, the installation has been completed! We hope you enjoyed "
+"what you have seen as much as we enjoyed creating it.\n"
+"\n"
+"You can now reboot into the installed system or keep using the LiveCD.\n"
+"\n"
+"In case you want to check the installation logs, take a look into /tmp on "
+"the live system or into /var/log on the installed system.\n"
+"\n"
+"Thanks for using Chakra, and get in touch with us in the forums, share "
+"opinions, give advices;\n"
+"To put it simple: Get involved! (http://chakra-project.org)\n"
+"\n"
+"Have Fun!\n"
+"\n"
+"The Chakra Team"
+msgstr ""
+"Čestitamo, namestitev je bila uspešno zaključena. Upamo, da ste in boste "
+"uživali pri uporabi, kakor smo mi uživali pri ustvarjanju.\n"
+"\n"
+"Sedaj lahko znova zaženete računalnik v na novo nameščeni sistem, ali pa "
+"nadaljujete z uporabo žive zgoščenke.\n"
+"\n"
+"Če želite preveriti dnevnike nameščanja, si oglejte mapo /tmp na živi "
+"zgoščenki ali pa /var/log na nameščenem sistemu.\n"
+"\n"
+"Zahvaljujemo se vam za uporabo Linuxa Chakra. Vabimo vas, da se nam "
+"pridružite na forumu, delite z nami svoja mnenja in nam svetujete. Z eno "
+"besedo: sodelujte. (http://chakra-project.org)\n"
+"\n"
+"Uživajte!\n"
+"\n"
+"Ekipa Chakre"
+
+#. i18n: file: ui/tribeFinish.ui:103
+#. i18n: ectx: property (text), widget (QPushButton, rebootButton)
+#: rc.cpp:182
+msgid "Restart Computer"
+msgstr "Znova zaženi računalnik"
+
+#. i18n: file: ui/tribeFinish.ui:116
+#. i18n: ectx: property (text), widget (QPushButton, chakraButton)
+#: rc.cpp:185
+msgid "Keep using the LiveCD"
+msgstr "Nadaljuj z uporabo žive zgoščenke"
+
+#. i18n: file: ui/tribeInit.ui:49
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:194
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Ramdisk Setup</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Nastavitev ramdiska</span></p></body></html>"
+
+#. i18n: file: ui/tribeInit.ui:58
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:201
+msgid ""
+"Your hardware will be configured automatically during the installation and a "
+"initial ramdisk environment for booting the linux kernel will be built. "
+"Everything should happen without intervention, but you might need some "
+"options for special boot methods. If you are unsure on what this means, "
+"simply press the \"Next\" button. Otherwise check out the ramdisk options "
+"below and select the items you need for your system."
+msgstr ""
+"Med namestitvijo bo strojna oprema nastavljena samodejno. Ustvarjeno bo tudi "
+"začetno okolje ramdisk za zaganjanje jedra Linux. Vse naj bi potekalo brez "
+"posredovanja, vendar morda potrebujete posebne nastavitve za zagon. Če niste "
+"prepričani, kaj to pomeni, lahko preprosto kliknete gumb »Naprej«. V "
+"nasprotnem preverite spodnje možnosti za ramdisk in izberite tiste, ki jih "
+"potrebujete za svoj računalnik."
+
+#. i18n: file: ui/tribeInit.ui:81
+#. i18n: ectx: property (text), widget (QPushButton, pushButton)
+#: rc.cpp:204
+msgid "Ramdisk Options"
+msgstr "Možnosti za ramdisk"
+
+#. i18n: file: ui/tribeInit.ui:111
+#. i18n: ectx: property (text), widget (QCheckBox, usb)
+#: rc.cpp:207
+msgid "Activate support for booting from USB devices"
+msgstr "Podpora za zaganjanje z naprav USB"
+
+#. i18n: file: ui/tribeInit.ui:118
+#. i18n: ectx: property (text), widget (QCheckBox, firewire)
+#: rc.cpp:210
+msgid "Activate support for booting from FireWire devices"
+msgstr "Podpora za zaganjanje z naprav FireWire"
+
+#. i18n: file: ui/tribeInit.ui:125
+#. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
+#: rc.cpp:213
+msgid "Activate support for booting from PCMCIA devices"
+msgstr "Podpora za zaganjanje z naprav PCMCIA"
+
+#. i18n: file: ui/tribeInit.ui:132
+#. i18n: ectx: property (text), widget (QCheckBox, nfs)
+#: rc.cpp:216
+msgid "Activate support for booting from NFS shares"
+msgstr "Podpora za zaganjanje iz map deljenih prek NFS"
+
+#. i18n: file: ui/tribeInit.ui:139
+#. i18n: ectx: property (text), widget (QCheckBox, raid)
+#: rc.cpp:219
+msgid "Activate support for booting from Software Raid arrays"
+msgstr "Podpora za zaganjanje s programskih polj RAID"
+
+#. i18n: file: ui/tribeInit.ui:146
+#. i18n: ectx: property (text), widget (QCheckBox, mdp)
+#: rc.cpp:222
+msgid "Activate support for booting from Software Raid/MDP Partition arrays"
+msgstr "Podpora za zaganjanje s programskih polj RAID/razdelkov MDP"
+
+#. i18n: file: ui/tribeInit.ui:153
+#. i18n: ectx: property (text), widget (QCheckBox, lvm2)
+#: rc.cpp:225
+msgid "Activate support for booting from LVM2 volumes"
+msgstr "Podpora za zaganjanje z nosilcev LVM2"
+
+#. i18n: file: ui/tribeInit.ui:160
+#. i18n: ectx: property (text), widget (QCheckBox, encrypted)
+#: rc.cpp:228
+msgid "Activate support for booting from Encrypted volumes"
+msgstr "Podpora za zaganjanje s šifriranih nosilcev"
+
+#. i18n: file: ui/tribeInstallation.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, tribeInstallation)
+#: rc.cpp:231
+msgid "Tribe Installation"
+msgstr "Namestitev Tribe"
+
+#. i18n: file: ui/tribeInstallation.ui:97
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#: rc.cpp:234
+msgid "Nine Inch Nails - Discipline"
+msgstr "Nine Inch Nails - Discipline"
+
+#. i18n: file: ui/tribeInstallation.ui:102
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#: rc.cpp:237
+msgid "Severed Fifth - War"
+msgstr "Severed Fifth - War"
+
+#. i18n: file: ui/tribeInstallation.ui:107
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#: rc.cpp:240
+msgid "Dunkelstern - Out of the box"
+msgstr "Dunkelstern - Out of the box"
+
+#. i18n: file: ui/tribeIntro.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, tribeIntro)
+#: rc.cpp:243
+msgid "Tribe Intro"
+msgstr "Uvod v Tribe"
+
+#. i18n: file: ui/tribeIntro.ui:107
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:246
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-size:14pt; color:#eeeeee;\">Welcome to the Chakra Installation!"
+"</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; color:#eeeeee;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:"
+"#eeeeee;\"><span style=\" font-weight:600;\">Tribe, our installer, will "
+"guide you through the process of installing the Chakra live system</span></"
+"p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+"weight:600; color:#eeeeee;\">on your computer. After the installation you "
+"will have a ready-to-use Arch Linux</p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+"weight:600; color:#eeeeee;\">desktop system with our modular KDE packages.</"
+"p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-weight:600; color:#eeeeee;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+"weight:600; color:#eeeeee;\"> Please take the time to carefully read through "
+"all texts and explanations.</p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; color:#eeeeee;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-weight:600; color:#eeeeee;\"> Remember:</span><span style=\" "
+"font-weight:600;\"> </span><span style=\" font-weight:600; color:#ff0000;"
+"\">THIS IS ALPHA SOFTWARE, IT COULD EAT YOUR HAMSTER</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-weight:600; color:#ff0000;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+"weight:600; color:#ff0000;\"><span style=\" color:#eeeeee;\">Have fun! - The "
+"Chakra Developers</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-size:14pt; color:#eeeeee;\">Dobrodošli v namestitev Linuxa "
+"Chakra</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; color:#eeeeee;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:"
+"#eeeeee;\"><span style=\" font-weight:600;\">Tribe, naš namestilnik, vas bo "
+"vodil skozi postopek namestitve sistema Chakra </span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+"weight:600; color:#eeeeee;\">na vaš računalnik. Po zaključeni namestitvi bo "
+"za uporabo na voljo namizni sistem</p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+"weight:600; color:#eeeeee;\">Arch Linux z našimi modularnimi paketi KDE.</"
+"p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-weight:600; color:#eeeeee;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+"weight:600; color:#eeeeee;\"> Prosimo, vzemite si čas in pazljivo preberite "
+"vsa besedila in razlage.</p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; color:#eeeeee;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-weight:600; color:#eeeeee;\"> Pomnite:</span><span style=\" "
+"font-weight:600;\"> </span><span style=\" font-weight:600; color:#ff0000;"
+"\">TO JE RAZVOJNA (ALFA) RAZLIČICA IN VAM LAHKO POJE HRČKA</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-weight:600; color:#ff0000;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+"weight:600; color:#ff0000;\"><span style=\" color:#eeeeee;\">Uživajte! - "
+"razvijalci projekta Chakra</span></p></body></html>"
+
+#. i18n: file: ui/tribeLicense.ui:52
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:263
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:22pt; font-weight:600; color:#ffffff;\">License Approval</span></p></"
+"body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:22pt; font-weight:600; color:#ffffff;\">Sprejetje licenc</span></p></"
+"body></html>"
+
+#. i18n: file: ui/tribeLicense.ui:64
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:270
+msgid ""
+"Chakra includes some proprietary software like hardware drivers, media "
+"plugins and fonts. To install them, you have to read and accept their "
+"licenses. If you choose against a license, the installer will try to use a "
+"free solution (if one is available)."
+msgstr ""
+"Chakra vsebuje nekaj zaprto-kodnih programov, pisav in gonilnikov. Da jih "
+"lahko namestite, morate sprejeti njihove licenčne omejitve. Če omejitev ne "
+"sprejmete, bo namestilnik poskusil uporabiti prosto rešitev (če je na voljo)."
+
+#. i18n: file: ui/tribeLicense.ui:77
+#. i18n: ectx: property (text), widget (QLabel, licenseLabel)
+#: rc.cpp:273
+msgid "Approve license for:"
+msgstr "Sprejmi licenčne pogoje za:"
+
+#. i18n: file: ui/tribeLicense.ui:106
+#. i18n: ectx: property (text), widget (QRadioButton, declineButton)
+#: rc.cpp:276
+msgid "Decline License"
+msgstr "Zavrni licenco"
+
+#. i18n: file: ui/tribeLicense.ui:113
+#. i18n: ectx: property (text), widget (QRadioButton, acceptButton)
+#: rc.cpp:279
+msgid "Accept License"
+msgstr "Sprejmi licenco"
+
+#. i18n: file: ui/tribeLocale.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, TribeLocale)
+#: rc.cpp:282
+msgid "Form"
+msgstr "Obrazec"
+
+#. i18n: file: ui/tribeLocale.ui:39
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:285
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Language &amp; Time</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Jezik in čas</span></p></body></html>"
+
+#. i18n: file: ui/tribeLocale.ui:49
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:292
+msgid ""
+"Please select the nearest city on the globe so the installer can suggest the "
+"locale and timezone settings for you. You can fine-tune the suggested "
+"settings at the bottom of the page. If you cant find your region or city on "
+"the globe, you can zoom in by using the slider on the left."
+msgstr ""
+"Na globusu izberite najbližje mesto, da vam bo namestilnik predlagal "
+"področne nastavitve in časovni pas. Predlagane nastavitve lahko prilagodite "
+"na dnu okna. Če svoje regije ali mesta na globusu ne vidite, lahko poskusite "
+"uporabiti levi drsnik za povečavo."
+
+#. i18n: file: ui/tribeLocale.ui:73
+#. i18n: ectx: property (clickMessage), widget (KLineEdit, locationsSearch)
+#: rc.cpp:295
+msgid "Search..."
+msgstr "Išči ..."
+
+#. i18n: file: ui/tribeLocale.ui:152
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: rc.cpp:298
+msgid "Time Settings"
+msgstr "Časovne nastavitve"
+
+#. i18n: file: ui/tribeLocale.ui:170
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:301
+msgid "Timezone:"
+msgstr "Časovni pas:"
+
+#. i18n: file: ui/tribeLocale.ui:189
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:304
+msgid "Language Settings"
+msgstr "Jezikovne nastavitve"
+
+#. i18n: file: ui/tribeLocale.ui:195
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:307
+msgid "Locale:"
+msgstr "Področne nastavitve:"
+
+#. i18n: file: ui/tribeLocale.ui:205
+#. i18n: ectx: property (text), widget (QCheckBox, showLocalesCheck)
+#. i18n: file: ui/tribeLocale.ui:215
+#. i18n: ectx: property (text), widget (QCheckBox, showKDELangsCheck)
+#: rc.cpp:310 rc.cpp:313
+msgid "Show all"
+msgstr "Prikaži vse"
+
+#. i18n: file: ui/tribeLocale.ui:222
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:316
+#, fuzzy
+msgid "Language:"
+msgstr "Jezik za KDE:"
+
+#. i18n: file: ui/tribePartition.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, tribePartition)
+#: rc.cpp:319
+msgid "Partition"
+msgstr "Razdelek"
+
+#. i18n: file: ui/tribePartition.ui:47
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:322
+#, fuzzy
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Disk setup</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Nastavitev ramdiska</span></p></body></html>"
+
+#. i18n: file: ui/tribePartition.ui:56
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:329
+msgid ""
+"Now you have to set up your disks for installation. Please use the tool "
+"below to partition, format and select mountpoints. Once you're satisfied "
+"with your choice, click \"Apply\" if you made any changes to the partition "
+"table or requested to format one or more partitions, and then go ahead. "
+"Formatting the partitions you will mount main system paths on (such as / or /"
+"usr) is strongly advised."
+msgstr ""
+
+#. i18n: file: ui/tribePreparePartitions.ui:79
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:332
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+"#eeeeee;\">Formatting Partitions...</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+"#eeeeee;\">Formatiranje razdelkov ...</span></p></body></html>"
+
+#. i18n: file: ui/tribePreparePartitions.ui:129
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: rc.cpp:339
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+"#eeeeee;\">Mounting Partitions...</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+"#eeeeee;\">Priklapljanje razdelkov ...</span></p></body></html>"
+
+#. i18n: file: ui/tribeReadyInstall.ui:45
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:346
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Ready to Install</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Pripravljen na namestitev</span></p></body></html>"
+
+#. i18n: file: ui/tribeReadyInstall.ui:71
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:353
+msgid ""
+"The system will be installed with the following settings. Before continuing, "
+"please review your selections:\n"
+msgstr ""
+"Za namestitev bodo uporabljene sledeče nastavitve. Preden nadaljujete "
+"preverite svoje izbire:\n"
+
+#. i18n: file: ui/tribeReadyInstall.ui:141
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:357
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+"#eeeeee;\">The following partitions will be used:</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+"#eeeeee;\">Uporabljeni bodo sledeči razdelki:</span></p></body></html>"
+
+#. i18n: file: ui/tribeReadyInstall.ui:205
+#. i18n: ectx: property (text), widget (QLabel, formatLabel)
+#: rc.cpp:364
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+"#eeeeee;\">The following partitions will be formatted:</span></p></body></"
+"html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+"#eeeeee;\">Sledeči razdelki bodo sformatirani:</span></p></body></html>"
+
+#. i18n: file: ui/tribeReleaseNotes.ui:50
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:374
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
+"style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Release Notes</"
+"span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
+"style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Opombe ob izdaji</"
+"span></p></body></html>"
+
+#. i18n: file: ui/tribeReleaseNotes.ui:63
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:381
+msgid ""
+"Check out what's new, the known issues and general information about this "
+"version of Chakra. As always, you are encouraged to tell us what you think, "
+"either by visiting our forums or bug tracker."
+msgstr ""
+"Oglejte si, kaj je novega, znane težave in splošne informacije o tej "
+"različici Chakre. Vedno ste vabljeni, da nam poveste svoje mišljenje. To "
+"lahko storite na forumu ali prek sistema za sporočanje napak."
+
+#. i18n: file: ui/tribeReleaseNotes.ui:86
+#. i18n: ectx: property (html), widget (QTextEdit, textEdit)
+#: rc.cpp:384
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+"family:'Liberation Sans'; font-size:8pt;\"></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+"family:'Liberation Sans'; font-size:8pt;\"></p></body></html>"
+
+#. i18n: file: ui/tribeRoot.ui:49
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:391
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:22pt; font-weight:600; color:#ffffff;\">Root Setup</span></p></body></"
+"html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:22pt; font-weight:600; color:#ffffff;\">Nastavitev roota</span></p></"
+"body></html>"
+
+#. i18n: file: ui/tribeRoot.ui:60
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:398
+msgid ""
+"Now you can define the behaviour of the user root, who is used to manage the "
+"system.\n"
+"\n"
+"Keeping this user is usually recommended, though you can choose to use sudo "
+"only and disable the root user. Please remind that having the root account "
+"disabled and sudo misconfigured may lead to an unusable system."
+msgstr ""
+"Sedaj lahko določite delovanje uporabnika root, ki lahko na sistemu počne "
+"vse.\n"
+"\n"
+"Običajno je priporočljivo obdržati uporabnika root, vendar ga lahko "
+"onemogočite in uporabljate samo ukaz sudo. Pomnite, da lahko onemogočen root "
+"in napačno nastavljen sudo vodita v neuporaben sistem."
+
+#. i18n: file: ui/tribeRoot.ui:93
+#. i18n: ectx: property (text), widget (QCheckBox, rootBox)
+#: rc.cpp:403
+msgid "Enable Root User"
+msgstr "Omogoči uporabnika root"
+
+#. i18n: file: ui/tribeRoot.ui:102
+#. i18n: ectx: property (text), widget (QLabel, rootLabel)
+#: rc.cpp:406
+msgid "Password"
+msgstr "Geslo"
+
+#. i18n: file: ui/tribeRoot.ui:132
+#. i18n: ectx: property (text), widget (QLabel, confirmLabel)
+#: rc.cpp:409
+msgid "Confirm Password"
+msgstr "Potrditev gesla"
+
+#. i18n: file: ui/tribeSelectPartitions.ui:49
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:415
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Filesystem Setup</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Nastavitev datotečnih sistemov</span></p></body></html>"
+
+#. i18n: file: ui/tribeSelectPartitions.ui:60
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:422
+msgid ""
+"Please choose what partitions should be used for the installation. Just "
+"select the partition and the mountpoint. You can use the \"Add another "
+"partition\" button to add more of them. To format a partition (most likely "
+"accurate for all system partitions), activate the \"Format\" checkbox and "
+"select a filesystem.\n"
+"\n"
+"You need at least a root (/) and a swap partition. When you have added all "
+"desired partitions, simply press the \"Next\" button."
+msgstr ""
+"Izberite razdelke, ki bodo uporabljeni za namestitev. To storite tako, da "
+"izberete razdelek in priklopno točko. Če želite uporabiti več razdelkov "
+"kliknite gumb »Dodaj nov razdelek«. Da bi razdelek sformatirali (kar je "
+"običajno potrebno za vse sistemske razdelke), omogočite možnost »Sformatiraj« "
+"in izberite datotečni sistem.\n"
+"\n"
+"Potreben je vsaj en korenski razdelek (/) in vsaj en razdelek za izmenjalni "
+"prostor (swap). Ko dodate vse potrebne razdelke, kliknite gumb »Naprej«."
+
+#. i18n: file: ui/tribeSelectPartitions.ui:136
+#. i18n: ectx: property (text), widget (QPushButton, addButton)
+#: rc.cpp:427
+msgid "Add another Partition"
+msgstr "Dodaj nov razdelek"
+
+#. i18n: file: ui/tribeSelectPartitionsWidget.ui:19
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:430
+msgid "Partition:"
+msgstr "Razdelek:"
+
+#. i18n: file: ui/tribeSelectPartitionsWidget.ui:29
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:433
+msgid "Size:"
+msgstr "Velikost:"
+
+#. i18n: file: ui/tribeSelectPartitionsWidget.ui:44
+#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
+#: rc.cpp:436
+msgid "ext3"
+msgstr "ext3"
+
+#. i18n: file: ui/tribeSelectPartitionsWidget.ui:49
+#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
+#: rc.cpp:439
+msgid "ext2"
+msgstr "ext2"
+
+#. i18n: file: ui/tribeSelectPartitionsWidget.ui:54
+#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
+#: rc.cpp:442
+msgid "ext4"
+msgstr "ext4"
+
+#. i18n: file: ui/tribeSelectPartitionsWidget.ui:59
+#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
+#: rc.cpp:445
+msgid "reiserfs"
+msgstr "reiserfs"
+
+#. i18n: file: ui/tribeSelectPartitionsWidget.ui:64
+#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
+#: rc.cpp:448
+msgid "jfs"
+msgstr "jfs"
+
+#. i18n: file: ui/tribeSelectPartitionsWidget.ui:69
+#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
+#: rc.cpp:451
+msgid "xfs"
+msgstr "xfs"
+
+#. i18n: file: ui/tribeSelectPartitionsWidget.ui:74
+#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
+#: rc.cpp:454
+msgid "linux-swap"
+msgstr "izmenjalni"
+
+#. i18n: file: ui/tribeSelectPartitionsWidget.ui:82
+#. i18n: ectx: property (text), widget (QCheckBox, formatBox)
+#: rc.cpp:457
+msgid "Format with:"
+msgstr "Sformatiraj z:"
+
+#. i18n: file: ui/tribeSelectPartitionsWidget.ui:89
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:460
+msgid "Mountpoint:"
+msgstr "Priklopna točka:"
+
+#. i18n: file: ui/tribeSelectPartitionsWidget.ui:100
+#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
+#: rc.cpp:463
+msgid "/"
+msgstr "/"
+
+#. i18n: file: ui/tribeSelectPartitionsWidget.ui:105
+#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
+#: rc.cpp:466
+msgid "/boot"
+msgstr "/boot"
+
+#. i18n: file: ui/tribeSelectPartitionsWidget.ui:110
+#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
+#: rc.cpp:469
+msgid "/home"
+msgstr "/home"
+
+#. i18n: file: ui/tribeSelectPartitionsWidget.ui:115
+#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
+#: rc.cpp:472
+msgid "/opt"
+msgstr "/opt"
+
+#. i18n: file: ui/tribeSelectPartitionsWidget.ui:120
+#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
+#: rc.cpp:475
+msgid "/usr"
+msgstr "/usr"
+
+#. i18n: file: ui/tribeSelectPartitionsWidget.ui:125
+#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
+#: rc.cpp:478
+msgid "/tmp"
+msgstr "/tmp"
+
+#. i18n: file: ui/tribeSelectPartitionsWidget.ui:130
+#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
+#: rc.cpp:481
+msgid "/var"
+msgstr "/var"
+
+#. i18n: file: ui/tribeSelectPartitionsWidget.ui:135
+#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
+#: rc.cpp:484
+msgid "swap"
+msgstr "izmenjalni"
+
+#. i18n: file: ui/tribeSelectPartitionsWidget.ui:143
+#. i18n: ectx: property (text), widget (QPushButton, deleteButton)
+#: rc.cpp:487
+msgid "Remove"
+msgstr "Odstrani"
+
+#. i18n: file: ui/tribeSettings.ui:56
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:490
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">System Settings</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Sistemske nastavitve</span></p></body></html>"
+
+#. i18n: file: ui/tribeSettings.ui:77
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: rc.cpp:497
+msgid "General Settings"
+msgstr "Splošne nastavitve"
+
+#. i18n: file: ui/tribeSettings.ui:83
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:500
+msgid "The name of this computer:"
+msgstr "Ime tega računalnika:"
+
+#. i18n: file: ui/tribeSettings.ui:114
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:503
+msgid "Download Settings"
+msgstr "Nastavitve prenosa"
+
+#. i18n: file: ui/tribeSettings.ui:126
+#. i18n: ectx: property (text), widget (QCheckBox, detect_mirror)
+#: rc.cpp:506
+msgid "Detect best mirror server and use it (recommended)"
+msgstr "Zaznaj najboljši zrcalni strežnik (priporočeno)"
+
+#. i18n: file: ui/tribeSettings.ui:145
+#. i18n: ectx: property (text), widget (QCheckBox, download_doc)
+#: rc.cpp:509
+msgid "Download and install documentation packages"
+msgstr "Prenesi in namesti pakete z dokumentacijo"
+
+#. i18n: file: ui/tribeUserCreation.ui:38
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:512
+msgid ""
+"Enter your name, a corresponding login name and your password to create a "
+"user account. To enable sudo for the created user and allow him to do "
+"administrative tasks, enable the \"Administrator\" option below."
+msgstr ""
+"Da bi ustvarili uporabniški račun, vnesite svoje osebno ime, ime za prijavo "
+"in geslo. Če želite uporabniku omogočiti opravljanje skrbniških opravil z "
+"uporabo ukaza sudo, spodaj omogočite možnost »Skrbnik«."
+
+#. i18n: file: ui/tribeUserCreation.ui:84
+#. i18n: ectx: property (text), widget (QPushButton, addButton)
+#: rc.cpp:515
+msgid "Add another User.."
+msgstr "Dodaj novega uporabnika ..."
+
+#. i18n: file: ui/tribeUserCreation.ui:107
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#: rc.cpp:518
+msgid "Install plain KDE-Configuration"
+msgstr "Namesti navadno nastavitev KDE-ja"
+
+#. i18n: file: ui/tribeUserCreation.ui:112
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#: rc.cpp:521
+msgid "Install Current-LiveCD-Configuration"
+msgstr "Namesti trenutno nastavitev z žive zgoščenke"
+
+#. i18n: file: ui/tribeUserCreation.ui:117
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#: rc.cpp:524
+msgid "Install plain KDEMod-Configuration"
+msgstr "Namesti navadno nastavitev KDEMod"
+
+#. i18n: file: ui/tribeUserCreation.ui:135
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:527
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Create User</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Ustvari uporabnika</span></p></body></html>"
+
+#: rc.cpp:532
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Jure Repinc"
+
+#: rc.cpp:533
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "jlp@holodeck1.com"
+
+#~ msgid "Could not initialize Alpm Transaction"
+#~ msgstr "Ni moč inicializirati prenosa ALPM"
+
+#~ msgid "Could not add Tribe package to Transaction"
+#~ msgstr "Ni moč dodati paketa Tribe v prenos"
+
+#~ msgid "Could not add Arxin package to Transaction"
+#~ msgstr "Ni moč dodati paketa Arxin v prenos"
+
+#~ msgid "Could not prepare transaction"
+#~ msgstr "Ni moč pripraviti prenosa"
+
+#~ msgid "Could not commit transaction"
+#~ msgstr "Ni moč izvesti prenosa"
+
+#~ msgid "Upgrade Available"
+#~ msgstr "Na voljo je nadgradnja"
+
+#~ msgid "Please Wait, Upgrading Tribe..."
+#~ msgstr "Prosimo počakajte, nadgrajevanje Tribe ..."
+
+#~ msgid "Upgrade Error"
+#~ msgstr "Napaka pri nadgrajevanju"
+
+#~ msgid "kdemod@kdemod.ath.cx"
+#~ msgstr "kdemod@kdemod.ath.cx"
+
+#~ msgid "Partitioning"
+#~ msgstr "Razdeljevanje"
+
+#~ msgid "Filesystem Setup"
+#~ msgstr "Nastavitev datotečnih sistemov"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "size:8pt; color:#aa0000;\">build&gt;20090218/alpha2</span></p></body></"
+#~ "html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "size:8pt; color:#aa0000;\">gradnja&gt;20090218/alpha2</span></p></body></"
+#~ "html>"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Partitioning</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Razdeljevanje</span></p></body></html>"
+
+#~ msgid ""
+#~ "Now you can partition your hard drive. This tool will let you create, "
+#~ "delete and edit your partitions easily. Once you are satisfied, simply "
+#~ "press \"apply\" on the upper left to write the changes to the disk, "
+#~ "followed by \"Next\" to continue the Installation."
+#~ msgstr ""
+#~ "Sedaj lahko razdelite trdi disk. Upravljalnik razdelkov vam na preprost "
+#~ "način omogoča ustvariti, zbrisati ali urediti razdelke. Ko ste zadovoljni "
+#~ "in bi radi zapisali spremembe, zgoraj levo kliknite na »Uveljavi«, nato pa "
+#~ "s klikom na »Naprej« nadaljujte namestitev."
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "When everything appears to be OK, press the \"Next\" button to start the "
+#~ "installation.\n"
+#~ "\n"
+#~ " Before the installation starts, all files on the installation source "
+#~ "will be checked and indexed and the progress bar will be stuck on 0 "
+#~ "percent. Please wait as this operation may take some minutes."
+#~ msgstr ""
+#~ "Ko je vse v redu in želite nadaljevati namestitev, kliknite na gumb "
+#~ "»Naprej«.\n"
+#~ "\n"
+#~ "Preden se namestitev začne, bodo vse datoteke na namestitvenem viru "
+#~ "poindeksirane. Med tem bo prikazovalnik napredka ostal na 0 %. Prosimo, "
+#~ "da med tem počakate, saj lahko to traja dlje časa."
+
+#~ msgid ""
+#~ "Downloading and installing development packages, this may take a bit ..."
+#~ msgstr ""
+#~ "Prenašanje in nameščanje razvijalskih paketov, to lahko traja dlje "
+#~ "časa ..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "size:22pt; font-weight:600; color:#ffffff;\">Locale Selection</span></p></"
+#~ "body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "size:22pt; font-weight:600; color:#ffffff;\">Nastavitev roota</span></p></"
+#~ "body></html>"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Preparing Partitions ...</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Pripravljanje razdelkov ...</span></p></body></html>"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
+#~ "style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Ready to "
+#~ "install ...</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
+#~ "style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Pripravljen na "
+#~ "namestitev ...</span></p></body></html>"
+
+#~ msgid "Filesystem:"
+#~ msgstr "Datotečni sistem:"
+
+#~ msgid "Download and install localization packages (recommended)"
+#~ msgstr "Prenesi in namesti pakete s prevodi (priporočeno)"
+
+#~ msgid "Download and install development packages"
+#~ msgstr "Prenesi in namesti razvijalske pakete"

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Tribe
+GenericName=Installation
+GenericName[ca]=Instal.lació
+GenericName[es]=Instalación
+GenericName[fr]=Installation
+GenericName[gl]=Instalación
+Exec=sudo tribe
+Icon=tribe
+Type=Application
+Terminal=false
+Categories=Qt;System;

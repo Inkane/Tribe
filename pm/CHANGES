@@ -1,0 +1,162 @@
+1.0.0 (2009-08-17)
+==================
+
+None.
+
+1.0.0-RC1 (2009-08-03)
+======================
+
+* Correctly handle ext4 file systems even with patched parted 1.8.8 (and
+  hopefully 1.8.9 too). Patch by Fatih Asici <fatih@pardus.org.tr>. (bug
+  #195243)
+
+* Clear the partition flags for a copied partition in the preview. (bug
+  #202346)
+
+* Write the new start sector to the partition's boot sector if an NTFS file
+  system was moved or copied. (bug #202329)
+
+
+1.0.0-BETA3 (2009-06-04)
+========================
+
+* Set the default file system in the New-Partition-dialog, don't just rely on
+  it being the first one in the list.
+
+* Sort items in file system combo boxes case-insensitively.
+
+* Fix a bug where the total free space available could get smaller and smaller
+  when moving an existing partition in a dialog.
+
+* Fix a bug that the progress information wasn't set as window title for the
+  top level application window.
+
+* Speed up copying file systems (and thus moving, resizing and copying).
+
+* Add some basic timing output to the detailed report for copying file systems.
+
+* Find a file system's mount point even if it is identified by label in fstab.
+
+* Add support for reading file system labels from FAT16 and FAT32.
+
+* Fix a bug where the volume label for a linuxswap file system was lost when
+  resizing it.
+
+* Make sure all interesting information shown in labels anywhere in the
+  application is user-selectable with the mouse.
+
+* Display the UUID for most file systems that support it.
+
+* Always show the current file system in the partition properties dialog's file
+  system combo box, even if it cannot be created, is too big or too small.
+
+
+1.0.0-BETA2 (2009-04-30)
+========================
+
+* Add an application icon contributed by David Miller.
+
+* Allow setting the file system label in the dialog when creating a new partition.
+
+* Add a context menu to operation list.
+
+* Use a shell script to run partition manager as a child of hal-lock. This
+  should in theory (and according to the hal-lock manpage) avoid notifications
+  for new devices, but doesn't seem to work that well.
+
+* Fix a bug that would keep the user from deleting a newly created logical
+  partition because the application thought there were higher-numbered
+  partitions still mounted.
+
+* Add a kcm for KDE Partition Manager. If this is built and installed or not
+  can be (like it already is the case with the KPart) configured via cmake.
+
+
+1.0.0-BETA1 (2009-01-13)
+========================
+
+* Fix a potential crash when merging a New Operation and a Create File System
+  Operation.
+
+* Set extended partitions as busy as long as logical partitions inside them
+  are mounted.
+
+* Don't silently succeed  when unmounting a partition that cannot in fact be
+  unmounted because it has no mount points.
+
+* Prevent creating a new partition table on a device with mounted partitions.
+
+* Add tooltips to partition widgets.
+
+* Don't show cd/dvd readers or writers as devices even if libparted reports
+  them.
+
+* Add support for ext4.
+
+* Fix calculation of reserved/free blocks for ext2/3/4.
+
+* Output reason why a mount or unmount might have failed.
+
+* Fix minimum width for extended partitions in the partition table widget.
+
+* Fix a bug where a partition table just created would not disappear when the
+  operation to create it was undone.
+
+* Don't allow creating partitions smaller than the device's cylinder size.
+
+* Fix an error that could lead to some space (a few megabytes) between two
+  partitions being wasted.
+
+
+1.0.0-ALPHA2 (2008-09-24)
+=========================
+
+* Add and install a .desktop file.
+
+* Don't allow the user to close the main window while operations are being
+  applied.
+
+* Handle activating and deactivating swap. Also, swap does have labels.
+
+* Don't try to print a mount point in the partition properties dialog if there
+  is none.
+
+* Show partition table type name and used/max primary partitions in the info
+  pane.
+
+* All disk label types but msdos are read only for now, until the support
+  situation for them improves.
+
+* Set default value for maximum number of primaries from 255 to 4.
+
+* Actually set the correct disk label type before applying the operation to
+  create a new disk label.
+
+* Don't update the partition table widget while operations are being applied.
+  This fixes a race condition that would potentially crash the application when
+  applying operations.
+
+* Update devices in the GUI after creating a new disk label or undoing
+  operations.
+
+* Set the operation state of all operations to StateNone when temporarily
+  undoing them right before starting the thread to apply them. This fixes a
+  crash when an operation fails and the remaining ones are undone twice.
+
+* Update bug report address and homepage in the aboutdata.
+
+* Unblock SIGCHLD in main so Kubuntu's kdesudo can run the application as root.
+
+* If udevadm settle fails, try to call udevsettle to better support older
+  systems.
+
+* Fix the minimum size calculations for partition widgets.
+
+* Add some doxygen documentation.
+
+
+1.0.0-ALPHA1 (2008-09-18)
+=========================
+
+* First public release
+

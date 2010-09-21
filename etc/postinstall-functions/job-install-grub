@@ -1,0 +1,57 @@
+#!/bin/bash
+
+job_install_grub()
+{
+	# initialize error handling
+	trap error_handler ERR
+
+	msg_job_start "job_install_grub"
+
+	msg "installing grub"
+
+	cp -avf ${mountpoint}/usr/lib/grub/i386-pc/* ${mountpoint}/boot/grub/
+
+	if [ "${use_boot}" = "yes" ] ; then
+
+		msg "we are using a separate /boot partition"
+
+		_real_boot=$(echo ${target_boot} | cut -c 4)
+		_real_grub_partition=$(($_real_boot-1))
+
+		${mountpoint}/sbin/grub --no-floppy --batch >/tmp/grub.log 2>&1 <<EOF
+root (hd${grub_device},${_real_grub_partition})
+setup (hd${grub_device})
+quit
+EOF
+
+	else
+
+		${mountpoint}/sbin/grub --no-floppy --batch >/tmp/grub.log 2>&1 <<EOF
+root (hd${grub_device},${grub_partition})
+setup (hd${grub_device})
+quit
+EOF
+
+	fi
+
+	msg "copy installation logs to target /var/log"
+
+        # fix no device.map bug
+        echo > ${mountpoint}/boot/grub/device.map
+
+	# last thing to do: copy installation logs to target
+
+	if [ -e "/tmp/installation.log" ] ; then
+		cp -v -f /tmp/installation.log ${mountpoint}/var/log/installation.log
+	fi
+
+	if [ -e "/tmp/initramfs.log" ] ; then
+		cp -v -f /tmp/initramfs.log ${mountpoint}/var/log/installation-initramfs.log
+	fi
+
+	if [ -e "/tmp/grub.log" ] ; then
+		cp -v -f /tmp/grub.log ${mountpoint}/var/log/installation-grub.log
+	fi
+
+	msg_job_done
+}

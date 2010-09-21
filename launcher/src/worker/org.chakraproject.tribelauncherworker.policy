@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+  <vendor>Tribe - Chakra Installer</vendor>
+  <vendor_url>http://chakra-project.org/</vendor_url>
+
+  <action id="org.chakraproject.tribe.launchtribe">
+    <description>System Upgrade</description>
+    <message>Prevents Chakra from launching the installer</message>
+    <defaults>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>no</allow_active>
+    </defaults>
+  </action>
+
+</policyconfig>

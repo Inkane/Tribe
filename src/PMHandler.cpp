@@ -18,20 +18,23 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
  ***************************************************************************/
 
-#include "PMHandler.h"
+#include <QDebug>
 
-#include <kglobal.h>
+#include <QEventLoop>
+
+#include <KGlobal>
+
 #include <tribepartitionmanager/fs/filesystemfactory.h>
 #include <tribepartitionmanager/core/partition.h>
 #include <tribepartitionmanager/ops/newoperation.h>
 #include <tribepartitionmanager/core/device.h>
 #include <tribepartitionmanager/util/capacity.h>
 #include <tribepartitionmanager/util/helpers.h>
-#include "InstallationHandler.h"
-#include <KDebug>
-#include <QEventLoop>
 #include <tribepartitionmanager/util/report.h>
 #include <tribepartitionmanager/ops/createfilesystemoperation.h>
+
+#include "InstallationHandler.h"
+#include "PMHandler.h"
 
 class PMHandlerHelper
 {
@@ -144,7 +147,6 @@ QHash< QString, const Partition* > PMHandler::mountList(const QString& rootDevNo
 void PMHandler::preparePartitions(const Partition* p, Device *dev)
 {
     // We already know p is an unallocated partition.
-    qDebug() << "Creating a new partition";
     // Can we actually create an extended partition?
     if (dev->partitionTable()->childRoles(*p) & PartitionRole::Extended) {
         // It's ok
@@ -164,7 +166,6 @@ void PMHandler::preparePartitions(const Partition* p, Device *dev)
         PartitionTable::alignPartition(*dev, *newPartition);
         operationStack().push(new NewOperation(*dev, newPartition));
         m_mounts[dev->deviceNode()].insert(newPartition->firstSector(), "/");
-        qDebug() << "Operation pushed";
 
         // return now
         return;
@@ -387,9 +388,7 @@ void PMHandler::finished()
     QEventLoop e;
     connect(this, SIGNAL(devicesReady()), &e, SLOT(quit()));
     reload();
-    qDebug() << "Into the waiting loop";
     e.exec();
-    qDebug() << "Outta the waiting loop";
     QReadLocker lockDevices(&operationStack().lock());
     foreach(Device* dev, PMHandler::instance()->operationStack().previewDevices()) {
         if (dev->partitionTable() != NULL) {
@@ -409,7 +408,7 @@ void PMHandler::finished()
                         for (i = m_mounts[dev->deviceNode()].constBegin(); i != m_mounts[dev->deviceNode()].constEnd(); ++i) {
                             if (p->firstSector() >= (i.key() - 10) && p->firstSector() <= (i.key() + 10)) {
                                 // Match!
-                                qDebug() << p->devicePath() << p->number() << "was set to mount";
+                                qDebug() << p->devicePath() << p->number() << "was set to be mounted";
                                 InstallationHandler::instance()->addPartitionToMountList(p, i.value());
                             }
                         }
@@ -432,7 +431,7 @@ void PMHandler::finished()
                             for (i = m_mounts[dev->deviceNode()].constBegin(); i != m_mounts[dev->deviceNode()].constEnd(); ++i) {
                                 if (child->firstSector() >= (i.key() - 10) && child->firstSector() <= (i.key() + 10)) {
                                     // Match!
-                                    qDebug() << child->devicePath() << child->number() << "was set to mount";
+                                    qDebug() << child->devicePath() << child->number() << "was set to be mounted";
                                     InstallationHandler::instance()->addPartitionToMountList(child, i.value());
                                 }
                             }
@@ -463,7 +462,6 @@ void PMHandler::opFinished(int , Operation*)
     ++m_jobsDone;
     int realprog = m_jobsDone * 100;
     realprog /= m_numJobs;
-    qDebug() << "Operation finished!";
     InstallationHandler::instance()->handleProgress(InstallationHandler::DiskPreparation, realprog);
 }
 
@@ -472,6 +470,5 @@ void PMHandler::progressSub(int progress)
     int realprog = m_jobsDone * 100;
     realprog += progress;
     realprog /= m_numJobs;
-    qDebug() << "Streaming: progress " << progress << ", realprog " << realprog;
     InstallationHandler::instance()->handleProgress(InstallationHandler::DiskPreparation, realprog);
 }

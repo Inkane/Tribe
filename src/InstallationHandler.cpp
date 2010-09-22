@@ -1,6 +1,6 @@
 /***************************************************************************
- *   Copyright (C) 2008 - 2009 by Dario Freddi                             *
- *   drf@chakra-project.org                                                *
+ *   Copyright (C) 2008, 2009  Dario Freddi <drf@chakra-project.org>       *
+ *                 2010 -      Drake Justice <djustice@chakra-project.org  *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -18,25 +18,29 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
  ***************************************************************************/
 
-#include "InstallationHandler.h"
+#include <QDebug>
 
 #include <config-tribe.h>
 
-#include <QDir>
-#include <QFileInfo>
-#include <QTimer>
-#include <KDebug>
-#include <kio/job.h>
-#include <kio/netaccess.h>
 #include <unistd.h>
-#include <klocalizedstring.h>
-#include <kglobal.h>
-#include <QtCore/QEventLoop>
-#include "PMHandler.h"
+
+#include <QDir>
+#include <QEventLoop>
+#include <QFileInfo>
+#include <QProcess>
+#include <QTimer>
+
+#include <KIO/Job>
+#include <KIO/NetAccess>
+#include <KLocalizedString>
+#include <KGlobal>
+
 #include <tribepartitionmanager/core/operationstack.h>
 #include <tribepartitionmanager/core/partition.h>
 #include <tribepartitionmanager/fs/filesystem.h>
-#include <QtCore/QProcess>
+
+#include "PMHandler.h"
+#include "InstallationHandler.h"
 
 class InstallationHandlerHelper
 {
@@ -139,20 +143,7 @@ void InstallationHandler::handleProgress(CurrentAction act, int percentage)
 {
     int total;
 
-    /* Ok, so let's say how things are handled here:
-     *
-     *   - System Installation: 80%
-     *   - Post Install: 20%
-     *
-     * This function handles the total progress that has to be shown by the
-     * GUI Progressbar. Let's go.
-     *
-     * We stream stuff with a minimum interval of 0,2 seconds to prevent
-     * flickering.
-     */
-
-    if (antiFlicker() < 200) {
-        /* Don't flicker! */
+    if (antiFlicker() < 200) {   // fixme
         return;
     }
 
@@ -172,8 +163,6 @@ void InstallationHandler::handleProgress(CurrentAction act, int percentage)
         break;
     }
 
-    /* Ok, let's stream a signal with the correct percentage now */
-
     emit streamProgress(total);
 }
 
@@ -187,7 +176,9 @@ void InstallationHandler::installSystem()
 
 void InstallationHandler::partitionsFormatted()
 {
-    // If we got here, the mount list is already populated. So let's reset the iterator, give back meaningful progress, and start
+    // If we got here, the mount list is already populated. So let's reset the
+    // iterator, give back meaningful progress, and start
+
     resetIterators();
     streamLabel(i18n("Mounting partitions..."));
     mountNextPartition();
@@ -197,13 +188,9 @@ void InstallationHandler::copyFiles()
 {
     currAct = InstallationHandler::SystemInstallation;
 
-    emit streamLabel(i18n("Preparing installation, this might take some time ..."));
-
-    /* Let's get what we need to copy */
+    emit streamLabel(i18n("Preparing installation..."));
 
     QString unsquashfsCommand = "unsquashfs -f -d " + QString(INSTALLATION_TARGET) + " /.livesys/medium/larch/system.sqf";
-
-    kDebug() << "Unsquashfs command is:" << unsquashfsCommand;
 
     m_process = new QProcess(this);
     m_process->setProcessChannelMode(QProcess::MergedChannels);
@@ -211,11 +198,9 @@ void InstallationHandler::copyFiles()
     connect(m_process, SIGNAL(readyRead()), SLOT(parseUnsquashfsOutput()));
     connect(m_process, SIGNAL(finished(int, QProcess::ExitStatus)), SLOT(jobDone(int)));
 
-    kDebug() << "Installing...";
+    qDebug() << "Installing (sqfs decompression) started...";
 
     m_process->start(unsquashfsCommand);
-
-    kDebug() << "Started...";
 }
 
 void InstallationHandler::jobDone(int result)
@@ -224,11 +209,8 @@ void InstallationHandler::jobDone(int result)
 
     if (result) {
         emit errorInstalling(i18n("Error copying files"));
-        kDebug() << "Error installing";
         return;
     } else {
-        /* Cool! Let's move on! */
-
         emit streamLabel(i18n("Removing packages whose license has been declined ..."));
 
         postRemove();
@@ -239,7 +221,7 @@ void InstallationHandler::parseUnsquashfsOutput()
 {
     QString out = m_process->readLine(2048);
 
-    if (out.contains(QChar(']'))) {
+    if (out.contains(QChar(']'))) {     // todo: make me pretty
         QString parsed = out.split(QChar(']')).at(1);
         QStringList members = parsed.split(QChar('/'));
         QString firstMem = members.at(0);
@@ -262,11 +244,9 @@ void InstallationHandler::reconnectJobSlot()
 
 void InstallationHandler::readyPost()
 {
-    qDebug() << "ready for PostInstall";
-
     populateCommandParameters();
 
-    qDebug() << m_postcommand;
+    qDebug() << " :: postinstall command: \n" << m_postcommand;
 
     m_postjob = "initialize-target";
     m_postlabel = i18n("Initializing target ...");
@@ -276,7 +256,7 @@ void InstallationHandler::readyPost()
 
 void InstallationHandler::populateCommandParameters()
 {
-    qDebug() << "m_mount[/] : " << trimDevice(m_mount["/"]);
+    qDebug() << " :: System root partition: " << trimDevice(m_mount["/"]);
 
     m_postcommand = QString("--target-root %1 --target-root-fs %2 --mountpoint %3 ")
                     .arg(trimDevice(m_mount["/"])).arg(m_mount["/"]->fileSystem().name()).arg(INSTALLATION_TARGET);
@@ -331,7 +311,7 @@ void InstallationHandler::populateCommandParameters()
     if (!m_locale.isEmpty()) {
         m_postcommand.append(QString("--locale %1 ").arg(m_locale));
     }
-    if (!m_KDELangPack.isEmpty() && m_KDELangPack != "en_us") {//American English is just nothing
+    if (!m_KDELangPack.isEmpty() && m_KDELangPack != "en_us") {
         m_postcommand.append(QString("--kdelang %1 ").arg(m_KDELangPack));
     }
     if (m_doc) {
@@ -351,11 +331,11 @@ QString InstallationHandler::trimDevice(const Partition *device)
 
 void InstallationHandler::postRemove()
 {
-    qDebug() << "Handling postremove..." <<
-                m_removeLicenses.count() << "packages have to be removed";
+    qDebug() << " :: postinstall package removal: " <<
+                m_removeLicenses.count() << "packages to be removed";
 
     if (m_stringlistIterator == m_removeLicenses.constEnd()) {
-        emit streamLabel(i18n("Please wait, configuring and starting PostInstall ..."));
+        emit streamLabel(i18n("Please wait, configuring the new system ..."));
 
         QTimer::singleShot(100, this, SLOT(readyPost()));
 
@@ -375,17 +355,17 @@ void InstallationHandler::postRemove()
 
     m_process->start(command);
 
-    qDebug() << "Process " << command << " Started";
+    qDebug() << " :: package removal command: " << command;
 }
 
 void InstallationHandler::postInstall()
 {
     if (m_postjob == "add-extra-mountpoint") {
-        qDebug() << "here we are, we have" << m_mount.keys().count() << "mountpoints to configure";
+        qDebug() << " :: mountpoints to configure: " << m_mount.keys().count();
         QMap<QString, const Partition*>::const_iterator i;
         for (i = m_mount.constBegin(); i != m_mount.constEnd(); ++i) {
             if (i.key() != "/" && i.key() != "swap") {
-                qDebug() << "Add mountpoint for" << i.key();
+                qDebug() << " :: add mountpoint for: " << i.key();
                 QString command = QString("sh ") + SCRIPTS_INSTALL_PATH +
                                   QString("postinstall.sh --job add-extra-mountpoint --extra-mountpoint %1 "
                                           "--extra-mountpoint-target %2 --extra-mountpoint-fs %3 %4").arg(i.key())
@@ -398,7 +378,8 @@ void InstallationHandler::postInstall()
                 process->start(command);
                 e.exec();
 
-                qDebug() << "Process " << command << " Started" << process->exitCode();
+                qDebug() << " :: postinstall command: " << command;
+
                 if (process->exitCode() != 0) {
                     postInstallDone(process->exitCode(), QProcess::NormalExit);
                     return;
@@ -418,7 +399,7 @@ void InstallationHandler::postInstall()
         connect(m_process, SIGNAL(finished(int, QProcess::ExitStatus)), SLOT(postInstallDone(int, QProcess::ExitStatus)));
         m_process->start(command);
 
-        qDebug() << "Process " << command << " Started";
+        qDebug() << " :: postinstall command: " << command;
     }
 }
 
@@ -427,28 +408,25 @@ void InstallationHandler::postInstallDone(int eC, QProcess::ExitStatus eS)
     Q_UNUSED(eS)
 
     qDebug() << m_process->readAllStandardOutput();
-    qDebug() << m_process->readAllStandardError();
 
     if (eC != 0) {
-        /* Something went wrong, stream a more verbose message here. */
         emit errorInstalling(i18n("Error in Postinstall script. See log for more details"));
-        qDebug() << "Failed";
+        qDebug() << " :: !! Failed during postinstall somewhere..";
         return;
     } else {
-        /* Kewl, now we need to jump over to the next job.
-         */
+        // next job
 
         int percentage = 0;
 
         if (m_postjob == "initialize-target") {
-            emit streamLabel(i18n("Creating users ..."));
+            emit streamLabel(i18n("Creating accounts ..."));
             setUpUser(userLogin());
             m_postjob = "configure-pacman";
-            m_postlabel = i18n("Detecting best mirror server & configuring pacman, this may take a bit...");
+            m_postlabel = i18n("Configuring software management, this may take a bit...");
             percentage = 1;
         } else if (m_postjob == "configure-pacman") {
             m_postjob = "pre-remove";
-            m_postlabel = i18n("Removing superfluous packages...");
+            m_postlabel = i18n("Removing unused packages...");
             percentage = 2;
         } else if (m_postjob == "pre-remove") {
             m_postjob = "pre-install";
@@ -456,7 +434,7 @@ void InstallationHandler::postInstallDone(int eC, QProcess::ExitStatus eS)
             percentage = 3;
         } else if (m_postjob == "pre-install") {
             m_postjob = "setup-xorg";
-            m_postlabel = i18n("Setting up X.Org configuration...");
+            m_postlabel = i18n("Configuring the display...");
             percentage = 4;
         } else if (m_postjob == "setup-xorg") {
             m_postjob = "download-l10n";
@@ -492,23 +470,23 @@ void InstallationHandler::postInstallDone(int eC, QProcess::ExitStatus eS)
             percentage = 12;
         } else if (m_postjob == "setup-hardware") {
             m_postjob = "create-initrd";
-            m_postlabel = i18n("Creating initial ramdisk images. This may take a lot of time, stay tuned...");
+            m_postlabel = i18n("Creating initial ramdisk images, this may take a bit...");
             percentage = 13;
         } else if (m_postjob == "create-initrd") {
             m_postjob = "regenerate-locales";
-            m_postlabel = i18n("Regenerating locales...");
+            m_postlabel = i18n("Generating locales...");
             percentage = 16;
         } else if (m_postjob == "regenerate-locales") {
             m_postjob = "cleanup-l10n";
-            m_postlabel = i18n("Removing superfluous localizations...");
+            m_postlabel = i18n("Removing unused localizations...");
             percentage = 17;
         } else if (m_postjob == "cleanup-l10n") {
             m_postjob = "cleanup-drivers";
-            m_postlabel = i18n("Removing superfluous drivers...");
+            m_postlabel = i18n("Removing unused drivers...");
             percentage = 18;
         } else if (m_postjob == "cleanup-drivers") {
             m_postjob = "cleanup-etc";
-            m_postlabel = i18n("Finishing installation...");
+            m_postlabel = i18n("Finishing up...");
             percentage = 19;
         } else if (m_postjob == "cleanup-etc") {
             m_postjob = "jobcomplete";
@@ -519,22 +497,14 @@ void InstallationHandler::postInstallDone(int eC, QProcess::ExitStatus eS)
 
         m_process->deleteLater();
 
-        /* At this point, let's stream updated percentage now. */
-
         handleProgress(InstallationHandler::PostInstall, percentage);
         emit streamLabel(m_postlabel);
 
         if (m_postjob != "jobcomplete") {
-            /* Ok, we have something to do, so let's just do it! */
-
             postInstall();
 
             return;
         } else {
-            /* We're done!! Party on and notify the whole application
-             * we're having a beer in short time :D
-             */
-
             emit installationDone();
         }
     }
@@ -564,8 +534,6 @@ QString InstallationHandler::getMountPointFor(const QString &device)
 
 bool InstallationHandler::isMounted(const QString &partition)
 {
-    kDebug() << "Check if" << partition << "is mounted";
-
     QMap<QString, const Partition*>::const_iterator i;
     for (i = m_mount.constBegin(); i != m_mount.constEnd(); ++i) {
         if (QString("%1%2").arg(i.value()->devicePath()).arg(i.value()->number()) == partition) {
@@ -598,10 +566,7 @@ void InstallationHandler::unmountPartition(const QString &partition)
 
 void InstallationHandler::mountNextPartition()
 {
-    kDebug() << "Mounting partitions";
-
     if (m_mapIterator == m_mount.constEnd()) {
-        // Start copying files
         copyFiles();
         return;
     }
@@ -616,15 +581,14 @@ void InstallationHandler::mountNextPartition()
 
     if (!dir.exists()) {
         if (!dir.mkpath(QString(INSTALLATION_TARGET + m_mapIterator.key()))) {
-            emit errorInstalling(i18n("Tribe was not able to initialize needed directories. You probably do not have "
-                                      "enough privileges, please restart Tribe as root."));
+            emit errorInstalling(i18n("Tribe was not able to initialize needed directories. Something is very wrong..."));
             return;
         }
     }
 
     QString partitionname = QString("%1%2").arg(m_mapIterator.value()->devicePath()).arg(m_mapIterator.value()->number());
 
-    kDebug() << "Trying to mount" << partitionname << "on" << m_mapIterator.key();
+    qDebug() << " :: attempt to mount " << partitionname << " - " << m_mapIterator.key();
 
     emit mounting(partitionname, InstallationHandler::InProgress);
 
@@ -643,14 +607,12 @@ void InstallationHandler::partitionMounted(KJob *job)
     QString partitionname = QString("%1%2").arg(m_mapIterator.value()->devicePath()).arg(m_mapIterator.value()->number());
     if (job->error()) {
         emit errorInstalling(i18n("Could not mount %1", partitionname));
-        kDebug() << "Error with mounting" << job->errorString();
-        kDebug() << "error installing";
+        qDebug() << " :: !! Error mounting: " << job->errorString();
 
         emit mounting(partitionname, InstallationHandler::Error);
 
         return;
     } else {
-        /* Cool! Let's move on! */
         emit mounting(partitionname, InstallationHandler::Success);
 
         ++m_mapIterator;
@@ -688,7 +650,7 @@ void InstallationHandler::installBootloader(int action, const QString &device)
 
     m_process->start(command);
 
-    kDebug() << "Process " << command << " Started";
+    qDebug() << " :: bootloader installation command: " << command;
 }
 
 void InstallationHandler::setUpUser(const QString &user)
@@ -700,25 +662,25 @@ void InstallationHandler::setUpUser(const QString &user)
         .arg(INSTALLATION_TARGET)
         .arg(userName())
         .arg(userLogin());
-	QProcess::execute(command);
+        QProcess::execute(command);
     } else {
         command = QString("chroot %1 useradd -g users -m -s /bin/bash %2")
         .arg(INSTALLATION_TARGET).arg(userLogin());
-	QProcess::execute(command);
-	//clean conflict files
-	command = QString("chroot %1 rm -v /home/%2/.bash_profile")
-        .arg(INSTALLATION_TARGET).arg(userLogin());
-	QProcess::execute(command);
-	command = QString("chroot %1 rm -v /home/%2/.bashrc")
-        .arg(INSTALLATION_TARGET).arg(userLogin());
-	QProcess::execute(command);
-	command = QString("chroot %1 rm -v /home/%2/.xinitrc")
-        .arg(INSTALLATION_TARGET).arg(userLogin());
-	QProcess::execute(command);
+        QProcess::execute(command);
+        //clean conflict files
+        command = QString("chroot %1 rm -v /home/%2/.bash_profile")
+            .arg(INSTALLATION_TARGET).arg(userLogin());
+        QProcess::execute(command);
+        command = QString("chroot %1 rm -v /home/%2/.bashrc")
+            .arg(INSTALLATION_TARGET).arg(userLogin());
+        QProcess::execute(command);
+        command = QString("chroot %1 rm -v /home/%2/.xinitrc")
+            .arg(INSTALLATION_TARGET).arg(userLogin());
+        QProcess::execute(command);
     }
 
-    qDebug() << "user " + userLogin() + " creation completed";
-    
+    qDebug() << " :: user \'" + userLogin() + "\' created";
+
     m_userProcess = new QProcess;
 
     command = QString("chroot %1 /usr/bin/passwd %2").arg(INSTALLATION_TARGET).arg(userLogin());
@@ -735,7 +697,7 @@ void InstallationHandler::setUpUser(const QString &user)
         KIO::NetAccess::synchronousRun(job, 0);
     }
 
-    qDebug() << "/home/live/{config} copied to /home/" + userLogin() + "/{config}";
+    qDebug() << " :: live configuration copied to the user's home";
 
     QProcess::execute("sh " +
                       QString(SCRIPTS_INSTALL_PATH) +
@@ -744,7 +706,7 @@ void InstallationHandler::setUpUser(const QString &user)
                       " --user-name " +
                       user);
 
-    qDebug() << "job-configure-users finished";
+    qDebug() << ":: user configuration complete";
 
     QProcess::execute("sh " +
                       QString(SCRIPTS_INSTALL_PATH) +
@@ -753,7 +715,7 @@ void InstallationHandler::setUpUser(const QString &user)
                       " --user-name " +
                       user);
 
-    qDebug() << "job-configure-sudoers finished";
+    qDebug() << " :: sudoers configuration complete";
 
     command = "chroot " + QString(INSTALLATION_TARGET) + " /usr/bin/passwd";
 
@@ -781,16 +743,12 @@ void InstallationHandler::unmountAll()
         }
     }
 
-    // Ok, done that, unmount the nodes.
     foreach (const QString &point, QStringList() << "/proc" << "/sys" << "/dev")
     {
         QProcess::execute("sudo umount -fl " + QString(INSTALLATION_TARGET + point));
     }
 
-    // Now unmount the target itself
-    {
-        QProcess::execute("sudo umount -fl " + QString(INSTALLATION_TARGET));
-    }
+    QProcess::execute("sudo umount -fl " + QString(INSTALLATION_TARGET));
 }
 
 void InstallationHandler::abortInstallation()
@@ -817,7 +775,6 @@ void InstallationHandler::killProcesses()
 
 void InstallationHandler::cleanup()
 {
-    kDebug() << "Cleaning up...";
     unmountAll();
     killProcesses();
 }

@@ -1,12 +1,11 @@
-PROJECT(tribe)
+project(tribe)
 
-CMAKE_MINIMUM_REQUIRED(VERSION 2.6.0)
-set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake/modules")
+cmake_minimum_required(VERSION 2.6.0)
+set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/modules)
 
 find_package(KDE4 REQUIRED)
-find_package(KDE4Workspace 4.3.0 REQUIRED)
 
-configure_file(config-tribe.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-tribe.h )
+configure_file(config-tribe.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-tribe.h)
 
 include (MacroLibrary)
 include (FindPackageHandleStandardArgs)
@@ -20,8 +19,7 @@ add_subdirectory(icons)
 add_subdirectory(translations)
 
 add_definitions (
-    ${QT_DEFINITIONS} 
-    ${QT_QTDBUS_DEFINITIONS} 
+    ${QT_DEFINITIONS}
     ${KDE4_DEFINITIONS}
 )
 
@@ -32,7 +30,6 @@ include_directories (
     ${KDE4_INCLUDES}
     ${LIBMARBLEWIDGET_INCLUDE_DIR}
     ${TRIBEPARTITIONMANAGER_INCLUDE_DIR}
-    ${KDE4WORKSPACE_INCLUDE_DIR}
 )
 
 SET(tribe_SRCS
@@ -44,10 +41,6 @@ SET(tribe_SRCS
     src/Screenshots.h
     src/PMHandler.cpp
 )
-
-set(ksmserver_xml ${DBUS_INTERFACES_INSTALL_DIR}/org.kde.KSMServerInterface.xml)
-
-qt4_add_dbus_interface(tribe_SRCS ${ksmserver_xml} ksmserver_interface )
 
 SET(tribe_PAGES
     src/pages/IntroPage.cpp
@@ -86,19 +79,11 @@ SET(tribe_IMAGES
     ui/images/sidebar.svg
 )
 
-SET(tribe_RESOUCES
-    ui/tribe.qrc
-)
-
 SET(tribe_STYLESHEET
     ui/tribe.qss
 )
 
-SET(tribe_MUSIC
-    music/oobe.ogg
-)
-
-QT4_ADD_RESOURCES (qtsourceview_RC_SRCS  ${tribe_RESOUCES})
+qt4_add_resources(tribe_RESOUCES ui/tribe.qrc)
 
 kde4_add_ui_files(tribe_SRCS ${tribe_UIS})
 
@@ -106,57 +91,31 @@ kde4_add_executable(tribe
     ${tribe_SRCS}
     ${tribe_PAGES}
     ${tribe_WIDGETS}
-    ${qtsourceview_RC_SRCS}
+    ${tribe_RESOUCES}
 )
 
-TARGET_LINK_LIBRARIES(tribe
-    kworkspace
-    ${KDE4_KDEUI_LIBRARY}
-    ${KDE4_KDECORE_LIBRARY}
-    ${KDE4_KUTILS_LIBRARY}
-    ${KDE4_KIO_LIBRARY}
-    ${KDE4_KPARTS_LIBS}
-    ${KDE4_PHONON_LIBRARY}
-    ${LIBMARBLEWIDGET_LIBRARY}
-    ${TRIBEPARTITIONMANAGER_LIBRARY}
-    ${KDE4WORKSPACE_KWORKSPACE_LIBS}
-    -lsolidcontrol
+target_link_libraries(tribe
+                      ${KDE4_KDEUI_LIBRARY}
+                      ${KDE4_KDECORE_LIBRARY}
+                      ${KDE4_KUTILS_LIBRARY}
+                      ${KDE4_KIO_LIBRARY}
+                      ${LIBMARBLEWIDGET_LIBRARY}
+                      ${TRIBEPARTITIONMANAGER_LIBRARY}
+                      -lsolidcontrol
 )
 
-CONFIGURE_FILE(
-       "${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules/cmake_uninstall.cmake.in"
-       "${CMAKE_CURRENT_BINARY_DIR}/cmake_uninstall.cmake"
-       IMMEDIATE @ONLY)
-ADD_CUSTOM_TARGET(uninstall "${CMAKE_COMMAND}" -P "${CMAKE_CURRENT_BINARY_DIR}/cmake_uninstall.cmake")
-
-file(GLOB POSTINSTALL_FUNCTIONS
-    etc/postinstall-functions/*
+file(GLOB tribe_SCRIPTS
+    scripts/*.sh
 )
 
-INSTALL(CODE "MESSAGE(\"Installing Tribe executable...\")")
-INSTALL(TARGETS tribe DESTINATION bin)
-
-INSTALL(CODE "MESSAGE(\"Installing Tribe scripts...\")")
-INSTALL(FILES etc/postinstall.sh DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/scripts)
-INSTALL(FILES etc/postremove.sh DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/scripts)
-INSTALL(FILES ${POSTINSTALL_FUNCTIONS} DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/scripts)
-INSTALL(FILES etc/prepare-swap.sh DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/scripts)
-
-INSTALL(CODE "MESSAGE(\"Installing Tribe configuration files...\")")
-INSTALL(FILES etc/postinstall.conf DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/config)
-INSTALL(FILES etc/release_notes.txt DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/config)
-
-INSTALL(CODE "MESSAGE(\"Installing Tribe service files...\")")
-INSTALL(FILES etc/tribe.desktop DESTINATION ${CMAKE_INSTALL_PREFIX}/share/applications)
-
-INSTALL(CODE "MESSAGE(\"\")")
-
-INSTALL(CODE "MESSAGE(\"Installing Tribe Multimedia Components...\")")
-#INSTALL(FILES ${tribe_IMAGES} DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/images)
-INSTALL(FILES ${tribe_STYLESHEET} DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/style)
-#INSTALL(FILES ${tribe_MUSIC} DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/music)
-#Don't force the install prefix
-INSTALL(FILES etc/cities.kml DESTINATION ${DATA_INSTALL_DIR}/marble/data/placemarks)
-INSTALL(FILES etc/timezones DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/config)
-INSTALL(FILES etc/all_locales DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/config)
-INSTALL(FILES etc/all_kde_langpacks DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/config)
+install(TARGETS tribe DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
+install(FILES ${tribe_SCRIPTS} DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/scripts)
+install(DIRECTORY scripts/postinstall-functions DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/scripts)
+install(FILES data/postinstall.conf DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/config)
+install(FILES RELEASE_NOTES DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/config)
+install(FILES tribe.desktop DESTINATION ${CMAKE_INSTALL_PREFIX}/share/applications)
+install(FILES ${tribe_STYLESHEET} DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/style)
+install(FILES data/cities.kml DESTINATION ${DATA_INSTALL_DIR}/marble/data/placemarks)
+install(FILES data/timezones DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/config)
+install(FILES data/all_locales DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/config)
+install(FILES data/all_kde_langpacks DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/config)

@@ -222,7 +222,7 @@ void LocaleSelectorPage::updateLocales()
     }
 }
 
-void LocaleSelectorPage::zoomChanged(int i)
+void LocaleSelectorPage::zoomChanged(int)
 {
     disconnect(zoomSlider, SIGNAL(valueChanged(int)), this, SLOT(zoom(int)));
     zoomSlider->setValue(marble->zoom() / 20);

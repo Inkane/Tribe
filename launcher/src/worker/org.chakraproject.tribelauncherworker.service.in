@@ -1,5 +1,0 @@
-[D-BUS Service]
-Name=org.chakraproject.tribelauncherworker
-Exec=@TRIBELAUNCHER_HELPER_INSTALL_DIR@/tribelauncherworker
-User=root
-

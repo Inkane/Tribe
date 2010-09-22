@@ -115,11 +115,11 @@ private slots:
     virtual void aboutToGoToPrevious();
 
     void actionLearnMoreTriggered(bool);
-    void actionNewPartitionTableTriggered(bool);
+    void actionNewPartitionTableTriggered();
     void actionFormatToggled(bool status);
     void actionUndoTriggered(bool);
     void actionResizeTriggered(bool);
-    void actionNewTriggered(bool);
+    void actionNewTriggered();
     void actionDeleteTriggered(bool);
     void actionUnmountTriggered(bool);
 

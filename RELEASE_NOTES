@@ -1,0 +1,161 @@
+Chakra - 2010-09-20 - Version: 0.2.1.0920-kde445-gf
+--------------------------------------------------------------------------------------
+
+The Chakra Developement Team is proud to announce the availability of
+our first release candidate for our next point-release of Jaz, the live-cd using 
+our stable repositories.
+
+_______________________________
+
+"All that jazz"
+_______________________________
+
+We are working hard since March 2010 on Chakra GNU/Linux.
+10 Developers hacking, packing and writing documentations for our new Distribution.
+Chakra is a fork of ArchLinux. We are using pacman but working on our own
+package managment called akabei. Since the split we created some confusion but we
+are going in the right direction to point out our features:
+
+Over 5670 packages are now available for our new Distribution and 
+over 500 get installed by this media.
+
+To showcase our bundle-system we created cinstall - a multi-tool to create and 
+manage our bundles & packages. All those features you'll find later in shaman.
+
+We stabilized tribe and added some changes to get it even better than the last
+release. Also cinstall got improved.
+
+_______________________________
+
+What is under the hood?
+_______________________________
+
+Arch-Users will feel right at home from the start. Most stuff is the same like 
+in ArchLinux. We have our own patched kernel to fit our needs for our live-medias
+and additional features like squashfs with lzma support to squeeze even more
+on our images.
+
+All packages are recompiled by our team to get a stable system.
+
+On this image we installed translations for catala, deutsch, english and
+español. Even in live-mode you have your translated menues. More languages you
+can install thru tribe.
+
+_______________________________
+
+What programs will you find ?
+_______________________________
+
+We want to give you a minimal full functional KDE Desktop you can build on.
+We have all you can imagine of programs and plasmoids from the KDE-World in
+our repositories. Simply use cinstall or pacman to search them.
+
+Here few to point out:
+
+BlueDevil - manage your bluetooth devices
+K3B - burn your data
+Bangarang - watch your medias or TV
+Networkmanager-Plasmoid - connect to the world
+
+_______________________________
+
+Support us
+_______________________________
+
+It took us some months to pull this off, so give us some feedback ;)
+
+Test this build and report back in our forum. 
+
+Join our team to help us out with documentation, support in our forums and 
+irc-channels or pack your favorite apps as bundles or packages ...
+
+http://chakra-project.org/wiki/index.php/Get_Involved
+
+_______________________________
+
+Build-Notes
+_______________________________
+
+GTK2+
+
+This image is gtk2 free, so you will miss flashplugin in this image. Also you can't
+start nvidia-settings since that also needs gtk2. Use nvidia-xconfig instead.
+You can always install missing packages with pacman from our repositories.
+
+Read more about gtk-freeness here: http://chakra-project.org/bbs/viewtopic.php?id=2787
+
+greez
+
+Phil Miller and the Team behind Chakra GNU/Linux
+
+--------------------------------------------------------------------------------------
+
+System Requirements:
+
+    * a Intel Pentium II or higher processor or AMD64-ready CPU for 64bit
+    * 384MiB of RAM for running the live system and 512MiB of RAM for the installation
+    * around 3 Gib of available hard disk space (the more the better)
+    * a screen capable of 800 x 600 or higher resolution
+    * a reasonably fast internet connection, e.g. no modem (would be too slow)
+
+--------------------------------------------------------------------------------------
+
+Most noticeable changes & additions since 0.1.0 (Phoix):
+
+Features:
+
+    * Kernel-2.6.33.7-2 with lzma support
+    * aufs2-20100514-6
+    * KDE SC 4.4.5
+    * Xorg-Server 1.7.7
+    * Catalyst-10.6
+    * NVidia-256 and NVidia legacy series
+
+Installed locales:
+
+    * catala
+    * deutsch
+    * english
+    * español
+
+Total Installed Size:   2171,21 MB
+
+--------------------------------------------------------------------------------------
+
+Known issues:
+
+    Non so far, but you can report some if you find some.
+
+--------------------------------------------------------------------------------------
+
+Changes:
+
+since build 0.2.1:
+
+   * addedpacks
+     - ms-fonts removed
+     - acerhk, gwenview, juk, kget & ksnapshot added 
+     - cinstall updated to 0.0.2.2
+     - vlc,mplayer issue fixed
+   * tribe
+     - gui rework
+     - user creation changed
+
+since build 0.2.0:
+
+   * addedpacks
+     - updated some pkgs
+   * tribe
+     - gui rework
+     - enable partition table creation
+     - enable reboot
+   * desktop
+     - readded networkmanager plasmoid
+     - cleaned some folders in livemode
+     - kdm theme rework
+   * bundle-sys
+     - normal user can run bundles
+
+--------------------------------------------------------------------------------------
+
+disc created by Phil Miller (amnon - Chakra ISO-Builder)

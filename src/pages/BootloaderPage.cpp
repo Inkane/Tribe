@@ -1,6 +1,6 @@
 /***************************************************************************
- *   Copyright (C) 2008 - 2009 by Dario Freddi                             *
- *   drf@chakra-project.org                                                *
+ *   Copyright (C) 2008, 2009  Dario Freddi <drf@chakra-project.org>       *
+ *                 2010        Drake Justice <djustice@chakra-project.org> *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -18,17 +18,13 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
  ***************************************************************************/
 
-#include "BootloaderPage.h"
-
 #include "../InstallationHandler.h"
-
-#include <KDebug>
+#include "BootloaderPage.h"
 
 BootloaderPage::BootloaderPage(QWidget *parent)
         : AbstractPage(parent),
         m_handler(InstallationHandler::instance())
 {
-    qDebug() << "BootloaderPage::BootloaderPage()";
 }
 
 BootloaderPage::~BootloaderPage()
@@ -71,19 +67,16 @@ void BootloaderPage::bootloaderInstalled(int exitCode, QProcess::ExitStatus exit
 {
     disconnect(m_handler, SIGNAL(bootloaderInstalled(int, QProcess::ExitStatus)), 0, 0);
 
-    kDebug() << "Bootloader installed";
+    qDebug() << " :: grub install";
 
     Q_UNUSED(exitStatus)
 
     if (exitCode != 0) {
-        // Ouch!! Errors!!
-        kDebug() << "Error installing bootloader";
-    } else {
-        // All went well, so let's move on!
 
+    } else {
         connect(m_handler, SIGNAL(bootloaderInstalled(int, QProcess::ExitStatus)), SLOT(menulstInstalled(int, QProcess::ExitStatus)));
 
-        emit setProgressWidgetText(i18n("Creating menu.lst..."));
+        emit setProgressWidgetText(i18n("Creating OS list..."));
         emit updateProgressWidget(50);
 
         QString device = ui.lineEdit->text();
@@ -99,12 +92,9 @@ void BootloaderPage::menulstInstalled(int exitCode, QProcess::ExitStatus exitSta
     Q_UNUSED(exitStatus)
 
     if (exitCode != 0) {
-        // Ouch!! Errors!!
+
     } else {
-        // All went well, so let's move on!
-
         emit deleteProgressWidget();
-
         emit goToNextStep();
     }
 }

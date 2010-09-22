@@ -1,9 +1,8 @@
 
 /***************************************************************************
- *   Copyright (C) 2008 - 2009 by Dario Freddi                             *
- *   drf@chakra-project.org                                                *
- *   Copyright (C) 2008 by Lukas Appelhans                                 *
- *   l.appelhans@gmx.de                                                    *
+ *   Copyright (C) 2008, 2009  Dario Freddi <drf@chakra-project.org>       *
+ *                 2008        Lukas Appelhans <l.appelhans@gmx.de>        *
+ *                 2010        Drake Justice <djustice@chakra-project.org> *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -21,33 +20,26 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
  ***************************************************************************/
 
-#include "MainWindow.h"
-
-#include "InstallationHandler.h"
-#include "AbstractPage.h"
-#include "pages.h"
-
-#include "tribe_macros.h"
-
-#include <config-tribe.h>
-
-#include <KDebug>
-#include <KIcon>
-#include <KMessageBox>
 #include <QResizeEvent>
 #include <QCloseEvent>
 #include <QMovie>
-#include <kworkspace/kworkspace.h>
 
+#include <KIcon>
+#include <KMessageBox>
 #include <KApplication>
-#include <QDesktopWidget>
+
+#include <config-tribe.h>
+
+#include "tribe_macros.h"
+#include "pages.h"
+#include "InstallationHandler.h"
+#include "AbstractPage.h"
+#include "MainWindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
           : KMainWindow(parent,
                        (Qt::WindowFlags) KDE_DEFAULT_WINDOWFLAGS | Qt::FramelessWindowHint)
 {
-    QDesktopWidget *desktop = QApplication::desktop();
-
     QWidget *widget = new QWidget(this);
     m_ui.setupUi(widget);
 
@@ -93,7 +85,6 @@ MainWindow::MainWindow(QWidget *parent)
     m_movie = new QMovie(":/Images/images/active-page-anim-18.mng", QByteArray(), this);
     m_movie->start();
 
-    // InstallationHandler is implemented as a singleton, so be it!
     m_install = InstallationHandler::instance();
     connect(m_install, SIGNAL(errorInstalling(const QString&)), SLOT(errorOccurred(const QString&)));
 
@@ -128,9 +119,9 @@ void MainWindow::abortInstallation()
     if (KMessageBox::createKMessageBox(dialog, KIcon("dialog-warning"), msg, QStringList(),
                                        QString(), &retbool, KMessageBox::Notify) == KDialog::Yes) {
         setUpCleanupPage();
-        // Perform a clean abort
+
         InstallationHandler::instance()->abortInstallation();
-        // And quit
+
         qApp->exit(0);
     }
 
@@ -143,16 +134,6 @@ void MainWindow::toggleMusic()
 
 void MainWindow::loadPage(InstallationStep page)
 {
-    kDebug() << "Loading page";
-
-    /* Logic of page loading:
-     *
-     * We're trying to be as flexible as possible. Each page should inherit
-     * from AbstractPage, so that we can have a consistent loading.
-     *
-     * First of all, let's clean up the actual view.
-     */
-
     AbstractPage *curPage = 0;
     QWidget * wg;
 
@@ -167,9 +148,6 @@ void MainWindow::loadPage(InstallationStep page)
         m_ui.stackedWidget->removeWidget(wtmp);
         wtmp->deleteLater();
     }
-
-    /* Now time to load the page and add it to the now empty stackedWidget
-     */
 
     switch (page) {
     case MainWindow::Welcome:
@@ -228,10 +206,6 @@ void MainWindow::loadPage(InstallationStep page)
         break;
     }
 
-    /* Now let's reobtain the page by casting the widget. Then
-     * we connect the signals and slots inherited from AbstractPage.
-     */
-
     setInstallationStep(page, MainWindow::InProgress);
     m_ui.stackedWidget->setCurrentIndex(0);
     wg = m_ui.stackedWidget->widget(0);
@@ -260,12 +234,10 @@ void MainWindow::loadPage(InstallationStep page)
             connect(fPage, SIGNAL(keepChakra()), SLOT(quitToChakra()));
         }
     } else {
-        kDebug() << "uhm...";
+
     }
 
     emit readyToCreate();
-
-    kDebug() << "Page Loaded";
 }
 
 void MainWindow::setInstallationStep(InstallationStep step, StepStatus status)
@@ -378,6 +350,15 @@ void MainWindow::setInstallationStep(InstallationStep step, StepStatus status)
             m_ui.bootloaderIcon->setMovie(m_movie);
 
         break;
+
+    case MainWindow::FinishStep:
+        if (status == MainWindow::Done) {
+            m_ui.doneIcon->setPixmap(QPixmap(":/Images/images/installation-stage-done.png"));
+        } else if (status == MainWindow::ToDo) {
+            m_ui.doneIcon->setPixmap(QPixmap(":/Images/images/installation-stage-notdone.png"));
+        } else if (status == MainWindow::InProgress) {
+            m_ui.doneIcon->setMovie(m_movie);
+        }
 
     default:
         break;
@@ -516,8 +497,6 @@ void MainWindow::goToPreviousStep()
 void MainWindow::showProgressWidget()
 {
     ProgressWidget *curPage = new ProgressWidget(this);
-
-    kDebug() << "Requested progress";
 
     m_ui.stackedWidget->addWidget(curPage);
     m_ui.stackedWidget->setCurrentIndex(1);

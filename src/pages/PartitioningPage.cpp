@@ -1,6 +1,6 @@
 /***************************************************************************
- *   Copyright (C) 2008 - 2009 by Dario Freddi                             *
- *   drf@chakra-project.org                                                *
+ *   Copyright (C) 2008, 2009  Dario Freddi <drf@chakra-project.org>       *
+ *                 2010        Drake Justice <djustice@chakra-project.org> *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -18,44 +18,47 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
  ***************************************************************************/
 
-#include "PartitioningPage.h"
-
 #include <QDebug>
-
-#include <KDebug>
-#include <KMessageBox>
 
 #include <QTreeWidget>
 #include <QPainter>
 #include <QtAlgorithms>
 #include <QTimeLine>
 
-#include <src/InstallationHandler.h>
-#include "ui_tribePartition.h"
-#include <PMHandler.h>
+#include <KLineEdit>
+#include <KMessageBox>
+#include <kio/global.h>
 
 #include <tribepartitionmanager/core/device.h>
 #include <tribepartitionmanager/core/partition.h>
-#include <tribepartitionmanager/util/capacity.h>
-#include <tribepartitionmanager/fs/filesystem.h>
 #include <tribepartitionmanager/core/partitiontable.h>
+#include <tribepartitionmanager/util/capacity.h>
+#include <tribepartitionmanager/util/report.h>
 #include <tribepartitionmanager/ops/deleteoperation.h>
 #include <tribepartitionmanager/ops/createpartitiontableoperation.h>
 #include <tribepartitionmanager/ops/newoperation.h>
 #include <tribepartitionmanager/ops/resizeoperation.h>
+#include <tribepartitionmanager/fs/filesystem.h>
 #include <tribepartitionmanager/fs/filesystemfactory.h>
-#include <util/report.h>
-#include <KLineEdit>
-#include <kio/global.h>
+
+#include <PMHandler.h>
+#include <InstallationHandler.h>
+
+#include "PartitioningPage.h"
+#include "ui_tribePartition.h"
+
 
 Q_DECLARE_METATYPE(const Partition*)
 Q_DECLARE_METATYPE(Device*)
+
 const int SPACING = 4;
 const int MOUNTPOINT_ROLE = Qt::UserRole + 123;
 const int PARTITION_ROLE = Qt::UserRole + 51;
 const int DEVICE_ROLE = Qt::UserRole + 50;
+
 QStringList s_mountPoints = QStringList() << i18n("None") << "/" << "/usr" << "/home" << "/var" << "/tmp" << "/opt"
                                           << "swap" << i18n("Other...");
+
 QHash<const Partition*, QString> s_partitionToMountPoint;
 
 bool caseInsensitiveLessThan(const QString& s1, const QString& s2)
@@ -217,6 +220,7 @@ void PartitionDelegate::paint(QPainter * painter, const QStyleOptionViewItem & o
 
 void PartitionDelegate::updateEditorGeometry(QWidget* editor, const QStyleOptionViewItem& opt, const QModelIndex& index) const
 {
+    Q_UNUSED(index);
     QStyleOptionViewItemV4 option(opt);
     QComboBox *comboBox = qobject_cast<QComboBox*>(editor);
     comboBox->resize(QSize(option.rect.width() / 5 - SPACING * 2, option.rect.height() / 2 - SPACING * 2));
@@ -226,10 +230,11 @@ void PartitionDelegate::updateEditorGeometry(QWidget* editor, const QStyleOption
 
 QSize PartitionDelegate::sizeHint(const QStyleOptionViewItem & option, const QModelIndex & index) const
 {
+    Q_UNUSED(index);
     return QSize(0, QFontMetrics(option.font).height() * 2 + 4 * SPACING);
 }
 
-///////////////
+/////////////// tree widget item
 
 class PartitionTreeWidgetItem : public QTreeWidgetItem
 {
@@ -249,7 +254,7 @@ class PartitionTreeWidgetItem : public QTreeWidgetItem
         Device* m_Device;
 };
 
-///////////////
+/////////////// partition view widget
 
 PartitionViewWidget::PartitionViewWidget(QWidget* parent)
         : QTreeWidget(parent)
@@ -290,7 +295,6 @@ void PartitionViewWidget::setEnabled(bool enabled)
 
     QTreeView::setEnabled(enabled);
 
-    // Ok: now
     if (enabled) {
         m_fadeTimeLine->setDirection(QTimeLine::Backward);
         m_fadeTimeLine->start();
@@ -409,13 +413,13 @@ void PartitioningPage::createWidget()
     PMHandler::instance()->reload();
 }
 
-void PartitioningPage::actionNewPartitionTableTriggered(bool b)
+void PartitioningPage::actionNewPartitionTableTriggered()
 {
     int ret;
 
     if (m_ui->treeWidget->currentItem()->childCount() > 0) {
         ret = KMessageBox::questionYesNo(0, "The selected volume already has a partition table.. Overwrite it?", "Warning");
-        if (ret = KMessageBox::Yes) {
+        if (ret == KMessageBox::Yes) {
             QProcess p;
             p.start("parted -s " + m_ui->treeWidget->currentItem()->data(0, 52).toString() + " mktable msdos");
             p.waitForFinished();
@@ -618,7 +622,6 @@ void PartitioningPage::actionUnmountTriggered(bool )
     // Delete the partition
     Partition *p = device->partitionTable()->findPartitionBySector(partition->firstSector(), PartitionRole(PartitionRole::Any));
 
-    // TODO: Maybe handle errors here
     Report *rep = new Report(0);
     p->unmount(*rep);
     rep->deleteLater();
@@ -651,7 +654,7 @@ void PartitioningPage::applyFormat()
     disconnect(m_ui->editPartitionCancelButton, SIGNAL(clicked(bool)), this, SLOT(cancelFormat()));
     disconnect(m_ui->editPartitionOkButton, SIGNAL(clicked(bool)), this, SLOT(applyFormat()));
     disconnect(m_ui->actionFormat, SIGNAL(toggled(bool)), this, SLOT(actionFormatToggled(bool)));
-    // Ok, kewl.
+
     const Partition *p = m_ui->treeWidget->selectedItems().first()->data(0, PARTITION_ROLE).value<const Partition*>();
     m_toFormat.insert(p, m_ui->filesystemBox->currentText());
     m_ui->actionFormat->setChecked(true);
@@ -667,7 +670,6 @@ void PartitioningPage::cancelFormat()
     disconnect(m_ui->editPartitionCancelButton, SIGNAL(clicked(bool)), this, SLOT(cancelFormat()));
     disconnect(m_ui->editPartitionOkButton, SIGNAL(clicked(bool)), this, SLOT(applyFormat()));
 
-    // Ditch it
     m_ui->actionFormat->setChecked(false);
     const Partition *p = m_ui->treeWidget->selectedItems().first()->data(0, PARTITION_ROLE).value<const Partition*>();
     m_toFormat.remove(p);
@@ -685,7 +687,6 @@ void PartitioningPage::actionDeleteTriggered(bool )
 
     PMHandler::instance()->operationStack().push(new DeleteOperation(*device, p));
 
-    // Reload
     populateTreeWidget();
 }
 
@@ -694,7 +695,7 @@ void PartitioningPage::actionLearnMoreTriggered(bool )
 
 }
 
-void PartitioningPage::actionNewTriggered(bool )
+void PartitioningPage::actionNewTriggered()
 {
     m_ui->typeBox->clear();
     VisibleParts parts = ShrinkPart;
@@ -718,9 +719,6 @@ void PartitioningPage::actionNewTriggered(bool )
     qint64 minSize = qMax(m_newPartition->sectorsUsed(), m_newPartition->minimumSectors()) * m_newPartition->sectorSize();
     qint64 maxSize = qMin(m_newPartition->length(), m_newPartition->maximumSectors()) * m_newPartition->sectorSize();
 
-    qDebug() << minSize << maxSize;
-    qDebug() << minSize / m_newPartition->sectorSize() << maxSize / m_newPartition->sectorSize();
-
     m_ui->sizeSpinBox->setRange(Capacity(minSize).toInt(Capacity::MiB), Capacity(maxSize).toInt(Capacity::MiB));
     m_ui->sizeSlider->setRange(Capacity(minSize).toInt(Capacity::MiB), Capacity(maxSize).toInt(Capacity::MiB));
 
@@ -743,7 +741,6 @@ void PartitioningPage::applyNew()
     qint64 lastSector = (m_newPartition->lastSector() - m_newPartition->firstSector()) / m_ui->sizeSpinBox->maximum();
     lastSector *= m_ui->sizeSpinBox->value();
     lastSector += m_newPartition->firstSector();
-    qDebug() << lastSector << m_ui->sizeSpinBox->maximum();
     m_newPartition->deleteFileSystem();
     m_newPartition->setLastSector(lastSector);
 
@@ -782,6 +779,7 @@ void PartitioningPage::cancelNew()
     disconnect(m_ui->treeWidget, SIGNAL(itemSelectionChanged()), this, SLOT(cancelNew()));
     disconnect(m_ui->editPartitionCancelButton, SIGNAL(clicked(bool)), this, SLOT(cancelNew()));
     disconnect(m_ui->editPartitionOkButton, SIGNAL(clicked(bool)), this, SLOT(applyNew()));
+
     delete m_newPartition;
     setVisibleParts(None);
 }
@@ -848,7 +846,6 @@ void PartitioningPage::aboutToGoToNext()
 
     if (m_mode == EasyMode) {
         if (partition != 0) {
-            qDebug() << "It's a partition";
             // It's a partition
             // First of all check if the minimum size is actually respected.
             if (partition->capacity() < InstallationHandler::instance()->minSizeForTarget()) {
@@ -862,11 +859,9 @@ void PartitioningPage::aboutToGoToNext()
 
             if (partition->fileSystem().type() == FileSystem::Unknown) {
                 // All fine, let's go!
-                qDebug() << "It's unformatted, preparing";
                 PMHandler::instance()->preparePartitions(partition, device);
             } else {
                 // Erase and go
-                qDebug() << "It's not unformatted, deleting and preparing" << partition->fileSystem().name();
                 Partition *p = device->partitionTable()->findPartitionBySector(partition->firstSector(),
                                                                                PartitionRole(PartitionRole::Any));
 
@@ -917,13 +912,10 @@ void PartitioningPage::aboutToGoToNext()
                     if (text == "/")
                         m_install->setRootDevice(QString(partition->devicePath()).left(-1));
                     PMHandler::instance()->addSectorToMountList(device, partition->firstSector(), text, m_toFormat[partition]);
-                    qDebug() << "Setting partition to format with" << m_toFormat[partition];
                 } else {
                     PMHandler::instance()->addSectorToMountList(device, partition->firstSector(), text);
                 }
-                qDebug() << "Added " << text << partition->devicePath();
             } else if (!text.isEmpty() && text != "None") {
-                // It's not a valid mountpoint
                 KMessageBox::error(this, i18n("You have selected '%1' as a mountpoint, which is not valid. A valid mountpoint "
                                               "always starts with '/' and represents a directory on disk", text),
                                    i18n("Target's capacity not sufficient"));

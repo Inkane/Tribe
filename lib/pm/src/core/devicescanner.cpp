@@ -1,6 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2008 - 2009 by Dario Freddi                             *
- *   drf@chakra-project.org                                                *
+ *   Copyright (C) 2010 by Volker Lanz <vl@fidra.de                        *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -15,39 +14,57 @@
  *   You should have received a copy of the GNU General Public License     *
  *   along with this program; if not, write to the                         *
  *   Free Software Foundation, Inc.,                                       *
- *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
+ *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA            *
  ***************************************************************************/
 
-#include "TribeLauncher.h"
+#include "core/devicescanner.h"
 
-#include <KUniqueApplication>
-#include <kcmdlineargs.h>
-#include <kaboutdata.h>
+#include "backend/corebackend.h"
+#include "backend/corebackendmanager.h"
+
+#include "core/operationstack.h"
+#include "core/device.h"
+
 #include <klocale.h>
+#include <kdebug.h>
 
-int main(int argc, char **argv)
+/** Constructs a DeviceScanner
+	@param ostack the OperationStack where the devices will be created
+*/
+DeviceScanner::DeviceScanner(QObject* parent, OperationStack& ostack) :
+	QThread(parent),
+	m_OperationStack(ostack)
 {
-    KLocale::setMainCatalog("tribe");
+	setupConnections();
+}
 
-    KAboutData aboutData("tribelauncher", 0, ki18n("Tribe Launcher"),
-                         "1.0", ki18n("An auto updater and launcher for Tribe"), KAboutData::License_GPL,
-                         ki18n("(c) 2008 the Chakra Development Team"), ki18n("team@chakra-project.org"), "http://chakra-project.org");
+void DeviceScanner::setupConnections()
+{
+    CoreBackendManager::self()->load("plugintribepmlibparted");
+	connect(CoreBackendManager::self()->backend(), SIGNAL(scanProgress(QString,int)), SIGNAL(progress(QString,int)));
+}
 
-    aboutData.addAuthor(ki18n("Dario Freddi"), ki18n("Developer"), "drf@chakra-project.org", "http://drfav.wordpress.com");
+void DeviceScanner::clear()
+{
+	operationStack().clearOperations();
+	operationStack().clearDevices();
+}
 
-    KCmdLineArgs::init(argc, argv, &aboutData);
+void DeviceScanner::run()
+{
+	scan();
+}
 
-    KApplication app(true);
+void DeviceScanner::scan()
+{
+	emit progress(QString(), 0);
 
-    app.setWindowIcon(KIcon("tribe"));
+	clear();
 
-    KDialog *dlg = new KDialog(0, Qt::FramelessWindowHint);
-    dlg->setButtons(0);
+	QList<Device*> deviceList = CoreBackendManager::self()->backend()->scanDevices();
 
-    TribeLauncher *launcher = new TribeLauncher;
-    dlg->setMainWidget(launcher);
+	foreach(Device* d, deviceList)
+		operationStack().addDevice(d);
 
-    dlg->show();
-
-    return app.exec();
+	operationStack().sortDevices();
 }

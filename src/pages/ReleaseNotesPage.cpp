@@ -39,12 +39,12 @@ void ReleaseNotesPage::createWidget()
 {
     ui.setupUi(this);
 
-    QFile file(QString(QString(CONFIG_INSTALL_PATH) + "RELEASE_NOTES"));
+    QFile file(QString(QString(CONFIG_INSTALL_PATH) + "RELEASE_NOTES.html"));
 
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
         return;
 
-    ui.textEdit->setPlainText(QString::fromUtf8(file.readAll()));
+    ui.textBrowser->setHtml(QString::fromUtf8(file.readAll()));
 
     file.close();
 }

@@ -63,16 +63,16 @@ job_configure_users()
 	echo "Your current screen resolution is: $CURRENT_RES"
 	echo "Try to link right backround.jpg"
 
-	FILE="/usr/share/wallpapers/ashoc/contents/images/$CURRENT_RES.jpg"
+	FILE="/usr/share/wallpapers/${THEME}/contents/images/$CURRENT_RES.jpg"
 
 	if [ -f $FILE ];
 	then
 	  echo "Linking file $FILE"
-	  chroot ${mountpoint} ln -sf $FILE /usr/share/apps/kdm/themes/ashoc/background.jpg
+	  chroot ${mountpoint} ln -sf $FILE /usr/share/apps/kdm/themes/${THEME}/background.jpg
 	else
 	echo "File $FILE does not exists! Linking 1280x800.jpg"
 	  CURRENT_RES="1280x800"
-	  chroot ${mountpoint} ln -sf $FILE /usr/share/apps/kdm/themes/ashoc/background.jpg
+	  chroot ${mountpoint} ln -sf $FILE /usr/share/apps/kdm/themes/${THEME}/background.jpg
 	fi
 
 	msg "chown ${user_name} /home/${user_name}"

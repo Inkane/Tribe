@@ -47,12 +47,12 @@ job_initialize_target()
 	cp -vf /usr/share/icons/default/index.theme ${mountpoint}/usr/share/icons/default/index.theme
 
 	msg "configure kdmrc"
-	sed -i -e 's~^.*Theme=/.*~Theme=/usr/share/apps/kdm/themes/ashoc~' ${mountpoint}/usr/share/config/kdm/kdmrc
+	sed -i -e "s~^.*Theme=/.*~Theme=/usr/share/apps/kdm/themes/${THEME}~" ${mountpoint}/usr/share/config/kdm/kdmrc
 	sed -i -e 's~^.*#AntiAliasing=.*~AntiAliasing=true~' ${mountpoint}/usr/share/config/kdm/kdmrc
 	sed -i -e 's~^.*#TerminateServer=.*~TerminateServer=true~' ${mountpoint}/usr/share/config/kdm/kdmrc
 
 	# Set Chakra Version
-	echo "0.2.831" > ${mountpoint}/etc/chakra-release
+	echo "git-checkout" > ${mountpoint}/etc/chakra-release
 	
 	msg_job_done
 }

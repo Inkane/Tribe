@@ -413,7 +413,7 @@ void PartitioningPage::createWidget()
     PMHandler::instance()->reload();
 }
 
-void PartitioningPage::actionNewPartitionTableTriggered()
+void PartitioningPage::actionNewPartitionTableTriggered(bool )
 {
     int ret;
 
@@ -695,7 +695,7 @@ void PartitioningPage::actionLearnMoreTriggered(bool )
 
 }
 
-void PartitioningPage::actionNewTriggered()
+void PartitioningPage::actionNewTriggered(bool )
 {
     m_ui->typeBox->clear();
     VisibleParts parts = ShrinkPart;

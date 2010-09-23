@@ -104,13 +104,16 @@ target_link_libraries(tribe
                       -lsolidcontrol
 )
 
+file(GLOB POSTINSTALL_FUNCTIONS
+    scripts/postinstall-functions/*
+)
 file(GLOB tribe_SCRIPTS
     scripts/*.sh
 )
 
 install(TARGETS tribe DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
 install(FILES ${tribe_SCRIPTS} DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/scripts)
-install(DIRECTORY scripts/postinstall-functions DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/scripts)
+install(FILES ${POSTINSTALL_FUNCTIONS} DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/scripts)
 install(FILES data/postinstall.conf DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/config)
 install(FILES RELEASE_NOTES DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/config)
 install(FILES tribe.desktop DESTINATION ${CMAKE_INSTALL_PREFIX}/share/applications)

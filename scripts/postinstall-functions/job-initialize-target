@@ -52,7 +52,7 @@ job_initialize_target()
 	sed -i -e 's~^.*#TerminateServer=.*~TerminateServer=true~' ${mountpoint}/usr/share/config/kdm/kdmrc
 
 	# Set Chakra Version
-	echo "0.2.831" > ${mountpoint}/etc/chakra-release
+	echo "git-checkout" > ${mountpoint}/etc/chakra-release
 	
 	msg_job_done
 }

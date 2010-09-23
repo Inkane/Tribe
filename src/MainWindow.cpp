@@ -1,4 +1,3 @@
-
 /***************************************************************************
  *   Copyright (C) 2008, 2009  Dario Freddi <drf@chakra-project.org>       *
  *                 2008        Lukas Appelhans <l.appelhans@gmx.de>        *
@@ -126,12 +125,6 @@ void MainWindow::abortInstallation()
 
         qApp->exit(0);
     }
-
-}
-
-void MainWindow::toggleMusic()
-{
-
 }
 
 void MainWindow::loadPage(InstallationStep page)
@@ -235,8 +228,6 @@ void MainWindow::loadPage(InstallationStep page)
             connect(fPage, SIGNAL(reboot()), SLOT(quitAndReboot()));
             connect(fPage, SIGNAL(keepChakra()), SLOT(quitToChakra()));
         }
-    } else {
-
     }
 
     emit readyToCreate();

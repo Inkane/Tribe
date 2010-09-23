@@ -20,19 +20,18 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
  ***************************************************************************/
 
-#include "UserCreationPage.h"
-
-#include "../InstallationHandler.h"
-
 #include <QDir>
 
 #include <KIcon>
 #include <KDebug>
 #include <KMessageBox>
-#include <kio/job.h>
-#include <kio/netaccess.h>
+#include <KIO/Job>
+#include <KIO/NetAccess>
 
 #include <config-tribe.h>
+
+#include "../InstallationHandler.h"
+#include "UserCreationPage.h"
 
 UserCreationPage::UserCreationPage(QWidget *parent)
         : AbstractPage(parent),

@@ -18,16 +18,12 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
  ***************************************************************************/
 
-#include "SettingsPage.h"
-
-#include "../InstallationHandler.h"
-
 #include <QProcess>
 #include <QRegExpValidator>
 #include <QFile>
 
-#include <KIcon>
-#include <QMessageBox>
+#include "../InstallationHandler.h"
+#include "SettingsPage.h"
 
 static const char* HOST_NAME_REGEXP = "[a-z0-9-]*";
 

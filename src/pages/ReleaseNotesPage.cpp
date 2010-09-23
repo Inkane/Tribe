@@ -18,13 +18,13 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
  ***************************************************************************/
 
-#include "ReleaseNotesPage.h"
-
-#include <config-tribe.h>
-
 #include <QFile>
 
 #include <KIcon>
+
+#include <config-tribe.h>
+
+#include "ReleaseNotesPage.h"
 
 ReleaseNotesPage::ReleaseNotesPage(QWidget *parent)
         : AbstractPage(parent)
@@ -39,7 +39,7 @@ void ReleaseNotesPage::createWidget()
 {
     ui.setupUi(this);
 
-    QFile file(QString(QString(CONFIG_INSTALL_PATH) + "release_notes.txt"));
+    QFile file(QString(QString(CONFIG_INSTALL_PATH) + "RELEASE_NOTES"));
 
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
         return;

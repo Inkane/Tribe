@@ -18,16 +18,16 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
  ***************************************************************************/
 
-#include "ReadyInstallPage.h"
-
 #include <KMessageBox>
-#include <klocalizedstring.h>
+#include <KLocalizedString>
 #include <KPushButton>
 #include <PMHandler.h>
 
 #include <tribepartitionmanager/ops/operation.h>
 #include <tribepartitionmanager/core/partition.h>
 #include <tribepartitionmanager/fs/filesystem.h>
+
+#include "ReadyInstallPage.h"
 
 ReadyInstallPage::ReadyInstallPage(QWidget *parent)
         : AbstractPage(parent),

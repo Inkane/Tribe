@@ -1,8 +1,7 @@
 /***************************************************************************
- *   Copyright (C) 2008 - 2009 by Dario Freddi                             *
- *   drf@chakra-project.org                                                *
- *   Copyright (C) 2008 by Lukas Appelhans              *
- *   l.appelhans@gmx.de                   *
+ *   Copyright (C) 2008, 2009  Dario Freddi <drf@chakra-project.org>       *
+ *                 2008        Lukas Appelhans <l.appelhans@gmx.de>        *
+ *                 2010        Drake Justice <djustice@chakra-project.org> *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -23,20 +22,13 @@
 #ifndef MAINWINDOW
 #define MAINWINDOW
 
-#include "ui_tribeBase.h"
-
 #include <QWidget>
+
 #include <KMainWindow>
 
-#include <phonon/phononnamespace.h>
-#include <phonon/audiooutput.h>
-#include <phonon/seekslider.h>
-#include <phonon/mediaobject.h>
-#include <phonon/volumeslider.h>
-#include <phonon/backendcapabilities.h>
+#include "ui_tribeBase.h"
 
 class InstallationHandler;
-class OrgKdeKSMServerInterfaceInterface;
 class QMovie;
 
 class MainWindow : public KMainWindow
@@ -78,7 +70,6 @@ protected:
     void closeEvent(QCloseEvent *evt);
 
 private slots:
-    void toggleMusic();
     void loadPage(InstallationStep page);
     void setInstallationStep(InstallationStep step, StepStatus status);
     void abortInstallation();
@@ -103,9 +94,6 @@ signals:
     void readyToCreate();
 
 private:
-    Phonon::MediaObject *mediaObject;
-    Phonon::AudioOutput *audioOutput;
-
     Ui::TribeBase m_ui;
     InstallationStep m_currAction;
     InstallationHandler *m_install;

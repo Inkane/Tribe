@@ -30,11 +30,13 @@
 
 #include <config-tribe.h>
 
-#include "tribe_macros.h"
 #include "pages.h"
 #include "InstallationHandler.h"
 #include "AbstractPage.h"
 #include "MainWindow.h"
+
+#define PAGE_CAST( C ) qobject_cast<AbstractPage *>(C)
+#define FINISH_CAST( C ) qobject_cast<FinishPage *>(C)
 
 MainWindow::MainWindow(QWidget *parent)
           : KMainWindow(parent,

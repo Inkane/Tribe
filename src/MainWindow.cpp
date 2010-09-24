@@ -446,7 +446,8 @@ void MainWindow::goToPreviousStep()
         break;
 
     case MainWindow::Language:
-        m_currAction = MainWindow::LicenseApproval;
+        m_currAction = MainWindow::ReleaseNotes;
+        setInstallationStep(MainWindow::LicenseApproval, MainWindow::ToDo);
         setInstallationStep(MainWindow::Language, MainWindow::ToDo);
         break;
 

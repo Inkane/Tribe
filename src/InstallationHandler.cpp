@@ -408,6 +408,7 @@ void InstallationHandler::postInstallDone(int eC, QProcess::ExitStatus eS)
     Q_UNUSED(eS)
 
     qDebug() << m_process->readAllStandardOutput();
+    qDebug() << m_process->readAllStandardError();
 
     if (eC != 0) {
         emit errorInstalling(i18n("Error in Postinstall script. See log for more details"));

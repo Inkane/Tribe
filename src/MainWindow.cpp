@@ -168,7 +168,6 @@ void MainWindow::loadPage(InstallationStep page)
 
     case MainWindow::CreateUser:
         m_ui.stackedWidget->addWidget(new UserCreationPage(this));
-        m_ui.previousButton->setVisible(false);
         break;
 
     case MainWindow::Partitioning:

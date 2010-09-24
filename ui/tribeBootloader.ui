@@ -111,7 +111,7 @@ just leave the default value (hd0).</string>
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <spacer name="horizontalSpacer">
+      <spacer name="horizontalSpacerX">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>

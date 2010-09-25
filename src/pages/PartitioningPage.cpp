@@ -440,7 +440,7 @@ void PartitioningPage::advancedRadioChanged(bool toggled)
         m_mode = AdvancedMode;
         m_ui->actionDelete->setVisible(true);
         m_ui->actionNew->setVisible(true);
-        m_ui->actionResize->setVisible(true);
+        m_ui->actionResize->setVisible(false);
         m_ui->actionNewPartitionTable->setVisible(true);
         m_ui->actionFormat->setVisible(true);
         QTreeWidgetItemIterator it(m_ui->treeWidget);
@@ -469,11 +469,11 @@ void PartitioningPage::easyRadioChanged(bool toggled)
 {
     if (toggled) {
         m_mode = EasyMode;
-        m_ui->actionDelete->setVisible(false);
-        m_ui->actionNew->setVisible(false);
+        m_ui->actionDelete->setVisible(true);
+        m_ui->actionNew->setVisible(true);
         m_ui->actionResize->setVisible(false);
         m_ui->actionNewPartitionTable->setVisible(true);
-        m_ui->actionFormat->setVisible(false);
+        m_ui->actionFormat->setVisible(true);
         QTreeWidgetItemIterator it(m_ui->treeWidget);
         while (*it) {
             m_ui->treeWidget->closePersistentEditor(*it);

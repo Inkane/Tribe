@@ -199,7 +199,6 @@ void PartitionDelegate::paint(QPainter * painter, const QStyleOptionViewItem & o
     QRect textRect = optV4.rect;
     textRect.setX(iconRect.x() + iconRect.width() + SPACING);
     textRect = painter->boundingRect(textRect, Qt::AlignLeft | Qt::AlignTop, optV4.text);
-    //textRect.setWidth(optV4.rect.width() / 2);
 
     painter->drawText(textRect, optV4.text);
 
@@ -344,7 +343,6 @@ void PartitionViewWidget::paintEvent(QPaintEvent* event)
 PartitioningPage::PartitioningPage(QWidget *parent)
         : AbstractPage(parent)
         , m_ui(new Ui::tribePartition)
-        , m_mode(EasyMode)
         , m_install(InstallationHandler::instance())
 {
 }
@@ -357,7 +355,6 @@ void PartitioningPage::createWidget()
 {
     m_ui->setupUi(this);
 
-    // Icons
     m_ui->actionUnmount->setIcon(KIcon("object-unlocked"));
     m_ui->actionDelete->setIcon(KIcon("edit-delete"));
     m_ui->actionNew->setIcon(KIcon("document-new"));
@@ -401,11 +398,7 @@ void PartitioningPage::createWidget()
     qSort(fsNames.begin(), fsNames.end(), caseInsensitiveLessThan);
     m_ui->filesystemBox->addItems(fsNames);
 
-    // Prepare for mode handling
-    m_ui->easyRadio->setChecked(true);
-    connect(m_ui->advancedRadio, SIGNAL(toggled(bool)), this, SLOT(advancedRadioChanged(bool)));
-    connect(m_ui->easyRadio, SIGNAL(toggled(bool)), this, SLOT(easyRadioChanged(bool)));
-    easyRadioChanged(true);
+    enableNextButton(false);
 
     // Now set up PartitionManager and load
     PMHandler::instance();
@@ -432,59 +425,6 @@ void PartitioningPage::actionNewPartitionTableTriggered(bool )
     }
 
     PMHandler::instance()->reload();
-}
-
-void PartitioningPage::advancedRadioChanged(bool toggled)
-{
-    if (toggled) {
-        m_mode = AdvancedMode;
-        m_ui->actionDelete->setVisible(true);
-        m_ui->actionNew->setVisible(true);
-        m_ui->actionResize->setVisible(false);
-        m_ui->actionNewPartitionTable->setVisible(true);
-        m_ui->actionFormat->setVisible(true);
-        QTreeWidgetItemIterator it(m_ui->treeWidget);
-        while(*it) {
-            const Partition *partition = (*it)->data(0, PARTITION_ROLE).value<const Partition*>();
-            if (partition != 0) {
-                if (!partition->roles().has(PartitionRole::Extended) &&
-                    partition->fileSystem().type() != FileSystem::LinuxSwap &&
-                    partition->fileSystem().type() != FileSystem::Unknown &&
-                    partition->fileSystem().type() != FileSystem::Unformatted) {
-                    m_ui->treeWidget->openPersistentEditor(*it);
-                }
-            }
-            ++it;
-        }
-        m_ui->descriptionLabel->setText(i18n("Please select a mountpoint for your existing partitions. At least '/' should be "
-                                             "mounted. No permanent changes to your hard drive will be made when you will "
-                                             "press \"Next\""));
-        // For now, just enable it
-        enableNextButton(true);
-        currentItemChanged(m_ui->treeWidget->currentItem(), 0);
-    }
-}
-
-void PartitioningPage::easyRadioChanged(bool toggled)
-{
-    if (toggled) {
-        m_mode = EasyMode;
-        m_ui->actionDelete->setVisible(true);
-        m_ui->actionNew->setVisible(true);
-        m_ui->actionResize->setVisible(false);
-        m_ui->actionNewPartitionTable->setVisible(true);
-        m_ui->actionFormat->setVisible(true);
-        QTreeWidgetItemIterator it(m_ui->treeWidget);
-        while (*it) {
-            m_ui->treeWidget->closePersistentEditor(*it);
-            ++it;
-        }
-        m_ui->descriptionLabel->setText(i18n("Please choose where Chakra will be installed. Pick an existing partition or "
-                                             "unallocated space; Tribe will take care of preparing it for the best possible "
-                                             "experience. No permanent changes to your hard drive will be made when you will "
-                                             "press \"Next\""));
-        currentItemChanged(m_ui->treeWidget->currentItem(), 0);
-    }
 }
 
 void PartitioningPage::setVisibleParts(PartitioningPage::VisibleParts parts)
@@ -525,9 +465,10 @@ void PartitioningPage::populateTreeWidget()
 {
     m_ui->actionUndo->setEnabled(PMHandler::instance()->operationStack().size() > 0);
     QReadLocker lockDevices(&PMHandler::instance()->operationStack().lock());
-    // Populate the widget!
+
     disconnect(m_ui->treeWidget, SIGNAL(currentItemChanged(QTreeWidgetItem*,QTreeWidgetItem*)),
                this, SLOT(currentItemChanged(QTreeWidgetItem*,QTreeWidgetItem*)));
+
     m_ui->treeWidget->clear();
     foreach(Device* dev, PMHandler::instance()->operationStack().previewDevices()) {
         QTreeWidgetItem* deviceItem = new PartitionTreeWidgetItem(dev);
@@ -554,16 +495,42 @@ void PartitioningPage::populateTreeWidget()
             }
         }
     }
+
     connect(m_ui->treeWidget, SIGNAL(currentItemChanged(QTreeWidgetItem*,QTreeWidgetItem*)),
             this, SLOT(currentItemChanged(QTreeWidgetItem*,QTreeWidgetItem*)));
+
+    connect(m_ui->treeWidget->model(), SIGNAL(dataChanged(QModelIndex,QModelIndex)), this, SLOT(dataChanged(QModelIndex,QModelIndex)));
+
     currentItemChanged(0, 0);
+
     m_ui->treeWidget->setEnabled(true);
-    // Also, take action depending on the mode
-    if (m_ui->advancedRadio->isChecked()) {
-        advancedRadioChanged(true);
-    } else {
-        easyRadioChanged(true);
+    m_ui->actionDelete->setVisible(true);
+    m_ui->actionNew->setVisible(true);
+    m_ui->actionResize->setVisible(false);
+    m_ui->actionNewPartitionTable->setVisible(true);
+    m_ui->actionFormat->setVisible(true);
+
+    QTreeWidgetItemIterator it(m_ui->treeWidget);
+    while(*it) {
+        const Partition *partition = (*it)->data(0, PARTITION_ROLE).value<const Partition*>();
+        if (partition != 0) {
+            if (!partition->roles().has(PartitionRole::Extended) &&
+                partition->fileSystem().type() != FileSystem::LinuxSwap &&
+                partition->fileSystem().type() != FileSystem::Unknown &&
+                partition->fileSystem().type() != FileSystem::Unformatted) {
+
+                m_ui->treeWidget->openPersistentEditor(*it);
+            }
+        }
+        ++it;
     }
+
+    m_ui->descriptionLabel->setText(i18n("Please select a mountpoint for your existing partitions. At least '/' should be "
+                                         "mounted. No permanent changes to your hard drive will be made when you will "
+                                         "press \"Next\""));
+    // For now, just enable it
+    enableNextButton(true);
+    currentItemChanged(m_ui->treeWidget->currentItem(), 0);
 }
 
 void PartitioningPage::currentItemChanged(QTreeWidgetItem* current, QTreeWidgetItem* )
@@ -596,13 +563,6 @@ void PartitioningPage::currentItemChanged(QTreeWidgetItem* current, QTreeWidgetI
         m_ui->actionFormat->setChecked(m_toFormat.contains(partition));
         connect(m_ui->actionFormat, SIGNAL(toggled(bool)), this, SLOT(actionFormatToggled(bool)));
         m_ui->actionNewPartitionTable->setEnabled(false);
-
-        // If we're on easy mode, let's see what we got
-        if (m_mode == EasyMode) {
-            enableNextButton(DeleteOperation::canDelete(partition) || NewOperation::canCreateNew(partition));
-        } else {
-            enableNextButton(true);
-        }
     } else {
         Device *device = current->data(0, DEVICE_ROLE).value<Device*>();
         // It's a device, disable all...
@@ -611,14 +571,34 @@ void PartitioningPage::currentItemChanged(QTreeWidgetItem* current, QTreeWidgetI
         m_ui->actionNew->setEnabled(false);
         m_ui->actionResize->setEnabled(false);
         m_ui->actionNewPartitionTable->setEnabled(true);
-
-        // If we're on easy mode, let's see what we got
-        if (m_mode == EasyMode) {
-            enableNextButton(CreatePartitionTableOperation::canCreate(device));
-        } else {
-            enableNextButton(true);
-        }
     }
+
+    QTreeWidgetItemIterator it(m_ui->treeWidget);
+    while (*it) {
+        QString text = (*it)->data(0, MOUNTPOINT_ROLE).toString();
+        if (text == "/") {
+            enableNextButton(true);
+            return;
+        }
+        ++it;
+    }
+
+    enableNextButton(false);
+}
+
+void PartitioningPage::dataChanged(QModelIndex i, QModelIndex p)
+{
+    QTreeWidgetItemIterator it(m_ui->treeWidget);
+    while (*it) {
+        QString text = (*it)->data(0, MOUNTPOINT_ROLE).toString();
+        if (text == "/") {
+            enableNextButton(true);
+            return;
+        }
+                ++it;
+    }
+
+    enableNextButton(false);
 }
 
 void PartitioningPage::actionUnmountTriggered(bool )
@@ -850,86 +830,39 @@ void PartitioningPage::aboutToGoToNext()
     const Partition *partition = m_ui->treeWidget->selectedItems().first()->data(0, PARTITION_ROLE).value<const Partition*>();
     Device *device = m_ui->treeWidget->selectedItems().first()->data(0, DEVICE_ROLE).value<Device*>();
 
-    if (m_mode == EasyMode) {
-        if (partition != 0) {
-            // It's a partition
-            // First of all check if the minimum size is actually respected.
-            if (partition->capacity() < InstallationHandler::instance()->minSizeForTarget()) {
-                // Warn and go away.
-                KMessageBox::error(this, i18n("The target you have chosen is too small. You need a target with a capacity of "
-                                              "at least %1 for a successful installation.",
+    QTreeWidgetItemIterator it(m_ui->treeWidget);
+    while (*it) {
+        QString text = (*it)->data(0, MOUNTPOINT_ROLE).toString();
+
+        if (text.startsWith('/')) {
+            const Partition *partition = (*it)->data(0, PARTITION_ROLE).value<const Partition*>();
+            Device *device = m_ui->treeWidget->selectedItems().first()->data(0, DEVICE_ROLE).value<Device*>();
+
+            // If '/' is being considered, check if the target is big enough.
+            if (text == "/" && partition->capacity() < InstallationHandler::instance()->minSizeForTarget()) {
+                KMessageBox::error(this, i18n("The partition you have chosen to mount as '/' is too small. It should "
+                                              "have a capacity of at least %1 for a successful installation.",
                                               KIO::convertSize(InstallationHandler::instance()->minSizeForTarget())),
-                                   i18n("Target's capacity not sufficient"));
-                return;
-            }
-
-            if (partition->fileSystem().type() == FileSystem::Unknown) {
-                // All fine, let's go!
-                PMHandler::instance()->preparePartitions(partition, device);
-            } else {
-                // Erase and go
-                Partition *p = device->partitionTable()->findPartitionBySector(partition->firstSector(),
-                                                                               PartitionRole(PartitionRole::Any));
-
-                PMHandler::instance()->operationStack().push(new DeleteOperation(*device, p));
-                QReadLocker lockDevices(&PMHandler::instance()->operationStack().lock());
-                foreach(Device* dev, PMHandler::instance()->operationStack().previewDevices()) {
-                    if (dev->deviceNode() == device->deviceNode()) {
-                        foreach(const Partition* p, dev->partitionTable()->children()) {
-                            if (p->fileSystem().type() == FileSystem::Unknown) {
-                                // Got it
-                                PMHandler::instance()->preparePartitions(p, dev);
-                            }
-                        }
-                    }
-                }
-            }
-        } else {
-            // It's not
-            PMHandler::instance()->operationStack().push(new CreatePartitionTableOperation(*device, PartitionTable::msdos));
-            QReadLocker lockDevices(&PMHandler::instance()->operationStack().lock());
-            foreach(Device* dev, PMHandler::instance()->operationStack().previewDevices()) {
-                if (dev->deviceNode() == device->deviceNode()) {
-                    PMHandler::instance()->preparePartitions(dev->partitionTable()->children().first(), dev);
-                }
-            }
-        }
-    } else {
-        // Advanced mode here. Just iterate over all the items and add the mountpoints.
-        QTreeWidgetItemIterator it(m_ui->treeWidget);
-        while (*it) {
-            QString text = (*it)->data(0, MOUNTPOINT_ROLE).toString();
-
-            if (text.startsWith('/')) {
-                const Partition *partition = (*it)->data(0, PARTITION_ROLE).value<const Partition*>();
-                Device *device = m_ui->treeWidget->selectedItems().first()->data(0, DEVICE_ROLE).value<Device*>();
-
-                // If '/' is being considered, check if the target is big enough.
-                if (text == "/" && partition->capacity() < InstallationHandler::instance()->minSizeForTarget()) {
-                    KMessageBox::error(this, i18n("The partition you have chosen to mount as '/' is too small. It should "
-                                                  "have a capacity of at least %1 for a successful installation.",
-                                                  KIO::convertSize(InstallationHandler::instance()->minSizeForTarget())),
-                                       i18n("Target's capacity not sufficient"));
-                    PMHandler::instance()->clearMountList();
-                    return;
-                }
-
-                if (m_toFormat.contains(partition)) {
-                    if (text == "/")
-                        m_install->setRootDevice(QString(partition->devicePath()).left(-1));
-                    PMHandler::instance()->addSectorToMountList(device, partition->firstSector(), text, m_toFormat[partition]);
-                } else {
-                    PMHandler::instance()->addSectorToMountList(device, partition->firstSector(), text);
-                }
-            } else if (!text.isEmpty() && text != "None") {
-                KMessageBox::error(this, i18n("You have selected '%1' as a mountpoint, which is not valid. A valid mountpoint "
-                                              "always starts with '/' and represents a directory on disk", text),
                                    i18n("Target's capacity not sufficient"));
                 PMHandler::instance()->clearMountList();
                 return;
             }
-            ++it;
+
+            if (m_toFormat.contains(partition)) {
+                if (text == "/")
+                    m_install->setRootDevice(QString(partition->devicePath()).left(-1));
+                PMHandler::instance()->addSectorToMountList(device, partition->firstSector(), text, m_toFormat[partition]);
+            } else {
+                PMHandler::instance()->addSectorToMountList(device, partition->firstSector(), text);
+            }
+        } else if (!text.isEmpty() && text != "None") {
+            KMessageBox::error(this, i18n("You have selected '%1' as a mountpoint, which is not valid. A valid mountpoint "
+                                          "always starts with '/' and represents a directory on disk", text),
+                               i18n("Target's capacity not sufficient"));
+            PMHandler::instance()->clearMountList();
+            return;
         }
+        ++it;
     }
 
     s_partitionToMountPoint.clear();

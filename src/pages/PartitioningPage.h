@@ -126,15 +126,13 @@ private slots:
     void populateTreeWidget();
     void setVisibleParts(VisibleParts parts);
     void currentItemChanged(QTreeWidgetItem*,QTreeWidgetItem*);
+    void dataChanged(QModelIndex,QModelIndex);
     void slotTypeChanged(const QString&);
 
     void cancelFormat();
     void applyFormat();
     void cancelNew();
     void applyNew();
-
-    void advancedRadioChanged(bool);
-    void easyRadioChanged(bool);
 
 private:
     Ui::tribePartition *m_ui;
@@ -145,8 +143,6 @@ private:
 
     QHash<const Partition*, QString> m_toFormat;
     VisibleParts m_parts;
-
-    Mode m_mode;
 
     InstallationHandler *m_install;
 };

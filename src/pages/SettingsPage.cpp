@@ -41,8 +41,6 @@ SettingsPage::SettingsPage(QWidget *parent)
         : AbstractPage(parent),
         m_install(InstallationHandler::instance())
 {
-    ui.detect_mirror->setVisible(false);
-    ui.download_doc->setVisible(false);
 }
 
 SettingsPage::~SettingsPage()
@@ -52,6 +50,9 @@ SettingsPage::~SettingsPage()
 void SettingsPage::createWidget()
 {
     ui.setupUi(this);
+
+    ui.detect_mirror->setVisible(false);
+    ui.download_doc->setVisible(false);
 
     connect(ui.pushButton, SIGNAL(toggled(bool)), ui.usb, SLOT(setVisible(bool)));
     connect(ui.pushButton, SIGNAL(toggled(bool)), ui.firewire, SLOT(setVisible(bool)));

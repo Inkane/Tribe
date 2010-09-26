@@ -41,6 +41,8 @@ SettingsPage::SettingsPage(QWidget *parent)
         : AbstractPage(parent),
         m_install(InstallationHandler::instance())
 {
+    ui.detect_mirror->setVisible(false);
+    ui.download_doc->setVisible(false);
 }
 
 SettingsPage::~SettingsPage()

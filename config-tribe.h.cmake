@@ -15,6 +15,7 @@
 #define CONFIG_INSTALL_PATH "${CMAKE_INSTALL_PREFIX}/share/tribe/config/"
 #define STYLESHEET_INSTALL_PATH "${CMAKE_INSTALL_PREFIX}/share/tribe/style/tribe.qss"
 #define TRIBE_INSTALL_PATH "${CMAKE_INSTALL_PREFIX}"
+#define DATA_INSTALL_DIR "${DATA_INSTALL_DIR}"
 
 /* Defines Tribe Build Revision (will appear on UI) */
 #define TRIBE_BUILD_REVISION "source build/from git"

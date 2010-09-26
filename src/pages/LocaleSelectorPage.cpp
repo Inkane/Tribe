@@ -115,11 +115,19 @@ void LocaleSelectorPage::createWidget()
     }
     keys.sort();
     foreach(const QString &string, keys) {
+        QStringList split = string.split("/");
+        if (m_allTimezones.contains(split.first())) {
+            m_allTimezones[split.first()].append(split.last());
+        } else {
+            m_allTimezones.insert(split.first(), QStringList(split.last()));
+            regionCombo->addItem(split.first());
+        }
         timezoneCombo->addItem(string);
     }
 
     locationsSearch->hide();
     locationsView->hide();
+    regionChanged(regionCombo->currentIndex());
 
     timezoneChanged(timezoneCombo->currentIndex());
 
@@ -127,6 +135,7 @@ void LocaleSelectorPage::createWidget()
     connect(zoomOutButton, SIGNAL(clicked()), marble, SLOT(zoomOut()));
     connect(zoomSlider, SIGNAL(valueChanged(int)), SLOT(zoom(int)));
     connect(marble, SIGNAL(zoomChanged(int)), this, SLOT(zoomChanged(int)));
+    connect(regionCombo, SIGNAL(currentIndexChanged(int)), this, SLOT(regionChanged(int)));
     connect(timezoneCombo, SIGNAL(currentIndexChanged(int)), SLOT(timezoneChanged(int)));
     connect(showLocalesCheck, SIGNAL(stateChanged(int)), SLOT(updateLocales()));
     connect(showKDELangsCheck, SIGNAL(stateChanged(int)), SLOT(updateLocales()));
@@ -144,17 +153,37 @@ bool LocaleSelectorPage::eventFilter(QObject * object, QEvent * event)
     if (object == marble && event->type() == QEvent::MouseButtonPress) {
         QVector<QModelIndex> indexes = marble->model()->whichFeatureAt(marble->mapFromGlobal(QCursor::pos()));
         if (!indexes.isEmpty()) {
-            timezoneCombo->setCurrentIndex(timezoneCombo->findText(indexes.first().data(Qt::DisplayRole).toString().replace(' ', '_'), Qt::MatchContains));
+            QHash<QString, QStringList>::const_iterator it;
+
+            for (it = m_allTimezones.constBegin(); it != m_allTimezones.constEnd(); it++) {
+                if ((*it).contains(indexes.first().data(Qt::DisplayRole).toString().replace(' ', '_'))); {
+                    regionCombo->setCurrentIndex(regionCombo->findText(it.key()));
+                    timezoneCombo->setCurrentIndex(timezoneCombo->findText(indexes.first().data(Qt::DisplayRole).toString().replace(' ', '_')));
+                }
+            }
             return true;
         }
     }
     return false;
 }
 
+void LocaleSelectorPage::regionChanged(int index)
+{
+    QStringList timezones = m_allTimezones.value(regionCombo->itemText(index));
+    QStringList::const_iterator it;
+
+    timezoneCombo->clear();
+
+    for (it = timezones.constBegin(); it != timezones.constEnd(); ++it) {
+        timezoneCombo->addItem((*it));
+    }
+    timezoneChanged(timezoneCombo->currentIndex());
+}
+
 void LocaleSelectorPage::timezoneChanged(int index)
 {
     if (!showLocalesCheck->isChecked() || !showKDELangsCheck->isChecked()) {
-        QString time = timezoneCombo->itemText(index);
+        QString time = regionCombo->itemText(regionCombo->currentIndex()) + "/" + timezoneCombo->itemText(index);
         QList<QStringList>::const_iterator it;
         for (it = locales.constBegin(); it != locales.constEnd(); ++it) {
             if ((*it).first() == time) {

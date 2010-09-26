@@ -44,6 +44,7 @@ private slots:
     void createWidget();
     void zoom(int value);
     void zoomChanged(int value);
+    void regionChanged(int index);
     void timezoneChanged(int index);
     void updateLocales();
     void aboutToGoToPrevious();
@@ -54,6 +55,7 @@ private:
     InstallationHandler * m_install;
     QStringList m_allLocales;
     QHash<QString, QString> m_allKDELangs;
+    QHash<QString, QStringList> m_allTimezones;
 };
 
 #endif /*LOCALESELECTORPAGE_H_*/

@@ -84,15 +84,15 @@ void SettingsPage::createWidget()
 
     QRegExpValidator *v = new QRegExpValidator(QRegExp(HOST_NAME_REGEXP), this);
     ui.hostnameEdit->setValidator(v);
+
     if (!m_install->hostname().isEmpty()) {
         ui.hostnameEdit->setText(m_install->hostname());
-    }
-    else if (QFile::exists("/tmp/platform-laptop")) {
+    } else if (QFile::exists("/tmp/platform-laptop")) {
         ui.hostnameEdit->setText(i18n("chakra-laptop"));
-    }
-    else if (QFile::exists("/tmp/platform-desktop")) {
+    } else if (QFile::exists("/tmp/platform-desktop")) {
         ui.hostnameEdit->setText(i18n("chakra-desktop"));
     }
+
     ui.hostnameEdit->setSelection(0, ui.hostnameEdit->text().indexOf("-"));
     ui.hostnameEdit->setFocus(Qt::TabFocusReason);
 

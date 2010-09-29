@@ -113,13 +113,25 @@ file(GLOB tribe_SCRIPTS
 )
 
 install(TARGETS tribe DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
-install(FILES ${tribe_SCRIPTS} DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/scripts)
+
+install(FILES ${tribe_SCRIPTS} 
+        DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/scripts 
+        PERMISSIONS GROUP_READ
+                    OWNER_READ
+                    WORLD_READ
+                    GROUP_EXECUTE
+                    OWNER_EXECUTE
+                    WORLD_EXECUTE)
+
 install(FILES ${POSTINSTALL_FUNCTIONS} DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/scripts)
 install(FILES data/postinstall.conf DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/config)
+
 install(FILES RELEASE_NOTES.html DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/config)
 install(FILES tribe.desktop DESTINATION ${CMAKE_INSTALL_PREFIX}/share/applications)
+
 install(FILES ${tribe_STYLESHEET} DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/style)
 install(FILES data/cities.kml DESTINATION ${DATA_INSTALL_DIR}/marble/data/placemarks)
 install(FILES data/timezones DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/config)
+
 install(FILES data/all_locales DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/config)
 install(FILES data/all_kde_langpacks DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/config)

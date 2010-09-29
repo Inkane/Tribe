@@ -56,8 +56,16 @@ const int MOUNTPOINT_ROLE = Qt::UserRole + 123;
 const int PARTITION_ROLE = Qt::UserRole + 51;
 const int DEVICE_ROLE = Qt::UserRole + 50;
 
-QStringList s_mountPoints = QStringList() << i18n("None") << "/" << "/usr" << "/home" << "/var" << "/tmp" << "/opt"
-                                          << "swap" << i18n("Other...");
+QStringList s_mountPoints = QStringList() << i18n("None") <<
+                                             "/" <<
+                                             "/usr" <<
+                                             "/home" <<
+                                             "/var" <<
+                                             "/tmp" <<
+                                             "/opt" <<
+                                             "/etc" <<
+                                             "swap" <<
+                                             i18n("Other...");
 
 QHash<const Partition*, QString> s_partitionToMountPoint;
 
@@ -66,51 +74,50 @@ bool caseInsensitiveLessThan(const QString& s1, const QString& s2)
     return s1.toLower() < s2.toLower();
 }
 
-PartitionDelegate::PartitionDelegate(QObject * parent)
-  : QStyledItemDelegate(parent)
-  , m_lockIcon("object-locked")
+PartitionDelegate::PartitionDelegate(QObject * parent) : QStyledItemDelegate(parent)
 {
+    m_lockIcon = KIcon("object-locked");
 }
 
-PartitionDelegate::~PartitionDelegate()
-{
-}
+PartitionDelegate::~PartitionDelegate() { }
 
 void PartitionDelegate::slotIndexChanged(const QString &text)
 {
     if (text == i18n("Other...")) {
-        KDialog *dial = new KDialog();
-        QWidget *w = new QWidget;
-        KLineEdit *le = new KLineEdit();
-        QLabel *lab = new QLabel(i18n("Please enter a custom mountpoint"));
-        QVBoxLayout *lay = new QVBoxLayout;
+        // custom mountpoint dialog
+        KDialog *dialog = new KDialog();
+        QWidget *dialogWidget = new QWidget;
+        KLineEdit *dialogLineEdit = new KLineEdit();
+        QLabel *dialogLabel = new QLabel(i18n("Please enter a custom mountpoint"));
+        QVBoxLayout *dialogLayout = new QVBoxLayout;
 
-        lay->addWidget(lab);
-        lay->addWidget(le);
-        w->setLayout(lay);
-        dial->setMainWidget(w);
-        dial->setButtons(KDialog::Ok | KDialog::Cancel);
+        dialogLayout->addWidget(dialogLabel);
+        dialogLayout->addWidget(dialogLineEdit);
+        dialogWidget->setLayout(dialogLayout);
+        dialog->setMainWidget(dialogWidget);
+        dialog->setButtons(KDialog::Ok | KDialog::Cancel);
 
-        if (dial->exec() == KDialog::Accepted) {
-            if (!le->text().startsWith('/')) {
+        if (dialog->exec() == KDialog::Accepted) {
+            if (!dialogLineEdit->text().startsWith('/')) {
                 KMessageBox::information(0,
                                 i18n("The mount point must start with /"),
                                 i18n("Error"));
                 return;
             }
 
-            s_mountPoints.insert(s_mountPoints.length() - 1, le->text());
+            s_mountPoints.insert(s_mountPoints.length() - 1, dialogLineEdit->text());
             QComboBox *box = qobject_cast< QComboBox* >(sender());
             box->setCurrentIndex(-1);
-            box->insertItem(box->count() - 1, le->text());
-            box->setCurrentIndex(box->findText(le->text()));
+            box->insertItem(box->count() - 1, dialogLineEdit->text());
+            box->setCurrentIndex(box->findText(dialogLineEdit->text()));
             commitData();
         }
-        dial->deleteLater();
+        dialog->deleteLater();
     } else {
-        const Partition * part = sender()->property("___Tribe__Partition__").value<const Partition*>();
+        // set duplicate mountpoints to 'none'
+
+        const Partition * part = sender()->property("_partition_").value<const Partition*>();
         if (s_partitionToMountPoint.values().contains(text) && text != "None") {
-            // set it to none
             KMessageBox::information(0,
                             i18n("You can only use each mountpoint once."),
                             i18n("Information"));
@@ -118,6 +125,7 @@ void PartitionDelegate::slotIndexChanged(const QString &text)
             box->setCurrentIndex(box->findText(i18n("None")));
             return;
         }
+
         s_partitionToMountPoint[part] = text;
     }
 }
@@ -154,7 +162,7 @@ QWidget* PartitionDelegate::createEditor(QWidget* parent, const QStyleOptionView
     Q_UNUSED(index)
     QComboBox *comboBox = new QComboBox(parent);
     comboBox->addItems(s_mountPoints);
-    comboBox->setProperty("___Tribe__Partition__", index.data(PARTITION_ROLE));
+    comboBox->setProperty("_partition_", index.data(PARTITION_ROLE));
     connect(comboBox, SIGNAL(currentIndexChanged(int)), SLOT(commitData()));
     connect(comboBox, SIGNAL(currentIndexChanged(QString)), this, SLOT(slotIndexChanged(QString)));
 
@@ -837,7 +845,7 @@ void PartitioningPage::aboutToGoToNext()
             const Partition *partition = (*it)->data(0, PARTITION_ROLE).value<const Partition*>();
             Device *device = m_ui->treeWidget->selectedItems().first()->data(0, DEVICE_ROLE).value<Device*>();
 
-            // If '/' is being considered, check if the target is big enough.
+            // If '/' is being considered, check target capacity.
             if (text == "/" && partition->capacity() < InstallationHandler::instance()->minSizeForTarget()) {
                 KMessageBox::error(this, i18n("The partition you have chosen to mount as '/' is too small. It should "
                                               "have a capacity of at least %1 for a successful installation.",
@@ -856,7 +864,7 @@ void PartitioningPage::aboutToGoToNext()
             }
         } else if (!text.isEmpty() && text != "None") {
             KMessageBox::error(this, i18n("You have selected '%1' as a mountpoint, which is not valid. A valid mountpoint "
-                                          "always starts with '/' and represents a directory on disk", text),
+                               "always starts with '/' and represents a directory on disk", text),
                                i18n("Target's capacity not sufficient"));
             PMHandler::instance()->clearMountList();
             return;

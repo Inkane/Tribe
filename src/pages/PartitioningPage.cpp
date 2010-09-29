@@ -74,17 +74,21 @@ bool caseInsensitiveLessThan(const QString& s1, const QString& s2)
     return s1.toLower() < s2.toLower();
 }
 
-PartitionDelegate::PartitionDelegate(QObject * parent) : QStyledItemDelegate(parent)
-{
-    m_lockIcon = KIcon("object-locked");
-}
+///////////// internals for the items in the partition tree
 
-PartitionDelegate::~PartitionDelegate() { }
+PartitionDelegate::PartitionDelegate(QObject * parent) : QStyledItemDelegate(parent),
+                                                         m_lockIcon("object-locked")
+{ }
+
+PartitionDelegate::~PartitionDelegate()
+{ }
 
 void PartitionDelegate::slotIndexChanged(const QString &text)
 {
+    // what to do what a partition mountpoint was chosen
     if (text == i18n("Other...")) {
         // custom mountpoint dialog
+
         KDialog *dialog = new KDialog();
         QWidget *dialogWidget = new QWidget;
         KLineEdit *dialogLineEdit = new KLineEdit();
@@ -100,29 +104,35 @@ void PartitionDelegate::slotIndexChanged(const QString &text)
         if (dialog->exec() == KDialog::Accepted) {
             if (!dialogLineEdit->text().startsWith('/')) {
                 KMessageBox::information(0,
-                                i18n("The mount point must start with /"),
-                                i18n("Error"));
+                                         i18n("The mount point must start with /"),
+                                         i18n("Error"));
+
                 return;
             }
 
             s_mountPoints.insert(s_mountPoints.length() - 1, dialogLineEdit->text());
+
             QComboBox *box = qobject_cast< QComboBox* >(sender());
             box->setCurrentIndex(-1);
             box->insertItem(box->count() - 1, dialogLineEdit->text());
             box->setCurrentIndex(box->findText(dialogLineEdit->text()));
+
             commitData();
         }
+
         dialog->deleteLater();
     } else {
-        // set duplicate mountpoints to 'none'
+        // set duplicously chosen mountpoints to 'none'
 
         const Partition * part = sender()->property("_partition_").value<const Partition*>();
         if (s_partitionToMountPoint.values().contains(text) && text != "None") {
             KMessageBox::information(0,
                             i18n("You can only use each mountpoint once."),
                             i18n("Information"));
+
             QComboBox *box = qobject_cast< QComboBox* >(sender());
             box->setCurrentIndex(box->findText(i18n("None")));
+
             return;
         }
 
@@ -137,17 +147,18 @@ void PartitionDelegate::commitData()
 
 void PartitionDelegate::setEditorData(QWidget* editor, const QModelIndex& index) const
 {
-    QComboBox *realEditor = qobject_cast<QComboBox*>(editor);
-    QString text = index.data(MOUNTPOINT_ROLE).toString();
-    if (text.isEmpty()) {
+    QComboBox *partitionCombo = qobject_cast<QComboBox*>(editor);
+    QString mountPoint = index.data(MOUNTPOINT_ROLE).toString();
+
+    if (mountPoint.isEmpty()) {
         if (s_partitionToMountPoint.contains(index.data(PARTITION_ROLE).value<const Partition*>())) {
-            text = s_partitionToMountPoint[index.data(PARTITION_ROLE).value<const Partition*>()];
-            realEditor->setCurrentIndex(realEditor->findText(text));
+            mountPoint = s_partitionToMountPoint[index.data(PARTITION_ROLE).value<const Partition*>()];
+            partitionCombo->setCurrentIndex(partitionCombo->findText(mountPoint));
         } else {
-            realEditor->setCurrentIndex(0);
+            partitionCombo->setCurrentIndex(0);
         }
     } else {
-        realEditor->setCurrentIndex(realEditor->findText(text));
+        partitionCombo->setCurrentIndex(partitionCombo->findText(mountPoint));
     }
 }
 
@@ -160,13 +171,15 @@ QWidget* PartitionDelegate::createEditor(QWidget* parent, const QStyleOptionView
 {
     Q_UNUSED(option)
     Q_UNUSED(index)
-    QComboBox *comboBox = new QComboBox(parent);
-    comboBox->addItems(s_mountPoints);
-    comboBox->setProperty("_partition_", index.data(PARTITION_ROLE));
-    connect(comboBox, SIGNAL(currentIndexChanged(int)), SLOT(commitData()));
-    connect(comboBox, SIGNAL(currentIndexChanged(QString)), this, SLOT(slotIndexChanged(QString)));
 
-    return comboBox;
+    QComboBox *combo = new QComboBox(parent);
+    combo->addItems(s_mountPoints);
+    combo->setProperty("_partition_", index.data(PARTITION_ROLE));
+
+    connect(combo, SIGNAL(currentIndexChanged(int)), SLOT(commitData()));
+    connect(combo, SIGNAL(currentIndexChanged(QString)), this, SLOT(slotIndexChanged(QString)));
+
+    return combo;
 }
 
 void PartitionDelegate::paint(QPainter * painter, const QStyleOptionViewItem & option, const QModelIndex & idx) const
@@ -175,7 +188,6 @@ void PartitionDelegate::paint(QPainter * painter, const QStyleOptionViewItem & o
     initStyleOption(&optV4, idx);
 
     painter->save();
-
     painter->setClipRect(optV4.rect);
 
     QStyle *style = QApplication::style();
@@ -188,14 +200,13 @@ void PartitionDelegate::paint(QPainter * painter, const QStyleOptionViewItem & o
     painter->drawPixmap(iconRect, optV4.icon.pixmap(iconRect.size()));
 
     const Partition *partition = idx.data(PARTITION_ROLE).value<const Partition*>();
-    if (partition) {
-        if (partition->isMounted()) {
-            // Paint a nice lock
-            QRect overlayRect = optV4.rect;
-            overlayRect.setSize(iconRect.size() / 1.7);
-            overlayRect.moveTo(QPoint(iconRect.right() - overlayRect.width(), iconRect.bottom() - overlayRect.height()));
-            painter->drawPixmap(overlayRect, m_lockIcon.pixmap(overlayRect.size()));
-        }
+    if (partition && partition->isMounted()) {
+        QRect overlayRect = optV4.rect;
+        overlayRect.setSize(iconRect.size() / 1.7);
+        overlayRect.moveTo(QPoint(iconRect.right() - overlayRect.width(),
+                                  iconRect.bottom() - overlayRect.height()));
+
+        painter->drawPixmap(overlayRect, m_lockIcon.pixmap(overlayRect.size()));
     }
 
     painter->save();
@@ -209,28 +220,33 @@ void PartitionDelegate::paint(QPainter * painter, const QStyleOptionViewItem & o
     textRect = painter->boundingRect(textRect, Qt::AlignLeft | Qt::AlignTop, optV4.text);
 
     painter->drawText(textRect, optV4.text);
-
     painter->restore();
 
     QRect typeRect;
-
-    typeRect = painter->boundingRect(optV4.rect, Qt::AlignLeft | Qt::AlignBottom, idx.data(51).toString());
-    typeRect.moveTo(QPoint(typeRect.x() + iconRect.x() + iconRect.width() + SPACING, typeRect.y() - SPACING));
+    typeRect = painter->boundingRect(optV4.rect, Qt::AlignLeft | Qt::AlignBottom,
+                                     idx.data(51).toString());
+    typeRect.moveTo(QPoint(typeRect.x() + iconRect.x() + iconRect.width() + SPACING,
+                           typeRect.y() - SPACING));
     painter->drawText(typeRect, idx.data(51).toString());
 
-    QRect sizeRect = painter->boundingRect(optV4.rect, Qt::AlignRight | Qt::AlignTop, idx.data(50).toString());
+    QRect sizeRect = painter->boundingRect(optV4.rect, Qt::AlignRight | Qt::AlignTop,
+                                           idx.data(50).toString());
     sizeRect.moveTo(QPoint(sizeRect.x() - SPACING, sizeRect.y() + SPACING));
-    painter->drawText(sizeRect, idx.data(50).toString());
 
+    painter->drawText(sizeRect, idx.data(50).toString());
     painter->restore();
 }
 
-void PartitionDelegate::updateEditorGeometry(QWidget* editor, const QStyleOptionViewItem& opt, const QModelIndex& index) const
+void PartitionDelegate::updateEditorGeometry(QWidget* editor,
+                                             const QStyleOptionViewItem& opt,
+                                             const QModelIndex& index) const
 {
     Q_UNUSED(index);
+
     QStyleOptionViewItemV4 option(opt);
     QComboBox *comboBox = qobject_cast<QComboBox*>(editor);
-    comboBox->resize(QSize(option.rect.width() / 5 - SPACING * 2, option.rect.height() / 2 - SPACING * 2));
+    comboBox->resize(QSize(option.rect.width() / 5 - SPACING * 2,
+                           option.rect.height() / 2 - SPACING * 2));
     comboBox->move(QPoint(option.rect.right() - comboBox->width() - SPACING,
                           option.rect.bottom() - comboBox->height() - SPACING));
 }
@@ -238,6 +254,7 @@ void PartitionDelegate::updateEditorGeometry(QWidget* editor, const QStyleOption
 QSize PartitionDelegate::sizeHint(const QStyleOptionViewItem & option, const QModelIndex & index) const
 {
     Q_UNUSED(index);
+
     return QSize(0, QFontMetrics(option.font).height() * 2 + 4 * SPACING);
 }
 
@@ -248,12 +265,21 @@ class PartitionTreeWidgetItem : public QTreeWidgetItem
     Q_DISABLE_COPY(PartitionTreeWidgetItem)
 
     public:
-        PartitionTreeWidgetItem(const Partition* p, Device *d) : QTreeWidgetItem(), m_Partition(p), m_Device(d) {
+        PartitionTreeWidgetItem(const Partition* p, Device *d) : QTreeWidgetItem(),
+                                                                 m_Partition(p),
+                                                                 m_Device(d)
+        {
             setData(0, DEVICE_ROLE, QVariant::fromValue(d));
             setData(0, PARTITION_ROLE, QVariant::fromValue(p));
         }
-        PartitionTreeWidgetItem(Device* d) : QTreeWidgetItem(), m_Partition(0), m_Device(d) {}
+
+        PartitionTreeWidgetItem(Device* d) : QTreeWidgetItem(),
+                                             m_Partition(0),
+                                             m_Device(d)
+        { }
+
         const Partition* partition() const { return m_Partition; }
+
         Device* device() { return m_Device; }
 
     private:
@@ -269,8 +295,9 @@ PartitionViewWidget::PartitionViewWidget(QWidget* parent)
         , m_fadeTimeLine(new QTimeLine(1200, this))
         , m_spinnerTimeLine(new QTimeLine(2000, this))
         , m_sequence("process-working", KIconLoader::SizeSmallMedium)
-        , m_backgroundPixmap(KIconLoader::global()->loadIcon("drive-harddisk-chakra", KIconLoader::Desktop,
-                            KIconLoader::SizeEnormous))
+        , m_backgroundPixmap(KIconLoader::global()->loadIcon("drive-harddisk-chakra",
+                                                             KIconLoader::Desktop,
+                                                             KIconLoader::SizeEnormous))
 {
     m_spinnerTimeLine->setFrameRange(0, m_sequence.frameCount());
     m_spinnerTimeLine->setLoopCount(0);
@@ -284,9 +311,7 @@ PartitionViewWidget::PartitionViewWidget(QWidget* parent)
 }
 
 PartitionViewWidget::~PartitionViewWidget()
-{
-
-}
+{ }
 
 void PartitionViewWidget::stopRetainingPaintEvent()
 {
@@ -346,7 +371,7 @@ void PartitionViewWidget::paintEvent(QPaintEvent* event)
 }
 
 
-///////////////
+///////////////  actual page
 
 PartitioningPage::PartitioningPage(QWidget *parent)
         : AbstractPage(parent)
@@ -364,23 +389,29 @@ void PartitioningPage::createWidget()
     m_ui->setupUi(this);
 
     m_ui->actionUnmount->setIcon(KIcon("object-unlocked"));
+    connect(m_ui->actionUnmount, SIGNAL(triggered(bool)), this, SLOT(actionUnmountTriggered(bool)));
+
     m_ui->actionDelete->setIcon(KIcon("edit-delete"));
+    connect(m_ui->actionDelete, SIGNAL(triggered(bool)), this, SLOT(actionDeleteTriggered(bool)));
+
     m_ui->actionNew->setIcon(KIcon("document-new"));
+    connect(m_ui->actionNew, SIGNAL(triggered(bool)), this, SLOT(actionNewTriggered(bool)));
+
     m_ui->actionResize->setIcon(KIcon("arrow-right-double"));
+    connect(m_ui->actionResize, SIGNAL(triggered(bool)), this, SLOT(actionResizeTriggered(bool)));
+
     m_ui->actionFormat->setIcon(KIcon("draw-eraser"));
     m_ui->actionFormat->setCheckable(true);
-    m_ui->actionNewPartitionTable->setIcon(KIcon("tab-new"));
-    m_ui->actionUndo->setIcon(KIcon("edit-undo"));
-    m_ui->actionLearn_more->setIcon(KIcon("dialog-information"));
-    m_ui->actionUndo->setEnabled(PMHandler::instance()->operationStack().operations().size() > 0);
-
-    connect(m_ui->actionUnmount, SIGNAL(triggered(bool)), this, SLOT(actionUnmountTriggered(bool)));
-    connect(m_ui->actionDelete, SIGNAL(triggered(bool)), this, SLOT(actionDeleteTriggered(bool)));
-    connect(m_ui->actionNew, SIGNAL(triggered(bool)), this, SLOT(actionNewTriggered(bool)));
-    connect(m_ui->actionResize, SIGNAL(triggered(bool)), this, SLOT(actionResizeTriggered(bool)));
     connect(m_ui->actionFormat, SIGNAL(toggled(bool)), this, SLOT(actionFormatToggled(bool)));
+
+    m_ui->actionNewPartitionTable->setIcon(KIcon("tab-new"));
     connect(m_ui->actionNewPartitionTable, SIGNAL(triggered(bool)), this, SLOT(actionNewPartitionTableTriggered(bool)));
+
+    m_ui->actionUndo->setIcon(KIcon("edit-undo"));
+    m_ui->actionUndo->setEnabled(PMHandler::instance()->operationStack().operations().size() > 0);
     connect(m_ui->actionUndo, SIGNAL(triggered(bool)), this, SLOT(actionUndoTriggered(bool)));
+
+    m_ui->actionLearn_more->setIcon(KIcon("dialog-information"));
     connect(m_ui->actionLearn_more, SIGNAL(triggered(bool)), this, SLOT(actionLearnMoreTriggered(bool)));
 
     connect(m_ui->sizeSlider, SIGNAL(valueChanged(int)), m_ui->sizeSpinBox, SLOT(setValue(int)));
@@ -388,14 +419,11 @@ void PartitioningPage::createWidget()
 
     connect(m_ui->typeBox, SIGNAL(currentIndexChanged(QString)), this, SLOT(slotTypeChanged(QString)));
 
-    // Delegate
     m_ui->treeWidget->setItemDelegate(new PartitionDelegate);
     m_ui->treeWidget->setEnabled(false);
 
-    // Make the layout invisible
     setVisibleParts(PartitioningPage::None);
 
-    // Populate filesystems
     QStringList fsNames;
     foreach (const FileSystem* fs, FileSystemFactory::map()) {
         if (fs->supportCreate() != FileSystem::cmdSupportNone && fs->type() != FileSystem::Extended) {
@@ -419,17 +447,19 @@ void PartitioningPage::actionNewPartitionTableTriggered(bool )
     int ret;
 
     if (m_ui->treeWidget->currentItem()->childCount() > 0) {
-        ret = KMessageBox::questionYesNo(0, "The selected volume already has a partition table.. Overwrite it?", "Warning");
+        ret = KMessageBox::questionYesNo(0, i18n("The selected volume already has a partition table.. Overwrite it? (this will destroy all data on the device)"), i18n("Warning"));
         if (ret == KMessageBox::Yes) {
             QProcess p;
             p.start("parted -s " + m_ui->treeWidget->currentItem()->data(0, 52).toString() + " mktable msdos");
             p.waitForFinished();
         }
     } else {
-        ret = KMessageBox::questionYesNo(0, "This operation will destroy all data on the selected volume.. Continue anyway?", "Warning");
-        QProcess p;
-        p.start("parted -s " + m_ui->treeWidget->currentItem()->data(0, 52).toString() + " mktable msdos");
-        p.waitForFinished();
+        ret = KMessageBox::questionYesNo(0, i18n("This operation will destroy all data on the selected volume.. Continue anyway?"), i18n("Warning"));
+        if (ret == KMessageBox::Yes) {
+            QProcess p;
+            p.start("parted -s " + m_ui->treeWidget->currentItem()->data(0, 52).toString() + " mktable msdos");
+            p.waitForFinished();
+        }
     }
 
     PMHandler::instance()->reload();

@@ -535,9 +535,9 @@ void PartitioningPage::populateTreeWidget()
 
 void PartitioningPage::currentItemChanged(QTreeWidgetItem* current, QTreeWidgetItem* )
 {
-    // Check what's up for this item
+    // Check current item
+
     if (!current) {
-        // Ok, disable everything
         m_ui->actionDelete->setEnabled(false);
         m_ui->actionNew->setEnabled(false);
         m_ui->actionResize->setEnabled(false);
@@ -548,10 +548,8 @@ void PartitioningPage::currentItemChanged(QTreeWidgetItem* current, QTreeWidgetI
         return;
     }
 
-    // Is it a device?
     const Partition *partition = current->data(0, PARTITION_ROLE).value<const Partition*>();
     if (partition != 0) {
-        // Ok, check what we can do
         m_ui->actionUnmount->setVisible(partition->isMounted());
         m_ui->actionUnmount->setEnabled(partition->canUnmount());
         m_ui->actionDelete->setEnabled(DeleteOperation::canDelete(partition));
@@ -565,12 +563,13 @@ void PartitioningPage::currentItemChanged(QTreeWidgetItem* current, QTreeWidgetI
         m_ui->actionNewPartitionTable->setEnabled(false);
     } else {
         Device *device = current->data(0, DEVICE_ROLE).value<Device*>();
-        // It's a device, disable all...
-        m_ui->actionUnmount->setVisible(false);
-        m_ui->actionDelete->setEnabled(false);
-        m_ui->actionNew->setEnabled(false);
-        m_ui->actionResize->setEnabled(false);
-        m_ui->actionNewPartitionTable->setEnabled(true);
+        if (device) {
+            m_ui->actionUnmount->setVisible(false);
+            m_ui->actionDelete->setEnabled(false);
+            m_ui->actionNew->setEnabled(false);
+            m_ui->actionResize->setEnabled(false);
+            m_ui->actionNewPartitionTable->setEnabled(true);
+        }
     }
 
     QTreeWidgetItemIterator it(m_ui->treeWidget);
@@ -588,6 +587,9 @@ void PartitioningPage::currentItemChanged(QTreeWidgetItem* current, QTreeWidgetI
 
 void PartitioningPage::dataChanged(QModelIndex i, QModelIndex p)
 {
+    Q_UNUSED(i);
+    Q_UNUSED(p);
+
     QTreeWidgetItemIterator it(m_ui->treeWidget);
     while (*it) {
         QString text = (*it)->data(0, MOUNTPOINT_ROLE).toString();
@@ -826,9 +828,6 @@ void PartitioningPage::aboutToGoToNext()
     if (m_ui->treeWidget->selectedItems().isEmpty()) {
         return;
     }
-
-    const Partition *partition = m_ui->treeWidget->selectedItems().first()->data(0, PARTITION_ROLE).value<const Partition*>();
-    Device *device = m_ui->treeWidget->selectedItems().first()->data(0, DEVICE_ROLE).value<Device*>();
 
     QTreeWidgetItemIterator it(m_ui->treeWidget);
     while (*it) {

@@ -107,6 +107,7 @@ target_link_libraries(tribe
 file(GLOB POSTINSTALL_FUNCTIONS
     scripts/postinstall-functions/*
 )
+
 file(GLOB tribe_SCRIPTS
     scripts/*.sh
 )

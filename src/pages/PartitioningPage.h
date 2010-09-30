@@ -99,6 +99,7 @@ public:
         FileSystemPart = 2,
         ShrinkPart = 4
     };
+
     Q_DECLARE_FLAGS(VisibleParts, VisiblePart)
 
     enum Mode {

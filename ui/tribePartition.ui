@@ -55,7 +55,7 @@ p, li { white-space: pre-wrap; }
       </size>
      </property>
      <property name="text">
-      <string>Please choose where Chakra will be installed. Pick an existing partition or unallocated space; Tribe will take care of preparing it for the best possible experience. No permanent changes to your hard drive will be made when you will press &quot;Next&quot;</string>
+      <string>Please select a mountpoint for your existing partitions. At least '/' should be mounted. No permanent changes to your hard drive will be made when you will press &quot;Next&quot;</string>
      </property>
      <property name="scaledContents">
       <bool>true</bool>

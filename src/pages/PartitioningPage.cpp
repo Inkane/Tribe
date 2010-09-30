@@ -467,15 +467,17 @@ void PartitioningPage::actionNewPartitionTableTriggered(bool )
 
 void PartitioningPage::setVisibleParts(PartitioningPage::VisibleParts parts)
 {
-    bool isNotNone = true;
+    bool notNone = true;
+
     if (parts == PartitioningPage::None) {
-        isNotNone = false;
+        notNone = false;
     }
-    m_ui->editPartitionCancelButton->setVisible(isNotNone);
-    m_ui->editPartitionOkButton->setVisible(isNotNone);
-    m_ui->line->setVisible(isNotNone);
-    m_ui->upLine->setVisible(isNotNone);
-    m_ui->lowLine->setVisible(isNotNone);
+
+    m_ui->editPartitionCancelButton->setVisible(notNone);
+    m_ui->editPartitionOkButton->setVisible(notNone);
+    m_ui->line->setVisible(notNone);
+    m_ui->upLine->setVisible(notNone);
+    m_ui->lowLine->setVisible(notNone);
 
     m_ui->filesystemLabel->setVisible(parts & FileSystemPart);
     m_ui->filesystemBox->setVisible(parts & FileSystemPart);
@@ -491,23 +493,25 @@ void PartitioningPage::setVisibleParts(PartitioningPage::VisibleParts parts)
 
 void PartitioningPage::slotTypeChanged(const QString &type)
 {
-    if (type == i18n("Extended")) {
+    if (type == i18n("Extended"))
         m_parts ^= FileSystemPart;
-    } else {
+    else
         m_parts |= FileSystemPart;
-    }
+
     setVisibleParts(m_parts);
 }
 
 void PartitioningPage::populateTreeWidget()
 {
     m_ui->actionUndo->setEnabled(PMHandler::instance()->operationStack().size() > 0);
+
     QReadLocker lockDevices(&PMHandler::instance()->operationStack().lock());
 
     disconnect(m_ui->treeWidget, SIGNAL(currentItemChanged(QTreeWidgetItem*,QTreeWidgetItem*)),
                this, SLOT(currentItemChanged(QTreeWidgetItem*,QTreeWidgetItem*)));
 
     m_ui->treeWidget->clear();
+
     foreach(Device* dev, PMHandler::instance()->operationStack().previewDevices()) {
         QTreeWidgetItem* deviceItem = new PartitionTreeWidgetItem(dev);
         deviceItem->setText(0, dev->name());
@@ -515,7 +519,6 @@ void PartitioningPage::populateTreeWidget()
         deviceItem->setData(0, 51, i18n("Hard drive"));
         deviceItem->setData(0, 52, dev->deviceNode());
         deviceItem->setIcon(0, KIcon(dev->iconName()));
-
         m_ui->treeWidget->addTopLevelItem(deviceItem);
         deviceItem->setExpanded(true);
 
@@ -536,8 +539,8 @@ void PartitioningPage::populateTreeWidget()
 
     connect(m_ui->treeWidget, SIGNAL(currentItemChanged(QTreeWidgetItem*,QTreeWidgetItem*)),
             this, SLOT(currentItemChanged(QTreeWidgetItem*,QTreeWidgetItem*)));
-
-    connect(m_ui->treeWidget->model(), SIGNAL(dataChanged(QModelIndex,QModelIndex)), this, SLOT(dataChanged(QModelIndex,QModelIndex)));
+    connect(m_ui->treeWidget->model(), SIGNAL(dataChanged(QModelIndex,QModelIndex)),
+            this, SLOT(dataChanged(QModelIndex,QModelIndex)));
 
     currentItemChanged(0, 0);
 
@@ -563,10 +566,6 @@ void PartitioningPage::populateTreeWidget()
         ++it;
     }
 
-    m_ui->descriptionLabel->setText(i18n("Please select a mountpoint for your existing partitions. At least '/' should be "
-                                         "mounted. No permanent changes to your hard drive will be made when you will "
-                                         "press \"Next\""));
-    // For now, just enable it
     enableNextButton(true);
     currentItemChanged(m_ui->treeWidget->currentItem(), 0);
 }

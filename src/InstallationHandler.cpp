@@ -720,8 +720,11 @@ void InstallationHandler::setUpUser(const QString &user)
 
     command = "chroot " + QString(INSTALLATION_TARGET) + " /usr/bin/passwd";
 
-    connect(m_userProcess, SIGNAL(readyReadStandardError()), SLOT(streamRootPassword()));
-    m_userProcess->start(command);
+    QProcess p;
+
+    connect(&p, SIGNAL(readyReadStandardError()), SLOT(streamRootPassword()));
+    
+    p.start(command);
 }
 
 void InstallationHandler::streamRootPassword()

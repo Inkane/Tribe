@@ -200,6 +200,7 @@ private:
     QPointer<QProcess> m_process;
     QStringList m_mtab;
     QProcess *m_userProcess;
+    QProcess *m_rootProcess;
 
     CurrentAction currAct;
     FileHandling fileAct;

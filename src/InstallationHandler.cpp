@@ -717,20 +717,18 @@ void InstallationHandler::setUpUser(const QString &user)
                       user);
 
     qDebug() << " :: sudoers configuration complete";
+    
+    m_rootProcess = new QProcess;
 
     command = "chroot " + QString(INSTALLATION_TARGET) + " /usr/bin/passwd";
-
-    QProcess p;
-
-    connect(&p, SIGNAL(readyReadStandardError()), SLOT(streamRootPassword()));
-    
-    p.start(command);
+    connect(m_rootProcess, SIGNAL(readyReadStandardError()), SLOT(streamRootPassword()));
+    m_rootProcess->start(command);
 }
 
 void InstallationHandler::streamRootPassword()
 {
-    m_userProcess->write(QString(rootPassword()).toUtf8().data());
-    m_userProcess->write("\n");
+    m_rootProcess->write(QString(rootPassword()).toUtf8().data());
+    m_rootProcess->write("\n");
 }
 
 void InstallationHandler::streamPassword()

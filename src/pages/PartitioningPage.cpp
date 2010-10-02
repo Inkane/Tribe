@@ -600,13 +600,11 @@ void PartitioningPage::currentItemChanged(QTreeWidgetItem* current, QTreeWidgetI
         m_ui->actionNewPartitionTable->setEnabled(false);
     } else {
         Device *device = current->data(0, DEVICE_ROLE).value<Device*>();
-        if (device) {
-            m_ui->actionUnmount->setVisible(false);
-            m_ui->actionDelete->setEnabled(false);
-            m_ui->actionNew->setEnabled(false);
-            m_ui->actionResize->setEnabled(false);
-            m_ui->actionNewPartitionTable->setEnabled(true);
-        }
+        m_ui->actionUnmount->setVisible(false);
+        m_ui->actionDelete->setEnabled(false);
+        m_ui->actionNew->setEnabled(false);
+        m_ui->actionResize->setEnabled(false);
+        m_ui->actionNewPartitionTable->setEnabled(true);
     }
 
     QTreeWidgetItemIterator it(m_ui->treeWidget);

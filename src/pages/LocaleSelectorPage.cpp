@@ -115,19 +115,28 @@ void LocaleSelectorPage::createWidget()
     }
     keys.sort();
     foreach(const QString &string, keys) {
-        timezoneCombo->addItem(string);
+        QStringList split = string.split("/");
+        if (m_allTimezones.contains(split.first())) {
+            m_allTimezones[split.first()].append(split.last());
+        } else {
+            m_allTimezones.insert(split.first(), QStringList(split.last()));
+            continentCombo->addItem(split.first());
+        }
+        regionCombo->addItem(string);
     }
 
     locationsSearch->hide();
     locationsView->hide();
+    continentChanged(continentCombo->currentIndex());
 
-    timezoneChanged(timezoneCombo->currentIndex());
+    regionChanged(regionCombo->currentIndex());
 
     connect(zoomInButton, SIGNAL(clicked()), marble, SLOT(zoomIn()));
     connect(zoomOutButton, SIGNAL(clicked()), marble, SLOT(zoomOut()));
     connect(zoomSlider, SIGNAL(valueChanged(int)), SLOT(zoom(int)));
     connect(marble, SIGNAL(zoomChanged(int)), this, SLOT(zoomChanged(int)));
-    connect(timezoneCombo, SIGNAL(currentIndexChanged(int)), SLOT(timezoneChanged(int)));
+    connect(continentCombo, SIGNAL(currentIndexChanged(int)), this, SLOT(continentChanged(int)));
+    connect(regionCombo, SIGNAL(currentIndexChanged(int)), SLOT(regionChanged(int)));
     connect(showLocalesCheck, SIGNAL(stateChanged(int)), SLOT(updateLocales()));
     connect(showKDELangsCheck, SIGNAL(stateChanged(int)), SLOT(updateLocales()));
 
@@ -144,17 +153,37 @@ bool LocaleSelectorPage::eventFilter(QObject * object, QEvent * event)
     if (object == marble && event->type() == QEvent::MouseButtonPress) {
         QVector<QModelIndex> indexes = marble->model()->whichFeatureAt(marble->mapFromGlobal(QCursor::pos()));
         if (!indexes.isEmpty()) {
-            timezoneCombo->setCurrentIndex(timezoneCombo->findText(indexes.first().data(Qt::DisplayRole).toString().replace(' ', '_'), Qt::MatchContains));
+            QHash<QString, QStringList>::const_iterator it;
+
+            for (it = m_allTimezones.constBegin(); it != m_allTimezones.constEnd(); it++) {
+                if ((*it).contains(indexes.first().data(Qt::DisplayRole).toString().replace(' ', '_'))) {
+                    continentCombo->setCurrentIndex(continentCombo->findText(it.key()));
+                    regionCombo->setCurrentIndex(regionCombo->findText(indexes.first().data(Qt::DisplayRole).toString().replace(' ', '_')));
+                }
+            }
             return true;
         }
     }
     return false;
 }
 
-void LocaleSelectorPage::timezoneChanged(int index)
+void LocaleSelectorPage::continentChanged(int index)
+{
+    QStringList timezones = m_allTimezones.value(continentCombo->itemText(index));
+    QStringList::const_iterator it;
+
+    regionCombo->clear();
+
+    for (it = timezones.constBegin(); it != timezones.constEnd(); ++it) {
+        regionCombo->addItem((*it));
+    }
+    regionChanged(regionCombo->currentIndex());
+}
+
+void LocaleSelectorPage::regionChanged(int index)
 {
     if (!showLocalesCheck->isChecked() || !showKDELangsCheck->isChecked()) {
-        QString time = timezoneCombo->itemText(index);
+        QString time = continentCombo->itemText(continentCombo->currentIndex()) + "/" + regionCombo->itemText(index);
         QList<QStringList>::const_iterator it;
         for (it = locales.constBegin(); it != locales.constEnd(); ++it) {
             if ((*it).first() == time) {
@@ -218,7 +247,7 @@ void LocaleSelectorPage::updateLocales()
         }
     }
     if (!showKDELangsCheck->isChecked() || !showLocalesCheck->isChecked()) {
-        timezoneChanged(timezoneCombo->currentIndex());
+        regionChanged(regionCombo->currentIndex());
     }
 }
 
@@ -231,7 +260,7 @@ void LocaleSelectorPage::zoomChanged(int)
 
 void LocaleSelectorPage::aboutToGoToNext()
 {
-    if (timezoneCombo->currentText().isEmpty()) {
+    if (regionCombo->currentText().isEmpty()) {
         bool retbool;
         KDialog *dialog = new KDialog(this, Qt::FramelessWindowHint);
         dialog->setButtons(KDialog::Ok);
@@ -242,7 +271,7 @@ void LocaleSelectorPage::aboutToGoToNext()
                                         QStringList(), QString(), &retbool, KMessageBox::Notify);
         return;
     }
-    m_install->setTimezone(timezoneCombo->currentText());
+    m_install->setTimezone(regionCombo->currentText());
     m_install->setKDELangPack(m_allKDELangs.key(kdeLanguageCombo->currentText()));
     if (localeCombo->currentText().contains("utf-8", Qt::CaseInsensitive)) {
         QStringList localeSplit = localeCombo->currentText().split('.');

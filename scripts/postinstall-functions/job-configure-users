@@ -31,6 +31,7 @@ job_configure_users()
 
 	msg "create common dirs"
 	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/Desktop
+	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/.kde4/Autostart
 	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/.kde4/env
 	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/.kde4/share/config
 	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/.kde4/share/apps/konqueror
@@ -52,6 +53,7 @@ job_configure_users()
         cp -v /etc/skel/yakuakerc ${mountpoint}/home/${user_name}/.kde4/share/config/yakuakerc
         cp -v /etc/skel/kickoffrc ${mountpoint}/home/${user_name}/.kde4/share/config/kickoffrc
 	cp -v /etc/skel/networkmanagementrc ${mountpoint}/home/${user_name}/.kde4/share/config/networkmanagementrc
+	chroot ${mountpoint} ln -sf /usr/bin/bluedevil-monolithic /home/${user_name}/.kde4/Autostart/bluedevil-monolithic
 
 	msg "adjust default cursor: white-cursor"
 	cp -v /etc/skel/kcminputrc ${mountpoint}/home/${user_name}/.kde4/share/config/kcminputrc

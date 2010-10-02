@@ -104,7 +104,11 @@ void UserCreationPage::aboutToGoToNext()
     m_handler->setUserLogin(ui.userLine->text().toLower());
     m_handler->setUserName(ui.nameLine->text());
     m_handler->setUserPassword(ui.userPw->text());
-    m_handler->setRootPassword(ui.rootPw->text());
+
+    if (ui.usePwForRoot->isChecked())
+        m_handler->setRootPassword(ui.userPw->text());
+    else
+        m_handler->setRootPassword(ui.rootPw->text());
 
     emit goToNextStep();
 }

@@ -604,6 +604,7 @@ void PartitioningPage::currentItemChanged(QTreeWidgetItem* current, QTreeWidgetI
         m_ui->actionDelete->setEnabled(false);
         m_ui->actionNew->setEnabled(false);
         m_ui->actionResize->setEnabled(false);
+        m_ui->actionFormat->setEnabled(false);
         m_ui->actionNewPartitionTable->setEnabled(true);
     }
 

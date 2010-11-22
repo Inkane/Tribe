@@ -18,22 +18,46 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
  ***************************************************************************/
 
+#include <QFile>
 
-#ifndef PAGES_H
-#define PAGES_H
+#include <KIcon>
 
-#include "pages/intropage.h"
-#include "pages/releasenotespage.h"
-#include "pages/licensepage.h"
-#include "pages/localepage.h"
-#include "pages/settingspage.h"
-#include "pages/usercreationpage.h"
-#include "pages/partitionpage.h"
-#include "pages/readyinstallpage.h"
-#include "pages/installationpage.h"
-#include "pages/bootloaderpage.h"
-#include "pages/finishpage.h"
+#include <config-tribe.h>
 
-#include "widgets/progresswidget.h"
+#include "releasenotespage.h"
 
-#endif /*PAGES_H*/
+
+ReleaseNotesPage::ReleaseNotesPage(QWidget *parent)
+        : AbstractPage(parent)
+{
+}
+
+ReleaseNotesPage::~ReleaseNotesPage()
+{
+}
+
+void ReleaseNotesPage::createWidget()
+{
+    ui.setupUi(this);
+
+    QFile file(QString(QString(CONFIG_INSTALL_PATH) + "RELEASE_NOTES.html"));
+
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
+        return;
+
+    ui.textBrowser->setHtml(QString::fromUtf8(file.readAll()));
+
+    file.close();
+}
+
+void ReleaseNotesPage::aboutToGoToNext()
+{
+    emit goToNextStep();
+}
+
+void ReleaseNotesPage::aboutToGoToPrevious()
+{
+    emit goToPreviousStep();
+}
+
+#include "releasenotespage.moc"

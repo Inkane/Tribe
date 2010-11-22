@@ -18,22 +18,35 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
  ***************************************************************************/
 
+#ifndef BOOTLOADERPAGE_H
+#define BOOTLOADERPAGE_H
 
-#ifndef PAGES_H
-#define PAGES_H
+#include <QProcess>
 
-#include "pages/intropage.h"
-#include "pages/releasenotespage.h"
-#include "pages/licensepage.h"
-#include "pages/localepage.h"
-#include "pages/settingspage.h"
-#include "pages/usercreationpage.h"
-#include "pages/partitionpage.h"
-#include "pages/readyinstallpage.h"
-#include "pages/installationpage.h"
-#include "pages/bootloaderpage.h"
-#include "pages/finishpage.h"
+#include "../abstractpage.h"
+#include "ui_bootloader.h"
 
-#include "widgets/progresswidget.h"
 
-#endif /*PAGES_H*/
+class InstallationHandler;
+
+class BootloaderPage : public AbstractPage
+{
+    Q_OBJECT
+
+public:
+    BootloaderPage(QWidget *parent = 0);
+    virtual ~BootloaderPage();
+
+private slots:
+    void createWidget();
+    void aboutToGoToNext();
+    void aboutToGoToPrevious();
+    void bootloaderInstalled(int exitCode, QProcess::ExitStatus exitStatus);
+    void menulstInstalled(int exitCode, QProcess::ExitStatus exitStatus);
+
+private:
+    Ui::Bootloader ui;
+    InstallationHandler *m_handler;
+};
+
+#endif /*BOOTLOADERPAGE_H_*/

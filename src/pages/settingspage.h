@@ -18,22 +18,32 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
  ***************************************************************************/
 
+#ifndef SETTINGSPAGE_H
+#define SETTINGSPAGE_H
 
-#ifndef PAGES_H
-#define PAGES_H
+#include "../abstractpage.h"
+#include "ui_settings.h"
 
-#include "pages/intropage.h"
-#include "pages/releasenotespage.h"
-#include "pages/licensepage.h"
-#include "pages/localepage.h"
-#include "pages/settingspage.h"
-#include "pages/usercreationpage.h"
-#include "pages/partitionpage.h"
-#include "pages/readyinstallpage.h"
-#include "pages/installationpage.h"
-#include "pages/bootloaderpage.h"
-#include "pages/finishpage.h"
 
-#include "widgets/progresswidget.h"
+class InstallationHandler;
 
-#endif /*PAGES_H*/
+class SettingsPage : public AbstractPage
+{
+    Q_OBJECT
+
+public:
+    SettingsPage(QWidget *parent = 0);
+    virtual ~SettingsPage();
+
+private slots:
+    virtual void createWidget();
+    virtual void aboutToGoToNext();
+    virtual void aboutToGoToPrevious();
+    void textChanged(const QString &string);
+
+private:
+    Ui::Settings ui;
+    InstallationHandler* m_install;
+};
+
+#endif /* SETTINGSPAGE_H */

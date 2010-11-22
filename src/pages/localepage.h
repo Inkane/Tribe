@@ -1,6 +1,6 @@
 /***************************************************************************
- *   Copyright (C) 2008 - 2009 by Dario Freddi                             *
- *   drf@chakra-project.org                                                *
+ *   Copyright (C) 2008 by Lukas Appelhans                                 *
+ *   l.appelhans@gmx.de                                                    *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -18,22 +18,44 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
  ***************************************************************************/
 
+#ifndef LOCALEPAGE_H
+#define LOCALEPAGE_H
 
-#ifndef PAGES_H
-#define PAGES_H
+#include <QModelIndex>
+#include <QHash>
 
-#include "pages/intropage.h"
-#include "pages/releasenotespage.h"
-#include "pages/licensepage.h"
-#include "pages/localepage.h"
-#include "pages/settingspage.h"
-#include "pages/usercreationpage.h"
-#include "pages/partitionpage.h"
-#include "pages/readyinstallpage.h"
-#include "pages/installationpage.h"
-#include "pages/bootloaderpage.h"
-#include "pages/finishpage.h"
+#include "../abstractpage.h"
+#include "ui_locale.h"
 
-#include "widgets/progresswidget.h"
 
-#endif /*PAGES_H*/
+class InstallationHandler;
+
+class LocalePage : public AbstractPage, public Ui::Locale
+{
+    Q_OBJECT
+
+public:
+    LocalePage(QWidget *parent = 0);
+    virtual ~LocalePage();
+
+    bool eventFilter(QObject * object, QEvent * event);
+
+private slots:
+    void createWidget();
+    void zoom(int value);
+    void zoomChanged(int value);
+    void continentChanged(int index);
+    void regionChanged(int index);
+    void updateLocales();
+    void aboutToGoToPrevious();
+    void aboutToGoToNext();
+
+private:
+    QList<QStringList> locales;
+    InstallationHandler * m_install;
+    QStringList m_allLocales;
+    QHash<QString, QString> m_allKDELangs;
+    QHash<QString, QStringList> m_allTimezones;
+};
+
+#endif /*LOCALEPAGE_H_*/

@@ -18,22 +18,30 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
  ***************************************************************************/
 
+#ifndef READYINSTALLPAGE_H
+#define READYINSTALLPAGE_H
 
-#ifndef PAGES_H
-#define PAGES_H
+#include "../abstractpage.h"
+#include "../installationhandler.h"
+#include "ui_readyinstall.h"
 
-#include "pages/intropage.h"
-#include "pages/releasenotespage.h"
-#include "pages/licensepage.h"
-#include "pages/localepage.h"
-#include "pages/settingspage.h"
-#include "pages/usercreationpage.h"
-#include "pages/partitionpage.h"
-#include "pages/readyinstallpage.h"
-#include "pages/installationpage.h"
-#include "pages/bootloaderpage.h"
-#include "pages/finishpage.h"
 
-#include "widgets/progresswidget.h"
+class ReadyInstallPage : public AbstractPage
+{
+    Q_OBJECT
 
-#endif /*PAGES_H*/
+public:
+    ReadyInstallPage(QWidget *parent = 0);
+    virtual ~ReadyInstallPage();
+
+private slots:
+    virtual void createWidget();
+    virtual void aboutToGoToNext();
+    virtual void aboutToGoToPrevious();
+
+private:
+    Ui::ReadyInstall ui;
+    InstallationHandler *m_install;
+};
+
+#endif /*READYINSTALLPAGE_H*/

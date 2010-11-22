@@ -18,22 +18,32 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
  ***************************************************************************/
 
+#include "progresswidget.h"
 
-#ifndef PAGES_H
-#define PAGES_H
 
-#include "pages/intropage.h"
-#include "pages/releasenotespage.h"
-#include "pages/licensepage.h"
-#include "pages/localepage.h"
-#include "pages/settingspage.h"
-#include "pages/usercreationpage.h"
-#include "pages/partitionpage.h"
-#include "pages/readyinstallpage.h"
-#include "pages/installationpage.h"
-#include "pages/bootloaderpage.h"
-#include "pages/finishpage.h"
+ProgressWidget::ProgressWidget(QWidget *parent)
+        : AbstractPage(parent)
+{
+    ui.setupUi(this);
+}
 
-#include "widgets/progresswidget.h"
+ProgressWidget::~ProgressWidget()
+{
+}
 
-#endif /*PAGES_H*/
+void ProgressWidget::setProgressWidgetText(const QString &text)
+{
+    ui.label->setText(text);
+}
+
+void ProgressWidget::updateProgressWidget(int percentage)
+{
+    ui.progressBar->setValue(percentage);
+}
+
+void ProgressWidget::createWidget()
+{
+
+}
+
+#include "progresswidget.moc"

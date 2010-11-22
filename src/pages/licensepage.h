@@ -18,22 +18,39 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
  ***************************************************************************/
 
+#ifndef LICENSEPAGE_H
+#define LICENSEPAGE_H
 
-#ifndef PAGES_H
-#define PAGES_H
+#include "../abstractpage.h"
+#include "ui_license.h"
 
-#include "pages/intropage.h"
-#include "pages/releasenotespage.h"
-#include "pages/licensepage.h"
-#include "pages/localepage.h"
-#include "pages/settingspage.h"
-#include "pages/usercreationpage.h"
-#include "pages/partitionpage.h"
-#include "pages/readyinstallpage.h"
-#include "pages/installationpage.h"
-#include "pages/bootloaderpage.h"
-#include "pages/finishpage.h"
 
-#include "widgets/progresswidget.h"
+class InstallationHandler;
 
-#endif /*PAGES_H*/
+class LicensePage : public AbstractPage
+{
+    Q_OBJECT
+
+public:
+    LicensePage(QWidget *parent = 0);
+    virtual ~LicensePage();
+
+private slots:
+    virtual void createWidget();
+    virtual void aboutToGoToNext();
+    virtual void aboutToGoToPrevious();
+
+    void enableNext();
+
+private:
+    void setUpLicense();
+
+private:
+    Ui::License ui;
+    InstallationHandler *m_handler;
+    QStringList m_notAccepted;
+    QHash<QString, QString> m_licenses;
+    int m_iterator;
+};
+
+#endif /*LICENSEPAGE_H*/

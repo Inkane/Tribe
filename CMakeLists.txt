@@ -34,44 +34,48 @@ include_directories (
 
 SET(tribe_SRCS
     src/main.cpp
-    src/MainWindow.cpp
-    src/InstallationHandler.cpp
-    src/AbstractPage.cpp
-    src/CrashHandler.cpp
-    src/Screenshots.h
-    src/PMHandler.cpp
+    src/mainwindow.cpp
+    src/installationhandler.cpp
+    src/abstractpage.cpp
+    src/screenshots.h
+    src/pmhandler.cpp
+)
+
+SET(tribe_WIDGETS
+    src/widgets/progresswidget.cpp
 )
 
 SET(tribe_PAGES
-    src/pages/IntroPage.cpp
-    src/pages/ReleaseNotesPage.cpp
-    src/pages/PartitioningPage.cpp
-    src/pages/ProgressWidget.cpp
-    src/pages/UserCreationPage.cpp
-    src/pages/InstallationPage.cpp
-    src/pages/ReadyInstallPage.cpp
-    src/pages/BootloaderPage.cpp
-    src/pages/FinishPage.cpp
-    src/pages/LicensePage.cpp
-    src/pages/SettingsPage.cpp
-    src/pages/LocaleSelectorPage.cpp
+    src/pages/intropage.cpp
+    src/pages/releasenotespage.cpp
+    src/pages/partitionpage.cpp
+    src/pages/usercreationpage.cpp
+    src/pages/installationpage.cpp
+    src/pages/readyinstallpage.cpp
+    src/pages/bootloaderpage.cpp
+    src/pages/finishpage.cpp
+    src/pages/licensepage.cpp
+    src/pages/settingspage.cpp
+    src/pages/localepage.cpp
 )
 
-SET(tribe_UIS
-    ui/tribeBase.ui
-    ui/tribeIntro.ui
-    ui/tribeReleaseNotes.ui
-    ui/tribePartition.ui
-    ui/tribeProgressWidget.ui
-    ui/tribeUserCreation.ui
-    ui/tribeInstallation.ui
-    ui/tribeReadyInstall.ui
-    ui/tribeBootloader.ui
-    ui/tribeFinish.ui
-    ui/tribeLicense.ui
-    ui/tribeSettings.ui
-    ui/tribeLocale.ui
-    ui/crashWindow.ui
+SET(tribe_PAGE_UIS
+    ui/pages/base.ui
+    ui/pages/intro.ui
+    ui/pages/releasenotes.ui
+    ui/pages/license.ui
+    ui/pages/locale.ui
+    ui/pages/settings.ui
+    ui/pages/partition.ui
+    ui/pages/usercreation.ui
+    ui/pages/installation.ui
+    ui/pages/readyinstall.ui
+    ui/pages/bootloader.ui
+    ui/pages/finish.ui
+)
+
+set(tribe_WIDGET_UIS
+    ui/widgets/progresswidget.ui
 )
 
 SET(tribe_IMAGES
@@ -85,7 +89,7 @@ SET(tribe_STYLESHEET
 
 qt4_add_resources(tribe_RESOUCES ui/tribe.qrc)
 
-kde4_add_ui_files(tribe_SRCS ${tribe_UIS})
+kde4_add_ui_files(tribe_SRCS ${tribe_PAGE_UIS} ${tribe_WIDGET_UIS})
 
 kde4_add_executable(tribe
     ${tribe_SRCS}
@@ -101,7 +105,7 @@ target_link_libraries(tribe
                       ${KDE4_KIO_LIBRARY}
                       ${LIBMARBLEWIDGET_LIBRARY}
                       ${TRIBEPARTITIONMANAGER_LIBRARY}
-                      -lsolidcontrol
+                      -lsolidcontrol # is that right?
 )
 
 file(GLOB POSTINSTALL_FUNCTIONS

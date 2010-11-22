@@ -18,22 +18,44 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
  ***************************************************************************/
 
+#ifndef INSTALLATIONPAGE_H
+#define INSTALLATIONPAGE_H
 
-#ifndef PAGES_H
-#define PAGES_H
+#include <QPointer>
+#include <QThread>
+#include <QTimer>
 
-#include "pages/intropage.h"
-#include "pages/releasenotespage.h"
-#include "pages/licensepage.h"
-#include "pages/localepage.h"
-#include "pages/settingspage.h"
-#include "pages/usercreationpage.h"
-#include "pages/partitionpage.h"
-#include "pages/readyinstallpage.h"
-#include "pages/installationpage.h"
-#include "pages/bootloaderpage.h"
-#include "pages/finishpage.h"
+#include "../abstractpage.h"
+#include "../installationhandler.h"
 
-#include "widgets/progresswidget.h"
+#include "ui_installation.h"
 
-#endif /*PAGES_H*/
+
+class Screenshots;
+
+class InstallationPage : public AbstractPage
+{
+    Q_OBJECT
+
+public:
+    InstallationPage(QWidget *parent = 0);
+    virtual ~InstallationPage();
+
+private slots:
+    virtual void createWidget();
+    virtual void aboutToGoToNext();
+    virtual void aboutToGoToPrevious();
+    void setPercentage(int percentage);
+    void setLabel(const QString &label);
+    void changeScreenShot();
+    void error();
+
+private:
+    InstallationHandler *m_install;
+    Ui::Installation ui;
+    int m_index;
+    QPointer<QTimer> m_timer;
+    Screenshots *m_screenshots;
+};
+
+#endif /*INSTALLATIONPAGE_H*/

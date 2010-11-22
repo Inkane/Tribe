@@ -18,22 +18,28 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
  ***************************************************************************/
 
+#ifndef INTROPAGE
+#define INTROPAGE
 
-#ifndef PAGES_H
-#define PAGES_H
+#include "../abstractpage.h"
+#include "ui_intro.h"
 
-#include "pages/intropage.h"
-#include "pages/releasenotespage.h"
-#include "pages/licensepage.h"
-#include "pages/localepage.h"
-#include "pages/settingspage.h"
-#include "pages/usercreationpage.h"
-#include "pages/partitionpage.h"
-#include "pages/readyinstallpage.h"
-#include "pages/installationpage.h"
-#include "pages/bootloaderpage.h"
-#include "pages/finishpage.h"
 
-#include "widgets/progresswidget.h"
+class IntroPage : public AbstractPage
+{
+    Q_OBJECT
 
-#endif /*PAGES_H*/
+public:
+    IntroPage(QWidget *parent = 0);
+    virtual ~IntroPage();
+
+private slots:
+    virtual void createWidget();
+    virtual void aboutToGoToNext();
+    virtual void aboutToGoToPrevious();
+
+private:
+    Ui::Intro ui;
+};
+
+#endif /*INTROPAGE*/

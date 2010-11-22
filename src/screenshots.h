@@ -18,22 +18,37 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
  ***************************************************************************/
 
+#ifndef SCREENSHOTS_H
+#define SCREENSHOTS_H
 
-#ifndef PAGES_H
-#define PAGES_H
+#include <QObject>
+#include <QPixmap>
 
-#include "pages/intropage.h"
-#include "pages/releasenotespage.h"
-#include "pages/licensepage.h"
-#include "pages/localepage.h"
-#include "pages/settingspage.h"
-#include "pages/usercreationpage.h"
-#include "pages/partitionpage.h"
-#include "pages/readyinstallpage.h"
-#include "pages/installationpage.h"
-#include "pages/bootloaderpage.h"
-#include "pages/finishpage.h"
 
-#include "widgets/progresswidget.h"
+class Screenshots : public QObject
+{
+/// Q_OBJECT
+public:
+    explicit Screenshots(QObject *parent = 0) : QObject(parent) {
+        m_screenshots.append(QPixmap(":/Images/images/screenshot01.png"));
+        m_screenshots.append(QPixmap(":/Images/images/screenshot02.png"));
+        m_screenshots.append(QPixmap(":/Images/images/screenshot03.png"));
+        m_screenshots.append(QPixmap(":/Images/images/screenshot04.png"));
+        m_screenshots.append(QPixmap(":/Images/images/screenshot05.png"));
+        m_screenshots.append(QPixmap(":/Images/images/screenshot06.png"));
+        m_screenshots.append(QPixmap(":/Images/images/screenshot07.png"));
+        m_screenshots.append(QPixmap(":/Images/images/screenshot08.png"));
+        m_screenshots.append(QPixmap(":/Images/images/screenshot09.png"));
+        m_screenshots.append(QPixmap(":/Images/images/screenshot10.png"));
+    }
+    ~Screenshots() {}
 
-#endif /*PAGES_H*/
+    QList<QPixmap> getScreenshots() {
+        return m_screenshots;
+    }
+
+private:
+    QList<QPixmap> m_screenshots;
+};
+
+#endif /*SCREENSHOTS_H*/

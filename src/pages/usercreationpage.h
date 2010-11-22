@@ -18,22 +18,38 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
  ***************************************************************************/
 
+#ifndef USERCREATIONPAGE_H
+#define USERCREATIONPAGE_H
 
-#ifndef PAGES_H
-#define PAGES_H
+#include <QProcess>
 
-#include "pages/intropage.h"
-#include "pages/releasenotespage.h"
-#include "pages/licensepage.h"
-#include "pages/localepage.h"
-#include "pages/settingspage.h"
-#include "pages/usercreationpage.h"
-#include "pages/partitionpage.h"
-#include "pages/readyinstallpage.h"
-#include "pages/installationpage.h"
-#include "pages/bootloaderpage.h"
-#include "pages/finishpage.h"
+#include "../abstractpage.h"
+#include "ui_usercreation.h"
 
-#include "widgets/progresswidget.h"
 
-#endif /*PAGES_H*/
+class InstallationHandler;
+
+class UserCreationPage : public AbstractPage
+{
+    Q_OBJECT
+
+public:
+    UserCreationPage(QWidget *parent = 0);
+    virtual ~UserCreationPage();
+
+private slots:
+    virtual void createWidget();
+    virtual void aboutToGoToNext();
+    virtual void aboutToGoToPrevious();
+
+    void toggleRootPw();
+
+    void validateNext();
+
+private:
+    Ui::UserCreation ui;
+    InstallationHandler *m_handler;
+    QProcess *m_process;
+};
+
+#endif /*USERCREATIONPAGE_H*/

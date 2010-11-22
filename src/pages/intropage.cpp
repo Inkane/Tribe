@@ -18,22 +18,33 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
  ***************************************************************************/
 
+#include <KIcon>
 
-#ifndef PAGES_H
-#define PAGES_H
+#include "intropage.h"
 
-#include "pages/intropage.h"
-#include "pages/releasenotespage.h"
-#include "pages/licensepage.h"
-#include "pages/localepage.h"
-#include "pages/settingspage.h"
-#include "pages/usercreationpage.h"
-#include "pages/partitionpage.h"
-#include "pages/readyinstallpage.h"
-#include "pages/installationpage.h"
-#include "pages/bootloaderpage.h"
-#include "pages/finishpage.h"
 
-#include "widgets/progresswidget.h"
+IntroPage::IntroPage(QWidget *parent)
+        : AbstractPage(parent)
+{
+}
 
-#endif /*PAGES_H*/
+IntroPage::~IntroPage()
+{
+}
+
+void IntroPage::createWidget()
+{
+    ui.setupUi(this);
+}
+
+void IntroPage::aboutToGoToNext()
+{
+    emit goToNextStep();
+}
+
+void IntroPage::aboutToGoToPrevious()
+{
+    emit goToPreviousStep();
+}
+
+#include "intropage.moc"

@@ -20,22 +20,24 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
  ***************************************************************************/
 
-#include "MainWindow.h"
+
+#include <QFile>
+
+#include <KUniqueApplication>
+#include <KAboutData>
+#include <KLocale>
+#include <KCmdLineArgs>
+#include <KDebug>
+
+#include <KMessageBox>
+
+#include <solid/control/powermanager.h>
 
 #include <config-tribe.h>
 
-#include "InstallationHandler.h"
-#include "CrashHandler.h"
+#include "mainwindow.h"
+#include "installationhandler.h"
 
-#include <KUniqueApplication>
-#include <kaboutdata.h>
-#include <klocale.h>
-#include <kcmdlineargs.h>
-#include <KDebug>
-#include <QFile>
-
-#include <solid/control/powermanager.h>
-#include <KMessageBox>
 
 int main(int argc, char *argv[])
 {
@@ -49,13 +51,6 @@ int main(int argc, char *argv[])
     aboutData.addAuthor(ki18n("Phil Miller"), ki18n("PostInstall Backend"), "philm@chakra-project.org", "http://chakra-project.org");
     aboutData.addAuthor(ki18n("Manuel Tortosa"), ki18n("PostInstall Backend"), "manutortosa@chakra-project.org", "http://chakra-project.org");
     aboutData.addAuthor(ki18n("Drake Justice"), ki18n("Developer"), "djustice@chakra-project.org", "");
-
-    // Initialize the crash handler first.
-//     if( argc > 0 )
-//     {
-//         kDebug() << "Setting up crash handler";
-//         CrashHandler::setAppName( QLatin1String( argv[0] ) );
-//     }
 
     KCmdLineArgs::init(argc, argv, &aboutData);
 
@@ -80,14 +75,11 @@ int main(int argc, char *argv[])
     }
 
     /* Load the stylesheet */
-
     QFile file(STYLESHEET_INSTALL_PATH);
     file.open(QFile::ReadOnly);
     QString styleSheet = QLatin1String(file.readAll());
 
     qApp->setStyleSheet(styleSheet);
-
-//     CrashHandler::activate();
 
     MainWindow mw;
 

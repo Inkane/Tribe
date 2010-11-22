@@ -18,22 +18,42 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
  ***************************************************************************/
 
+#ifndef ABSTRACTPAGE
+#define ABSTRACTPAGE
 
-#ifndef PAGES_H
-#define PAGES_H
+#include <QWidget>
 
-#include "pages/intropage.h"
-#include "pages/releasenotespage.h"
-#include "pages/licensepage.h"
-#include "pages/localepage.h"
-#include "pages/settingspage.h"
-#include "pages/usercreationpage.h"
-#include "pages/partitionpage.h"
-#include "pages/readyinstallpage.h"
-#include "pages/installationpage.h"
-#include "pages/bootloaderpage.h"
-#include "pages/finishpage.h"
+#include "mainwindow.h"
 
-#include "widgets/progresswidget.h"
 
-#endif /*PAGES_H*/
+class AbstractPage : public QWidget
+{
+    Q_OBJECT
+
+public:
+    AbstractPage(QWidget *parent = 0);
+    virtual ~AbstractPage();
+
+private slots:
+    virtual void createWidget() = 0;
+    virtual void aboutToGoToNext() = 0;
+    virtual void aboutToGoToPrevious() = 0;
+
+signals:
+    /* These signals are used to communicate with MainWindow and the whole
+     * installation process.
+     */
+
+    void setInstallationStep(MainWindow::InstallationStep step, bool done);
+    void goToNextStep();
+    void goToPreviousStep();
+    void abortInstallation();
+    void showProgressWidget();
+    void updateProgressWidget(int percentage);
+    void setProgressWidgetText(const QString &);
+    void deleteProgressWidget();
+    void enableNextButton(bool enable);
+    void enablePreviousButton(bool enable);
+};
+
+#endif /*ABSTRACTPAGE_H_*/

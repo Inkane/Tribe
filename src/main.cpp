@@ -42,7 +42,7 @@
 int main(int argc, char *argv[])
 {
     KAboutData aboutData("tribe", 0, ki18n("Tribe"),
-                         TRIBE_VERSION, ki18n("LiveCD Installer for Chakra"), KAboutData::License_GPL,
+                         TRIBE_VERSION, ki18n("Graphical Installer for Chakra"), KAboutData::License_GPL,
                          ki18n("(c) 2008 - 2010 the Chakra Development Team"), ki18n("chakra@chakra-project.org"), "http://chakra-project.org");
 
     aboutData.addAuthor(ki18n("Dario Freddi"), ki18n("Maintainer"), "drf@chakra-project.org", "http://drfav.wordpress.com");

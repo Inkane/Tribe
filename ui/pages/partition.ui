@@ -223,7 +223,6 @@ p, li { white-space: pre-wrap; }
      <addaction name="actionNewPartitionTable"/>
      <addaction name="separator"/>
      <addaction name="actionUndo"/>
-     <addaction name="separator"/>
     </widget>
    </item>
   </layout>

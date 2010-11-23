@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>578</width>
-    <height>520</height>
+    <width>682</width>
+    <height>563</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -211,21 +211,19 @@ p, li { white-space: pre-wrap; }
       <string>toolBar</string>
      </property>
      <property name="layoutDirection">
-      <enum>Qt::RightToLeft</enum>
+      <enum>Qt::LeftToRight</enum>
      </property>
      <property name="toolButtonStyle">
       <enum>Qt::ToolButtonTextBesideIcon</enum>
      </property>
      <addaction name="actionUnmount"/>
      <addaction name="actionNew"/>
-     <addaction name="actionResize"/>
      <addaction name="actionDelete"/>
      <addaction name="actionFormat"/>
      <addaction name="actionNewPartitionTable"/>
      <addaction name="separator"/>
      <addaction name="actionUndo"/>
      <addaction name="separator"/>
-     <addaction name="actionLearn_more"/>
     </widget>
    </item>
   </layout>
@@ -317,7 +315,7 @@ p, li { white-space: pre-wrap; }
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="tribe.qrc"/>
+  <include location="../tribe.qrc"/>
  </resources>
  <connections/>
 </ui>

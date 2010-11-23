@@ -410,19 +410,24 @@ void PartitionPage::createWidget()
     m_ui->setupUi(this);
 
     m_ui->advancedButton->setIcon(KIcon("office-chart-ring"));
+    m_ui->advancedButton->setEnabled(false);
     connect(m_ui->advancedButton, SIGNAL(clicked(bool)), this, SLOT(advancedClicked()));
 
     m_ui->newButton->setIcon(KIcon("list-add"));
+    m_ui->newButton->setEnabled(false);
     connect(m_ui->newButton, SIGNAL(clicked(bool)), this, SLOT(newClicked()));
 
     m_ui->deleteButton->setIcon(KIcon("list-remove"));
+    m_ui->deleteButton->setEnabled(false);
     connect(m_ui->deleteButton, SIGNAL(clicked(bool)), this, SLOT(deleteClicked()));
 
     m_ui->formatButton->setIcon(KIcon("draw-eraser"));
+    m_ui->formatButton->setEnabled(false);
     m_ui->formatButton->setCheckable(true);
     connect(m_ui->formatButton, SIGNAL(toggled(bool)), this, SLOT(formatToggled(bool)));
 
     m_ui->newPartTableButton->setIcon(KIcon("tab-new"));
+    m_ui->newPartTableButton->setEnabled(false);
     connect(m_ui->newPartTableButton, SIGNAL(clicked(bool)), this, SLOT(newPartTableClicked()));
 
     m_ui->undoButton->setIcon(KIcon("edit-undo"));
@@ -530,6 +535,8 @@ void PartitionPage::slotTypeChanged(const QString &type)
 
 void PartitionPage::populateTreeWidget()
 {
+    m_ui->advancedButton->setEnabled(true);
+
     m_ui->undoButton->setEnabled(PMHandler::instance()->operationStack().size() > 0);
 
     QReadLocker lockDevices(&PMHandler::instance()->operationStack().lock());

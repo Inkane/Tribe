@@ -103,6 +103,7 @@ class LIBPARTITIONMANAGERPRIVATE_EXPORT Partition : public PartitionNode
 
     friend class PartitionManager;
     friend class PartitionPage;
+    friend class PMHandler;
 
 	friend QTextStream& operator<<(QTextStream& stream, const Partition& p);
 

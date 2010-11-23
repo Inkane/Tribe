@@ -2,7 +2,7 @@
 Categories=Qt;System;
 Comment[de]=
 Comment=
-Exec=sudo tribe 2>&1 /tmp/installation.log
+Exec=sudo tribe > /tmp/installation.log 2>&1
 GenericName[de]=Installation
 GenericName=Installation
 GenericName[ca]=Instal.lació

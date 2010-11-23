@@ -11,8 +11,8 @@ job_setup_hardware()
 	
 	# setup alsa volume levels
 	msg "setup alsa config"
-	if [ -e "/.livesys/overlay/etc/asound.state" ] ; then
-		cp -v -a -f /.livesys/overlay/etc/asound.state ${mountpoint}/etc/asound.state
+	if [ -e "/.livesys/write/etc/asound.state" ] ; then
+		cp -v -a -f /.livesys/write/etc/asound.state ${mountpoint}/etc/asound.state
 	fi
 
 	# alsa blacklist for the pc speaker
@@ -21,13 +21,13 @@ job_setup_hardware()
 	fi
 
 	# blacklist for broken realtek nics
-	if [ -e "/.livesys/overlay/etc/modprobe.d/realtek_blacklist.conf" ] ; then
-		cp -v -a -f /.livesys/overlay/etc/modprobe.d/realtek_blacklist.conf ${mountpoint}/etc/modprobe.d/realtek_blacklist.conf
+	if [ -e "/.livesys/write/etc/modprobe.d/realtek_blacklist.conf" ] ; then
+		cp -v -a -f /.livesys/write/etc/modprobe.d/realtek_blacklist.conf ${mountpoint}/etc/modprobe.d/realtek_blacklist.conf
 	fi
 
 # arg! this don't work yet
 #	# setup nouveau
-#	USED_DRIVER=`cat ${mountpoint}/etc/X11/xorg.conf | sed -n '/Section.*."Device"/,/EndSection/p' | grep -v "#" | grep Driver | cut -d '"' -f 2`
+#	USED_DRIVER=`cat /etc/X11/xorg.conf | sed -n '/Section.*."Device"/,/EndSection/p' | grep -v "#" | grep Driver | cut -d '"' -f 2`
 #	if [ "${USED_DRIVER}" = "nouveau" ] ; then
 #		msg "setup nouveau drivers"
 #

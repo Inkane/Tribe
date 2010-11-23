@@ -115,7 +115,7 @@ job_remove_nvidia() {
 				sed -i -e /'Section "Device"'/,/'EndSection'/s/'Driver.*'/$DRIVER_NVIDIA/g ${mountpoint}/etc/X11/xorg.conf
 			
 				# remove options from xorg.conf
-				cat ${mountpoint}/etc/X11/xorg.conf | grep -v NvAGP | grep -v NoLogo | grep -v RenderAccel | grep -v AddARGBVisuals | grep -v AddARGBGLXVisuals | grep -v AllowGLXWithComposite | grep -v DynamicTwinView > ${mountpoint}/etc/X11/xorg.conf.clean
+				cat /etc/X11/xorg.conf | grep -v NvAGP | grep -v NoLogo | grep -v RenderAccel | grep -v AddARGBVisuals | grep -v AddARGBGLXVisuals | grep -v AllowGLXWithComposite | grep -v DynamicTwinView > ${mountpoint}/etc/X11/xorg.conf.clean
 			
 				# clean up
 				rm -rf ${mountpoint}/etc/X11/xorg.conf
@@ -135,7 +135,7 @@ job_remove_nvidia() {
 				sed -i -e /'Section "Device"'/,/'EndSection'/s/'Driver.*'/$DRIVER_NVIDIA/g ${mountpoint}/etc/X11/xorg.conf
 			
 				# remove options from xorg.conf
-				cat ${mountpoint}/etc/X11/xorg.conf | grep -v NvAGP | grep -v NoLogo | grep -v RenderAccel | grep -v AddARGBVisuals | grep -v AddARGBGLXVisuals | grep -v AllowGLXWithComposite | grep -v DynamicTwinView > ${mountpoint}/etc/X11/xorg.conf.clean
+				cat /etc/X11/xorg.conf | grep -v NvAGP | grep -v NoLogo | grep -v RenderAccel | grep -v AddARGBVisuals | grep -v AddARGBGLXVisuals | grep -v AllowGLXWithComposite | grep -v DynamicTwinView > ${mountpoint}/etc/X11/xorg.conf.clean
 			
 				# clean up
 				rm -rf ${mountpoint}/etc/X11/xorg.conf
@@ -155,7 +155,7 @@ job_remove_nvidia() {
 				sed -i -e /'Section "Device"'/,/'EndSection'/s/'Driver.*'/$DRIVER_NVIDIA/g ${mountpoint}/etc/X11/xorg.conf
 			
 				# remove options from xorg.conf
-				cat ${mountpoint}/etc/X11/xorg.conf | grep -v NvAGP | grep -v NoLogo | grep -v RenderAccel | grep -v AddARGBVisuals | grep -v AddARGBGLXVisuals | grep -v AllowGLXWithComposite | grep -v DynamicTwinView > ${mountpoint}/etc/X11/xorg.conf.clean
+				cat /etc/X11/xorg.conf | grep -v NvAGP | grep -v NoLogo | grep -v RenderAccel | grep -v AddARGBVisuals | grep -v AddARGBGLXVisuals | grep -v AllowGLXWithComposite | grep -v DynamicTwinView > ${mountpoint}/etc/X11/xorg.conf.clean
 			
 				# clean up
 				rm -rf ${mountpoint}/etc/X11/xorg.conf

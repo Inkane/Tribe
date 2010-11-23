@@ -421,6 +421,8 @@ void PartitionPage::createWidget()
     m_ui->treeWidget->setItemDelegate(new PartitionDelegate);
     m_ui->treeWidget->setEnabled(false);
 
+    m_ui->actionUnmount->setVisible(false);
+    m_ui->actionResize->setVisible(false);
     setVisibleParts(PartitionPage::None);
 
     QStringList fsNames;

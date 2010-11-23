@@ -51,8 +51,56 @@ job_initialize_target()
 	sed -i -e 's~^.*#AntiAliasing=.*~AntiAliasing=true~' ${mountpoint}/usr/share/config/kdm/kdmrc
 	sed -i -e 's~^.*#TerminateServer=.*~TerminateServer=true~' ${mountpoint}/usr/share/config/kdm/kdmrc
 
-	# Set Chakra Version
+	msg "adjusting default wallpaper to screen resolution"
+	echo "Search for your current screen resolution (this may flicker)"
+
+	CURRENT_RES=`xrandr  | grep '*' | cut -b -16 | sed 's/ //g'`
+
+#	# Fix resolution
+#	if [ $CURRENT_RES = "1360x768" ];
+#	then
+#	  CURRENT_RES="1366x768"
+#	elif [ $CURRENT_RES = "1920x1080" ];
+#	then
+#	  CURRENT_RES="1920x1050"
+#	fi
+
+	echo "Your current screen resolution is: $CURRENT_RES"
+	echo "Try to link right backround ..."
+
+	FILE="/usr/share/wallpapers/${THEME}/contents/images/$CURRENT_RES.jpg"
+
+	if [ -f $FILE ];
+	then
+	  echo "Linking file $FILE"
+	  chroot ${mountpoint} ln -sf $FILE /usr/share/apps/kdm/themes/${THEME}/background.jpg
+	else
+	echo "File $FILE does not exists! Linking 1280x800.jpg"
+	  CURRENT_RES="1280x800"
+	  chroot ${mountpoint} ln -sf $FILE /usr/share/apps/kdm/themes/${THEME}/background.jpg
+	fi
+
+#	FOLDER="/usr/share/apps/kdm/themes/${THEME}/$CURRENT_RES"
+#
+#	if [ -d $FOLDER ];
+#	then
+#	  echo "Using $FOLDER"
+#	cp -Rvf /usr/share/apps/kdm/themes/${THEME}/$CURRENT_RES/* ${mountpoint}/usr/share/apps/kdm/themes/${THEME}
+#	else
+#	  echo "File $FILE does not exists! Using 1280x800"
+#	  CURRENT_RES="1280x800"
+#	  cp -Rvf /usr/share/apps/kdm/themes/${THEME}/$CURRENT_RES/* ${mountpoint}/usr/share/apps/kdm/themes/${THEME}
+#	fi
+
+#	msg "copy theme settings"
+#	mkdir -p ${mountpoint}/root/.config
+#	cp -v /home/live/.config/Trolltech.conf ${mountpoint}/root/.config/Trolltech.conf
+
+	msg "set Chakra Version"
 	echo "git-checkout" > ${mountpoint}/etc/chakra-release
+
+	msg "fix hwclock"
+	mkdir -pv ${mountpoint}/var/lib/hwclock
 	
 	msg_job_done
 }

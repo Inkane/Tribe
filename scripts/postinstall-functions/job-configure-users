@@ -45,6 +45,7 @@ job_configure_users()
 	msg "setup chakra settings"
 	cp -v /etc/skel/ksplashrc ${mountpoint}/home/${user_name}/.kde4/share/config/ksplashrc
 	cp -v /etc/skel/plasma-desktop-appletsrc ${mountpoint}/home/${user_name}/.kde4/share/config/plasma-desktop-appletsrc
+#	cp -v /etc/skel/plasmarc ${mountpoint}/home/${user_name}/.kde4/share/config/plasmarc
 	cp -v /etc/skel/kcmfonts ${mountpoint}/home/${user_name}/.kde4/share/config/kcmfonts
 	cp -v /etc/skel/bookmarks.xml ${mountpoint}/home/${user_name}/.kde4/share/apps/konqueror/bookmarks.xml
 	cp -v /etc/skel/rekonqrc ${mountpoint}/home/${user_name}/.kde4/share/config/rekonqrc
@@ -54,28 +55,14 @@ job_configure_users()
         cp -v /etc/skel/kickoffrc ${mountpoint}/home/${user_name}/.kde4/share/config/kickoffrc
 	cp -v /etc/skel/networkmanagementrc ${mountpoint}/home/${user_name}/.kde4/share/config/networkmanagementrc
 	chroot ${mountpoint} ln -sf /usr/bin/bluedevil-monolithic /home/${user_name}/.kde4/Autostart/bluedevil-monolithic
+	cp -vf /etc/skel/.bashrc ${mountpoint}/home/${user_name}/.bashrc
 
 	msg "adjust default cursor: white-cursor"
 	cp -v /etc/skel/kcminputrc ${mountpoint}/home/${user_name}/.kde4/share/config/kcminputrc
 	cp -v /etc/skel/kdeglobals ${mountpoint}/home/${user_name}/.kde4/share/config/kdeglobals
 
-	msg "adjusting default wallpaper to screen resolution"
-	echo "Search for your current screen resolution (this may flicker)"
-	CURRENT_RES=`xrandr | grep '*' | cut -b -16 | sed 's/ //g'`
-	echo "Your current screen resolution is: $CURRENT_RES"
-	echo "Try to link right backround.jpg"
-
-	FILE="/usr/share/wallpapers/${THEME}/contents/images/$CURRENT_RES.jpg"
-
-	if [ -f $FILE ];
-	then
-	  echo "Linking file $FILE"
-	  chroot ${mountpoint} ln -sf $FILE /usr/share/apps/kdm/themes/${THEME}/background.jpg
-	else
-	echo "File $FILE does not exists! Linking 1280x800.jpg"
-	  CURRENT_RES="1280x800"
-	  chroot ${mountpoint} ln -sf $FILE /usr/share/apps/kdm/themes/${THEME}/background.jpg
-	fi
+	msg "clean 10-keyboard.conf"
+	rm -v ${mountpoint}/home/${user_name}/10-keyboard.conf
 
 	msg "chown ${user_name} /home/${user_name}"
 	chroot ${mountpoint} /bin/chown -vR ${user_name}:users /home/${user_name}
@@ -85,6 +72,34 @@ job_configure_users()
 	echo "%bundle ALL=NOPASSWD: /bin/mount -o loop -t ext4 *" >> ${mountpoint}/etc/sudoers
 	echo "%bundle ALL=NOPASSWD: /bin/umount *" >> ${mountpoint}/etc/sudoers
 	chmod -v 0440 ${mountpoint}/etc/sudoers
+
+#	msg "fix driver issues"
+#	USED_DRIVER=`cat /etc/X11/xorg.conf | sed -n '/Section.*."Device"/,/EndSection/p' | grep -v "#" | grep Driver | cut -d '"' -f 2`
+#
+#	if [ "${USED_DRIVER}" = "radeon" ] ; then
+#		echo "[Compositing]" >> ${mountpoint}/home/${user_name}/.kde4/share/config/kwinrc 
+#		echo "Enabled=false" >> ${mountpoint}/home/${user_name}/.kde4/share/config/kwinrc 
+#	fi
+#
+#	if [ "${USED_DRIVER}" = "mach64" ] ; then
+#		echo "[Compositing]" >> ${mountpoint}/home/${user_name}/.kde4/share/config/kwinrc 
+#		echo "Enabled=false" >> ${mountpoint}/home/${user_name}/.kde4/share/config/kwinrc 
+#	fi
+#
+#	if [ "${USED_DRIVER}" = "r128" ] ; then
+#		echo "[Compositing]" >> ${mountpoint}/home/${user_name}/.kde4/share/config/kwinrc 
+#		echo "Enabled=false" >> ${mountpoint}/home/${user_name}/.kde4/share/config/kwinrc 
+#	fi
+#
+#	if [ "${USED_DRIVER}" = "ati" ] ; then
+#		echo "[Compositing]" >> ${mountpoint}/home/${user_name}/.kde4/share/config/kwinrc 
+#		echo "Enabled=false" >> ${mountpoint}/home/${user_name}/.kde4/share/config/kwinrc 
+#	fi
+#
+#	if [ "${USED_DRIVER}" = "intel" ] ; then
+#		echo "[Compositing]" >> ${mountpoint}/home/${user_name}/.kde4/share/config/kwinrc 
+#		echo "Enabled=false" >> ${mountpoint}/home/${user_name}/.kde4/share/config/kwinrc 
+#	fi
 
 	msg "umount {proc,sys,dev}"
 	umount -v ${mountpoint}/proc ${mountpoint}/sys ${mountpoint}/dev 

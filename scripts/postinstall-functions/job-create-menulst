@@ -6,12 +6,15 @@ job_create_menulst()
 	trap error_handler ERR
 
 	msg_job_start "job_create_menulst"
+    
+	msg "create /boot/grub"
+	mkdir -p ${mountpoint}/boot/grub
 
 	msg "copying menu.lst from livesystem to target"
-	cp -v -f /boot/grub/menu.lst ${mountpoint}/boot/grub
+	cp -v -f /etc/skel/menu.lst ${mountpoint}/boot/grub
 
 	msg "cleaning target menu.lst at first"
-	cat ${mountpoint}/boot/grub/menu.lst | grep -v title | grep -v root | grep -v kernel | grep -v initrd | grep -v map | grep -v chainloader | grep -v makeactive | grep -v splashimage | grep -v Arch >> ${mountpoint}/boot/grub/menu.lst.new
+	cat ${mountpoint}/boot/grub/menu.lst | grep -v title | grep -v root | grep -v kernel | grep -v initrd | grep -v map | grep -v chainloader | grep -v makeactive | grep -v splashimage | grep -v Chakra >> ${mountpoint}/boot/grub/menu.lst.new
 
 	msg "starting menu.lst config"
 

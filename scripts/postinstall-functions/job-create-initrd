@@ -62,7 +62,7 @@ job_create_initrd()
 	touch /tmp/tribe-mkinitcpio-running
 
 	echo ":: copying kernel to target ..." > /tmp/initramfs.log; echo >> /tmp/initramfs.log
-	cp -v /.livesys/medium/isolinux/larch.kernel ${mountpoint}/boot/vmlinuz26 > /tmp/initramfs.log; echo >> /tmp/initramfs.log
+	cp -v /.livesys/medium/boot/vmlinuz26 ${mountpoint}/boot/vmlinuz26 > /tmp/initramfs.log; echo >> /tmp/initramfs.log
 
 	echo ":: starting initramfs creation..." > /tmp/initramfs.log; echo >> /tmp/initramfs.log
 

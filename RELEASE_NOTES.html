@@ -5,10 +5,10 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
 </head>
 <body> 
-	<h3>Chakra - 2010-09-26 - Version: 0.2.2-kde445-gf</h3>
+	<h3>Chakra - 2010-11-23 - Version: 0.2.4-kde445-gf</h3>
 	<hr width="100%">
-	The Chakra Developement Team is proud to announce the availability of our second point-release<br>
-	for our next point-release of Jaz, the live-cd using our stable repositories.<br>
+	The Chakra Developement Team is proud to announce the availability of our forth and last point-release<br>
+	of Jaz, the live-cd using our stable repositories.<br>
 	_______________________________<br>
 	<h4>All that jazz</h4>
 	We are working hard since March 2010 on Chakra GNU/Linux. 10 Developers hacking, packing and<br>
@@ -18,7 +18,7 @@
 	Since the split we created some confusion but we are going in the right direction to point out our features:<br>
 	<ul>
 		<li>Over 5670 packages are now available for our new Distribution</li>
-		<li>and over 500 get installed by this media.</li>
+		<li>and over 530 get installed by this media.</li>
 	</ul>
 	To showcase our bundle-system we created cinstall - a multi-tool to create and manage our bundles & packages.<br>
 	All those features you'll find later in shaman. We stabilized tribe and added some changes to get it even better<br>
@@ -60,6 +60,9 @@
 	needs gtk2. Use nvidia-xconfig instead. You can always install missing packages with pacman from our repositories.<br>
 	<br>
 	Read more about gtk-freeness <a href="http://chakra-project.org/bbs/viewtopic.php?id=2787">here</a>.<br>
+	<h4>Larch</h4>
+	Chakra GNU/Linux uses Larch8 series now.<br>
+	We changed it just minimal. Most is the original larch8 by Michael Towers.<br>
 	<hr width="100%">
 	<h4>System Requirements</h4>
 	<ul>
@@ -87,67 +90,93 @@
 		<li>english</li>
 		<li>español</li>
 	</ul>
-	Total Installed Size:   2171,42 MB
+	Total Installed Size:   2174,77 MB / 533 pkgs
 	<hr width="100%">
 	<h4>Known issues</h4>
 	None so far, but you can report some if you find some.
 	<hr width="100%">
 	<h4>Changes</h4>
-	<h4>since build 0.2.2-rc2:</h4>
+	<h4>since build 0.2.3:</h4>
 	<h4><u>addedpacks</u></h4>
 	<ul>
-		<li>chakra-hardware-detection updated
+		<li>chakra-hardware-detection updated</li>
+		<li>chakra-initscripts ported to larch8</li>
+		<li>larch8 support added</li>
+		<li>updated tool-chain</li>
+		<li>some more pkg-updates</li>
 	</ul>
 	<h4><u>tribe</u></h4>
 	<ul>
-		<li>more code cleaning
-		<li>more gui rework
+		<li>more code cleaning</li>
+		<li>more gui rework</li>
+	</ul>
+	<h4>since build 0.2.2:</h4>
+	<h4><u>addedpacks</u></h4>
+	<ul>
+		<li>bluedevil updated</li>
+	</ul>
+	<h4><u>tribe</u></h4>
+	<ul>
+		<li>marble page rework</li>
+		<li>su/root issue fixed</li>
+		<li>partition-table creation fixed</li>
+		<li>bluedevil moved to autostart</li>
+	</ul>
+	<h4>since build 0.2.2-rc2:</h4>
+	<h4><u>addedpacks</u></h4>
+	<ul>
+		<li>chakra-hardware-detection updated</li>
+	</ul>
+	<h4><u>tribe</u></h4>
+	<ul>
+		<li>more code cleaning</li>
+		<li>more gui rework</li>
 	</ul>
 	<h4>since build 0.2.2-rc1:</h4>
 	<h4><u>addedpacks</u></h4>
 	<ul>
-		<li>cinstall updated to 0.0.2.2-3
-		<li>updated proprietary drivers
+		<li>cinstall updated to 0.0.2.2-3</li>
+		<li>updated proprietary drivers</li>
 	</ul>
 	<h4><u>tribe</u></h4>
 	<ul>
-		<li>cleaning backend
-		<li>code cleaning
-		<li>more gui rework
+		<li>cleaning backend</li>
+		<li>code cleaning</li>
+		<li>more gui rework</li>
 	</ul>
 	<h4>since build 0.2.1:</h4>
 	<h4><u>addedpacks</u></h4>
 	<ul>
-		<li>ms-fonts removed
-		<li>acerhk, gwenview, juk, kget & ksnapshot added 
-		<li>cinstall updated to 0.0.2.2-2
-		<li>vlc,mplayer issue fixed
+		<li>ms-fonts removed</li>
+		<li>acerhk, gwenview, juk, kget & ksnapshot added</li>
+		<li>cinstall updated to 0.0.2.2-2</li>
+		<li>vlc,mplayer issue fixed</li>
 	</ul>
 	<h4><u>tribe</u></h4>
 	<ul>
-		<li>gui rework
-		<li>user creation changed
+		<li>gui rework</li>
+		<li>user creation changed</li>
 	</ul>
 	<h4>since build 0.2.0:</h4>
 	<h4><u>addedpacks</u></h4>
 	<ul>
-		<li>updated some pkgs
+		<li>updated some pkgs</li>
 	</ul>
 	<h4><u>tribe</u></h4>
 	<ul>
-		<li>gui rework
-		<li>enable partition table creation
-		<li>enable reboot
+		<li>gui rework</li>
+		<li>enable partition table creation</li>
+		<li>enable reboot</li>
 	</ul>
 	<h4><u>desktop</u></h4>
 	<ul>
-		<li>readded networkmanager plasmoid
-		<li>cleaned some folders in livemode
-		<li>kdm theme rework
+		<li>readded networkmanager plasmoid</li>
+		<li>cleaned some folders in livemode</li>
+		<li>kdm theme rework</li>
 	</ul>
 	<h4><u>bundle-sys</u></h4>
 	<ul>
-		<li>normal user can run bundles
+		<li>normal user can run bundles</li>
 	</ul>
 	<hr width="100%">
 	disc created by Phil Miller (amnon - Chakra ISO-Builder)

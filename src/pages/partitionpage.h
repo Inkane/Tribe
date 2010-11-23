@@ -117,14 +117,13 @@ private slots:
     virtual void aboutToGoToNext();
     virtual void aboutToGoToPrevious();
 
-    void actionLearnMoreTriggered(bool);
-    void actionNewPartitionTableTriggered(bool);
-    void actionFormatToggled(bool status);
-    void actionUndoTriggered(bool);
-    void actionResizeTriggered(bool);
-    void actionNewTriggered(bool);
-    void actionDeleteTriggered(bool);
-    void actionUnmountTriggered(bool);
+    void newClicked();
+    void deleteClicked();
+    void formatToggled(bool);
+    void newPartTableClicked();
+    void undoClicked();
+    void unmountClicked();
+    void advancedClicked();
 
     void populateTreeWidget();
     void setVisibleParts(VisibleParts parts);

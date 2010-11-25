@@ -53,7 +53,6 @@ public:
         Error
     };
 
-public:
     virtual ~InstallationHandler();
 
     static InstallationHandler *instance();
@@ -138,20 +137,6 @@ public:
 public slots:
     void cleanup();
 
-private:
-    InstallationHandler(QObject *parent = 0);
-
-    void installHome();
-    void installKDEConfiguration();
-
-    void handleProgress(CurrentAction act, int percentage);
-
-    int antiFlicker();
-
-    QString trimDevice(const Partition *device);
-
-    bool isMounted(const QString &partition);
-
 private Q_SLOTS:
     void postInstall();
     void postInstallDone(int eC, QProcess::ExitStatus eS);
@@ -186,6 +171,18 @@ signals:
     void bootloaderInstalled(int, QProcess::ExitStatus);
 
 private:
+    InstallationHandler(QObject *parent = 0);
+
+    void installHome();
+    void installKDEConfiguration();
+    void handleProgress(CurrentAction act, int percentage);
+
+    int antiFlicker();
+
+    QString trimDevice(const Partition *device);
+
+    bool isMounted(const QString &partition);
+
     QTime eTime;
 
     QMap<QString, const Partition*> m_mount;

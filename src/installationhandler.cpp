@@ -1,22 +1,14 @@
-/***************************************************************************
- *   Copyright (C) 2008, 2009  Dario Freddi <drf@chakra-project.org>       *
- *                 2010 -      Drake Justice <djustice@chakra-project.org  *
- *                                                                         *
- *   This program is free software; you can redistribute it and/or modify  *
- *   it under the terms of the GNU General Public License as published by  *
- *   the Free Software Foundation; either version 2 of the License, or     *
- *   (at your option) any later version.                                   *
- *                                                                         *
- *   This program is distributed in the hope that it will be useful,       *
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of        *
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
- *   GNU General Public License for more details.                          *
- *                                                                         *
- *   You should have received a copy of the GNU General Public License     *
- *   along with this program; if not, write to the                         *
- *   Free Software Foundation, Inc.,                                       *
- *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
- ***************************************************************************/
+
+/*
+ * Copyright (c) 2010  Dario Freddi <drf@chakra-project.org>
+ *                     Drake Justice <djustice@chakra-project.com>
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ */
 
 #include <QDebug>
 
@@ -109,12 +101,12 @@ void InstallationHandler::init()
 
 void InstallationHandler::setHomeBehaviour(HomeAction act)
 {
-    hAction = act;
+    homeAction = act;
 }
 
 void InstallationHandler::setFileHandlingBehaviour(FileHandling fhnd)
 {
-    fileAct = fhnd;
+    fileAction = fhnd;
 }
 
 QStringList InstallationHandler::checkExistingHomeDirs()
@@ -169,7 +161,7 @@ void InstallationHandler::handleProgress(CurrentAction act, int percentage)
 
 void InstallationHandler::installSystem()
 {
-    currAct = DiskPreparation;
+    currAction = DiskPreparation;
 
     // Ok, first, let's see prepare the hard drives through the partitioner
     PMHandler::instance()->apply();
@@ -187,7 +179,7 @@ void InstallationHandler::partitionsFormatted()
 
 void InstallationHandler::copyFiles()
 {
-    currAct = InstallationHandler::SystemInstallation;
+    currAction = InstallationHandler::SystemInstallation;
 
     emit streamLabel(i18n("Preparing installation..."));
 
@@ -232,7 +224,7 @@ void InstallationHandler::parseUnsquashfsOutput()
         secondMem = secondMem.split(QChar(' ')).at(0);
         int two = secondMem.toInt();
         int percentage = (one * 100) / two;
-        handleProgress(currAct, percentage);
+        handleProgress(currAction, percentage);
     }
 }
 
@@ -306,18 +298,23 @@ void InstallationHandler::populateCommandParameters()
     if (!m_hostname.isEmpty()) {
         m_postcommand.append(QString("--hostname %1 ").arg(m_hostname));
     }
+
     if (!m_timezone.isEmpty()) {
         m_postcommand.append(QString("--timezone %1 ").arg(m_timezone.replace('/', '-')));
     }
+
     if (!m_locale.isEmpty()) {
         m_postcommand.append(QString("--locale %1 ").arg(m_locale));
     }
+
     if (!m_KDELangPack.isEmpty() && m_KDELangPack != "en_us") {
         m_postcommand.append(QString("--kdelang %1 ").arg(m_KDELangPack));
     }
+
     if (m_doc) {
         m_postcommand.append("--download-doc yes ");
     }
+
     if (m_configurePacman) {
         m_postcommand.append("--configure-pacman yes ");
     }
@@ -340,7 +337,7 @@ void InstallationHandler::postRemove()
 
         QTimer::singleShot(100, this, SLOT(readyPost()));
 
-        currAct = InstallationHandler::PostInstall;
+        currAction = InstallationHandler::PostInstall;
 
         return;
     }
@@ -388,7 +385,7 @@ void InstallationHandler::postInstall()
                 process->deleteLater();
             }
         }
-	
+
         postInstallDone(0, QProcess::NormalExit);
     } else {
         QString command  = QString("sh ") +
@@ -422,7 +419,7 @@ void InstallationHandler::postInstallDone(int eC, QProcess::ExitStatus eS)
 
         if (m_postjob == "initialize-target") {
             emit streamLabel(i18n("Creating accounts ..."));
-            setUpUser(userLogin());
+            setUpUsers(userLoginList());
             m_postjob = "configure-pacman";
             m_postlabel = i18n("Configuring software management, this may take a bit...");
             percentage = 1;
@@ -463,8 +460,7 @@ void InstallationHandler::postInstallDone(int eC, QProcess::ExitStatus eS)
             m_postlabel = i18n("Creating fstab...");
             percentage = 10;
         } else if (m_postjob == "create-fstab") {
-	    m_postjob = "add-extra-mountpoint";
-            // Just keep the same label, the user does not care, we're still mounting
+            m_postjob = "add-extra-mountpoint";
             percentage = 11;
         } else if (m_postjob == "add-extra-mountpoint") {
             m_postjob = "setup-hardware";
@@ -598,8 +594,7 @@ void InstallationHandler::mountNextPartition()
                                       QByteArray(),
                                       partitionname,
                                       QString(INSTALLATION_TARGET + m_mapIterator.key()),
-                                      KIO::HideProgressInfo
-                                      );
+                                      KIO::HideProgressInfo);
 
     connect(mJob, SIGNAL(result(KJob*)), SLOT(partitionMounted(KJob*)));
 }
@@ -655,86 +650,81 @@ void InstallationHandler::installBootloader(int action, const QString &device)
     qDebug() << " :: bootloader installation command: " << command;
 }
 
-void InstallationHandler::setUpUser(const QString &user)
+void InstallationHandler::setUpUsers(QStringList users)
 {
     QString command;
 
-    if (checkExistingHomeDirs().contains(userLogin())) {
-        command = QString("chroot %1 useradd -c '%2' -d /home/%3 -s /bin/bash %3")
-        .arg(INSTALLATION_TARGET)
-        .arg(userName())
-        .arg(userLogin());
-        QProcess::execute(command);
-    } else {
-        command = QString("chroot %1 useradd -g users -m -s /bin/bash %2")
-        .arg(INSTALLATION_TARGET).arg(userLogin());
-        QProcess::execute(command);
-        //clean conflict files
-        command = QString("chroot %1 rm -v /home/%2/.bash_profile")
-            .arg(INSTALLATION_TARGET).arg(userLogin());
-        QProcess::execute(command);
-        command = QString("chroot %1 rm -v /home/%2/.bashrc")
-            .arg(INSTALLATION_TARGET).arg(userLogin());
-        QProcess::execute(command);
-        command = QString("chroot %1 rm -v /home/%2/.xinitrc")
-            .arg(INSTALLATION_TARGET).arg(userLogin());
-        QProcess::execute(command);
+    int current = 0;
+
+    foreach(QString user, users) {
+        if (checkExistingHomeDirs().contains(user)) {
+            command = QString("chroot %1 useradd -c '%2' -d /home/%3 -s /bin/bash %3")
+            .arg(INSTALLATION_TARGET)
+            .arg(userNameList().at(current))
+            .arg(userLoginList().at(current));
+            QProcess::execute(command);
+        } else {
+            command = QString("chroot %1 useradd -g users -m -s /bin/bash %2")
+            .arg(INSTALLATION_TARGET).arg(user);
+            QProcess::execute(command);
+            //clean conflict files
+            command = QString("chroot %1 rm -v /home/%2/.bash_profile")
+                .arg(INSTALLATION_TARGET).arg(user);
+            QProcess::execute(command);
+            command = QString("chroot %1 rm -v /home/%2/.bashrc")
+                .arg(INSTALLATION_TARGET).arg(user);
+            QProcess::execute(command);
+            command = QString("chroot %1 rm -v /home/%2/.xinitrc")
+                .arg(INSTALLATION_TARGET).arg(user);
+            QProcess::execute(command);
+        }
+
+        qDebug() << " :: user \'" + user + "\' created";
+
+        m_userProcess = new QProcess(this);
+        command = QString("chroot %1 /usr/bin/passwd %2").arg(INSTALLATION_TARGET).arg(user);
+        m_userProcess->start(command);
+
+        sleep(3);
+        streamPassword(current);
+
+        QDir dir("/home/live");
+        foreach(const QString &ent, dir.entryList(QDir::AllEntries | QDir::NoDotAndDotDot | QDir::Hidden)) {
+            KIO::Job *job = KIO::copy(KUrl::fromPath(ent),
+                                      KUrl::fromPath(QString("%1/home/%2").arg(INSTALLATION_TARGET)
+                                      .arg(user)),
+                 KIO::HideProgressInfo | KIO::Overwrite);
+
+            KIO::NetAccess::synchronousRun(job, 0);
+        }
+
+        qDebug() << " :: live configuration copied to the user's home";
+
+        QProcess::execute("sh " +
+                          QString(SCRIPTS_INSTALL_PATH) +
+                          "postinstall.sh --job configure-users " +
+                          m_postcommand +
+                          " --user-name " +
+                          user);
+
+        qDebug() << ":: user configuration complete";
+
+        QProcess::execute("sh " +
+                          QString(SCRIPTS_INSTALL_PATH) +
+                          "postinstall.sh --job configure-sudoers " +
+                          m_postcommand +
+                          " --user-name " +
+                          user);
+
+        qDebug() << " :: sudoers configuration complete";
+
+        current++;
     }
-
-    qDebug() << " :: user \'" + userLogin() + "\' created";
-
-    m_userProcess = new QProcess;
-
-    command = QString("chroot %1 /usr/bin/passwd %2").arg(INSTALLATION_TARGET).arg(userLogin());
-    connect(m_userProcess, SIGNAL(readyReadStandardError()), SLOT(streamPassword()));
-    m_userProcess->start(command);
-
-    QDir dir("/home/live");
-    foreach(const QString &ent, dir.entryList(QDir::AllEntries | QDir::NoDotAndDotDot | QDir::Hidden)) {
-        KIO::Job *job = KIO::copy(KUrl::fromPath(ent),
-                                  KUrl::fromPath(QString("%1/home/%2").arg(INSTALLATION_TARGET)
-                                  .arg(userLogin())),
-             KIO::HideProgressInfo | KIO::Overwrite);
-
-        KIO::NetAccess::synchronousRun(job, 0);
-    }
-
-    qDebug() << " :: live configuration copied to the user's home";
-
-    QProcess::execute("sh " +
-                      QString(SCRIPTS_INSTALL_PATH) +
-                      "postinstall.sh --job configure-users " +
-                      m_postcommand +
-                      " --user-name " +
-                      user);
-
-    qDebug() << ":: user configuration complete";
-
-    QProcess::execute("sh " +
-                      QString(SCRIPTS_INSTALL_PATH) +
-                      "postinstall.sh --job configure-sudoers " +
-                      m_postcommand +
-                      " --user-name " +
-                      user);
-
-    qDebug() << " :: sudoers configuration complete";
-    
-    m_rootProcess = new QProcess;
-
-    command = "chroot " + QString(INSTALLATION_TARGET) + " /usr/bin/passwd";
-    connect(m_rootProcess, SIGNAL(readyReadStandardError()), SLOT(streamRootPassword()));
-    m_rootProcess->start(command);
 }
 
-void InstallationHandler::streamRootPassword()
+void InstallationHandler::streamPassword(int current)
 {
-    m_rootProcess->write(QString(rootPassword()).toUtf8().data());
-    m_rootProcess->write("\n");
-}
-
-void InstallationHandler::streamPassword()
-{
-    m_userProcess->write(QString(userPassword()).toUtf8().data());
+    m_userProcess->write(QString(userPasswordList().at(current)).toUtf8().data());
     m_userProcess->write("\n");
 }
 
@@ -760,8 +750,7 @@ void InstallationHandler::abortInstallation()
     disconnect(m_process, SIGNAL(finished(int, QProcess::ExitStatus)), this, SLOT(jobDone(int)));
     disconnect(m_process, SIGNAL(finished(int, QProcess::ExitStatus)), this, SLOT(postRemove()));
     disconnect(m_process, SIGNAL(finished(int, QProcess::ExitStatus)), this, SLOT(postInstallDone(int, QProcess::ExitStatus)));
-    disconnect(m_process, SIGNAL(finished(int, QProcess::ExitStatus)), this,
-               SIGNAL(bootloaderInstalled(int,QProcess::ExitStatus)));
+    disconnect(m_process, SIGNAL(finished(int, QProcess::ExitStatus)), this, SIGNAL(bootloaderInstalled(int,QProcess::ExitStatus)));
     killProcesses();
     cleanup();
     killProcesses();

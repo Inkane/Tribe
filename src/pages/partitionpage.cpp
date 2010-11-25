@@ -622,13 +622,12 @@ void PartitionPage::currentItemChanged(QTreeWidgetItem* current, QTreeWidgetItem
         m_ui->unmountButton->setEnabled(partition->canUnmount());
         m_ui->deleteButton->setEnabled(DeleteOperation::canDelete(partition));
         m_ui->newButton->setEnabled(NewOperation::canCreateNew(partition));
-        disconnect(m_ui->formatButton, SIGNAL(toggled(bool)), this, SLOT(formatToggled(bool)));
         m_ui->formatButton->setEnabled(DeleteOperation::canDelete(partition));
+        disconnect(m_ui->formatButton, SIGNAL(toggled(bool)), this, SLOT(formatToggled(bool)));
         m_ui->formatButton->setChecked(m_toFormat.contains(partition));
         connect(m_ui->formatButton, SIGNAL(toggled(bool)), this, SLOT(formatToggled(bool)));
         m_ui->newPartTableButton->setEnabled(false);
     } else {
-        Device *device = current->data(0, DEVICE_ROLE).value<Device*>();
         m_ui->unmountButton->setVisible(false);
         m_ui->deleteButton->setEnabled(false);
         m_ui->newButton->setEnabled(false);

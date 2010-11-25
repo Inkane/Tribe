@@ -1,22 +1,13 @@
-/***************************************************************************
- *   Copyright (C) 2008 - 2009 by Dario Freddi                             *
- *   drf@chakra-project.org                                                *
- *                                                                         *
- *   This program is free software; you can redistribute it and/or modify  *
- *   it under the terms of the GNU General Public License as published by  *
- *   the Free Software Foundation; either version 2 of the License, or     *
- *   (at your option) any later version.                                   *
- *                                                                         *
- *   This program is distributed in the hope that it will be useful,       *
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of        *
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
- *   GNU General Public License for more details.                          *
- *                                                                         *
- *   You should have received a copy of the GNU General Public License     *
- *   along with this program; if not, write to the                         *
- *   Free Software Foundation, Inc.,                                       *
- *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
- ***************************************************************************/
+/*
+ * Copyright (c) 2008, 2009  Dario Freddi <drf@chakra-project.org>
+ *               2010        Drake Justice <djustice.kde@gmail.com>
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ */
 
 #ifndef INSTALLATIONHANDLER_H
 #define INSTALLATIONHANDLER_H
@@ -28,8 +19,8 @@
 #include <QPointer>
 #include <QThread>
 
-#include <klocalizedstring.h>
-#include <kio/copyjob.h>
+#include <KLocalizedString>
+#include <KIO/CopyJob>
 
 class Partition;
 
@@ -100,7 +91,7 @@ public:
         m_stringlistIterator = m_removeLicenses.constBegin();
     }
 
-    void setUpUser(const QString &user);
+    void setUpUsers(QStringList);
 
     void setRemoveLicenses(const QStringList &packages) { m_removeLicenses = packages; }
     QStringList removeLicenses() { return m_removeLicenses; }
@@ -120,17 +111,23 @@ public:
     void setInstallDocumentation(bool doc) { m_doc = doc; }
     bool installDocumentation() { return m_doc; }
 
-    void setUserName(const QString& s) { m_userName = s; }
-    QString userName() { return m_userName; }
+    void setUserLoginList(QStringList s) { m_userLoginList = s; }
+    QStringList userLoginList() { return m_userLoginList; }
 
-    void setUserLogin(const QString& s) { m_userLogin = s; }
-    QString userLogin() { return m_userLogin; }
+    void setUserPasswordList(QStringList s) { m_userPasswordList = s; }
+    QStringList userPasswordList() { return m_userPasswordList; }
 
-    void setUserPassword(const QString& s) { m_userPassword = s; }
-    QString userPassword() { return m_userPassword; }
+    void setUserAvatarList(QStringList s) { m_userAvatarList = s; }
+    QStringList userAvatarList() { return m_userAvatarList; }
 
-    void setRootPassword(const QString& s) { m_rootPassword = s; }
-    QString rootPassword() { return m_rootPassword; }
+    void setUserNameList(QStringList s) { m_userNameList = s; }
+    QStringList userNameList() { return m_userNameList; }
+
+    void setUserAutoLoginList(QStringList s) { m_userAutoLoginList = s; }
+    QStringList userAutoLoginList() { return m_userAutoLoginList; }
+
+    void setUserAdminList(QStringList s) { m_userAdminList = s; }
+    QStringList userAdminList() { return m_userAdminList; }
 
     void setConfigurePacman(bool pac) { m_configurePacman = pac; }
     bool configurePacman() { return m_configurePacman; }
@@ -143,6 +140,7 @@ public slots:
 
 private:
     InstallationHandler(QObject *parent = 0);
+
     void installHome();
     void installKDEConfiguration();
 
@@ -155,66 +153,74 @@ private:
     bool isMounted(const QString &partition);
 
 private Q_SLOTS:
-    void parseUnsquashfsOutput();
-
-    void jobDone(int result);
     void postInstall();
     void postInstallDone(int eC, QProcess::ExitStatus eS);
 
+    void parseUnsquashfsOutput();
+
+    void jobDone(int result);
     void reconnectJobSlot();
 
     void postRemove();
-
     void readyPost();
 
     void partitionMounted(KJob *job);
-
     void unmountAll();
+    void partitionsFormatted();
+
     void killProcesses();
 
-    void streamPassword();
-    void streamRootPassword();
-
-    void partitionsFormatted();
+    void streamPassword(int);
 
 signals:
     void streamProgress(int percentage);
     void streamLabel(const QString &label);
+
     void installationDone();
+
     void errorInstalling(const QString &message = i18n("No Further details given"));
 
     void mounting(const QString &ent, InstallationHandler::Status status);
-
     void mountingDone();
 
     void bootloaderInstalled(int, QProcess::ExitStatus);
 
 private:
-    HomeAction hAction;
     QTime eTime;
+
     QMap<QString, const Partition*> m_mount;
     QMap<QString, const Partition*>::const_iterator m_mapIterator;
+
     QStringList::const_iterator m_stringlistIterator;
+
     QString m_postjob;
     QString m_postlabel;
     QString m_postcommand;
-    QPointer<QProcess> m_process;
-    QStringList m_mtab;
-    QProcess *m_userProcess;
-    QProcess *m_rootProcess;
 
-    CurrentAction currAct;
-    FileHandling fileAct;
+    QPointer<QProcess> m_process;
+    QProcess *m_userProcess;
+
+    HomeAction homeAction;
+    CurrentAction currAction;
+    FileHandling fileAction;
+
+    QStringList m_mtab;
+
     QStringList m_removeLicenses;
+
+    QStringList m_userLoginList;
+    QStringList m_userPasswordList;
+    QStringList m_userAvatarList;
+    QStringList m_userNameList;
+    QStringList m_userAdminList;
+    QStringList m_userAutoLoginList;
+
     QString m_hostname;
     QString m_timezone;
-    QString m_userName;
-    QString m_userLogin;
-    QString m_userPassword;
-    QString m_rootPassword;
     QString m_locale;
     QString m_KDELangPack;
     QString m_rootDevice;
+
     bool m_doc;
     bool m_configurePacman;
 

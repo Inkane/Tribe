@@ -1,26 +1,17 @@
-/***************************************************************************
- *   Copyright (C) 2008 - 2009 by Dario Freddi                             *
- *   drf@chakra-project.org                                                *
- *   Copyright (C) 2009 by Lukas Appelhans                                 *
- *   l.appelhans@gmx.de                                                    *
- *                                                                         *
- *   This program is free software; you can redistribute it and/or modify  *
- *   it under the terms of the GNU General Public License as published by  *
- *   the Free Software Foundation; either version 2 of the License, or     *
- *   (at your option) any later version.                                   *
- *                                                                         *
- *   This program is distributed in the hope that it will be useful,       *
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of        *
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
- *   GNU General Public License for more details.                          *
- *                                                                         *
- *   You should have received a copy of the GNU General Public License     *
- *   along with this program; if not, write to the                         *
- *   Free Software Foundation, Inc.,                                       *
- *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
- ***************************************************************************/
+/*
+ * Copyright (c) 2008, 2009  Dario Freddi <drf@chakra-project.org>
+ *               2009        Lukas Appelhans <l.appelhans@gmx.de>
+ *               2010        Drake Justice <djustice.kde@gmail.com>
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ */
 
 #include <QDir>
+#include <QTimer>
 
 #include <KIcon>
 #include <KDebug>
@@ -47,69 +38,107 @@ UserCreationPage::~UserCreationPage()
 void UserCreationPage::createWidget()
 {
     ui.setupUi(this);
+    ui.addUser->setIcon(KIcon("list-add"));
 
-    ui.nameLine->setFocus();
+    ui.hostname->setText("chakra-pc");
 
-    ui.rootPw->setVisible(false);
-    ui.rootPwLabel->setVisible(false);
-    ui.rootConfirmPw->setVisible(false);
-    ui.rootConfirmPwLabel->setVisible(false);
+    connect(ui.addUser, SIGNAL(clicked(bool)), this, SLOT(addUserClicked()));
 
-    connect(ui.usePwForRoot, SIGNAL(toggled(bool)), this, SLOT(toggleRootPw()));
+    ui.scrollArea->setWidgetResizable(true);
+
+    UserWidget *f = new UserWidget(0, this);
+    m_userList.append(f);
+    ui.verticalLayout->insertWidget(0, f);
+    connect(f, SIGNAL(removeUserClicked(int)), this, SLOT(removeUserClicked(int)));
+}
+
+void UserCreationPage::addUserClicked()
+{
+    UserWidget *f = new UserWidget(m_userList.count(), this);
+    m_userList.append(f);
+    ui.verticalLayout->insertWidget(ui.verticalLayout->count() - 1, f);
+    connect(f, SIGNAL(removeUserClicked(int)), this, SLOT(removeUserClicked(int)));
+
+    QTimer::singleShot(300, this, SLOT(updateScrollView()));
+}
+
+void UserCreationPage::removeUserClicked(int number)
+{
+    m_userList.at(number)->deleteLater();
+    m_userList.removeAt(number);
+    updateUserNumbers();
+}
+
+void UserCreationPage::updateUserNumbers()
+{
+    int n = 0;
+    foreach (UserWidget *user, m_userList) {
+        user->setNumber(n);
+        n++;
+    }
+}
+
+void UserCreationPage::updateScrollView()
+{
+    ui.scrollArea->ensureWidgetVisible(ui.addUser);
 }
 
 void UserCreationPage::aboutToGoToNext()
 {
-    bool retbool;
-    KDialog *dialog = new KDialog(this, Qt::FramelessWindowHint);
-    dialog->setButtons(KDialog::Ok);
-    dialog->setModal(true);
+    QStringList loginList;
+    QStringList passwordList;
+    QStringList nameList;
+    QStringList avatarList;
+    QStringList autoLoginList;
+    QStringList adminList;
 
-    if (ui.nameLine->text().isEmpty()) {
-        KMessageBox::createKMessageBox(dialog, QMessageBox::Warning,
-                                       i18n("You have to specify at least a username and password."),
-                                       QStringList(), QString(), &retbool, KMessageBox::Notify);
-        return;
-    } else if (ui.userPw->text().isEmpty()) {
-        KMessageBox::createKMessageBox(dialog, QMessageBox::Warning,
-                                       i18n("You have to specify a password."),
-                                       QStringList(), QString(), &retbool, KMessageBox::Notify);
-        return;
-    } else if (ui.userConfirmPw->text().isEmpty() || (ui.userPw->text() != ui.userConfirmPw->text())) {
-        KMessageBox::createKMessageBox(dialog, QMessageBox::Warning,
-                                       i18n("The passwords do not match."),
-                                       QStringList(), QString(), &retbool, KMessageBox::Notify);
-        return;
-    } else if (!ui.usePwForRoot->isChecked()) {
-        if (ui.rootPw->text().isEmpty()) {
-            KMessageBox::createKMessageBox(dialog, QMessageBox::Warning,
-                                           i18n("You have to specify a root password."),
+    int n = 0;
+    foreach(UserWidget* user, m_userList) {
+        n++;
+
+        KDialog *dialog = new KDialog(this, Qt::FramelessWindowHint);
+        dialog->setButtons(KDialog::Ok);
+        dialog->setModal(true);
+        bool retbool;
+
+        if (n == 1) {
+            if (user->login.isEmpty()) {
+                KMessageBox::createKMessageBox(dialog, QMessageBox::Warning, i18n("You must give at least one login name."),
+                                               QStringList(), QString(), &retbool, KMessageBox::Notify);
+                return;
+            }
+        }
+
+        if ((user->password.isEmpty()) && (user->passwordsMatch == true)) {
+            KMessageBox::createKMessageBox(dialog, QMessageBox::Warning, i18n("Passwords cannot be empty."),
                                            QStringList(), QString(), &retbool, KMessageBox::Notify);
-
             return;
-        } else if (ui.rootPw->text() != ui.rootConfirmPw->text()) {
-            KMessageBox::createKMessageBox(dialog, QMessageBox::Warning,
-                                           i18n("The passwords do not match."),
+        } else if (!user->passwordsMatch) {
+            KMessageBox::createKMessageBox(dialog, QMessageBox::Warning, i18n("Passwords do not match..."),
                                            QStringList(), QString(), &retbool, KMessageBox::Notify);
-
+            return;
+        } else if (user->login.isEmpty()) {
+            KMessageBox::createKMessageBox(dialog, QMessageBox::Warning, i18n("Login names cannot be empty."),
+                                           QStringList(), QString(), &retbool, KMessageBox::Notify);
             return;
         }
+
+        loginList.append(user->login);
+        passwordList.append(user->password);
+        nameList.append(user->name);
+        avatarList.append(user->avatar);
+        autoLoginList.append(QString::number(user->autoLogin));
+        adminList.append(QString::number(user->admin));
     }
 
-    if (ui.userLine->text() != ui.userLine->text().toLower()) {
-        KMessageBox::createKMessageBox(dialog, QMessageBox::Warning,
-                                       i18n("Standard UNIX login names cannot contain capital letters. Using \"") + ui.userLine->text().toLower() + i18n("\" instead."),
-                                       QStringList(), QString(), &retbool, KMessageBox::Notify);
-    }
+    m_userList.clear();
 
-    m_handler->setUserLogin(ui.userLine->text().toLower());
-    m_handler->setUserName(ui.nameLine->text());
-    m_handler->setUserPassword(ui.userPw->text());
-
-    if (ui.usePwForRoot->isChecked())
-        m_handler->setRootPassword(ui.userPw->text());
-    else
-        m_handler->setRootPassword(ui.rootPw->text());
+    m_handler->setUserLoginList(loginList);
+    m_handler->setUserPasswordList(passwordList);
+    m_handler->setUserNameList(nameList);
+    m_handler->setUserAvatarList(avatarList);
+    m_handler->setUserAutoLoginList(autoLoginList);
+    m_handler->setUserAdminList(adminList);
 
     emit goToNextStep();
 }
@@ -119,26 +148,9 @@ void UserCreationPage::aboutToGoToPrevious()
     emit goToPreviousStep();
 }
 
-
-void UserCreationPage::toggleRootPw()
-{
-    ui.rootPw->setVisible(!ui.rootPw->isVisible());
-    ui.rootPwLabel->setVisible(!ui.rootPwLabel->isVisible());
-    ui.rootConfirmPw->setVisible(!ui.rootConfirmPw->isVisible());
-    ui.rootConfirmPwLabel->setVisible(!ui.rootConfirmPwLabel->isVisible());
-}
-
 void UserCreationPage::validateNext()
 {
     bool enable = true;
-
-    if (ui.userLine->text().isEmpty()) { enable = false; }
-    if (ui.userPw->text().isEmpty()) { enable = false; }
-    if (ui.userPw->text() != ui.userConfirmPw->text()) { enable = false; }
-    if (!ui.usePwForRoot->isChecked()) {
-        if (ui.rootPw->text().isEmpty()) { enable = false; }
-        if (ui.rootPw->text() != ui.rootConfirmPw->text()) { enable = false; }
-    }
 
     emit enableNextButton(enable);
 }

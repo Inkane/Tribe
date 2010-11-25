@@ -1,23 +1,15 @@
-/***************************************************************************
- *   Copyright (C) 2008, 2009  Dario Freddi <drf@chakra-project.org>       *
- *                 2008        Lukas Appelhans <l.appelhans@gmx.de>        *
- *                 2010        Drake Justice <djustice@chakra-project.org> *
- *                                                                         *
- *   This program is free software; you can redistribute it and/or modify  *
- *   it under the terms of the GNU General Public License as published by  *
- *   the Free Software Foundation; either version 2 of the License, or     *
- *   (at your option) any later version.                                   *
- *                                                                         *
- *   This program is distributed in the hope that it will be useful,       *
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of        *
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
- *   GNU General Public License for more details.                          *
- *                                                                         *
- *   You should have received a copy of the GNU General Public License     *
- *   along with this program; if not, write to the                         *
- *   Free Software Foundation, Inc.,                                       *
- *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
- ***************************************************************************/
+
+/*
+ * Copyright (c) 2008, 2009  Dario Freddi <drf@chakra-project.org>
+ *               2008        Lukas Appelhans <l.appelhans@gmx.de>
+ *               2010        Drake Justice <djustice.kde@gmail.com>
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ */
 
 #include <QResizeEvent>
 #include <QCloseEvent>
@@ -75,9 +67,6 @@ MainWindow::MainWindow(QWidget *parent)
     m_ui.preparationIcon->setPixmap(QPixmap(":/Images/images/installation-stage-icon.png"));
     m_ui.installationIcon->setPixmap(QPixmap(":/Images/images/installation-stage-icon.png"));
     m_ui.configurationIcon->setPixmap(QPixmap(":/Images/images/installation-stage-icon.png"));
-
-    m_ui.preparePartitionsLabel->hide();
-    m_ui.preparePartitionsIcon->hide();
 
     setWindowState(windowState() ^ Qt::WindowFullScreen);
 
@@ -160,15 +149,11 @@ void MainWindow::loadPage(InstallationStep page)
         m_ui.stackedWidget->addWidget(new LocalePage(this));
         break;
 
-    case MainWindow::Settings:
-        m_ui.stackedWidget->addWidget(new SettingsPage(this));
-        break;
-
     case MainWindow::CreateUser:
         m_ui.stackedWidget->addWidget(new UserCreationPage(this));
         break;
 
-    case MainWindow::Partitioning:
+    case MainWindow::Partition:
         m_ui.stackedWidget->addWidget(new PartitionPage(this));
         break;
 
@@ -277,16 +262,6 @@ void MainWindow::setInstallationStep(InstallationStep step, StepStatus status)
 
         break;
 
-    case MainWindow::Settings:
-        if (status == MainWindow::Done)
-            m_ui.settingsIcon->setPixmap(KIcon("games-endturn").pixmap(18));
-        else if (status == MainWindow::ToDo)
-            m_ui.settingsIcon->setPixmap(QPixmap());
-        else if (status == MainWindow::InProgress)
-            m_ui.settingsIcon->setMovie(m_movie);
-
-        break;
-
     case MainWindow::CreateUser:
         if (status == MainWindow::Done)
             m_ui.createuserIcon->setPixmap(KIcon("games-endturn").pixmap(18));
@@ -297,7 +272,7 @@ void MainWindow::setInstallationStep(InstallationStep step, StepStatus status)
 
         break;
 
-    case MainWindow::Partitioning:
+    case MainWindow::Partition:
         if (status == MainWindow::Done)
             m_ui.partitioningIcon->setPixmap(KIcon("games-endturn").pixmap(18));
         else if (status == MainWindow::ToDo)
@@ -374,23 +349,18 @@ void MainWindow::goToNextStep()
         break;
 
     case MainWindow::Language:
-        m_currAction = MainWindow::Settings;
+        m_currAction = MainWindow::CreateUser;
         setInstallationStep(MainWindow::Language, MainWindow::Done);
         break;
 
-    case MainWindow::Settings:
-        m_currAction = MainWindow::CreateUser;
-        setInstallationStep(MainWindow::Settings, MainWindow::Done);
-        break;
-
     case MainWindow::CreateUser:
-        m_currAction = MainWindow::Partitioning;
+        m_currAction = MainWindow::Partition;
         setInstallationStep(MainWindow::CreateUser, MainWindow::Done);
         break;
 
-    case MainWindow::Partitioning:
+    case MainWindow::Partition:
         m_currAction = MainWindow::ReadyToInstall;
-        setInstallationStep(MainWindow::Partitioning, MainWindow::Done);
+        setInstallationStep(MainWindow::Partition, MainWindow::Done);
         break;
 
     case MainWindow::ReadyToInstall:
@@ -437,34 +407,24 @@ void MainWindow::goToPreviousStep()
         setInstallationStep(MainWindow::LicenseApproval, MainWindow::ToDo);
         break;
 
-    case MainWindow::Preparation:
-        m_currAction = MainWindow::ReleaseNotes;
-        setInstallationStep(MainWindow::Preparation, MainWindow::ToDo);
-        break;
-
     case MainWindow::Language:
         m_currAction = MainWindow::ReleaseNotes;
         setInstallationStep(MainWindow::LicenseApproval, MainWindow::ToDo);
         setInstallationStep(MainWindow::Language, MainWindow::ToDo);
         break;
 
-    case MainWindow::Settings:
-        m_currAction = MainWindow::Language;
-        setInstallationStep(MainWindow::Settings, MainWindow::ToDo);
-        break;
-
     case MainWindow::CreateUser:
-        m_currAction = MainWindow::Settings;
+        m_currAction = MainWindow::Language;
         setInstallationStep(MainWindow::CreateUser, MainWindow::ToDo);
         break;
 
-    case MainWindow::Partitioning:
+    case MainWindow::Partition:
         m_currAction = MainWindow::CreateUser;
-        setInstallationStep(MainWindow::Partitioning, MainWindow::ToDo);
+        setInstallationStep(MainWindow::Partition, MainWindow::ToDo);
         break;
 
     case MainWindow::ReadyToInstall:
-        m_currAction = MainWindow::Partitioning;
+        m_currAction = MainWindow::Partition;
         setInstallationStep(MainWindow::ReadyToInstall, MainWindow::Done);
         break;
 
@@ -566,16 +526,21 @@ void MainWindow::setUpCleanupPage()
         m_ui.stackedWidget->removeWidget(w);
         w->deleteLater();
     }
+
     QWidget *w = new QWidget;
     QVBoxLayout *lay = new QVBoxLayout;
+
     QLabel *logo = new QLabel();
     logo->setPixmap(KIcon("chakra-shiny").pixmap(128));
+
     QLabel *l = new QLabel("Please wait, cleaning up installation...");
+
     lay->addStretch();
     lay->addWidget(logo);
     lay->addWidget(l);
     lay->addStretch();
     w->setLayout(lay);
+
     m_ui.stackedWidget->addWidget(w);
     m_ui.previousButton->setVisible(false);
     m_ui.nextButton->setVisible(false);

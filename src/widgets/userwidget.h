@@ -29,6 +29,10 @@ public:
     QString name;
     bool autoLogin;
     bool admin;
+    bool passwordsMatch;
+
+    int number;
+    void setNumber(int i) { number = i; }
 
 signals:
     void addUserClicked();
@@ -46,7 +50,6 @@ private slots:
 
 private:
     Ui::UserWidget ui;
-    int m_userNumber;
 };
 
 #endif /* USERWIDGET_H */

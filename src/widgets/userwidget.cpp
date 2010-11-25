@@ -12,9 +12,9 @@
 #include "userwidget.h"
 
 
-UserWidget::UserWidget(int number, QWidget* parent): QWidget(parent)
+UserWidget::UserWidget(int a_userNumber, QWidget* parent): QWidget(parent)
 {
-    m_userNumber = number;
+    number = a_userNumber;
 
     ui.setupUi(this);
 
@@ -29,7 +29,7 @@ UserWidget::UserWidget(int number, QWidget* parent): QWidget(parent)
     ui.avatar->setIconSize(QSize(48, 48));
     ui.avatar->setIcon(KIcon("view-user-offline-kopete"));
 
-    if (m_userNumber == 0) {
+    if (number == 0) {
         autoLogin = true;
         admin = true;
         ui.autoLoginCheckBox->setChecked(true);
@@ -39,6 +39,8 @@ UserWidget::UserWidget(int number, QWidget* parent): QWidget(parent)
         autoLogin = false;
         admin = false;
     }
+
+    passwordsMatch = true;
 
     connect(ui.loginLine, SIGNAL(textChanged(QString)), this, SLOT(testFields()));
     connect(ui.passLine, SIGNAL(textChanged(QString)), this, SLOT(testFields()));
@@ -64,16 +66,19 @@ void UserWidget::showDetails()
 
 void UserWidget::emitRemove()
 {
-    emit removeUserClicked(m_userNumber);
+    emit removeUserClicked(number);
 }
 
 void UserWidget::testFields()
 {
-    if (ui.passLine->text() == ui.confirmPassLine->text() && !ui.passLine->text().isEmpty()) {
+    if ((ui.passLine->text() == ui.confirmPassLine->text()) &&
+        (!ui.passLine->text().isEmpty())) {
         ui.confirmPwCheck->setPixmap(QPixmap(":Images/images/green-check.png"));
         password = ui.passLine->text();
+        passwordsMatch = true;
     } else {
         ui.confirmPwCheck->setPixmap(QPixmap());
+        passwordsMatch = false;
     }
 
     QRegExp r("\\D\\w{0,45}");
@@ -86,6 +91,11 @@ void UserWidget::testFields()
     } else {
         ui.loginLine->setText("");
     }
+
+    login = ui.loginLine->text();
+    name = ui.nameLine->text();
+    autoLogin = ui.autoLoginCheckBox->isChecked();
+    admin = ui.adminCheckBox->isChecked();
 }
 
 void UserWidget::avatarClicked()

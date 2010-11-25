@@ -43,6 +43,7 @@ SET(tribe_SRCS
 
 SET(tribe_WIDGETS
     src/widgets/progresswidget.cpp
+    src/widgets/userwidget.cpp
 )
 
 SET(tribe_PAGES
@@ -76,6 +77,7 @@ SET(tribe_PAGE_UIS
 
 set(tribe_WIDGET_UIS
     ui/widgets/progresswidget.ui
+    ui/widgets/userwidget.ui
 )
 
 SET(tribe_IMAGES

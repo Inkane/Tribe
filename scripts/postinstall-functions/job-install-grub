@@ -8,7 +8,7 @@ job_install_grub()
 	msg_job_start "job_install_grub"
 
 	msg "installing grub"
-
+echo "GRUB_DEBUG___ >>>> mountpoint: ${mountpoint}
 	cp -avf ${mountpoint}/usr/lib/grub/i386-pc/* ${mountpoint}/boot/grub/
 
 	if [ "${use_boot}" = "yes" ] ; then
@@ -17,7 +17,8 @@ job_install_grub()
 
 		_real_boot=$(echo ${target_boot} | cut -c 4)
 		_real_grub_partition=$(($_real_boot-1))
-
+echo "GRUB_DEBUG___ >>>> grub_device: ${grub_device}"
+echo "GRUB_DEBUG___ >>>> real_grub_part: ${_real_grub_partition}"
 		${mountpoint}/sbin/grub --no-floppy --batch >/tmp/grub.log 2>&1 <<EOF
 root (hd${grub_device},${_real_grub_partition})
 setup (hd${grub_device})
@@ -25,7 +26,8 @@ quit
 EOF
 
 	else
-
+echo "GRUB_DEBUG___ >>>> grub_device: ${grub_device}"
+echo "GRUB_DEBUG___ >>>> real_grub_part: ${_real_grub_partition}"
 		${mountpoint}/sbin/grub --no-floppy --batch >/tmp/grub.log 2>&1 <<EOF
 root (hd${grub_device},${grub_partition})
 setup (hd${grub_device})

@@ -620,6 +620,7 @@ void InstallationHandler::partitionMounted(KJob *job)
 
 void InstallationHandler::installBootloader(int action, const QString &device)
 {
+    qDebug() << "GRUB_DEBUG__  >>>>";
     if (m_process)
         m_process->deleteLater();
 
@@ -633,14 +634,15 @@ void InstallationHandler::installBootloader(int action, const QString &device)
                   .arg(m_postcommand);
     }
 
+    qDebug() << "GRUB_DEBUG__  >>>> command: " << command;
     QString partition = trimDevice(m_mount["/"]);
-
+    qDebug() << "GRUB_DEBUG__  >>>> partition (before): " << partition;
     partition.remove(0, 3);
-
+    qDebug() << "GRUB_DEBUG__  >>>> partition (after): " << partition;
     int grubpart = partition.toInt() - 1;
 
     command.append(QString("--grub-device %1 --grub-partition %2 ").arg(device).arg(grubpart));
-
+    qDebug() << "GRUB_DEBUG__  >>>> command (appended): " << command;
     m_process = new QProcess(this);
 
     connect(m_process, SIGNAL(finished(int, QProcess::ExitStatus)), SIGNAL(bootloaderInstalled(int, QProcess::ExitStatus)));
@@ -692,13 +694,13 @@ void InstallationHandler::setUpUsers(QStringList users)
         // set autologin
         if (m_userAutoLoginList.at(current) == "1") {
             command = QString("bash -c \"sed -i -e \'s/#AutoLoginEnable=true/AutoLoginEnable=true/\' " + 
-                            QString(INSTALLATION_TARGET) + "/usr/share/config/kdmrc\"");
+                              QString(INSTALLATION_TARGET) + "/usr/share/config/kdmrc\"");
             QProcess::execute(command);
             command = QString("bash -c \"sed -i -e \'s/#AutoLoginUser=fred/AutoLoginUser=" + user + "/\' " + 
-                            QString(INSTALLATION_TARGET) + "/usr/share/config/kdmrc\"");
+                              QString(INSTALLATION_TARGET) + "/usr/share/config/kdmrc\"");
             QProcess::execute(command);
         }
-        
+
         // set user passwd
         command = QString("chroot %1 /usr/bin/passwd %2").arg(INSTALLATION_TARGET).arg(user);
         m_userProcess->start(command);

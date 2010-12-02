@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2008, 2009  Dario Freddi <drf@chakra-project.org>
- *               2010        Drake Justice <djustice.kde@gmail.com>
+ *               2010        Drake Justice <djustice@chakra-project.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -9,6 +9,9 @@
  *
  */
 
+#include <QDebug>
+
+#include "avatardialog.h"
 #include "userwidget.h"
 
 
@@ -29,6 +32,8 @@ UserWidget::UserWidget(int a_userNumber, QWidget* parent): QWidget(parent)
     ui.avatar->setIconSize(QSize(48, 48));
     ui.avatar->setIcon(KIcon("view-user-offline-kopete"));
 
+    m_avatarDialog = new AvatarDialog(0);
+    
     if (number == 0) {
         autoLogin = true;
         admin = true;
@@ -52,11 +57,23 @@ UserWidget::UserWidget(int a_userNumber, QWidget* parent): QWidget(parent)
     connect(ui.avatar, SIGNAL(clicked(bool)), this, SLOT(avatarClicked()));
     connect(ui.autoLoginCheckBox, SIGNAL(toggled(bool)), this, SLOT(autoLoginToggled()));
     connect(ui.adminCheckBox, SIGNAL(toggled(bool)), this, SLOT(adminToggled()));
+    
+    connect(m_avatarDialog, SIGNAL(setAvatar(QString)), this, SLOT(setAvatar(QString)));
 }
 
 UserWidget::~UserWidget()
 {
 
+}
+
+void UserWidget::setAvatar(QString a)
+{
+    if (a == "z") {
+         
+    } else {
+        ui.avatar->setIcon(KIcon(a));
+        avatar = a;
+    }
 }
 
 void UserWidget::showDetails()
@@ -100,7 +117,8 @@ void UserWidget::testFields()
 
 void UserWidget::avatarClicked()
 {
-    ///
+    m_avatarDialog->setWindowFlags(Qt::FramelessWindowHint);
+    m_avatarDialog->show();
 }
 
 void UserWidget::autoLoginToggled()

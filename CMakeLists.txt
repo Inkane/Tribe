@@ -44,6 +44,7 @@ SET(tribe_SRCS
 SET(tribe_WIDGETS
     src/widgets/progresswidget.cpp
     src/widgets/userwidget.cpp
+    src/widgets/avatardialog.cpp
 )
 
 SET(tribe_PAGES
@@ -78,6 +79,7 @@ SET(tribe_PAGE_UIS
 set(tribe_WIDGET_UIS
     ui/widgets/progresswidget.ui
     ui/widgets/userwidget.ui
+    ui/widgets/avatardialog.ui
 )
 
 SET(tribe_IMAGES
@@ -118,6 +120,10 @@ file(GLOB tribe_SCRIPTS
     scripts/*.sh
 )
 
+file(GLOB tribe_AVATARS
+    ui/images/avatars/*.png
+)
+
 install(TARGETS tribe DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
 
 install(FILES ${tribe_SCRIPTS} 
@@ -128,6 +134,9 @@ install(FILES ${tribe_SCRIPTS}
                     GROUP_EXECUTE
                     OWNER_EXECUTE
                     WORLD_EXECUTE)
+
+install(FILES ${tribe_AVATARS} 
+        DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/avatars)
 
 install(FILES ${POSTINSTALL_FUNCTIONS} DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/scripts)
 install(FILES data/postinstall.conf DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/config)

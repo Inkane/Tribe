@@ -87,7 +87,7 @@ void InstallationHandler::init()
         }
     }
 
-    // Compute minimum size for target
+    // compute minimum size for target for partitionpage root part size check
     QFile squash("/.livesys/medium/larch/system.sqf");
     m_minSize = squash.size();
     if (m_minSize <= 0) {
@@ -680,8 +680,14 @@ void InstallationHandler::setUpUsers(QStringList users)
         }
 
         qDebug() << " :: user \'" + user + "\' created";
+        
+        command = QString("cp " + userAvatarList().at(current) + " " + 
+                                  INSTALLATION_TARGET + "/usr/share/apps/kdm/faces/" +
+                                  user + ".face.icon");
+        QProcess::execute(command);
 
         m_userProcess = new QProcess(this);
+
         command = QString("chroot %1 /usr/bin/passwd %2").arg(INSTALLATION_TARGET).arg(user);
         m_userProcess->start(command);
 

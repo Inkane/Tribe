@@ -12,6 +12,7 @@
 #ifndef USERWIDGET_H
 #define USERWIDGET_H
 
+#include "avatardialog.h"
 #include "ui_userwidget.h"
 
 
@@ -43,6 +44,7 @@ private slots:
     void emitRemove();
 
     void avatarClicked();
+    void setAvatar(QString);
     void autoLoginToggled();
     void adminToggled();
 
@@ -50,6 +52,7 @@ private slots:
 
 private:
     Ui::UserWidget ui;
+    AvatarDialog *m_avatarDialog;
 };
 
 #endif /* USERWIDGET_H */

@@ -413,6 +413,10 @@ void PartitionPage::createWidget()
     m_ui->advancedButton->setEnabled(false);
     connect(m_ui->advancedButton, SIGNAL(clicked(bool)), this, SLOT(advancedClicked()));
 
+    m_ui->newPartTableButton->setIcon(KIcon("insert-table"));
+    m_ui->newPartTableButton->setEnabled(false);
+    connect(m_ui->newPartTableButton, SIGNAL(clicked(bool)), this, SLOT(newPartTableClicked()));
+    
     m_ui->newButton->setIcon(KIcon("list-add"));
     m_ui->newButton->setEnabled(false);
     connect(m_ui->newButton, SIGNAL(clicked(bool)), this, SLOT(newClicked()));
@@ -425,10 +429,6 @@ void PartitionPage::createWidget()
     m_ui->formatButton->setEnabled(false);
     m_ui->formatButton->setCheckable(true);
     connect(m_ui->formatButton, SIGNAL(toggled(bool)), this, SLOT(formatToggled(bool)));
-
-    m_ui->newPartTableButton->setIcon(KIcon("tab-new"));
-    m_ui->newPartTableButton->setEnabled(false);
-    connect(m_ui->newPartTableButton, SIGNAL(clicked(bool)), this, SLOT(newPartTableClicked()));
 
     m_ui->undoButton->setIcon(KIcon("edit-undo"));
     m_ui->undoButton->setEnabled(PMHandler::instance()->operationStack().operations().size() > 0);

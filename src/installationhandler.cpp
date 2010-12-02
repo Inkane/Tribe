@@ -634,15 +634,15 @@ void InstallationHandler::installBootloader(int action, const QString &device)
                   .arg(m_postcommand);
     }
 
-    qDebug() << "GRUB_DEBUG__  >>>> command: " << command;
+qDebug() << "GRUB_DEBUG__  >>>> command: " << command;
     QString partition = trimDevice(m_mount["/"]);
-    qDebug() << "GRUB_DEBUG__  >>>> partition (before): " << partition;
+qDebug() << "GRUB_DEBUG__  >>>> partition (before): " << partition;
     partition.remove(0, 3);
-    qDebug() << "GRUB_DEBUG__  >>>> partition (after): " << partition;
+qDebug() << "GRUB_DEBUG__  >>>> partition (after): " << partition;
     int grubpart = partition.toInt() - 1;
 
     command.append(QString("--grub-device %1 --grub-partition %2 ").arg(device).arg(grubpart));
-    qDebug() << "GRUB_DEBUG__  >>>> command (appended): " << command;
+qDebug() << "GRUB_DEBUG__  >>>> command (appended): " << command;
     m_process = new QProcess(this);
 
     connect(m_process, SIGNAL(finished(int, QProcess::ExitStatus)), SIGNAL(bootloaderInstalled(int, QProcess::ExitStatus)));

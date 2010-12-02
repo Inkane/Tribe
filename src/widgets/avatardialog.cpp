@@ -38,7 +38,6 @@ void AvatarDialog::populateList()
 {
     QDir d("/usr/share/tribe/avatars");
     foreach (QString file, d.entryList(QDir::AllEntries | QDir::NoDotAndDotDot)) {
-        qDebug() << "file: " << file;
         QListWidgetItem *item = new QListWidgetItem(ui.avatarList);
         item->setIcon(KIcon(d.path() + "/" + file));
         item->setData(58, d.path() + "/" + file);

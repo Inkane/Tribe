@@ -111,7 +111,7 @@ void InstallationHandler::setFileHandlingBehaviour(FileHandling fhnd)
 
 QStringList InstallationHandler::checkExistingHomeDirs()
 {
-    QDir dir(QString(INSTALLATION_TARGET + QString("home/")));
+    QDir dir(QString(QString(INSTALLATION_TARGET) + QString("/home/")));
 
     if (dir.entryList(QDir::NoDotAndDotDot | QDir::Dirs | QDir::NoSymLinks).isEmpty())
         return QStringList();
@@ -680,20 +680,33 @@ void InstallationHandler::setUpUsers(QStringList users)
         }
 
         qDebug() << " :: user \'" + user + "\' created";
-        
+
+        // set kdm/user avatar
         command = QString("cp " + userAvatarList().at(current) + " " + 
-                                  INSTALLATION_TARGET + "/usr/share/apps/kdm/faces/" +
+                                  QString(INSTALLATION_TARGET) + "/usr/share/apps/kdm/faces/" +
                                   user + ".face.icon");
         QProcess::execute(command);
 
         m_userProcess = new QProcess(this);
 
+        // set autologin
+        if (m_userAutoLoginList.at(current) == "1") {
+            command = QString("bash -c \"sed -i -e \'s/#AutoLoginEnable=true/AutoLoginEnable=true/\' " + 
+                            QString(INSTALLATION_TARGET) + "/usr/share/config/kdmrc\"");
+            QProcess::execute(command);
+            command = QString("bash -c \"sed -i -e \'s/#AutoLoginUser=fred/AutoLoginUser=" + user + "/\' " + 
+                            QString(INSTALLATION_TARGET) + "/usr/share/config/kdmrc\"");
+            QProcess::execute(command);
+        }
+        
+        // set user passwd
         command = QString("chroot %1 /usr/bin/passwd %2").arg(INSTALLATION_TARGET).arg(user);
         m_userProcess->start(command);
 
         sleep(3);
         streamPassword(current);
 
+        // copy in live user settings
         QDir dir("/home/live");
         foreach(const QString &ent, dir.entryList(QDir::AllEntries | QDir::NoDotAndDotDot | QDir::Hidden)) {
             KIO::Job *job = KIO::copy(KUrl::fromPath(ent),

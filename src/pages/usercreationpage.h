@@ -36,6 +36,8 @@ private slots:
 
     void addUserClicked();
     void removeUserClicked(int);
+    
+    void updateAutoLogin(int);
 
     void validateNext();
 

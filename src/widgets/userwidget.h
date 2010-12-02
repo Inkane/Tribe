@@ -34,10 +34,13 @@ public:
 
     int number;
     void setNumber(int i) { number = i; }
+    
+    void setAutoLogin(bool);
 
 signals:
     void addUserClicked();
     void removeUserClicked(int);
+    void autoLoginToggled(int);
 
 private slots:
     void showDetails();

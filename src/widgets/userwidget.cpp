@@ -115,6 +115,12 @@ void UserWidget::testFields()
     admin = ui.adminCheckBox->isChecked();
 }
 
+void UserWidget::setAutoLogin(bool b)
+{
+    ui.autoLoginCheckBox->setChecked(b);
+    autoLogin = b;
+}
+
 void UserWidget::avatarClicked()
 {
     m_avatarDialog->setWindowFlags(Qt::FramelessWindowHint);
@@ -124,6 +130,8 @@ void UserWidget::avatarClicked()
 void UserWidget::autoLoginToggled()
 {
     autoLogin = ui.autoLoginCheckBox->isChecked();
+    if (autoLogin)
+        emit autoLoginToggled(number);
 }
 
 void UserWidget::adminToggled()

@@ -50,6 +50,7 @@ void UserCreationPage::createWidget()
     m_userList.append(f);
     ui.verticalLayout->insertWidget(0, f);
     connect(f, SIGNAL(removeUserClicked(int)), this, SLOT(removeUserClicked(int)));
+    connect(f, SIGNAL(autoLoginToggled(int)), this, SLOT(updateAutoLogin(int)));
 }
 
 void UserCreationPage::addUserClicked()
@@ -58,6 +59,7 @@ void UserCreationPage::addUserClicked()
     m_userList.append(f);
     ui.verticalLayout->insertWidget(ui.verticalLayout->count() - 1, f);
     connect(f, SIGNAL(removeUserClicked(int)), this, SLOT(removeUserClicked(int)));
+    connect(f, SIGNAL(autoLoginToggled(int)), this, SLOT(updateAutoLogin(int)));
 
     QTimer::singleShot(300, this, SLOT(updateScrollView()));
 }
@@ -67,6 +69,17 @@ void UserCreationPage::removeUserClicked(int number)
     m_userList.at(number)->deleteLater();
     m_userList.removeAt(number);
     updateUserNumbers();
+}
+
+void UserCreationPage::updateAutoLogin(int i)
+{
+    if (m_userList.at(i)->autoLogin) {
+        foreach (UserWidget *user, m_userList) {
+            if (user->number != i) {
+                user->setAutoLogin(false);
+            }
+        }
+    }
 }
 
 void UserCreationPage::updateUserNumbers()

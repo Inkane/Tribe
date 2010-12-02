@@ -76,7 +76,8 @@ bool caseInsensitiveLessThan(const QString& s1, const QString& s2)
 ///////////// internals for the items in the partition tree
 
 PartitionDelegate::PartitionDelegate(QObject * parent) : QStyledItemDelegate(parent),
-                                                         m_lockIcon("object-locked")
+                                                         m_lockIcon("object-locked"),
+                                                         m_partIcon("partitionmanager")
 { }
 
 PartitionDelegate::~PartitionDelegate()
@@ -204,14 +205,17 @@ void PartitionDelegate::paint(QPainter * painter, const QStyleOptionViewItem & o
         painter->drawRect(overlayRect);
         painter->drawPixmap(iconRect, optV4.icon.pixmap(iconRect.size()));
     } else if (idx.data(58) == "p") {
-        painter->setBrush(QBrush(QColor(Qt::darkGray).darker().darker().darker()));
+        painter->setBrush(QColor(idx.data(60).toString()));
         painter->drawRect(iconRect);
+        painter->drawPixmap(QRect(QPoint(iconRect.left() + 2, iconRect.top() + 2), 
+                                  QPoint(iconRect.width() - 10, iconRect.height() - 10)), 
+                            m_partIcon.pixmap(iconRect.width() - 8, iconRect.height() - 8));
     }
 
     const Partition *partition = idx.data(PARTITION_ROLE).value<const Partition*>();
     if (partition && partition->isMounted()) {
         QRect overlayRect = optV4.rect;
-        overlayRect.setSize(iconRect.size() / 1.7);
+        overlayRect.setSize(iconRect.size() / 1.9);
         overlayRect.moveTo(QPoint(iconRect.right() - overlayRect.width(),
                                   iconRect.bottom() - overlayRect.height()));
 
@@ -399,6 +403,23 @@ PartitionPage::PartitionPage(QWidget *parent)
         , m_ui(new Ui::Partition)
         , m_install(InstallationHandler::instance())
 {
+    m_colorList.append(QColor(Qt::blue).darker().darker().darker());
+    m_colorList.append(QColor(Qt::red).darker().darker().darker());
+    m_colorList.append(QColor(Qt::green).darker().darker().darker());
+    m_colorList.append(QColor(Qt::yellow).darker().darker().darker());
+    m_colorList.append(QColor(Qt::gray).darker().darker().darker());
+    m_colorList.append(QColor(Qt::blue).darker().darker());
+    m_colorList.append(QColor(Qt::red).darker().darker());
+    m_colorList.append(QColor(Qt::green).darker().darker());
+    m_colorList.append(QColor(Qt::yellow).darker().darker());
+    m_colorList.append(QColor(Qt::gray).darker().darker());
+    m_colorList.append(QColor(Qt::blue).darker().darker());
+    m_colorList.append(QColor(Qt::red).darker().darker());
+    m_colorList.append(QColor(Qt::green).darker().darker());
+    m_colorList.append(QColor(Qt::yellow).darker().darker());
+    m_colorList.append(QColor(Qt::gray).darker().darker());
+
+    m_currentPart = 0;
 }
 
 PartitionPage::~PartitionPage()
@@ -460,6 +481,8 @@ void PartitionPage::createWidget()
 
     enableNextButton(false);
 
+    m_currentPart = 0;
+    
     // Now set up PartitionManager and load
     PMHandler::instance();
     connect(PMHandler::instance(), SIGNAL(devicesReady()), this, SLOT(populateTreeWidget()));
@@ -837,6 +860,9 @@ void PartitionPage::undoClicked()
 
 QTreeWidgetItem* PartitionPage::createItem(const Partition* p, Device *dev)
 {
+    if (m_currentPart >= m_colorList.count())
+        m_currentPart = 0;
+
     QTreeWidgetItem* item = new PartitionTreeWidgetItem(p, dev);
 
     QString pCapacity = KIO::convertSize(Capacity(*p).toInt(Capacity::Byte)).replace("i", "");
@@ -853,6 +879,7 @@ QTreeWidgetItem* PartitionPage::createItem(const Partition* p, Device *dev)
     if (p->fileSystem().type() == FileSystem::Unknown) {
         item->setData(0, 50, pCapacity);
         item->setData(0, 51, i18n("Unallocated space"));
+        item->setData(0, 60, m_colorList.at(m_currentPart).name());
     } else if (!p->children().isEmpty()) {
         item->setData(0, 50, pCapacity);
         item->setIcon(0, KIcon("drive-harddisk"));
@@ -862,18 +889,23 @@ QTreeWidgetItem* PartitionPage::createItem(const Partition* p, Device *dev)
         item->setData(0, 50, pUsed + " / " + pCapacity);
         item->setData(0, 58, "p");
         item->setData(0, 59, "win");
+        item->setData(0, 60, m_colorList.at(m_currentPart).name());
         item->setData(0, 51, i18n("Windows / %1", p->fileSystem().name()));
     } else if (p->fileSystem().type() == FileSystem::Hfs || p->fileSystem().type() == FileSystem::HfsPlus) {
         item->setData(0, 50, pUsed + " / " + pCapacity);
         item->setData(0, 58, "p");
         item->setData(0, 59, "mac");
+        item->setData(0, 60, m_colorList.at(m_currentPart).name());
         item->setData(0, 51, i18n("Apple / %1", p->fileSystem().name()));
     } else {
         item->setData(0, 50, pUsed + " / " + pCapacity);
         item->setData(0, 58, "p");
         item->setData(0, 59, "lin");
+        item->setData(0, 60, m_colorList.at(m_currentPart).name());
         item->setData(0, 51, i18n("Linux / %1", p->fileSystem().name()));
     }
+
+    m_currentPart++;
 
     return item;
 }

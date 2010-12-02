@@ -55,7 +55,7 @@ p, li { white-space: pre-wrap; }
       </size>
      </property>
      <property name="text">
-      <string>Please select a mountpoint for your existing partitions. At least '/' should be mounted. No permanent changes to your hard drive will be made when you will press &quot;Next&quot;</string>
+      <string>Please select a mountpoint for your partitions. At least '/' should be mounted. No permanent changes to your hard drive will be made when you will press &quot;Next&quot;</string>
      </property>
      <property name="scaledContents">
       <bool>true</bool>

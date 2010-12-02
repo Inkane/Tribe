@@ -42,6 +42,7 @@ namespace Ui {
     class Partition;
 }
 
+
 class PartitionDelegate : public QStyledItemDelegate
 {
     Q_OBJECT
@@ -64,6 +65,7 @@ private slots:
 
 private:
     KIcon m_lockIcon;
+    KIcon m_partIcon;
 };
 
 class PartitionViewWidget : public QTreeWidget
@@ -146,6 +148,9 @@ private:
     QHash<const Partition*, QString> m_toFormat;
     VisibleParts m_parts;
 
+    QList<QColor> m_colorList;
+    int m_currentPart;
+    
     InstallationHandler *m_install;
 };
 

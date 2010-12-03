@@ -57,19 +57,15 @@ void LocalePage::createWidget()
     zoomOutButton->setIcon(KIcon("zoom-out"));
 
     marble->installEventFilter(this);
-    marble->setMapThemeId("earth/srtm/srtm.dgml");
-
+    marble->setCenterLatitude(35.0);
+    marble->setCenterLongitude(-28.0);
+    marble->setMapThemeId("earth/citylights/citylights.dgml");
     marble->setShowCities(false);
-
-    // disable overlays, crosshair and the grid
     marble->setShowOverviewMap(false);
     marble->setShowScaleBar(false);
     marble->setShowCompass(false);
     marble->setShowCrosshairs(false);
     marble->setShowGrid(false);
-    marble->setCenterLatitude(35.0);
-    marble->setCenterLongitude(-28.0);
-
     marble->addGeoDataFile(QString(DATA_INSTALL_DIR) + "/marble/data/placemarks/cities.kml");
 
     /** Read our locales file **/
@@ -143,7 +139,7 @@ void LocalePage::createWidget()
     connect(showLocalesCheck, SIGNAL(stateChanged(int)), SLOT(updateLocales()));
     connect(showKDELangsCheck, SIGNAL(stateChanged(int)), SLOT(updateLocales()));
 
-    zoom(54);
+    zoom(55);
 }
 
 void LocalePage::zoom(int value)

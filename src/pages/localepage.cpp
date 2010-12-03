@@ -67,6 +67,8 @@ void LocalePage::createWidget()
     marble->setShowCompass(false);
     marble->setShowCrosshairs(false);
     marble->setShowGrid(false);
+    marble->setCenterLatitude(35.0);
+    marble->setCenterLongitude(-28.0);
 
     marble->addGeoDataFile(QString(DATA_INSTALL_DIR) + "/marble/data/placemarks/cities.kml");
 
@@ -141,7 +143,7 @@ void LocalePage::createWidget()
     connect(showLocalesCheck, SIGNAL(stateChanged(int)), SLOT(updateLocales()));
     connect(showKDELangsCheck, SIGNAL(stateChanged(int)), SLOT(updateLocales()));
 
-    zoom(60);
+    zoom(54);
 }
 
 void LocalePage::zoom(int value)

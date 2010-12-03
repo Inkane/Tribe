@@ -495,7 +495,7 @@ void PartitionPage::createWidget()
     enableNextButton(false);
 
     m_currentPart = 0;
-    
+
     // Now set up PartitionManager and load
     PMHandler::instance();
     connect(PMHandler::instance(), SIGNAL(devicesReady()), this, SLOT(populateTreeWidget()));

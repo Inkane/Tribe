@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2009-09-27 20:36+0200\n"
+"POT-Creation-Date: 2010-12-03 21:58+0100\n"
 "PO-Revision-Date: 2010-01-24 20:02+0100\n"
 "Last-Translator: Adrián Chaves Fernández <adriyetichaves@gmail.com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
@@ -17,644 +17,444 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 1.0\n"
 
-#: launcher/src/TribeLauncher.cpp:83
-msgid "Setting up Tribe..."
-msgstr "Iniciando Tribe..."
-
-#: launcher/src/TribeLauncher.cpp:95
-msgid ""
-"It looks like you were not authorized to launch Tribe. Please contact your "
-"system administrator for further details"
+#: src/installationhandler.cpp:94
+msgid "Tribe was not able to initialize needed path: "
 msgstr ""
-"Seica non estaba autorizado para iniciar Tribe. Para máis información, "
-"diríxase ao administrador do seu sistema."
 
-#: launcher/src/TribeLauncher.cpp:102
-msgid ""
-"It looks like an unclean start of Tribe has taken place. Please kill all "
-"instances of tribe, tribelauncher and tribelauncherworker and try again"
+#: src/installationhandler.cpp:94
+msgid " , please resolve the issue, and try again."
 msgstr ""
-"Seica Tribe iniciouse de mala maneira. «Mate» todos os procesos de "
-"Tribe: tribe, tribelauncher e tribelauncherworker; e volva intentalo."
 
-#: launcher/src/TribeLauncher.cpp:168
-msgid ""
-"A newer version of Tribe is available.\n"
-"It is strongly advised to upgrade it. Do you want to upgrade Tribe now?"
-msgstr ""
-"Hai dispoñible unha nova versión de Tribe.\n"
-"Recoméndase encarecidamente instalala. Quere actualizar Tribe agora?"
-
-#: launcher/src/TribeLauncher.cpp:171
-msgid ""
-"A newer version of Arxin is available.\n"
-"Even though not fundamental, upgrading it is recommended. Do you want to "
-"upgrade Arxin now?"
-msgstr ""
-"Hai dispoñible unha nova versión de Arxin.\n"
-"Recoméndase instalala, pero non é imprescindible. Quere actualizar "
-"Arxin agora?"
-
-#: launcher/src/TribeLauncher.cpp:194
-msgid "Please Wait, Upgrading Chakra Installer..."
-msgstr "Actualizando o instalador de Chakra..."
-
-#: launcher/src/TribeLauncher.cpp:232
-msgctxt ""
-"You just have to translate 'remaining' here. Leave everything else as it is."
-msgid "%p% (%1 KB/s, %2 remaining)"
-msgstr "%p% (%1 KiB/s, %2 restantes)"
-
-#: launcher/src/TribeLauncher.cpp:248
-msgid "Installing..."
-msgstr "Instalando..."
-
-#: launcher/src/TribeLauncher.cpp:259
-msgid "Please Wait, Installing Packages..."
-msgstr "Instalando os paquetes..."
-
-#: launcher/src/TribeLauncher.cpp:262
-msgid "Please Wait, Upgrading Packages..."
-msgstr "Actualizando os paquetes..."
-
-#: launcher/src/TribeLauncher.cpp:265
-msgid "Please Wait, Downloading Packages..."
-msgstr "Descargando os paquetes..."
-
-#: launcher/src/TribeLauncher.cpp:276
-msgid ""
-"An error occurred while trying to upgrade.\n"
-"Do you want to run Tribe anyway?"
-msgstr ""
-"Houbo un erro durante o intento de actualización.\n"
-"Quere executar Tribe de todos xeitos?"
-
-#: launcher/src/TribeLauncher.cpp:296
-msgid "Please wait, Tribe is being started..."
-msgstr "Iniciando Tribe..."
-
-#. i18n: file: launcher/ui/gui.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, tribeLauncherUi)
-#: launcher/src/main.cpp:32 rc.cpp:3
-msgid "Tribe Launcher"
-msgstr "Iniciador de Tribe"
-
-#: launcher/src/main.cpp:33
-msgid "An auto updater and launcher for Tribe"
-msgstr "Un actualizador e iniciador automático de Tribe"
-
-#: launcher/src/main.cpp:34 src/main.cpp:44
-msgid "(c) 2008 the Chakra Development Team"
-msgstr "(c) 2008 Equipo de desenvolvemento de Chakra"
-
-#: launcher/src/main.cpp:34
-msgid "team@chakra-project.org"
-msgstr "team@chakra-project.org"
-
-#: launcher/src/main.cpp:36 src/main.cpp:46
-msgid "Dario Freddi"
-msgstr "Dario Freddi"
-
-#: launcher/src/main.cpp:36 src/main.cpp:47
-msgid "Developer"
-msgstr "Desenvolvedor"
-
-#: src/CrashHandler.cpp:218
-msgid ""
-"We appreciate your dedication, but your backtrace has already been "
-"successfully sent"
-msgstr ""
-"Agradecemos a súa entrega, mais o informe automático xa se enviou "
-"correctamente"
-
-#: src/CrashHandler.cpp:234
-msgid ""
-"Thanks! Your backtrace was successfully submitted. Now just wait for us to "
-"fix this!"
-msgstr ""
-"Grazas! O informe automático enviouse correctamente. Agora só resta que o "
-"arranxemos."
-
-#: src/CrashHandler.cpp:238
-msgid ""
-"There was an error while sending your backtrace!! Probably we could not "
-"connect to the server: you can retry, but the best thing to do would be "
-"saving the backtrace and attaching it to a bug report later."
-msgstr ""
-"Houbo un erro ao enviar o informe automático! O máis probable é que non se "
-"puidese conectar co servidor. Pode volver intentalo, pero o mellor sería "
-"gardar o informe automático e anexalo a un informe de erro máis adiante."
-
-#: src/InstallationHandler.cpp:79 src/InstallationHandler.cpp:649
-msgid ""
-"Tribe was not able to initialize needed directories. You probably do not "
-"have enough privileges, please restart Tribe as root."
-msgstr ""
-"Tribe non deu inicializados os directorios necesarios. Probablemente "
-"vostede non ten os permisos necesarios, reinicie Tribe como superusuario."
-
-#: src/InstallationHandler.cpp:141
+#: src/installationhandler.cpp:156
 msgid "Installing the system ..."
 msgstr "Instalando o sistema..."
 
-#: src/InstallationHandler.cpp:161
-msgid "Preparing installation, this might take some time ..."
-msgstr "Preparando a instalación, isto pode levar algo de tempo..."
+#: src/installationhandler.cpp:184
+#, fuzzy
+msgid "Mounting partitions..."
+msgstr "Montando %1 en %2..."
 
-#: src/InstallationHandler.cpp:186
+#: src/installationhandler.cpp:192
+#, fuzzy
+msgid "Preparing installation..."
+msgstr "Rematando a instalación..."
+
+#: src/installationhandler.cpp:212
 msgid "Error copying files"
 msgstr "Houbo un erro ao copiar os ficheiros"
 
-#: src/InstallationHandler.cpp:193
+#: src/installationhandler.cpp:215
 msgid "Removing packages whose license has been declined ..."
 msgstr "Eliminando os paquetes cuxa licenza foi rexeitada..."
 
-#: src/InstallationHandler.cpp:250
+#: src/installationhandler.cpp:253
 msgid "Initializing target ..."
 msgstr "Inicializando o obxectivo..."
 
 # Para palabras que comezan por vogal, é «post», non «pos».
-#: src/InstallationHandler.cpp:342
-msgid "Please wait, configuring and starting PostInstall ..."
+#: src/installationhandler.cpp:339
+#, fuzzy
+msgid "Please wait, configuring the new system ..."
 msgstr "Configurando e iniciando a postinstalación..."
 
-#: src/InstallationHandler.cpp:391
+#: src/installationhandler.cpp:415
 msgid "Error in Postinstall script. See log for more details"
 msgstr ""
-"Hai un erro no guión postinstalación. Vexa o rexistro para "
-"máis información."
+"Hai un erro no guión postinstalación. Vexa o rexistro para máis información."
 
-#: src/InstallationHandler.cpp:402
-msgid ""
-"Detecting best mirror server & configuring pacman, this may take a bit..."
+#: src/installationhandler.cpp:424
+#, fuzzy
+msgid "Creating accounts ..."
+msgstr "Creando a conta do novo usuario..."
+
+#: src/installationhandler.cpp:427
+#, fuzzy
+msgid "Configuring software management, this may take a bit..."
 msgstr ""
-"Determinando cal é o mellor servidor espello e configurando Pacman, "
-"isto pode levar algo de tempo..."
+"Configurando a memoria de intercambio, isto pode levar algo de tempo..."
 
-#: src/InstallationHandler.cpp:406
-msgid "Removing superfluous packages..."
+#: src/installationhandler.cpp:431
+#, fuzzy
+msgid "Removing unused packages..."
 msgstr "Eliminando os paquetes innecesarios..."
 
-#: src/InstallationHandler.cpp:410
+#: src/installationhandler.cpp:435
 msgid "Installing additional packages..."
 msgstr "Instalando paquetes adicionais..."
 
-#: src/InstallationHandler.cpp:414
-msgid "Setting up X.Org configuration..."
-msgstr "Establecendo a configuración de X.Org..."
+#: src/installationhandler.cpp:439
+#, fuzzy
+msgid "Configuring the display..."
+msgstr "Configurando o hardware..."
 
-#: src/InstallationHandler.cpp:418
+#: src/installationhandler.cpp:443
 msgid ""
 "Downloading and installing localization packages, this may take a bit..."
 msgstr ""
-"Descargando e instalando os paquetes de localización, isto pode "
-"levar algo de tempo..."
+"Descargando e instalando os paquetes de localización, isto pode levar algo "
+"de tempo..."
 
-#: src/InstallationHandler.cpp:422
+#: src/installationhandler.cpp:447
 msgid ""
 "Downloading and installing documentation packages, this may take a bit..."
 msgstr ""
-"Descargando e instalando os paquetes de documentación, isto pode "
-"levar algo de tempo..."
+"Descargando e instalando os paquetes de documentación, isto pode levar algo "
+"de tempo..."
 
-#: src/InstallationHandler.cpp:426
+#: src/installationhandler.cpp:451
 msgid "Setting up localization..."
 msgstr "Establecendo a localización..."
 
-#: src/InstallationHandler.cpp:430
+#: src/installationhandler.cpp:455
 msgid "Creating daemon configuration..."
 msgstr "Creando a configuración dos daemon..."
 
-#: src/InstallationHandler.cpp:434
+#: src/installationhandler.cpp:459
 msgid "Creating network configuration..."
 msgstr "Creando a configuración da rede..."
 
-#: src/InstallationHandler.cpp:438
+#: src/installationhandler.cpp:463
 msgid "Creating fstab..."
 msgstr "Creando o fstab..."
 
-#: src/InstallationHandler.cpp:442
+#: src/installationhandler.cpp:471
 msgid "Configuring hardware..."
 msgstr "Configurando o hardware..."
 
-#: src/InstallationHandler.cpp:446
-msgid ""
-"Creating initial ramdisk images. This may take a lot of time, stay tuned..."
+#: src/installationhandler.cpp:475
+#, fuzzy
+msgid "Creating initial ramdisk images, this may take a bit..."
 msgstr ""
 "Creando as imaxes iniciais na unidade RAM. Isto pode levar bastante tempo, "
 "permaneza á espera..."
 
-#: src/InstallationHandler.cpp:450
-msgid "Regenerating locales..."
+#: src/installationhandler.cpp:479
+#, fuzzy
+msgid "Generating locales..."
 msgstr "Rexenerando as localizacións..."
 
-#: src/InstallationHandler.cpp:454
-msgid "Removing superfluous localizations..."
+#: src/installationhandler.cpp:483
+#, fuzzy
+msgid "Removing unused localizations..."
 msgstr "Eliminando as localizacións innecesarias..."
 
-#: src/InstallationHandler.cpp:458
-msgid "Removing superfluous drivers..."
+#: src/installationhandler.cpp:487
+#, fuzzy
+msgid "Removing unused drivers..."
 msgstr "Eliminando os controladores innecesarios..."
 
-#: src/InstallationHandler.cpp:462
-msgid "Finishing installation..."
+#: src/installationhandler.cpp:491
+#, fuzzy
+msgid "Finishing up..."
 msgstr "Rematando a instalación..."
 
-#: src/InstallationHandler.cpp:466
+#: src/installationhandler.cpp:495
 msgid "Installation complete!"
 msgstr "Completouse a instalación!"
 
-#: src/InstallationHandler.cpp:592
-msgid "Could not format %1"
-msgstr "Non se puido formatar %1"
+#: src/installationhandler.cpp:586
+#, fuzzy
+msgid ""
+"Tribe was not able to initialize needed directories. Something is very "
+"wrong..."
+msgstr ""
+"Tribe non deu inicializados os directorios necesarios. Probablemente vostede "
+"non ten os permisos necesarios, reinicie Tribe como superusuario."
 
-#: src/InstallationHandler.cpp:672
+#: src/installationhandler.cpp:611
 msgid "Could not mount %1"
 msgstr "Non se puido montar %1"
 
-#: src/InstallationHandler.h:188
+#: src/installationhandler.h:184
 msgid "No Further details given"
 msgstr "Non se deron máis detalles"
 
-#: src/MainWindow.cpp:121
-msgid "Do you really want to quit the installation?"
-msgstr "Seguro que quere saír da instalación?"
-
-#: src/MainWindow.cpp:139
-msgid "Do you really want to abort the installation?"
-msgstr "Seguro que quere interromper a instalación?"
-
-#: src/MainWindow.cpp:785
-msgid ""
-"Installation failed! The following error has been reported: %1.\n"
-"Tribe will now quit, please check the installation logs in /tmp\n"
-"or ask for help in our forums."
-msgstr ""
-"Fallou a instalación! Informouse do seguinte erro: %1.\n"
-"Agora pecharase Tribe, consulte os rexistros da instalación "
-"no directorio /tmp ou pida axuda nos foros."
-
-#. i18n: file: ui/tribeBase.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, TribeBase)
-#: src/main.cpp:42 rc.cpp:48
+#. i18n: file: ui/pages/base.ui:20
+#. i18n: ectx: property (windowTitle), widget (QWidget, Base)
+#: src/main.cpp:44 rc.cpp:3
 msgid "Tribe"
 msgstr "Tribe"
 
-#: src/main.cpp:43
-msgid "LiveCD Installer for Chakra"
+#: src/main.cpp:45
+#, fuzzy
+msgid "Graphical Installer for Chakra"
 msgstr "Instalador LiveCD de Chakra"
 
-#: src/main.cpp:44
+#: src/main.cpp:46
+#, fuzzy
+msgid "(c) 2008 - 2010 the Chakra Development Team"
+msgstr "(c) 2008 Equipo de desenvolvemento de Chakra"
+
+#: src/main.cpp:46
 msgid "chakra@chakra-project.org"
 msgstr "chakra@chakra-project.org"
 
-#: src/main.cpp:46
+#: src/main.cpp:48
+msgid "Dario Freddi"
+msgstr "Dario Freddi"
+
+#: src/main.cpp:48
 msgid "Maintainer"
 msgstr "Mantedor"
 
-#: src/main.cpp:47
+#: src/main.cpp:49
 msgid "Lukas Appelhans"
 msgstr "Lukas Appelhans"
 
-#: src/main.cpp:48
+#: src/main.cpp:49 src/main.cpp:53
+msgid "Developer"
+msgstr "Desenvolvedor"
+
+#: src/main.cpp:50
 msgid "Jan Mette"
 msgstr "Jan Mette"
 
-#: src/main.cpp:48
+#: src/main.cpp:50
 msgid "PostInstall Backend and Artwork"
 msgstr "Infraestrutura de postinstalación e material gráfico"
 
-#: src/main.cpp:69
+#: src/main.cpp:51
+msgid "Phil Miller"
+msgstr ""
+
+#: src/main.cpp:51 src/main.cpp:52
+#, fuzzy
+msgid "PostInstall Backend"
+msgstr "Infraestrutura de postinstalación e material gráfico"
+
+#: src/main.cpp:52
+msgid "Manuel Tortosa"
+msgstr ""
+
+#: src/main.cpp:53
+msgid "Drake Justice"
+msgstr ""
+
+#: src/main.cpp:67
 msgid ""
 "It looks like your power adaptor is unplugged. Installation is a delicate "
 "and lenghty process, hence it is strongly advised to have your PC connected "
 "to AC to minimize possible risks."
 msgstr ""
 "Seica o seu adaptador de corrente está desenchufado. O proceso de "
-"instalación "
-"é longo e delicado, polo que se recomenda encarecidamente conectar o "
-"computador á corrente eléctrica para reducir os posibles riscos."
+"instalación é longo e delicado, polo que se recomenda encarecidamente "
+"conectar o computador á corrente eléctrica para reducir os posibles riscos."
 
-#: src/pages/BootloaderPage.cpp:54
+#: src/mainwindow.cpp:112
+msgid "Do you really want to abort the installation?"
+msgstr "Seguro que quere interromper a instalación?"
+
+#: src/mainwindow.cpp:547
+msgid ""
+"Installation failed! The following error has been reported: %1.\n"
+"Tribe will now quit, please check the installation logs in /tmp\n"
+"or ask for help in our forums."
+msgstr ""
+"Fallou a instalación! Informouse do seguinte erro: %1.\n"
+"Agora pecharase Tribe, consulte os rexistros da instalación no directorio /"
+"tmp ou pida axuda nos foros."
+
+#: src/pages/bootloaderpage.cpp:52
 msgid "Installing bootloader..."
 msgstr "Instalando o xestor de inicio..."
 
-#: src/pages/BootloaderPage.cpp:87
-msgid "Creating menu.lst..."
-msgstr "Creando o menu.lst..."
+#: src/pages/bootloaderpage.cpp:82
+#, fuzzy
+msgid "Creating OS list..."
+msgstr "Creando o fstab..."
 
-#: src/pages/LicensePage.cpp:53
-msgid "Adobe Flash Plugin"
-msgstr "Engadido de Adobe Flash"
-
-#: src/pages/LicensePage.cpp:54
-msgid "Microsoft Core TTF Fonts"
-msgstr "Tipos de letra principais de Microsoft"
-
-#: src/pages/LicensePage.cpp:57
+#: src/pages/licensepage.cpp:53
 msgid "Proprietary ATI Driver"
 msgstr "Controlador privativo de ATI"
 
-#: src/pages/LicensePage.cpp:61
+#: src/pages/licensepage.cpp:57
 msgid "Proprietary NVidia Driver"
 msgstr "Controlador privativo de NVidia"
 
-#: src/pages/LicensePage.cpp:120
+#: src/pages/licensepage.cpp:117
 msgid "Accept license for: "
 msgstr "Aceptar a licenza de: "
 
-#: src/pages/LocaleSelectorPage.cpp:229
-msgid "You need to select a Timezone."
+#: src/pages/localepage.cpp:271
+#, fuzzy
+msgid "You need to select a timezone"
 msgstr "Ten que escoller unha zona horaria."
 
-#: src/pages/LocaleSelectorPage.cpp:229 src/pages/PartitioningPage.cpp:85
-#: src/pages/PartitioningPage.cpp:107 src/pages/PartitioningPage.cpp:124
-#: src/pages/SelectPartitionPage.cpp:285 src/pages/SelectPartitionPage.cpp:294
-#: src/pages/SelectPartitionPage.cpp:310 src/pages/UserCreationPage.cpp:97
-#: src/pages/UserCreationPage.cpp:101
+#: src/pages/partitionpage.cpp:58 src/pages/partitionpage.cpp:133
+#, fuzzy
+msgid "None"
+msgstr "Non"
+
+#: src/pages/partitionpage.cpp:67 src/pages/partitionpage.cpp:88
+msgid "Other..."
+msgstr ""
+
+#: src/pages/partitionpage.cpp:94
+msgid "Please enter a custom mountpoint"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:106
+msgid "The mount point must start with /"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:107
 msgid "Error"
 msgstr "Erro"
 
-#: src/pages/PartitioningPage.cpp:73
-msgid ""
-"You still have pending operations, please apply or revert them before "
-"continuing"
+#: src/pages/partitionpage.cpp:129
+msgid "You can only use each mountpoint once."
 msgstr ""
-"Aínda quedan operacións pendentes. Aplíqueas ou desfágaas antes "
-"de continuar"
 
-#: src/pages/PartitioningPage.cpp:83
-msgid ""
-"It looks like you have selected the mountpoint %1 twice. You can assign only "
-"one partition to a mountpoint"
+#: src/pages/partitionpage.cpp:130
+msgid "Information"
 msgstr ""
-"Seica escolleu o punto de montaxe %1 dúas veces. Só pode asignarlle o "
-"punto de montaxe a unha partición"
 
-#: src/pages/PartitioningPage.cpp:93
-msgid ""
-"Formatting the '/' partition is strongly advised. Going ahead without "
-"formatting it might lead to a non working system after the installation"
+#: src/pages/partitionpage.cpp:390
+msgid "Loading partitions..."
 msgstr ""
-"Recoméndase encarecidamente formatar a partición «/». Continuar "
-"sen formatala podería levar a que o sistema non funcione tras a "
-"instalación"
 
-#: src/pages/PartitioningPage.cpp:104
+#: src/pages/partitionpage.cpp:474
 msgid ""
-"You have chosen %1 to be used as swap, however you need a special filesystem "
-"for that. Please mark it for being formatted to continue"
+"The selected volume already has a partition table.. Overwrite it? (this will "
+"destroy all data on the device)"
 msgstr ""
-"Elixiu usar %1 como memoria de intercambio, pero fai falla un sistema "
-"de ficheiros especial para iso. Para continuar, márquea para ser formatada"
 
-#: src/pages/PartitioningPage.cpp:110
+#: src/pages/partitionpage.cpp:474 src/pages/partitionpage.cpp:481
+msgid "Warning"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:481
 msgid ""
-"The partition %1 you have chosen to use as swap has a filesystem which is "
-"not linuxswap. Please note that this will be changed during installation "
-"procedure"
+"This operation will destroy all data on the selected volume.. Continue "
+"anyway?"
 msgstr ""
-"A partición %1 que elixiu para usar como memoria de intercambio ten "
-"un sistema de ficheiros distinto de linuxswap. Teña en conta que isto "
-"cambiarase "
-"durante o proceso de instalación"
 
-#: src/pages/PartitioningPage.cpp:123
+#. i18n: file: ui/pages/partition.ui:126
+#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
+#: src/pages/partitionpage.cpp:528 src/pages/partitionpage.cpp:753
+#: src/pages/partitionpage.cpp:797 rc.cpp:284
+msgid "Extended"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:131
+#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
+#: src/pages/partitionpage.cpp:754 rc.cpp:287
+msgid "Primary"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:851
+#, fuzzy
+msgid "New partition"
+msgstr "Partición"
+
+#: src/pages/partitionpage.cpp:856
+msgid "Unallocated space"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:860
+msgid "Linux / Extended"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:866
+msgid "Windows / %1"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:871
+msgid "Apple / %1"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:876
+msgid "Linux / %1"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:898
 msgid ""
-"It looks like you did not assign a partition to '/'. You have to select a "
-"mount point at least for it"
+"The partition you have chosen to mount as '/' is too small. It should have a "
+"capacity of at least %1 for a successful installation."
 msgstr ""
-"Seica non lle asignou ningunha partición a «/». Ten que seleccionar "
-"polo menos un punto de montaxe para el."
 
-#: src/pages/PartitioningPage.cpp:129
+#: src/pages/partitionpage.cpp:901 src/pages/partitionpage.cpp:916
+msgid "Target's capacity not sufficient"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:914
 msgid ""
-"You did not select a partition to be used as swap space. A swap partition is "
-"strongly advised, especially on laptops and system with limited amount of RAM"
+"You have selected '%1' as a mountpoint, which is not valid. A valid "
+"mountpoint always starts with '/' and represents a directory on disk"
 msgstr ""
-"Non elixiu partición algunha para usar como memoria de intercambio. "
-"Recoméndase encarecidamente ter unha partición deste tipo, especialmente "
-"en portátiles e sistemas cunha cantidade de memoria RAM limitada"
 
-#: src/pages/PreparePartitionsPage.cpp:56
-msgid "Formatting %1 with %2..."
-msgstr "Formatando %1 con %2..."
+#: src/pages/readyinstallpage.cpp:77
+msgid "New partition (%1) on %2"
+msgstr ""
 
-#: src/pages/PreparePartitionsPage.cpp:71
-msgid "Mounting %1 on %2..."
-msgstr "Montando %1 en %2..."
-
-#: src/pages/ReadyInstallPage.cpp:63
+#: src/pages/readyinstallpage.cpp:80
 msgid "%1 will be used as %2"
 msgstr "%1 usarase como %2"
 
-#: src/pages/ReadyInstallPage.cpp:75
-msgid "%1 will be formatted with %2"
-msgstr "%1 formatarase con %2"
+#: src/pages/readyinstallpage.cpp:100
+msgid "Continue"
+msgstr ""
 
-#: src/pages/ReadyInstallPage.cpp:94
+#: src/pages/readyinstallpage.cpp:104
+#, fuzzy
 msgid ""
-"The following partitions appear mounted: %1. To let the installation happen "
-"correctly, Tribe will now unmount them."
+"The following partitions appear to be mounted: %1. To let the installation "
+"happen correctly, Tribe will now unmount them."
 msgstr ""
 "As seguintes particións están montadas: %1. Para dar comezo á instalación, "
 "Tribe procederá agora a desmontalas."
 
-#: src/pages/ReadyInstallPage.cpp:97
-msgid "Partitions mounted"
-msgstr "Montáronse as particións"
-
-#: src/pages/RootPage.cpp:61
-msgid "Setting up root user ..."
-msgstr "Establecendo o superusuario..."
-
-#: src/pages/RootPage.cpp:88 src/pages/RootPage.cpp:111
-msgid "Configuring users ..."
-msgstr "Configurando os usuarios..."
-
-#. i18n: file: ui/createUserWidget.ui:141
-#. i18n: ectx: property (text), widget (QLabel, statusLabel)
-#. i18n: file: ui/tribeRoot.ui:176
-#. i18n: ectx: property (text), widget (QLabel, statusLabel)
-#: src/pages/RootPage.cpp:134 src/widgets/UserCreationWidget.cpp:51 rc.cpp:42
-#: rc.cpp:412
-msgid "Password is empty"
-msgstr "O contrasinal está baleiro"
-
-#: src/pages/RootPage.cpp:141 src/widgets/UserCreationWidget.cpp:58
-msgid "Password has to be at least 6 characters"
-msgstr "O contrasinal ten que ter polo menos 6 caracteres"
-
-#: src/pages/RootPage.cpp:148 src/widgets/UserCreationWidget.cpp:65
-msgid "Passwords do not match"
-msgstr "Os contrasinais non coinciden"
-
-#: src/pages/RootPage.cpp:155 src/widgets/UserCreationWidget.cpp:72
-msgid "Passwords match"
-msgstr "O contrasinais coinciden"
-
-#: src/pages/SelectPartitionPage.cpp:139
-msgid "Please wait, reading partition table ..."
-msgstr "Lendo a táboa de particións..."
-
-#: src/pages/SelectPartitionPage.cpp:169
-msgid "Configuring swap space, this could take some time ..."
-msgstr ""
-"Configurando a memoria de intercambio, isto pode levar algo de tempo..."
-
-#: src/pages/SelectPartitionPage.cpp:284
-msgid ""
-"You have selected the partition %1 to be mounted twice.\n"
-"Please correct your selection."
-msgstr ""
-"Elixiu que se montase dúas veces a partición %1.\n"
-"Corríxao."
-
-#: src/pages/SelectPartitionPage.cpp:293
-msgid ""
-"You have to chosen mount point '%1' for two partitions.\n"
-"Please correct your selection."
-msgstr ""
-"Elixiu o punto de montaxe «%1» para dúas particións.\n"
-"Corríxao."
-
-#: src/pages/SelectPartitionPage.cpp:310
-msgid "You have to select a mount point at least for '/'!"
-msgstr "Ten que seleccionar polo menos un punto de montaxe para «/»!"
-
-#: src/pages/SettingsPage.cpp:53
+#: src/pages/settingspage.cpp:92
 msgid "chakra-laptop"
 msgstr "portatil-chakra"
 
-#: src/pages/SettingsPage.cpp:56
+#: src/pages/settingspage.cpp:94
 msgid "chakra-desktop"
 msgstr "escritorio-chakra"
 
-#: src/pages/UserCreationPage.cpp:96
-msgid ""
-"You have not configured a username for one user.\n"
-"Please correct your settings."
+#: src/pages/usercreationpage.cpp:70
+msgid "You have to specify at least a username and password."
 msgstr ""
-"Non configurou o nome dun dos usuarios.\n"
-"Corríxao."
 
-#: src/pages/UserCreationPage.cpp:100
-msgid ""
-"You have not configured a password for user %1.\n"
-"Please correct your settings."
+#: src/pages/usercreationpage.cpp:75
+msgid "You have to specify a password."
 msgstr ""
-"Non configurou o contrasinal do usuario %1.\n"
-"Corríxao."
 
-#: src/pages/UserCreationPage.cpp:109
-msgid "Creating account for new user..."
-msgid_plural "Creating accounts for new users..."
-msgstr[0] "Creando a conta do novo usuario..."
-msgstr[1] "Creando as contas dos novos usuarios..."
+#: src/pages/usercreationpage.cpp:80 src/pages/usercreationpage.cpp:92
+#, fuzzy
+msgid "The passwords do not match."
+msgstr "Os contrasinais non coinciden"
 
-#: src/pages/UserCreationPage.cpp:151
-msgid "Setting up password ..."
-msgstr "Establecendo o contrasinal..."
+#: src/pages/usercreationpage.cpp:86
+#, fuzzy
+msgid "You have to specify a root password."
+msgstr "Ten que seleccionar polo menos un punto de montaxe para «/»!"
 
-#: src/pages/UserCreationPage.cpp:192
-msgid "Creating configurations ..."
-msgstr "Creando as configuracións..."
+#: src/pages/usercreationpage.cpp:101
+msgid "Standard UNIX login names cannot contain capital letters. Using \""
+msgstr ""
 
-#. i18n: file: launcher/ui/gui.ui:73
-#. i18n: ectx: property (text), widget (KPushButton, yesButton)
+#: src/pages/usercreationpage.cpp:101
+msgid "\" instead."
+msgstr ""
+
+#: src/pmhandler.cpp:360
+#, fuzzy
+msgid "Preparing hard drive for installation..."
+msgstr "Rematando a instalación..."
+
+#: src/pmhandler.cpp:381
+#, fuzzy
+msgid "Analyzing disk..."
+msgstr "Instalando..."
+
+#: src/pmhandler.cpp:445
+msgid "There was an error while formatting partitions"
+msgstr ""
+
+#. i18n: file: ui/pages/base.ui:172
+#. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:6
-msgid "Yes"
-msgstr "Si"
-
-#. i18n: file: launcher/ui/gui.ui:80
-#. i18n: ectx: property (text), widget (KPushButton, noButton)
-#: rc.cpp:9
-msgid "No"
-msgstr "Non"
-
-#. i18n: file: launcher/ui/gui.ui:102
-#. i18n: ectx: property (text), widget (QLabel, m_label)
-#: rc.cpp:12
-msgid "Please Wait, checking Tribe Updates..."
-msgstr "Comprobando se hai unha nova versión de Tribe..."
-
-#. i18n: file: ui/crashWindow.ui:19
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:15
-msgid ""
-"Tribe has crashed due to a fatal error. We are extremely sorry about that, "
-"as this should not happen. However, Tribe collected some important "
-"informations about the crash that will be extremely useful to developers for "
-"fixing this problem. The fastest way to report this, if you have an active "
-"internet connection, is clicking \"Send report to developers\". Otherwise, "
-"you can copy/paste the text below and send it to bugs@chakra-project.org. No "
-"personal informations are included, you can see the log for details."
-msgstr ""
-"Tribe fallou por mor dun erro grave. Sentímolo moito, non debera ocorrer "
-"tal. Porén, Tribe recolleu información importante sobre o incidente que "
-"lles resultará de gran axuda aos desenvolvedores para resolver o problema. "
-"O modo máis rápido de enviala, se ten conexión a internet, é premendo en "
-"«Enviarlle o informe aos desenvolvedores». En caso contrario, pode copiar "
-"o texto que segue e envialo a bugs@chakra-project.org. Non se inclúe ningún"
-"dato de tipo persoal, pode consultar o rexistro para máis información."
-
-#. i18n: file: ui/crashWindow.ui:50
-#. i18n: ectx: property (text), widget (KPushButton, copyButton)
-#: rc.cpp:18
-msgid "Copy to clipboard"
-msgstr "Copiar no portarretallos"
-
-#. i18n: file: ui/crashWindow.ui:57
-#. i18n: ectx: property (text), widget (KPushButton, sendButton)
-#: rc.cpp:21
-msgid "Send report to developers"
-msgstr "Enviarlle o informe aos desenvolvedores"
-
-#. i18n: file: ui/createUserWidget.ui:32
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:24
-msgid "Name:"
-msgstr "Nome:"
-
-#. i18n: file: ui/createUserWidget.ui:39
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:27
-msgid "Surname:"
-msgstr "Apelidos:"
-
-#. i18n: file: ui/createUserWidget.ui:55
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:30
-msgid "Login:"
-msgstr "Usuario:"
-
-#. i18n: file: ui/createUserWidget.ui:65
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:33
-msgid "Password:"
-msgstr "Contrasinal:"
-
-#. i18n: file: ui/createUserWidget.ui:79
-#. i18n: ectx: property (text), widget (QLabel, confirmLabel)
-#: rc.cpp:36
-msgid "Confirm Password:"
-msgstr "Confirmación do contrasinal:"
-
-#. i18n: file: ui/createUserWidget.ui:111
-#. i18n: ectx: property (text), widget (QCheckBox, sudoBox)
-#: rc.cpp:39
-msgid "Administrator"
-msgstr "Administrador"
-
-#. i18n: file: ui/createUserWidget.ui:160
-#. i18n: ectx: property (text), widget (QPushButton, deleteButton)
-#: rc.cpp:45
-msgid "Delete"
-msgstr "Borrar"
-
-#. i18n: file: ui/tribeBase.ui:166
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:51
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -678,23 +478,47 @@ msgstr ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "weight:600; color:#ffffff;\">Benvida</span></p></body></html>"
 
-#. i18n: file: ui/tribeBase.ui:192
+#. i18n: file: ui/pages/base.ui:198
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#. i18n: file: ui/tribeReleaseNotes.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, tribeReleaseNotes)
-#: rc.cpp:58 rc.cpp:371
+#. i18n: file: ui/pages/releasenotes.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, ReleaseNotes)
+#: rc.cpp:13 rc.cpp:348
 msgid "Release Notes"
 msgstr "Notas do lanzamento"
 
-#. i18n: file: ui/tribeBase.ui:218
+#. i18n: file: ui/pages/base.ui:224
 #. i18n: ectx: property (text), widget (QLabel, licenseLabel)
-#: rc.cpp:61
+#: rc.cpp:16
 msgid "License Approval"
 msgstr "Aceptación da licenza"
 
-#. i18n: file: ui/tribeBase.ui:255
-#. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:64
+#. i18n: file: ui/pages/base.ui:257
+#. i18n: ectx: property (text), widget (QLabel, label_21)
+#: rc.cpp:19
+msgid "Ready to Install"
+msgstr "Listo para instalar"
+
+#. i18n: file: ui/pages/base.ui:283
+#. i18n: ectx: property (text), widget (QLabel, label_23)
+#: rc.cpp:22
+msgid "System Settings"
+msgstr "Configuración do sistema"
+
+#. i18n: file: ui/pages/base.ui:303
+#. i18n: ectx: property (text), widget (QLabel, label_24)
+#: rc.cpp:25
+msgid "Language & Time"
+msgstr "Lingua e hora"
+
+#. i18n: file: ui/pages/base.ui:317
+#. i18n: ectx: property (text), widget (QLabel, label_25)
+#: rc.cpp:28
+msgid "Disk setup"
+msgstr "Configuración do disco"
+
+#. i18n: file: ui/pages/base.ui:347
+#. i18n: ectx: property (text), widget (QLabel, label_26)
+#: rc.cpp:31
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -718,41 +542,15 @@ msgstr ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "weight:600; color:#ffffff;\">Preparativos</span></p></body></html>"
 
-#. i18n: file: ui/tribeBase.ui:262
-#. i18n: ectx: property (text), widget (QLabel, label_10)
-#: rc.cpp:71
-msgid "Ready to Install"
-msgstr "Listo para instalar"
+#. i18n: file: ui/pages/base.ui:354
+#. i18n: ectx: property (text), widget (QLabel, label_15)
+#: rc.cpp:38
+msgid "Create User"
+msgstr "Crear os usuarios"
 
-#. i18n: file: ui/tribeBase.ui:288
-#. i18n: ectx: property (text), widget (QLabel, label_19)
-#. i18n: file: ui/tribeInit.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, tribeInit)
-#: rc.cpp:74 rc.cpp:191
-msgid "Ramdisk"
-msgstr "Unidade RAM"
-
-#. i18n: file: ui/tribeBase.ui:314
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:77
-msgid "System Settings"
-msgstr "Configuración do sistema"
-
-#. i18n: file: ui/tribeBase.ui:334
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:80
-msgid "Language & Time"
-msgstr "Lingua e hora"
-
-#. i18n: file: ui/tribeBase.ui:348
-#. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:83
-msgid "Disk setup"
-msgstr "Configuración do disco"
-
-#. i18n: file: ui/tribeBase.ui:404
+#. i18n: file: ui/pages/base.ui:410
 #. i18n: ectx: property (text), widget (QLabel, label_11)
-#: rc.cpp:86
+#: rc.cpp:41
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -776,21 +574,21 @@ msgstr ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "weight:600; color:#ffffff;\">Instalación</span></p></body></html>"
 
-#. i18n: file: ui/tribeBase.ui:430
-#. i18n: ectx: property (text), widget (QLabel, label_12)
-#: rc.cpp:93
+#. i18n: file: ui/pages/base.ui:436
+#. i18n: ectx: property (text), widget (QLabel, preparePartitionsLabel)
+#: rc.cpp:48
 msgid "Prepare Partitions"
 msgstr "Preparar as particións"
 
-#. i18n: file: ui/tribeBase.ui:456
+#. i18n: file: ui/pages/base.ui:462
 #. i18n: ectx: property (text), widget (QLabel, label_13)
-#: rc.cpp:96
+#: rc.cpp:51
 msgid "Install System"
 msgstr "Instalar o sistema"
 
-#. i18n: file: ui/tribeBase.ui:493
+#. i18n: file: ui/pages/base.ui:499
 #. i18n: ectx: property (text), widget (QLabel, label_14)
-#: rc.cpp:99
+#: rc.cpp:54
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -814,55 +612,41 @@ msgstr ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "weight:600; color:#ffffff;\">Configuración</span></p></body></html>"
 
-#. i18n: file: ui/tribeBase.ui:519
-#. i18n: ectx: property (text), widget (QLabel, label_15)
-#: rc.cpp:106
-msgid "Create User"
-msgstr "Crear os usuarios"
-
-#. i18n: file: ui/tribeBase.ui:526
+#. i18n: file: ui/pages/base.ui:506
 #. i18n: ectx: property (text), widget (QLabel, label_17)
-#: rc.cpp:109
+#: rc.cpp:61
 msgid "Bootloader"
 msgstr "Xestor de inicio"
 
-#. i18n: file: ui/tribeBase.ui:552
-#. i18n: ectx: property (text), widget (QLabel, label_18)
-#: rc.cpp:112
-msgid "Root Password"
-msgstr "Contrasinal de superusuario"
-
-#. i18n: file: ui/tribeBase.ui:578
+#. i18n: file: ui/pages/base.ui:532
 #. i18n: ectx: property (text), widget (QLabel, label_16)
-#. i18n: file: ui/tribeFinish.ui:132
-#. i18n: ectx: property (text), widget (QPushButton, configureButton)
-#: rc.cpp:115 rc.cpp:188
-msgid "Configure System"
-msgstr "Configuración do sistema"
+#: rc.cpp:64
+msgid "Reboot / Enjoy"
+msgstr ""
 
-#. i18n: file: ui/tribeBase.ui:658
+#. i18n: file: ui/pages/base.ui:655
 #. i18n: ectx: property (text), widget (QPushButton, abortButton)
-#: rc.cpp:118
+#: rc.cpp:67
 msgid "Abort installation"
 msgstr "Interromper a instalación"
 
-#. i18n: file: ui/tribeBase.ui:690
+#. i18n: file: ui/pages/base.ui:687
 #. i18n: ectx: property (text), widget (QPushButton, previousButton)
-#: rc.cpp:121
+#: rc.cpp:70
 msgctxt "Previous Page"
 msgid "Previous"
 msgstr "Anterior"
 
-#. i18n: file: ui/tribeBase.ui:709
+#. i18n: file: ui/pages/base.ui:706
 #. i18n: ectx: property (text), widget (QPushButton, nextButton)
-#: rc.cpp:124
+#: rc.cpp:73
 msgctxt "Next Page"
 msgid "Next"
 msgstr "Seguinte"
 
-#. i18n: file: ui/tribeBootloader.ui:49
+#. i18n: file: ui/pages/bootloader.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:127
+#: rc.cpp:76
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -888,46 +672,49 @@ msgstr ""
 "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
 "#ffffff;\">Instalación do xestor de inicio</span></p></body></html>"
 
-#. i18n: file: ui/tribeBootloader.ui:60
+#. i18n: file: ui/pages/bootloader.ui:58
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:134
+#: rc.cpp:83
+#, fuzzy
 msgid ""
 "You can now install GRUB as your main bootloader.\n"
 "\n"
-"If you are unsure where you should install the bootloader to, just leave the "
-"default value (hd0)."
+"If you are unsure where you should install the bootloader to, \n"
+"just leave the default value (hd0)."
 msgstr ""
 "Agora pode instalar GRUB coma o seu xestor de inicio principal.\n"
 "\n"
 "Se non está seguro de onde instalalo, deixe o valor por defecto (hd0)."
 
-#. i18n: file: ui/tribeBootloader.ui:73
+#. i18n: file: ui/pages/bootloader.ui:71
 #. i18n: ectx: property (text), widget (QCheckBox, checkBox)
-#: rc.cpp:139
+#: rc.cpp:89
 msgid "Install Bootloader"
 msgstr "Instalar o xestor de inicio"
 
-#. i18n: file: ui/tribeBootloader.ui:91
+#. i18n: file: ui/pages/bootloader.ui:89
 #. i18n: ectx: property (text), widget (QPushButton, pushButton)
-#: rc.cpp:142
+#. i18n: file: ui/pages/partition.ui:232
+#. i18n: ectx: property (text), widget (QPushButton, advancedButton)
+#: rc.cpp:92 rc.cpp:302
 msgid "Advanced..."
 msgstr "Avanzado..."
 
-#. i18n: file: ui/tribeBootloader.ui:137
+#. i18n: file: ui/pages/bootloader.ui:135
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:145
+#: rc.cpp:95
 msgid "Install to:"
 msgstr "Instalar en:"
 
-#. i18n: file: ui/tribeBootloader.ui:144
+#. i18n: file: ui/pages/bootloader.ui:142
 #. i18n: ectx: property (text), widget (QLineEdit, lineEdit)
-#: rc.cpp:148
+#: rc.cpp:98
 msgid "hd0"
 msgstr "hd0"
 
-#. i18n: file: ui/tribeConfiguration.ui:44
+#. i18n: file: ui/pages/configuration.ui:41
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:151
+#: rc.cpp:101
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -953,22 +740,25 @@ msgstr ""
 "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
 "#ffffff;\">Configurar o sistema</span></p></body></html>"
 
-#. i18n: file: ui/tribeConfiguration.ui:51
+#. i18n: file: ui/pages/configuration.ui:50
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:158
+#: rc.cpp:108
+#, fuzzy
 msgid ""
 "Although the installer has created a usable default configuration suitable "
-"for most users, you can now configure your newly installed system. Please "
-"take some time to step through each section and configure your system the "
-"way you want it."
+"for most users, you can now configure your newly installed system.\n"
+"\n"
+"Please take some time to step through each section and configure your system "
+"the way you want it."
 msgstr ""
 "Aínda que o instalador creou unha configuración por defecto válida para a "
 "maioría dos usuarios, agora pode configurar o seu sistema. Tómese o seu "
 "tempo para personalizar o seu sistema a través das distintas seccións."
 
-#. i18n: file: ui/tribeFinish.ui:49
+#. i18n: file: ui/pages/finish.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:161
+#: rc.cpp:113
+#, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -980,7 +770,7 @@ msgid ""
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
 "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Installation Completed !</span></p></body></html>"
+"#ffffff;\">Installation Completed!</span></p></body></html>"
 msgstr ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -994,17 +784,19 @@ msgstr ""
 "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
 "#ffffff;\">Completouse a instalación!</span></p></body></html>"
 
-#. i18n: file: ui/tribeFinish.ui:69
+#. i18n: file: ui/pages/finish.ui:68
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:168
+#: rc.cpp:120
+#, fuzzy
 msgid ""
-"Congratulations, the installation has been completed! We hope you enjoyed "
-"what you have seen as much as we enjoyed creating it.\n"
+"Congratulations, the installation has been completed!\n"
 "\n"
+"We hope you enjoyed what you have seen as much as we enjoyed creating it.\n"
 "You can now reboot into the installed system or keep using the LiveCD.\n"
 "\n"
-"In case you want to check the installation logs, take a look into /tmp on "
-"the live system or into /var/log on the installed system.\n"
+"In case you want to check the installation logs,\n"
+"take a look into /tmp on the live system or into /var/log on the installed "
+"system.\n"
 "\n"
 "Thanks for using Chakra, and get in touch with us in the forums, share "
 "opinions, give advices;\n"
@@ -1014,38 +806,44 @@ msgid ""
 "\n"
 "The Chakra Team"
 msgstr ""
-"Felicidades, completouse a instalación! Esperamos que gozase "
-"do instalador tanto coma nós ao desenvolvelo.\n"
+"Felicidades, completouse a instalación! Esperamos que gozase do instalador "
+"tanto coma nós ao desenvolvelo.\n"
 "\n"
-"Agora pode reiniciar para comezar a usar o seu novo sistema, ou "
-"continuar utilizando o LiveCD.\n"
+"Agora pode reiniciar para comezar a usar o seu novo sistema, ou continuar "
+"utilizando o LiveCD.\n"
 "\n"
 "Se quere revisar os rexistros da instalación, bótelle unha ollada ao "
 "directorio /tmp do LiveCD ou ao directorio /var/log do seu novo sistema.\n"
 "\n"
-"Grazas por utilizar Chakra, e non dubide en pórse en contacto connosco "
-"nos foros, compartir a súa opinión, dar consellos...\n"
+"Grazas por utilizar Chakra, e non dubide en pórse en contacto connosco nos "
+"foros, compartir a súa opinión, dar consellos...\n"
 "En resumo: involúcrese! (http://chakra-project.org)\n"
 "\n"
 "Páseo ben!\n"
 "\n"
 "O equipo de Chakra"
 
-#. i18n: file: ui/tribeFinish.ui:103
+#. i18n: file: ui/pages/finish.ui:105
 #. i18n: ectx: property (text), widget (QPushButton, rebootButton)
-#: rc.cpp:182
+#: rc.cpp:136
 msgid "Restart Computer"
 msgstr "Reiniciar o computador"
 
-#. i18n: file: ui/tribeFinish.ui:116
+#. i18n: file: ui/pages/finish.ui:118
 #. i18n: ectx: property (text), widget (QPushButton, chakraButton)
-#: rc.cpp:185
+#: rc.cpp:139
 msgid "Keep using the LiveCD"
 msgstr "Continuar utilizando o LiveCD"
 
-#. i18n: file: ui/tribeInit.ui:49
+#. i18n: file: ui/pages/init.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, tribeInit)
+#: rc.cpp:142
+msgid "Ramdisk"
+msgstr "Unidade RAM"
+
+#. i18n: file: ui/pages/init.ui:49
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:194
+#: rc.cpp:145
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1071,9 +869,9 @@ msgstr ""
 "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
 "#ffffff;\">Configuración da unidade RAM</span></p></body></html>"
 
-#. i18n: file: ui/tribeInit.ui:58
+#. i18n: file: ui/pages/init.ui:58
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:201
+#: rc.cpp:152
 msgid ""
 "Your hardware will be configured automatically during the installation and a "
 "initial ramdisk environment for booting the linux kernel will be built. "
@@ -1090,144 +888,170 @@ msgstr ""
 "opcións da unidade RAM que seguen e seleccione os elementos que necesita "
 "para o seu sistema."
 
-#. i18n: file: ui/tribeInit.ui:81
+#. i18n: file: ui/pages/init.ui:81
 #. i18n: ectx: property (text), widget (QPushButton, pushButton)
-#: rc.cpp:204
+#. i18n: file: ui/pages/settings.ui:155
+#. i18n: ectx: property (text), widget (QPushButton, pushButton)
+#: rc.cpp:155 rc.cpp:380
 msgid "Ramdisk Options"
 msgstr "Opcións da unidade RAM"
 
-#. i18n: file: ui/tribeInit.ui:111
+#. i18n: file: ui/pages/init.ui:111
 #. i18n: ectx: property (text), widget (QCheckBox, usb)
-#: rc.cpp:207
+#. i18n: file: ui/pages/settings.ui:201
+#. i18n: ectx: property (text), widget (QCheckBox, usb)
+#: rc.cpp:158 rc.cpp:383
 msgid "Activate support for booting from USB devices"
 msgstr "Activar o soporte para arrincar dende dispositivos USB"
 
-#. i18n: file: ui/tribeInit.ui:118
+#. i18n: file: ui/pages/init.ui:118
 #. i18n: ectx: property (text), widget (QCheckBox, firewire)
-#: rc.cpp:210
+#. i18n: file: ui/pages/settings.ui:208
+#. i18n: ectx: property (text), widget (QCheckBox, firewire)
+#: rc.cpp:161 rc.cpp:386
 msgid "Activate support for booting from FireWire devices"
 msgstr "Activar o soporte para arrincar dende dispositivos FireWire"
 
-#. i18n: file: ui/tribeInit.ui:125
+#. i18n: file: ui/pages/init.ui:125
 #. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
-#: rc.cpp:213
+#. i18n: file: ui/pages/settings.ui:215
+#. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
+#: rc.cpp:164 rc.cpp:389
 msgid "Activate support for booting from PCMCIA devices"
 msgstr "Activar o soporte para arrincar dende dispositivos PCMCIA"
 
-#. i18n: file: ui/tribeInit.ui:132
+#. i18n: file: ui/pages/init.ui:132
 #. i18n: ectx: property (text), widget (QCheckBox, nfs)
-#: rc.cpp:216
+#. i18n: file: ui/pages/settings.ui:222
+#. i18n: ectx: property (text), widget (QCheckBox, nfs)
+#: rc.cpp:167 rc.cpp:392
 msgid "Activate support for booting from NFS shares"
 msgstr "Activar o soporte para arrincar dende comparticións NFS"
 
-#. i18n: file: ui/tribeInit.ui:139
+#. i18n: file: ui/pages/init.ui:139
 #. i18n: ectx: property (text), widget (QCheckBox, raid)
-#: rc.cpp:219
+#. i18n: file: ui/pages/settings.ui:229
+#. i18n: ectx: property (text), widget (QCheckBox, raid)
+#: rc.cpp:170 rc.cpp:395
 msgid "Activate support for booting from Software Raid arrays"
 msgstr "Activar o soporte para arrincar dende RAID por software"
 
-#. i18n: file: ui/tribeInit.ui:146
+#. i18n: file: ui/pages/init.ui:146
 #. i18n: ectx: property (text), widget (QCheckBox, mdp)
-#: rc.cpp:222
+#. i18n: file: ui/pages/settings.ui:236
+#. i18n: ectx: property (text), widget (QCheckBox, mdp)
+#: rc.cpp:173 rc.cpp:398
 msgid "Activate support for booting from Software Raid/MDP Partition arrays"
 msgstr ""
 "Activar o soporte para arrincar dende RAID por software ou particións MDP"
 
-#. i18n: file: ui/tribeInit.ui:153
+#. i18n: file: ui/pages/init.ui:153
 #. i18n: ectx: property (text), widget (QCheckBox, lvm2)
-#: rc.cpp:225
+#. i18n: file: ui/pages/settings.ui:243
+#. i18n: ectx: property (text), widget (QCheckBox, lvm2)
+#: rc.cpp:176 rc.cpp:401
 msgid "Activate support for booting from LVM2 volumes"
 msgstr "Activar o soporte para arrincar dende volumes LVM2"
 
-#. i18n: file: ui/tribeInit.ui:160
+#. i18n: file: ui/pages/init.ui:160
 #. i18n: ectx: property (text), widget (QCheckBox, encrypted)
-#: rc.cpp:228
+#. i18n: file: ui/pages/settings.ui:250
+#. i18n: ectx: property (text), widget (QCheckBox, encrypted)
+#: rc.cpp:179 rc.cpp:404
 msgid "Activate support for booting from Encrypted volumes"
 msgstr "Activar o soporte para arrincar dende volumes encriptados."
 
-#. i18n: file: ui/tribeInstallation.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, tribeInstallation)
-#: rc.cpp:231
+#. i18n: file: ui/pages/installation.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Installation)
+#: rc.cpp:182
 msgid "Tribe Installation"
 msgstr "Instalación de Tribe"
 
-#. i18n: file: ui/tribeInstallation.ui:97
+#. i18n: file: ui/pages/installation.ui:88
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:234
+#: rc.cpp:185
 msgid "Nine Inch Nails - Discipline"
 msgstr "Discipline, de Nine Inch Nails"
 
-#. i18n: file: ui/tribeInstallation.ui:102
+#. i18n: file: ui/pages/installation.ui:93
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:237
+#: rc.cpp:188
 msgid "Severed Fifth - War"
 msgstr "War, de Severed Fifth"
 
-#. i18n: file: ui/tribeInstallation.ui:107
+#. i18n: file: ui/pages/installation.ui:98
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:240
+#: rc.cpp:191
 msgid "Dunkelstern - Out of the box"
 msgstr "Out of the box, de Dunkelstern"
 
-#. i18n: file: ui/tribeIntro.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, tribeIntro)
-#: rc.cpp:243
+#. i18n: file: ui/pages/intro.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Intro)
+#: rc.cpp:194
 msgid "Tribe Intro"
 msgstr "Introdución a Tribe"
 
-#. i18n: file: ui/tribeIntro.ui:107
+#. i18n: file: ui/pages/intro.ui:105
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:246
+#: rc.cpp:197
+#, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:12pt; font-"
+"weight:400; font-style:normal;\">\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-size:14pt; color:#eeeeee;\">Welcome to the Chakra Installation!"
-"</span></p>\n"
+"style=\" font-family:'Bitstream Vera Sans'; color:#eeeeee;\">Welcome to the "
+"Chakra Installation!</span></p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
 "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:"
-"#eeeeee;\"><span style=\" font-weight:600;\">Tribe, our installer, will "
-"guide you through the process of installing the Chakra live system</span></"
-"p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\">on your computer. After the installation you "
-"will have a ready-to-use Arch Linux</p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\">desktop system with our modular KDE packages.</"
-"p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-weight:600; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\"> Please take the time to carefully read through "
-"all texts and explanations.</p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; color:#eeeeee;\"></p>\n"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;"
+"\"></p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-weight:600; color:#eeeeee;\"> Remember:</span><span style=\" "
-"font-weight:600;\"> </span><span style=\" font-weight:600; color:#ff0000;"
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">This installer will guide you through the process of "
+"installing</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">the Chakra live system on your computer. After the "
+"installation you will</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">have a ready-to-use Chakra Linux system.</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
+"weight:536; color:#eeeeee;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\"> Please carefully read all of the instructions.</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;"
+"\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\"> Remember:</span><span style=\" font-family:'Bitstream Vera "
+"Sans'; font-size:8pt; font-weight:536;\"> </span><span style=\" font-"
+"family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#ff0000;"
 "\">THIS IS ALPHA SOFTWARE, IT COULD EAT YOUR HAMSTER</span></p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
 "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-weight:600; color:#ff0000;\"></p>\n"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
+"weight:536; color:#ff0000;\"></p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#ff0000;\"><span style=\" color:#eeeeee;\">Have fun! - The "
-"Chakra Developers</span></p></body></html>"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">Have fun! - The Chakra Developers</span></p></body></html>"
 msgstr ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1238,24 +1062,22 @@ msgstr ""
 "size:9pt; font-weight:400; font-style:normal;\">\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-size:14pt; color:#eeeeee;\">Benvido á instalación de Chakra!"
-"</span></p>\n"
+"style=\" font-size:14pt; color:#eeeeee;\">Benvido á instalación de Chakra!</"
+"span></p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
 "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
 "indent:0px; color:#eeeeee;\"></p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:"
 "#eeeeee;\"><span style=\" font-weight:600;\">Tribe, o noso instalador, "
-"guiarao a través do proceso de instalación do sistema Chakra</span></"
-"p>\n"
+"guiarao a través do proceso de instalación do sistema Chakra</span></p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\">no seu computador. Tras a instalación terá "
-"un sistema  de escritorio Arch Linux listo para utilizar</p>\n"
+"weight:600; color:#eeeeee;\">no seu computador. Tras a instalación terá un "
+"sistema  de escritorio Arch Linux listo para utilizar</p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\">cos nosos paquetes de KDE por módulos.</"
-"p>\n"
+"weight:600; color:#eeeeee;\">cos nosos paquetes de KDE por módulos.</p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
 "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
 "indent:0px; font-weight:600; color:#eeeeee;\"></p>\n"
@@ -1279,9 +1101,9 @@ msgstr ""
 "weight:600; color:#ff0000;\"><span style=\" color:#eeeeee;\">Páseo ben! ─ Os "
 "desenvolvedores de Chakra</span></p></body></html>"
 
-#. i18n: file: ui/tribeLicense.ui:52
+#. i18n: file: ui/pages/license.ui:49
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:263
+#: rc.cpp:214
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1304,13 +1126,12 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Aceptación da licenza</span></p>"
-"</"
-"body></html>"
+"size:22pt; font-weight:600; color:#ffffff;\">Aceptación da licenza</span></"
+"p></body></html>"
 
-#. i18n: file: ui/tribeLicense.ui:64
+#. i18n: file: ui/pages/license.ui:61
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:270
+#: rc.cpp:221
 msgid ""
 "Chakra includes some proprietary software like hardware drivers, media "
 "plugins and fonts. To install them, you have to read and accept their "
@@ -1319,38 +1140,36 @@ msgid ""
 msgstr ""
 "Chakra inclúe algún software privativo coma controladores de hardware, "
 "engadidos multimedia, e tipos de letra. Para instalalos, ten que ler e "
-"aceptar "
-"cadansúa licenza. Se rexeita unha licenza, o instalador intentará utilizar "
-"unha "
-"alternativa libre (se a hai)."
+"aceptar cadansúa licenza. Se rexeita unha licenza, o instalador intentará "
+"utilizar unha alternativa libre (se a hai)."
 
-#. i18n: file: ui/tribeLicense.ui:77
+#. i18n: file: ui/pages/license.ui:74
 #. i18n: ectx: property (text), widget (QLabel, licenseLabel)
-#: rc.cpp:273
+#: rc.cpp:224
 msgid "Approve license for:"
 msgstr "Aceptar a licenza de:"
 
-#. i18n: file: ui/tribeLicense.ui:106
+#. i18n: file: ui/pages/license.ui:103
 #. i18n: ectx: property (text), widget (QRadioButton, declineButton)
-#: rc.cpp:276
+#: rc.cpp:227
 msgid "Decline License"
 msgstr "Rexeitar a licenza"
 
-#. i18n: file: ui/tribeLicense.ui:113
+#. i18n: file: ui/pages/license.ui:110
 #. i18n: ectx: property (text), widget (QRadioButton, acceptButton)
-#: rc.cpp:279
+#: rc.cpp:230
 msgid "Accept License"
 msgstr "Aceptar a licenza"
 
-#. i18n: file: ui/tribeLocale.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, TribeLocale)
-#: rc.cpp:282
+#. i18n: file: ui/pages/locale.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Locale)
+#: rc.cpp:233
 msgid "Form"
 msgstr "Formulario"
 
-#. i18n: file: ui/tribeLocale.ui:39
+#. i18n: file: ui/pages/locale.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:285
+#: rc.cpp:236
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1376,73 +1195,68 @@ msgstr ""
 "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
 "#ffffff;\">Lingua e hora</span></p></body></html>"
 
-#. i18n: file: ui/tribeLocale.ui:49
+#. i18n: file: ui/pages/locale.ui:45
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:292
+#: rc.cpp:243
 msgid ""
 "Please select the nearest city on the globe so the installer can suggest the "
 "locale and timezone settings for you. You can fine-tune the suggested "
 "settings at the bottom of the page. If you cant find your region or city on "
 "the globe, you can zoom in by using the slider on the left."
 msgstr ""
-"Seleccione unha cidade do globo terráqueo co mesmo fuso horario e/ou "
-"a mesma lingua que a súa localidade. Máis abaixo pode axustar "
-"a configuración. Se non dá atopado unha cidade, pode achegar a imaxe "
-"do globo mediante o control de desprazamento da esquerda."
+"Seleccione unha cidade do globo terráqueo co mesmo fuso horario e/ou a mesma "
+"lingua que a súa localidade. Máis abaixo pode axustar a configuración. Se "
+"non dá atopado unha cidade, pode achegar a imaxe do globo mediante o control "
+"de desprazamento da esquerda."
 
-#. i18n: file: ui/tribeLocale.ui:73
+#. i18n: file: ui/pages/locale.ui:69
 #. i18n: ectx: property (clickMessage), widget (KLineEdit, locationsSearch)
-#: rc.cpp:295
+#: rc.cpp:246
 msgid "Search..."
 msgstr "Busca..."
 
-#. i18n: file: ui/tribeLocale.ui:152
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:298
-msgid "Time Settings"
-msgstr "Configuración da hora"
-
-#. i18n: file: ui/tribeLocale.ui:170
+#. i18n: file: ui/pages/locale.ui:162
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:301
-msgid "Timezone:"
-msgstr "Fuso horario:"
+#: rc.cpp:249
+#, fuzzy
+msgid "Continent:"
+msgstr "Punto de montaxe:"
 
-#. i18n: file: ui/tribeLocale.ui:189
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:304
-msgid "Language Settings"
-msgstr "Configuración da lingua"
-
-#. i18n: file: ui/tribeLocale.ui:195
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:307
-msgid "Locale:"
-msgstr "Rexión:"
-
-#. i18n: file: ui/tribeLocale.ui:205
-#. i18n: ectx: property (text), widget (QCheckBox, showLocalesCheck)
-#. i18n: file: ui/tribeLocale.ui:215
-#. i18n: ectx: property (text), widget (QCheckBox, showKDELangsCheck)
-#: rc.cpp:310 rc.cpp:313
-msgid "Show all"
-msgstr "Amosalas todas"
-
-#. i18n: file: ui/tribeLocale.ui:222
+#. i18n: file: ui/pages/locale.ui:185
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:316
+#: rc.cpp:252
 msgid "Language:"
 msgstr "Lingua:"
 
-#. i18n: file: ui/tribePartition.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, tribePartition)
-#: rc.cpp:319
+#. i18n: file: ui/pages/locale.ui:208
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:255
+msgid "Locale:"
+msgstr "Rexión:"
+
+#. i18n: file: ui/pages/locale.ui:263
+#. i18n: ectx: property (text), widget (QCheckBox, showLocalesCheck)
+#. i18n: file: ui/pages/locale.ui:270
+#. i18n: ectx: property (text), widget (QCheckBox, showKDELangsCheck)
+#: rc.cpp:258 rc.cpp:261
+msgid "Show all"
+msgstr "Amosalas todas"
+
+#. i18n: file: ui/pages/locale.ui:277
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: rc.cpp:264
+msgid "Region: "
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Partition)
+#: rc.cpp:267
 msgid "Partition"
 msgstr "Partición"
 
-#. i18n: file: ui/tribePartition.ui:47
+#. i18n: file: ui/pages/partition.ui:43
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:322
+#: rc.cpp:270
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1468,84 +1282,85 @@ msgstr ""
 "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
 "#ffffff;\">Configuración do disco</span></p></body></html>"
 
-#. i18n: file: ui/tribePartition.ui:56
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:329
+#. i18n: file: ui/pages/partition.ui:58
+#. i18n: ectx: property (text), widget (QLabel, descriptionLabel)
+#: rc.cpp:277
 msgid ""
-"Now you have to set up your disks for installation. Please use the tool "
-"below to partition, format and select mountpoints. Once you're satisfied "
-"with your choice, click \"Apply\" if you made any changes to the partition "
-"table or requested to format one or more partitions, and then go ahead. "
-"Formatting the partitions you will mount main system paths on (such as / or /"
-"usr) is strongly advised."
+"Please select a mountpoint for your existing partitions. At least '/' should "
+"be mounted. No permanent changes to your hard drive will be made when you "
+"will press \"Next\""
 msgstr ""
-"Agora ten que configurar os seus discos para a instalación. Use a seguinte "
-"ferramenta para particionar, formatar e seleccionar puntos de montaxe. Unha "
-"vez conforme coa súa elección, prema «Aplicar» se cambiou a táboa de "
-"particións "
-"ou solicitou formatar algunha partición, e logo continúe. Recoméndase "
-"encarecidamente formatar as particións onde se van montar os directorios "
-"principais do sistema, coma «/» ou «/usr»."
 
-#. i18n: file: ui/tribePreparePartitions.ui:79
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:332
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">Formatting Partitions...</span></p></body></html>"
+#. i18n: file: ui/pages/partition.ui:118
+#. i18n: ectx: property (text), widget (QLabel, typeLabel)
+#: rc.cpp:281
+msgid "Type"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">Formatando as particións...</span></p></body></html>"
 
-#. i18n: file: ui/tribePreparePartitions.ui:129
-#. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:339
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">Mounting Partitions...</span></p></body></html>"
+#. i18n: file: ui/pages/partition.ui:146
+#. i18n: ectx: property (text), widget (QLabel, filesystemLabel)
+#: rc.cpp:290
+msgid "Filesystem"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">Montando as particións...</span></p></body></html>"
 
-#. i18n: file: ui/tribeReadyInstall.ui:45
+#. i18n: file: ui/pages/partition.ui:173
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, sizeSpinBox)
+#: rc.cpp:293
+msgid " MiB"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:193
+#. i18n: ectx: property (text), widget (KPushButton, editPartitionCancelButton)
+#: rc.cpp:296
+msgid "Cancel"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:200
+#. i18n: ectx: property (text), widget (KPushButton, editPartitionOkButton)
+#: rc.cpp:299
+msgid "Ok"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:245
+#. i18n: ectx: property (toolTip), widget (QPushButton, newButton)
+#: rc.cpp:305
+#, fuzzy
+msgid "Create a new partition"
+msgstr "Preparar as particións"
+
+#. i18n: file: ui/pages/partition.ui:264
+#. i18n: ectx: property (toolTip), widget (QPushButton, deleteButton)
+#: rc.cpp:308
+msgid "Delete the selected partition"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:283
+#. i18n: ectx: property (toolTip), widget (QPushButton, formatButton)
+#: rc.cpp:311
+msgid "Mark the selected partition to be formatted"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:305
+#. i18n: ectx: property (toolTip), widget (QPushButton, newPartTableButton)
+#: rc.cpp:314
+msgid "Create a new partition table on the selected device"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:324
+#. i18n: ectx: property (toolTip), widget (QPushButton, undoButton)
+#: rc.cpp:317
+msgid "Undo"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:343
+#. i18n: ectx: property (toolTip), widget (QPushButton, unmountButton)
+#: rc.cpp:320
+msgid "Unmount the selected partition"
+msgstr ""
+
+#. i18n: file: ui/pages/readyinstall.ui:51
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:346
+#: rc.cpp:323
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1571,19 +1386,19 @@ msgstr ""
 "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
 "#ffffff;\">Listo para instalar</span></p></body></html>"
 
-#. i18n: file: ui/tribeReadyInstall.ui:71
+#. i18n: file: ui/pages/readyinstall.ui:77
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:353
+#: rc.cpp:330
 msgid ""
 "The system will be installed with the following settings. Before continuing, "
 "please review your selections:\n"
 msgstr ""
-"O sistema instalarase coas seguintes opcións. Antes de continuar,"
-"revise as súas escollas:\n"
+"O sistema instalarase coas seguintes opcións. Antes de continuar,revise as "
+"súas escollas:\n"
 
-#. i18n: file: ui/tribeReadyInstall.ui:141
+#. i18n: file: ui/pages/readyinstall.ui:147
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:357
+#: rc.cpp:334
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1609,9 +1424,9 @@ msgstr ""
 "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
 "#eeeeee;\">Utilizaranse as seguintes particións:</span></p></body></html>"
 
-#. i18n: file: ui/tribeReadyInstall.ui:205
+#. i18n: file: ui/pages/readyinstall.ui:211
 #. i18n: ectx: property (text), widget (QLabel, formatLabel)
-#: rc.cpp:364
+#: rc.cpp:341
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1636,12 +1451,11 @@ msgstr ""
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
 "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">Formataranse as seguintes particións:</span></p></body></"
-"html>"
+"#eeeeee;\">Formataranse as seguintes particións:</span></p></body></html>"
 
-#. i18n: file: ui/tribeReleaseNotes.ui:50
+#. i18n: file: ui/pages/releasenotes.ui:47
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:374
+#: rc.cpp:351
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1665,12 +1479,11 @@ msgstr ""
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
 "style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Notas do "
-"lanzamento</"
-"span></p></body></html>"
+"lanzamento</span></p></body></html>"
 
-#. i18n: file: ui/tribeReleaseNotes.ui:63
+#. i18n: file: ui/pages/releasenotes.ui:60
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:381
+#: rc.cpp:358
 msgid ""
 "Check out what's new, the known issues and general information about this "
 "version of Chakra. As always, you are encouraged to tell us what you think, "
@@ -1681,278 +1494,9 @@ msgstr ""
 "connosco a súa opinión, ben a través dos nosos foros ou do rastreador de "
 "erros."
 
-#. i18n: file: ui/tribeReleaseNotes.ui:86
-#. i18n: ectx: property (html), widget (QTextEdit, textEdit)
-#: rc.cpp:384
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"family:'Liberation Sans'; font-size:8pt;\"></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"family:'Liberation Sans'; font-size:8pt;\"></p></body></html>"
-
-#. i18n: file: ui/tribeRoot.ui:49
+#. i18n: file: ui/pages/settings.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:391
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Root Setup</span></p></body></"
-"html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Configuración do superusuario<"
-"/span></p></body></"
-"html>"
-
-#. i18n: file: ui/tribeRoot.ui:60
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:398
-msgid ""
-"Now you can define the behaviour of the user root, who is used to manage the "
-"system.\n"
-"\n"
-"Keeping this user is usually recommended, though you can choose to use sudo "
-"only and disable the root user. Please remind that having the root account "
-"disabled and sudo misconfigured may lead to an unusable system."
-msgstr ""
-"Agora pode definir o comportamento do superusuario, que se utilizar para a "
-"administración do sistema.\n"
-"\n"
-"Xeralmente recoméndase manter este usuario, aínda que pode optar por "
-"usar simplemente «sudo» e desactivalo. Teña en conta de que estar "
-"desactivada "
-"a conta de superusuario e estar mal configurado o «sudo», o sistema quedaría "
-"inutilizado."
-
-#. i18n: file: ui/tribeRoot.ui:93
-#. i18n: ectx: property (text), widget (QCheckBox, rootBox)
-#: rc.cpp:403
-msgid "Enable Root User"
-msgstr "Activar o superusuario"
-
-#. i18n: file: ui/tribeRoot.ui:102
-#. i18n: ectx: property (text), widget (QLabel, rootLabel)
-#: rc.cpp:406
-msgid "Password"
-msgstr "Contrasinal"
-
-#. i18n: file: ui/tribeRoot.ui:132
-#. i18n: ectx: property (text), widget (QLabel, confirmLabel)
-#: rc.cpp:409
-msgid "Confirm Password"
-msgstr "Confirmación do contrasinal"
-
-#. i18n: file: ui/tribeSelectPartitions.ui:49
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:415
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Filesystem Setup</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Configuración do sistema de ficheiros</span></p></body></html>"
-
-#. i18n: file: ui/tribeSelectPartitions.ui:60
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:422
-msgid ""
-"Please choose what partitions should be used for the installation. Just "
-"select the partition and the mountpoint. You can use the \"Add another "
-"partition\" button to add more of them. To format a partition (most likely "
-"accurate for all system partitions), activate the \"Format\" checkbox and "
-"select a filesystem.\n"
-"\n"
-"You need at least a root (/) and a swap partition. When you have added all "
-"desired partitions, simply press the \"Next\" button."
-msgstr ""
-"Escolla que particións deberían usarse para a instalación. Seleccione "
-"simplemente a partición e mailo punto de montaxe. Pode usar o botón "
-"«Engadir outra partición» para engadir máis. Para formatar unha partición "
-"(recomendable para case todas as particións do sistema), marque a caixa "
-"«Formatar» e elixa un sistema de ficheiros.\n"
-"\n"
-"Necesita cando menos unha raíz (/) e unha partición de intercambio. Unha vez "
-"engadidas todas as particións desexadas, prema o botón «Seguinte»."
-
-#. i18n: file: ui/tribeSelectPartitions.ui:136
-#. i18n: ectx: property (text), widget (QPushButton, addButton)
-#: rc.cpp:427
-msgid "Add another Partition"
-msgstr "Engadir outra partición"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:19
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:430
-msgid "Partition:"
-msgstr "Partición:"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:29
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:433
-msgid "Size:"
-msgstr "Tamaño:"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:44
-#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
-#: rc.cpp:436
-msgid "ext3"
-msgstr "ext3"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:49
-#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
-#: rc.cpp:439
-msgid "ext2"
-msgstr "ext2"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:54
-#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
-#: rc.cpp:442
-msgid "ext4"
-msgstr "ext4"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:59
-#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
-#: rc.cpp:445
-msgid "reiserfs"
-msgstr "reiserfs"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:64
-#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
-#: rc.cpp:448
-msgid "jfs"
-msgstr "jfs"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:69
-#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
-#: rc.cpp:451
-msgid "xfs"
-msgstr "xfs"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:74
-#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
-#: rc.cpp:454
-msgid "linux-swap"
-msgstr "intercambio"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:82
-#. i18n: ectx: property (text), widget (QCheckBox, formatBox)
-#: rc.cpp:457
-msgid "Format with:"
-msgstr "Formatar como:"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:89
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:460
-msgid "Mountpoint:"
-msgstr "Punto de montaxe:"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:100
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:463
-msgid "/"
-msgstr "/"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:105
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:466
-msgid "/boot"
-msgstr "/boot"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:110
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:469
-msgid "/home"
-msgstr "/home"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:115
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:472
-msgid "/opt"
-msgstr "/opt"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:120
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:475
-msgid "/usr"
-msgstr "/usr"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:125
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:478
-msgid "/tmp"
-msgstr "/tmp"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:130
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:481
-msgid "/var"
-msgstr "/var"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:135
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:484
-msgid "swap"
-msgstr "intercambio"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:143
-#. i18n: ectx: property (text), widget (QPushButton, deleteButton)
-#: rc.cpp:487
-msgid "Remove"
-msgstr "Borrar"
-
-#. i18n: file: ui/tribeSettings.ui:56
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:490
+#: rc.cpp:361
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1978,76 +1522,35 @@ msgstr ""
 "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
 "#ffffff;\">Configuración do sistema</span></p></body></html>"
 
-#. i18n: file: ui/tribeSettings.ui:77
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:497
-msgid "General Settings"
-msgstr "Configuración xeral"
+#. i18n: file: ui/pages/settings.ui:73
+#. i18n: ectx: property (toolTip), widget (QLabel, label_2)
+#: rc.cpp:368
+msgid "or technically, the hostname"
+msgstr ""
 
-#. i18n: file: ui/tribeSettings.ui:83
+#. i18n: file: ui/pages/settings.ui:76
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:500
-msgid "The name of this computer:"
+#: rc.cpp:371
+#, fuzzy
+msgid "What's the name of this computer?         "
 msgstr "Nome deste computador:"
 
-#. i18n: file: ui/tribeSettings.ui:114
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:503
-msgid "Download Settings"
-msgstr "Configuración de descarga"
-
-#. i18n: file: ui/tribeSettings.ui:126
-#. i18n: ectx: property (text), widget (QCheckBox, detect_mirror)
-#: rc.cpp:506
-msgid "Detect best mirror server and use it (recommended)"
-msgstr "Escoller o mellor servidor e utilizalo (recomendado)"
-
-#. i18n: file: ui/tribeSettings.ui:145
+#. i18n: file: ui/pages/settings.ui:125
 #. i18n: ectx: property (text), widget (QCheckBox, download_doc)
-#: rc.cpp:509
+#: rc.cpp:374
 msgid "Download and install documentation packages"
 msgstr "Descargar e instalar os paquetes de documentación"
 
-#. i18n: file: ui/tribeUserCreation.ui:38
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:512
-msgid ""
-"Enter your name, a corresponding login name and your password to create a "
-"user account. To enable sudo for the created user and allow him to do "
-"administrative tasks, enable the \"Administrator\" option below."
-msgstr ""
-"Introduza o seu nome, o do seu usuario e o seu contrasinal para crear "
-"unha conta de usuario. Para activar «sudo» para o usuario creado e "
-"permitirlle realizar tarefas administrativas, active a opción "
-"«Administrador»."
+#. i18n: file: ui/pages/settings.ui:135
+#. i18n: ectx: property (text), widget (QCheckBox, detect_mirror)
+#: rc.cpp:377
+#, fuzzy
+msgid "Detect best mirror server and use it"
+msgstr "Escoller o mellor servidor e utilizalo (recomendado)"
 
-#. i18n: file: ui/tribeUserCreation.ui:84
-#. i18n: ectx: property (text), widget (QPushButton, addButton)
-#: rc.cpp:515
-msgid "Add another User.."
-msgstr "Engadir outro usuario..."
-
-#. i18n: file: ui/tribeUserCreation.ui:107
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:518
-msgid "Install plain KDE-Configuration"
-msgstr "Instalar a configuración simple de KDE"
-
-#. i18n: file: ui/tribeUserCreation.ui:112
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:521
-msgid "Install Current-LiveCD-Configuration"
-msgstr "Instalar a configuración actual do LiveCD"
-
-#. i18n: file: ui/tribeUserCreation.ui:117
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:524
-msgid "Install plain KDEMod-Configuration"
-msgstr "Instalar a configuración simple de KDEMod"
-
-#. i18n: file: ui/tribeUserCreation.ui:135
+#. i18n: file: ui/pages/usercreation.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:527
+#: rc.cpp:407
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -2073,14 +1576,680 @@ msgstr ""
 "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
 "#ffffff;\">Crear os usuarios</span></p></body></html>"
 
-#: rc.cpp:532
+#. i18n: file: ui/pages/usercreation.ui:42
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:414
+msgid "Enter your name, a corresponding login name and your password."
+msgstr ""
+
+#. i18n: file: ui/pages/usercreation.ui:109
+#. i18n: ectx: property (toolTip), widget (QLabel, label_3)
+#: rc.cpp:417
+msgid "eg, John Smith, or Joe Average"
+msgstr ""
+
+#. i18n: file: ui/pages/usercreation.ui:112
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:420
+msgid "Name:"
+msgstr "Nome:"
+
+#. i18n: file: ui/pages/usercreation.ui:119
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#. i18n: file: ui/pages/usercreation.ui:217
+#. i18n: ectx: property (text), widget (QLabel, rootPwLabel)
+#: rc.cpp:423 rc.cpp:438
+msgid "Password:"
+msgstr "Contrasinal:"
+
+#. i18n: file: ui/pages/usercreation.ui:177
+#. i18n: ectx: property (toolTip), widget (QLabel, label_4)
+#: rc.cpp:426
+msgid "The actual unix standard login username"
+msgstr ""
+
+#. i18n: file: ui/pages/usercreation.ui:180
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:429
+msgid "Login:"
+msgstr "Usuario:"
+
+#. i18n: file: ui/pages/usercreation.ui:200
+#. i18n: ectx: property (text), widget (QLabel, confirmLabel)
+#. i18n: file: ui/pages/usercreation.ui:237
+#. i18n: ectx: property (text), widget (QLabel, rootConfirmPwLabel)
+#. i18n: file: ui/widgets/userwidget.ui:106
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:432 rc.cpp:441 rc.cpp:453
+msgid "Confirm Password:"
+msgstr "Confirmación do contrasinal:"
+
+#. i18n: file: ui/pages/usercreation.ui:207
+#. i18n: ectx: property (text), widget (QCheckBox, usePwForRoot)
+#: rc.cpp:435
+msgid "Use this password for the Adminstrator (root) account"
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:28
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:444
+#, fuzzy
+msgid "Login: "
+msgstr "Usuario:"
+
+#. i18n: file: ui/widgets/userwidget.ui:38
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:447
+#, fuzzy
+msgid "Password: "
+msgstr "Contrasinal:"
+
+#. i18n: file: ui/widgets/userwidget.ui:76
+#. i18n: ectx: property (toolTip), widget (QPushButton, userDetails)
+#: rc.cpp:450
+msgid "Include more information about this user."
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:128
+#. i18n: ectx: property (toolTip), widget (QPushButton, removeUser)
+#: rc.cpp:456
+msgid "Remove this user."
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:230
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:459
+#, fuzzy
+msgid "Name: "
+msgstr "Nome:"
+
+#. i18n: file: ui/widgets/userwidget.ui:256
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:462
+msgid "Avatar:"
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:263
+#. i18n: ectx: property (text), widget (QPushButton, moreButton)
+#: rc.cpp:465
+msgid "More..."
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:296
+#. i18n: ectx: property (text), widget (QCheckBox, autoLoginCheckBox)
+#: rc.cpp:468
+msgid "Login Automatically"
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:303
+#. i18n: ectx: property (text), widget (QCheckBox, adminCheckBox)
+#: rc.cpp:471
+msgid "Administrator"
+msgstr "Administrador"
+
+#: rc.cpp:472
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Adrián Chaves Fernández"
 
-#: rc.cpp:533
+#: rc.cpp:473
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "adriyetichaves@gmail.com"
 
+#~ msgid "Setting up Tribe..."
+#~ msgstr "Iniciando Tribe..."
 
+#~ msgid ""
+#~ "It looks like you were not authorized to launch Tribe. Please contact "
+#~ "your system administrator for further details"
+#~ msgstr ""
+#~ "Seica non estaba autorizado para iniciar Tribe. Para máis información, "
+#~ "diríxase ao administrador do seu sistema."
+
+#~ msgid ""
+#~ "It looks like an unclean start of Tribe has taken place. Please kill all "
+#~ "instances of tribe, tribelauncher and tribelauncherworker and try again"
+#~ msgstr ""
+#~ "Seica Tribe iniciouse de mala maneira. «Mate» todos os procesos de Tribe: "
+#~ "tribe, tribelauncher e tribelauncherworker; e volva intentalo."
+
+#~ msgid ""
+#~ "A newer version of Tribe is available.\n"
+#~ "It is strongly advised to upgrade it. Do you want to upgrade Tribe now?"
+#~ msgstr ""
+#~ "Hai dispoñible unha nova versión de Tribe.\n"
+#~ "Recoméndase encarecidamente instalala. Quere actualizar Tribe agora?"
+
+#~ msgid ""
+#~ "A newer version of Arxin is available.\n"
+#~ "Even though not fundamental, upgrading it is recommended. Do you want to "
+#~ "upgrade Arxin now?"
+#~ msgstr ""
+#~ "Hai dispoñible unha nova versión de Arxin.\n"
+#~ "Recoméndase instalala, pero non é imprescindible. Quere actualizar Arxin "
+#~ "agora?"
+
+#~ msgid "Please Wait, Upgrading Chakra Installer..."
+#~ msgstr "Actualizando o instalador de Chakra..."
+
+#~ msgctxt ""
+#~ "You just have to translate 'remaining' here. Leave everything else as it "
+#~ "is."
+#~ msgid "%p% (%1 KB/s, %2 remaining)"
+#~ msgstr "%p% (%1 KiB/s, %2 restantes)"
+
+#~ msgid "Please Wait, Installing Packages..."
+#~ msgstr "Instalando os paquetes..."
+
+#~ msgid "Please Wait, Upgrading Packages..."
+#~ msgstr "Actualizando os paquetes..."
+
+#~ msgid "Please Wait, Downloading Packages..."
+#~ msgstr "Descargando os paquetes..."
+
+#~ msgid ""
+#~ "An error occurred while trying to upgrade.\n"
+#~ "Do you want to run Tribe anyway?"
+#~ msgstr ""
+#~ "Houbo un erro durante o intento de actualización.\n"
+#~ "Quere executar Tribe de todos xeitos?"
+
+#~ msgid "Please wait, Tribe is being started..."
+#~ msgstr "Iniciando Tribe..."
+
+#~ msgid "Tribe Launcher"
+#~ msgstr "Iniciador de Tribe"
+
+#~ msgid "An auto updater and launcher for Tribe"
+#~ msgstr "Un actualizador e iniciador automático de Tribe"
+
+#~ msgid "team@chakra-project.org"
+#~ msgstr "team@chakra-project.org"
+
+#~ msgid ""
+#~ "We appreciate your dedication, but your backtrace has already been "
+#~ "successfully sent"
+#~ msgstr ""
+#~ "Agradecemos a súa entrega, mais o informe automático xa se enviou "
+#~ "correctamente"
+
+#~ msgid ""
+#~ "Thanks! Your backtrace was successfully submitted. Now just wait for us "
+#~ "to fix this!"
+#~ msgstr ""
+#~ "Grazas! O informe automático enviouse correctamente. Agora só resta que o "
+#~ "arranxemos."
+
+#~ msgid ""
+#~ "There was an error while sending your backtrace!! Probably we could not "
+#~ "connect to the server: you can retry, but the best thing to do would be "
+#~ "saving the backtrace and attaching it to a bug report later."
+#~ msgstr ""
+#~ "Houbo un erro ao enviar o informe automático! O máis probable é que non "
+#~ "se puidese conectar co servidor. Pode volver intentalo, pero o mellor "
+#~ "sería gardar o informe automático e anexalo a un informe de erro máis "
+#~ "adiante."
+
+#~ msgid "Preparing installation, this might take some time ..."
+#~ msgstr "Preparando a instalación, isto pode levar algo de tempo..."
+
+#~ msgid ""
+#~ "Detecting best mirror server & configuring pacman, this may take a bit..."
+#~ msgstr ""
+#~ "Determinando cal é o mellor servidor espello e configurando Pacman, isto "
+#~ "pode levar algo de tempo..."
+
+#~ msgid "Setting up X.Org configuration..."
+#~ msgstr "Establecendo a configuración de X.Org..."
+
+#~ msgid "Could not format %1"
+#~ msgstr "Non se puido formatar %1"
+
+#~ msgid "Do you really want to quit the installation?"
+#~ msgstr "Seguro que quere saír da instalación?"
+
+#~ msgid "Creating menu.lst..."
+#~ msgstr "Creando o menu.lst..."
+
+#~ msgid "Adobe Flash Plugin"
+#~ msgstr "Engadido de Adobe Flash"
+
+#~ msgid "Microsoft Core TTF Fonts"
+#~ msgstr "Tipos de letra principais de Microsoft"
+
+#~ msgid ""
+#~ "You still have pending operations, please apply or revert them before "
+#~ "continuing"
+#~ msgstr ""
+#~ "Aínda quedan operacións pendentes. Aplíqueas ou desfágaas antes de "
+#~ "continuar"
+
+#~ msgid ""
+#~ "It looks like you have selected the mountpoint %1 twice. You can assign "
+#~ "only one partition to a mountpoint"
+#~ msgstr ""
+#~ "Seica escolleu o punto de montaxe %1 dúas veces. Só pode asignarlle o "
+#~ "punto de montaxe a unha partición"
+
+#~ msgid ""
+#~ "Formatting the '/' partition is strongly advised. Going ahead without "
+#~ "formatting it might lead to a non working system after the installation"
+#~ msgstr ""
+#~ "Recoméndase encarecidamente formatar a partición «/». Continuar sen "
+#~ "formatala podería levar a que o sistema non funcione tras a instalación"
+
+#~ msgid ""
+#~ "You have chosen %1 to be used as swap, however you need a special "
+#~ "filesystem for that. Please mark it for being formatted to continue"
+#~ msgstr ""
+#~ "Elixiu usar %1 como memoria de intercambio, pero fai falla un sistema de "
+#~ "ficheiros especial para iso. Para continuar, márquea para ser formatada"
+
+#~ msgid ""
+#~ "The partition %1 you have chosen to use as swap has a filesystem which is "
+#~ "not linuxswap. Please note that this will be changed during installation "
+#~ "procedure"
+#~ msgstr ""
+#~ "A partición %1 que elixiu para usar como memoria de intercambio ten un "
+#~ "sistema de ficheiros distinto de linuxswap. Teña en conta que isto "
+#~ "cambiarase durante o proceso de instalación"
+
+#~ msgid ""
+#~ "It looks like you did not assign a partition to '/'. You have to select a "
+#~ "mount point at least for it"
+#~ msgstr ""
+#~ "Seica non lle asignou ningunha partición a «/». Ten que seleccionar polo "
+#~ "menos un punto de montaxe para el."
+
+#~ msgid ""
+#~ "You did not select a partition to be used as swap space. A swap partition "
+#~ "is strongly advised, especially on laptops and system with limited amount "
+#~ "of RAM"
+#~ msgstr ""
+#~ "Non elixiu partición algunha para usar como memoria de intercambio. "
+#~ "Recoméndase encarecidamente ter unha partición deste tipo, especialmente "
+#~ "en portátiles e sistemas cunha cantidade de memoria RAM limitada"
+
+#~ msgid "Formatting %1 with %2..."
+#~ msgstr "Formatando %1 con %2..."
+
+#~ msgid "%1 will be formatted with %2"
+#~ msgstr "%1 formatarase con %2"
+
+#~ msgid "Partitions mounted"
+#~ msgstr "Montáronse as particións"
+
+#~ msgid "Setting up root user ..."
+#~ msgstr "Establecendo o superusuario..."
+
+#~ msgid "Configuring users ..."
+#~ msgstr "Configurando os usuarios..."
+
+#~ msgid "Password is empty"
+#~ msgstr "O contrasinal está baleiro"
+
+#~ msgid "Password has to be at least 6 characters"
+#~ msgstr "O contrasinal ten que ter polo menos 6 caracteres"
+
+#~ msgid "Passwords match"
+#~ msgstr "O contrasinais coinciden"
+
+#~ msgid "Please wait, reading partition table ..."
+#~ msgstr "Lendo a táboa de particións..."
+
+#~ msgid ""
+#~ "You have selected the partition %1 to be mounted twice.\n"
+#~ "Please correct your selection."
+#~ msgstr ""
+#~ "Elixiu que se montase dúas veces a partición %1.\n"
+#~ "Corríxao."
+
+#~ msgid ""
+#~ "You have to chosen mount point '%1' for two partitions.\n"
+#~ "Please correct your selection."
+#~ msgstr ""
+#~ "Elixiu o punto de montaxe «%1» para dúas particións.\n"
+#~ "Corríxao."
+
+#~ msgid ""
+#~ "You have not configured a username for one user.\n"
+#~ "Please correct your settings."
+#~ msgstr ""
+#~ "Non configurou o nome dun dos usuarios.\n"
+#~ "Corríxao."
+
+#~ msgid ""
+#~ "You have not configured a password for user %1.\n"
+#~ "Please correct your settings."
+#~ msgstr ""
+#~ "Non configurou o contrasinal do usuario %1.\n"
+#~ "Corríxao."
+
+#~ msgid "Setting up password ..."
+#~ msgstr "Establecendo o contrasinal..."
+
+#~ msgid "Creating configurations ..."
+#~ msgstr "Creando as configuracións..."
+
+#~ msgid "Yes"
+#~ msgstr "Si"
+
+#~ msgid "Please Wait, checking Tribe Updates..."
+#~ msgstr "Comprobando se hai unha nova versión de Tribe..."
+
+#~ msgid ""
+#~ "Tribe has crashed due to a fatal error. We are extremely sorry about "
+#~ "that, as this should not happen. However, Tribe collected some important "
+#~ "informations about the crash that will be extremely useful to developers "
+#~ "for fixing this problem. The fastest way to report this, if you have an "
+#~ "active internet connection, is clicking \"Send report to developers\". "
+#~ "Otherwise, you can copy/paste the text below and send it to bugs@chakra-"
+#~ "project.org. No personal informations are included, you can see the log "
+#~ "for details."
+#~ msgstr ""
+#~ "Tribe fallou por mor dun erro grave. Sentímolo moito, non debera ocorrer "
+#~ "tal. Porén, Tribe recolleu información importante sobre o incidente que "
+#~ "lles resultará de gran axuda aos desenvolvedores para resolver o "
+#~ "problema. O modo máis rápido de enviala, se ten conexión a internet, é "
+#~ "premendo en «Enviarlle o informe aos desenvolvedores». En caso contrario, "
+#~ "pode copiar o texto que segue e envialo a bugs@chakra-project.org. Non se "
+#~ "inclúe ningúndato de tipo persoal, pode consultar o rexistro para máis "
+#~ "información."
+
+#~ msgid "Copy to clipboard"
+#~ msgstr "Copiar no portarretallos"
+
+#~ msgid "Send report to developers"
+#~ msgstr "Enviarlle o informe aos desenvolvedores"
+
+#~ msgid "Surname:"
+#~ msgstr "Apelidos:"
+
+#~ msgid "Delete"
+#~ msgstr "Borrar"
+
+#~ msgid "Root Password"
+#~ msgstr "Contrasinal de superusuario"
+
+#~ msgid "Configure System"
+#~ msgstr "Configuración do sistema"
+
+#~ msgid "Time Settings"
+#~ msgstr "Configuración da hora"
+
+#~ msgid "Timezone:"
+#~ msgstr "Fuso horario:"
+
+#~ msgid "Language Settings"
+#~ msgstr "Configuración da lingua"
+
+#~ msgid ""
+#~ "Now you have to set up your disks for installation. Please use the tool "
+#~ "below to partition, format and select mountpoints. Once you're satisfied "
+#~ "with your choice, click \"Apply\" if you made any changes to the "
+#~ "partition table or requested to format one or more partitions, and then "
+#~ "go ahead. Formatting the partitions you will mount main system paths on "
+#~ "(such as / or /usr) is strongly advised."
+#~ msgstr ""
+#~ "Agora ten que configurar os seus discos para a instalación. Use a "
+#~ "seguinte ferramenta para particionar, formatar e seleccionar puntos de "
+#~ "montaxe. Unha vez conforme coa súa elección, prema «Aplicar» se cambiou a "
+#~ "táboa de particións ou solicitou formatar algunha partición, e logo "
+#~ "continúe. Recoméndase encarecidamente formatar as particións onde se van "
+#~ "montar os directorios principais do sistema, coma «/» ou «/usr»."
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+#~ "#eeeeee;\">Formatting Partitions...</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+#~ "#eeeeee;\">Formatando as particións...</span></p></body></html>"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+#~ "#eeeeee;\">Mounting Partitions...</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+#~ "#eeeeee;\">Montando as particións...</span></p></body></html>"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Liberation Sans'; font-size:8pt;\"></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Liberation Sans'; font-size:8pt;\"></p></body></html>"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "size:22pt; font-weight:600; color:#ffffff;\">Root Setup</span></p></"
+#~ "body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "size:22pt; font-weight:600; color:#ffffff;\">Configuración do "
+#~ "superusuario</span></p></body></html>"
+
+#~ msgid ""
+#~ "Now you can define the behaviour of the user root, who is used to manage "
+#~ "the system.\n"
+#~ "\n"
+#~ "Keeping this user is usually recommended, though you can choose to use "
+#~ "sudo only and disable the root user. Please remind that having the root "
+#~ "account disabled and sudo misconfigured may lead to an unusable system."
+#~ msgstr ""
+#~ "Agora pode definir o comportamento do superusuario, que se utilizar para "
+#~ "a administración do sistema.\n"
+#~ "\n"
+#~ "Xeralmente recoméndase manter este usuario, aínda que pode optar por usar "
+#~ "simplemente «sudo» e desactivalo. Teña en conta de que estar desactivada a "
+#~ "conta de superusuario e estar mal configurado o «sudo», o sistema quedaría "
+#~ "inutilizado."
+
+#~ msgid "Enable Root User"
+#~ msgstr "Activar o superusuario"
+
+#~ msgid "Password"
+#~ msgstr "Contrasinal"
+
+#~ msgid "Confirm Password"
+#~ msgstr "Confirmación do contrasinal"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Filesystem Setup</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Configuración do sistema de ficheiros</span></p></body></html>"
+
+#~ msgid ""
+#~ "Please choose what partitions should be used for the installation. Just "
+#~ "select the partition and the mountpoint. You can use the \"Add another "
+#~ "partition\" button to add more of them. To format a partition (most "
+#~ "likely accurate for all system partitions), activate the \"Format\" "
+#~ "checkbox and select a filesystem.\n"
+#~ "\n"
+#~ "You need at least a root (/) and a swap partition. When you have added "
+#~ "all desired partitions, simply press the \"Next\" button."
+#~ msgstr ""
+#~ "Escolla que particións deberían usarse para a instalación. Seleccione "
+#~ "simplemente a partición e mailo punto de montaxe. Pode usar o botón "
+#~ "«Engadir outra partición» para engadir máis. Para formatar unha partición "
+#~ "(recomendable para case todas as particións do sistema), marque a caixa "
+#~ "«Formatar» e elixa un sistema de ficheiros.\n"
+#~ "\n"
+#~ "Necesita cando menos unha raíz (/) e unha partición de intercambio. Unha "
+#~ "vez engadidas todas as particións desexadas, prema o botón «Seguinte»."
+
+#~ msgid "Add another Partition"
+#~ msgstr "Engadir outra partición"
+
+#~ msgid "Partition:"
+#~ msgstr "Partición:"
+
+#~ msgid "Size:"
+#~ msgstr "Tamaño:"
+
+#~ msgid "ext3"
+#~ msgstr "ext3"
+
+#~ msgid "ext2"
+#~ msgstr "ext2"
+
+#~ msgid "ext4"
+#~ msgstr "ext4"
+
+#~ msgid "reiserfs"
+#~ msgstr "reiserfs"
+
+#~ msgid "jfs"
+#~ msgstr "jfs"
+
+#~ msgid "xfs"
+#~ msgstr "xfs"
+
+#~ msgid "linux-swap"
+#~ msgstr "intercambio"
+
+#~ msgid "Format with:"
+#~ msgstr "Formatar como:"
+
+#~ msgid "/"
+#~ msgstr "/"
+
+#~ msgid "/boot"
+#~ msgstr "/boot"
+
+#~ msgid "/home"
+#~ msgstr "/home"
+
+#~ msgid "/opt"
+#~ msgstr "/opt"
+
+#~ msgid "/usr"
+#~ msgstr "/usr"
+
+#~ msgid "/tmp"
+#~ msgstr "/tmp"
+
+#~ msgid "/var"
+#~ msgstr "/var"
+
+#~ msgid "swap"
+#~ msgstr "intercambio"
+
+#~ msgid "Remove"
+#~ msgstr "Borrar"
+
+#~ msgid "General Settings"
+#~ msgstr "Configuración xeral"
+
+#~ msgid "Download Settings"
+#~ msgstr "Configuración de descarga"
+
+#~ msgid ""
+#~ "Enter your name, a corresponding login name and your password to create a "
+#~ "user account. To enable sudo for the created user and allow him to do "
+#~ "administrative tasks, enable the \"Administrator\" option below."
+#~ msgstr ""
+#~ "Introduza o seu nome, o do seu usuario e o seu contrasinal para crear "
+#~ "unha conta de usuario. Para activar «sudo» para o usuario creado e "
+#~ "permitirlle realizar tarefas administrativas, active a opción "
+#~ "«Administrador»."
+
+#~ msgid "Add another User.."
+#~ msgstr "Engadir outro usuario..."
+
+#~ msgid "Install plain KDE-Configuration"
+#~ msgstr "Instalar a configuración simple de KDE"
+
+#~ msgid "Install Current-LiveCD-Configuration"
+#~ msgstr "Instalar a configuración actual do LiveCD"
+
+#~ msgid "Install plain KDEMod-Configuration"
+#~ msgstr "Instalar a configuración simple de KDEMod"

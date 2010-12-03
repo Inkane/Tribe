@@ -6,334 +6,269 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2009-09-27 20:36+0200\n"
+"POT-Creation-Date: 2010-12-03 21:58+0100\n"
 "PO-Revision-Date: 2010-02-22 16:21+0200\n"
 "Last-Translator: \n"
 "Language-Team: Ukrainian <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Lokalize 1.0\n"
 
-#: launcher/src/TribeLauncher.cpp:83
-#, fuzzy
-msgid "Setting up Tribe..."
-msgstr "Запуск Tribe…"
-
-#: launcher/src/TribeLauncher.cpp:95
-#, fuzzy
-msgid ""
-"It looks like you were not authorized to launch Tribe. Please contact your "
-"system administrator for further details"
+#: src/installationhandler.cpp:94
+msgid "Tribe was not able to initialize needed path: "
 msgstr ""
-"Схоже, ви не маєте права запускати Tribe. Будь ласка, зверніть до вашого "
-"системного адміністратора для подальших подробиць"
 
-#: launcher/src/TribeLauncher.cpp:102
-#, fuzzy
-msgid ""
-"It looks like an unclean start of Tribe has taken place. Please kill all "
-"instances of tribe, tribelauncher and tribelauncherworker and try again"
+#: src/installationhandler.cpp:94
+msgid " , please resolve the issue, and try again."
 msgstr ""
-"Схоже, відбувся неправильний запуск Tribe. Будь ласка, вбийте "
-"tribe, tribelauncher і tribelauncherworker та спробуйте знову"
 
-#: launcher/src/TribeLauncher.cpp:168
-#, fuzzy
-msgid ""
-"A newer version of Tribe is available.\n"
-"It is strongly advised to upgrade it. Do you want to upgrade Tribe now?"
-msgstr ""
-"Доступна нова версія Tribe.\n"
-"Наполегливо рекомендується оновити його. Бажаєте оновити Tribe зараз же?"
-
-#: launcher/src/TribeLauncher.cpp:171
-#, fuzzy
-msgid ""
-"A newer version of Arxin is available.\n"
-"Even though not fundamental, upgrading it is recommended. Do you want to "
-"upgrade Arxin now?"
-msgstr ""
-"Доступна нова версія Arxin.\n"
-"Хоча він не основний, але оновлення рекомендоване. Бажаєете "
-"оновити Arxin зараз же?"
-
-#: launcher/src/TribeLauncher.cpp:194
-#, fuzzy
-msgid "Please Wait, Upgrading Chakra Installer..."
-msgstr "Заждіть, будь ласка, оновлюється Chakra…"
-
-#: launcher/src/TribeLauncher.cpp:232
-#, fuzzy
-msgctxt ""
-"You just have to translate 'remaining' here. Leave everything else as it is."
-msgid "%p% (%1 KB/s, %2 remaining)"
-msgstr "%p% (%1 KB/s, залишилось %2)"
-
-#: launcher/src/TribeLauncher.cpp:248
-#, fuzzy
-msgid "Installing..."
-msgstr "Установлення…"
-
-#: launcher/src/TribeLauncher.cpp:259
-#, fuzzy
-msgid "Please Wait, Installing Packages..."
-msgstr "Заждіть, будь ласка, встановлюються пакунки…"
-
-#: launcher/src/TribeLauncher.cpp:262
-#, fuzzy
-msgid "Please Wait, Upgrading Packages..."
-msgstr "Заждіть, будь ласка, оновлюються пакунки…"
-
-#: launcher/src/TribeLauncher.cpp:265
-#, fuzzy
-msgid "Please Wait, Downloading Packages..."
-msgstr "Заждіть, будь ласка, звантажуються пакунки…"
-
-#: launcher/src/TribeLauncher.cpp:276
-#, fuzzy
-msgid ""
-"An error occurred while trying to upgrade.\n"
-"Do you want to run Tribe anyway?"
-msgstr ""
-"Помилка при спробі оновитись.\n"
-"Однаково, запустити Tribe?"
-
-#: launcher/src/TribeLauncher.cpp:296
-#, fuzzy
-msgid "Please wait, Tribe is being started..."
-msgstr "Заждіть, будь ласка, Tribe запускається…"
-
-#. i18n: file: launcher/ui/gui.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, tribeLauncherUi)
-#: launcher/src/main.cpp:32 rc.cpp:3
-#, fuzzy
-msgid "Tribe Launcher"
-msgstr "Запускач Tribe"
-
-#: launcher/src/main.cpp:33
-#, fuzzy
-msgid "An auto updater and launcher for Tribe"
-msgstr "Автоматичний оновлювач і запускач для Tribe"
-
-#: launcher/src/main.cpp:34 src/main.cpp:44
-#, fuzzy
-msgid "(c) 2008 the Chakra Development Team"
-msgstr "© 2008 Команда розробників Chakra"
-
-#: launcher/src/main.cpp:34
-#, fuzzy
-msgid "team@chakra-project.org"
-msgstr "team@chakra-project.org"
-
-#: launcher/src/main.cpp:36 src/main.cpp:46
-#, fuzzy
-msgid "Dario Freddi"
-msgstr "Dario Freddi"
-
-#: launcher/src/main.cpp:36 src/main.cpp:47
-#, fuzzy
-msgid "Developer"
-msgstr "Розробник"
-
-#: src/CrashHandler.cpp:218
-#, fuzzy
-msgid ""
-"We appreciate your dedication, but your backtrace has already been "
-"successfully sent"
-msgstr ""
-"Ми цінуємо вашу відданість справі, але ваш зворотній слід уже"
-"успішно відправлено."
-
-#: src/CrashHandler.cpp:234
-#, fuzzy
-msgid ""
-"Thanks! Your backtrace was successfully submitted. Now just wait for us to "
-"fix this!"
-msgstr ""
-"Спасибі! Ваш зворотній слід уже відправлено. Тепер лишається ждати, "
-"поки ми виправимо це!"
-
-#: src/CrashHandler.cpp:238
-#, fuzzy
-msgid ""
-"There was an error while sending your backtrace!! Probably we could not "
-"connect to the server: you can retry, but the best thing to do would be "
-"saving the backtrace and attaching it to a bug report later."
-msgstr ""
-"Помилка при відправленні вашого зворотнього зв'язку! Ймовірно, нас не "
-"під'єднано до сервера: ви можете повторити, але найкраще буде, якщо ви "
-"збережете зворотній слід і згодом долучите його до звіту про ваду."
-
-#: src/InstallationHandler.cpp:79 src/InstallationHandler.cpp:649
-#, fuzzy
-msgid ""
-"Tribe was not able to initialize needed directories. You probably do not "
-"have enough privileges, please restart Tribe as root."
-msgstr ""
-"Tribe заборонено запускати потрібні теки. Імовірно, ви не маєте "
-"достатньо прав, будь ласка, запустіть Tribe з-під адміністратора(root)."
-
-#: src/InstallationHandler.cpp:141
+#: src/installationhandler.cpp:156
 #, fuzzy
 msgid "Installing the system ..."
 msgstr "Установлення системи …"
 
-#: src/InstallationHandler.cpp:161
+#: src/installationhandler.cpp:184
 #, fuzzy
-msgid "Preparing installation, this might take some time ..."
-msgstr "Підготовка до встановлення, це може забрати трохи часу …"
+msgid "Mounting partitions..."
+msgstr "Монтування %1 на %2…"
 
-#: src/InstallationHandler.cpp:186
+#: src/installationhandler.cpp:192
+#, fuzzy
+msgid "Preparing installation..."
+msgstr "Завершення встановлення…"
+
+#: src/installationhandler.cpp:212
 #, fuzzy
 msgid "Error copying files"
 msgstr "Помилка при копіюванні файлів"
 
-#: src/InstallationHandler.cpp:193
+#: src/installationhandler.cpp:215
 #, fuzzy
 msgid "Removing packages whose license has been declined ..."
 msgstr "Вилучаються пакунки, ліцензії яких не було схвалено …"
 
-#: src/InstallationHandler.cpp:250
+#: src/installationhandler.cpp:253
 #, fuzzy
 msgid "Initializing target ..."
 msgstr "Запуск цілі …"
 
-#: src/InstallationHandler.cpp:342
+#: src/installationhandler.cpp:339
 #, fuzzy
-msgid "Please wait, configuring and starting PostInstall ..."
+msgid "Please wait, configuring the new system ..."
 msgstr ""
 "Заждіть, будь ласка, налаштовується і запускається попереднє встановлення …"
 
-#: src/InstallationHandler.cpp:391
+#: src/installationhandler.cpp:415
 #, fuzzy
 msgid "Error in Postinstall script. See log for more details"
 msgstr ""
 "Помилка в скрипті для завершення встановлення. Гляньте в журнал за "
 "подробицями"
 
-#: src/InstallationHandler.cpp:402
+#: src/installationhandler.cpp:424
 #, fuzzy
-msgid ""
-"Detecting best mirror server & configuring pacman, this may take a bit..."
-msgstr ""
-"Виявлення найкращого дзеркала та налаштування pacman, це може зайняти трохи…"
+msgid "Creating accounts ..."
+msgstr "Створення рахунка для нового користувача"
 
-#: src/InstallationHandler.cpp:406
+#: src/installationhandler.cpp:427
 #, fuzzy
-msgid "Removing superfluous packages..."
+msgid "Configuring software management, this may take a bit..."
+msgstr "Налаштування swap, це може забрати трохи часу …"
+
+#: src/installationhandler.cpp:431
+#, fuzzy
+msgid "Removing unused packages..."
 msgstr "Вилучення зайвих пакунків…"
 
-#: src/InstallationHandler.cpp:410
+#: src/installationhandler.cpp:435
 #, fuzzy
 msgid "Installing additional packages..."
 msgstr "Установлення додаткових пакунків…"
 
-#: src/InstallationHandler.cpp:414
+#: src/installationhandler.cpp:439
 #, fuzzy
-msgid "Setting up X.Org configuration..."
-msgstr "Запуск налаштувань X.Org…"
+msgid "Configuring the display..."
+msgstr "Налаштування устаткування…"
 
-#: src/InstallationHandler.cpp:418
+#: src/installationhandler.cpp:443
 #, fuzzy
 msgid ""
 "Downloading and installing localization packages, this may take a bit..."
 msgstr ""
 "Звантаження та встановлення пакунків локалізації, це може зайняти трохи…"
 
-#: src/InstallationHandler.cpp:422
+#: src/installationhandler.cpp:447
 #, fuzzy
 msgid ""
 "Downloading and installing documentation packages, this may take a bit..."
 msgstr ""
 "Звантаження та встановлення пакунків з документацією, це може зайняти трохи…"
 
-#: src/InstallationHandler.cpp:426
+#: src/installationhandler.cpp:451
 #, fuzzy
 msgid "Setting up localization..."
 msgstr "Запуск локалізації…"
 
-#: src/InstallationHandler.cpp:430
+#: src/installationhandler.cpp:455
 #, fuzzy
 msgid "Creating daemon configuration..."
 msgstr "Створення налаштувань демона…"
 
-#: src/InstallationHandler.cpp:434
+#: src/installationhandler.cpp:459
 #, fuzzy
 msgid "Creating network configuration..."
 msgstr "Створення налаштувань мережі…"
 
-#: src/InstallationHandler.cpp:438
+#: src/installationhandler.cpp:463
 #, fuzzy
 msgid "Creating fstab..."
 msgstr "Створення fstab…"
 
-#: src/InstallationHandler.cpp:442
+#: src/installationhandler.cpp:471
 #, fuzzy
 msgid "Configuring hardware..."
 msgstr "Налаштування устаткування…"
 
-#: src/InstallationHandler.cpp:446
+#: src/installationhandler.cpp:475
 #, fuzzy
-msgid ""
-"Creating initial ramdisk images. This may take a lot of time, stay tuned..."
+msgid "Creating initial ramdisk images, this may take a bit..."
 msgstr ""
 "Створення початкових зображень ramdisk. Це може забрати досить чимало часу, "
 "не вимикайтесь…"
 
-#: src/InstallationHandler.cpp:450
+#: src/installationhandler.cpp:479
 #, fuzzy
-msgid "Regenerating locales..."
+msgid "Generating locales..."
 msgstr "Відновлення локалей…"
 
-#: src/InstallationHandler.cpp:454
+#: src/installationhandler.cpp:483
 #, fuzzy
-msgid "Removing superfluous localizations..."
+msgid "Removing unused localizations..."
 msgstr "Вилучення зайвих локалей…"
 
-#: src/InstallationHandler.cpp:458
+#: src/installationhandler.cpp:487
 #, fuzzy
-msgid "Removing superfluous drivers..."
+msgid "Removing unused drivers..."
 msgstr "Вилучення зайвих драйверів…"
 
-#: src/InstallationHandler.cpp:462
+#: src/installationhandler.cpp:491
 #, fuzzy
-msgid "Finishing installation..."
+msgid "Finishing up..."
 msgstr "Завершення встановлення…"
 
-#: src/InstallationHandler.cpp:466
+#: src/installationhandler.cpp:495
 #, fuzzy
 msgid "Installation complete!"
 msgstr "Встановлення завершено!"
 
-#: src/InstallationHandler.cpp:592
+#: src/installationhandler.cpp:586
 #, fuzzy
-msgid "Could not format %1"
-msgstr "Неможливо сформувати %1"
+msgid ""
+"Tribe was not able to initialize needed directories. Something is very "
+"wrong..."
+msgstr ""
+"Tribe заборонено запускати потрібні теки. Імовірно, ви не маєте достатньо "
+"прав, будь ласка, запустіть Tribe з-під адміністратора(root)."
 
-#: src/InstallationHandler.cpp:672
+#: src/installationhandler.cpp:611
 #, fuzzy
 msgid "Could not mount %1"
 msgstr "Неможливо змонтувати %1"
 
-#: src/InstallationHandler.h:188
+#: src/installationhandler.h:184
 #, fuzzy
 msgid "No Further details given"
 msgstr "Інших подробиць не дано"
 
-#: src/MainWindow.cpp:121
+#. i18n: file: ui/pages/base.ui:20
+#. i18n: ectx: property (windowTitle), widget (QWidget, Base)
+#: src/main.cpp:44 rc.cpp:3
 #, fuzzy
-msgid "Do you really want to quit the installation?"
-msgstr "Покинути встановлення?"
+msgid "Tribe"
+msgstr "Tribe"
 
-#: src/MainWindow.cpp:139
+#: src/main.cpp:45
+#, fuzzy
+msgid "Graphical Installer for Chakra"
+msgstr "Встановлювач LiveCD для Chakra"
+
+#: src/main.cpp:46
+#, fuzzy
+msgid "(c) 2008 - 2010 the Chakra Development Team"
+msgstr "© 2008 Команда розробників Chakra"
+
+#: src/main.cpp:46
+#, fuzzy
+msgid "chakra@chakra-project.org"
+msgstr "chakra@chakra-project.org"
+
+#: src/main.cpp:48
+#, fuzzy
+msgid "Dario Freddi"
+msgstr "Dario Freddi"
+
+#: src/main.cpp:48
+#, fuzzy
+msgid "Maintainer"
+msgstr "Відповідальний"
+
+#: src/main.cpp:49
+#, fuzzy
+msgid "Lukas Appelhans"
+msgstr "Lukas Appelhans"
+
+#: src/main.cpp:49 src/main.cpp:53
+#, fuzzy
+msgid "Developer"
+msgstr "Розробник"
+
+#: src/main.cpp:50
+#, fuzzy
+msgid "Jan Mette"
+msgstr "Jan Mette"
+
+#: src/main.cpp:50
+#, fuzzy
+msgid "PostInstall Backend and Artwork"
+msgstr "Оформлення і розробка попереднього встановлення"
+
+#: src/main.cpp:51
+msgid "Phil Miller"
+msgstr ""
+
+#: src/main.cpp:51 src/main.cpp:52
+#, fuzzy
+msgid "PostInstall Backend"
+msgstr "Оформлення і розробка попереднього встановлення"
+
+#: src/main.cpp:52
+msgid "Manuel Tortosa"
+msgstr ""
+
+#: src/main.cpp:53
+msgid "Drake Justice"
+msgstr ""
+
+#: src/main.cpp:67
+#, fuzzy
+msgid ""
+"It looks like your power adaptor is unplugged. Installation is a delicate "
+"and lenghty process, hence it is strongly advised to have your PC connected "
+"to AC to minimize possible risks."
+msgstr ""
+"Схоже, що ваш пристрій живлення не встромлено. Встановлення — делікатний і "
+"безперервний процес, тому дуже рекомендуємо, щоб ваш комп'ютер був "
+"під'єднанодо змінного струму, аби зменшити можливі ризики."
+
+#: src/mainwindow.cpp:112
 #, fuzzy
 msgid "Do you really want to abort the installation?"
 msgstr "Скасувати встановлення?"
 
-#: src/MainWindow.cpp:785
+#: src/mainwindow.cpp:547
 #, fuzzy
 msgid ""
 "Installation failed! The following error has been reported: %1.\n"
@@ -344,424 +279,215 @@ msgstr ""
 "Tribe вимкнеться, будь ласка, перевірте журнал установлення в /tmp\n"
 "або попрохайте про поміч у нашому форумі."
 
-#. i18n: file: ui/tribeBase.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, TribeBase)
-#: src/main.cpp:42 rc.cpp:48
-#, fuzzy
-msgid "Tribe"
-msgstr "Tribe"
-
-#: src/main.cpp:43
-#, fuzzy
-msgid "LiveCD Installer for Chakra"
-msgstr "Встановлювач LiveCD для Chakra"
-
-#: src/main.cpp:44
-#, fuzzy
-msgid "chakra@chakra-project.org"
-msgstr "chakra@chakra-project.org"
-
-#: src/main.cpp:46
-#, fuzzy
-msgid "Maintainer"
-msgstr "Відповідальний"
-
-#: src/main.cpp:47
-#, fuzzy
-msgid "Lukas Appelhans"
-msgstr "Lukas Appelhans"
-
-#: src/main.cpp:48
-#, fuzzy
-msgid "Jan Mette"
-msgstr "Jan Mette"
-
-#: src/main.cpp:48
-#, fuzzy
-msgid "PostInstall Backend and Artwork"
-msgstr "Оформлення і розробка попереднього встановлення"
-
-#: src/main.cpp:69
-#, fuzzy
-msgid ""
-"It looks like your power adaptor is unplugged. Installation is a delicate "
-"and lenghty process, hence it is strongly advised to have your PC connected "
-"to AC to minimize possible risks."
-msgstr ""
-"Схоже, що ваш пристрій живлення не встромлено. Встановлення — делікатний "
-"і безперервний процес, тому дуже рекомендуємо, щоб ваш комп'ютер був "
-"під'єднано"
-"до змінного струму, аби зменшити можливі ризики."
-
-#: src/pages/BootloaderPage.cpp:54
+#: src/pages/bootloaderpage.cpp:52
 #, fuzzy
 msgid "Installing bootloader..."
 msgstr "Встановлення завантажувача…"
 
-#: src/pages/BootloaderPage.cpp:87
+#: src/pages/bootloaderpage.cpp:82
 #, fuzzy
-msgid "Creating menu.lst..."
-msgstr "Утворення menu.lst…"
+msgid "Creating OS list..."
+msgstr "Створення fstab…"
 
-#: src/pages/LicensePage.cpp:53
-#, fuzzy
-msgid "Adobe Flash Plugin"
-msgstr "Модуль Adobe Flash"
-
-#: src/pages/LicensePage.cpp:54
-#, fuzzy
-msgid "Microsoft Core TTF Fonts"
-msgstr "Базові шрифти Microsoft"
-
-#: src/pages/LicensePage.cpp:57
+#: src/pages/licensepage.cpp:53
 #, fuzzy
 msgid "Proprietary ATI Driver"
 msgstr "Закритий драйвери ATI"
 
-#: src/pages/LicensePage.cpp:61
+#: src/pages/licensepage.cpp:57
 #, fuzzy
 msgid "Proprietary NVidia Driver"
 msgstr "Закритий драйвер  NVidia"
 
-#: src/pages/LicensePage.cpp:120
+#: src/pages/licensepage.cpp:117
 #, fuzzy
 msgid "Accept license for: "
 msgstr "Погодитись з ліцензіями для:"
 
-#: src/pages/LocaleSelectorPage.cpp:229
+#: src/pages/localepage.cpp:271
 #, fuzzy
-msgid "You need to select a Timezone."
+msgid "You need to select a timezone"
 msgstr "Вам потрібно вибрати часовий пояс."
 
-#: src/pages/LocaleSelectorPage.cpp:229 src/pages/PartitioningPage.cpp:85
+#: src/pages/partitionpage.cpp:58 src/pages/partitionpage.cpp:133
 #, fuzzy
-#: src/pages/PartitioningPage.cpp:107 src/pages/PartitioningPage.cpp:124
-#: src/pages/SelectPartitionPage.cpp:285 src/pages/SelectPartitionPage.cpp:294
-#: src/pages/SelectPartitionPage.cpp:310 src/pages/UserCreationPage.cpp:97
-#: src/pages/UserCreationPage.cpp:101
+msgid "None"
+msgstr "Ні"
+
+#: src/pages/partitionpage.cpp:67 src/pages/partitionpage.cpp:88
+msgid "Other..."
+msgstr ""
+
+#: src/pages/partitionpage.cpp:94
+msgid "Please enter a custom mountpoint"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:106
+msgid "The mount point must start with /"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:107
+#, fuzzy
 msgid "Error"
 msgstr "Помилка"
 
-#: src/pages/PartitioningPage.cpp:73
-#, fuzzy
-msgid ""
-"You still have pending operations, please apply or revert them before "
-"continuing"
+#: src/pages/partitionpage.cpp:129
+msgid "You can only use each mountpoint once."
 msgstr ""
-"Ви все ще маєте чекання на операції, будь ласка, застосуйте або відкиньте їх "
-"перш "
-"аніж іти далі"
 
-#: src/pages/PartitioningPage.cpp:83
-#, fuzzy
-msgid ""
-"It looks like you have selected the mountpoint %1 twice. You can assign only "
-"one partition to a mountpoint"
-msgstr "Схоже, ви вибрали точку монтування %1 двічі. Можна вибрати лише одну"
-
-#: src/pages/PartitioningPage.cpp:93
-#, fuzzy
-msgid ""
-"Formatting the '/' partition is strongly advised. Going ahead without "
-"formatting it might lead to a non working system after the installation"
+#: src/pages/partitionpage.cpp:130
+msgid "Information"
 msgstr ""
-"Наполегливо рекомендується форматувати розділ «/». Забігаючи вперед, "
-"без форматування це може призвести до неробочої системи після встановлення"
 
-#: src/pages/PartitioningPage.cpp:104
-#, fuzzy
-msgid ""
-"You have chosen %1 to be used as swap, however you need a special filesystem "
-"for that. Please mark it for being formatted to continue"
+#: src/pages/partitionpage.cpp:390
+msgid "Loading partitions..."
 msgstr ""
-"%1 вибрано як swap, утім вам потрібна спеціальна файлова система для "
-"цього. Будь ласка, позначте її на форматування для подальшої роботи"
 
-#: src/pages/PartitioningPage.cpp:110
-#, fuzzy
+#: src/pages/partitionpage.cpp:474
 msgid ""
-"The partition %1 you have chosen to use as swap has a filesystem which is "
-"not linuxswap. Please note that this will be changed during installation "
-"procedure"
+"The selected volume already has a partition table.. Overwrite it? (this will "
+"destroy all data on the device)"
 msgstr ""
-"Розділ %1 вибрано як swap, але файлова система не linuxswap. Будь ласка, "
-"майте на увазі, це буде змінено протягом установлення."
 
-#: src/pages/PartitioningPage.cpp:123
-#, fuzzy
+#: src/pages/partitionpage.cpp:474 src/pages/partitionpage.cpp:481
+msgid "Warning"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:481
 msgid ""
-"It looks like you did not assign a partition to '/'. You have to select a "
-"mount point at least for it"
+"This operation will destroy all data on the selected volume.. Continue "
+"anyway?"
 msgstr ""
-"Схоже, ви не вказали розділ для «/». Для цього потрібно "
-"вибрати точку монтування"
 
-#: src/pages/PartitioningPage.cpp:129
+#. i18n: file: ui/pages/partition.ui:126
+#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
+#: src/pages/partitionpage.cpp:528 src/pages/partitionpage.cpp:753
+#: src/pages/partitionpage.cpp:797 rc.cpp:284
+msgid "Extended"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:131
+#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
+#: src/pages/partitionpage.cpp:754 rc.cpp:287
+msgid "Primary"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:851
 #, fuzzy
+msgid "New partition"
+msgstr "Розділ"
+
+#: src/pages/partitionpage.cpp:856
+msgid "Unallocated space"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:860
+msgid "Linux / Extended"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:866
+msgid "Windows / %1"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:871
+msgid "Apple / %1"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:876
+msgid "Linux / %1"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:898
 msgid ""
-"You did not select a partition to be used as swap space. A swap partition is "
-"strongly advised, especially on laptops and system with limited amount of RAM"
+"The partition you have chosen to mount as '/' is too small. It should have a "
+"capacity of at least %1 for a successful installation."
 msgstr ""
-"Ви не вибрали розділ для swap. Наполегливо рекомендується його мати, "
-"особливо на ноутбуках і системах з обмеженою оперативною пам'яттю"
 
-#: src/pages/PreparePartitionsPage.cpp:56
-#, fuzzy
-msgid "Formatting %1 with %2..."
-msgstr "Форматування %1 на %2…"
+#: src/pages/partitionpage.cpp:901 src/pages/partitionpage.cpp:916
+msgid "Target's capacity not sufficient"
+msgstr ""
 
-#: src/pages/PreparePartitionsPage.cpp:71
-#, fuzzy
-msgid "Mounting %1 on %2..."
-msgstr "Монтування %1 на %2…"
+#: src/pages/partitionpage.cpp:914
+msgid ""
+"You have selected '%1' as a mountpoint, which is not valid. A valid "
+"mountpoint always starts with '/' and represents a directory on disk"
+msgstr ""
 
-#: src/pages/ReadyInstallPage.cpp:63
+#: src/pages/readyinstallpage.cpp:77
+msgid "New partition (%1) on %2"
+msgstr ""
+
+#: src/pages/readyinstallpage.cpp:80
 #, fuzzy
 msgid "%1 will be used as %2"
 msgstr "%1 буде використано як %2"
 
-#: src/pages/ReadyInstallPage.cpp:75
-#, fuzzy
-msgid "%1 will be formatted with %2"
-msgstr "%1 буде форматовано на %2"
+#: src/pages/readyinstallpage.cpp:100
+msgid "Continue"
+msgstr ""
 
-#: src/pages/ReadyInstallPage.cpp:94
+#: src/pages/readyinstallpage.cpp:104
 #, fuzzy
 msgid ""
-"The following partitions appear mounted: %1. To let the installation happen "
-"correctly, Tribe will now unmount them."
+"The following partitions appear to be mounted: %1. To let the installation "
+"happen correctly, Tribe will now unmount them."
 msgstr ""
-"Змонтовано такі розділи: %1. Щоб встановлення пройшло коректно, "
-"Tribe їх розмонтує."
+"Змонтовано такі розділи: %1. Щоб встановлення пройшло коректно, Tribe їх "
+"розмонтує."
 
-#: src/pages/ReadyInstallPage.cpp:97
-#, fuzzy
-msgid "Partitions mounted"
-msgstr "Розділ змонтовано"
-
-#: src/pages/RootPage.cpp:61
-#, fuzzy
-msgid "Setting up root user ..."
-msgstr "Налаштування адміністратора…"
-
-#: src/pages/RootPage.cpp:88 src/pages/RootPage.cpp:111
-#, fuzzy
-msgid "Configuring users ..."
-msgstr "Налаштування користувачів…"
-
-#. i18n: file: ui/createUserWidget.ui:141
-#. i18n: ectx: property (text), widget (QLabel, statusLabel)
-#. i18n: file: ui/tribeRoot.ui:176
-#. i18n: ectx: property (text), widget (QLabel, statusLabel)
-#: src/pages/RootPage.cpp:134 src/widgets/UserCreationWidget.cpp:51 rc.cpp:42
-#, fuzzy
-#: rc.cpp:412
-msgid "Password is empty"
-msgstr "Порожній пароль"
-
-#: src/pages/RootPage.cpp:141 src/widgets/UserCreationWidget.cpp:58
-#, fuzzy
-msgid "Password has to be at least 6 characters"
-msgstr "Пароль має містити щонайменше 6 символів"
-
-#: src/pages/RootPage.cpp:148 src/widgets/UserCreationWidget.cpp:65
-#, fuzzy
-msgid "Passwords do not match"
-msgstr "Паролі не збігаються"
-
-#: src/pages/RootPage.cpp:155 src/widgets/UserCreationWidget.cpp:72
-#, fuzzy
-msgid "Passwords match"
-msgstr "Паролі збігаються"
-
-#: src/pages/SelectPartitionPage.cpp:139
-#, fuzzy
-msgid "Please wait, reading partition table ..."
-msgstr "Заждіть, будь ласка, читання таблиці розділів …"
-
-#: src/pages/SelectPartitionPage.cpp:169
-#, fuzzy
-msgid "Configuring swap space, this could take some time ..."
-msgstr "Налаштування swap, це може забрати трохи часу …"
-
-#: src/pages/SelectPartitionPage.cpp:284
-#, fuzzy
-msgid ""
-"You have selected the partition %1 to be mounted twice.\n"
-"Please correct your selection."
-msgstr ""
-"Розділ для монтування %1 вибрано двічі.\n"
-"Будь ласка, поправте це."
-
-#: src/pages/SelectPartitionPage.cpp:293
-#, fuzzy
-msgid ""
-"You have to chosen mount point '%1' for two partitions.\n"
-"Please correct your selection."
-msgstr ""
-"Вибрано точку монтування «%1» для двох розділів.\n"
-"Будь ласка, поправте це."
-
-#: src/pages/SelectPartitionPage.cpp:310
-#, fuzzy
-msgid "You have to select a mount point at least for '/'!"
-msgstr "Щонайменше, потрібно вибрати точку монтування для «/»!"
-
-#: src/pages/SettingsPage.cpp:53
+#: src/pages/settingspage.cpp:92
 #, fuzzy
 msgid "chakra-laptop"
 msgstr "chakra-laptop"
 
-#: src/pages/SettingsPage.cpp:56
+#: src/pages/settingspage.cpp:94
 #, fuzzy
 msgid "chakra-desktop"
 msgstr "chakra-desktop"
 
-#: src/pages/UserCreationPage.cpp:96
-#, fuzzy
-msgid ""
-"You have not configured a username for one user.\n"
-"Please correct your settings."
+#: src/pages/usercreationpage.cpp:70
+msgid "You have to specify at least a username and password."
 msgstr ""
-"Ви не вказали псевдо для одного з користувачів.\n"
-"Будь ласка, поправте ваші налаштування."
 
-#: src/pages/UserCreationPage.cpp:100
-#, fuzzy
-msgid ""
-"You have not configured a password for user %1.\n"
-"Please correct your settings."
+#: src/pages/usercreationpage.cpp:75
+msgid "You have to specify a password."
 msgstr ""
-"Ви не вказали пароль для %1.\n"
-"Будь ласка, поправте ваші налаштування."
 
-#: src/pages/UserCreationPage.cpp:109
+#: src/pages/usercreationpage.cpp:80 src/pages/usercreationpage.cpp:92
 #, fuzzy
-msgid "Creating account for new user..."
-msgid_plural "Creating accounts for new users..."
-msgstr[0] "Створення рахунка для нового користувача"
-msgstr[1] "Створення рахунків для нових користувачів"
-msgstr[2] "Створення рахунків для нових користувачів"
+msgid "The passwords do not match."
+msgstr "Паролі не збігаються"
 
-#: src/pages/UserCreationPage.cpp:151
+#: src/pages/usercreationpage.cpp:86
 #, fuzzy
-msgid "Setting up password ..."
-msgstr "Засвоєння паролю…"
+msgid "You have to specify a root password."
+msgstr "Щонайменше, потрібно вибрати точку монтування для «/»!"
 
-#: src/pages/UserCreationPage.cpp:192
+#: src/pages/usercreationpage.cpp:101
+msgid "Standard UNIX login names cannot contain capital letters. Using \""
+msgstr ""
+
+#: src/pages/usercreationpage.cpp:101
+msgid "\" instead."
+msgstr ""
+
+#: src/pmhandler.cpp:360
 #, fuzzy
-msgid "Creating configurations ..."
-msgstr "Створення налаштувань,"
+msgid "Preparing hard drive for installation..."
+msgstr "Завершення встановлення…"
 
-#. i18n: file: launcher/ui/gui.ui:73
-#. i18n: ectx: property (text), widget (KPushButton, yesButton)
+#: src/pmhandler.cpp:381
+#, fuzzy
+msgid "Analyzing disk..."
+msgstr "Установлення…"
+
+#: src/pmhandler.cpp:445
+msgid "There was an error while formatting partitions"
+msgstr ""
+
+#. i18n: file: ui/pages/base.ui:172
+#. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:6
-#, fuzzy
-msgid "Yes"
-msgstr "Так"
-
-#. i18n: file: launcher/ui/gui.ui:80
-#. i18n: ectx: property (text), widget (KPushButton, noButton)
-#: rc.cpp:9
-#, fuzzy
-msgid "No"
-msgstr "Ні"
-
-#. i18n: file: launcher/ui/gui.ui:102
-#. i18n: ectx: property (text), widget (QLabel, m_label)
-#: rc.cpp:12
-#, fuzzy
-msgid "Please Wait, checking Tribe Updates..."
-msgstr "Заждіть, будь ласка, перевірка оновлень Tribe…"
-
-#. i18n: file: ui/crashWindow.ui:19
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:15
-#, fuzzy
-msgid ""
-"Tribe has crashed due to a fatal error. We are extremely sorry about that, "
-"as this should not happen. However, Tribe collected some important "
-"informations about the crash that will be extremely useful to developers for "
-"fixing this problem. The fastest way to report this, if you have an active "
-"internet connection, is clicking \"Send report to developers\". Otherwise, "
-"you can copy/paste the text below and send it to bugs@chakra-project.org. No "
-"personal informations are included, you can see the log for details."
-msgstr ""
-"Tribe зазнав краху через невиправну помилку. Нам надзвичайно прикро, "
-"оскільки цьому не слід траплятись. Однак, Tribe зберіг деяку важливу "
-"інформацію про крах, яка буде надзвичайно корисною розробникам для "
-"усунення цієї вади. Найхуткіший спосіб повідомити про це, якщо ви під'єднані "
-"до глобальної мережі, це натиснути «Відправити звіт розробникам». Іншими "
-"словами, ви може скопіювати/вставити текст нижче і відправити в "
-"bugs@chakra-project.org. Без усіляких описів, ви можете глянути у "
-"журнал для подробиць. "
-
-#. i18n: file: ui/crashWindow.ui:50
-#. i18n: ectx: property (text), widget (KPushButton, copyButton)
-#: rc.cpp:18
-#, fuzzy
-msgid "Copy to clipboard"
-msgstr "Скопіювати в кишеню"
-
-#. i18n: file: ui/crashWindow.ui:57
-#. i18n: ectx: property (text), widget (KPushButton, sendButton)
-#: rc.cpp:21
-#, fuzzy
-msgid "Send report to developers"
-msgstr "Відправити звіт розробникам"
-
-#. i18n: file: ui/createUserWidget.ui:32
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:24
-#, fuzzy
-msgid "Name:"
-msgstr "Ім'я:"
-
-#. i18n: file: ui/createUserWidget.ui:39
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:27
-#, fuzzy
-msgid "Surname:"
-msgstr "Прізвище:"
-
-#. i18n: file: ui/createUserWidget.ui:55
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:30
-#, fuzzy
-msgid "Login:"
-msgstr "Реєстрація:"
-
-#. i18n: file: ui/createUserWidget.ui:65
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:33
-#, fuzzy
-msgid "Password:"
-msgstr "Пароль:"
-
-#. i18n: file: ui/createUserWidget.ui:79
-#. i18n: ectx: property (text), widget (QLabel, confirmLabel)
-#: rc.cpp:36
-#, fuzzy
-msgid "Confirm Password:"
-msgstr "Підтвердження паролю:"
-
-#. i18n: file: ui/createUserWidget.ui:111
-#. i18n: ectx: property (text), widget (QCheckBox, sudoBox)
-#: rc.cpp:39
-#, fuzzy
-msgid "Administrator"
-msgstr "Адміністратор"
-
-#. i18n: file: ui/createUserWidget.ui:160
-#. i18n: ectx: property (text), widget (QPushButton, deleteButton)
-#: rc.cpp:45
-#, fuzzy
-msgid "Delete"
-msgstr "Вилучити"
-
-#. i18n: file: ui/tribeBase.ui:166
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:51
 #, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -786,25 +512,53 @@ msgstr ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "weight:600; color:#ffffff;\">Ласкаво просимо</span></p></body></html>"
 
-#. i18n: file: ui/tribeBase.ui:192
+#. i18n: file: ui/pages/base.ui:198
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#. i18n: file: ui/tribeReleaseNotes.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, tribeReleaseNotes)
-#: rc.cpp:58 rc.cpp:371
+#. i18n: file: ui/pages/releasenotes.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, ReleaseNotes)
+#: rc.cpp:13 rc.cpp:348
 #, fuzzy
 msgid "Release Notes"
 msgstr "Нотатки про випуск"
 
-#. i18n: file: ui/tribeBase.ui:218
+#. i18n: file: ui/pages/base.ui:224
 #. i18n: ectx: property (text), widget (QLabel, licenseLabel)
-#: rc.cpp:61
+#: rc.cpp:16
 #, fuzzy
 msgid "License Approval"
 msgstr "Ліцензійна згода"
 
-#. i18n: file: ui/tribeBase.ui:255
-#. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:64
+#. i18n: file: ui/pages/base.ui:257
+#. i18n: ectx: property (text), widget (QLabel, label_21)
+#: rc.cpp:19
+#, fuzzy
+msgid "Ready to Install"
+msgstr "Готово для встановлення"
+
+#. i18n: file: ui/pages/base.ui:283
+#. i18n: ectx: property (text), widget (QLabel, label_23)
+#: rc.cpp:22
+#, fuzzy
+msgid "System Settings"
+msgstr "Системні налаштування"
+
+#. i18n: file: ui/pages/base.ui:303
+#. i18n: ectx: property (text), widget (QLabel, label_24)
+#: rc.cpp:25
+#, fuzzy
+msgid "Language & Time"
+msgstr "Мова та час"
+
+#. i18n: file: ui/pages/base.ui:317
+#. i18n: ectx: property (text), widget (QLabel, label_25)
+#: rc.cpp:28
+#, fuzzy
+msgid "Disk setup"
+msgstr "Установлення диска"
+
+#. i18n: file: ui/pages/base.ui:347
+#. i18n: ectx: property (text), widget (QLabel, label_26)
+#: rc.cpp:31
 #, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -829,46 +583,16 @@ msgstr ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "weight:600; color:#ffffff;\">Підготовка</span></p></body></html>"
 
-#. i18n: file: ui/tribeBase.ui:262
-#. i18n: ectx: property (text), widget (QLabel, label_10)
-#: rc.cpp:71
+#. i18n: file: ui/pages/base.ui:354
+#. i18n: ectx: property (text), widget (QLabel, label_15)
+#: rc.cpp:38
 #, fuzzy
-msgid "Ready to Install"
-msgstr "Готово для встановлення"
+msgid "Create User"
+msgstr "Створити користувача"
 
-#. i18n: file: ui/tribeBase.ui:288
-#. i18n: ectx: property (text), widget (QLabel, label_19)
-#. i18n: file: ui/tribeInit.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, tribeInit)
-#: rc.cpp:74 rc.cpp:191
-#, fuzzy
-msgid "Ramdisk"
-msgstr "Ramdisk"
-
-#. i18n: file: ui/tribeBase.ui:314
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:77
-#, fuzzy
-msgid "System Settings"
-msgstr "Системні налаштування"
-
-#. i18n: file: ui/tribeBase.ui:334
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:80
-#, fuzzy
-msgid "Language & Time"
-msgstr "Мова та час"
-
-#. i18n: file: ui/tribeBase.ui:348
-#. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:83
-#, fuzzy
-msgid "Disk setup"
-msgstr "Установлення диска"
-
-#. i18n: file: ui/tribeBase.ui:404
+#. i18n: file: ui/pages/base.ui:410
 #. i18n: ectx: property (text), widget (QLabel, label_11)
-#: rc.cpp:86
+#: rc.cpp:41
 #, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -893,23 +617,23 @@ msgstr ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "weight:600; color:#ffffff;\">Установлення</span></p></body></html>"
 
-#. i18n: file: ui/tribeBase.ui:430
-#. i18n: ectx: property (text), widget (QLabel, label_12)
-#: rc.cpp:93
+#. i18n: file: ui/pages/base.ui:436
+#. i18n: ectx: property (text), widget (QLabel, preparePartitionsLabel)
+#: rc.cpp:48
 #, fuzzy
 msgid "Prepare Partitions"
 msgstr "Підготовка розділів"
 
-#. i18n: file: ui/tribeBase.ui:456
+#. i18n: file: ui/pages/base.ui:462
 #. i18n: ectx: property (text), widget (QLabel, label_13)
-#: rc.cpp:96
+#: rc.cpp:51
 #, fuzzy
 msgid "Install System"
 msgstr "Установити систему"
 
-#. i18n: file: ui/tribeBase.ui:493
+#. i18n: file: ui/pages/base.ui:499
 #. i18n: ectx: property (text), widget (QLabel, label_14)
-#: rc.cpp:99
+#: rc.cpp:54
 #, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -934,62 +658,45 @@ msgstr ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "weight:600; color:#ffffff;\">Налаштування</span></p></body></html>"
 
-#. i18n: file: ui/tribeBase.ui:519
-#. i18n: ectx: property (text), widget (QLabel, label_15)
-#: rc.cpp:106
-#, fuzzy
-msgid "Create User"
-msgstr "Створити користувача"
-
-#. i18n: file: ui/tribeBase.ui:526
+#. i18n: file: ui/pages/base.ui:506
 #. i18n: ectx: property (text), widget (QLabel, label_17)
-#: rc.cpp:109
+#: rc.cpp:61
 #, fuzzy
 msgid "Bootloader"
 msgstr "Завантажувач"
 
-#. i18n: file: ui/tribeBase.ui:552
-#. i18n: ectx: property (text), widget (QLabel, label_18)
-#: rc.cpp:112
-#, fuzzy
-msgid "Root Password"
-msgstr "Пароль адміністратора"
-
-#. i18n: file: ui/tribeBase.ui:578
+#. i18n: file: ui/pages/base.ui:532
 #. i18n: ectx: property (text), widget (QLabel, label_16)
-#. i18n: file: ui/tribeFinish.ui:132
-#. i18n: ectx: property (text), widget (QPushButton, configureButton)
-#: rc.cpp:115 rc.cpp:188
-#, fuzzy
-msgid "Configure System"
-msgstr "Налаштувати систему"
+#: rc.cpp:64
+msgid "Reboot / Enjoy"
+msgstr ""
 
-#. i18n: file: ui/tribeBase.ui:658
+#. i18n: file: ui/pages/base.ui:655
 #. i18n: ectx: property (text), widget (QPushButton, abortButton)
-#: rc.cpp:118
+#: rc.cpp:67
 #, fuzzy
 msgid "Abort installation"
 msgstr "Скасувати встановлення"
 
-#. i18n: file: ui/tribeBase.ui:690
+#. i18n: file: ui/pages/base.ui:687
 #. i18n: ectx: property (text), widget (QPushButton, previousButton)
-#: rc.cpp:121
+#: rc.cpp:70
 #, fuzzy
 msgctxt "Previous Page"
 msgid "Previous"
 msgstr "Назад"
 
-#. i18n: file: ui/tribeBase.ui:709
+#. i18n: file: ui/pages/base.ui:706
 #. i18n: ectx: property (text), widget (QPushButton, nextButton)
-#: rc.cpp:124
+#: rc.cpp:73
 #, fuzzy
 msgctxt "Next Page"
 msgid "Next"
 msgstr "Далі"
 
-#. i18n: file: ui/tribeBootloader.ui:49
+#. i18n: file: ui/pages/bootloader.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:127
+#: rc.cpp:76
 #, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -1016,52 +723,54 @@ msgstr ""
 "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
 "#ffffff;\">Установлення завантажувача</span></p></body></html>"
 
-#. i18n: file: ui/tribeBootloader.ui:60
+#. i18n: file: ui/pages/bootloader.ui:58
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:134
+#: rc.cpp:83
 #, fuzzy
 msgid ""
 "You can now install GRUB as your main bootloader.\n"
 "\n"
-"If you are unsure where you should install the bootloader to, just leave the "
-"default value (hd0)."
+"If you are unsure where you should install the bootloader to, \n"
+"just leave the default value (hd0)."
 msgstr ""
 "Тепер ви можете встановити GRUB як ваш основний завантажувач.\n"
 "\n"
-"Якщо ви не певні, куди варто його встановити, тоді залиште типове "
-"значення  (hd0)."
+"Якщо ви не певні, куди варто його встановити, тоді залиште типове значення  "
+"(hd0)."
 
-#. i18n: file: ui/tribeBootloader.ui:73
+#. i18n: file: ui/pages/bootloader.ui:71
 #. i18n: ectx: property (text), widget (QCheckBox, checkBox)
-#: rc.cpp:139
+#: rc.cpp:89
 #, fuzzy
 msgid "Install Bootloader"
 msgstr "Установити завантажувач"
 
-#. i18n: file: ui/tribeBootloader.ui:91
+#. i18n: file: ui/pages/bootloader.ui:89
 #. i18n: ectx: property (text), widget (QPushButton, pushButton)
-#: rc.cpp:142
+#. i18n: file: ui/pages/partition.ui:232
+#. i18n: ectx: property (text), widget (QPushButton, advancedButton)
+#: rc.cpp:92 rc.cpp:302
 #, fuzzy
 msgid "Advanced..."
 msgstr "Додатково…"
 
-#. i18n: file: ui/tribeBootloader.ui:137
+#. i18n: file: ui/pages/bootloader.ui:135
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:145
+#: rc.cpp:95
 #, fuzzy
 msgid "Install to:"
 msgstr "Установити на:"
 
-#. i18n: file: ui/tribeBootloader.ui:144
+#. i18n: file: ui/pages/bootloader.ui:142
 #. i18n: ectx: property (text), widget (QLineEdit, lineEdit)
-#: rc.cpp:148
+#: rc.cpp:98
 #, fuzzy
 msgid "hd0"
 msgstr "hd0"
 
-#. i18n: file: ui/tribeConfiguration.ui:44
+#. i18n: file: ui/pages/configuration.ui:41
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:151
+#: rc.cpp:101
 #, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -1088,24 +797,25 @@ msgstr ""
 "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
 "#ffffff;\">Системні налаштування</span></p></body></html>"
 
-#. i18n: file: ui/tribeConfiguration.ui:51
+#. i18n: file: ui/pages/configuration.ui:50
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:158
+#: rc.cpp:108
 #, fuzzy
 msgid ""
 "Although the installer has created a usable default configuration suitable "
-"for most users, you can now configure your newly installed system. Please "
-"take some time to step through each section and configure your system the "
-"way you want it."
+"for most users, you can now configure your newly installed system.\n"
+"\n"
+"Please take some time to step through each section and configure your system "
+"the way you want it."
 msgstr ""
-"Хоча встановлювач створив зручні типові налаштування, які придатні "
-"для більшості користувачів, зараз ви можете налаштувати нещодавно "
-"встановлену систему. Будь ласка, приділіть трохи часу на кожен вибір і "
-"налаштуйте систему в найзручніший для вас спосіб."
+"Хоча встановлювач створив зручні типові налаштування, які придатні для "
+"більшості користувачів, зараз ви можете налаштувати нещодавно встановлену "
+"систему. Будь ласка, приділіть трохи часу на кожен вибір і налаштуйте "
+"систему в найзручніший для вас спосіб."
 
-#. i18n: file: ui/tribeFinish.ui:49
+#. i18n: file: ui/pages/finish.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:161
+#: rc.cpp:113
 #, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -1118,7 +828,7 @@ msgid ""
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
 "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Installation Completed !</span></p></body></html>"
+"#ffffff;\">Installation Completed!</span></p></body></html>"
 msgstr ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1132,18 +842,19 @@ msgstr ""
 "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
 "#ffffff;\">Установлення завершено !</span></p></body></html>"
 
-#. i18n: file: ui/tribeFinish.ui:69
+#. i18n: file: ui/pages/finish.ui:68
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:168
+#: rc.cpp:120
 #, fuzzy
 msgid ""
-"Congratulations, the installation has been completed! We hope you enjoyed "
-"what you have seen as much as we enjoyed creating it.\n"
+"Congratulations, the installation has been completed!\n"
 "\n"
+"We hope you enjoyed what you have seen as much as we enjoyed creating it.\n"
 "You can now reboot into the installed system or keep using the LiveCD.\n"
 "\n"
-"In case you want to check the installation logs, take a look into /tmp on "
-"the live system or into /var/log on the installed system.\n"
+"In case you want to check the installation logs,\n"
+"take a look into /tmp on the live system or into /var/log on the installed "
+"system.\n"
 "\n"
 "Thanks for using Chakra, and get in touch with us in the forums, share "
 "opinions, give advices;\n"
@@ -1153,41 +864,47 @@ msgid ""
 "\n"
 "The Chakra Team"
 msgstr ""
-"Вітаємо, встановлення завершено! Ми сподіваємось, що ви задоволені "
-"тим, що ви побачили, так самісінько, як ми, створюючи це.\n"
+"Вітаємо, встановлення завершено! Ми сподіваємось, що ви задоволені тим, що "
+"ви побачили, так самісінько, як ми, створюючи це.\n"
 "\n"
 "Тепер ви можете перезавантажитись до встановленої системи або й надалі "
 "використовувати LiveCD.\n"
 "\n"
-"Якщо ви бажаєте перевірити журнали встановлення, погляньте в /tmp на "
-"живій системі або в /var/log на встановленій системі.\n"
+"Якщо ви бажаєте перевірити журнали встановлення, погляньте в /tmp на живій "
+"системі або в /var/log на встановленій системі.\n"
 "\n"
 "Дякуємо за використання Chakra, і зв'язуйтесь з нами через форуми, "
-"викладайте "
-"свої думки, надавайте поради тощо;\n"
+"викладайте свої думки, надавайте поради тощо;\n"
 "Коротше: долучайтесь! (http://chakra-project.org)\n"
 "\n"
 "Насолоджуйтесь!\n"
 "\n"
 "Команда Chakra"
 
-#. i18n: file: ui/tribeFinish.ui:103
+#. i18n: file: ui/pages/finish.ui:105
 #. i18n: ectx: property (text), widget (QPushButton, rebootButton)
-#: rc.cpp:182
+#: rc.cpp:136
 #, fuzzy
 msgid "Restart Computer"
 msgstr "Перезавантажити комп'ютер"
 
-#. i18n: file: ui/tribeFinish.ui:116
+#. i18n: file: ui/pages/finish.ui:118
 #. i18n: ectx: property (text), widget (QPushButton, chakraButton)
-#: rc.cpp:185
+#: rc.cpp:139
 #, fuzzy
 msgid "Keep using the LiveCD"
 msgstr "І надалі використовувати LiveCD"
 
-#. i18n: file: ui/tribeInit.ui:49
+#. i18n: file: ui/pages/init.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, tribeInit)
+#: rc.cpp:142
+#, fuzzy
+msgid "Ramdisk"
+msgstr "Ramdisk"
+
+#. i18n: file: ui/pages/init.ui:49
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:194
+#: rc.cpp:145
 #, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -1214,9 +931,9 @@ msgstr ""
 "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
 "#ffffff;\">Установлення Ramdisk</span></p></body></html>"
 
-#. i18n: file: ui/tribeInit.ui:58
+#. i18n: file: ui/pages/init.ui:58
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:201
+#: rc.cpp:152
 #, fuzzy
 msgid ""
 "Your hardware will be configured automatically during the installation and a "
@@ -1226,114 +943,132 @@ msgid ""
 "simply press the \"Next\" button. Otherwise check out the ramdisk options "
 "below and select the items you need for your system."
 msgstr ""
-"Ваш комп'ютер буде налаштовано автоматично протягом установлення і "
-"запущено середовище ramdisk для завантаження збірки ядра. "
-"Усе має пройти без утручання, але, можливо, буде потрібно вибрати деякі "
-"варіанти для особливих способів завантаження. Якщо ви не розумієте про "
-"що йдеться, то натисніть «Далі».  Або перевірте варіанти ramdisk нижче та "
-"виберіть пункти, потрібні для вашої системи."
+"Ваш комп'ютер буде налаштовано автоматично протягом установлення і запущено "
+"середовище ramdisk для завантаження збірки ядра. Усе має пройти без "
+"утручання, але, можливо, буде потрібно вибрати деякі варіанти для особливих "
+"способів завантаження. Якщо ви не розумієте про що йдеться, то натисніть "
+"«Далі».  Або перевірте варіанти ramdisk нижче та виберіть пункти, потрібні "
+"для вашої системи."
 
-#. i18n: file: ui/tribeInit.ui:81
+#. i18n: file: ui/pages/init.ui:81
 #. i18n: ectx: property (text), widget (QPushButton, pushButton)
-#: rc.cpp:204
+#. i18n: file: ui/pages/settings.ui:155
+#. i18n: ectx: property (text), widget (QPushButton, pushButton)
+#: rc.cpp:155 rc.cpp:380
 #, fuzzy
 msgid "Ramdisk Options"
 msgstr "Варіанти Ramdisk "
 
-#. i18n: file: ui/tribeInit.ui:111
+#. i18n: file: ui/pages/init.ui:111
 #. i18n: ectx: property (text), widget (QCheckBox, usb)
-#: rc.cpp:207
+#. i18n: file: ui/pages/settings.ui:201
+#. i18n: ectx: property (text), widget (QCheckBox, usb)
+#: rc.cpp:158 rc.cpp:383
 #, fuzzy
 msgid "Activate support for booting from USB devices"
 msgstr "Увімкнути підтримку завантаження з пристроїв USB"
 
-#. i18n: file: ui/tribeInit.ui:118
+#. i18n: file: ui/pages/init.ui:118
 #. i18n: ectx: property (text), widget (QCheckBox, firewire)
-#: rc.cpp:210
+#. i18n: file: ui/pages/settings.ui:208
+#. i18n: ectx: property (text), widget (QCheckBox, firewire)
+#: rc.cpp:161 rc.cpp:386
 #, fuzzy
 msgid "Activate support for booting from FireWire devices"
 msgstr "Увімкнути підтримку завантаження з пристроїв FireWire"
 
-#. i18n: file: ui/tribeInit.ui:125
+#. i18n: file: ui/pages/init.ui:125
 #. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
-#: rc.cpp:213
+#. i18n: file: ui/pages/settings.ui:215
+#. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
+#: rc.cpp:164 rc.cpp:389
 #, fuzzy
 msgid "Activate support for booting from PCMCIA devices"
 msgstr "Увімкнути підтримку завантаження з пристроїв PCMCIA"
 
-#. i18n: file: ui/tribeInit.ui:132
+#. i18n: file: ui/pages/init.ui:132
 #. i18n: ectx: property (text), widget (QCheckBox, nfs)
-#: rc.cpp:216
+#. i18n: file: ui/pages/settings.ui:222
+#. i18n: ectx: property (text), widget (QCheckBox, nfs)
+#: rc.cpp:167 rc.cpp:392
 #, fuzzy
 msgid "Activate support for booting from NFS shares"
 msgstr "Увімкнути підтримку завантаження з мережі NFS"
 
-#. i18n: file: ui/tribeInit.ui:139
+#. i18n: file: ui/pages/init.ui:139
 #. i18n: ectx: property (text), widget (QCheckBox, raid)
-#: rc.cpp:219
+#. i18n: file: ui/pages/settings.ui:229
+#. i18n: ectx: property (text), widget (QCheckBox, raid)
+#: rc.cpp:170 rc.cpp:395
 #, fuzzy
 msgid "Activate support for booting from Software Raid arrays"
 msgstr "Увімкнути підтримку завантаження з масивів RAID"
 
-#. i18n: file: ui/tribeInit.ui:146
+#. i18n: file: ui/pages/init.ui:146
 #. i18n: ectx: property (text), widget (QCheckBox, mdp)
-#: rc.cpp:222
+#. i18n: file: ui/pages/settings.ui:236
+#. i18n: ectx: property (text), widget (QCheckBox, mdp)
+#: rc.cpp:173 rc.cpp:398
 #, fuzzy
 msgid "Activate support for booting from Software Raid/MDP Partition arrays"
 msgstr "Увімкнути підтримку завантаження з розділу масивів RAID/MDP"
 
-#. i18n: file: ui/tribeInit.ui:153
+#. i18n: file: ui/pages/init.ui:153
 #. i18n: ectx: property (text), widget (QCheckBox, lvm2)
-#: rc.cpp:225
+#. i18n: file: ui/pages/settings.ui:243
+#. i18n: ectx: property (text), widget (QCheckBox, lvm2)
+#: rc.cpp:176 rc.cpp:401
 #, fuzzy
 msgid "Activate support for booting from LVM2 volumes"
 msgstr "Увімкнути підтримку завантаження з томів LVM2"
 
-#. i18n: file: ui/tribeInit.ui:160
+#. i18n: file: ui/pages/init.ui:160
 #. i18n: ectx: property (text), widget (QCheckBox, encrypted)
-#: rc.cpp:228
+#. i18n: file: ui/pages/settings.ui:250
+#. i18n: ectx: property (text), widget (QCheckBox, encrypted)
+#: rc.cpp:179 rc.cpp:404
 #, fuzzy
 msgid "Activate support for booting from Encrypted volumes"
 msgstr "Увімкнути підтримку завантаження з зашифрованих томів"
 
-#. i18n: file: ui/tribeInstallation.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, tribeInstallation)
-#: rc.cpp:231
+#. i18n: file: ui/pages/installation.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Installation)
+#: rc.cpp:182
 #, fuzzy
 msgid "Tribe Installation"
 msgstr "Установлення Tribe"
 
-#. i18n: file: ui/tribeInstallation.ui:97
+#. i18n: file: ui/pages/installation.ui:88
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:234
+#: rc.cpp:185
 #, fuzzy
 msgid "Nine Inch Nails - Discipline"
 msgstr "Nine Inch Nails — Discipline"
 
-#. i18n: file: ui/tribeInstallation.ui:102
+#. i18n: file: ui/pages/installation.ui:93
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:237
+#: rc.cpp:188
 #, fuzzy
 msgid "Severed Fifth - War"
 msgstr "Severed Fifth — War"
 
-#. i18n: file: ui/tribeInstallation.ui:107
+#. i18n: file: ui/pages/installation.ui:98
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:240
+#: rc.cpp:191
 #, fuzzy
 msgid "Dunkelstern - Out of the box"
 msgstr "Dunkelstern — Out of the box"
 
-#. i18n: file: ui/tribeIntro.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, tribeIntro)
-#: rc.cpp:243
+#. i18n: file: ui/pages/intro.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Intro)
+#: rc.cpp:194
 #, fuzzy
 msgid "Tribe Intro"
 msgstr "Вступ Tribe"
 
-#. i18n: file: ui/tribeIntro.ui:107
+#. i18n: file: ui/pages/intro.ui:105
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:246
+#: rc.cpp:197
 #, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -1341,50 +1076,57 @@ msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:12pt; font-"
+"weight:400; font-style:normal;\">\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-size:14pt; color:#eeeeee;\">Welcome to the Chakra Installation!"
-"</span></p>\n"
+"style=\" font-family:'Bitstream Vera Sans'; color:#eeeeee;\">Welcome to the "
+"Chakra Installation!</span></p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
 "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:"
-"#eeeeee;\"><span style=\" font-weight:600;\">Tribe, our installer, will "
-"guide you through the process of installing the Chakra live system</span></"
-"p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\">on your computer. After the installation you "
-"will have a ready-to-use Arch Linux</p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\">desktop system with our modular KDE packages.</"
-"p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-weight:600; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\"> Please take the time to carefully read through "
-"all texts and explanations.</p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; color:#eeeeee;\"></p>\n"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;"
+"\"></p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-weight:600; color:#eeeeee;\"> Remember:</span><span style=\" "
-"font-weight:600;\"> </span><span style=\" font-weight:600; color:#ff0000;"
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">This installer will guide you through the process of "
+"installing</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">the Chakra live system on your computer. After the "
+"installation you will</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">have a ready-to-use Chakra Linux system.</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
+"weight:536; color:#eeeeee;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\"> Please carefully read all of the instructions.</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;"
+"\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\"> Remember:</span><span style=\" font-family:'Bitstream Vera "
+"Sans'; font-size:8pt; font-weight:536;\"> </span><span style=\" font-"
+"family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#ff0000;"
 "\">THIS IS ALPHA SOFTWARE, IT COULD EAT YOUR HAMSTER</span></p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
 "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-weight:600; color:#ff0000;\"></p>\n"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
+"weight:536; color:#ff0000;\"></p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#ff0000;\"><span style=\" color:#eeeeee;\">Have fun! - The "
-"Chakra Developers</span></p></body></html>"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">Have fun! - The Chakra Developers</span></p></body></html>"
 msgstr ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1396,33 +1138,29 @@ msgstr ""
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
 "style=\" font-size:14pt; color:#eeeeee;\">Ласкаво просимо до встановлення "
-"Chakra!"
-"</span></p>\n"
+"Chakra!</span></p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
 "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
 "indent:0px; color:#eeeeee;\"></p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:"
 "#eeeeee;\"><span style=\" font-weight:600;\">Tribe — наш установлювач, який "
-"проведе вас через встановлення живої системи Chakra</span></"
-"p>\n"
+"проведе вас через встановлення живої системи Chakra</span></p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\">на ваш комп'ютер. Після встановлення ви "
-"зможете повноцінно використовувати Arch Linux</p>\n"
+"weight:600; color:#eeeeee;\">на ваш комп'ютер. Після встановлення ви зможете "
+"повноцінно використовувати Arch Linux</p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
 "weight:600; color:#eeeeee;\">, котрий містить наші допоміжні пакунки для KDE."
-"</"
-"p>\n"
+"</p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
 "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
 "indent:0px; font-weight:600; color:#eeeeee;\"></p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
 "weight:600; color:#eeeeee;\"> Будь ласка, приділіть трохи уваги при читанні "
-"всіх"
-"потрібних текстів і пояснень.</p>\n"
+"всіхпотрібних текстів і пояснень.</p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
 "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
 "indent:0px; color:#eeeeee;\"></p>\n"
@@ -1437,12 +1175,11 @@ msgstr ""
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
 "weight:600; color:#ff0000;\"><span style=\" color:#eeeeee;\">Насолоджуйтесь! "
-"— Команда "
-"розробників Chakra</span></p></body></html>"
+"— Команда розробників Chakra</span></p></body></html>"
 
-#. i18n: file: ui/tribeLicense.ui:52
+#. i18n: file: ui/pages/license.ui:49
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:263
+#: rc.cpp:214
 #, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -1469,9 +1206,9 @@ msgstr ""
 "size:22pt; font-weight:600; color:#ffffff;\">Ліцензійна згода</span></p></"
 "body></html>"
 
-#. i18n: file: ui/tribeLicense.ui:64
+#. i18n: file: ui/pages/license.ui:61
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:270
+#: rc.cpp:221
 #, fuzzy
 msgid ""
 "Chakra includes some proprietary software like hardware drivers, media "
@@ -1481,41 +1218,40 @@ msgid ""
 msgstr ""
 "У комплект Chakra входить закриті програми, приміром, драйвера, медіамодулі "
 "та шрифти. Щоб їх установити, потрібно прочитати і схвалити їх ліцензії. "
-"Якщо "
-"будете проти ліцензії, встановлювач буде використовувати відкриті аналоги "
-"(якщо такі є)."
+"Якщо будете проти ліцензії, встановлювач буде використовувати відкриті "
+"аналоги (якщо такі є)."
 
-#. i18n: file: ui/tribeLicense.ui:77
+#. i18n: file: ui/pages/license.ui:74
 #. i18n: ectx: property (text), widget (QLabel, licenseLabel)
-#: rc.cpp:273
+#: rc.cpp:224
 #, fuzzy
 msgid "Approve license for:"
 msgstr "Схвалити ліцензію для:"
 
-#. i18n: file: ui/tribeLicense.ui:106
+#. i18n: file: ui/pages/license.ui:103
 #. i18n: ectx: property (text), widget (QRadioButton, declineButton)
-#: rc.cpp:276
+#: rc.cpp:227
 #, fuzzy
 msgid "Decline License"
 msgstr "Відхили ліцензію"
 
-#. i18n: file: ui/tribeLicense.ui:113
+#. i18n: file: ui/pages/license.ui:110
 #. i18n: ectx: property (text), widget (QRadioButton, acceptButton)
-#: rc.cpp:279
+#: rc.cpp:230
 #, fuzzy
 msgid "Accept License"
 msgstr "Прийняти ліцензію"
 
-#. i18n: file: ui/tribeLocale.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, TribeLocale)
-#: rc.cpp:282
+#. i18n: file: ui/pages/locale.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Locale)
+#: rc.cpp:233
 #, fuzzy
 msgid "Form"
 msgstr "Форма"
 
-#. i18n: file: ui/tribeLocale.ui:39
+#. i18n: file: ui/pages/locale.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:285
+#: rc.cpp:236
 #, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -1542,9 +1278,9 @@ msgstr ""
 "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
 "#ffffff;\">Мова та час</span></p></body></html>"
 
-#. i18n: file: ui/tribeLocale.ui:49
+#. i18n: file: ui/pages/locale.ui:45
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:292
+#: rc.cpp:243
 #, fuzzy
 msgid ""
 "Please select the nearest city on the globe so the installer can suggest the "
@@ -1553,72 +1289,64 @@ msgid ""
 "the globe, you can zoom in by using the slider on the left."
 msgstr ""
 "Будь ласка, виберіть найближче місто на глобусі, щоб установлювач міг "
-"розпізнати ваші налаштування локалі та часового поясу.  Ви можете "
-"прийняти підказані налаштування на кнопці сторінки.  Якщо ви не можете "
-"знайти свій регіон або місто на глобусі,  можете масштабувати його за "
-"допомогою повзунка, що зліва."
+"розпізнати ваші налаштування локалі та часового поясу.  Ви можете прийняти "
+"підказані налаштування на кнопці сторінки.  Якщо ви не можете знайти свій "
+"регіон або місто на глобусі,  можете масштабувати його за допомогою "
+"повзунка, що зліва."
 
-#. i18n: file: ui/tribeLocale.ui:73
+#. i18n: file: ui/pages/locale.ui:69
 #. i18n: ectx: property (clickMessage), widget (KLineEdit, locationsSearch)
-#: rc.cpp:295
+#: rc.cpp:246
 #, fuzzy
 msgid "Search..."
 msgstr "Пошук…"
 
-#. i18n: file: ui/tribeLocale.ui:152
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:298
-#, fuzzy
-msgid "Time Settings"
-msgstr "Параметри часу"
-
-#. i18n: file: ui/tribeLocale.ui:170
+#. i18n: file: ui/pages/locale.ui:162
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:301
+#: rc.cpp:249
 #, fuzzy
-msgid "Timezone:"
-msgstr "Часова зона:"
+msgid "Continent:"
+msgstr "Точка монтування:"
 
-#. i18n: file: ui/tribeLocale.ui:189
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:304
-#, fuzzy
-msgid "Language Settings"
-msgstr "Налаштування мови"
-
-#. i18n: file: ui/tribeLocale.ui:195
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:307
-#, fuzzy
-msgid "Locale:"
-msgstr "Локаль:"
-
-#. i18n: file: ui/tribeLocale.ui:205
-#. i18n: ectx: property (text), widget (QCheckBox, showLocalesCheck)
-#. i18n: file: ui/tribeLocale.ui:215
-#. i18n: ectx: property (text), widget (QCheckBox, showKDELangsCheck)
-#: rc.cpp:310 rc.cpp:313
-#, fuzzy
-msgid "Show all"
-msgstr "Показати усі."
-
-#. i18n: file: ui/tribeLocale.ui:222
+#. i18n: file: ui/pages/locale.ui:185
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:316
+#: rc.cpp:252
 #, fuzzy
 msgid "Language:"
 msgstr "Мова:"
 
-#. i18n: file: ui/tribePartition.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, tribePartition)
-#: rc.cpp:319
+#. i18n: file: ui/pages/locale.ui:208
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:255
+#, fuzzy
+msgid "Locale:"
+msgstr "Локаль:"
+
+#. i18n: file: ui/pages/locale.ui:263
+#. i18n: ectx: property (text), widget (QCheckBox, showLocalesCheck)
+#. i18n: file: ui/pages/locale.ui:270
+#. i18n: ectx: property (text), widget (QCheckBox, showKDELangsCheck)
+#: rc.cpp:258 rc.cpp:261
+#, fuzzy
+msgid "Show all"
+msgstr "Показати усі."
+
+#. i18n: file: ui/pages/locale.ui:277
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: rc.cpp:264
+msgid "Region: "
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Partition)
+#: rc.cpp:267
 #, fuzzy
 msgid "Partition"
 msgstr "Розділ"
 
-#. i18n: file: ui/tribePartition.ui:47
+#. i18n: file: ui/pages/partition.ui:43
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:322
+#: rc.cpp:270
 #, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -1645,87 +1373,85 @@ msgstr ""
 "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
 "#ffffff;\">Установлення диска</span></p></body></html>"
 
-#. i18n: file: ui/tribePartition.ui:56
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:329
-#, fuzzy
+#. i18n: file: ui/pages/partition.ui:58
+#. i18n: ectx: property (text), widget (QLabel, descriptionLabel)
+#: rc.cpp:277
 msgid ""
-"Now you have to set up your disks for installation. Please use the tool "
-"below to partition, format and select mountpoints. Once you're satisfied "
-"with your choice, click \"Apply\" if you made any changes to the partition "
-"table or requested to format one or more partitions, and then go ahead. "
-"Formatting the partitions you will mount main system paths on (such as / or /"
-"usr) is strongly advised."
+"Please select a mountpoint for your existing partitions. At least '/' should "
+"be mounted. No permanent changes to your hard drive will be made when you "
+"will press \"Next\""
 msgstr ""
-"Тепер вам потрібно запустити ваші диски для встановлення. Будь ласка, "
-"використайте інструменти нижче, щоб форматувати і вибрати точку "
-"монтування. Як тільки вас задовольнить вибір, натисніть «Застосувати», "
-"якщо ви зробити які-будь зміни в таблиці розділів або потребуватимете "
-"форматувати один або більше розділів, і підете далі.  Форматування "
-"розділів, які ви змонтували у системні шляхи(приміром, «/» або «/usr»)"
-"— надзвичайно важливе. "
 
-#. i18n: file: ui/tribePreparePartitions.ui:79
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:332
+#. i18n: file: ui/pages/partition.ui:118
+#. i18n: ectx: property (text), widget (QLabel, typeLabel)
+#: rc.cpp:281
+msgid "Type"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:146
+#. i18n: ectx: property (text), widget (QLabel, filesystemLabel)
+#: rc.cpp:290
+msgid "Filesystem"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:173
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, sizeSpinBox)
+#: rc.cpp:293
+msgid " MiB"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:193
+#. i18n: ectx: property (text), widget (KPushButton, editPartitionCancelButton)
+#: rc.cpp:296
+msgid "Cancel"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:200
+#. i18n: ectx: property (text), widget (KPushButton, editPartitionOkButton)
+#: rc.cpp:299
+msgid "Ok"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:245
+#. i18n: ectx: property (toolTip), widget (QPushButton, newButton)
+#: rc.cpp:305
 #, fuzzy
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">Formatting Partitions...</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">Форматування розділів…</span></p></body></html>"
+msgid "Create a new partition"
+msgstr "Підготовка розділів"
 
-#. i18n: file: ui/tribePreparePartitions.ui:129
-#. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:339
-#, fuzzy
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">Mounting Partitions...</span></p></body></html>"
+#. i18n: file: ui/pages/partition.ui:264
+#. i18n: ectx: property (toolTip), widget (QPushButton, deleteButton)
+#: rc.cpp:308
+msgid "Delete the selected partition"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">Монтування розділів</span></p></body></html>"
 
-#. i18n: file: ui/tribeReadyInstall.ui:45
+#. i18n: file: ui/pages/partition.ui:283
+#. i18n: ectx: property (toolTip), widget (QPushButton, formatButton)
+#: rc.cpp:311
+msgid "Mark the selected partition to be formatted"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:305
+#. i18n: ectx: property (toolTip), widget (QPushButton, newPartTableButton)
+#: rc.cpp:314
+msgid "Create a new partition table on the selected device"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:324
+#. i18n: ectx: property (toolTip), widget (QPushButton, undoButton)
+#: rc.cpp:317
+msgid "Undo"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:343
+#. i18n: ectx: property (toolTip), widget (QPushButton, unmountButton)
+#: rc.cpp:320
+msgid "Unmount the selected partition"
+msgstr ""
+
+#. i18n: file: ui/pages/readyinstall.ui:51
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:346
+#: rc.cpp:323
 #, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -1752,20 +1478,20 @@ msgstr ""
 "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
 "#ffffff;\">Готовий до встановлення</span></p></body></html>"
 
-#. i18n: file: ui/tribeReadyInstall.ui:71
+#. i18n: file: ui/pages/readyinstall.ui:77
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:353
+#: rc.cpp:330
 #, fuzzy
 msgid ""
 "The system will be installed with the following settings. Before continuing, "
 "please review your selections:\n"
 msgstr ""
-"З такими налаштуваннями буде встановлено систему . Перш ніж іти далі, "
-"будь ласка, перегляньте ваш вибір:\n"
+"З такими налаштуваннями буде встановлено систему . Перш ніж іти далі, будь "
+"ласка, перегляньте ваш вибір:\n"
 
-#. i18n: file: ui/tribeReadyInstall.ui:141
+#. i18n: file: ui/pages/readyinstall.ui:147
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:357
+#: rc.cpp:334
 #, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -1792,9 +1518,9 @@ msgstr ""
 "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
 "#eeeeee;\">Буде використано такі розділи:</span></p></body></html>"
 
-#. i18n: file: ui/tribeReadyInstall.ui:205
+#. i18n: file: ui/pages/readyinstall.ui:211
 #. i18n: ectx: property (text), widget (QLabel, formatLabel)
-#: rc.cpp:364
+#: rc.cpp:341
 #, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -1820,12 +1546,11 @@ msgstr ""
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
 "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">Буде відформатовано такі розділи:</span></p></body></"
-"html>"
+"#eeeeee;\">Буде відформатовано такі розділи:</span></p></body></html>"
 
-#. i18n: file: ui/tribeReleaseNotes.ui:50
+#. i18n: file: ui/pages/releasenotes.ui:47
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:374
+#: rc.cpp:351
 #, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -1850,320 +1575,24 @@ msgstr ""
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
 "style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Примітки про "
-"випуск</"
-"span></p></body></html>"
+"випуск</span></p></body></html>"
 
-#. i18n: file: ui/tribeReleaseNotes.ui:63
+#. i18n: file: ui/pages/releasenotes.ui:60
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:381
+#: rc.cpp:358
 #, fuzzy
 msgid ""
 "Check out what's new, the known issues and general information about this "
 "version of Chakra. As always, you are encouraged to tell us what you think, "
 "either by visiting our forums or bug tracker."
 msgstr ""
-"Перевірте, чого нового, відомі проблеми і загальну інформацію про цю "
-"версію Chakra. Як і завжди, ми заохочуємо розповісти нам, що ви думаєте, "
-"або відвідати наш форум і координацію з усунення вад."
+"Перевірте, чого нового, відомі проблеми і загальну інформацію про цю версію "
+"Chakra. Як і завжди, ми заохочуємо розповісти нам, що ви думаєте, або "
+"відвідати наш форум і координацію з усунення вад."
 
-#. i18n: file: ui/tribeReleaseNotes.ui:86
-#. i18n: ectx: property (html), widget (QTextEdit, textEdit)
-#: rc.cpp:384
-#, fuzzy
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"family:'Liberation Sans'; font-size:8pt;\"></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"family:'Liberation Sans'; font-size:8pt;\"></p></body></html>"
-
-#. i18n: file: ui/tribeRoot.ui:49
+#. i18n: file: ui/pages/settings.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:391
-#, fuzzy
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Root Setup</span></p></body></"
-"html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Установлення адміністратора<"
-"/span></p></body></"
-"html>"
-
-#. i18n: file: ui/tribeRoot.ui:60
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:398
-#, fuzzy
-msgid ""
-"Now you can define the behaviour of the user root, who is used to manage the "
-"system.\n"
-"\n"
-"Keeping this user is usually recommended, though you can choose to use sudo "
-"only and disable the root user. Please remind that having the root account "
-"disabled and sudo misconfigured may lead to an unusable system."
-msgstr ""
-"Тепер можете визначити поведінку адміністратора, який використовується "
-"задля керування системою.\n"
-"\n"
-"Утримання цього користувача, звісно ж, рекомендоване, оскільки ви можете "
-"використовувати лише sudo та вимкнути адміністратора взагалі. Будь ласка, "
-"пам'ятайте, що наявність вимкненого рахунку для адміністратора та "
-"неналаштованість sudo може призвести до непридатності системи."
-
-#. i18n: file: ui/tribeRoot.ui:93
-#. i18n: ectx: property (text), widget (QCheckBox, rootBox)
-#: rc.cpp:403
-#, fuzzy
-msgid "Enable Root User"
-msgstr "Зробити адміністратора користувачем"
-
-#. i18n: file: ui/tribeRoot.ui:102
-#. i18n: ectx: property (text), widget (QLabel, rootLabel)
-#: rc.cpp:406
-#, fuzzy
-msgid "Password"
-msgstr "Пароль"
-
-#. i18n: file: ui/tribeRoot.ui:132
-#. i18n: ectx: property (text), widget (QLabel, confirmLabel)
-#: rc.cpp:409
-#, fuzzy
-msgid "Confirm Password"
-msgstr "Підтвердження паролю"
-
-#. i18n: file: ui/tribeSelectPartitions.ui:49
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:415
-#, fuzzy
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Filesystem Setup</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Установлення файлової системи</span></p></body></html>"
-
-#. i18n: file: ui/tribeSelectPartitions.ui:60
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:422
-#, fuzzy
-msgid ""
-"Please choose what partitions should be used for the installation. Just "
-"select the partition and the mountpoint. You can use the \"Add another "
-"partition\" button to add more of them. To format a partition (most likely "
-"accurate for all system partitions), activate the \"Format\" checkbox and "
-"select a filesystem.\n"
-"\n"
-"You need at least a root (/) and a swap partition. When you have added all "
-"desired partitions, simply press the \"Next\" button."
-msgstr ""
-"Будь ласка, виберіть розділи, які слід використовувати для встановлення. "
-"Лише розділ і точку монтування. Також ви можете долучити інші розділи. "
-"І форматувати розділ — найімовірніше, всі системні розділи.\n"
-"\n"
-"Вам потрібно, щонайменше, корінь (/) і swap. Коли ви долучите всі "
-"потрібні розділи, просто натисніть «Далі»."
-
-#. i18n: file: ui/tribeSelectPartitions.ui:136
-#. i18n: ectx: property (text), widget (QPushButton, addButton)
-#: rc.cpp:427
-#, fuzzy
-msgid "Add another Partition"
-msgstr "Долучити інший розділ"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:19
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:430
-#, fuzzy
-msgid "Partition:"
-msgstr "Розділ:"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:29
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:433
-#, fuzzy
-msgid "Size:"
-msgstr "Розмір:"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:44
-#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
-#: rc.cpp:436
-#, fuzzy
-msgid "ext3"
-msgstr "ext3"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:49
-#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
-#: rc.cpp:439
-#, fuzzy
-msgid "ext2"
-msgstr "ext2"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:54
-#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
-#: rc.cpp:442
-#, fuzzy
-msgid "ext4"
-msgstr "ext4"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:59
-#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
-#: rc.cpp:445
-#, fuzzy
-msgid "reiserfs"
-msgstr "reiserfs"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:64
-#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
-#: rc.cpp:448
-#, fuzzy
-msgid "jfs"
-msgstr "jfs"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:69
-#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
-#: rc.cpp:451
-#, fuzzy
-msgid "xfs"
-msgstr "xfs"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:74
-#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
-#: rc.cpp:454
-#, fuzzy
-msgid "linux-swap"
-msgstr "linux-swap"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:82
-#. i18n: ectx: property (text), widget (QCheckBox, formatBox)
-#: rc.cpp:457
-#, fuzzy
-msgid "Format with:"
-msgstr "Форматувати на:"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:89
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:460
-#, fuzzy
-msgid "Mountpoint:"
-msgstr "Точка монтування:"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:100
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:463
-#, fuzzy
-msgid "/"
-msgstr "/"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:105
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:466
-#, fuzzy
-msgid "/boot"
-msgstr "/boot"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:110
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:469
-#, fuzzy
-msgid "/home"
-msgstr "/home"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:115
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:472
-#, fuzzy
-msgid "/opt"
-msgstr "/opt"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:120
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:475
-#, fuzzy
-msgid "/usr"
-msgstr "/usr"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:125
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:478
-#, fuzzy
-msgid "/tmp"
-msgstr "/tmp"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:130
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:481
-#, fuzzy
-msgid "/var"
-msgstr "/var"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:135
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:484
-#, fuzzy
-msgid "swap"
-msgstr "swap"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:143
-#. i18n: ectx: property (text), widget (QPushButton, deleteButton)
-#: rc.cpp:487
-#, fuzzy
-msgid "Remove"
-msgstr "Вилучити"
-
-#. i18n: file: ui/tribeSettings.ui:56
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:490
+#: rc.cpp:361
 #, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -2190,85 +1619,36 @@ msgstr ""
 "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
 "#ffffff;\">Системні налаштування</span></p></body></html>"
 
-#. i18n: file: ui/tribeSettings.ui:77
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:497
-#, fuzzy
-msgid "General Settings"
-msgstr "Загальні налаштування"
+#. i18n: file: ui/pages/settings.ui:73
+#. i18n: ectx: property (toolTip), widget (QLabel, label_2)
+#: rc.cpp:368
+msgid "or technically, the hostname"
+msgstr ""
 
-#. i18n: file: ui/tribeSettings.ui:83
+#. i18n: file: ui/pages/settings.ui:76
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:500
+#: rc.cpp:371
 #, fuzzy
-msgid "The name of this computer:"
+msgid "What's the name of this computer?         "
 msgstr "Назва цього комп'ютера:"
 
-#. i18n: file: ui/tribeSettings.ui:114
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:503
-#, fuzzy
-msgid "Download Settings"
-msgstr "Налаштування звантаження"
-
-#. i18n: file: ui/tribeSettings.ui:126
-#. i18n: ectx: property (text), widget (QCheckBox, detect_mirror)
-#: rc.cpp:506
-#, fuzzy
-msgid "Detect best mirror server and use it (recommended)"
-msgstr "Виявити найкраще дзеркало і використати його(рекомендовано)"
-
-#. i18n: file: ui/tribeSettings.ui:145
+#. i18n: file: ui/pages/settings.ui:125
 #. i18n: ectx: property (text), widget (QCheckBox, download_doc)
-#: rc.cpp:509
+#: rc.cpp:374
 #, fuzzy
 msgid "Download and install documentation packages"
 msgstr "Звантажити і встановити пакунки документації"
 
-#. i18n: file: ui/tribeUserCreation.ui:38
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:512
+#. i18n: file: ui/pages/settings.ui:135
+#. i18n: ectx: property (text), widget (QCheckBox, detect_mirror)
+#: rc.cpp:377
 #, fuzzy
-msgid ""
-"Enter your name, a corresponding login name and your password to create a "
-"user account. To enable sudo for the created user and allow him to do "
-"administrative tasks, enable the \"Administrator\" option below."
-msgstr ""
-"Уведіть ваше ім'я, відповідно псевдо та пароль, щоб утворити рахунок"
-"користувача. Щоб увімкнути sudo для створеного користувача і дозволити "
-"виконувати йому адміністративні завдання, виберіть «Адміністратор» нижче."
+msgid "Detect best mirror server and use it"
+msgstr "Виявити найкраще дзеркало і використати його(рекомендовано)"
 
-#. i18n: file: ui/tribeUserCreation.ui:84
-#. i18n: ectx: property (text), widget (QPushButton, addButton)
-#: rc.cpp:515
-#, fuzzy
-msgid "Add another User.."
-msgstr "Залучити ще одного користувача…"
-
-#. i18n: file: ui/tribeUserCreation.ui:107
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:518
-#, fuzzy
-msgid "Install plain KDE-Configuration"
-msgstr "Установити звичні налаштування KDE"
-
-#. i18n: file: ui/tribeUserCreation.ui:112
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:521
-#, fuzzy
-msgid "Install Current-LiveCD-Configuration"
-msgstr "Установити поточні налаштування LiveCD"
-
-#. i18n: file: ui/tribeUserCreation.ui:117
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:524
-#, fuzzy
-msgid "Install plain KDEMod-Configuration"
-msgstr "Установити звичні налаштування KDEMod"
-
-#. i18n: file: ui/tribeUserCreation.ui:135
+#. i18n: file: ui/pages/usercreation.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:527
+#: rc.cpp:407
 #, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -2295,16 +1675,780 @@ msgstr ""
 "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
 "#ffffff;\">Створення користувача</span></p></body></html>"
 
-#: rc.cpp:532
+#. i18n: file: ui/pages/usercreation.ui:42
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:414
+msgid "Enter your name, a corresponding login name and your password."
+msgstr ""
+
+#. i18n: file: ui/pages/usercreation.ui:109
+#. i18n: ectx: property (toolTip), widget (QLabel, label_3)
+#: rc.cpp:417
+msgid "eg, John Smith, or Joe Average"
+msgstr ""
+
+#. i18n: file: ui/pages/usercreation.ui:112
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:420
+#, fuzzy
+msgid "Name:"
+msgstr "Ім'я:"
+
+#. i18n: file: ui/pages/usercreation.ui:119
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#. i18n: file: ui/pages/usercreation.ui:217
+#. i18n: ectx: property (text), widget (QLabel, rootPwLabel)
+#: rc.cpp:423 rc.cpp:438
+#, fuzzy
+msgid "Password:"
+msgstr "Пароль:"
+
+#. i18n: file: ui/pages/usercreation.ui:177
+#. i18n: ectx: property (toolTip), widget (QLabel, label_4)
+#: rc.cpp:426
+msgid "The actual unix standard login username"
+msgstr ""
+
+#. i18n: file: ui/pages/usercreation.ui:180
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:429
+#, fuzzy
+msgid "Login:"
+msgstr "Реєстрація:"
+
+#. i18n: file: ui/pages/usercreation.ui:200
+#. i18n: ectx: property (text), widget (QLabel, confirmLabel)
+#. i18n: file: ui/pages/usercreation.ui:237
+#. i18n: ectx: property (text), widget (QLabel, rootConfirmPwLabel)
+#. i18n: file: ui/widgets/userwidget.ui:106
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:432 rc.cpp:441 rc.cpp:453
+#, fuzzy
+msgid "Confirm Password:"
+msgstr "Підтвердження паролю:"
+
+#. i18n: file: ui/pages/usercreation.ui:207
+#. i18n: ectx: property (text), widget (QCheckBox, usePwForRoot)
+#: rc.cpp:435
+msgid "Use this password for the Adminstrator (root) account"
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:28
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:444
+#, fuzzy
+msgid "Login: "
+msgstr "Реєстрація:"
+
+#. i18n: file: ui/widgets/userwidget.ui:38
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:447
+#, fuzzy
+msgid "Password: "
+msgstr "Пароль:"
+
+#. i18n: file: ui/widgets/userwidget.ui:76
+#. i18n: ectx: property (toolTip), widget (QPushButton, userDetails)
+#: rc.cpp:450
+msgid "Include more information about this user."
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:128
+#. i18n: ectx: property (toolTip), widget (QPushButton, removeUser)
+#: rc.cpp:456
+msgid "Remove this user."
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:230
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:459
+#, fuzzy
+msgid "Name: "
+msgstr "Ім'я:"
+
+#. i18n: file: ui/widgets/userwidget.ui:256
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:462
+msgid "Avatar:"
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:263
+#. i18n: ectx: property (text), widget (QPushButton, moreButton)
+#: rc.cpp:465
+msgid "More..."
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:296
+#. i18n: ectx: property (text), widget (QCheckBox, autoLoginCheckBox)
+#: rc.cpp:468
+msgid "Login Automatically"
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:303
+#. i18n: ectx: property (text), widget (QCheckBox, adminCheckBox)
+#: rc.cpp:471
+#, fuzzy
+msgid "Administrator"
+msgstr "Адміністратор"
+
+#: rc.cpp:472
 #, fuzzy
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Ваше ім'я"
 
-#: rc.cpp:533
+#: rc.cpp:473
 #, fuzzy
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "Ваші електронні адреси"
 
+#, fuzzy
+#~ msgid "Setting up Tribe..."
+#~ msgstr "Запуск Tribe…"
 
+#, fuzzy
+#~ msgid ""
+#~ "It looks like you were not authorized to launch Tribe. Please contact "
+#~ "your system administrator for further details"
+#~ msgstr ""
+#~ "Схоже, ви не маєте права запускати Tribe. Будь ласка, зверніть до вашого "
+#~ "системного адміністратора для подальших подробиць"
+
+#, fuzzy
+#~ msgid ""
+#~ "It looks like an unclean start of Tribe has taken place. Please kill all "
+#~ "instances of tribe, tribelauncher and tribelauncherworker and try again"
+#~ msgstr ""
+#~ "Схоже, відбувся неправильний запуск Tribe. Будь ласка, вбийте tribe, "
+#~ "tribelauncher і tribelauncherworker та спробуйте знову"
+
+#, fuzzy
+#~ msgid ""
+#~ "A newer version of Tribe is available.\n"
+#~ "It is strongly advised to upgrade it. Do you want to upgrade Tribe now?"
+#~ msgstr ""
+#~ "Доступна нова версія Tribe.\n"
+#~ "Наполегливо рекомендується оновити його. Бажаєте оновити Tribe зараз же?"
+
+#, fuzzy
+#~ msgid ""
+#~ "A newer version of Arxin is available.\n"
+#~ "Even though not fundamental, upgrading it is recommended. Do you want to "
+#~ "upgrade Arxin now?"
+#~ msgstr ""
+#~ "Доступна нова версія Arxin.\n"
+#~ "Хоча він не основний, але оновлення рекомендоване. Бажаєете оновити Arxin "
+#~ "зараз же?"
+
+#, fuzzy
+#~ msgid "Please Wait, Upgrading Chakra Installer..."
+#~ msgstr "Заждіть, будь ласка, оновлюється Chakra…"
+
+#, fuzzy
+#~ msgctxt ""
+#~ "You just have to translate 'remaining' here. Leave everything else as it "
+#~ "is."
+#~ msgid "%p% (%1 KB/s, %2 remaining)"
+#~ msgstr "%p% (%1 KB/s, залишилось %2)"
+
+#, fuzzy
+#~ msgid "Please Wait, Installing Packages..."
+#~ msgstr "Заждіть, будь ласка, встановлюються пакунки…"
+
+#, fuzzy
+#~ msgid "Please Wait, Upgrading Packages..."
+#~ msgstr "Заждіть, будь ласка, оновлюються пакунки…"
+
+#, fuzzy
+#~ msgid "Please Wait, Downloading Packages..."
+#~ msgstr "Заждіть, будь ласка, звантажуються пакунки…"
+
+#, fuzzy
+#~ msgid ""
+#~ "An error occurred while trying to upgrade.\n"
+#~ "Do you want to run Tribe anyway?"
+#~ msgstr ""
+#~ "Помилка при спробі оновитись.\n"
+#~ "Однаково, запустити Tribe?"
+
+#, fuzzy
+#~ msgid "Please wait, Tribe is being started..."
+#~ msgstr "Заждіть, будь ласка, Tribe запускається…"
+
+#, fuzzy
+#~ msgid "Tribe Launcher"
+#~ msgstr "Запускач Tribe"
+
+#, fuzzy
+#~ msgid "An auto updater and launcher for Tribe"
+#~ msgstr "Автоматичний оновлювач і запускач для Tribe"
+
+#, fuzzy
+#~ msgid "team@chakra-project.org"
+#~ msgstr "team@chakra-project.org"
+
+#, fuzzy
+#~ msgid ""
+#~ "We appreciate your dedication, but your backtrace has already been "
+#~ "successfully sent"
+#~ msgstr ""
+#~ "Ми цінуємо вашу відданість справі, але ваш зворотній слід ужеуспішно "
+#~ "відправлено."
+
+#, fuzzy
+#~ msgid ""
+#~ "Thanks! Your backtrace was successfully submitted. Now just wait for us "
+#~ "to fix this!"
+#~ msgstr ""
+#~ "Спасибі! Ваш зворотній слід уже відправлено. Тепер лишається ждати, поки "
+#~ "ми виправимо це!"
+
+#, fuzzy
+#~ msgid ""
+#~ "There was an error while sending your backtrace!! Probably we could not "
+#~ "connect to the server: you can retry, but the best thing to do would be "
+#~ "saving the backtrace and attaching it to a bug report later."
+#~ msgstr ""
+#~ "Помилка при відправленні вашого зворотнього зв'язку! Ймовірно, нас не "
+#~ "під'єднано до сервера: ви можете повторити, але найкраще буде, якщо ви "
+#~ "збережете зворотній слід і згодом долучите його до звіту про ваду."
+
+#, fuzzy
+#~ msgid "Preparing installation, this might take some time ..."
+#~ msgstr "Підготовка до встановлення, це може забрати трохи часу …"
+
+#, fuzzy
+#~ msgid ""
+#~ "Detecting best mirror server & configuring pacman, this may take a bit..."
+#~ msgstr ""
+#~ "Виявлення найкращого дзеркала та налаштування pacman, це може зайняти "
+#~ "трохи…"
+
+#, fuzzy
+#~ msgid "Setting up X.Org configuration..."
+#~ msgstr "Запуск налаштувань X.Org…"
+
+#, fuzzy
+#~ msgid "Could not format %1"
+#~ msgstr "Неможливо сформувати %1"
+
+#, fuzzy
+#~ msgid "Do you really want to quit the installation?"
+#~ msgstr "Покинути встановлення?"
+
+#, fuzzy
+#~ msgid "Creating menu.lst..."
+#~ msgstr "Утворення menu.lst…"
+
+#, fuzzy
+#~ msgid "Adobe Flash Plugin"
+#~ msgstr "Модуль Adobe Flash"
+
+#, fuzzy
+#~ msgid "Microsoft Core TTF Fonts"
+#~ msgstr "Базові шрифти Microsoft"
+
+#, fuzzy
+#~ msgid ""
+#~ "You still have pending operations, please apply or revert them before "
+#~ "continuing"
+#~ msgstr ""
+#~ "Ви все ще маєте чекання на операції, будь ласка, застосуйте або відкиньте "
+#~ "їх перш аніж іти далі"
+
+#, fuzzy
+#~ msgid ""
+#~ "It looks like you have selected the mountpoint %1 twice. You can assign "
+#~ "only one partition to a mountpoint"
+#~ msgstr ""
+#~ "Схоже, ви вибрали точку монтування %1 двічі. Можна вибрати лише одну"
+
+#, fuzzy
+#~ msgid ""
+#~ "Formatting the '/' partition is strongly advised. Going ahead without "
+#~ "formatting it might lead to a non working system after the installation"
+#~ msgstr ""
+#~ "Наполегливо рекомендується форматувати розділ «/». Забігаючи вперед, без "
+#~ "форматування це може призвести до неробочої системи після встановлення"
+
+#, fuzzy
+#~ msgid ""
+#~ "You have chosen %1 to be used as swap, however you need a special "
+#~ "filesystem for that. Please mark it for being formatted to continue"
+#~ msgstr ""
+#~ "%1 вибрано як swap, утім вам потрібна спеціальна файлова система для "
+#~ "цього. Будь ласка, позначте її на форматування для подальшої роботи"
+
+#, fuzzy
+#~ msgid ""
+#~ "The partition %1 you have chosen to use as swap has a filesystem which is "
+#~ "not linuxswap. Please note that this will be changed during installation "
+#~ "procedure"
+#~ msgstr ""
+#~ "Розділ %1 вибрано як swap, але файлова система не linuxswap. Будь ласка, "
+#~ "майте на увазі, це буде змінено протягом установлення."
+
+#, fuzzy
+#~ msgid ""
+#~ "It looks like you did not assign a partition to '/'. You have to select a "
+#~ "mount point at least for it"
+#~ msgstr ""
+#~ "Схоже, ви не вказали розділ для «/». Для цього потрібно вибрати точку "
+#~ "монтування"
+
+#, fuzzy
+#~ msgid ""
+#~ "You did not select a partition to be used as swap space. A swap partition "
+#~ "is strongly advised, especially on laptops and system with limited amount "
+#~ "of RAM"
+#~ msgstr ""
+#~ "Ви не вибрали розділ для swap. Наполегливо рекомендується його мати, "
+#~ "особливо на ноутбуках і системах з обмеженою оперативною пам'яттю"
+
+#, fuzzy
+#~ msgid "Formatting %1 with %2..."
+#~ msgstr "Форматування %1 на %2…"
+
+#, fuzzy
+#~ msgid "%1 will be formatted with %2"
+#~ msgstr "%1 буде форматовано на %2"
+
+#, fuzzy
+#~ msgid "Partitions mounted"
+#~ msgstr "Розділ змонтовано"
+
+#, fuzzy
+#~ msgid "Setting up root user ..."
+#~ msgstr "Налаштування адміністратора…"
+
+#, fuzzy
+#~ msgid "Configuring users ..."
+#~ msgstr "Налаштування користувачів…"
+
+#, fuzzy
+#~ msgid "Password is empty"
+#~ msgstr "Порожній пароль"
+
+#, fuzzy
+#~ msgid "Password has to be at least 6 characters"
+#~ msgstr "Пароль має містити щонайменше 6 символів"
+
+#, fuzzy
+#~ msgid "Passwords match"
+#~ msgstr "Паролі збігаються"
+
+#, fuzzy
+#~ msgid "Please wait, reading partition table ..."
+#~ msgstr "Заждіть, будь ласка, читання таблиці розділів …"
+
+#, fuzzy
+#~ msgid ""
+#~ "You have selected the partition %1 to be mounted twice.\n"
+#~ "Please correct your selection."
+#~ msgstr ""
+#~ "Розділ для монтування %1 вибрано двічі.\n"
+#~ "Будь ласка, поправте це."
+
+#, fuzzy
+#~ msgid ""
+#~ "You have to chosen mount point '%1' for two partitions.\n"
+#~ "Please correct your selection."
+#~ msgstr ""
+#~ "Вибрано точку монтування «%1» для двох розділів.\n"
+#~ "Будь ласка, поправте це."
+
+#, fuzzy
+#~ msgid ""
+#~ "You have not configured a username for one user.\n"
+#~ "Please correct your settings."
+#~ msgstr ""
+#~ "Ви не вказали псевдо для одного з користувачів.\n"
+#~ "Будь ласка, поправте ваші налаштування."
+
+#, fuzzy
+#~ msgid ""
+#~ "You have not configured a password for user %1.\n"
+#~ "Please correct your settings."
+#~ msgstr ""
+#~ "Ви не вказали пароль для %1.\n"
+#~ "Будь ласка, поправте ваші налаштування."
+
+#, fuzzy
+#~ msgid "Setting up password ..."
+#~ msgstr "Засвоєння паролю…"
+
+#, fuzzy
+#~ msgid "Creating configurations ..."
+#~ msgstr "Створення налаштувань,"
+
+#, fuzzy
+#~ msgid "Yes"
+#~ msgstr "Так"
+
+#, fuzzy
+#~ msgid "Please Wait, checking Tribe Updates..."
+#~ msgstr "Заждіть, будь ласка, перевірка оновлень Tribe…"
+
+#, fuzzy
+#~ msgid ""
+#~ "Tribe has crashed due to a fatal error. We are extremely sorry about "
+#~ "that, as this should not happen. However, Tribe collected some important "
+#~ "informations about the crash that will be extremely useful to developers "
+#~ "for fixing this problem. The fastest way to report this, if you have an "
+#~ "active internet connection, is clicking \"Send report to developers\". "
+#~ "Otherwise, you can copy/paste the text below and send it to bugs@chakra-"
+#~ "project.org. No personal informations are included, you can see the log "
+#~ "for details."
+#~ msgstr ""
+#~ "Tribe зазнав краху через невиправну помилку. Нам надзвичайно прикро, "
+#~ "оскільки цьому не слід траплятись. Однак, Tribe зберіг деяку важливу "
+#~ "інформацію про крах, яка буде надзвичайно корисною розробникам для "
+#~ "усунення цієї вади. Найхуткіший спосіб повідомити про це, якщо ви "
+#~ "під'єднані до глобальної мережі, це натиснути «Відправити звіт "
+#~ "розробникам». Іншими словами, ви може скопіювати/вставити текст нижче і "
+#~ "відправити в bugs@chakra-project.org. Без усіляких описів, ви можете "
+#~ "глянути у журнал для подробиць. "
+
+#, fuzzy
+#~ msgid "Copy to clipboard"
+#~ msgstr "Скопіювати в кишеню"
+
+#, fuzzy
+#~ msgid "Send report to developers"
+#~ msgstr "Відправити звіт розробникам"
+
+#, fuzzy
+#~ msgid "Surname:"
+#~ msgstr "Прізвище:"
+
+#, fuzzy
+#~ msgid "Delete"
+#~ msgstr "Вилучити"
+
+#, fuzzy
+#~ msgid "Root Password"
+#~ msgstr "Пароль адміністратора"
+
+#, fuzzy
+#~ msgid "Configure System"
+#~ msgstr "Налаштувати систему"
+
+#, fuzzy
+#~ msgid "Time Settings"
+#~ msgstr "Параметри часу"
+
+#, fuzzy
+#~ msgid "Timezone:"
+#~ msgstr "Часова зона:"
+
+#, fuzzy
+#~ msgid "Language Settings"
+#~ msgstr "Налаштування мови"
+
+#, fuzzy
+#~ msgid ""
+#~ "Now you have to set up your disks for installation. Please use the tool "
+#~ "below to partition, format and select mountpoints. Once you're satisfied "
+#~ "with your choice, click \"Apply\" if you made any changes to the "
+#~ "partition table or requested to format one or more partitions, and then "
+#~ "go ahead. Formatting the partitions you will mount main system paths on "
+#~ "(such as / or /usr) is strongly advised."
+#~ msgstr ""
+#~ "Тепер вам потрібно запустити ваші диски для встановлення. Будь ласка, "
+#~ "використайте інструменти нижче, щоб форматувати і вибрати точку "
+#~ "монтування. Як тільки вас задовольнить вибір, натисніть «Застосувати», "
+#~ "якщо ви зробити які-будь зміни в таблиці розділів або потребуватимете "
+#~ "форматувати один або більше розділів, і підете далі.  Форматування "
+#~ "розділів, які ви змонтували у системні шляхи(приміром, «/» або «/usr»)— "
+#~ "надзвичайно важливе. "
+
+#, fuzzy
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+#~ "#eeeeee;\">Formatting Partitions...</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+#~ "#eeeeee;\">Форматування розділів…</span></p></body></html>"
+
+#, fuzzy
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+#~ "#eeeeee;\">Mounting Partitions...</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+#~ "#eeeeee;\">Монтування розділів</span></p></body></html>"
+
+#, fuzzy
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Liberation Sans'; font-size:8pt;\"></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Liberation Sans'; font-size:8pt;\"></p></body></html>"
+
+#, fuzzy
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "size:22pt; font-weight:600; color:#ffffff;\">Root Setup</span></p></"
+#~ "body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "size:22pt; font-weight:600; color:#ffffff;\">Установлення адміністратора</"
+#~ "span></p></body></html>"
+
+#, fuzzy
+#~ msgid ""
+#~ "Now you can define the behaviour of the user root, who is used to manage "
+#~ "the system.\n"
+#~ "\n"
+#~ "Keeping this user is usually recommended, though you can choose to use "
+#~ "sudo only and disable the root user. Please remind that having the root "
+#~ "account disabled and sudo misconfigured may lead to an unusable system."
+#~ msgstr ""
+#~ "Тепер можете визначити поведінку адміністратора, який використовується "
+#~ "задля керування системою.\n"
+#~ "\n"
+#~ "Утримання цього користувача, звісно ж, рекомендоване, оскільки ви можете "
+#~ "використовувати лише sudo та вимкнути адміністратора взагалі. Будь ласка, "
+#~ "пам'ятайте, що наявність вимкненого рахунку для адміністратора та "
+#~ "неналаштованість sudo може призвести до непридатності системи."
+
+#, fuzzy
+#~ msgid "Enable Root User"
+#~ msgstr "Зробити адміністратора користувачем"
+
+#, fuzzy
+#~ msgid "Password"
+#~ msgstr "Пароль"
+
+#, fuzzy
+#~ msgid "Confirm Password"
+#~ msgstr "Підтвердження паролю"
+
+#, fuzzy
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Filesystem Setup</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Установлення файлової системи</span></p></body></html>"
+
+#, fuzzy
+#~ msgid ""
+#~ "Please choose what partitions should be used for the installation. Just "
+#~ "select the partition and the mountpoint. You can use the \"Add another "
+#~ "partition\" button to add more of them. To format a partition (most "
+#~ "likely accurate for all system partitions), activate the \"Format\" "
+#~ "checkbox and select a filesystem.\n"
+#~ "\n"
+#~ "You need at least a root (/) and a swap partition. When you have added "
+#~ "all desired partitions, simply press the \"Next\" button."
+#~ msgstr ""
+#~ "Будь ласка, виберіть розділи, які слід використовувати для встановлення. "
+#~ "Лише розділ і точку монтування. Також ви можете долучити інші розділи. І "
+#~ "форматувати розділ — найімовірніше, всі системні розділи.\n"
+#~ "\n"
+#~ "Вам потрібно, щонайменше, корінь (/) і swap. Коли ви долучите всі "
+#~ "потрібні розділи, просто натисніть «Далі»."
+
+#, fuzzy
+#~ msgid "Add another Partition"
+#~ msgstr "Долучити інший розділ"
+
+#, fuzzy
+#~ msgid "Partition:"
+#~ msgstr "Розділ:"
+
+#, fuzzy
+#~ msgid "Size:"
+#~ msgstr "Розмір:"
+
+#, fuzzy
+#~ msgid "ext3"
+#~ msgstr "ext3"
+
+#, fuzzy
+#~ msgid "ext2"
+#~ msgstr "ext2"
+
+#, fuzzy
+#~ msgid "ext4"
+#~ msgstr "ext4"
+
+#, fuzzy
+#~ msgid "reiserfs"
+#~ msgstr "reiserfs"
+
+#, fuzzy
+#~ msgid "jfs"
+#~ msgstr "jfs"
+
+#, fuzzy
+#~ msgid "xfs"
+#~ msgstr "xfs"
+
+#, fuzzy
+#~ msgid "linux-swap"
+#~ msgstr "linux-swap"
+
+#, fuzzy
+#~ msgid "Format with:"
+#~ msgstr "Форматувати на:"
+
+#, fuzzy
+#~ msgid "/"
+#~ msgstr "/"
+
+#, fuzzy
+#~ msgid "/boot"
+#~ msgstr "/boot"
+
+#, fuzzy
+#~ msgid "/home"
+#~ msgstr "/home"
+
+#, fuzzy
+#~ msgid "/opt"
+#~ msgstr "/opt"
+
+#, fuzzy
+#~ msgid "/usr"
+#~ msgstr "/usr"
+
+#, fuzzy
+#~ msgid "/tmp"
+#~ msgstr "/tmp"
+
+#, fuzzy
+#~ msgid "/var"
+#~ msgstr "/var"
+
+#, fuzzy
+#~ msgid "swap"
+#~ msgstr "swap"
+
+#, fuzzy
+#~ msgid "Remove"
+#~ msgstr "Вилучити"
+
+#, fuzzy
+#~ msgid "General Settings"
+#~ msgstr "Загальні налаштування"
+
+#, fuzzy
+#~ msgid "Download Settings"
+#~ msgstr "Налаштування звантаження"
+
+#, fuzzy
+#~ msgid ""
+#~ "Enter your name, a corresponding login name and your password to create a "
+#~ "user account. To enable sudo for the created user and allow him to do "
+#~ "administrative tasks, enable the \"Administrator\" option below."
+#~ msgstr ""
+#~ "Уведіть ваше ім'я, відповідно псевдо та пароль, щоб утворити "
+#~ "рахуноккористувача. Щоб увімкнути sudo для створеного користувача і "
+#~ "дозволити виконувати йому адміністративні завдання, виберіть "
+#~ "«Адміністратор» нижче."
+
+#, fuzzy
+#~ msgid "Add another User.."
+#~ msgstr "Залучити ще одного користувача…"
+
+#, fuzzy
+#~ msgid "Install plain KDE-Configuration"
+#~ msgstr "Установити звичні налаштування KDE"
+
+#, fuzzy
+#~ msgid "Install Current-LiveCD-Configuration"
+#~ msgstr "Установити поточні налаштування LiveCD"
+
+#, fuzzy
+#~ msgid "Install plain KDEMod-Configuration"
+#~ msgstr "Установити звичні налаштування KDEMod"

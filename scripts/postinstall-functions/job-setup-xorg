@@ -16,9 +16,9 @@ job_setup_xorg()
 	fi
 
 	# copy XORG input config to target
-	if [ -e "/.livesys/write/etc/hal/fdi/policy/10-keymap.fdi" ] ; then
+	if [ -e "/.livesys/write/etc/X11/xorg.conf.d/10-keyboard.conf" ] ; then
 		msg "copying XORG input config to target"
-		cp -vf /.livesys/write/etc/hal/fdi/policy/10-keymap.fdi ${mountpoint}/etc/hal/fdi/policy/10-keymap.fdi
+		cp -vf /.livesys/write/etc/X11/xorg.conf.d/10-keyboard.conf ${mountpoint}/etc/X11/xorg.conf.d/10-keyboard.conf
 	else
 		msg "copying XORG input config to target failed - the system will try to create one at first boot."
 	fi

@@ -45,7 +45,7 @@ job_configure_users()
 	msg "setup chakra settings"
 	cp -v /etc/skel/ksplashrc ${mountpoint}/home/${user_name}/.kde4/share/config/ksplashrc
 	cp -v /etc/skel/plasma-desktop-appletsrc ${mountpoint}/home/${user_name}/.kde4/share/config/plasma-desktop-appletsrc
-#	cp -v /etc/skel/plasmarc ${mountpoint}/home/${user_name}/.kde4/share/config/plasmarc
+	cp -v /etc/skel/plasmarc ${mountpoint}/home/${user_name}/.kde4/share/config/plasmarc
 	cp -v /etc/skel/kcmfonts ${mountpoint}/home/${user_name}/.kde4/share/config/kcmfonts
 	cp -v /etc/skel/bookmarks.xml ${mountpoint}/home/${user_name}/.kde4/share/apps/konqueror/bookmarks.xml
 	cp -v /etc/skel/rekonqrc ${mountpoint}/home/${user_name}/.kde4/share/config/rekonqrc

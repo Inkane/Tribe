@@ -89,7 +89,7 @@ private:
     QTimeLine *m_fadeTimeLine;
     QTimeLine *m_spinnerTimeLine;
     KPixmapSequence m_sequence;
-    QPixmap m_backgroundPixmap;
+    QPixmap m_loadingPixmap;
 };
 
 class PartitionPage : public AbstractPage

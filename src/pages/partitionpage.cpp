@@ -170,7 +170,6 @@ void PartitionDelegate::setModelData(QWidget* editor, QAbstractItemModel* model,
 QWidget* PartitionDelegate::createEditor(QWidget* parent, const QStyleOptionViewItem& option, const QModelIndex& index) const
 {
     Q_UNUSED(option)
-    Q_UNUSED(index)
 
     QComboBox *combo = new QComboBox(parent);
     combo->addItems(s_mountPoints);
@@ -319,7 +318,7 @@ PartitionViewWidget::PartitionViewWidget(QWidget* parent)
         , m_fadeTimeLine(new QTimeLine(1200, this))
         , m_spinnerTimeLine(new QTimeLine(2000, this))
         , m_sequence("process-working", KIconLoader::SizeSmallMedium)
-        , m_backgroundPixmap(KIconLoader::global()->loadIcon("applications-system",
+        , m_loadingPixmap(KIconLoader::global()->loadIcon("applications-system",
                                                              KIconLoader::Desktop,
                                                              KIconLoader::SizeEnormous))
 {
@@ -384,7 +383,7 @@ void PartitionViewWidget::paintEvent(QPaintEvent* event)
         iconRect.moveCenter(QPoint(size().width()/2, size().height()/2));
 
         painter.setOpacity(m_fadeTimeLine->currentFrame() * 0.0035);
-        painter.drawPixmap(iconRect, m_backgroundPixmap);
+        painter.drawPixmap(iconRect, m_loadingPixmap);
         painter.setOpacity(m_fadeTimeLine->currentFrame() * 0.01);
         painter.drawPixmap(spinnerRect, m_sequence.frameAt(m_spinnerTimeLine->currentFrame()));
 
@@ -611,7 +610,6 @@ void PartitionPage::populateTreeWidget()
         const Partition *partition = (*it)->data(0, PARTITION_ROLE).value<const Partition*>();
         if (partition != 0) {
             if (!partition->roles().has(PartitionRole::Extended) &&
-                partition->fileSystem().type() != FileSystem::LinuxSwap &&
                 partition->fileSystem().type() != FileSystem::Unknown &&
                 partition->fileSystem().type() != FileSystem::Unformatted) {
 

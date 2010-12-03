@@ -194,7 +194,7 @@ void PartitionDelegate::paint(QPainter * painter, const QStyleOptionViewItem & o
 
     QRect iconRect = optV4.rect;
     iconRect.setSize(QSize(optV4.rect.height() - SPACING * 2 - 10, optV4.rect.height() - SPACING * 2 - 10));
-    iconRect.moveTo(QPoint(iconRect.x() + SPACING + 2, iconRect.y() + SPACING + 4));
+    iconRect.moveTo(QPoint(iconRect.x() + SPACING + 1, iconRect.y() + SPACING + 1));
 
     painter->setPen(Qt::NoPen);
 
@@ -204,19 +204,33 @@ void PartitionDelegate::paint(QPainter * painter, const QStyleOptionViewItem & o
         painter->drawRect(overlayRect);
         painter->drawPixmap(iconRect, optV4.icon.pixmap(iconRect.size()));
     } else if (idx.data(58) == "p") {
-        painter->setBrush(QColor(idx.data(60).toString()));
+        painter->setBrush(QColor(idx.data(60).toString()).darker().darker());
         painter->drawRect(iconRect);
-        painter->drawPixmap(QRect(QPoint(iconRect.left() + 2, iconRect.top() + 2), 
-                                  QPoint(iconRect.width() - 10, iconRect.height() - 10)), 
-                            m_partIcon.pixmap(iconRect.width() - 8, iconRect.height() - 8));
+        painter->setBrush(QColor(idx.data(60).toString()).darker());
+        painter->drawRect(QRect(QPoint(iconRect.left() + 3, iconRect.top() + 3),
+                                QPoint(iconRect.right() - 3, iconRect.bottom() - 3)));
+        painter->setBrush(QColor(idx.data(60).toString()));
+        painter->drawRect(QRect(QPoint(iconRect.left() + 6, iconRect.top() + 6),
+                                QPoint(iconRect.right() - 6, iconRect.bottom() - 6)));
+        painter->drawPixmap(QRect(QPoint(iconRect.left() + 1, iconRect.top() + 1), 
+                                  QPoint(iconRect.width() - 11, iconRect.height() - 11)), 
+                            m_partIcon.pixmap(iconRect.width() - 9, iconRect.height() - 9));
+        QRect sepLineRect = QRect(QPoint(optV4.rect.left() + 15, optV4.rect.bottom() - 2),
+                                  QPoint(optV4.rect.right() - 15, optV4.rect.bottom() - 2));
+        painter->setBrush(QBrush(QColor(idx.data(60).toString()).darker().darker()));
+        painter->drawRect(sepLineRect);
+        QRect sepLineRect2 = QRect(QPoint(optV4.rect.left() + 35, optV4.rect.bottom() - 2),
+                                   QPoint(optV4.rect.right() - 35, optV4.rect.bottom() - 2));
+        painter->setBrush(QBrush(QColor(idx.data(60).toString()).darker()));
+        painter->drawRect(sepLineRect2);
     }
 
     const Partition *partition = idx.data(PARTITION_ROLE).value<const Partition*>();
     if (partition && partition->isMounted()) {
         QRect overlayRect = optV4.rect;
         overlayRect.setSize(iconRect.size() / 1.9);
-        overlayRect.moveTo(QPoint(iconRect.right() - overlayRect.width(),
-                                  iconRect.bottom() - overlayRect.height()));
+        overlayRect.moveTo(QPoint(iconRect.right() - overlayRect.width() + 2,
+                                  iconRect.bottom() - overlayRect.height() + 2));
 
         painter->drawPixmap(overlayRect, m_lockIcon.pixmap(overlayRect.size()));
     }
@@ -402,21 +416,21 @@ PartitionPage::PartitionPage(QWidget *parent)
         , m_ui(new Ui::Partition)
         , m_install(InstallationHandler::instance())
 {
+    m_colorList.append(QColor(Qt::blue).darker().darker());
+    m_colorList.append(QColor(Qt::red).darker().darker());
+    m_colorList.append(QColor(Qt::green).darker().darker());
+    m_colorList.append(QColor(Qt::yellow).darker().darker());
+    m_colorList.append(QColor(Qt::gray).darker().darker());
+    m_colorList.append(QColor(Qt::blue).darker().darker());
+    m_colorList.append(QColor(Qt::red).darker().darker());
+    m_colorList.append(QColor(Qt::green).darker().darker());
+    m_colorList.append(QColor(Qt::yellow).darker().darker());
+    m_colorList.append(QColor(Qt::gray).darker().darker());
     m_colorList.append(QColor(Qt::blue).darker().darker().darker());
     m_colorList.append(QColor(Qt::red).darker().darker().darker());
     m_colorList.append(QColor(Qt::green).darker().darker().darker());
     m_colorList.append(QColor(Qt::yellow).darker().darker().darker());
     m_colorList.append(QColor(Qt::gray).darker().darker().darker());
-    m_colorList.append(QColor(Qt::blue).darker().darker());
-    m_colorList.append(QColor(Qt::red).darker().darker());
-    m_colorList.append(QColor(Qt::green).darker().darker());
-    m_colorList.append(QColor(Qt::yellow).darker().darker());
-    m_colorList.append(QColor(Qt::gray).darker().darker());
-    m_colorList.append(QColor(Qt::blue).darker().darker());
-    m_colorList.append(QColor(Qt::red).darker().darker());
-    m_colorList.append(QColor(Qt::green).darker().darker());
-    m_colorList.append(QColor(Qt::yellow).darker().darker());
-    m_colorList.append(QColor(Qt::gray).darker().darker());
 
     m_currentPart = 0;
 }

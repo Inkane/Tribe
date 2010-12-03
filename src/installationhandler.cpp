@@ -418,10 +418,10 @@ void InstallationHandler::postInstallDone(int eC, QProcess::ExitStatus eS)
         int percentage = 0;
 
         if (m_postjob == "initialize-target") {
-            emit streamLabel(i18n("Creating accounts ..."));
+            emit streamLabel(i18n("Creating user accounts ..."));
             setUpUsers(userLoginList());
             m_postjob = "configure-pacman";
-            m_postlabel = i18n("Configuring software management, this may take a bit...");
+            m_postlabel = i18n("Configuring software management...");
             percentage = 1;
         } else if (m_postjob == "configure-pacman") {
             m_postjob = "pre-remove";
@@ -437,11 +437,11 @@ void InstallationHandler::postInstallDone(int eC, QProcess::ExitStatus eS)
             percentage = 4;
         } else if (m_postjob == "setup-xorg") {
             m_postjob = "download-l10n";
-            m_postlabel = i18n("Downloading and installing localization packages, this may take a bit...");
+            m_postlabel = i18n("Downloading and installing localization packages...");
             percentage = 5;
         } else if (m_postjob == "download-l10n") {
             m_postjob = "download-doc";
-            m_postlabel = i18n("Downloading and installing documentation packages, this may take a bit...");
+            m_postlabel = i18n("Downloading and installing documentation packages...");
             percentage = 6;
         } else if (m_postjob == "download-doc") {
             m_postjob = "rcconf-l10n";
@@ -468,7 +468,7 @@ void InstallationHandler::postInstallDone(int eC, QProcess::ExitStatus eS)
             percentage = 12;
         } else if (m_postjob == "setup-hardware") {
             m_postjob = "create-initrd";
-            m_postlabel = i18n("Creating initial ramdisk images, this may take a bit...");
+            m_postlabel = i18n("Creating initial ramdisk images...");
             percentage = 13;
         } else if (m_postjob == "create-initrd") {
             m_postjob = "regenerate-locales";

@@ -199,7 +199,8 @@ void PartitionDelegate::paint(QPainter * painter, const QStyleOptionViewItem & o
     painter->setPen(Qt::NoPen);
 
     if (idx.data(58) != "p") {
-        QRect overlayRect = optV4.rect;
+        QRect overlayRect = QRect(QPoint(optV4.rect.left() + 2, optV4.rect.top() + 2),
+                                  QPoint(optV4.rect.right() - 2, optV4.rect.bottom() - 2));
         painter->setBrush(QBrush(QColor(Qt::darkBlue).darker().darker().darker()));
         painter->drawRect(overlayRect);
         painter->drawPixmap(iconRect, optV4.icon.pixmap(iconRect.size()));

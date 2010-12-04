@@ -8,7 +8,7 @@ job_install_grub()
 	msg_job_start "job_install_grub"
 
 	msg "installing grub"
-	echo "GRUB_DEBUG___ >>>> mountpoint: ${mountpoint}
+	echo "GRUB_DEBUG___ >>>> mountpoint: ${mountpoint}"
 
 	cp -avf ${mountpoint}/usr/lib/grub/i386-pc/* ${mountpoint}/boot/grub/
 

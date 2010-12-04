@@ -123,7 +123,6 @@ void UserWidget::setAutoLogin(bool b)
 
 void UserWidget::avatarClicked()
 {
-    m_avatarDialog->setWindowFlags(Qt::FramelessWindowHint);
     m_avatarDialog->show();
 }
 

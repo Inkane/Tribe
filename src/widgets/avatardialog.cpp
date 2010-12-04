@@ -24,10 +24,12 @@ AvatarDialog::AvatarDialog(QWidget* parent)
 
     ui.setupUi(this);
     
+    setWindowFlags(Qt::FramelessWindowHint);
+    
     connect(ui.okButton, SIGNAL(clicked()), this, SLOT(okClicked()));
     connect(ui.cancelButton, SIGNAL(clicked()), this, SLOT(cancelClicked()));
     connect(ui.avatarList, SIGNAL(itemActivated(QListWidgetItem*)), this, SLOT(selectionChanged()));
-    
+
     ui.okButton->setIcon(KIcon("dialog-ok"));
     ui.cancelButton->setIcon(KIcon("dialog-cancel"));
     

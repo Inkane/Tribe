@@ -190,7 +190,7 @@ void PartitionDelegate::paint(QPainter * painter, const QStyleOptionViewItem & o
     painter->setClipRect(optV4.rect);
 
     QStyle *style = QApplication::style();
-    style->drawPrimitive(QStyle::PE_PanelItemViewRow, &option, painter);
+    style->drawPrimitive(QStyle::PE_PanelItemViewItem, &option, painter);
 
     QRect iconRect = optV4.rect;
     iconRect.setSize(QSize(optV4.rect.height() - SPACING * 2 - 10, optV4.rect.height() - SPACING * 2 - 10));
@@ -345,9 +345,6 @@ PartitionViewWidget::PartitionViewWidget(QWidget* parent)
     m_fadeTimeLine->setCurveShape(QTimeLine::EaseOutCurve);
     connect(m_fadeTimeLine, SIGNAL(frameChanged(int)), viewport(), SLOT(repaint()));
     connect(m_fadeTimeLine, SIGNAL(finished()), this, SLOT(stopRetainingPaintEvent()));
-    
-    setSelectionMode(SingleSelection);
-    setSelectionBehavior(SelectItems);
 }
 
 PartitionViewWidget::~PartitionViewWidget()
@@ -481,6 +478,7 @@ void PartitionPage::createWidget()
     connect(m_ui->typeBox, SIGNAL(currentIndexChanged(QString)), this, SLOT(slotTypeChanged(QString)));
 
     m_ui->treeWidget->setItemDelegate(new PartitionDelegate);
+    m_ui->treeWidget->setSelectionMode(QAbstractItemView::SingleSelection);
     m_ui->treeWidget->setEnabled(false);
 
     setVisibleParts(PartitionPage::None);

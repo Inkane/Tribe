@@ -24,8 +24,8 @@
      </property>
      <property name="gridSize">
       <size>
-       <width>129</width>
-       <height>129</height>
+       <width>128</width>
+       <height>128</height>
       </size>
      </property>
      <property name="viewMode">

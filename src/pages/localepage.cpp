@@ -66,7 +66,7 @@ void LocalePage::createWidget()
     marble->setShowCompass(false);
     marble->setShowCrosshairs(false);
     marble->setShowGrid(false);
-    marble->addGeoDataFile(QString(DATA_INSTALL_DIR) + "/marble/data/placemarks/cities.kml");
+    marble->addPlacemarkFile(QString(DATA_INSTALL_DIR) + "/marble/data/placemarks/cities.kml");
 
     /** Read our locales file **/
     QFile fp(QString(CONFIG_INSTALL_PATH) + "timezones");

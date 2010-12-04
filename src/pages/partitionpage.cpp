@@ -345,6 +345,9 @@ PartitionViewWidget::PartitionViewWidget(QWidget* parent)
     m_fadeTimeLine->setCurveShape(QTimeLine::EaseOutCurve);
     connect(m_fadeTimeLine, SIGNAL(frameChanged(int)), viewport(), SLOT(repaint()));
     connect(m_fadeTimeLine, SIGNAL(finished()), this, SLOT(stopRetainingPaintEvent()));
+    
+    setSelectionMode(SingleSelection);
+    setSelectionBehavior(SelectItems);
 }
 
 PartitionViewWidget::~PartitionViewWidget()

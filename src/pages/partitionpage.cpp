@@ -199,11 +199,17 @@ void PartitionDelegate::paint(QPainter * painter, const QStyleOptionViewItem & o
     painter->setPen(Qt::NoPen);
 
     if (idx.data(58) != "p") {
-        QRect overlayRect = QRect(QPoint(optV4.rect.left() + 2, optV4.rect.top() + 2),
-                                  QPoint(optV4.rect.right() - 2, optV4.rect.bottom() - 2));
-        painter->setBrush(QBrush(QColor(Qt::darkBlue).darker().darker().darker()));
-        painter->drawRect(overlayRect);
-        painter->drawPixmap(iconRect, optV4.icon.pixmap(iconRect.size()));
+        if (optV4.text.left(3) == "New") {
+
+        } else if (optV4.text.left(3) == "Unsupp") {
+
+        } else {
+            QRect overlayRect = QRect(QPoint(optV4.rect.left() + 2, optV4.rect.top() + 2),
+                                    QPoint(optV4.rect.right() - 2, optV4.rect.bottom() - 2));
+            painter->setBrush(QBrush(QColor(Qt::darkBlue).darker().darker().darker()));
+            painter->drawRect(overlayRect);
+            painter->drawPixmap(iconRect, optV4.icon.pixmap(iconRect.size()));
+        }
     } else if (idx.data(58) == "p") {
         painter->setBrush(QColor(idx.data(60).toString()).darker().darker());
         painter->drawRect(iconRect);
@@ -627,6 +633,7 @@ void PartitionPage::populateTreeWidget()
         if (partition != 0) {
             if (!partition->roles().has(PartitionRole::Extended) &&
                 partition->fileSystem().type() != FileSystem::Unknown &&
+                partition->fileSystem().type() != FileSystem::LinuxSwap &&
                 partition->fileSystem().type() != FileSystem::Unformatted) {
 
                 m_ui->treeWidget->openPersistentEditor(*it);

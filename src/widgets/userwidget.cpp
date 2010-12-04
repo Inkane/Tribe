@@ -11,6 +11,8 @@
 
 #include <QDebug>
 
+#include <QDesktopWidget>
+
 #include "avatardialog.h"
 #include "userwidget.h"
 
@@ -33,7 +35,7 @@ UserWidget::UserWidget(int a_userNumber, QWidget* parent): QWidget(parent)
     ui.avatar->setIcon(KIcon("view-user-offline-kopete"));
 
     m_avatarDialog = new AvatarDialog(0);
-    
+
     if (number == 0) {
         autoLogin = true;
         admin = true;
@@ -124,6 +126,7 @@ void UserWidget::setAutoLogin(bool b)
 void UserWidget::avatarClicked()
 {
     m_avatarDialog->show();
+    m_avatarDialog->setGeometry(QStyle::alignedRect(Qt::LeftToRight, Qt::AlignCenter, m_avatarDialog->size(), qApp->desktop()->availableGeometry()));
 }
 
 void UserWidget::autoLoginToggled()

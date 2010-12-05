@@ -61,8 +61,8 @@ job_configure_users()
 	cp -v /etc/skel/kcminputrc ${mountpoint}/home/${user_name}/.kde4/share/config/kcminputrc
 	cp -v /etc/skel/kdeglobals ${mountpoint}/home/${user_name}/.kde4/share/config/kdeglobals
 
-	msg "clean 10-keyboard.conf"
-	rm -v ${mountpoint}/home/${user_name}/10-keyboard.conf
+#	msg "clean 10-keyboard.conf"
+#	rm -v ${mountpoint}/home/${user_name}/10-keyboard.conf
 
 	msg "chown ${user_name} /home/${user_name}"
 	chroot ${mountpoint} /bin/chown -vR ${user_name}:users /home/${user_name}

@@ -764,7 +764,6 @@ qDebug() << "::::::: setUpUsers() streamPassword() \n" << m_passwdCount << "\n\n
 
     m_userProcess->write("\n");
     disconnect(m_userProcess, SIGNAL(readyReadStandardError()), this, SLOT(streamPassword()));
-    m_userProcess->deleteLater();
 }
 
 void InstallationHandler::unmountAll()

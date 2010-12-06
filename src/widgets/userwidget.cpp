@@ -24,9 +24,12 @@ UserWidget::UserWidget(int a_userNumber, QWidget* parent): QWidget(parent)
     ui.setupUi(this);
 
     ui.extWidget->hide();
+    ui.rootPwWidget->hide();
 
     ui.passLine->setEchoMode(QLineEdit::Password);
     ui.confirmPassLine->setEchoMode(QLineEdit::Password);
+    ui.rootPassLine->setEchoMode(QLineEdit::Password);
+    ui.confirmRootPassLine->setEchoMode(QLineEdit::Password);
 
     ui.removeUser->setIcon(KIcon("list-remove"));
     ui.userDetails->setIcon(KIcon("view-list-details"));
@@ -41,10 +44,13 @@ UserWidget::UserWidget(int a_userNumber, QWidget* parent): QWidget(parent)
         admin = true;
         ui.autoLoginCheckBox->setChecked(true);
         ui.adminCheckBox->setChecked(true);
+        ui.rootUsesUserPwCheckBox->setChecked(true);
         ui.removeUser->setVisible(false);
     } else {
         autoLogin = false;
         admin = false;
+        ui.adminCheckBox->setVisible(false);
+        ui.rootUsesUserPwCheckBox->setVisible(false);
     }
 
     passwordsMatch = true;
@@ -52,8 +58,11 @@ UserWidget::UserWidget(int a_userNumber, QWidget* parent): QWidget(parent)
     connect(ui.loginLine, SIGNAL(textChanged(QString)), this, SLOT(testFields()));
     connect(ui.passLine, SIGNAL(textChanged(QString)), this, SLOT(testFields()));
     connect(ui.confirmPassLine, SIGNAL(textChanged(QString)), this, SLOT(testFields()));
+    connect(ui.rootPassLine, SIGNAL(textChanged(QString)), this, SLOT(testFields()));
+    connect(ui.confirmRootPassLine, SIGNAL(textChanged(QString)), this, SLOT(testFields()));
 
     connect(ui.userDetails, SIGNAL(clicked(bool)), this, SLOT(showDetails()));
+    connect(ui.rootUsesUserPwCheckBox, SIGNAL(toggled(bool)), this, SLOT(showRootPw()));
     connect(ui.removeUser, SIGNAL(clicked(bool)), this, SLOT(emitRemove()));
 
     connect(ui.avatar, SIGNAL(clicked(bool)), this, SLOT(avatarClicked()));
@@ -78,6 +87,11 @@ void UserWidget::setAvatar(QString a)
     }
 }
 
+void UserWidget::showRootPw()
+{
+    ui.rootPwWidget->setVisible(!ui.rootPwWidget->isVisible());
+}
+
 void UserWidget::showDetails()
 {
     ui.extWidget->setVisible(!ui.extWidget->isVisible());
@@ -98,6 +112,16 @@ void UserWidget::testFields()
     } else {
         ui.confirmPwCheck->setPixmap(QPixmap());
         passwordsMatch = false;
+    }
+    
+    if ((ui.rootPassLine->text() == ui.confirmRootPassLine->text()) &&
+        (!ui.rootPassLine->text().isEmpty())) {
+        ui.confirmRootPwCheck->setPixmap(QPixmap(":Images/images/green-check.png"));
+        rootPassword = ui.rootPassLine->text();
+        rootPasswordsMatch = true;
+    } else {
+        ui.confirmRootPwCheck->setPixmap(QPixmap());
+        rootPasswordsMatch = false;
     }
 
     QRegExp r("\\D\\w{0,45}");
@@ -139,7 +163,11 @@ void UserWidget::autoLoginToggled()
 void UserWidget::adminToggled()
 {
     admin = ui.adminCheckBox->isChecked();
+    if (!admin) {
+        ui.rootUsesUserPwCheckBox->setEnabled(false);
+    } else {
+        ui.rootUsesUserPwCheckBox->setEnabled(true);
+    }
 }
-
 
 #include "userwidget.moc"

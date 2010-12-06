@@ -654,6 +654,7 @@ qDebug() << "GRUB_DEBUG__  >>>> command (appended): " << command;
 
 void InstallationHandler::setUpUsers(QStringList users)
 {
+qDebug() << "::::::: setUpUsers() \n" << users << "\n\n";
     QString command;
 
     int current = 0;
@@ -684,6 +685,8 @@ void InstallationHandler::setUpUsers(QStringList users)
         qDebug() << " :: user \'" + user + "\' created";
 
         // set kdm/user avatar
+        command = QString("mkdir -p " + QString(INSTALLATION_TARGET) + "/usr/share/apps/kdm/faces");
+        QProcess::execute(command);
         command = QString("cp " + userAvatarList().at(current) + " " + 
                                   QString(INSTALLATION_TARGET) + "/usr/share/apps/kdm/faces/" +
                                   user + ".face.icon");
@@ -701,20 +704,27 @@ void InstallationHandler::setUpUsers(QStringList users)
             QProcess::execute(command);
         }
 
-        // set user passwd
-        command = QString("chroot %1 /usr/bin/passwd %2").arg(INSTALLATION_TARGET).arg(user);
-        m_userProcess->start(command);
+        // check root pw
+        if (m_userPasswordList.at(current).contains(",,,,,,,,")) {
+            command = QString("chroot %1 /usr/bin/passwd").arg(INSTALLATION_TARGET);
+            connect(m_userProcess, SIGNAL(readyReadStandardError()), SLOT(streamPassword()));
+            m_userProcess->start(command);
+            m_userProcess->waitForFinished();
+        }
 
-        sleep(3);
-        streamPassword(current);
+        // set user passwd
+        m_passwdCount = current;
+        command = QString("chroot %1 /usr/bin/passwd %2").arg(INSTALLATION_TARGET).arg(user);
+        connect(m_userProcess, SIGNAL(readyReadStandardError()), SLOT(streamPassword()));
+        m_userProcess->start(command);
+        m_userProcess->waitForFinished();
 
         // copy in live user settings
         QDir dir("/home/live");
         foreach(const QString &ent, dir.entryList(QDir::AllEntries | QDir::NoDotAndDotDot | QDir::Hidden)) {
             KIO::Job *job = KIO::copy(KUrl::fromPath(ent),
-                                      KUrl::fromPath(QString("%1/home/%2").arg(INSTALLATION_TARGET)
-                                      .arg(user)),
-                 KIO::HideProgressInfo | KIO::Overwrite);
+                                      KUrl::fromPath(QString("%1/home/%2").arg(INSTALLATION_TARGET).arg(user)),
+                                      KIO::HideProgressInfo | KIO::Overwrite);
 
             KIO::NetAccess::synchronousRun(job, 0);
         }
@@ -743,10 +753,18 @@ void InstallationHandler::setUpUsers(QStringList users)
     }
 }
 
-void InstallationHandler::streamPassword(int current)
+void InstallationHandler::streamPassword()
 {
-    m_userProcess->write(QString(userPasswordList().at(current)).toUtf8().data());
+qDebug() << "::::::: setUpUsers() streamPassword() \n" << m_passwdCount << "\n\n";
+    if (userPasswordList().at(m_passwdCount).contains(",,,,,,,,")) {
+        m_userProcess->write(QString(userPasswordList().at(m_passwdCount).split(",,,,,,,,").at(1)).toUtf8().data());
+    } else {
+        m_userProcess->write(QString(userPasswordList().at(m_passwdCount)).toUtf8().data());
+    }
+
     m_userProcess->write("\n");
+    disconnect(m_userProcess, SIGNAL(readyReadStandardError()), this, SLOT(streamPassword()));
+    m_userProcess->deleteLater();
 }
 
 void InstallationHandler::unmountAll()

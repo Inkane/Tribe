@@ -26,11 +26,13 @@ public:
 
     QString login;
     QString password;
+    QString rootPassword;
     QString avatar;
     QString name;
     bool autoLogin;
     bool admin;
     bool passwordsMatch;
+    bool rootPasswordsMatch;
 
     int number;
     void setNumber(int i) { number = i; }
@@ -44,6 +46,8 @@ signals:
 
 private slots:
     void showDetails();
+    void showRootPw();
+
     void emitRemove();
 
     void avatarClicked();

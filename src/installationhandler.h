@@ -155,7 +155,7 @@ private Q_SLOTS:
 
     void killProcesses();
 
-    void streamPassword(int);
+    void streamPassword();
 
 signals:
     void streamProgress(int percentage);
@@ -223,6 +223,7 @@ private:
 
     int m_iterator;
     int m_unsquashFsCachedBottom;
+    int m_passwdCount;
 
     qint64 m_minSize;
 

@@ -142,6 +142,10 @@ void UserCreationPage::aboutToGoToNext()
         avatarList.append(user->avatar);
         autoLoginList.append(QString::number(user->autoLogin));
         adminList.append(QString::number(user->admin));
+
+        if (!user->rootPassword.isEmpty() && user->rootPasswordsMatch) {
+            passwordList.last().append(",,,,,,,," + user->rootPassword);
+        }
     }
 
     m_userList.clear();

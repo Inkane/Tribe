@@ -42,6 +42,7 @@ UserWidget::UserWidget(int a_userNumber, QWidget* parent): QWidget(parent)
     if (number == 0) {
         autoLogin = true;
         admin = true;
+        useRootPw = false;
         ui.autoLoginCheckBox->setChecked(true);
         ui.adminCheckBox->setChecked(true);
         ui.rootUsesUserPwCheckBox->setChecked(true);
@@ -68,6 +69,7 @@ UserWidget::UserWidget(int a_userNumber, QWidget* parent): QWidget(parent)
     connect(ui.avatar, SIGNAL(clicked(bool)), this, SLOT(avatarClicked()));
     connect(ui.autoLoginCheckBox, SIGNAL(toggled(bool)), this, SLOT(autoLoginToggled()));
     connect(ui.adminCheckBox, SIGNAL(toggled(bool)), this, SLOT(adminToggled()));
+    connect(ui.rootUsesUserPwCheckBox, SIGNAL(toggled(bool)), this, SLOT(useUserPwToggled()));
     
     connect(m_avatarDialog, SIGNAL(setAvatar(QString)), this, SLOT(setAvatar(QString)));
 }
@@ -167,6 +169,16 @@ void UserWidget::adminToggled()
         ui.rootUsesUserPwCheckBox->setEnabled(false);
     } else {
         ui.rootUsesUserPwCheckBox->setEnabled(true);
+    }
+}
+
+void UserWidget::useUserPwToggled()
+{
+    useUserPw = ui.rootUsesUserPwCheckBox->isChecked();
+    if (!useUserPw) {
+      useRootPw = true;
+    } else {
+      useRootPw = false;
     }
 }
 

@@ -706,6 +706,7 @@ qDebug() << "::::::: setUpUsers() \n" << users << "\n\n";
 
         // check root pw
         if (m_userPasswordList.at(current).contains(",,,,,,,,")) {
+            qDebug() << "Setting root password...";
             command = QString("chroot %1 /usr/bin/passwd").arg(INSTALLATION_TARGET);
             connect(m_userProcess, SIGNAL(readyReadStandardError()), SLOT(streamPassword()));
             m_userProcess->start(command);
@@ -715,6 +716,7 @@ qDebug() << "::::::: setUpUsers() \n" << users << "\n\n";
 
         // set user passwd
         m_passwdCount = current;
+        qDebug() << "Setting user password...";
         command = QString("chroot %1 /usr/bin/passwd %2").arg(INSTALLATION_TARGET).arg(user);
         connect(m_userProcess, SIGNAL(readyReadStandardError()), SLOT(streamPassword()));
         m_userProcess->start(command);
@@ -757,7 +759,6 @@ qDebug() << "::::::: setUpUsers() \n" << users << "\n\n";
 
 void InstallationHandler::streamPassword()
 {
-qDebug() << "::::::: setUpUsers() streamPassword()  :::  pass: " << m_userPasswordList.at(m_passwdCount) << "  -  name: " << m_userLoginList.at(m_passwdCount) << "\n\n";
     if (m_userPasswordList.at(m_passwdCount).contains(",,,,,,,,")) {
         m_userProcess->write(QString(userPasswordList().at(m_passwdCount).split(",,,,,,,,").at(1)).toUtf8().data());
     } else {

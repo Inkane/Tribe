@@ -121,13 +121,17 @@ void UserCreationPage::aboutToGoToNext()
                 return;
             }
         }
-
+        
         if ((user->password.isEmpty()) && (user->passwordsMatch == true)) {
             KMessageBox::createKMessageBox(dialog, QMessageBox::Warning, i18n("Passwords cannot be empty."),
                                            QStringList(), QString(), &retbool, KMessageBox::Notify);
             return;
         } else if (!user->passwordsMatch) {
             KMessageBox::createKMessageBox(dialog, QMessageBox::Warning, i18n("Passwords do not match..."),
+                                           QStringList(), QString(), &retbool, KMessageBox::Notify);
+            return;
+        } else if ((user->useRootPw) && (!user->rootPasswordsMatch)) {
+            KMessageBox::createKMessageBox(dialog, QMessageBox::Warning, i18n("Root Passwords do not match..."),
                                            QStringList(), QString(), &retbool, KMessageBox::Notify);
             return;
         } else if (user->login.isEmpty()) {
@@ -143,8 +147,12 @@ void UserCreationPage::aboutToGoToNext()
         autoLoginList.append(QString::number(user->autoLogin));
         adminList.append(QString::number(user->admin));
 
-        if (!user->rootPassword.isEmpty() && user->rootPasswordsMatch) {
+        if (user->useRootPw && user->rootPasswordsMatch) {
+            qDebug() << "Using separate root password...";
             passwordList.last().append(",,,,,,,," + user->rootPassword);
+        } else {
+            qDebug() << "Using same password as user " + user->name + " ...";
+            passwordList.last().append(",,,,,,,," + user->password);
         }
     }
 

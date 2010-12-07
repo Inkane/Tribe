@@ -31,6 +31,8 @@ public:
     QString name;
     bool autoLogin;
     bool admin;
+    bool useRootPw;
+    bool useUserPw;
     bool passwordsMatch;
     bool rootPasswordsMatch;
 
@@ -54,6 +56,7 @@ private slots:
     void setAvatar(QString);
     void autoLoginToggled();
     void adminToggled();
+    void useUserPwToggled();
 
     void testFields();
 

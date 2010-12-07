@@ -697,10 +697,10 @@ qDebug() << "::::::: setUpUsers() \n" << users << "\n\n";
         // set autologin
         if (m_userAutoLoginList.at(current) == "1") {
             command = QString("bash -c \"sed -i -e \'s/#AutoLoginEnable=true/AutoLoginEnable=true/\' " + 
-                              QString(INSTALLATION_TARGET) + "/usr/share/config/kdmrc\"");
+                              QString(INSTALLATION_TARGET) + "/usr/share/config/kdm/kdmrc\"");
             QProcess::execute(command);
             command = QString("bash -c \"sed -i -e \'s/#AutoLoginUser=fred/AutoLoginUser=" + user + "/\' " + 
-                              QString(INSTALLATION_TARGET) + "/usr/share/config/kdmrc\"");
+                              QString(INSTALLATION_TARGET) + "/usr/share/config/kdm/kdmrc\"");
             QProcess::execute(command);
         }
 

@@ -709,6 +709,7 @@ qDebug() << "::::::: setUpUsers() \n" << users << "\n\n";
             command = QString("chroot %1 /usr/bin/passwd").arg(INSTALLATION_TARGET);
             connect(m_userProcess, SIGNAL(readyReadStandardError()), SLOT(streamPassword()));
             m_userProcess->start(command);
+            sleep(3);
             m_userProcess->waitForFinished();
         }
 
@@ -717,6 +718,7 @@ qDebug() << "::::::: setUpUsers() \n" << users << "\n\n";
         command = QString("chroot %1 /usr/bin/passwd %2").arg(INSTALLATION_TARGET).arg(user);
         connect(m_userProcess, SIGNAL(readyReadStandardError()), SLOT(streamPassword()));
         m_userProcess->start(command);
+        sleep(3);
         m_userProcess->waitForFinished();
 
         // copy in live user settings

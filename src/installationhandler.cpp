@@ -757,8 +757,8 @@ qDebug() << "::::::: setUpUsers() \n" << users << "\n\n";
 
 void InstallationHandler::streamPassword()
 {
-qDebug() << "::::::: setUpUsers() streamPassword() \n" << m_passwdCount << "\n\n";
-    if (userPasswordList().at(m_passwdCount).contains(",,,,,,,,")) {
+qDebug() << "::::::: setUpUsers() streamPassword() \n" << m_userPasswordList.at(m_passwdCount) << "\n\n";
+    if (m_userPasswordList.at(m_passwdCount).contains(",,,,,,,,")) {
         m_userProcess->write(QString(userPasswordList().at(m_passwdCount).split(",,,,,,,,").at(1)).toUtf8().data());
     } else {
         m_userProcess->write(QString(userPasswordList().at(m_passwdCount)).toUtf8().data());

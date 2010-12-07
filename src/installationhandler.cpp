@@ -763,6 +763,10 @@ qDebug() << "::::::: setUpUsers() streamPassword() \n" << m_passwdCount << "\n\n
     }
 
     m_userProcess->write("\n");
+    
+    sleep(3);
+
+    m_userProcess->waitForFinished();
     disconnect(m_userProcess, SIGNAL(readyReadStandardError()), this, SLOT(streamPassword()));
 }
 

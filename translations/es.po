@@ -1,184 +1,168 @@
-# Traducción al Español para TRIBE
-# Copyright (C) 2009-2010 The Chakra Team
+# Traducción de TRIBE al castellano.
+# TRIBE Spanish Translation.
+# Copyright © 2009-2010 The Chakra Team
 # This file is distributed under the same license as the TRIBE package.
 #
-# Manuel Tortosa <manutortosa@gmail.com>,2009.
 # David Correa Vanegas <david.correav@gmail.com>
+# Manuel Tortosa <manutortosa@gmail.com>,2009.
+# Adrián Chaves Fernández (Gallaecio) <adriyetichaves@gmail.com>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
 "POT-Creation-Date: 2010-12-08 20:39+0100\n"
-"PO-Revision-Date: 2010-01-24 00:57+0100\n"
-"Last-Translator: Manuel Tortosa <manutortosa@gmail.com>\n"
-"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
+"PO-Revision-Date: 2010-12-08 21:44+0100\n"
+"Last-Translator: Adrián Chaves Fernández (Gallaecio) <adriyetichaves@gmail."
+"com>\n"
+"Language-Team: Chakra Project <chakra@chakra-project.org\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: none\n"
 "X-Language: es_ES\n"
-"X-Generator: Lokalize 1.0\n"
+"X-Generator: Lokalize 1.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: src/installationhandler.cpp:86
 msgid "Tribe was not able to initialize needed path: "
-msgstr ""
+msgstr "Tribe no pudo inicializar la ruta necesaria: "
 
 #: src/installationhandler.cpp:86
 msgid " , please resolve the issue, and try again."
-msgstr ""
+msgstr " , resuelva este problema y vuelta a intentarlo."
 
 #: src/installationhandler.cpp:148
 msgid "Installing the system ..."
-msgstr "Instalando el sistema ..."
+msgstr "Instalando el sistema..."
 
 #: src/installationhandler.cpp:176
-#, fuzzy
 msgid "Mounting partitions..."
-msgstr "Montando %1 en %2..."
+msgstr "Montando las particiones..."
 
 #: src/installationhandler.cpp:184
-#, fuzzy
 msgid "Preparing installation..."
-msgstr "Finalizando instalación..."
+msgstr "Preparando la instalación..."
 
 #: src/installationhandler.cpp:204
 msgid "Error copying files"
-msgstr "Error al copiar archivos"
+msgstr "Hubo un error al copiar los ficheiros"
 
 #: src/installationhandler.cpp:207
 msgid "Removing packages whose license has been declined ..."
-msgstr "Eliminado los paquetes cuya licencia ha declinado ..."
+msgstr "Borrando los paquetes cuya licencia no ha sido aceptada..."
 
 #: src/installationhandler.cpp:245
 msgid "Initializing target ..."
-msgstr "Inicializando el destino ...."
+msgstr "Inicializando el objetivo...."
 
 #: src/installationhandler.cpp:336
-#, fuzzy
 msgid "Please wait, configuring the new system ..."
-msgstr "Por favor espere, configurando e iniciado PostInstall ..."
+msgstr "Espere, configurando el nuevo sistema..."
 
 #: src/installationhandler.cpp:412
 msgid "Error in Postinstall script. See log for more details"
-msgstr "Error en el script PostInstall. Para más detalles revise el registro"
+msgstr ""
+"Hubo un error en el guión de post-instalación. Revise el registro para más "
+"información"
 
 #: src/installationhandler.cpp:421
-#, fuzzy
 msgid "Creating user accounts ..."
-msgstr "Creando configuraciones..."
+msgstr "Creando las cuentas de usuario..."
 
 #: src/installationhandler.cpp:424
-#, fuzzy
 msgid "Configuring software management..."
-msgstr "Configurando el hardware ..."
+msgstr "Configurando la gestión de software..."
 
 #: src/installationhandler.cpp:428
-#, fuzzy
 msgid "Removing unused packages..."
-msgstr "Eliminando paquetes innecesarios ..."
+msgstr "Borrando los paquetes innecesarios..."
 
 #: src/installationhandler.cpp:432
 msgid "Installing additional packages..."
-msgstr "Instalando paquetes adicionales ..."
+msgstr "Instalando paquetes adicionales..."
 
 #: src/installationhandler.cpp:436
-#, fuzzy
 msgid "Configuring the display..."
-msgstr "Configurando el hardware ..."
+msgstr "Configurando la pantalla..."
 
 #: src/installationhandler.cpp:440
-#, fuzzy
 msgid "Downloading and installing localization packages..."
-msgstr ""
-"Descargando e instalando paquetes de localización, esto puede tardar un "
-"poco ..."
+msgstr "Descargando e instalando los paquetes de configuración regional..."
 
 #: src/installationhandler.cpp:444
-#, fuzzy
 msgid "Downloading and installing documentation packages..."
-msgstr "Descargar e instalar los paquetes de documentación"
+msgstr "Descargando e instalando los paquetes de documentación..."
 
 #: src/installationhandler.cpp:448
 msgid "Setting up localization..."
-msgstr "Configurando la localización ..."
+msgstr "Estableciendo la configuración regional..."
 
 #: src/installationhandler.cpp:452
 msgid "Creating daemon configuration..."
-msgstr "Creando configuración de daemon ..."
+msgstr "Configurando los daemons..."
 
 #: src/installationhandler.cpp:456
 msgid "Creating network configuration..."
-msgstr "Creando la configuración de red ..."
+msgstr "Configurando la red..."
 
 #: src/installationhandler.cpp:460
 msgid "Creating fstab..."
-msgstr "Creando fstab ..."
+msgstr "Creando fstab..."
 
 #: src/installationhandler.cpp:467
 msgid "Configuring hardware..."
-msgstr "Configurando el hardware ..."
+msgstr "Configurando el hardware..."
 
 #: src/installationhandler.cpp:471
-#, fuzzy
 msgid "Creating initial ramdisk images..."
-msgstr ""
-"Creando imágenes iniciales ramdisk. Esto puedo tardar bastante tiempo, "
-"espere ..."
+msgstr "Creando las imágenes ramdisk iniciales..."
 
 #: src/installationhandler.cpp:475
-#, fuzzy
 msgid "Generating locales..."
-msgstr "Regenerando codificaciones..."
+msgstr "Generando las configuraciones regionales..."
 
 #: src/installationhandler.cpp:479
-#, fuzzy
 msgid "Removing unused localizations..."
-msgstr "Eliminando localizaciones innecesarias..."
+msgstr "Borrando las configuraciones regionales innecesarias..."
 
 #: src/installationhandler.cpp:483
-#, fuzzy
 msgid "Removing unused drivers..."
-msgstr "Eliminando drivers innecesarios..."
+msgstr "Borrando los controladores innecesarios..."
 
 #: src/installationhandler.cpp:487
-#, fuzzy
 msgid "Finishing up..."
-msgstr "Finalizando instalación..."
+msgstr "Terminando..."
 
 #: src/installationhandler.cpp:491
 msgid "Installation complete!"
-msgstr "Instalación completa!"
+msgstr "¡Acabó la instalación!"
 
 #: src/installationhandler.cpp:582
-#, fuzzy
 msgid ""
 "Tribe was not able to initialize needed directories. Something is very "
 "wrong..."
 msgstr ""
-"Tribe no pudo inicializar los directorios necesarios. Probablemente no tiene "
-"privilegios suficientes, por favor, reinicie Tribe como root."
+"Tribe no pudo inicializar los directorios necesarios. Algo va mal... muy mal."
+".."
 
 #: src/installationhandler.cpp:606
 msgid "Could not mount %1"
-msgstr "No es posible montar %1"
+msgstr "No se pudo montar «%1»"
 
 #: src/installationhandler.h:167
 msgid "No Further details given"
-msgstr "No se han dado más detalles"
+msgstr "No hay más información al respecto"
 
 #: src/main.cpp:44
 msgid "Tribe"
 msgstr "Tribe"
 
 #: src/main.cpp:45
-#, fuzzy
 msgid "Graphical Installer for Chakra"
-msgstr "Instalador LiveCD para Chakra"
+msgstr "Instalador gráfico de Chakra"
 
 #: src/main.cpp:46
-#, fuzzy
 msgid "(c) 2008 - 2010 the Chakra Development Team"
-msgstr "(c) 2008 el Equipo de desarrollo de Chakra"
+msgstr "© 2008 - 2010, Equipo de desarrollo de Chakra."
 
 #: src/main.cpp:46
 msgid "chakra@chakra-project.org"
@@ -190,7 +174,7 @@ msgstr "Dario Freddi"
 
 #: src/main.cpp:48
 msgid "Maintainer"
-msgstr "Mantiene:"
+msgstr "Mantenedor"
 
 #: src/main.cpp:49
 msgid "Lukas Appelhans"
@@ -206,24 +190,23 @@ msgstr "Jan Mette"
 
 #: src/main.cpp:50
 msgid "PostInstall Backend and Artwork"
-msgstr "Backend de post-instalación y Trabajo artístico"
+msgstr "Infraestructura de post-instalación y material gráfico"
 
 #: src/main.cpp:51
 msgid "Phil Miller"
-msgstr ""
+msgstr "Phil Miller"
 
 #: src/main.cpp:51 src/main.cpp:52
-#, fuzzy
 msgid "PostInstall Backend"
-msgstr "Backend de post-instalación y Trabajo artístico"
+msgstr "Infraestructura de post-instalación y material gráfico"
 
 #: src/main.cpp:52
 msgid "Manuel Tortosa"
-msgstr ""
+msgstr "Manuel Tortosa"
 
 #: src/main.cpp:53
 msgid "Drake Justice"
-msgstr ""
+msgstr "Drake Justice"
 
 #: src/main.cpp:67
 msgid ""
@@ -232,12 +215,14 @@ msgid ""
 "to AC to minimize possible risks."
 msgstr ""
 "Compruebe que su adaptador de corriente está conectado. La instalación es un "
-"proceso largo y delicado, es altamente recomendable conectar su PC a la "
-"alimentación para reducir los posibles riesgos."
+"proceso largo y delicado, por lo que se recomienda encarecidamente que el "
+"ordenador esté conectado a una fuente de alimentación para reducir los "
+"posibles "
+"riesgos."
 
 #: src/mainwindow.cpp:101
 msgid "Do you really want to abort the installation?"
-msgstr "Realmente desea cancelar la instalación?"
+msgstr "¿Está seguro de que quiere cancelar la instalación?"
 
 #: src/mainwindow.cpp:507
 msgid ""
@@ -245,138 +230,144 @@ msgid ""
 "Tribe will now quit, please check the installation logs in /tmp\n"
 "or ask for help in our forums."
 msgstr ""
-"La instalación ha fallado! Han sido reportados los siguientes errores: %1\n"
-"Tribe se cerrará ahora, por favor, revise los archivos de registro en /tmp\n"
-"o solicite ayuda en nuestros foros."
+"¡La instalación ha fallado! Se ha recopilado información\n"
+"sobre los siguientes errores: %1\n"
+"Tribe procederá ahora a cerrarse, revise los registros de\n"
+"la instalación en «/tmp» o pida ayuda en nuestros foros."
 
 #: src/pages/bootloaderpage.cpp:52
 msgid "Installing bootloader..."
 msgstr "Instalando el gestor de arranque..."
 
 #: src/pages/bootloaderpage.cpp:82
-#, fuzzy
 msgid "Creating OS list..."
-msgstr "Creando fstab ..."
+msgstr "Generando la lista de sistemas operativos..."
 
 #: src/pages/licensepage.cpp:53
 msgid "Proprietary ATI Driver"
-msgstr "Driver propietario de ATI"
+msgstr "Controlador privativo de ATI"
 
 #: src/pages/licensepage.cpp:57
 msgid "Proprietary NVidia Driver"
-msgstr "Driver propietario de NVidia"
+msgstr "Controlador privativo de NVidia"
 
 #: src/pages/licensepage.cpp:117
 msgid "Accept license for: "
-msgstr "Aceptar la licencia para: "
+msgstr "Aceptar la licencia de: "
 
 #: src/pages/localepage.cpp:269
-#, fuzzy
 msgid "You need to select a timezone"
-msgstr "Debe seleccionar una zona horaria."
+msgstr "Debe seleccionar una zona horaria"
 
 #: src/pages/partitionpage.cpp:58 src/pages/partitionpage.cpp:134
-#, fuzzy
 msgid "None"
-msgstr "No"
+msgstr "Ninguna"
 
 #: src/pages/partitionpage.cpp:67 src/pages/partitionpage.cpp:89
 msgid "Other..."
-msgstr ""
+msgstr "Otra..."
 
 #: src/pages/partitionpage.cpp:95
 msgid "Please enter a custom mountpoint"
-msgstr ""
+msgstr "Introduzca un punto de montaje personalizado"
 
 #: src/pages/partitionpage.cpp:107
 msgid "The mount point must start with /"
-msgstr ""
+msgstr "El punto de montaje debe empezar con una barra inclinada, «/»."
 
 #: src/pages/partitionpage.cpp:108
 msgid "Error"
-msgstr "Error"
+msgstr "Hubo un error"
 
 #: src/pages/partitionpage.cpp:130
 msgid "You can only use each mountpoint once."
-msgstr ""
+msgstr "No puede repetir un punto de montaje."
 
 #: src/pages/partitionpage.cpp:131
 msgid "Information"
-msgstr ""
+msgstr "Información"
 
 #: src/pages/partitionpage.cpp:414
 msgid "Loading partitions..."
-msgstr ""
+msgstr "Cargando las particiones..."
 
 #: src/pages/partitionpage.cpp:518
 msgid ""
 "The selected volume already has a partition table.. Overwrite it? (this will "
 "destroy all data on the device)"
 msgstr ""
+"El volumen seleccionado ya tiene una tabla de particiones. ¿Quiere "
+"sobreescribirla (borrando así todos los datos del dispositivo)?"
 
 #: src/pages/partitionpage.cpp:518 src/pages/partitionpage.cpp:525
 msgid "Warning"
-msgstr ""
+msgstr "Advertencia"
 
 #: src/pages/partitionpage.cpp:525
 msgid ""
 "This operation will destroy all data on the selected volume.. Continue "
 "anyway?"
 msgstr ""
+"Esta operación destruirá todos los datos del volumen seleccionado. "
+"¿Quiere continuar de todos modos?"
 
 #: src/pages/partitionpage.cpp:572 src/pages/partitionpage.cpp:796
 #: src/pages/partitionpage.cpp:840
 msgid "Extended"
-msgstr ""
+msgstr "Extendida"
 
 #: src/pages/partitionpage.cpp:797
 msgid "Primary"
-msgstr ""
+msgstr "Primaria"
 
 #: src/pages/partitionpage.cpp:897
-#, fuzzy
 msgid "New partition"
-msgstr "Partición"
+msgstr "Nueva partición"
 
 #: src/pages/partitionpage.cpp:902
 msgid "Unallocated space"
-msgstr ""
+msgstr "Espacio sin asignar"
 
 #: src/pages/partitionpage.cpp:907
 msgid "Linux / Extended"
-msgstr ""
+msgstr "GNU/Linux / Extendida"
 
 #: src/pages/partitionpage.cpp:914
 msgid "Windows / %1"
-msgstr ""
+msgstr "Windows / %1"
 
 #: src/pages/partitionpage.cpp:920
 msgid "Apple / %1"
-msgstr ""
+msgstr "Mac OS / %1"
 
 #: src/pages/partitionpage.cpp:926
 msgid "Linux / %1"
-msgstr ""
+msgstr "GNU/Linux / %1"
 
 #: src/pages/partitionpage.cpp:950
 msgid ""
 "The partition you have chosen to mount as '/' is too small. It should have a "
 "capacity of at least %1 for a successful installation."
 msgstr ""
+"La partición escogida para montar como «/» es demasiado pequeña. Debería "
+"ser de por lo menos %1 para que la instalación pueda llevarse a cabo."
 
 #: src/pages/partitionpage.cpp:953 src/pages/partitionpage.cpp:968
 msgid "Target's capacity not sufficient"
-msgstr ""
+msgstr "La capacidad de la partición seleccionada no es suficiente."
 
 #: src/pages/partitionpage.cpp:966
 msgid ""
 "You have selected '%1' as a mountpoint, which is not valid. A valid "
 "mountpoint always starts with '/' and represents a directory on disk"
 msgstr ""
+"El punto de montaje escogido, «%1», no es correcto. Un punto de "
+"montaje debe empezar siempre por una barra inclinada, «/», y "
+"representa un directorio en el disco."
 
 #: src/pages/readyinstallpage.cpp:77
 msgid "New partition (%1) on %2"
-msgstr ""
+msgstr "Nueva partición (%1) en %2"
 
 #: src/pages/readyinstallpage.cpp:80
 msgid "%1 will be used as %2"
@@ -384,75 +375,69 @@ msgstr "%1 se usará como %2"
 
 #: src/pages/readyinstallpage.cpp:100
 msgid "Continue"
-msgstr ""
+msgstr "Continuar"
 
 #: src/pages/readyinstallpage.cpp:104
-#, fuzzy
 msgid ""
 "The following partitions appear to be mounted: %1. To let the installation "
 "happen correctly, Tribe will now unmount them."
 msgstr ""
-"Las siguientes particiones aparecen montadas: %1. Para continuar la "
-"instalación correctamente, Tribe las desmontará ahora."
+"Las siguientes particiones parecen estar montadas: %1. Tribe procederá "
+"ahora a desmontarlas para que la instalación se efectúe sin problemas."
 
 #: src/pages/settingspage.cpp:92
 msgid "chakra-laptop"
-msgstr "chakra-laptop"
+msgstr "chakra-portatil"
 
 #: src/pages/settingspage.cpp:94
 msgid "chakra-desktop"
-msgstr "chakra-desktop"
+msgstr "chakra-sobremesa"
 
 #: src/pages/usercreationpage.cpp:121
 msgid "You must give at least one login name."
-msgstr ""
+msgstr "Debe indicar por lo menos un nombre de usuario."
 
 #: src/pages/usercreationpage.cpp:135
-#, fuzzy
 msgid "Passwords cannot be empty."
-msgstr "La contraseña está vacia"
+msgstr "No puede dejar el campo de la contraseña vacío."
 
 #: src/pages/usercreationpage.cpp:139
-#, fuzzy
 msgid "Passwords do not match..."
-msgstr "Las contraseñas no coinciden"
+msgstr "Las contraseñas no coinciden."
 
 #: src/pages/usercreationpage.cpp:143
-#, fuzzy
 msgid "Root Passwords do not match..."
-msgstr "Las contraseñas no coinciden"
+msgstr "Las contraseñas de administrador no coinciden."
 
 #: src/pages/usercreationpage.cpp:147
 msgid "Login names cannot be empty."
-msgstr ""
+msgstr "No puede dejar vacío el campo del nombre de usuario."
 
 #: src/pmhandler.cpp:360
-#, fuzzy
 msgid "Preparing hard drive for installation..."
-msgstr "Finalizando instalación..."
+msgstr "Preparando el disco duro para la instalación..."
 
 #: src/pmhandler.cpp:381
-#, fuzzy
 msgid "Analyzing disk..."
-msgstr "Instalando..."
+msgstr "Analizando el disco duro..."
 
 #: src/pmhandler.cpp:445
 msgid "There was an error while formatting partitions"
-msgstr ""
+msgstr "Hubo un erro mientras se formateaban las particiones."
 
 #: src/widgets/avatardialog.cpp:52
 msgid "Custom"
-msgstr ""
+msgstr "Personalizada"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Manuel Tortosa, David Correa"
+msgstr "Manuel Tortosa, David Correa, Adrián Chaves Fernández (Gallaecio)"
 
 #: rc.cpp:2
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "manutortosa@gmail.com,david.correav@gmail.com"
+msgstr "manutortosa@gmail.com,david.correav@gmail.com,adriyetichaves@gmail.com"
 
 #~ msgid "Setting up Tribe..."
 #~ msgstr "Configurando Tribe..."

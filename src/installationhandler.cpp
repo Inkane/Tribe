@@ -754,6 +754,8 @@ qDebug() << "::::::: setUpUsers() \n" << users << "\n\n";
     m_rootUserProcess->start(command);
     sleep(3);
     m_rootUserProcess->waitForFinished();
+    
+    qDebug() << userPasswordList();
 }
 
 void InstallationHandler::streamPassword()

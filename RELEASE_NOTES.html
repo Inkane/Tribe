@@ -5,64 +5,45 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
 </head>
 <body> 
-	<h3>Chakra - 2010-11-23 - Version: 0.2.4-kde445-gf</h3>
+	<h3>Chakra - 2010-12-08 - Version: 0.2.95-kde454-gf</h3>
 	<hr width="100%">
-	The Chakra Developement Team is proud to announce the availability of our forth and last point-release<br>
-	of Jaz, the live-cd using our stable repositories.<br>
-	_______________________________<br>
-	<h4>All that jazz</h4>
-	We are working hard since March 2010 on Chakra GNU/Linux. 10 Developers hacking, packing and<br>
-	writing documentations for our new Distribution.<br>
+	The Chakra Development Team is proud to announce our first release candidate of Ashoc.<br>
+	This image is for finding any quirks we might have created due the KDE-update to 4.5 series in stable. <br>
+	Drake and I worked hard the last past days to get tribe ready for this release. <br>
+	Please test Multi-User creation, with all the new features we added. <br>
+	Also the Marble-page got a new style. <br>
+	The partition-page got enhanced so it will be easier for newcomers to <br>
+	get Chakra GNU/Linux installed. Read the "Build Notes" for further information.<br>
+	Good news about <a href="http://chakra-project.org/ccr/">CCR</a>, our community repository:  <br>
+	You can find now over 363 packages added by our users.<br>
+	Some of those already found their way into our binary repositories.<br>
 	<br>
-	Chakra is a fork of ArchLinux. We are using pacman but working on our own package managment called akabei.<br>
-	Since the split we created some confusion but we are going in the right direction to point out our features:<br>
-	<ul>
-		<li>Over 5670 packages are now available for our new Distribution</li>
-		<li>and over 530 get installed by this media.</li>
-	</ul>
-	To showcase our bundle-system we created cinstall - a multi-tool to create and manage our bundles & packages.<br>
-	All those features you'll find later in shaman. We stabilized tribe and added some changes to get it even better<br>
-	than the last release. Also cinstall got improved.<br>
-	_______________________________<br>
-	<h4>What is under the hood?</h4>
-	Arch-Users will feel right at home from the start. Most stuff is the same like in ArchLinux. We have our own patched<br>
-	kernel to fit our needs for our live-medias and additional features like squashfs with lzma support to squeeze even<br>
-	more on our images.<br>
+	Getting Gimp and other "must have" non-Qt/KDE apps into Chakra you can use <a href="http://chakra-project.org/bundles.html">CBS</a> - the bundle system<br>
+	was created exclusively for Chakra. Learn more about it in our <a href="http://www.chakra-project.org/wiki/index.php/Bundle_System">wiki</a>.<br>
 	<br>
-	All packages are recompiled by our team to get a stable system.<br>
-	On this image we installed translations for catala, deutsch, english and español. Even in live-mode you have your<br>
-	translated menues. More languages you can install thru tribe.<br>
-	_______________________________<br>
-	<h4>What programs will you find ?</h4>
-	We want to give you a minimal full functional KDE Desktop you can build on. We have all you can imagine of programs<br>
-	and plasmoids from the KDE-World in our repositories. Simply use cinstall or pacman to search them.<br><br>
-	Here few to point out:<br>
-	<ul>
-		<li>BlueDevil - manage your bluetooth devices</li>
-		<li>K3B - burn your data</li>
-		<li>Bangarang - watch your medias or TV</li>
-		<li>Networkmanager-Plasmoid - connect to the world</li>
-	</ul>
-	_______________________________<br>
-	<h4>Support us</h4>
-	It took us some months to pull this off, so give us some feedback ;)<br>
-	<ul>
-		<li>test this build and report back in our forum</li>
-		<li>join our team to help us out with documentation</li>
-		<li>support in our forums and irc-channels</li>
-		<li>or pack your favorite apps as bundles or packages ...</li>
-	</ul><br>
-	<a href="http://chakra-project.org/wiki/index.php/Get_Involved">Get involved</a><br>
-	_______________________________<br>
+	Test this build and report back in our forum.<br>
+	Please don't use this image for productive use.<br>
+	<br>
+	greez<br>
+	<br>
+	Phil Miller and the Team behind Chakra-Linux<br>
+	<hr width="100%">
 	<h4>Build-Notes</h4>
+	<h4>Larch</h4>
+	Chakra GNU/Linux uses Larch8 series now.
 	<h4>GTK2+</h4>
-	This image is gtk2 free, so you will miss flashplugin in this image. Also you can't start nvidia-settings since that also<br>
-	needs gtk2. Use nvidia-xconfig instead. You can always install missing packages with pacman from our repositories.<br>
+	This image is gtk2 free, so you will miss flashplugin in this image. Also you can't start nvidia-settings since it<br>
+	needs gtk2 too. Use nvidia-xconfig instead. You can always install missing packages with pacman/cinstall from our repositories.<br>
 	<br>
 	Read more about gtk-freeness <a href="http://chakra-project.org/bbs/viewtopic.php?id=2787">here</a>.<br>
-	<h4>Larch</h4>
-	Chakra GNU/Linux uses Larch8 series now.<br>
-	We changed it just minimal. Most is the original larch8 by Michael Towers.<br>
+	<h4>Debug Packages</h4>
+	Now you can install debug-packages for KDE SC again. Just type this cmd: sudo pacman -Sy kde-debug<br>
+	<h4>Log Packages</h4>
+	Now you can install log-packages for some of the packages in our desktop repository. Just type this cmd: sudo pacman -Sy chakra-log<br>
+	<h4>VGA_SWITCHEROO and ACPI_CALL</h4>
+	With this release we support <a href="http://asusm51ta-with-linux.blogspot.com/">vga_switcheroo</a> and <a href="http://linux-hybrid-graphics.blogspot.com/2010/07/using-acpicall-module-to-switch-onoff.html">acpi_call</a>.<br>
+	Please help us with testing laptops with hybrid-cards. To test if you can switch on/off your discrete graphics card using "test_off.sh".<br>
+	For more info about hybrid graphics consult: <a href="http://linux-hybrid-graphics.blogspot.com/">linux-hybrid-graphics.blogspot.com</a>.<br>
 	<hr width="100%">
 	<h4>System Requirements</h4>
 	<ul>
@@ -73,12 +54,12 @@
 		<li>a reasonably fast internet connection, e.g. no modem (would be too slow)</li>
 	</ul>
 	<hr width="100%">
-	<h4>Most noticeable changes & additions since 0.1.0 (Phoix)</h4>
+	<h4>Most noticeable changes & additions since 0.2.0 (Jaz)</h4>
 	<h4>Features</h4>
 	<ul>
-		<li>Kernel-2.6.33.7-2 with lzma support</li>
+		<li>Kernel-2.6.33.7-3 with lzma support</li>
 		<li>aufs2-20100514-6</li>
-		<li>KDE SC 4.4.5</li>
+		<li>KDE SC 4.5.4</li>
 		<li>Xorg-Server 1.7.7</li>
 		<li>Catalyst-10.8</li>
 		<li>NVidia-256 and NVidia legacy series</li>
@@ -90,94 +71,10 @@
 		<li>english</li>
 		<li>español</li>
 	</ul>
-	Total Installed Size:   2174,77 MB / 533 pkgs
 	<hr width="100%">
 	<h4>Known issues</h4>
-	None so far, but you can report some if you find some.
-	<hr width="100%">
-	<h4>Changes</h4>
-	<h4>since build 0.2.3:</h4>
-	<h4><u>addedpacks</u></h4>
-	<ul>
-		<li>chakra-hardware-detection updated</li>
-		<li>chakra-initscripts ported to larch8</li>
-		<li>larch8 support added</li>
-		<li>updated tool-chain</li>
-		<li>some more pkg-updates</li>
-	</ul>
-	<h4><u>tribe</u></h4>
-	<ul>
-		<li>more code cleaning</li>
-		<li>more gui rework</li>
-	</ul>
-	<h4>since build 0.2.2:</h4>
-	<h4><u>addedpacks</u></h4>
-	<ul>
-		<li>bluedevil updated</li>
-	</ul>
-	<h4><u>tribe</u></h4>
-	<ul>
-		<li>marble page rework</li>
-		<li>su/root issue fixed</li>
-		<li>partition-table creation fixed</li>
-		<li>bluedevil moved to autostart</li>
-	</ul>
-	<h4>since build 0.2.2-rc2:</h4>
-	<h4><u>addedpacks</u></h4>
-	<ul>
-		<li>chakra-hardware-detection updated</li>
-	</ul>
-	<h4><u>tribe</u></h4>
-	<ul>
-		<li>more code cleaning</li>
-		<li>more gui rework</li>
-	</ul>
-	<h4>since build 0.2.2-rc1:</h4>
-	<h4><u>addedpacks</u></h4>
-	<ul>
-		<li>cinstall updated to 0.0.2.2-3</li>
-		<li>updated proprietary drivers</li>
-	</ul>
-	<h4><u>tribe</u></h4>
-	<ul>
-		<li>cleaning backend</li>
-		<li>code cleaning</li>
-		<li>more gui rework</li>
-	</ul>
-	<h4>since build 0.2.1:</h4>
-	<h4><u>addedpacks</u></h4>
-	<ul>
-		<li>ms-fonts removed</li>
-		<li>acerhk, gwenview, juk, kget & ksnapshot added</li>
-		<li>cinstall updated to 0.0.2.2-2</li>
-		<li>vlc,mplayer issue fixed</li>
-	</ul>
-	<h4><u>tribe</u></h4>
-	<ul>
-		<li>gui rework</li>
-		<li>user creation changed</li>
-	</ul>
-	<h4>since build 0.2.0:</h4>
-	<h4><u>addedpacks</u></h4>
-	<ul>
-		<li>updated some pkgs</li>
-	</ul>
-	<h4><u>tribe</u></h4>
-	<ul>
-		<li>gui rework</li>
-		<li>enable partition table creation</li>
-		<li>enable reboot</li>
-	</ul>
-	<h4><u>desktop</u></h4>
-	<ul>
-		<li>readded networkmanager plasmoid</li>
-		<li>cleaned some folders in livemode</li>
-		<li>kdm theme rework</li>
-	</ul>
-	<h4><u>bundle-sys</u></h4>
-	<ul>
-		<li>normal user can run bundles</li>
-	</ul>
+	We expect some ... Tell us when you find them ...<br>
+	<br>
 	<hr width="100%">
 	disc created by Phil Miller (amnon - Chakra ISO-Builder)
 </body>                     

@@ -2,14 +2,13 @@
 # Copyright (C) 2009-2010 L'Equip de Desenvolupament de Chakra
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Manuel Tortosa Moreno <manutortosa@gmail.com>, 2009-2010.
 # Manuel Tortosa Moreno <manutortosa@chakra-project.org>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
 "POT-Creation-Date: 2010-12-08 23:47+0100\n"
-"PO-Revision-Date: 2010-12-08 22:06+0100\n"
+"PO-Revision-Date: 2010-12-09 00:01+0100\n"
 "Last-Translator: Manuel Tortosa Moreno <manutortosa@chakra-project.org>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -513,9 +512,8 @@ msgstr ""
 #. i18n: file: ui/pages/base.ui:334
 #. i18n: ectx: property (text), widget (QLabel, label_15)
 #: rc.cpp:35
-#, fuzzy
 msgid "Create Users"
-msgstr "Creació d'usuari"
+msgstr "Creació d'usuaris"
 
 #. i18n: file: ui/pages/base.ui:390
 #. i18n: ectx: property (text), widget (QLabel, label_11)
@@ -585,7 +583,7 @@ msgstr "Gestor d'arrencada"
 #. i18n: ectx: property (text), widget (QLabel, label_16)
 #: rc.cpp:58
 msgid "Reboot / Enjoy"
-msgstr ""
+msgstr "Reinicia"
 
 #. i18n: file: ui/pages/base.ui:609
 #. i18n: ectx: property (text), widget (QPushButton, abortButton)
@@ -638,7 +636,6 @@ msgstr ""
 #. i18n: file: ui/pages/bootloader.ui:58
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:77
-#, fuzzy
 msgid ""
 "You can now install GRUB as your main bootloader.\n"
 "\n"
@@ -647,7 +644,8 @@ msgid ""
 msgstr ""
 "Ara podeu instal·lar GRUB com a gestor d'arrencada principal.\n"
 "\n"
-"Si no esteu segur d'on s'ha d'instal·lar, deixeu el valor per omissió (hd0)."
+"Si no esteu segur d'on s'ha d'instal·lar,\n"
+"deixeu el valor per omissió (hd0)."
 
 #. i18n: file: ui/pages/bootloader.ui:71
 #. i18n: ectx: property (text), widget (QCheckBox, checkBox)
@@ -706,7 +704,6 @@ msgstr ""
 #. i18n: file: ui/pages/configuration.ui:50
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:102
-#, fuzzy
 msgid ""
 "Although the installer has created a usable default configuration suitable "
 "for most users, you can now configure your newly installed system.\n"
@@ -715,14 +712,15 @@ msgid ""
 "the way you want it."
 msgstr ""
 "L'instal·lador ha creat una configuració adient per a la majoria d'usuaris, "
-"no obstant això podeu configurar ara el nou sistema instal·lat. Si vos plau, "
-"passeu per cada secció i configureu el sistema de la manera més adient "
+"no obstant això podeu configurar ara el nou sistema instal·lat.\n"
+"\n"
+"Si us plau, passeu per cada secció i configureu el sistema de la manera més "
+"adient "
 "conforme a les vostres necessitats."
 
 #. i18n: file: ui/pages/finish.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:107
-#, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -751,7 +749,6 @@ msgstr ""
 #. i18n: file: ui/pages/finish.ui:68
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:114
-#, fuzzy
 msgid ""
 "Congratulations, the installation has been completed!\n"
 "\n"
@@ -770,15 +767,15 @@ msgid ""
 "\n"
 "The Chakra Team"
 msgstr ""
-"Moltes felicitats, s'ha completat la instal·lació. Desitgem que hàgeu gaudit "
-"del que heu vist, com a mínim tant com nosaltres hem gaudit fent-lo,\n"
-"\n"
-"Ara podeu reiniciar al nou sistema instal·lat o seguir utilitzant este "
+"Moltes felicitats, s'ha completat la instal·lació!\n"
+"Desitgem que hàgiu gaudit del que heu vist, com a mínim tant com nosaltres "
+"hem gaudit fent-lo,\n"
+"Ara podeu reiniciar al nou sistema instal·lat o seguir utilitzant aquest "
 "LiveCD.\n"
 "\n"
 "Gràcies per usar Chakra, esteu en contacte amb nosaltres als nostres fòrums, "
-"compartiu la seua opinió, deixeu-nos els vostres consells;\n"
-"s'a dir: Participeu! http://chakra-project.org)\n"
+"compartiu la seva opinió, deixeu-nos els vostres consells;\n"
+"Es a dir: Participeu! http://chakra-project.org)\n"
 "\n"
 "Divertiu-vos!\n"
 "\n"
@@ -955,7 +952,6 @@ msgstr "Tribe - Introducció"
 #. i18n: file: ui/pages/intro.ui:105
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:191
-#, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1019,49 +1015,57 @@ msgstr ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:12pt; font-"
+"weight:400; font-style:normal;\">\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-size:14pt; color:#eeeeee;\">Benvingut a la instal·lació de "
-"Chakra!</span></p>\n"
+"style=\" font-family:'Bitstream Vera Sans'; color:#eeeeee;\">Benvingut a la "
+"instal·lació de Chakra!</span></p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
 "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:"
-"#eeeeee;\"><span style=\" font-weight:600;\">Tribe, el nostre instal·lador, "
-"vos guiarà durant el procés d'instal·lació de Chakra Live System</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\">al vostre ordinador, al finalitzar la "
-"instal·lació tindreu un Arch Linux complet</p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\">instal·lat al vostre ordinador amb els nostres "
-"paquets modulars KDE.</p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-weight:600; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\"> Per favor, llegiu amb tranquil·litat els "
-"textos i les explicacions.</p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; color:#eeeeee;\"></p>\n"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;"
+"\"></p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-weight:600; color:#eeeeee;\"> Recordeu:</span><span style=\" "
-"font-weight:600;\"> </span><span style=\" font-weight:600; color:#ff0000;"
-"\">AIXÒ ES PROGRAMARI ALPHA. ES POT MENJAR EL VOSTRE HAMSTER</span></p>\n"
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">Aquest instal·lador us guiarà durant el procés "
+"d'instal·lació</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">del sistema Live de Chakra al vostre ordinador. Després "
+"d'instal·lar</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">tindreu un sistema Chakra llest per a ésser usat</span></p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
 "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-weight:600; color:#ff0000;\"></p>\n"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
+"weight:536; color:#eeeeee;\"></p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#ff0000;\"><span style=\" color:#eeeeee;\">Divertiu-vos! - "
-"L'equip de Desenvolupament de Chakra</span></p></body></html>"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\"> Llegiu amb cura totes les instruccions.</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;"
+"\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\"> Recordeu:</span><span style=\" font-family:'Bitstream Vera "
+"Sans'; font-size:8pt; font-weight:536;\"> </span><span style=\" font-"
+"family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#ff0000;"
+"\">AQUEST PROGRAMARI ÉS ALPHA, ES POT ENDRAPAR EL VOSTRE HAMSTER</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
+"weight:536; color:#ff0000;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">Gaudiu! - The Chakra Developers</span></p></body></html>"
 
 #. i18n: file: ui/pages/license.ui:49
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1183,9 +1187,8 @@ msgstr "Cerca..."
 #. i18n: file: ui/pages/locale.ui:162
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:243
-#, fuzzy
 msgid "Continent:"
-msgstr "Continua"
+msgstr "Continent:"
 
 #. i18n: file: ui/pages/locale.ui:185
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -1211,14 +1214,13 @@ msgstr "Mostra'ls tots"
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: rc.cpp:258
 msgid "Region: "
-msgstr ""
+msgstr "Regió: "
 
 #. i18n: file: ui/pages/partition.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Partition)
 #: rc.cpp:261
-#, fuzzy
 msgid "Partition"
-msgstr "Partició:"
+msgstr "Partició"
 
 #. i18n: file: ui/pages/partition.ui:43
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1256,24 +1258,27 @@ msgid ""
 "mounted. No permanent changes to your hard drive will be made when you will "
 "press \"Next\""
 msgstr ""
+"Si us plau, seleccioneu un punt de muntatge per a les vostres particions. Heu "
+"de muntar almenys «/». No es farà cap canvi permanent al vostre disc fins que "
+"premeu «Següent»"
 
 #. i18n: file: ui/pages/partition.ui:118
 #. i18n: ectx: property (text), widget (QLabel, typeLabel)
 #: rc.cpp:275
 msgid "Type"
-msgstr ""
+msgstr "Tipus"
 
 #. i18n: file: ui/pages/partition.ui:146
 #. i18n: ectx: property (text), widget (QLabel, filesystemLabel)
 #: rc.cpp:284
 msgid "Filesystem"
-msgstr ""
+msgstr "Sistema de fitxers"
 
 #. i18n: file: ui/pages/partition.ui:173
 #. i18n: ectx: property (suffix), widget (KIntSpinBox, sizeSpinBox)
 #: rc.cpp:287
 msgid " MiB"
-msgstr ""
+msgstr " MiB"
 
 #. i18n: file: ui/pages/partition.ui:193
 #. i18n: ectx: property (text), widget (KPushButton, editPartitionCancelButton)
@@ -1281,7 +1286,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
 #: rc.cpp:290 rc.cpp:426
 msgid "Cancel"
-msgstr ""
+msgstr "Cancel·la"
 
 #. i18n: file: ui/pages/partition.ui:200
 #. i18n: ectx: property (text), widget (KPushButton, editPartitionOkButton)
@@ -1289,19 +1294,19 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, okButton)
 #: rc.cpp:293 rc.cpp:423
 msgid "Ok"
-msgstr ""
+msgstr "Bé"
 
 #. i18n: file: ui/pages/partition.ui:248
 #. i18n: ectx: property (toolTip), widget (QPushButton, newPartTableButton)
 #: rc.cpp:299
 msgid "Create a new partition table on the selected device"
-msgstr ""
+msgstr "Crea una nova taula de particions al dispositiu seleccionat"
 
 #. i18n: file: ui/pages/partition.ui:270
 #. i18n: ectx: property (text), widget (QPushButton, newButton)
 #: rc.cpp:302
 msgid "New"
-msgstr ""
+msgstr "Nova"
 
 #. i18n: file: ui/pages/partition.ui:289
 #. i18n: ectx: property (text), widget (QPushButton, deleteButton)
@@ -1312,22 +1317,20 @@ msgstr "Esborra"
 #. i18n: file: ui/pages/partition.ui:308
 #. i18n: ectx: property (text), widget (QPushButton, formatButton)
 #: rc.cpp:308
-#, fuzzy
 msgid "Format"
-msgstr "Formulari"
+msgstr "Formata"
 
 #. i18n: file: ui/pages/partition.ui:327
 #. i18n: ectx: property (toolTip), widget (QPushButton, undoButton)
 #: rc.cpp:311
 msgid "Undo"
-msgstr ""
+msgstr "Desfés"
 
 #. i18n: file: ui/pages/partition.ui:346
 #. i18n: ectx: property (toolTip), widget (QPushButton, unmountButton)
 #: rc.cpp:314
-#, fuzzy
 msgid "Unmount the selected partition"
-msgstr "Heu de seleccionar una zona horària"
+msgstr "Desmunta la partició seleccionada"
 
 #. i18n: file: ui/pages/readyinstall.ui:51
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1496,33 +1499,29 @@ msgstr ""
 #. i18n: ectx: property (toolTip), widget (QLabel, label_2)
 #: rc.cpp:362
 msgid "or technically, the hostname"
-msgstr ""
+msgstr "o tècnicament, el nom de la màquina"
 
 #. i18n: file: ui/pages/settings.ui:76
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:365
-#, fuzzy
 msgid "What's the name of this computer?         "
-msgstr "El nom d'este ordinador:"
+msgstr "Quin és el nom d'aquest ordinador?        "
 
 #. i18n: file: ui/pages/settings.ui:125
 #. i18n: ectx: property (text), widget (QCheckBox, download_doc)
 #: rc.cpp:368
-#, fuzzy
 msgid "Download and install documentation packages"
-msgstr "S'estan baixant i instal·la paquets de documentació..."
+msgstr "Baixa i instal·la els paquets de documentació"
 
 #. i18n: file: ui/pages/settings.ui:135
 #. i18n: ectx: property (text), widget (QCheckBox, detect_mirror)
 #: rc.cpp:371
-#, fuzzy
 msgid "Detect best mirror server and use it"
-msgstr "Detecta el millor servidor i usa-ho (recomanat)"
+msgstr "Detecta el millor servidor i usa-ho"
 
 #. i18n: file: ui/pages/usercreation.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:401
-#, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1541,26 +1540,25 @@ msgstr ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:14pt; font-"
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Arranjament de Root</span></p></"
-"body></html>"
+"size:22pt; font-weight:600; color:#ffffff;\">Creació usuaris</span></p></body>"
+"</"
+"html>"
 
 #. i18n: file: ui/pages/usercreation.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:408
-#, fuzzy
 msgid "Enter at least one login name and password."
-msgstr "Heu de proporcionar almenys un nom d'inici de sessió."
+msgstr "Heu de proporcionar almenys un nom d'inici de sessió i una contrasenya."
 
 #. i18n: file: ui/pages/usercreation.ui:178
 #. i18n: ectx: property (toolTip), widget (QPushButton, addUser)
 #: rc.cpp:411
-#, fuzzy
 msgid "Add another user account."
-msgstr "Afig un altre usuari.."
+msgstr "Afegeix un altre compte d'usuari."
 
 #. i18n: file: ui/pages/usercreation.ui:286
 #. i18n: ectx: property (text), widget (QLabel, hostname_extra_label)
@@ -1569,39 +1567,38 @@ msgid ""
 "<small>This name will be used if you make the computer visible to others on "
 "a network.</small>"
 msgstr ""
+"<small>Aquest nom s'usarà si feu aquest ordinador visible a altres a una "
+"xarxa</small>"
 
 #. i18n: file: ui/pages/usercreation.ui:299
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:417
-#, fuzzy
 msgid "...and, what is the name of this computer?"
-msgstr "El nom d'este ordinador:"
+msgstr "...i, quin és el nom d'aquest ordinador?"
 
 #. i18n: file: ui/widgets/avatardialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, AvatarDialog)
 #: rc.cpp:420
 msgid "Select an Avatar..."
-msgstr ""
+msgstr "Seleccioneu un Avatar..."
 
 #. i18n: file: ui/widgets/userwidget.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:429
-#, fuzzy
 msgid "Login: "
-msgstr "Accés:"
+msgstr "Inici: "
 
 #. i18n: file: ui/widgets/userwidget.ui:56
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:432
-#, fuzzy
 msgid "Password: "
-msgstr "Contrasenya:"
+msgstr "Contrasenya: "
 
 #. i18n: file: ui/widgets/userwidget.ui:94
 #. i18n: ectx: property (toolTip), widget (QPushButton, userDetails)
 #: rc.cpp:435
 msgid "Include more information about this user."
-msgstr ""
+msgstr "Inclou més informació d'aquest usuari."
 
 #. i18n: file: ui/widgets/userwidget.ui:124
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -1613,20 +1610,19 @@ msgstr "Confirmeu la contrasenya:"
 #. i18n: ectx: property (toolTip), widget (QPushButton, removeUser)
 #: rc.cpp:441
 msgid "Remove this user."
-msgstr ""
+msgstr "Elimina aquest usuari."
 
 #. i18n: file: ui/widgets/userwidget.ui:264
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: rc.cpp:444
-#, fuzzy
 msgid "Name: "
-msgstr "Nom:"
+msgstr "Nom: "
 
 #. i18n: file: ui/widgets/userwidget.ui:307
 #. i18n: ectx: property (text), widget (QCheckBox, autoLoginCheckBox)
 #: rc.cpp:447
 msgid "Login Automatically"
-msgstr ""
+msgstr "Connecta automàticament"
 
 #. i18n: file: ui/widgets/userwidget.ui:344
 #. i18n: ectx: property (text), widget (QCheckBox, rootUsesUserPwCheckBox)
@@ -1635,20 +1631,20 @@ msgid ""
 "Use this password as \n"
 "the Administrator password"
 msgstr ""
+"Usa aquesta contrasenya com \n"
+"la contrasenya de l'administrador"
 
 #. i18n: file: ui/widgets/userwidget.ui:396
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: rc.cpp:454
-#, fuzzy
 msgid "Root Password:  "
-msgstr "Contrasenya de Root"
+msgstr "Contrasenya de Root:  "
 
 #. i18n: file: ui/widgets/userwidget.ui:406
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: rc.cpp:457
-#, fuzzy
 msgid "Confirm Root Password:  "
-msgstr "Confirmeu la contrasenya:"
+msgstr "Confirmeu la contrasenya de Root: "
 
 #: rc.cpp:458
 msgctxt "NAME OF TRANSLATORS"
@@ -1660,575 +1656,3 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "manutortosa@gmail.com"
 
-#~ msgid "Setting up Tribe..."
-#~ msgstr "S'està arranjant Tribe..."
-
-#~ msgid ""
-#~ "It looks like you were not authorized to launch Tribe. Please contact "
-#~ "your system administrator for further details"
-#~ msgstr ""
-#~ "Pareix que no esteu autoritzat per executar Tribe. Contacteu amb el "
-#~ "vostre administrador del sistema per més detalls"
-
-#~ msgid ""
-#~ "It looks like an unclean start of Tribe has taken place. Please kill all "
-#~ "instances of tribe, tribelauncher and tribelauncherworker and try again"
-#~ msgstr ""
-#~ "Pareix que s'ha dut a terme un inici brut del Tribe. Per favor, mateu "
-#~ "totes les instàncies de tribe, tribelauncher i tribelauncherworker i "
-#~ "torneu-ho a intentar"
-
-#~ msgid ""
-#~ "A newer version of Tribe is available.\n"
-#~ "It is strongly advised to upgrade it. Do you want to upgrade Tribe now?"
-#~ msgstr ""
-#~ "Hi ha una nova versió de Tribe disponible\n"
-#~ "Es molt recomanable actualitzar-la. Voleu actualitzar Tribe ara?"
-
-#~ msgid ""
-#~ "A newer version of Arxin is available.\n"
-#~ "Even though not fundamental, upgrading it is recommended. Do you want to "
-#~ "upgrade Arxin now?"
-#~ msgstr ""
-#~ "Hi ha disponible una nova versió de l'Arxin\n"
-#~ "Encara que no s'imprescindible, l'actualització es molt recomanable. "
-#~ "Voleu actualitzar l'Arxin ara?"
-
-#~ msgid "Please Wait, Upgrading Chakra Installer..."
-#~ msgstr "Per favor, espereu. S'està actualitzant l'instal·lador de Chakra..."
-
-#~ msgctxt ""
-#~ "You just have to translate 'remaining' here. Leave everything else as it "
-#~ "is."
-#~ msgid "%p% (%1 KB/s, %2 remaining)"
-#~ msgstr "%p% (%1 KB/s, %2 restant)"
-
-#~ msgid "Please Wait, Installing Packages..."
-#~ msgstr "Per favor, espereu. S'estan instal·lant paquets..."
-
-#~ msgid "Please Wait, Upgrading Packages..."
-#~ msgstr "Per favor, espereu. S'estan actualitzant paquets..."
-
-#~ msgid "Please Wait, Downloading Packages..."
-#~ msgstr "Per favor, espereu. S'estan baixant paquets..."
-
-#~ msgid ""
-#~ "An error occurred while trying to upgrade.\n"
-#~ "Do you want to run Tribe anyway?"
-#~ msgstr ""
-#~ "Ha ocorregut un error en provar d'actualitzar.\n"
-#~ "Voleu executar Tribe igualment?"
-
-#~ msgid "Please wait, Tribe is being started..."
-#~ msgstr "Per favor, espereu, s'està iniciant Tribe..."
-
-#~ msgid "Tribe Launcher"
-#~ msgstr "Llançador Tribe"
-
-#~ msgid "An auto updater and launcher for Tribe"
-#~ msgstr "Un llançador i actualitzador automàtic per a Tribe"
-
-#~ msgid "team@chakra-project.org"
-#~ msgstr "team@chakra-project.org"
-
-#~ msgid ""
-#~ "We appreciate your dedication, but your backtrace has already been "
-#~ "successfully sent"
-#~ msgstr ""
-#~ "Apreciem la vostra dedicació, però el backtrace ja s'ha enviat "
-#~ "correctament"
-
-#~ msgid ""
-#~ "Thanks! Your backtrace was successfully submitted. Now just wait for us "
-#~ "to fix this!"
-#~ msgstr ""
-#~ "Gràcies! El backtrace s'ha enviat correctament. Intentarem arreglar-ho!"
-
-#~ msgid ""
-#~ "There was an error while sending your backtrace!! Probably we could not "
-#~ "connect to the server: you can retry, but the best thing to do would be "
-#~ "saving the backtrace and attaching it to a bug report later."
-#~ msgstr ""
-#~ "Hi ha hagut un error en enviar el backtrace!! Potser no s'ha pogut "
-#~ "connectar al servidor: o podeu tornar a intentar-ho, però el millor que "
-#~ "podeu fer és alçar el backtrace i afegir-lo a un informe d'error més tard."
-
-#~ msgid "Preparing installation, this might take some time ..."
-#~ msgstr "S'està preparant la instal·lació, això pot trigar una mica..."
-
-#~ msgid ""
-#~ "Detecting best mirror server & configuring pacman, this may take a bit..."
-#~ msgstr ""
-#~ "S'està detectant el millor servidor i configurant pacman, això pot trigar "
-#~ "una mica..."
-
-#~ msgid "Setting up X.Org configuration..."
-#~ msgstr "S'està establint la configuració d'X.Org..."
-
-#~ msgid ""
-#~ "Downloading and installing documentation packages, this may take a bit..."
-#~ msgstr ""
-#~ "S'estan baixant i instal·lant els paquets de documentació, això pot "
-#~ "trigar una mica..."
-
-#~ msgid "Could not format %1"
-#~ msgstr "Instal·lació completa!"
-
-#~ msgid "Do you really want to quit the installation?"
-#~ msgstr "Realment voleu abandonar la instal·lació?"
-
-#~ msgid "Creating menu.lst..."
-#~ msgstr "S'està creant menu.lst..."
-
-#~ msgid "Adobe Flash Plugin"
-#~ msgstr "Connector Flash d'Adobe"
-
-#~ msgid "Microsoft Core TTF Fonts"
-#~ msgstr "Tipus de lletra TTF de Microsoft Core"
-
-#~ msgid ""
-#~ "You still have pending operations, please apply or revert them before "
-#~ "continuing"
-#~ msgstr ""
-#~ "Encara hi ha operacions pendents, per favor apliqueu-les o revertiu-les "
-#~ "abans de continuar"
-
-#~ msgid ""
-#~ "It looks like you have selected the mountpoint %1 twice. You can assign "
-#~ "only one partition to a mountpoint"
-#~ msgstr ""
-#~ "Pareix que heu seleccionat el punt de muntatge %1 dos vegades. Només "
-#~ "podeu assignar un partició a un punt de muntatge"
-
-#~ msgid ""
-#~ "Formatting the '/' partition is strongly advised. Going ahead without "
-#~ "formatting it might lead to a non working system after the installation"
-#~ msgstr ""
-#~ "És molt recomanable formatar la partició '/'. Tornar arrere sense "
-#~ "formatar-la pot resultar en un sistema no funcional després de la "
-#~ "instal·lació"
-
-#~ msgid ""
-#~ "You have chosen %1 to be used as swap, however you need a special "
-#~ "filesystem for that. Please mark it for being formatted to continue"
-#~ msgstr ""
-#~ "Heu seleccionat usar %1 com a intercanvi, per tant necessiteu un sistema "
-#~ "de fitxers especial per a això. Marqueu-la per formatar per continuar"
-
-#~ msgid ""
-#~ "The partition %1 you have chosen to use as swap has a filesystem which is "
-#~ "not linuxswap. Please note that this will be changed during installation "
-#~ "procedure"
-#~ msgstr ""
-#~ "La partició %1 que heu seleccionat per usar-la com a intercanvi te un "
-#~ "sistema de fitxers que no és linuxswap. Per favor, noteu que això "
-#~ "canviarà durant el procés d'instal·lació."
-
-#~ msgid ""
-#~ "It looks like you did not assign a partition to '/'. You have to select a "
-#~ "mount point at least for it"
-#~ msgstr ""
-#~ "Pareix que no heu assignat una partició per a '/'. Heu de seleccionar "
-#~ "almenys un punt de muntatge per a '/'."
-
-#~ msgid ""
-#~ "You did not select a partition to be used as swap space. A swap partition "
-#~ "is strongly advised, especially on laptops and system with limited amount "
-#~ "of RAM"
-#~ msgstr ""
-#~ "NO heu seleccionat una partició per usar-la com a espai d'intercanvi. És "
-#~ "molt recomanable una partició d'intercanvi, especialment en portàtils i "
-#~ "sistemes amb una quantitat limitada de RAM"
-
-#~ msgid "Formatting %1 with %2..."
-#~ msgstr "S'està formatant %1 amb %2..."
-
-#~ msgid "%1 will be formatted with %2"
-#~ msgstr "%1 es formatarà amb %2"
-
-#~ msgid "Partitions mounted"
-#~ msgstr "Particions muntades"
-
-#~ msgid "Setting up root user ..."
-#~ msgstr "S'està establint l'usuari root..."
-
-#~ msgid "Configuring users ..."
-#~ msgstr "S'estan configurant els usuaris..."
-
-#~ msgid "Password has to be at least 6 characters"
-#~ msgstr "La contrasenya ha de tindre com a mínim 6 caràcters"
-
-#~ msgid "Passwords match"
-#~ msgstr "Les contrasenyes coincideixen"
-
-#~ msgid "Please wait, reading partition table ..."
-#~ msgstr "Per favor espereu, s'estan llegint les taules de particions..."
-
-#~ msgid "Configuring swap space, this could take some time ..."
-#~ msgstr ""
-#~ "S'està configurant l'espai d'intercanvi, això pot trigar una mica..."
-
-#~ msgid ""
-#~ "You have selected the partition %1 to be mounted twice.\n"
-#~ "Please correct your selection."
-#~ msgstr ""
-#~ "Heu seleccionat la partició %1 per a ser muntada més d'una vegada.\n"
-#~ "Per favor, corregiu la vostra selecció."
-
-#~ msgid ""
-#~ "You have to chosen mount point '%1' for two partitions.\n"
-#~ "Please correct your selection."
-#~ msgstr ""
-#~ "Heu seleccionat el punt de muntatge '%1' per a dues particions.\n"
-#~ "Per favor, corregiu la vostra selecció."
-
-#~ msgid "You have to select a mount point at least for '/'!"
-#~ msgstr "Heu de seleccionar almenys un punt de muntatge per '/'!"
-
-#~ msgid ""
-#~ "You have not configured a username for one user.\n"
-#~ "Please correct your settings."
-#~ msgstr ""
-#~ "No heu configurat un nom d'usuari per un dels usuaris.\n"
-#~ "Per favor, corregiu l'arranjament."
-
-#~ msgid ""
-#~ "You have not configured a password for user %1.\n"
-#~ "Please correct your settings."
-#~ msgstr ""
-#~ "No heu configurat una contrasenya per l'usuari %1.\n"
-#~ "Per favor, corregiu l'arranjament."
-
-#~ msgid "Creating account for new user..."
-#~ msgid_plural "Creating accounts for new users..."
-#~ msgstr[0] ""
-#~ "No heu configurat una contrasenya per l'usuari %1.\n"
-#~ "Per favor, corregiu l'arranjament."
-#~ msgstr[1] "Creant compte de nou usuari..."
-
-#~ msgid "Setting up password ..."
-#~ msgstr "S'està arranjant la contrasenya..."
-
-#~ msgid "Yes"
-#~ msgstr "Sí"
-
-#~ msgid "Please Wait, checking Tribe Updates..."
-#~ msgstr "Per favor espereu, s'estan cercant actualitzacions de Tribe..."
-
-#~ msgid ""
-#~ "Tribe has crashed due to a fatal error. We are extremely sorry about "
-#~ "that, as this should not happen. However, Tribe collected some important "
-#~ "informations about the crash that will be extremely useful to developers "
-#~ "for fixing this problem. The fastest way to report this, if you have an "
-#~ "active internet connection, is clicking \"Send report to developers\". "
-#~ "Otherwise, you can copy/paste the text below and send it to bugs@chakra-"
-#~ "project.org. No personal informations are included, you can see the log "
-#~ "for details."
-#~ msgstr ""
-#~ "Tribe ha petat degut a un error fatal. Ho sentim molt, això no tindria "
-#~ "que passar. Tribe ha recollit informació important quant a este error que "
-#~ "pot ser de molta utilitat als desenvolupadors per arreglar este problema. "
-#~ "La manera més fàcil d'informar d'això, si disposeu d'una connexió activa "
-#~ "a Internet es clicant \"Envia informe als desenvolupadors\". També podeu "
-#~ "copiar/enganxar el text i enviar-lo a bugs@chakra-project.org. No "
-#~ "s'enviara cap informació personal. Podeu mirar el registre per a mes "
-#~ "detalls."
-
-#~ msgid "Copy to clipboard"
-#~ msgstr "Copia al porta-retalls"
-
-#~ msgid "Send report to developers"
-#~ msgstr "Envia informe als desenvolupadors"
-
-#~ msgid "Surname:"
-#~ msgstr "Cognom:"
-
-#~ msgid "Administrator"
-#~ msgstr "Administrador"
-
-#~ msgid "System Settings"
-#~ msgstr "Arranjament del sistema"
-
-#~ msgid "Prepare Partitions"
-#~ msgstr "Preparació de particions"
-
-#~ msgid "Configure System"
-#~ msgstr "Configuració del sistema"
-
-#~ msgid "Time Settings"
-#~ msgstr "Arranjament horari"
-
-#~ msgid "Timezone:"
-#~ msgstr "Zona horària:"
-
-#~ msgid "Language Settings"
-#~ msgstr "Arranjament d'idioma"
-
-#~ msgid ""
-#~ "Now you have to set up your disks for installation. Please use the tool "
-#~ "below to partition, format and select mountpoints. Once you're satisfied "
-#~ "with your choice, click \"Apply\" if you made any changes to the "
-#~ "partition table or requested to format one or more partitions, and then "
-#~ "go ahead. Formatting the partitions you will mount main system paths on "
-#~ "(such as / or /usr) is strongly advised."
-#~ msgstr ""
-#~ "Ara heu d'arranjar els vostres discs per la instal·lació. Per favor, useu "
-#~ "l'eina inferior per partir, formatar i seleccionar els punts de muntatge. "
-#~ "Una vegada esteu satisfet amb la vostra selecció, cliqueu \"Aplica\" si "
-#~ "heu fet qualsevol canvi a la taula de particions o sol·licitat formatar "
-#~ "una o més particions, i seguiu avant. És molt recomanable formatar les "
-#~ "particions que muntareu en els sistema principal (com ara / o /usr)."
-
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-#~ "#eeeeee;\">Formatting Partitions...</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-#~ "#eeeeee;\">S'estan formatant les particions...</span></p></body></html>"
-
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-#~ "#eeeeee;\">Mounting Partitions...</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-#~ "#eeeeee;\">S'estan muntant les particions...</span></p></body></html>"
-
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
-#~ "font-family:'Liberation Sans'; font-size:8pt;\"></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
-#~ "font-family:'Liberation Sans'; font-size:8pt;\"></p></body></html>"
-
-#~ msgid ""
-#~ "Now you can define the behaviour of the user root, who is used to manage "
-#~ "the system.\n"
-#~ "\n"
-#~ "Keeping this user is usually recommended, though you can choose to use "
-#~ "sudo only and disable the root user. Please remind that having the root "
-#~ "account disabled and sudo misconfigured may lead to an unusable system."
-#~ msgstr ""
-#~ "Ara podeu definir el comportament de l'usuari Root que s'usarà per a "
-#~ "gestionar el sistema.\n"
-#~ "\n"
-#~ "Es molt recomanable mantindre este usuari o podeu triar usar l'orde sudo "
-#~ "i desactivar l'usuari Root. Per favor, recordeu que tindre l'usuari Root "
-#~ "desactivat i sudo desconfigurat pot deixar el sistema inusable."
-
-#~ msgid "Enable Root User"
-#~ msgstr "Activa l'usuari Root"
-
-#~ msgid "Password"
-#~ msgstr "Contrasenya"
-
-#~ msgid "Confirm Password"
-#~ msgstr "Confirma contrasenya"
-
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Filesystem Setup</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Arranjament del sistema de fitxers</span></p></body></html>"
-
-#~ msgid ""
-#~ "Please choose what partitions should be used for the installation. Just "
-#~ "select the partition and the mountpoint. You can use the \"Add another "
-#~ "partition\" button to add more of them. To format a partition (most "
-#~ "likely accurate for all system partitions), activate the \"Format\" "
-#~ "checkbox and select a filesystem.\n"
-#~ "\n"
-#~ "You need at least a root (/) and a swap partition. When you have added "
-#~ "all desired partitions, simply press the \"Next\" button."
-#~ msgstr ""
-#~ "Per favor, seleccioneu quines particions voleu usar per a la "
-#~ "instal·lació. Simplement seleccioneu la partició i els punts de muntatge. "
-#~ "Podeu clicar al botó \"Afig partició\" per afegir-hi més particions. Per "
-#~ "formatar una partició (de qualsevol tipus) cliqueu a la casella \"Formata"
-#~ "\" i seleccioneu un sistema de fitxers. Si la partició està muntada (hi "
-#~ "veureu un cadenat a prop d'ella) deureu desmuntar-la abans perquè puga "
-#~ "ser usada durant la instal·lació.\n"
-#~ "\n"
-#~ "Necessitareu com a mínim un directori arrel (/) i una partició "
-#~ "d'intercanvi. Quan hàgeu afegit totes les particions que necessiteu, "
-#~ "simplement cliqueu al botó \"Següent\""
-
-#~ msgid "Add another Partition"
-#~ msgstr "Afig partició"
-
-#~ msgid "Size:"
-#~ msgstr "Mida:"
-
-#~ msgid "ext3"
-#~ msgstr "ext3"
-
-#~ msgid "ext2"
-#~ msgstr "ext2"
-
-#~ msgid "ext4"
-#~ msgstr "ext4"
-
-#~ msgid "reiserfs"
-#~ msgstr "reiserfs"
-
-#~ msgid "jfs"
-#~ msgstr "jfs"
-
-#~ msgid "xfs"
-#~ msgstr "xfs"
-
-#~ msgid "linux-swap"
-#~ msgstr "linux-swap"
-
-#~ msgid "Format with:"
-#~ msgstr "Formata amb:"
-
-#~ msgid "Mountpoint:"
-#~ msgstr "Punt de muntatge:"
-
-#~ msgid "/"
-#~ msgstr "/"
-
-#~ msgid "/boot"
-#~ msgstr "/boot"
-
-#~ msgid "/home"
-#~ msgstr "/home"
-
-#~ msgid "/opt"
-#~ msgstr "/opt"
-
-#~ msgid "/usr"
-#~ msgstr "/usr"
-
-#~ msgid "/tmp"
-#~ msgstr "/tmp"
-
-#~ msgid "/var"
-#~ msgstr "/var"
-
-#~ msgid "swap"
-#~ msgstr "swap"
-
-#~ msgid "Remove"
-#~ msgstr "Elimina"
-
-#~ msgid "General Settings"
-#~ msgstr "Arranjament general"
-
-#~ msgid "Download Settings"
-#~ msgstr "Arranjament de baixada"
-
-#~ msgid ""
-#~ "Enter your name, a corresponding login name and your password to create a "
-#~ "user account. To enable sudo for the created user and allow him to do "
-#~ "administrative tasks, enable the \"Administrator\" option below."
-#~ msgstr ""
-#~ "Introduïu el vostre nom, un nom d'accés corresponent i la vostra "
-#~ "contrasenya per crear un compte d'usuari. Per habilitat sudo per l'usuari "
-#~ "creat i permetre-li fer tasques administratives, habilitau la opció "
-#~ "\"Administrador\" a sota."
-
-#~ msgid "Install plain KDE-Configuration"
-#~ msgstr "Instal·la amb configuració bàsica KDE"
-
-#~ msgid "Install Current-LiveCD-Configuration"
-#~ msgstr "Instal·la amb la configuració actual del LiveCD"
-
-#~ msgid "Install plain KDEMod-Configuration"
-#~ msgstr "Instal·la amb configuració bàsica KDEMod"
-
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Create User</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Creació d'usuari</span></p></body></html>"

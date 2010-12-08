@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2010-12-08 20:39+0100\n"
+"POT-Creation-Date: 2010-12-08 23:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -142,7 +142,9 @@ msgstr ""
 msgid "No Further details given"
 msgstr ""
 
-#: src/main.cpp:44
+#. i18n: file: ui/pages/base.ui:20
+#. i18n: ectx: property (windowTitle), widget (QWidget, Base)
+#: src/main.cpp:44 rc.cpp:3
 msgid "Tribe"
 msgstr ""
 
@@ -288,12 +290,16 @@ msgid ""
 "anyway?"
 msgstr ""
 
+#. i18n: file: ui/pages/partition.ui:126
+#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
 #: src/pages/partitionpage.cpp:572 src/pages/partitionpage.cpp:796
-#: src/pages/partitionpage.cpp:840
+#: src/pages/partitionpage.cpp:840 rc.cpp:278
 msgid "Extended"
 msgstr ""
 
-#: src/pages/partitionpage.cpp:797
+#. i18n: file: ui/pages/partition.ui:131
+#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
+#: src/pages/partitionpage.cpp:797 rc.cpp:281
 msgid "Primary"
 msgstr ""
 
@@ -399,12 +405,939 @@ msgstr ""
 msgid "Custom"
 msgstr ""
 
-#: rc.cpp:1
+#. i18n: file: ui/pages/base.ui:172
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:6
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Welcome</span></p></body></html>"
+msgstr ""
+
+#. i18n: file: ui/pages/base.ui:198
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: file: ui/pages/releasenotes.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, ReleaseNotes)
+#: rc.cpp:13 rc.cpp:342
+msgid "Release Notes"
+msgstr ""
+
+#. i18n: file: ui/pages/base.ui:224
+#. i18n: ectx: property (text), widget (QLabel, licenseLabel)
+#: rc.cpp:16
+msgid "License Approval"
+msgstr ""
+
+#. i18n: file: ui/pages/base.ui:257
+#. i18n: ectx: property (text), widget (QLabel, label_21)
+#: rc.cpp:19
+msgid "Ready to Install"
+msgstr ""
+
+#. i18n: file: ui/pages/base.ui:283
+#. i18n: ectx: property (text), widget (QLabel, label_24)
+#: rc.cpp:22
+msgid "Language & Time"
+msgstr ""
+
+#. i18n: file: ui/pages/base.ui:297
+#. i18n: ectx: property (text), widget (QLabel, label_25)
+#: rc.cpp:25
+msgid "Disk setup"
+msgstr ""
+
+#. i18n: file: ui/pages/base.ui:327
+#. i18n: ectx: property (text), widget (QLabel, label_26)
+#: rc.cpp:28
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Preparation</span></p></body></html>"
+msgstr ""
+
+#. i18n: file: ui/pages/base.ui:334
+#. i18n: ectx: property (text), widget (QLabel, label_15)
+#: rc.cpp:35
+msgid "Create Users"
+msgstr ""
+
+#. i18n: file: ui/pages/base.ui:390
+#. i18n: ectx: property (text), widget (QLabel, label_11)
+#: rc.cpp:38
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Installation</span></p></body></html>"
+msgstr ""
+
+#. i18n: file: ui/pages/base.ui:416
+#. i18n: ectx: property (text), widget (QLabel, label_13)
+#: rc.cpp:45
+msgid "Install System"
+msgstr ""
+
+#. i18n: file: ui/pages/base.ui:453
+#. i18n: ectx: property (text), widget (QLabel, label_14)
+#: rc.cpp:48
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Configuration</span></p></body></html>"
+msgstr ""
+
+#. i18n: file: ui/pages/base.ui:460
+#. i18n: ectx: property (text), widget (QLabel, label_17)
+#: rc.cpp:55
+msgid "Bootloader"
+msgstr ""
+
+#. i18n: file: ui/pages/base.ui:486
+#. i18n: ectx: property (text), widget (QLabel, label_16)
+#: rc.cpp:58
+msgid "Reboot / Enjoy"
+msgstr ""
+
+#. i18n: file: ui/pages/base.ui:609
+#. i18n: ectx: property (text), widget (QPushButton, abortButton)
+#: rc.cpp:61
+msgid "Abort installation"
+msgstr ""
+
+#. i18n: file: ui/pages/base.ui:641
+#. i18n: ectx: property (text), widget (QPushButton, previousButton)
+#: rc.cpp:64
+msgctxt "Previous Page"
+msgid "Previous"
+msgstr ""
+
+#. i18n: file: ui/pages/base.ui:660
+#. i18n: ectx: property (text), widget (QPushButton, nextButton)
+#: rc.cpp:67
+msgctxt "Next Page"
+msgid "Next"
+msgstr ""
+
+#. i18n: file: ui/pages/bootloader.ui:46
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:70
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Bootloader Installation</span></p></body></html>"
+msgstr ""
+
+#. i18n: file: ui/pages/bootloader.ui:58
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:77
+msgid ""
+"You can now install GRUB as your main bootloader.\n"
+"\n"
+"If you are unsure where you should install the bootloader to, \n"
+"just leave the default value (hd0)."
+msgstr ""
+
+#. i18n: file: ui/pages/bootloader.ui:71
+#. i18n: ectx: property (text), widget (QCheckBox, checkBox)
+#: rc.cpp:83
+msgid "Install Bootloader"
+msgstr ""
+
+#. i18n: file: ui/pages/bootloader.ui:89
+#. i18n: ectx: property (text), widget (QPushButton, pushButton)
+#. i18n: file: ui/pages/partition.ui:232
+#. i18n: ectx: property (toolTip), widget (QPushButton, advancedButton)
+#: rc.cpp:86 rc.cpp:296
+msgid "Advanced..."
+msgstr ""
+
+#. i18n: file: ui/pages/bootloader.ui:135
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:89
+msgid "Install to:"
+msgstr ""
+
+#. i18n: file: ui/pages/bootloader.ui:142
+#. i18n: ectx: property (text), widget (QLineEdit, lineEdit)
+#: rc.cpp:92
+msgid "hd0"
+msgstr ""
+
+#. i18n: file: ui/pages/configuration.ui:41
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:95
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Configure System</span></p></body></html>"
+msgstr ""
+
+#. i18n: file: ui/pages/configuration.ui:50
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:102
+msgid ""
+"Although the installer has created a usable default configuration suitable "
+"for most users, you can now configure your newly installed system.\n"
+"\n"
+"Please take some time to step through each section and configure your system "
+"the way you want it."
+msgstr ""
+
+#. i18n: file: ui/pages/finish.ui:46
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:107
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Installation Completed!</span></p></body></html>"
+msgstr ""
+
+#. i18n: file: ui/pages/finish.ui:68
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:114
+msgid ""
+"Congratulations, the installation has been completed!\n"
+"\n"
+"We hope you enjoyed what you have seen as much as we enjoyed creating it.\n"
+"You can now reboot into the installed system or keep using the LiveCD.\n"
+"\n"
+"In case you want to check the installation logs,\n"
+"take a look into /tmp on the live system or into /var/log on the installed "
+"system.\n"
+"\n"
+"Thanks for using Chakra, and get in touch with us in the forums, share "
+"opinions, give advices;\n"
+"To put it simple: Get involved! (http://chakra-project.org)\n"
+"\n"
+"Have Fun!\n"
+"\n"
+"The Chakra Team"
+msgstr ""
+
+#. i18n: file: ui/pages/finish.ui:105
+#. i18n: ectx: property (text), widget (QPushButton, rebootButton)
+#: rc.cpp:130
+msgid "Restart Computer"
+msgstr ""
+
+#. i18n: file: ui/pages/finish.ui:118
+#. i18n: ectx: property (text), widget (QPushButton, chakraButton)
+#: rc.cpp:133
+msgid "Keep using the LiveCD"
+msgstr ""
+
+#. i18n: file: ui/pages/init.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, tribeInit)
+#: rc.cpp:136
+msgid "Ramdisk"
+msgstr ""
+
+#. i18n: file: ui/pages/init.ui:49
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:139
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Ramdisk Setup</span></p></body></html>"
+msgstr ""
+
+#. i18n: file: ui/pages/init.ui:58
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:146
+msgid ""
+"Your hardware will be configured automatically during the installation and a "
+"initial ramdisk environment for booting the linux kernel will be built. "
+"Everything should happen without intervention, but you might need some "
+"options for special boot methods. If you are unsure on what this means, "
+"simply press the \"Next\" button. Otherwise check out the ramdisk options "
+"below and select the items you need for your system."
+msgstr ""
+
+#. i18n: file: ui/pages/init.ui:81
+#. i18n: ectx: property (text), widget (QPushButton, pushButton)
+#. i18n: file: ui/pages/settings.ui:155
+#. i18n: ectx: property (text), widget (QPushButton, pushButton)
+#: rc.cpp:149 rc.cpp:374
+msgid "Ramdisk Options"
+msgstr ""
+
+#. i18n: file: ui/pages/init.ui:111
+#. i18n: ectx: property (text), widget (QCheckBox, usb)
+#. i18n: file: ui/pages/settings.ui:201
+#. i18n: ectx: property (text), widget (QCheckBox, usb)
+#: rc.cpp:152 rc.cpp:377
+msgid "Activate support for booting from USB devices"
+msgstr ""
+
+#. i18n: file: ui/pages/init.ui:118
+#. i18n: ectx: property (text), widget (QCheckBox, firewire)
+#. i18n: file: ui/pages/settings.ui:208
+#. i18n: ectx: property (text), widget (QCheckBox, firewire)
+#: rc.cpp:155 rc.cpp:380
+msgid "Activate support for booting from FireWire devices"
+msgstr ""
+
+#. i18n: file: ui/pages/init.ui:125
+#. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
+#. i18n: file: ui/pages/settings.ui:215
+#. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
+#: rc.cpp:158 rc.cpp:383
+msgid "Activate support for booting from PCMCIA devices"
+msgstr ""
+
+#. i18n: file: ui/pages/init.ui:132
+#. i18n: ectx: property (text), widget (QCheckBox, nfs)
+#. i18n: file: ui/pages/settings.ui:222
+#. i18n: ectx: property (text), widget (QCheckBox, nfs)
+#: rc.cpp:161 rc.cpp:386
+msgid "Activate support for booting from NFS shares"
+msgstr ""
+
+#. i18n: file: ui/pages/init.ui:139
+#. i18n: ectx: property (text), widget (QCheckBox, raid)
+#. i18n: file: ui/pages/settings.ui:229
+#. i18n: ectx: property (text), widget (QCheckBox, raid)
+#: rc.cpp:164 rc.cpp:389
+msgid "Activate support for booting from Software Raid arrays"
+msgstr ""
+
+#. i18n: file: ui/pages/init.ui:146
+#. i18n: ectx: property (text), widget (QCheckBox, mdp)
+#. i18n: file: ui/pages/settings.ui:236
+#. i18n: ectx: property (text), widget (QCheckBox, mdp)
+#: rc.cpp:167 rc.cpp:392
+msgid "Activate support for booting from Software Raid/MDP Partition arrays"
+msgstr ""
+
+#. i18n: file: ui/pages/init.ui:153
+#. i18n: ectx: property (text), widget (QCheckBox, lvm2)
+#. i18n: file: ui/pages/settings.ui:243
+#. i18n: ectx: property (text), widget (QCheckBox, lvm2)
+#: rc.cpp:170 rc.cpp:395
+msgid "Activate support for booting from LVM2 volumes"
+msgstr ""
+
+#. i18n: file: ui/pages/init.ui:160
+#. i18n: ectx: property (text), widget (QCheckBox, encrypted)
+#. i18n: file: ui/pages/settings.ui:250
+#. i18n: ectx: property (text), widget (QCheckBox, encrypted)
+#: rc.cpp:173 rc.cpp:398
+msgid "Activate support for booting from Encrypted volumes"
+msgstr ""
+
+#. i18n: file: ui/pages/installation.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Installation)
+#: rc.cpp:176
+msgid "Tribe Installation"
+msgstr ""
+
+#. i18n: file: ui/pages/installation.ui:88
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#: rc.cpp:179
+msgid "Nine Inch Nails - Discipline"
+msgstr ""
+
+#. i18n: file: ui/pages/installation.ui:93
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#: rc.cpp:182
+msgid "Severed Fifth - War"
+msgstr ""
+
+#. i18n: file: ui/pages/installation.ui:98
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#: rc.cpp:185
+msgid "Dunkelstern - Out of the box"
+msgstr ""
+
+#. i18n: file: ui/pages/intro.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Intro)
+#: rc.cpp:188
+msgid "Tribe Intro"
+msgstr ""
+
+#. i18n: file: ui/pages/intro.ui:105
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:191
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:12pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; color:#eeeeee;\">Welcome to the "
+"Chakra Installation!</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;"
+"\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">This installer will guide you through the process of "
+"installing</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">the Chakra live system on your computer. After the "
+"installation you will</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">have a ready-to-use Chakra Linux system.</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
+"weight:536; color:#eeeeee;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\"> Please carefully read all of the instructions.</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;"
+"\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\"> Remember:</span><span style=\" font-family:'Bitstream Vera "
+"Sans'; font-size:8pt; font-weight:536;\"> </span><span style=\" font-"
+"family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#ff0000;"
+"\">THIS IS ALPHA SOFTWARE, IT COULD EAT YOUR HAMSTER</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
+"weight:536; color:#ff0000;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">Have fun! - The Chakra Developers</span></p></body></html>"
+msgstr ""
+
+#. i18n: file: ui/pages/license.ui:49
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:208
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:22pt; font-weight:600; color:#ffffff;\">License Approval</span></p></"
+"body></html>"
+msgstr ""
+
+#. i18n: file: ui/pages/license.ui:61
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:215
+msgid ""
+"Chakra includes some proprietary software like hardware drivers, media "
+"plugins and fonts. To install them, you have to read and accept their "
+"licenses. If you choose against a license, the installer will try to use a "
+"free solution (if one is available)."
+msgstr ""
+
+#. i18n: file: ui/pages/license.ui:74
+#. i18n: ectx: property (text), widget (QLabel, licenseLabel)
+#: rc.cpp:218
+msgid "Approve license for:"
+msgstr ""
+
+#. i18n: file: ui/pages/license.ui:103
+#. i18n: ectx: property (text), widget (QRadioButton, declineButton)
+#: rc.cpp:221
+msgid "Decline License"
+msgstr ""
+
+#. i18n: file: ui/pages/license.ui:110
+#. i18n: ectx: property (text), widget (QRadioButton, acceptButton)
+#: rc.cpp:224
+msgid "Accept License"
+msgstr ""
+
+#. i18n: file: ui/pages/locale.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Locale)
+#: rc.cpp:227
+msgid "Form"
+msgstr ""
+
+#. i18n: file: ui/pages/locale.ui:35
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:230
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Language &amp; Time</span></p></body></html>"
+msgstr ""
+
+#. i18n: file: ui/pages/locale.ui:45
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:237
+msgid ""
+"Please select the nearest city on the globe so the installer can suggest the "
+"locale and timezone settings for you. You can fine-tune the suggested "
+"settings at the bottom of the page. If you cant find your region or city on "
+"the globe, you can zoom in by using the slider on the left."
+msgstr ""
+
+#. i18n: file: ui/pages/locale.ui:69
+#. i18n: ectx: property (clickMessage), widget (KLineEdit, locationsSearch)
+#: rc.cpp:240
+msgid "Search..."
+msgstr ""
+
+#. i18n: file: ui/pages/locale.ui:162
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:243
+msgid "Continent:"
+msgstr ""
+
+#. i18n: file: ui/pages/locale.ui:185
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:246
+msgid "Language:"
+msgstr ""
+
+#. i18n: file: ui/pages/locale.ui:208
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:249
+msgid "Locale:"
+msgstr ""
+
+#. i18n: file: ui/pages/locale.ui:263
+#. i18n: ectx: property (text), widget (QCheckBox, showLocalesCheck)
+#. i18n: file: ui/pages/locale.ui:270
+#. i18n: ectx: property (text), widget (QCheckBox, showKDELangsCheck)
+#: rc.cpp:252 rc.cpp:255
+msgid "Show all"
+msgstr ""
+
+#. i18n: file: ui/pages/locale.ui:277
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: rc.cpp:258
+msgid "Region: "
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Partition)
+#: rc.cpp:261
+msgid "Partition"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:43
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:264
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Disk setup</span></p></body></html>"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:58
+#. i18n: ectx: property (text), widget (QLabel, descriptionLabel)
+#: rc.cpp:271
+msgid ""
+"Please select a mountpoint for your partitions. At least '/' should be "
+"mounted. No permanent changes to your hard drive will be made when you will "
+"press \"Next\""
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:118
+#. i18n: ectx: property (text), widget (QLabel, typeLabel)
+#: rc.cpp:275
+msgid "Type"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:146
+#. i18n: ectx: property (text), widget (QLabel, filesystemLabel)
+#: rc.cpp:284
+msgid "Filesystem"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:173
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, sizeSpinBox)
+#: rc.cpp:287
+msgid " MiB"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:193
+#. i18n: ectx: property (text), widget (KPushButton, editPartitionCancelButton)
+#. i18n: file: ui/widgets/avatardialog.ui:111
+#. i18n: ectx: property (text), widget (QPushButton, cancelButton)
+#: rc.cpp:290 rc.cpp:426
+msgid "Cancel"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:200
+#. i18n: ectx: property (text), widget (KPushButton, editPartitionOkButton)
+#. i18n: file: ui/widgets/avatardialog.ui:82
+#. i18n: ectx: property (text), widget (QPushButton, okButton)
+#: rc.cpp:293 rc.cpp:423
+msgid "Ok"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:248
+#. i18n: ectx: property (toolTip), widget (QPushButton, newPartTableButton)
+#: rc.cpp:299
+msgid "Create a new partition table on the selected device"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:270
+#. i18n: ectx: property (text), widget (QPushButton, newButton)
+#: rc.cpp:302
+msgid "New"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:289
+#. i18n: ectx: property (text), widget (QPushButton, deleteButton)
+#: rc.cpp:305
+msgid "Delete"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:308
+#. i18n: ectx: property (text), widget (QPushButton, formatButton)
+#: rc.cpp:308
+msgid "Format"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:327
+#. i18n: ectx: property (toolTip), widget (QPushButton, undoButton)
+#: rc.cpp:311
+msgid "Undo"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:346
+#. i18n: ectx: property (toolTip), widget (QPushButton, unmountButton)
+#: rc.cpp:314
+msgid "Unmount the selected partition"
+msgstr ""
+
+#. i18n: file: ui/pages/readyinstall.ui:51
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:317
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Ready to Install</span></p></body></html>"
+msgstr ""
+
+#. i18n: file: ui/pages/readyinstall.ui:77
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:324
+msgid ""
+"The system will be installed with the following settings. Before continuing, "
+"please review your selections:\n"
+msgstr ""
+
+#. i18n: file: ui/pages/readyinstall.ui:147
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:328
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+"#eeeeee;\">The following partitions will be used:</span></p></body></html>"
+msgstr ""
+
+#. i18n: file: ui/pages/readyinstall.ui:211
+#. i18n: ectx: property (text), widget (QLabel, formatLabel)
+#: rc.cpp:335
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+"#eeeeee;\">The following partitions will be formatted:</span></p></body></"
+"html>"
+msgstr ""
+
+#. i18n: file: ui/pages/releasenotes.ui:47
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:345
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
+"style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Release Notes</"
+"span></p></body></html>"
+msgstr ""
+
+#. i18n: file: ui/pages/releasenotes.ui:60
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:352
+msgid ""
+"Check out what's new, the known issues and general information about this "
+"version of Chakra. As always, you are encouraged to tell us what you think, "
+"either by visiting our forums or bug tracker."
+msgstr ""
+
+#. i18n: file: ui/pages/settings.ui:46
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:355
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">System Settings</span></p></body></html>"
+msgstr ""
+
+#. i18n: file: ui/pages/settings.ui:73
+#. i18n: ectx: property (toolTip), widget (QLabel, label_2)
+#: rc.cpp:362
+msgid "or technically, the hostname"
+msgstr ""
+
+#. i18n: file: ui/pages/settings.ui:76
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:365
+msgid "What's the name of this computer?         "
+msgstr ""
+
+#. i18n: file: ui/pages/settings.ui:125
+#. i18n: ectx: property (text), widget (QCheckBox, download_doc)
+#: rc.cpp:368
+msgid "Download and install documentation packages"
+msgstr ""
+
+#. i18n: file: ui/pages/settings.ui:135
+#. i18n: ectx: property (text), widget (QCheckBox, detect_mirror)
+#: rc.cpp:371
+msgid "Detect best mirror server and use it"
+msgstr ""
+
+#. i18n: file: ui/pages/usercreation.ui:35
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:401
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:14pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:22pt; font-weight:600; color:#ffffff;\">Create Users</span></p></body></"
+"html>"
+msgstr ""
+
+#. i18n: file: ui/pages/usercreation.ui:42
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:408
+msgid "Enter at least one login name and password."
+msgstr ""
+
+#. i18n: file: ui/pages/usercreation.ui:178
+#. i18n: ectx: property (toolTip), widget (QPushButton, addUser)
+#: rc.cpp:411
+msgid "Add another user account."
+msgstr ""
+
+#. i18n: file: ui/pages/usercreation.ui:286
+#. i18n: ectx: property (text), widget (QLabel, hostname_extra_label)
+#: rc.cpp:414
+msgid ""
+"<small>This name will be used if you make the computer visible to others on "
+"a network.</small>"
+msgstr ""
+
+#. i18n: file: ui/pages/usercreation.ui:299
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:417
+msgid "...and, what is the name of this computer?"
+msgstr ""
+
+#. i18n: file: ui/widgets/avatardialog.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, AvatarDialog)
+#: rc.cpp:420
+msgid "Select an Avatar..."
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:46
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:429
+msgid "Login: "
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:56
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:432
+msgid "Password: "
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:94
+#. i18n: ectx: property (toolTip), widget (QPushButton, userDetails)
+#: rc.cpp:435
+msgid "Include more information about this user."
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:124
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:438
+msgid "Confirm Password:"
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:146
+#. i18n: ectx: property (toolTip), widget (QPushButton, removeUser)
+#: rc.cpp:441
+msgid "Remove this user."
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:264
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:444
+msgid "Name: "
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:307
+#. i18n: ectx: property (text), widget (QCheckBox, autoLoginCheckBox)
+#: rc.cpp:447
+msgid "Login Automatically"
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:344
+#. i18n: ectx: property (text), widget (QCheckBox, rootUsesUserPwCheckBox)
+#: rc.cpp:450
+msgid ""
+"Use this password as \n"
+"the Administrator password"
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:396
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:454
+msgid "Root Password:  "
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:406
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: rc.cpp:457
+msgid "Confirm Root Password:  "
+msgstr ""
+
+#: rc.cpp:458
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr ""
 
-#: rc.cpp:2
+#: rc.cpp:459
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""

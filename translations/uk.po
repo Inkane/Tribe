@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2010-12-08 20:39+0100\n"
+"POT-Creation-Date: 2010-12-08 23:47+0100\n"
 "PO-Revision-Date: 2010-02-22 16:21+0200\n"
 "Last-Translator: \n"
 "Language-Team: Ukrainian <kde-i18n-doc@kde.org>\n"
@@ -180,7 +180,9 @@ msgstr "Неможливо змонтувати %1"
 msgid "No Further details given"
 msgstr "Інших подробиць не дано"
 
-#: src/main.cpp:44
+#. i18n: file: ui/pages/base.ui:20
+#. i18n: ectx: property (windowTitle), widget (QWidget, Base)
+#: src/main.cpp:44 rc.cpp:3
 #, fuzzy
 msgid "Tribe"
 msgstr "Tribe"
@@ -354,12 +356,16 @@ msgid ""
 "anyway?"
 msgstr ""
 
+#. i18n: file: ui/pages/partition.ui:126
+#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
 #: src/pages/partitionpage.cpp:572 src/pages/partitionpage.cpp:796
-#: src/pages/partitionpage.cpp:840
+#: src/pages/partitionpage.cpp:840 rc.cpp:278
 msgid "Extended"
 msgstr ""
 
-#: src/pages/partitionpage.cpp:797
+#. i18n: file: ui/pages/partition.ui:131
+#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
+#: src/pages/partitionpage.cpp:797 rc.cpp:281
 msgid "Primary"
 msgstr ""
 
@@ -477,13 +483,1297 @@ msgstr ""
 msgid "Custom"
 msgstr ""
 
-#: rc.cpp:1
+#. i18n: file: ui/pages/base.ui:172
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:6
+#, fuzzy
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Welcome</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Ласкаво просимо</span></p></body></html>"
+
+#. i18n: file: ui/pages/base.ui:198
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: file: ui/pages/releasenotes.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, ReleaseNotes)
+#: rc.cpp:13 rc.cpp:342
+#, fuzzy
+msgid "Release Notes"
+msgstr "Нотатки про випуск"
+
+#. i18n: file: ui/pages/base.ui:224
+#. i18n: ectx: property (text), widget (QLabel, licenseLabel)
+#: rc.cpp:16
+#, fuzzy
+msgid "License Approval"
+msgstr "Ліцензійна згода"
+
+#. i18n: file: ui/pages/base.ui:257
+#. i18n: ectx: property (text), widget (QLabel, label_21)
+#: rc.cpp:19
+#, fuzzy
+msgid "Ready to Install"
+msgstr "Готово для встановлення"
+
+#. i18n: file: ui/pages/base.ui:283
+#. i18n: ectx: property (text), widget (QLabel, label_24)
+#: rc.cpp:22
+#, fuzzy
+msgid "Language & Time"
+msgstr "Мова та час"
+
+#. i18n: file: ui/pages/base.ui:297
+#. i18n: ectx: property (text), widget (QLabel, label_25)
+#: rc.cpp:25
+#, fuzzy
+msgid "Disk setup"
+msgstr "Установлення диска"
+
+#. i18n: file: ui/pages/base.ui:327
+#. i18n: ectx: property (text), widget (QLabel, label_26)
+#: rc.cpp:28
+#, fuzzy
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Preparation</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Підготовка</span></p></body></html>"
+
+#. i18n: file: ui/pages/base.ui:334
+#. i18n: ectx: property (text), widget (QLabel, label_15)
+#: rc.cpp:35
+#, fuzzy
+msgid "Create Users"
+msgstr "Створити користувача"
+
+#. i18n: file: ui/pages/base.ui:390
+#. i18n: ectx: property (text), widget (QLabel, label_11)
+#: rc.cpp:38
+#, fuzzy
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Installation</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Установлення</span></p></body></html>"
+
+#. i18n: file: ui/pages/base.ui:416
+#. i18n: ectx: property (text), widget (QLabel, label_13)
+#: rc.cpp:45
+#, fuzzy
+msgid "Install System"
+msgstr "Установити систему"
+
+#. i18n: file: ui/pages/base.ui:453
+#. i18n: ectx: property (text), widget (QLabel, label_14)
+#: rc.cpp:48
+#, fuzzy
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Configuration</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Налаштування</span></p></body></html>"
+
+#. i18n: file: ui/pages/base.ui:460
+#. i18n: ectx: property (text), widget (QLabel, label_17)
+#: rc.cpp:55
+#, fuzzy
+msgid "Bootloader"
+msgstr "Завантажувач"
+
+#. i18n: file: ui/pages/base.ui:486
+#. i18n: ectx: property (text), widget (QLabel, label_16)
+#: rc.cpp:58
+msgid "Reboot / Enjoy"
+msgstr ""
+
+#. i18n: file: ui/pages/base.ui:609
+#. i18n: ectx: property (text), widget (QPushButton, abortButton)
+#: rc.cpp:61
+#, fuzzy
+msgid "Abort installation"
+msgstr "Скасувати встановлення"
+
+#. i18n: file: ui/pages/base.ui:641
+#. i18n: ectx: property (text), widget (QPushButton, previousButton)
+#: rc.cpp:64
+#, fuzzy
+msgctxt "Previous Page"
+msgid "Previous"
+msgstr "Назад"
+
+#. i18n: file: ui/pages/base.ui:660
+#. i18n: ectx: property (text), widget (QPushButton, nextButton)
+#: rc.cpp:67
+#, fuzzy
+msgctxt "Next Page"
+msgid "Next"
+msgstr "Далі"
+
+#. i18n: file: ui/pages/bootloader.ui:46
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:70
+#, fuzzy
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Bootloader Installation</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Установлення завантажувача</span></p></body></html>"
+
+#. i18n: file: ui/pages/bootloader.ui:58
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:77
+#, fuzzy
+msgid ""
+"You can now install GRUB as your main bootloader.\n"
+"\n"
+"If you are unsure where you should install the bootloader to, \n"
+"just leave the default value (hd0)."
+msgstr ""
+"Тепер ви можете встановити GRUB як ваш основний завантажувач.\n"
+"\n"
+"Якщо ви не певні, куди варто його встановити, тоді залиште типове значення  "
+"(hd0)."
+
+#. i18n: file: ui/pages/bootloader.ui:71
+#. i18n: ectx: property (text), widget (QCheckBox, checkBox)
+#: rc.cpp:83
+#, fuzzy
+msgid "Install Bootloader"
+msgstr "Установити завантажувач"
+
+#. i18n: file: ui/pages/bootloader.ui:89
+#. i18n: ectx: property (text), widget (QPushButton, pushButton)
+#. i18n: file: ui/pages/partition.ui:232
+#. i18n: ectx: property (toolTip), widget (QPushButton, advancedButton)
+#: rc.cpp:86 rc.cpp:296
+#, fuzzy
+msgid "Advanced..."
+msgstr "Додатково…"
+
+#. i18n: file: ui/pages/bootloader.ui:135
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:89
+#, fuzzy
+msgid "Install to:"
+msgstr "Установити на:"
+
+#. i18n: file: ui/pages/bootloader.ui:142
+#. i18n: ectx: property (text), widget (QLineEdit, lineEdit)
+#: rc.cpp:92
+#, fuzzy
+msgid "hd0"
+msgstr "hd0"
+
+#. i18n: file: ui/pages/configuration.ui:41
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:95
+#, fuzzy
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Configure System</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Системні налаштування</span></p></body></html>"
+
+#. i18n: file: ui/pages/configuration.ui:50
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:102
+#, fuzzy
+msgid ""
+"Although the installer has created a usable default configuration suitable "
+"for most users, you can now configure your newly installed system.\n"
+"\n"
+"Please take some time to step through each section and configure your system "
+"the way you want it."
+msgstr ""
+"Хоча встановлювач створив зручні типові налаштування, які придатні для "
+"більшості користувачів, зараз ви можете налаштувати нещодавно встановлену "
+"систему. Будь ласка, приділіть трохи часу на кожен вибір і налаштуйте "
+"систему в найзручніший для вас спосіб."
+
+#. i18n: file: ui/pages/finish.ui:46
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:107
+#, fuzzy
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Installation Completed!</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Установлення завершено !</span></p></body></html>"
+
+#. i18n: file: ui/pages/finish.ui:68
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:114
+#, fuzzy
+msgid ""
+"Congratulations, the installation has been completed!\n"
+"\n"
+"We hope you enjoyed what you have seen as much as we enjoyed creating it.\n"
+"You can now reboot into the installed system or keep using the LiveCD.\n"
+"\n"
+"In case you want to check the installation logs,\n"
+"take a look into /tmp on the live system or into /var/log on the installed "
+"system.\n"
+"\n"
+"Thanks for using Chakra, and get in touch with us in the forums, share "
+"opinions, give advices;\n"
+"To put it simple: Get involved! (http://chakra-project.org)\n"
+"\n"
+"Have Fun!\n"
+"\n"
+"The Chakra Team"
+msgstr ""
+"Вітаємо, встановлення завершено! Ми сподіваємось, що ви задоволені тим, що "
+"ви побачили, так самісінько, як ми, створюючи це.\n"
+"\n"
+"Тепер ви можете перезавантажитись до встановленої системи або й надалі "
+"використовувати LiveCD.\n"
+"\n"
+"Якщо ви бажаєте перевірити журнали встановлення, погляньте в /tmp на живій "
+"системі або в /var/log на встановленій системі.\n"
+"\n"
+"Дякуємо за використання Chakra, і зв'язуйтесь з нами через форуми, "
+"викладайте свої думки, надавайте поради тощо;\n"
+"Коротше: долучайтесь! (http://chakra-project.org)\n"
+"\n"
+"Насолоджуйтесь!\n"
+"\n"
+"Команда Chakra"
+
+#. i18n: file: ui/pages/finish.ui:105
+#. i18n: ectx: property (text), widget (QPushButton, rebootButton)
+#: rc.cpp:130
+#, fuzzy
+msgid "Restart Computer"
+msgstr "Перезавантажити комп'ютер"
+
+#. i18n: file: ui/pages/finish.ui:118
+#. i18n: ectx: property (text), widget (QPushButton, chakraButton)
+#: rc.cpp:133
+#, fuzzy
+msgid "Keep using the LiveCD"
+msgstr "І надалі використовувати LiveCD"
+
+#. i18n: file: ui/pages/init.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, tribeInit)
+#: rc.cpp:136
+#, fuzzy
+msgid "Ramdisk"
+msgstr "Ramdisk"
+
+#. i18n: file: ui/pages/init.ui:49
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:139
+#, fuzzy
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Ramdisk Setup</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Установлення Ramdisk</span></p></body></html>"
+
+#. i18n: file: ui/pages/init.ui:58
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:146
+#, fuzzy
+msgid ""
+"Your hardware will be configured automatically during the installation and a "
+"initial ramdisk environment for booting the linux kernel will be built. "
+"Everything should happen without intervention, but you might need some "
+"options for special boot methods. If you are unsure on what this means, "
+"simply press the \"Next\" button. Otherwise check out the ramdisk options "
+"below and select the items you need for your system."
+msgstr ""
+"Ваш комп'ютер буде налаштовано автоматично протягом установлення і запущено "
+"середовище ramdisk для завантаження збірки ядра. Усе має пройти без "
+"утручання, але, можливо, буде потрібно вибрати деякі варіанти для особливих "
+"способів завантаження. Якщо ви не розумієте про що йдеться, то натисніть "
+"«Далі».  Або перевірте варіанти ramdisk нижче та виберіть пункти, потрібні "
+"для вашої системи."
+
+#. i18n: file: ui/pages/init.ui:81
+#. i18n: ectx: property (text), widget (QPushButton, pushButton)
+#. i18n: file: ui/pages/settings.ui:155
+#. i18n: ectx: property (text), widget (QPushButton, pushButton)
+#: rc.cpp:149 rc.cpp:374
+#, fuzzy
+msgid "Ramdisk Options"
+msgstr "Варіанти Ramdisk "
+
+#. i18n: file: ui/pages/init.ui:111
+#. i18n: ectx: property (text), widget (QCheckBox, usb)
+#. i18n: file: ui/pages/settings.ui:201
+#. i18n: ectx: property (text), widget (QCheckBox, usb)
+#: rc.cpp:152 rc.cpp:377
+#, fuzzy
+msgid "Activate support for booting from USB devices"
+msgstr "Увімкнути підтримку завантаження з пристроїв USB"
+
+#. i18n: file: ui/pages/init.ui:118
+#. i18n: ectx: property (text), widget (QCheckBox, firewire)
+#. i18n: file: ui/pages/settings.ui:208
+#. i18n: ectx: property (text), widget (QCheckBox, firewire)
+#: rc.cpp:155 rc.cpp:380
+#, fuzzy
+msgid "Activate support for booting from FireWire devices"
+msgstr "Увімкнути підтримку завантаження з пристроїв FireWire"
+
+#. i18n: file: ui/pages/init.ui:125
+#. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
+#. i18n: file: ui/pages/settings.ui:215
+#. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
+#: rc.cpp:158 rc.cpp:383
+#, fuzzy
+msgid "Activate support for booting from PCMCIA devices"
+msgstr "Увімкнути підтримку завантаження з пристроїв PCMCIA"
+
+#. i18n: file: ui/pages/init.ui:132
+#. i18n: ectx: property (text), widget (QCheckBox, nfs)
+#. i18n: file: ui/pages/settings.ui:222
+#. i18n: ectx: property (text), widget (QCheckBox, nfs)
+#: rc.cpp:161 rc.cpp:386
+#, fuzzy
+msgid "Activate support for booting from NFS shares"
+msgstr "Увімкнути підтримку завантаження з мережі NFS"
+
+#. i18n: file: ui/pages/init.ui:139
+#. i18n: ectx: property (text), widget (QCheckBox, raid)
+#. i18n: file: ui/pages/settings.ui:229
+#. i18n: ectx: property (text), widget (QCheckBox, raid)
+#: rc.cpp:164 rc.cpp:389
+#, fuzzy
+msgid "Activate support for booting from Software Raid arrays"
+msgstr "Увімкнути підтримку завантаження з масивів RAID"
+
+#. i18n: file: ui/pages/init.ui:146
+#. i18n: ectx: property (text), widget (QCheckBox, mdp)
+#. i18n: file: ui/pages/settings.ui:236
+#. i18n: ectx: property (text), widget (QCheckBox, mdp)
+#: rc.cpp:167 rc.cpp:392
+#, fuzzy
+msgid "Activate support for booting from Software Raid/MDP Partition arrays"
+msgstr "Увімкнути підтримку завантаження з розділу масивів RAID/MDP"
+
+#. i18n: file: ui/pages/init.ui:153
+#. i18n: ectx: property (text), widget (QCheckBox, lvm2)
+#. i18n: file: ui/pages/settings.ui:243
+#. i18n: ectx: property (text), widget (QCheckBox, lvm2)
+#: rc.cpp:170 rc.cpp:395
+#, fuzzy
+msgid "Activate support for booting from LVM2 volumes"
+msgstr "Увімкнути підтримку завантаження з томів LVM2"
+
+#. i18n: file: ui/pages/init.ui:160
+#. i18n: ectx: property (text), widget (QCheckBox, encrypted)
+#. i18n: file: ui/pages/settings.ui:250
+#. i18n: ectx: property (text), widget (QCheckBox, encrypted)
+#: rc.cpp:173 rc.cpp:398
+#, fuzzy
+msgid "Activate support for booting from Encrypted volumes"
+msgstr "Увімкнути підтримку завантаження з зашифрованих томів"
+
+#. i18n: file: ui/pages/installation.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Installation)
+#: rc.cpp:176
+#, fuzzy
+msgid "Tribe Installation"
+msgstr "Установлення Tribe"
+
+#. i18n: file: ui/pages/installation.ui:88
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#: rc.cpp:179
+#, fuzzy
+msgid "Nine Inch Nails - Discipline"
+msgstr "Nine Inch Nails — Discipline"
+
+#. i18n: file: ui/pages/installation.ui:93
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#: rc.cpp:182
+#, fuzzy
+msgid "Severed Fifth - War"
+msgstr "Severed Fifth — War"
+
+#. i18n: file: ui/pages/installation.ui:98
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#: rc.cpp:185
+#, fuzzy
+msgid "Dunkelstern - Out of the box"
+msgstr "Dunkelstern — Out of the box"
+
+#. i18n: file: ui/pages/intro.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Intro)
+#: rc.cpp:188
+#, fuzzy
+msgid "Tribe Intro"
+msgstr "Вступ Tribe"
+
+#. i18n: file: ui/pages/intro.ui:105
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:191
+#, fuzzy
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:12pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; color:#eeeeee;\">Welcome to the "
+"Chakra Installation!</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;"
+"\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">This installer will guide you through the process of "
+"installing</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">the Chakra live system on your computer. After the "
+"installation you will</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">have a ready-to-use Chakra Linux system.</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
+"weight:536; color:#eeeeee;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\"> Please carefully read all of the instructions.</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;"
+"\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\"> Remember:</span><span style=\" font-family:'Bitstream Vera "
+"Sans'; font-size:8pt; font-weight:536;\"> </span><span style=\" font-"
+"family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#ff0000;"
+"\">THIS IS ALPHA SOFTWARE, IT COULD EAT YOUR HAMSTER</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
+"weight:536; color:#ff0000;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">Have fun! - The Chakra Developers</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-size:14pt; color:#eeeeee;\">Ласкаво просимо до встановлення "
+"Chakra!</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; color:#eeeeee;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:"
+"#eeeeee;\"><span style=\" font-weight:600;\">Tribe — наш установлювач, який "
+"проведе вас через встановлення живої системи Chakra</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+"weight:600; color:#eeeeee;\">на ваш комп'ютер. Після встановлення ви зможете "
+"повноцінно використовувати Arch Linux</p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+"weight:600; color:#eeeeee;\">, котрий містить наші допоміжні пакунки для KDE."
+"</p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-weight:600; color:#eeeeee;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+"weight:600; color:#eeeeee;\"> Будь ласка, приділіть трохи уваги при читанні "
+"всіхпотрібних текстів і пояснень.</p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; color:#eeeeee;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-weight:600; color:#eeeeee;\"> Пам'ятайте:</span><span style=\" "
+"font-weight:600;\"> </span><span style=\" font-weight:600; color:#ff0000;"
+"\">Це пробна програма, можливо, вам прийдеться поламати голову</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-weight:600; color:#ff0000;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+"weight:600; color:#ff0000;\"><span style=\" color:#eeeeee;\">Насолоджуйтесь! "
+"— Команда розробників Chakra</span></p></body></html>"
+
+#. i18n: file: ui/pages/license.ui:49
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:208
+#, fuzzy
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:22pt; font-weight:600; color:#ffffff;\">License Approval</span></p></"
+"body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:22pt; font-weight:600; color:#ffffff;\">Ліцензійна згода</span></p></"
+"body></html>"
+
+#. i18n: file: ui/pages/license.ui:61
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:215
+#, fuzzy
+msgid ""
+"Chakra includes some proprietary software like hardware drivers, media "
+"plugins and fonts. To install them, you have to read and accept their "
+"licenses. If you choose against a license, the installer will try to use a "
+"free solution (if one is available)."
+msgstr ""
+"У комплект Chakra входить закриті програми, приміром, драйвера, медіамодулі "
+"та шрифти. Щоб їх установити, потрібно прочитати і схвалити їх ліцензії. "
+"Якщо будете проти ліцензії, встановлювач буде використовувати відкриті "
+"аналоги (якщо такі є)."
+
+#. i18n: file: ui/pages/license.ui:74
+#. i18n: ectx: property (text), widget (QLabel, licenseLabel)
+#: rc.cpp:218
+#, fuzzy
+msgid "Approve license for:"
+msgstr "Схвалити ліцензію для:"
+
+#. i18n: file: ui/pages/license.ui:103
+#. i18n: ectx: property (text), widget (QRadioButton, declineButton)
+#: rc.cpp:221
+#, fuzzy
+msgid "Decline License"
+msgstr "Відхили ліцензію"
+
+#. i18n: file: ui/pages/license.ui:110
+#. i18n: ectx: property (text), widget (QRadioButton, acceptButton)
+#: rc.cpp:224
+#, fuzzy
+msgid "Accept License"
+msgstr "Прийняти ліцензію"
+
+#. i18n: file: ui/pages/locale.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Locale)
+#: rc.cpp:227
+#, fuzzy
+msgid "Form"
+msgstr "Форма"
+
+#. i18n: file: ui/pages/locale.ui:35
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:230
+#, fuzzy
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Language &amp; Time</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Мова та час</span></p></body></html>"
+
+#. i18n: file: ui/pages/locale.ui:45
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:237
+#, fuzzy
+msgid ""
+"Please select the nearest city on the globe so the installer can suggest the "
+"locale and timezone settings for you. You can fine-tune the suggested "
+"settings at the bottom of the page. If you cant find your region or city on "
+"the globe, you can zoom in by using the slider on the left."
+msgstr ""
+"Будь ласка, виберіть найближче місто на глобусі, щоб установлювач міг "
+"розпізнати ваші налаштування локалі та часового поясу.  Ви можете прийняти "
+"підказані налаштування на кнопці сторінки.  Якщо ви не можете знайти свій "
+"регіон або місто на глобусі,  можете масштабувати його за допомогою "
+"повзунка, що зліва."
+
+#. i18n: file: ui/pages/locale.ui:69
+#. i18n: ectx: property (clickMessage), widget (KLineEdit, locationsSearch)
+#: rc.cpp:240
+#, fuzzy
+msgid "Search..."
+msgstr "Пошук…"
+
+#. i18n: file: ui/pages/locale.ui:162
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:243
+#, fuzzy
+msgid "Continent:"
+msgstr "Точка монтування:"
+
+#. i18n: file: ui/pages/locale.ui:185
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:246
+#, fuzzy
+msgid "Language:"
+msgstr "Мова:"
+
+#. i18n: file: ui/pages/locale.ui:208
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:249
+#, fuzzy
+msgid "Locale:"
+msgstr "Локаль:"
+
+#. i18n: file: ui/pages/locale.ui:263
+#. i18n: ectx: property (text), widget (QCheckBox, showLocalesCheck)
+#. i18n: file: ui/pages/locale.ui:270
+#. i18n: ectx: property (text), widget (QCheckBox, showKDELangsCheck)
+#: rc.cpp:252 rc.cpp:255
+#, fuzzy
+msgid "Show all"
+msgstr "Показати усі."
+
+#. i18n: file: ui/pages/locale.ui:277
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: rc.cpp:258
+msgid "Region: "
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Partition)
+#: rc.cpp:261
+#, fuzzy
+msgid "Partition"
+msgstr "Розділ:"
+
+#. i18n: file: ui/pages/partition.ui:43
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:264
+#, fuzzy
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Disk setup</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Установлення диска</span></p></body></html>"
+
+#. i18n: file: ui/pages/partition.ui:58
+#. i18n: ectx: property (text), widget (QLabel, descriptionLabel)
+#: rc.cpp:271
+msgid ""
+"Please select a mountpoint for your partitions. At least '/' should be "
+"mounted. No permanent changes to your hard drive will be made when you will "
+"press \"Next\""
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:118
+#. i18n: ectx: property (text), widget (QLabel, typeLabel)
+#: rc.cpp:275
+msgid "Type"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:146
+#. i18n: ectx: property (text), widget (QLabel, filesystemLabel)
+#: rc.cpp:284
+msgid "Filesystem"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:173
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, sizeSpinBox)
+#: rc.cpp:287
+msgid " MiB"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:193
+#. i18n: ectx: property (text), widget (KPushButton, editPartitionCancelButton)
+#. i18n: file: ui/widgets/avatardialog.ui:111
+#. i18n: ectx: property (text), widget (QPushButton, cancelButton)
+#: rc.cpp:290 rc.cpp:426
+msgid "Cancel"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:200
+#. i18n: ectx: property (text), widget (KPushButton, editPartitionOkButton)
+#. i18n: file: ui/widgets/avatardialog.ui:82
+#. i18n: ectx: property (text), widget (QPushButton, okButton)
+#: rc.cpp:293 rc.cpp:423
+msgid "Ok"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:248
+#. i18n: ectx: property (toolTip), widget (QPushButton, newPartTableButton)
+#: rc.cpp:299
+msgid "Create a new partition table on the selected device"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:270
+#. i18n: ectx: property (text), widget (QPushButton, newButton)
+#: rc.cpp:302
+msgid "New"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:289
+#. i18n: ectx: property (text), widget (QPushButton, deleteButton)
+#: rc.cpp:305
+#, fuzzy
+msgid "Delete"
+msgstr "Вилучити"
+
+#. i18n: file: ui/pages/partition.ui:308
+#. i18n: ectx: property (text), widget (QPushButton, formatButton)
+#: rc.cpp:308
+#, fuzzy
+msgid "Format"
+msgstr "Форма"
+
+#. i18n: file: ui/pages/partition.ui:327
+#. i18n: ectx: property (toolTip), widget (QPushButton, undoButton)
+#: rc.cpp:311
+msgid "Undo"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:346
+#. i18n: ectx: property (toolTip), widget (QPushButton, unmountButton)
+#: rc.cpp:314
+#, fuzzy
+msgid "Unmount the selected partition"
+msgstr "Вам потрібно вибрати часовий пояс."
+
+#. i18n: file: ui/pages/readyinstall.ui:51
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:317
+#, fuzzy
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Ready to Install</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Готовий до встановлення</span></p></body></html>"
+
+#. i18n: file: ui/pages/readyinstall.ui:77
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:324
+#, fuzzy
+msgid ""
+"The system will be installed with the following settings. Before continuing, "
+"please review your selections:\n"
+msgstr ""
+"З такими налаштуваннями буде встановлено систему . Перш ніж іти далі, будь "
+"ласка, перегляньте ваш вибір:\n"
+
+#. i18n: file: ui/pages/readyinstall.ui:147
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:328
+#, fuzzy
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+"#eeeeee;\">The following partitions will be used:</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+"#eeeeee;\">Буде використано такі розділи:</span></p></body></html>"
+
+#. i18n: file: ui/pages/readyinstall.ui:211
+#. i18n: ectx: property (text), widget (QLabel, formatLabel)
+#: rc.cpp:335
+#, fuzzy
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+"#eeeeee;\">The following partitions will be formatted:</span></p></body></"
+"html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+"#eeeeee;\">Буде відформатовано такі розділи:</span></p></body></html>"
+
+#. i18n: file: ui/pages/releasenotes.ui:47
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:345
+#, fuzzy
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
+"style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Release Notes</"
+"span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
+"style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Примітки про "
+"випуск</span></p></body></html>"
+
+#. i18n: file: ui/pages/releasenotes.ui:60
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:352
+#, fuzzy
+msgid ""
+"Check out what's new, the known issues and general information about this "
+"version of Chakra. As always, you are encouraged to tell us what you think, "
+"either by visiting our forums or bug tracker."
+msgstr ""
+"Перевірте, чого нового, відомі проблеми і загальну інформацію про цю версію "
+"Chakra. Як і завжди, ми заохочуємо розповісти нам, що ви думаєте, або "
+"відвідати наш форум і координацію з усунення вад."
+
+#. i18n: file: ui/pages/settings.ui:46
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:355
+#, fuzzy
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">System Settings</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Системні налаштування</span></p></body></html>"
+
+#. i18n: file: ui/pages/settings.ui:73
+#. i18n: ectx: property (toolTip), widget (QLabel, label_2)
+#: rc.cpp:362
+msgid "or technically, the hostname"
+msgstr ""
+
+#. i18n: file: ui/pages/settings.ui:76
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:365
+#, fuzzy
+msgid "What's the name of this computer?         "
+msgstr "Назва цього комп'ютера:"
+
+#. i18n: file: ui/pages/settings.ui:125
+#. i18n: ectx: property (text), widget (QCheckBox, download_doc)
+#: rc.cpp:368
+#, fuzzy
+msgid "Download and install documentation packages"
+msgstr "Звантажити і встановити пакунки документації"
+
+#. i18n: file: ui/pages/settings.ui:135
+#. i18n: ectx: property (text), widget (QCheckBox, detect_mirror)
+#: rc.cpp:371
+#, fuzzy
+msgid "Detect best mirror server and use it"
+msgstr "Виявити найкраще дзеркало і використати його(рекомендовано)"
+
+#. i18n: file: ui/pages/usercreation.ui:35
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:401
+#, fuzzy
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:14pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:22pt; font-weight:600; color:#ffffff;\">Create Users</span></p></body></"
+"html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:22pt; font-weight:600; color:#ffffff;\">Установлення адміністратора</"
+"span></p></body></html>"
+
+#. i18n: file: ui/pages/usercreation.ui:42
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:408
+msgid "Enter at least one login name and password."
+msgstr ""
+
+#. i18n: file: ui/pages/usercreation.ui:178
+#. i18n: ectx: property (toolTip), widget (QPushButton, addUser)
+#: rc.cpp:411
+#, fuzzy
+msgid "Add another user account."
+msgstr "Залучити ще одного користувача…"
+
+#. i18n: file: ui/pages/usercreation.ui:286
+#. i18n: ectx: property (text), widget (QLabel, hostname_extra_label)
+#: rc.cpp:414
+msgid ""
+"<small>This name will be used if you make the computer visible to others on "
+"a network.</small>"
+msgstr ""
+
+#. i18n: file: ui/pages/usercreation.ui:299
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:417
+#, fuzzy
+msgid "...and, what is the name of this computer?"
+msgstr "Назва цього комп'ютера:"
+
+#. i18n: file: ui/widgets/avatardialog.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, AvatarDialog)
+#: rc.cpp:420
+msgid "Select an Avatar..."
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:46
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:429
+#, fuzzy
+msgid "Login: "
+msgstr "Реєстрація:"
+
+#. i18n: file: ui/widgets/userwidget.ui:56
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:432
+#, fuzzy
+msgid "Password: "
+msgstr "Пароль:"
+
+#. i18n: file: ui/widgets/userwidget.ui:94
+#. i18n: ectx: property (toolTip), widget (QPushButton, userDetails)
+#: rc.cpp:435
+msgid "Include more information about this user."
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:124
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:438
+#, fuzzy
+msgid "Confirm Password:"
+msgstr "Підтвердження паролю:"
+
+#. i18n: file: ui/widgets/userwidget.ui:146
+#. i18n: ectx: property (toolTip), widget (QPushButton, removeUser)
+#: rc.cpp:441
+msgid "Remove this user."
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:264
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:444
+#, fuzzy
+msgid "Name: "
+msgstr "Ім'я:"
+
+#. i18n: file: ui/widgets/userwidget.ui:307
+#. i18n: ectx: property (text), widget (QCheckBox, autoLoginCheckBox)
+#: rc.cpp:447
+msgid "Login Automatically"
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:344
+#. i18n: ectx: property (text), widget (QCheckBox, rootUsesUserPwCheckBox)
+#: rc.cpp:450
+msgid ""
+"Use this password as \n"
+"the Administrator password"
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:396
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:454
+#, fuzzy
+msgid "Root Password:  "
+msgstr "Пароль адміністратора"
+
+#. i18n: file: ui/widgets/userwidget.ui:406
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: rc.cpp:457
+#, fuzzy
+msgid "Confirm Root Password:  "
+msgstr "Підтвердження паролю:"
+
+#: rc.cpp:458
 #, fuzzy
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Ваше ім'я"
 
-#: rc.cpp:2
+#: rc.cpp:459
 #, fuzzy
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
@@ -819,652 +2109,24 @@ msgstr "Ваші електронні адреси"
 #~ msgstr "Відправити звіт розробникам"
 
 #, fuzzy
-#~ msgid "Name:"
-#~ msgstr "Ім'я:"
-
-#, fuzzy
 #~ msgid "Surname:"
 #~ msgstr "Прізвище:"
-
-#, fuzzy
-#~ msgid "Login:"
-#~ msgstr "Реєстрація:"
-
-#, fuzzy
-#~ msgid "Password:"
-#~ msgstr "Пароль:"
-
-#, fuzzy
-#~ msgid "Confirm Password:"
-#~ msgstr "Підтвердження паролю:"
 
 #, fuzzy
 #~ msgid "Administrator"
 #~ msgstr "Адміністратор"
 
 #, fuzzy
-#~ msgid "Delete"
-#~ msgstr "Вилучити"
-
-#, fuzzy
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~ "weight:600; color:#ffffff;\">Welcome</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~ "weight:600; color:#ffffff;\">Ласкаво просимо</span></p></body></html>"
-
-#, fuzzy
-#~ msgid "Release Notes"
-#~ msgstr "Нотатки про випуск"
-
-#, fuzzy
-#~ msgid "License Approval"
-#~ msgstr "Ліцензійна згода"
-
-#, fuzzy
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~ "weight:600; color:#ffffff;\">Preparation</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~ "weight:600; color:#ffffff;\">Підготовка</span></p></body></html>"
-
-#, fuzzy
-#~ msgid "Ready to Install"
-#~ msgstr "Готово для встановлення"
-
-#, fuzzy
-#~ msgid "Ramdisk"
-#~ msgstr "Ramdisk"
-
-#, fuzzy
 #~ msgid "System Settings"
 #~ msgstr "Системні налаштування"
-
-#, fuzzy
-#~ msgid "Language & Time"
-#~ msgstr "Мова та час"
-
-#, fuzzy
-#~ msgid "Disk setup"
-#~ msgstr "Установлення диска"
-
-#, fuzzy
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~ "weight:600; color:#ffffff;\">Installation</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~ "weight:600; color:#ffffff;\">Установлення</span></p></body></html>"
 
 #, fuzzy
 #~ msgid "Prepare Partitions"
 #~ msgstr "Підготовка розділів"
 
 #, fuzzy
-#~ msgid "Install System"
-#~ msgstr "Установити систему"
-
-#, fuzzy
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~ "weight:600; color:#ffffff;\">Configuration</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~ "weight:600; color:#ffffff;\">Налаштування</span></p></body></html>"
-
-#, fuzzy
-#~ msgid "Create User"
-#~ msgstr "Створити користувача"
-
-#, fuzzy
-#~ msgid "Bootloader"
-#~ msgstr "Завантажувач"
-
-#, fuzzy
-#~ msgid "Root Password"
-#~ msgstr "Пароль адміністратора"
-
-#, fuzzy
 #~ msgid "Configure System"
 #~ msgstr "Налаштувати систему"
-
-#, fuzzy
-#~ msgid "Abort installation"
-#~ msgstr "Скасувати встановлення"
-
-#, fuzzy
-#~ msgctxt "Previous Page"
-#~ msgid "Previous"
-#~ msgstr "Назад"
-
-#, fuzzy
-#~ msgctxt "Next Page"
-#~ msgid "Next"
-#~ msgstr "Далі"
-
-#, fuzzy
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Bootloader Installation</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Установлення завантажувача</span></p></body></html>"
-
-#, fuzzy
-#~ msgid ""
-#~ "You can now install GRUB as your main bootloader.\n"
-#~ "\n"
-#~ "If you are unsure where you should install the bootloader to, just leave "
-#~ "the default value (hd0)."
-#~ msgstr ""
-#~ "Тепер ви можете встановити GRUB як ваш основний завантажувач.\n"
-#~ "\n"
-#~ "Якщо ви не певні, куди варто його встановити, тоді залиште типове "
-#~ "значення  (hd0)."
-
-#, fuzzy
-#~ msgid "Install Bootloader"
-#~ msgstr "Установити завантажувач"
-
-#, fuzzy
-#~ msgid "Advanced..."
-#~ msgstr "Додатково…"
-
-#, fuzzy
-#~ msgid "Install to:"
-#~ msgstr "Установити на:"
-
-#, fuzzy
-#~ msgid "hd0"
-#~ msgstr "hd0"
-
-#, fuzzy
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Configure System</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Системні налаштування</span></p></body></html>"
-
-#, fuzzy
-#~ msgid ""
-#~ "Although the installer has created a usable default configuration "
-#~ "suitable for most users, you can now configure your newly installed "
-#~ "system. Please take some time to step through each section and configure "
-#~ "your system the way you want it."
-#~ msgstr ""
-#~ "Хоча встановлювач створив зручні типові налаштування, які придатні для "
-#~ "більшості користувачів, зараз ви можете налаштувати нещодавно встановлену "
-#~ "систему. Будь ласка, приділіть трохи часу на кожен вибір і налаштуйте "
-#~ "систему в найзручніший для вас спосіб."
-
-#, fuzzy
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Installation Completed !</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Установлення завершено !</span></p></body></html>"
-
-#, fuzzy
-#~ msgid ""
-#~ "Congratulations, the installation has been completed! We hope you enjoyed "
-#~ "what you have seen as much as we enjoyed creating it.\n"
-#~ "\n"
-#~ "You can now reboot into the installed system or keep using the LiveCD.\n"
-#~ "\n"
-#~ "In case you want to check the installation logs, take a look into /tmp on "
-#~ "the live system or into /var/log on the installed system.\n"
-#~ "\n"
-#~ "Thanks for using Chakra, and get in touch with us in the forums, share "
-#~ "opinions, give advices;\n"
-#~ "To put it simple: Get involved! (http://chakra-project.org)\n"
-#~ "\n"
-#~ "Have Fun!\n"
-#~ "\n"
-#~ "The Chakra Team"
-#~ msgstr ""
-#~ "Вітаємо, встановлення завершено! Ми сподіваємось, що ви задоволені тим, "
-#~ "що ви побачили, так самісінько, як ми, створюючи це.\n"
-#~ "\n"
-#~ "Тепер ви можете перезавантажитись до встановленої системи або й надалі "
-#~ "використовувати LiveCD.\n"
-#~ "\n"
-#~ "Якщо ви бажаєте перевірити журнали встановлення, погляньте в /tmp на "
-#~ "живій системі або в /var/log на встановленій системі.\n"
-#~ "\n"
-#~ "Дякуємо за використання Chakra, і зв'язуйтесь з нами через форуми, "
-#~ "викладайте свої думки, надавайте поради тощо;\n"
-#~ "Коротше: долучайтесь! (http://chakra-project.org)\n"
-#~ "\n"
-#~ "Насолоджуйтесь!\n"
-#~ "\n"
-#~ "Команда Chakra"
-
-#, fuzzy
-#~ msgid "Restart Computer"
-#~ msgstr "Перезавантажити комп'ютер"
-
-#, fuzzy
-#~ msgid "Keep using the LiveCD"
-#~ msgstr "І надалі використовувати LiveCD"
-
-#, fuzzy
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Ramdisk Setup</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Установлення Ramdisk</span></p></body></html>"
-
-#, fuzzy
-#~ msgid ""
-#~ "Your hardware will be configured automatically during the installation "
-#~ "and a initial ramdisk environment for booting the linux kernel will be "
-#~ "built. Everything should happen without intervention, but you might need "
-#~ "some options for special boot methods. If you are unsure on what this "
-#~ "means, simply press the \"Next\" button. Otherwise check out the ramdisk "
-#~ "options below and select the items you need for your system."
-#~ msgstr ""
-#~ "Ваш комп'ютер буде налаштовано автоматично протягом установлення і "
-#~ "запущено середовище ramdisk для завантаження збірки ядра. Усе має пройти "
-#~ "без утручання, але, можливо, буде потрібно вибрати деякі варіанти для "
-#~ "особливих способів завантаження. Якщо ви не розумієте про що йдеться, то "
-#~ "натисніть «Далі».  Або перевірте варіанти ramdisk нижче та виберіть "
-#~ "пункти, потрібні для вашої системи."
-
-#, fuzzy
-#~ msgid "Ramdisk Options"
-#~ msgstr "Варіанти Ramdisk "
-
-#, fuzzy
-#~ msgid "Activate support for booting from USB devices"
-#~ msgstr "Увімкнути підтримку завантаження з пристроїв USB"
-
-#, fuzzy
-#~ msgid "Activate support for booting from FireWire devices"
-#~ msgstr "Увімкнути підтримку завантаження з пристроїв FireWire"
-
-#, fuzzy
-#~ msgid "Activate support for booting from PCMCIA devices"
-#~ msgstr "Увімкнути підтримку завантаження з пристроїв PCMCIA"
-
-#, fuzzy
-#~ msgid "Activate support for booting from NFS shares"
-#~ msgstr "Увімкнути підтримку завантаження з мережі NFS"
-
-#, fuzzy
-#~ msgid "Activate support for booting from Software Raid arrays"
-#~ msgstr "Увімкнути підтримку завантаження з масивів RAID"
-
-#, fuzzy
-#~ msgid "Activate support for booting from Software Raid/MDP Partition arrays"
-#~ msgstr "Увімкнути підтримку завантаження з розділу масивів RAID/MDP"
-
-#, fuzzy
-#~ msgid "Activate support for booting from LVM2 volumes"
-#~ msgstr "Увімкнути підтримку завантаження з томів LVM2"
-
-#, fuzzy
-#~ msgid "Activate support for booting from Encrypted volumes"
-#~ msgstr "Увімкнути підтримку завантаження з зашифрованих томів"
-
-#, fuzzy
-#~ msgid "Tribe Installation"
-#~ msgstr "Установлення Tribe"
-
-#, fuzzy
-#~ msgid "Nine Inch Nails - Discipline"
-#~ msgstr "Nine Inch Nails — Discipline"
-
-#, fuzzy
-#~ msgid "Severed Fifth - War"
-#~ msgstr "Severed Fifth — War"
-
-#, fuzzy
-#~ msgid "Dunkelstern - Out of the box"
-#~ msgstr "Dunkelstern — Out of the box"
-
-#, fuzzy
-#~ msgid "Tribe Intro"
-#~ msgstr "Вступ Tribe"
-
-#, fuzzy
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-#~ "style=\" font-size:14pt; color:#eeeeee;\">Welcome to the Chakra "
-#~ "Installation!</span></p>\n"
-#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
-#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
-#~ "text-indent:0px; color:#eeeeee;\"></p>\n"
-#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:"
-#~ "#eeeeee;\"><span style=\" font-weight:600;\">Tribe, our installer, will "
-#~ "guide you through the process of installing the Chakra live system</"
-#~ "span></p>\n"
-#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-#~ "weight:600; color:#eeeeee;\">on your computer. After the installation you "
-#~ "will have a ready-to-use Arch Linux</p>\n"
-#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-#~ "weight:600; color:#eeeeee;\">desktop system with our modular KDE packages."
-#~ "</p>\n"
-#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
-#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
-#~ "text-indent:0px; font-weight:600; color:#eeeeee;\"></p>\n"
-#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-#~ "weight:600; color:#eeeeee;\"> Please take the time to carefully read "
-#~ "through all texts and explanations.</p>\n"
-#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
-#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
-#~ "text-indent:0px; color:#eeeeee;\"></p>\n"
-#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-#~ "style=\" font-weight:600; color:#eeeeee;\"> Remember:</span><span style="
-#~ "\" font-weight:600;\"> </span><span style=\" font-weight:600; color:"
-#~ "#ff0000;\">THIS IS ALPHA SOFTWARE, IT COULD EAT YOUR HAMSTER</span></p>\n"
-#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
-#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
-#~ "text-indent:0px; font-weight:600; color:#ff0000;\"></p>\n"
-#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-#~ "weight:600; color:#ff0000;\"><span style=\" color:#eeeeee;\">Have fun! - "
-#~ "The Chakra Developers</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-#~ "style=\" font-size:14pt; color:#eeeeee;\">Ласкаво просимо до встановлення "
-#~ "Chakra!</span></p>\n"
-#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
-#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
-#~ "text-indent:0px; color:#eeeeee;\"></p>\n"
-#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:"
-#~ "#eeeeee;\"><span style=\" font-weight:600;\">Tribe — наш установлювач, "
-#~ "який проведе вас через встановлення живої системи Chakra</span></p>\n"
-#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-#~ "weight:600; color:#eeeeee;\">на ваш комп'ютер. Після встановлення ви "
-#~ "зможете повноцінно використовувати Arch Linux</p>\n"
-#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-#~ "weight:600; color:#eeeeee;\">, котрий містить наші допоміжні пакунки для "
-#~ "KDE.</p>\n"
-#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
-#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
-#~ "text-indent:0px; font-weight:600; color:#eeeeee;\"></p>\n"
-#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-#~ "weight:600; color:#eeeeee;\"> Будь ласка, приділіть трохи уваги при "
-#~ "читанні всіхпотрібних текстів і пояснень.</p>\n"
-#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
-#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
-#~ "text-indent:0px; color:#eeeeee;\"></p>\n"
-#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-#~ "style=\" font-weight:600; color:#eeeeee;\"> Пам'ятайте:</span><span style="
-#~ "\" font-weight:600;\"> </span><span style=\" font-weight:600; color:"
-#~ "#ff0000;\">Це пробна програма, можливо, вам прийдеться поламати голову</"
-#~ "span></p>\n"
-#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
-#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
-#~ "text-indent:0px; font-weight:600; color:#ff0000;\"></p>\n"
-#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-#~ "weight:600; color:#ff0000;\"><span style=\" color:#eeeeee;"
-#~ "\">Насолоджуйтесь! — Команда розробників Chakra</span></p></body></html>"
-
-#, fuzzy
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~ "size:22pt; font-weight:600; color:#ffffff;\">License Approval</span></p></"
-#~ "body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~ "size:22pt; font-weight:600; color:#ffffff;\">Ліцензійна згода</span></p></"
-#~ "body></html>"
-
-#, fuzzy
-#~ msgid ""
-#~ "Chakra includes some proprietary software like hardware drivers, media "
-#~ "plugins and fonts. To install them, you have to read and accept their "
-#~ "licenses. If you choose against a license, the installer will try to use "
-#~ "a free solution (if one is available)."
-#~ msgstr ""
-#~ "У комплект Chakra входить закриті програми, приміром, драйвера, "
-#~ "медіамодулі та шрифти. Щоб їх установити, потрібно прочитати і схвалити "
-#~ "їх ліцензії. Якщо будете проти ліцензії, встановлювач буде "
-#~ "використовувати відкриті аналоги (якщо такі є)."
-
-#, fuzzy
-#~ msgid "Approve license for:"
-#~ msgstr "Схвалити ліцензію для:"
-
-#, fuzzy
-#~ msgid "Decline License"
-#~ msgstr "Відхили ліцензію"
-
-#, fuzzy
-#~ msgid "Accept License"
-#~ msgstr "Прийняти ліцензію"
-
-#, fuzzy
-#~ msgid "Form"
-#~ msgstr "Форма"
-
-#, fuzzy
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Language &amp; Time</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Мова та час</span></p></body></html>"
-
-#, fuzzy
-#~ msgid ""
-#~ "Please select the nearest city on the globe so the installer can suggest "
-#~ "the locale and timezone settings for you. You can fine-tune the suggested "
-#~ "settings at the bottom of the page. If you cant find your region or city "
-#~ "on the globe, you can zoom in by using the slider on the left."
-#~ msgstr ""
-#~ "Будь ласка, виберіть найближче місто на глобусі, щоб установлювач міг "
-#~ "розпізнати ваші налаштування локалі та часового поясу.  Ви можете "
-#~ "прийняти підказані налаштування на кнопці сторінки.  Якщо ви не можете "
-#~ "знайти свій регіон або місто на глобусі,  можете масштабувати його за "
-#~ "допомогою повзунка, що зліва."
-
-#, fuzzy
-#~ msgid "Search..."
-#~ msgstr "Пошук…"
 
 #, fuzzy
 #~ msgid "Time Settings"
@@ -1477,44 +2139,6 @@ msgstr "Ваші електронні адреси"
 #, fuzzy
 #~ msgid "Language Settings"
 #~ msgstr "Налаштування мови"
-
-#, fuzzy
-#~ msgid "Locale:"
-#~ msgstr "Локаль:"
-
-#, fuzzy
-#~ msgid "Show all"
-#~ msgstr "Показати усі."
-
-#, fuzzy
-#~ msgid "Language:"
-#~ msgstr "Мова:"
-
-#, fuzzy
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Disk setup</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Установлення диска</span></p></body></html>"
 
 #, fuzzy
 #~ msgid ""
@@ -1594,129 +2218,6 @@ msgstr "Ваші електронні адреси"
 #~ "p, li { white-space: pre-wrap; }\n"
 #~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
 #~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Ready to Install</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Готовий до встановлення</span></p></body></html>"
-
-#, fuzzy
-#~ msgid ""
-#~ "The system will be installed with the following settings. Before "
-#~ "continuing, please review your selections:\n"
-#~ msgstr ""
-#~ "З такими налаштуваннями буде встановлено систему . Перш ніж іти далі, "
-#~ "будь ласка, перегляньте ваш вибір:\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-#~ "#eeeeee;\">The following partitions will be used:</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-#~ "#eeeeee;\">Буде використано такі розділи:</span></p></body></html>"
-
-#, fuzzy
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-#~ "#eeeeee;\">The following partitions will be formatted:</span></p></body></"
-#~ "html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-#~ "#eeeeee;\">Буде відформатовано такі розділи:</span></p></body></html>"
-
-#, fuzzy
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
-#~ "style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Release Notes</"
-#~ "span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
-#~ "style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Примітки про "
-#~ "випуск</span></p></body></html>"
-
-#, fuzzy
-#~ msgid ""
-#~ "Check out what's new, the known issues and general information about this "
-#~ "version of Chakra. As always, you are encouraged to tell us what you "
-#~ "think, either by visiting our forums or bug tracker."
-#~ msgstr ""
-#~ "Перевірте, чого нового, відомі проблеми і загальну інформацію про цю "
-#~ "версію Chakra. Як і завжди, ми заохочуємо розповісти нам, що ви думаєте, "
-#~ "або відвідати наш форум і координацію з усунення вад."
-
-#, fuzzy
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
 #~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
 #~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
 #~ "font-family:'Liberation Sans'; font-size:8pt;\"></p></body></html>"
@@ -1731,32 +2232,6 @@ msgstr "Ваші електронні адреси"
 #~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
 #~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
 #~ "font-family:'Liberation Sans'; font-size:8pt;\"></p></body></html>"
-
-#, fuzzy
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~ "size:22pt; font-weight:600; color:#ffffff;\">Root Setup</span></p></"
-#~ "body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~ "size:22pt; font-weight:600; color:#ffffff;\">Установлення адміністратора</"
-#~ "span></p></body></html>"
 
 #, fuzzy
 #~ msgid ""
@@ -1836,10 +2311,6 @@ msgstr "Ваші електронні адреси"
 #~ msgstr "Долучити інший розділ"
 
 #, fuzzy
-#~ msgid "Partition:"
-#~ msgstr "Розділ:"
-
-#, fuzzy
 #~ msgid "Size:"
 #~ msgstr "Розмір:"
 
@@ -1874,10 +2345,6 @@ msgstr "Ваші електронні адреси"
 #, fuzzy
 #~ msgid "Format with:"
 #~ msgstr "Форматувати на:"
-
-#, fuzzy
-#~ msgid "Mountpoint:"
-#~ msgstr "Точка монтування:"
 
 #, fuzzy
 #~ msgid "/"
@@ -1916,46 +2383,12 @@ msgstr "Ваші електронні адреси"
 #~ msgstr "Вилучити"
 
 #, fuzzy
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">System Settings</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Системні налаштування</span></p></body></html>"
-
-#, fuzzy
 #~ msgid "General Settings"
 #~ msgstr "Загальні налаштування"
 
 #, fuzzy
-#~ msgid "The name of this computer:"
-#~ msgstr "Назва цього комп'ютера:"
-
-#, fuzzy
 #~ msgid "Download Settings"
 #~ msgstr "Налаштування звантаження"
-
-#, fuzzy
-#~ msgid "Detect best mirror server and use it (recommended)"
-#~ msgstr "Виявити найкраще дзеркало і використати його(рекомендовано)"
 
 #, fuzzy
 #~ msgid ""
@@ -1967,10 +2400,6 @@ msgstr "Ваші електронні адреси"
 #~ "рахуноккористувача. Щоб увімкнути sudo для створеного користувача і "
 #~ "дозволити виконувати йому адміністративні завдання, виберіть "
 #~ "«Адміністратор» нижче."
-
-#, fuzzy
-#~ msgid "Add another User.."
-#~ msgstr "Залучити ще одного користувача…"
 
 #, fuzzy
 #~ msgid "Install plain KDE-Configuration"

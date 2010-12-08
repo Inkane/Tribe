@@ -746,13 +746,14 @@ qDebug() << "::::::: setUpUsers() \n" << users << "\n\n";
     }
     
     // set root passwd
+    m_rootUserProcess = new QProcess(this);
     m_passwdCount = current;
     qDebug() << "Setting root password...";
     command = QString("chroot %1 /usr/bin/passwd").arg(INSTALLATION_TARGET);
-    connect(m_userProcess, SIGNAL(readyReadStandardError()), SLOT(streamPassword()));
-    m_userProcess->start(command);
+    connect(m_rootUserProcess, SIGNAL(readyReadStandardError()), SLOT(streamRootPassword()));
+    m_rootUserProcess->start(command);
     sleep(3);
-    m_userProcess->waitForFinished();
+    m_rootUserProcess->waitForFinished();
 }
 
 void InstallationHandler::streamPassword()
@@ -765,6 +766,17 @@ void InstallationHandler::streamPassword()
 
     m_userProcess->waitForFinished();
     disconnect(m_userProcess, SIGNAL(readyReadStandardError()), this, SLOT(streamPassword()));
+}
+
+void InstallationHandler::streamRootPassword()
+{
+    m_rootUserProcess->write(QString(userPasswordList().last()).toUtf8().data());
+
+    m_rootUserProcess->write("\n");
+    
+    sleep(3);
+
+    m_rootUserProcess->waitForFinished();
 }
 
 void InstallationHandler::unmountAll()

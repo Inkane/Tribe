@@ -156,6 +156,7 @@ private Q_SLOTS:
     void killProcesses();
 
     void streamPassword();
+    void streamRootPassword();
 
 signals:
     void streamProgress(int percentage);
@@ -196,6 +197,7 @@ private:
 
     QPointer<QProcess> m_process;
     QProcess *m_userProcess;
+    QProcess *m_rootUserProcess;
 
     HomeAction homeAction;
     CurrentAction currAction;

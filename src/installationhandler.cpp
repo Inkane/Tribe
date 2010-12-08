@@ -692,8 +692,6 @@ qDebug() << "::::::: setUpUsers() \n" << users << "\n\n";
                                   user + ".face.icon");
         QProcess::execute(command);
 
-        m_userProcess = new QProcess(this);
-
         // set autologin
         if (m_userAutoLoginList.at(current) == "1") {
             command = QString("bash -c \"sed -i -e \'s/#AutoLoginEnable=true/AutoLoginEnable=true/\' " + 
@@ -704,17 +702,8 @@ qDebug() << "::::::: setUpUsers() \n" << users << "\n\n";
             QProcess::execute(command);
         }
 
-        // check root pw
-        if (m_userPasswordList.at(current).contains(",,,,,,,,")) {
-            qDebug() << "Setting root password...";
-            command = QString("chroot %1 /usr/bin/passwd").arg(INSTALLATION_TARGET);
-            connect(m_userProcess, SIGNAL(readyReadStandardError()), SLOT(streamPassword()));
-            m_userProcess->start(command);
-            sleep(3);
-            m_userProcess->waitForFinished();
-        }
-
         // set user passwd
+        m_userProcess = new QProcess(this);
         m_passwdCount = current;
         qDebug() << "Setting user password...";
         command = QString("chroot %1 /usr/bin/passwd %2").arg(INSTALLATION_TARGET).arg(user);
@@ -755,15 +744,20 @@ qDebug() << "::::::: setUpUsers() \n" << users << "\n\n";
 
         current++;
     }
+    
+    // set root passwd
+    m_passwdCount = current;
+    qDebug() << "Setting root password...";
+    command = QString("chroot %1 /usr/bin/passwd").arg(INSTALLATION_TARGET);
+    connect(m_userProcess, SIGNAL(readyReadStandardError()), SLOT(streamPassword()));
+    m_userProcess->start(command);
+    sleep(3);
+    m_userProcess->waitForFinished();
 }
 
 void InstallationHandler::streamPassword()
 {
-    if (m_userPasswordList.at(m_passwdCount).contains(",,,,,,,,")) {
-        m_userProcess->write(QString(userPasswordList().at(m_passwdCount).split(",,,,,,,,").at(1)).toUtf8().data());
-    } else {
-        m_userProcess->write(QString(userPasswordList().at(m_passwdCount)).toUtf8().data());
-    }
+    m_userProcess->write(QString(userPasswordList().at(m_passwdCount)).toUtf8().data());
 
     m_userProcess->write("\n");
     

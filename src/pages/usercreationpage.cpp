@@ -104,6 +104,8 @@ void UserCreationPage::aboutToGoToNext()
     QStringList avatarList;
     QStringList autoLoginList;
     QStringList adminList;
+    
+    QString rootPw;
 
     int n = 0;
     foreach(UserWidget* user, m_userList) {
@@ -119,6 +121,13 @@ void UserCreationPage::aboutToGoToNext()
                 KMessageBox::createKMessageBox(dialog, QMessageBox::Warning, i18n("You must give at least one login name."),
                                                QStringList(), QString(), &retbool, KMessageBox::Notify);
                 return;
+            }
+            
+            if (!user->rootPassword.isEmpty() && user->rootPasswordsMatch &&
+                !user->useUserPw) {
+                rootPw = user.rootPassword;
+            } else if (user->useUserPw) {
+                rootPw = user->password;
             }
         }
         
@@ -145,16 +154,9 @@ void UserCreationPage::aboutToGoToNext()
         nameList.append(user->name);
         avatarList.append(user->avatar);
         autoLoginList.append(QString::number(user->autoLogin));
-        adminList.append(QString::number(user->admin));
-
-        if (user->useRootPw && user->rootPasswordsMatch) {
-            qDebug() << "Using separate root password...";
-            passwordList.last().append(",,,,,,,," + user->rootPassword);
-        } else {
-            qDebug() << "Using same password as user " + user->name + " ...";
-            passwordList.last().append(",,,,,,,," + user->password);
-        }
     }
+    
+    passwordList.append(rootPw);
 
     m_userList.clear();
 
@@ -163,7 +165,6 @@ void UserCreationPage::aboutToGoToNext()
     m_handler->setUserNameList(nameList);
     m_handler->setUserAvatarList(avatarList);
     m_handler->setUserAutoLoginList(autoLoginList);
-    m_handler->setUserAdminList(adminList);
 
     emit goToNextStep();
 }

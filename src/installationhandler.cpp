@@ -755,13 +755,13 @@ qDebug() << "::::::: setUpUsers() \n" << users << "\n\n";
     sleep(3);
     m_rootUserProcess->waitForFinished();
     
-    qDebug() << userPasswordList();
+    //qDebug() << userPasswordList();
 }
 
 void InstallationHandler::streamPassword()
 {
-    qDebug() << "streaming pw for user : " << m_userLoginList.at(m_passwdCount);
-    qDebug() << "                   pw : " << m_userPasswordList.at(m_passwdCount);
+    //qDebug() << "streaming pw for user : " << m_userLoginList.at(m_passwdCount);
+    //qDebug() << "                   pw : " << m_userPasswordList.at(m_passwdCount);
     m_userProcess->write(QString(userPasswordList().at(m_passwdCount)).toUtf8().data());
 
     m_userProcess->write("\n");
@@ -774,7 +774,7 @@ void InstallationHandler::streamPassword()
 
 void InstallationHandler::streamRootPassword()
 {
-    qDebug() << "                 root pw : " << m_userPasswordList.last();
+    //qDebug() << "                 root pw : " << m_userPasswordList.last();
     m_rootUserProcess->write(QString(userPasswordList().last()).toUtf8().data());
 
     m_rootUserProcess->write("\n");

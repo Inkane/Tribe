@@ -2,36 +2,36 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Panagiotis Papadopoulos <pano_90@gmx.net>, 2010.
+# Phil Miller <philm@chakra-project.org>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
 "POT-Creation-Date: 2010-12-08 20:39+0100\n"
-"PO-Revision-Date: 2010-02-20 13:53+0100\n"
-"Last-Translator: Panagiotis Papadopoulos <pano_90@gmx.net>\n"
+"PO-Revision-Date: 2010-12-08 21:45+0100\n"
+"Last-Translator: Phil Miller <philm@chakra-project.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 1.0\n"
+"X-Generator: Lokalize 1.1\n"
 
 #: src/installationhandler.cpp:86
 msgid "Tribe was not able to initialize needed path: "
-msgstr ""
+msgstr "Tribe konnte den benötigten Pfad nicht einlesen: "
 
 #: src/installationhandler.cpp:86
 msgid " , please resolve the issue, and try again."
-msgstr ""
+msgstr " , versuche das Problem zu lösen, und probiere es wieder."
 
 #: src/installationhandler.cpp:148
 msgid "Installing the system ..."
 msgstr "Das System wird installiert …"
 
 #: src/installationhandler.cpp:176
-#, fuzzy
 msgid "Mounting partitions..."
-msgstr "%1 wird in %2 eingebunden …"
+msgstr "Partitionen werden eingebunden …"
 
 #: src/installationhandler.cpp:184
 #, fuzzy
@@ -48,12 +48,11 @@ msgstr "Pakete, deren Lizenz abgelehnt wurde, werden entfernt …"
 
 #: src/installationhandler.cpp:245
 msgid "Initializing target ..."
-msgstr ""
+msgstr "Initialisierung des Installationsziels ..."
 
 #: src/installationhandler.cpp:336
-#, fuzzy
 msgid "Please wait, configuring the new system ..."
-msgstr "Bitte warten, PostInstall wird eingerichtet und gestartet …"
+msgstr "Bitte warten. Das neue System wird eingestellt ..."
 
 #: src/installationhandler.cpp:412
 msgid "Error in Postinstall script. See log for more details"
@@ -67,9 +66,8 @@ msgid "Creating user accounts ..."
 msgstr "Konto für neuen Benutzer wird erstellt …"
 
 #: src/installationhandler.cpp:424
-#, fuzzy
 msgid "Configuring software management..."
-msgstr "Hardware wird eingerichtet …"
+msgstr "Software-Management wird eingerichtet …"
 
 #: src/installationhandler.cpp:428
 #, fuzzy
@@ -86,16 +84,12 @@ msgid "Configuring the display..."
 msgstr "Hardware wird eingerichtet …"
 
 #: src/installationhandler.cpp:440
-#, fuzzy
 msgid "Downloading and installing localization packages..."
-msgstr ""
-"Lokalisierungspakete werden heruntergeladen und installiert, dies könnte "
-"etwas dauern …"
+msgstr "Lokalisierungspakete werden heruntergeladen und installiert ..."
 
 #: src/installationhandler.cpp:444
-#, fuzzy
 msgid "Downloading and installing documentation packages..."
-msgstr "Dokumentationspakete herunterladen und installieren"
+msgstr "Dokumentationspakete werden heruntergeladen und installiert ..."
 
 #: src/installationhandler.cpp:448
 msgid "Setting up localization..."
@@ -103,7 +97,7 @@ msgstr "Lokalisierung wird eingerichtet …"
 
 #: src/installationhandler.cpp:452
 msgid "Creating daemon configuration..."
-msgstr ""
+msgstr "Daemon-Einstellungen werden erstellt ..."
 
 #: src/installationhandler.cpp:456
 msgid "Creating network configuration..."
@@ -119,11 +113,11 @@ msgstr "Hardware wird eingerichtet …"
 
 #: src/installationhandler.cpp:471
 msgid "Creating initial ramdisk images..."
-msgstr ""
+msgstr "Ramdisk-Images werden erstellt ..."
 
 #: src/installationhandler.cpp:475
 msgid "Generating locales..."
-msgstr ""
+msgstr "Regionen (locale) werden erstellt ..."
 
 #: src/installationhandler.cpp:479
 #, fuzzy
@@ -149,6 +143,8 @@ msgid ""
 "Tribe was not able to initialize needed directories. Something is very "
 "wrong..."
 msgstr ""
+"Tribe konnte die benötigten Verzeichnisse nicht laden. Es scheint was "
+"falsch zu laufen ..."
 
 #: src/installationhandler.cpp:606
 msgid "Could not mount %1"
@@ -168,9 +164,8 @@ msgid "Graphical Installer for Chakra"
 msgstr "LiveCD-Installation für Chakra"
 
 #: src/main.cpp:46
-#, fuzzy
 msgid "(c) 2008 - 2010 the Chakra Development Team"
-msgstr "© 2008 Das Chakra-Entwickler-Team"
+msgstr "© 2008 - 2010 Das Chakra-Entwickler-Team"
 
 #: src/main.cpp:46
 msgid "chakra@chakra-project.org"
@@ -198,23 +193,23 @@ msgstr "Jan Mette"
 
 #: src/main.cpp:50
 msgid "PostInstall Backend and Artwork"
-msgstr ""
+msgstr "Postinstall Backend und Artwork"
 
 #: src/main.cpp:51
 msgid "Phil Miller"
-msgstr ""
+msgstr "Philip Müller"
 
 #: src/main.cpp:51 src/main.cpp:52
 msgid "PostInstall Backend"
-msgstr ""
+msgstr "Postinstall Backend"
 
 #: src/main.cpp:52
 msgid "Manuel Tortosa"
-msgstr ""
+msgstr "Manuel Tortosa"
 
 #: src/main.cpp:53
 msgid "Drake Justice"
-msgstr ""
+msgstr "Drake Justice"
 
 #: src/main.cpp:67
 msgid ""
@@ -222,6 +217,9 @@ msgid ""
 "and lenghty process, hence it is strongly advised to have your PC connected "
 "to AC to minimize possible risks."
 msgstr ""
+"Es scheint Ihr Netzadapter ist nicht angeschlossen. Eine Installation "
+"ist eine delikate und lange Prozedur, somit empfehlen wir Ihnen Ihren "
+"PC am Stromnetz anzuschließen um Probleme zu vermeiden."
 
 #: src/mainwindow.cpp:101
 msgid "Do you really want to abort the installation?"
@@ -233,15 +231,17 @@ msgid ""
 "Tribe will now quit, please check the installation logs in /tmp\n"
 "or ask for help in our forums."
 msgstr ""
+"Installation fehlgeschlagen! Der folgende Fehler wurde mitgeteilt: %1.\n"
+"Tribe wird nun beendet. Lesen Sie die Installationsaufzeichnungen (logs)\n"
+"in /tmp oder holen Sie sich Hilfe in unseren Foren."
 
 #: src/pages/bootloaderpage.cpp:52
 msgid "Installing bootloader..."
 msgstr "Bootloader wird installiert …"
 
 #: src/pages/bootloaderpage.cpp:82
-#, fuzzy
 msgid "Creating OS list..."
-msgstr "fstab wird erstellt …"
+msgstr "Bootmenu wird erstellt …"
 
 #: src/pages/licensepage.cpp:53
 msgid "Proprietary ATI Driver"
@@ -261,21 +261,20 @@ msgid "You need to select a timezone"
 msgstr "Sie müssen eine Zeitzone auswählen."
 
 #: src/pages/partitionpage.cpp:58 src/pages/partitionpage.cpp:134
-#, fuzzy
 msgid "None"
-msgstr "Nein"
+msgstr "Keine"
 
 #: src/pages/partitionpage.cpp:67 src/pages/partitionpage.cpp:89
 msgid "Other..."
-msgstr ""
+msgstr "Andere ..."
 
 #: src/pages/partitionpage.cpp:95
 msgid "Please enter a custom mountpoint"
-msgstr ""
+msgstr "Bitte geben Sie einen eigenen Einbindungsunkt ein"
 
 #: src/pages/partitionpage.cpp:107
 msgid "The mount point must start with /"
-msgstr ""
+msgstr "Der Einbindungspunkt muss mit / starten"
 
 #: src/pages/partitionpage.cpp:108
 msgid "Error"
@@ -283,85 +282,94 @@ msgstr "Fehler"
 
 #: src/pages/partitionpage.cpp:130
 msgid "You can only use each mountpoint once."
-msgstr ""
+msgstr "Sie können jeden Einbindungspunkt nur einmal nutzen."
 
 #: src/pages/partitionpage.cpp:131
 msgid "Information"
-msgstr ""
+msgstr "Information"
 
 #: src/pages/partitionpage.cpp:414
 msgid "Loading partitions..."
-msgstr ""
+msgstr "Lade Partitionen ..."
 
 #: src/pages/partitionpage.cpp:518
 msgid ""
 "The selected volume already has a partition table.. Overwrite it? (this will "
 "destroy all data on the device)"
 msgstr ""
+"Das ausgewählte Volumen existiert bereits in der Partitionstabelle. "
+"Überschreiben? (dies wird alle enthaltenen Daten des Laufwerks löschen)"
 
 #: src/pages/partitionpage.cpp:518 src/pages/partitionpage.cpp:525
 msgid "Warning"
-msgstr ""
+msgstr "Warnung"
 
 #: src/pages/partitionpage.cpp:525
 msgid ""
 "This operation will destroy all data on the selected volume.. Continue "
 "anyway?"
 msgstr ""
+"Diese Funktion wird alle enthaltenen Daten des ausgewählten Volumens löschen."
+" Fortfahren?"
 
 #: src/pages/partitionpage.cpp:572 src/pages/partitionpage.cpp:796
 #: src/pages/partitionpage.cpp:840
 msgid "Extended"
-msgstr ""
+msgstr "Erweitert"
 
 #: src/pages/partitionpage.cpp:797
 msgid "Primary"
-msgstr ""
+msgstr "Primär"
 
 #: src/pages/partitionpage.cpp:897
-#, fuzzy
 msgid "New partition"
-msgstr "Partition"
+msgstr "Neue Partition"
 
 #: src/pages/partitionpage.cpp:902
 msgid "Unallocated space"
-msgstr ""
+msgstr "Ungenutzter Speicher"
 
 #: src/pages/partitionpage.cpp:907
 msgid "Linux / Extended"
-msgstr ""
+msgstr "Linux / Erweitert"
 
 #: src/pages/partitionpage.cpp:914
 msgid "Windows / %1"
-msgstr ""
+msgstr "Windows / %1"
 
 #: src/pages/partitionpage.cpp:920
 msgid "Apple / %1"
-msgstr ""
+msgstr "Apple / %1"
 
 #: src/pages/partitionpage.cpp:926
 msgid "Linux / %1"
-msgstr ""
+msgstr "Linux / %1"
 
 #: src/pages/partitionpage.cpp:950
 msgid ""
 "The partition you have chosen to mount as '/' is too small. It should have a "
 "capacity of at least %1 for a successful installation."
 msgstr ""
+"Die ausgewählte Partition um als \"/\" einzubinden ist zu klein. Sie sollte "
+"zumindest %1 freien Speicher enthalten um eine Installation durchführen zu "
+"können."
 
 #: src/pages/partitionpage.cpp:953 src/pages/partitionpage.cpp:968
 msgid "Target's capacity not sufficient"
-msgstr ""
+msgstr "Zielgröße nicht ausreichend"
 
 #: src/pages/partitionpage.cpp:966
 msgid ""
 "You have selected '%1' as a mountpoint, which is not valid. A valid "
 "mountpoint always starts with '/' and represents a directory on disk"
 msgstr ""
+"Sie haben %1 als Einbindungspunkt ausgewählt. Dieser ist nicht zulässig. Ein "
+"zulässiger Einbindungspunkt startet immer mit \"/\" und representiert ein "
+"Verzeichnis auf der Festplatte."
 
 #: src/pages/readyinstallpage.cpp:77
 msgid "New partition (%1) on %2"
-msgstr ""
+msgstr "Neue Partition (%1) auf %2"
 
 #: src/pages/readyinstallpage.cpp:80
 msgid "%1 will be used as %2"
@@ -369,7 +377,7 @@ msgstr "%1 wird als %2 verwendet"
 
 #: src/pages/readyinstallpage.cpp:100
 msgid "Continue"
-msgstr ""
+msgstr "Weiter"
 
 #: src/pages/readyinstallpage.cpp:104
 #, fuzzy
@@ -390,7 +398,7 @@ msgstr "chakra-desktop"
 
 #: src/pages/usercreationpage.cpp:121
 msgid "You must give at least one login name."
-msgstr ""
+msgstr "Sie müssen zumindest einen Benutzernamen eingeben."
 
 #: src/pages/usercreationpage.cpp:135
 #, fuzzy
@@ -403,13 +411,12 @@ msgid "Passwords do not match..."
 msgstr "Passwörter stimmen nicht überein"
 
 #: src/pages/usercreationpage.cpp:143
-#, fuzzy
 msgid "Root Passwords do not match..."
-msgstr "Passwörter stimmen nicht überein"
+msgstr "Root-Passwörter stimmen nicht überein"
 
 #: src/pages/usercreationpage.cpp:147
 msgid "Login names cannot be empty."
-msgstr ""
+msgstr "Benutzername kann nicht leer sein."
 
 #: src/pmhandler.cpp:360
 #, fuzzy
@@ -423,21 +430,21 @@ msgstr "Installieren …"
 
 #: src/pmhandler.cpp:445
 msgid "There was an error while formatting partitions"
-msgstr ""
+msgstr "Es entstand ein Fehler während der Festplattenformatierung"
 
 #: src/widgets/avatardialog.cpp:52
 msgid "Custom"
-msgstr ""
+msgstr "Eigen"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Panagiotis Papadopoulos"
+msgstr "Phil Miller"
 
 #: rc.cpp:2
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "pano_90@gmx.net"
+msgstr "philm@chakra-project.org"
 
 #~ msgid "Setting up Tribe..."
 #~ msgstr "Tribe wird eingerichtet …"

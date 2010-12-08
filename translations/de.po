@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
 "POT-Creation-Date: 2010-12-08 20:39+0100\n"
-"PO-Revision-Date: 2010-12-08 21:45+0100\n"
+"PO-Revision-Date: 2010-12-08 21:49+0100\n"
 "Last-Translator: Phil Miller <philm@chakra-project.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -117,7 +117,7 @@ msgstr "Ramdisk-Images werden erstellt ..."
 
 #: src/installationhandler.cpp:475
 msgid "Generating locales..."
-msgstr "Regionen (locale) werden erstellt ..."
+msgstr "Lokalizierungen werden erstellt ..."
 
 #: src/installationhandler.cpp:479
 #, fuzzy

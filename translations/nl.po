@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2009-09-27 20:36+0200\n"
+"POT-Creation-Date: 2010-12-08 20:39+0100\n"
 "PO-Revision-Date: 2010-02-20 14:09+0100\n"
 "Last-Translator: \n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
@@ -16,318 +16,216 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 1.0\n"
 
-#: launcher/src/TribeLauncher.cpp:83
-msgid "Setting up Tribe..."
-msgstr "Bezig met het starten van Tribe..."
-
-#: launcher/src/TribeLauncher.cpp:95
-msgid ""
-"It looks like you were not authorized to launch Tribe. Please contact your "
-"system administrator for further details"
+#: src/installationhandler.cpp:86
+msgid "Tribe was not able to initialize needed path: "
 msgstr ""
-"Het lijkt erop dat u niet de juiste rechten hebt om Tribe te starten. Neem "
-"voor meer informatie contact op met uw systeembeheerder"
 
-#: launcher/src/TribeLauncher.cpp:102
-msgid ""
-"It looks like an unclean start of Tribe has taken place. Please kill all "
-"instances of tribe, tribelauncher and tribelauncherworker and try again"
+#: src/installationhandler.cpp:86
+msgid " , please resolve the issue, and try again."
 msgstr ""
-"Het lijkt erop dat een niet-schone start van Tribe heeft plaatsgevonden. "
-"Beëindig eerst alle lopende sessies van tribe, tribelauncher en "
-"tribelauncherworker en probeer het dan opnieuw"
 
-#: launcher/src/TribeLauncher.cpp:168
-msgid ""
-"A newer version of Tribe is available.\n"
-"It is strongly advised to upgrade it. Do you want to upgrade Tribe now?"
-msgstr ""
-"Een nieuwe versie van Tribe is beschikbaar.\n"
-"Het wordt met klem aangeraden om op te waarderen. Wilt u Tribe nu "
-"opwaarderen?"
-
-#: launcher/src/TribeLauncher.cpp:171
-msgid ""
-"A newer version of Arxin is available.\n"
-"Even though not fundamental, upgrading it is recommended. Do you want to "
-"upgrade Arxin now?"
-msgstr ""
-"Een nieuwe versie van Arxin is beschikbaar.\n"
-"Hoewel niet strikt noodzakelijk, is het wel aanbevolen om dit programma op "
-"te waarderen. Wilt u Arxin nu opwaarderen?"
-
-#: launcher/src/TribeLauncher.cpp:194
-msgid "Please Wait, Upgrading Chakra Installer..."
-msgstr "Ogenblik geduld, bezig met het opwaarderen van de Chakra Installer..."
-
-#: launcher/src/TribeLauncher.cpp:232
-msgctxt ""
-"You just have to translate 'remaining' here. Leave everything else as it is."
-msgid "%p% (%1 KB/s, %2 remaining)"
-msgstr "%p% (%1 KB/s, nog %2 te gaan)"
-
-#: launcher/src/TribeLauncher.cpp:248
-msgid "Installing..."
-msgstr "Bezig met installeren..."
-
-#: launcher/src/TribeLauncher.cpp:259
-msgid "Please Wait, Installing Packages..."
-msgstr "Ogenblik geduld, bezig met het installeren van pakketten..."
-
-#: launcher/src/TribeLauncher.cpp:262
-msgid "Please Wait, Upgrading Packages..."
-msgstr "Ogenblik geduld, bezig met het opwaarderen van pakketten..."
-
-#: launcher/src/TribeLauncher.cpp:265
-msgid "Please Wait, Downloading Packages..."
-msgstr "Ogenblik geduld, bezig met het downloaden van pakketten..."
-
-#: launcher/src/TribeLauncher.cpp:276
-msgid ""
-"An error occurred while trying to upgrade.\n"
-"Do you want to run Tribe anyway?"
-msgstr ""
-"Er is een fout opgetreden tijdens het opwaarderen.\n"
-"Wilt u Tribe toch starten?"
-
-#: launcher/src/TribeLauncher.cpp:296
-msgid "Please wait, Tribe is being started..."
-msgstr "Ogenblik geduld, Tribe wordt gestart..."
-
-#. i18n: file: launcher/ui/gui.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, tribeLauncherUi)
-#: launcher/src/main.cpp:32 rc.cpp:3
-msgid "Tribe Launcher"
-msgstr "Tribe Launcher"
-
-#: launcher/src/main.cpp:33
-msgid "An auto updater and launcher for Tribe"
-msgstr ""
-"Een hulpprogramma voor het automatisch opwaarderen en starten van Tribe"
-
-#: launcher/src/main.cpp:34 src/main.cpp:44
-msgid "(c) 2008 the Chakra Development Team"
-msgstr "(c) 2008 Het Chakra-ontwikkelingsteam"
-
-#: launcher/src/main.cpp:34
-msgid "team@chakra-project.org"
-msgstr "team@chakra-project.org"
-
-#: launcher/src/main.cpp:36 src/main.cpp:46
-msgid "Dario Freddi"
-msgstr "Dario Freddi"
-
-#: launcher/src/main.cpp:36 src/main.cpp:47
-msgid "Developer"
-msgstr "Ontwikkelaar"
-
-#: src/CrashHandler.cpp:218
-msgid ""
-"We appreciate your dedication, but your backtrace has already been "
-"successfully sent"
-msgstr ""
-"We waarderen uw inzet voor het Chakra-project, maar uw backtrace is al "
-"succesvol verstuurd"
-
-#: src/CrashHandler.cpp:234
-msgid ""
-"Thanks! Your backtrace was successfully submitted. Now just wait for us to "
-"fix this!"
-msgstr ""
-"Bedankt! Uw backtrace is succesvol verstuurd. Nu hoeft u alleen te wachten "
-"tot wij dit probleem oplossen!"
-
-#: src/CrashHandler.cpp:238
-msgid ""
-"There was an error while sending your backtrace!! Probably we could not "
-"connect to the server: you can retry, but the best thing to do would be "
-"saving the backtrace and attaching it to a bug report later."
-msgstr ""
-"Er is een fout opgetreden tijdens het versturen van uw backtrace! "
-"Waarschijnlijk kon er geen contact worden gemaakt met de server: u kunt het "
-"opnieuw proberen, maar het beste is om de backtrace op te slaan en deze "
-"later met een bug report mee te sturen."
-
-#: src/InstallationHandler.cpp:79 src/InstallationHandler.cpp:649
-msgid ""
-"Tribe was not able to initialize needed directories. You probably do not "
-"have enough privileges, please restart Tribe as root."
-msgstr ""
-"Tribe was niet in staat de benodigde mappen te initialiseren. Waarschijnlijk "
-"heeft u niet de juiste rechten, herstart Tribe alstublieft als root."
-
-#: src/InstallationHandler.cpp:141
+#: src/installationhandler.cpp:148
 msgid "Installing the system ..."
 msgstr "Bezig met installeren van het systeem ..."
 
-#: src/InstallationHandler.cpp:161
-msgid "Preparing installation, this might take some time ..."
-msgstr "Bezig met het voorbereiden van de installatie, dit kan even duren ..."
+#: src/installationhandler.cpp:176
+#, fuzzy
+msgid "Mounting partitions..."
+msgstr "Bezig met het aankoppelen van %1 op %2..."
 
-#: src/InstallationHandler.cpp:186
+#: src/installationhandler.cpp:184
+#, fuzzy
+msgid "Preparing installation..."
+msgstr "Bezig met het afronden van de installatie..."
+
+#: src/installationhandler.cpp:204
 msgid "Error copying files"
 msgstr "Fout bij het kopiëren van de bestanden"
 
-#: src/InstallationHandler.cpp:193
+#: src/installationhandler.cpp:207
 msgid "Removing packages whose license has been declined ..."
 msgstr ""
-"Bezig met het verwijderen van de pakketten waarvan de licentie is afgewezen ."
-".."
+"Bezig met het verwijderen van de pakketten waarvan de licentie is "
+"afgewezen ..."
 
-#: src/InstallationHandler.cpp:250
+#: src/installationhandler.cpp:245
 msgid "Initializing target ..."
 msgstr "Bezig met het initialiseren van de doelmap ..."
 
-#: src/InstallationHandler.cpp:342
-msgid "Please wait, configuring and starting PostInstall ..."
+#: src/installationhandler.cpp:336
+#, fuzzy
+msgid "Please wait, configuring the new system ..."
 msgstr ""
 "Ogenblik geduld, bezig met het configureren en starten van PostInstall ..."
 
-#: src/InstallationHandler.cpp:391
+#: src/installationhandler.cpp:412
 msgid "Error in Postinstall script. See log for more details"
 msgstr "Fout in het Postinstall-script. Bekijk de log voor meer informatie"
 
-#: src/InstallationHandler.cpp:402
-msgid ""
-"Detecting best mirror server & configuring pacman, this may take a bit..."
-msgstr ""
-"Bezig met het zoekn naar de beste spiegelserver & het configureren van "
-"pacman, dit kan even duren..."
+#: src/installationhandler.cpp:421
+#, fuzzy
+msgid "Creating user accounts ..."
+msgstr "Bezig met het aanmaken van configuraties ..."
 
-#: src/InstallationHandler.cpp:406
-msgid "Removing superfluous packages..."
+#: src/installationhandler.cpp:424
+#, fuzzy
+msgid "Configuring software management..."
+msgstr "Bezig met het instellen van de hardware..."
+
+#: src/installationhandler.cpp:428
+#, fuzzy
+msgid "Removing unused packages..."
 msgstr "Bezig met het verwijderen van overbodige pakketten..."
 
-#: src/InstallationHandler.cpp:410
+#: src/installationhandler.cpp:432
 msgid "Installing additional packages..."
 msgstr "Bezig met het installeren van additionele pakketten..."
 
-#: src/InstallationHandler.cpp:414
-msgid "Setting up X.Org configuration..."
-msgstr "Bezig met het instellen van de configuratie van X.org..."
+#: src/installationhandler.cpp:436
+#, fuzzy
+msgid "Configuring the display..."
+msgstr "Bezig met het instellen van de hardware..."
 
-#: src/InstallationHandler.cpp:418
-msgid ""
-"Downloading and installing localization packages, this may take a bit..."
+#: src/installationhandler.cpp:440
+#, fuzzy
+msgid "Downloading and installing localization packages..."
 msgstr ""
 "Bezig met het downloaden en installeren van taalpakketten, dit kan even "
 "duren..."
 
-#: src/InstallationHandler.cpp:422
-msgid ""
-"Downloading and installing documentation packages, this may take a bit..."
-msgstr ""
-"Bezig met het downloaden en installeren van documentatiepakketten, dit kan "
-"even duren..."
+#: src/installationhandler.cpp:444
+#, fuzzy
+msgid "Downloading and installing documentation packages..."
+msgstr "Download en installeer documentatiepakketten"
 
-#: src/InstallationHandler.cpp:426
+#: src/installationhandler.cpp:448
 msgid "Setting up localization..."
 msgstr "Bezig met het instellen van taalpakketten..."
 
-#: src/InstallationHandler.cpp:430
+#: src/installationhandler.cpp:452
 msgid "Creating daemon configuration..."
 msgstr "Bezig met het aanmaken van daemonconfiguratie..."
 
-#: src/InstallationHandler.cpp:434
+#: src/installationhandler.cpp:456
 msgid "Creating network configuration..."
 msgstr "Bezig met het aanmaken van netwerkconfiguratie..."
 
-#: src/InstallationHandler.cpp:438
+#: src/installationhandler.cpp:460
 msgid "Creating fstab..."
 msgstr "Bezig met het aanmaken van fstab..."
 
-#: src/InstallationHandler.cpp:442
+#: src/installationhandler.cpp:467
 msgid "Configuring hardware..."
 msgstr "Bezig met het instellen van de hardware..."
 
-#: src/InstallationHandler.cpp:446
-msgid ""
-"Creating initial ramdisk images. This may take a lot of time, stay tuned..."
+#: src/installationhandler.cpp:471
+#, fuzzy
+msgid "Creating initial ramdisk images..."
 msgstr ""
 "Bezig met het aanmaken van de initiële ramdisk-images. Dit kan even duren, "
 "blijf hangen..."
 
-#: src/InstallationHandler.cpp:450
-msgid "Regenerating locales..."
+#: src/installationhandler.cpp:475
+#, fuzzy
+msgid "Generating locales..."
 msgstr "Bezig met het hergenereren van de locales..."
 
-#: src/InstallationHandler.cpp:454
-msgid "Removing superfluous localizations..."
+#: src/installationhandler.cpp:479
+#, fuzzy
+msgid "Removing unused localizations..."
 msgstr "Bezig met het verwijderen van overbodige taalpakketten..."
 
-#: src/InstallationHandler.cpp:458
-msgid "Removing superfluous drivers..."
+#: src/installationhandler.cpp:483
+#, fuzzy
+msgid "Removing unused drivers..."
 msgstr "Bezig met het verwijderen van overbodige stuurprogramma's..."
 
-#: src/InstallationHandler.cpp:462
-msgid "Finishing installation..."
+#: src/installationhandler.cpp:487
+#, fuzzy
+msgid "Finishing up..."
 msgstr "Bezig met het afronden van de installatie..."
 
-#: src/InstallationHandler.cpp:466
+#: src/installationhandler.cpp:491
 msgid "Installation complete!"
 msgstr "Installatie afgerond!"
 
-#: src/InstallationHandler.cpp:592
-msgid "Could not format %1"
-msgstr "Kan %1 niet formatteren"
+#: src/installationhandler.cpp:582
+#, fuzzy
+msgid ""
+"Tribe was not able to initialize needed directories. Something is very "
+"wrong..."
+msgstr ""
+"Tribe was niet in staat de benodigde mappen te initialiseren. Waarschijnlijk "
+"heeft u niet de juiste rechten, herstart Tribe alstublieft als root."
 
-#: src/InstallationHandler.cpp:672
+#: src/installationhandler.cpp:606
 msgid "Could not mount %1"
 msgstr "Kan %1 niet aankoppelen"
 
-#: src/InstallationHandler.h:188
+#: src/installationhandler.h:167
 msgid "No Further details given"
 msgstr "Geen verdere informatie bekend"
 
-#: src/MainWindow.cpp:121
-msgid "Do you really want to quit the installation?"
-msgstr "Weet u zeker dat u de installatie wilt afsluiten?"
-
-#: src/MainWindow.cpp:139
-msgid "Do you really want to abort the installation?"
-msgstr "Weet u zeker dat u de installatie wilt afbreken?"
-
-#: src/MainWindow.cpp:785
-msgid ""
-"Installation failed! The following error has been reported: %1.\n"
-"Tribe will now quit, please check the installation logs in /tmp\n"
-"or ask for help in our forums."
-msgstr ""
-"Installatie mislukt! De volgende fout is gerapporteerd: %1.\n"
-"Tribe wordt nu afgesloten, bekijk de installatielogs in /tmp\n"
-"of vraag om hulp op ons forum."
-
-#. i18n: file: ui/tribeBase.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, TribeBase)
-#: src/main.cpp:42 rc.cpp:48
+#: src/main.cpp:44
 msgid "Tribe"
 msgstr "Tribe"
 
-#: src/main.cpp:43
-msgid "LiveCD Installer for Chakra"
+#: src/main.cpp:45
+#, fuzzy
+msgid "Graphical Installer for Chakra"
 msgstr "LiveCD-installer voor Chakra"
 
-#: src/main.cpp:44
+#: src/main.cpp:46
+#, fuzzy
+msgid "(c) 2008 - 2010 the Chakra Development Team"
+msgstr "(c) 2008 Het Chakra-ontwikkelingsteam"
+
+#: src/main.cpp:46
 msgid "chakra@chakra-project.org"
 msgstr "chakra@chakra-project.org"
 
-#: src/main.cpp:46
+#: src/main.cpp:48
+msgid "Dario Freddi"
+msgstr "Dario Freddi"
+
+#: src/main.cpp:48
 msgid "Maintainer"
 msgstr "Onderhouder"
 
-#: src/main.cpp:47
+#: src/main.cpp:49
 msgid "Lukas Appelhans"
 msgstr "Lukas Appelhans"
 
-#: src/main.cpp:48
+#: src/main.cpp:49 src/main.cpp:53
+msgid "Developer"
+msgstr "Ontwikkelaar"
+
+#: src/main.cpp:50
 msgid "Jan Mette"
 msgstr "Jan Mette"
 
-#: src/main.cpp:48
+#: src/main.cpp:50
 msgid "PostInstall Backend and Artwork"
 msgstr "PostInstall-backend en artwork"
 
-#: src/main.cpp:69
+#: src/main.cpp:51
+msgid "Phil Miller"
+msgstr ""
+
+#: src/main.cpp:51 src/main.cpp:52
+#, fuzzy
+msgid "PostInstall Backend"
+msgstr "PostInstall-backend en artwork"
+
+#: src/main.cpp:52
+msgid "Manuel Tortosa"
+msgstr ""
+
+#: src/main.cpp:53
+msgid "Drake Justice"
+msgstr ""
+
+#: src/main.cpp:67
 msgid ""
 "It looks like your power adaptor is unplugged. Installation is a delicate "
 "and lenghty process, hence it is strongly advised to have your PC connected "
@@ -337,1785 +235,1589 @@ msgstr ""
 "kwetsbaar en langdurig proces, daarom wordt het om elk risico uit te sluiten "
 "met klem aangeraden uw computer op netstroom aan te sluiten."
 
-#: src/pages/BootloaderPage.cpp:54
+#: src/mainwindow.cpp:101
+msgid "Do you really want to abort the installation?"
+msgstr "Weet u zeker dat u de installatie wilt afbreken?"
+
+#: src/mainwindow.cpp:507
+msgid ""
+"Installation failed! The following error has been reported: %1.\n"
+"Tribe will now quit, please check the installation logs in /tmp\n"
+"or ask for help in our forums."
+msgstr ""
+"Installatie mislukt! De volgende fout is gerapporteerd: %1.\n"
+"Tribe wordt nu afgesloten, bekijk de installatielogs in /tmp\n"
+"of vraag om hulp op ons forum."
+
+#: src/pages/bootloaderpage.cpp:52
 msgid "Installing bootloader..."
 msgstr "Bezig met het installeren van de bootloader..."
 
-#: src/pages/BootloaderPage.cpp:87
-msgid "Creating menu.lst..."
-msgstr "Bezig met het aanmaken van menu.lst..."
+#: src/pages/bootloaderpage.cpp:82
+#, fuzzy
+msgid "Creating OS list..."
+msgstr "Bezig met het aanmaken van fstab..."
 
-#: src/pages/LicensePage.cpp:53
-msgid "Adobe Flash Plugin"
-msgstr "Adobe Flash Plugin"
-
-#: src/pages/LicensePage.cpp:54
-msgid "Microsoft Core TTF Fonts"
-msgstr "Microsoft Core TTF-lettertypen"
-
-#: src/pages/LicensePage.cpp:57
+#: src/pages/licensepage.cpp:53
 msgid "Proprietary ATI Driver"
 msgstr "Propiëtair ATI-stuurprogramma"
 
-#: src/pages/LicensePage.cpp:61
+#: src/pages/licensepage.cpp:57
 msgid "Proprietary NVidia Driver"
 msgstr "Propiëtair NVidia-stuurprogramma"
 
-#: src/pages/LicensePage.cpp:120
+#: src/pages/licensepage.cpp:117
 msgid "Accept license for: "
 msgstr "Accepteer de licentie voor: "
 
-#: src/pages/LocaleSelectorPage.cpp:229
-msgid "You need to select a Timezone."
+#: src/pages/localepage.cpp:269
+#, fuzzy
+msgid "You need to select a timezone"
 msgstr "U moet een tijdzone kiezen."
 
-#: src/pages/LocaleSelectorPage.cpp:229 src/pages/PartitioningPage.cpp:85
-#: src/pages/PartitioningPage.cpp:107 src/pages/PartitioningPage.cpp:124
-#: src/pages/SelectPartitionPage.cpp:285 src/pages/SelectPartitionPage.cpp:294
-#: src/pages/SelectPartitionPage.cpp:310 src/pages/UserCreationPage.cpp:97
-#: src/pages/UserCreationPage.cpp:101
+#: src/pages/partitionpage.cpp:58 src/pages/partitionpage.cpp:134
+#, fuzzy
+msgid "None"
+msgstr "Nee"
+
+#: src/pages/partitionpage.cpp:67 src/pages/partitionpage.cpp:89
+msgid "Other..."
+msgstr ""
+
+#: src/pages/partitionpage.cpp:95
+msgid "Please enter a custom mountpoint"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:107
+msgid "The mount point must start with /"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:108
 msgid "Error"
 msgstr "Fout"
 
-#: src/pages/PartitioningPage.cpp:73
-msgid ""
-"You still have pending operations, please apply or revert them before "
-"continuing"
+#: src/pages/partitionpage.cpp:130
+msgid "You can only use each mountpoint once."
 msgstr ""
-"Er zijn nog niet-afgeronde veranderingen, pas deze eerst toe of zet deze "
-"terug, alvorens verder te gaan"
 
-#: src/pages/PartitioningPage.cpp:83
-msgid ""
-"It looks like you have selected the mountpoint %1 twice. You can assign only "
-"one partition to a mountpoint"
+#: src/pages/partitionpage.cpp:131
+msgid "Information"
 msgstr ""
-"Het lijkt erop dat u het aankoppelingspunt %1 twee keer hebt gekozen. U kunt "
-"maar "
-"één partitie aan een bepaald aankoppelingspunt toewijzen."
 
-#: src/pages/PartitioningPage.cpp:93
-msgid ""
-"Formatting the '/' partition is strongly advised. Going ahead without "
-"formatting it might lead to a non working system after the installation"
+#: src/pages/partitionpage.cpp:414
+msgid "Loading partitions..."
 msgstr ""
-"Het wordt met klem aangeraden de '/'-partitie te formatteren. Verdergaan "
-"zonder deze partitie "
-"te formatteren kan na de installatie tot een niet-werkend systeem leiden"
 
-#: src/pages/PartitioningPage.cpp:104
+#: src/pages/partitionpage.cpp:518
 msgid ""
-"You have chosen %1 to be used as swap, however you need a special filesystem "
-"for that. Please mark it for being formatted to continue"
+"The selected volume already has a partition table.. Overwrite it? (this will "
+"destroy all data on the device)"
 msgstr ""
-"U heeft %1 gekozen om gebruikt te worden als wisselgeheugen (swap), maar "
-"hiervoor is een "
-"speciaal bestandssysteem benodigd. Markeer deze partitie om te worden "
-"geformatteerd, voor u verder gaat"
 
-#: src/pages/PartitioningPage.cpp:110
+#: src/pages/partitionpage.cpp:518 src/pages/partitionpage.cpp:525
+msgid "Warning"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:525
 msgid ""
-"The partition %1 you have chosen to use as swap has a filesystem which is "
-"not linuxswap. Please note that this will be changed during installation "
-"procedure"
+"This operation will destroy all data on the selected volume.. Continue "
+"anyway?"
 msgstr ""
-"De partitie %1 die u gekozen heeft als wisselgeheugen (swap) heeft een "
-"bestandssysteem dat niet linuxswap is. Dit zal worden aangepast tijdens de "
-"installatieprocedure"
 
-#: src/pages/PartitioningPage.cpp:123
+#: src/pages/partitionpage.cpp:572 src/pages/partitionpage.cpp:796
+#: src/pages/partitionpage.cpp:840
+msgid "Extended"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:797
+msgid "Primary"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:897
+#, fuzzy
+msgid "New partition"
+msgstr "Partitie"
+
+#: src/pages/partitionpage.cpp:902
+msgid "Unallocated space"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:907
+msgid "Linux / Extended"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:914
+msgid "Windows / %1"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:920
+msgid "Apple / %1"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:926
+msgid "Linux / %1"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:950
 msgid ""
-"It looks like you did not assign a partition to '/'. You have to select a "
-"mount point at least for it"
+"The partition you have chosen to mount as '/' is too small. It should have a "
+"capacity of at least %1 for a successful installation."
 msgstr ""
-"Het lijkt erop dat u geen partitie heeft toegewezen aan '/'. U moet "
-"hier tenminste een aankoppelingspunt aan toewijzen"
 
-#: src/pages/PartitioningPage.cpp:129
+#: src/pages/partitionpage.cpp:953 src/pages/partitionpage.cpp:968
+msgid "Target's capacity not sufficient"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:966
 msgid ""
-"You did not select a partition to be used as swap space. A swap partition is "
-"strongly advised, especially on laptops and system with limited amount of RAM"
+"You have selected '%1' as a mountpoint, which is not valid. A valid "
+"mountpoint always starts with '/' and represents a directory on disk"
 msgstr ""
-"U heeft geen partitie geselecteerd om gebruikt te worden als wisselgeheugen "
-"(swap). "
-"Het gebruik van een swap-partitie wordt met klem aangeraden, vooral op "
-"laptops en "
-"computers met een beperkte hoeveelheid RAM"
 
-#: src/pages/PreparePartitionsPage.cpp:56
-msgid "Formatting %1 with %2..."
-msgstr "Bezig met het formatteren van %1 met %2..."
+#: src/pages/readyinstallpage.cpp:77
+msgid "New partition (%1) on %2"
+msgstr ""
 
-#: src/pages/PreparePartitionsPage.cpp:71
-msgid "Mounting %1 on %2..."
-msgstr "Bezig met het aankoppelen van %1 op %2..."
-
-#: src/pages/ReadyInstallPage.cpp:63
+#: src/pages/readyinstallpage.cpp:80
 msgid "%1 will be used as %2"
 msgstr "%1 zal worden gebruikt als %2"
 
-#: src/pages/ReadyInstallPage.cpp:75
-msgid "%1 will be formatted with %2"
-msgstr "%1 zal worden geformatteerd met %2"
+#: src/pages/readyinstallpage.cpp:100
+msgid "Continue"
+msgstr ""
 
-#: src/pages/ReadyInstallPage.cpp:94
+#: src/pages/readyinstallpage.cpp:104
+#, fuzzy
 msgid ""
-"The following partitions appear mounted: %1. To let the installation happen "
-"correctly, Tribe will now unmount them."
+"The following partitions appear to be mounted: %1. To let the installation "
+"happen correctly, Tribe will now unmount them."
 msgstr ""
 "Het lijkt erop dat de volgende partities zijn aangekoppeld: %1. Om de "
-"installatie "
-"correct uit te kunnen voeren, zal Tribe  deze afkoppelen."
+"installatie correct uit te kunnen voeren, zal Tribe  deze afkoppelen."
 
-#: src/pages/ReadyInstallPage.cpp:97
-msgid "Partitions mounted"
-msgstr "Partities aangekoppeld"
-
-#: src/pages/RootPage.cpp:61
-msgid "Setting up root user ..."
-msgstr "Bezig met het instellen van de root-gebruiker"
-
-#: src/pages/RootPage.cpp:88 src/pages/RootPage.cpp:111
-msgid "Configuring users ..."
-msgstr "Bezig met het instellen van de gebruikers..."
-
-#. i18n: file: ui/createUserWidget.ui:141
-#. i18n: ectx: property (text), widget (QLabel, statusLabel)
-#. i18n: file: ui/tribeRoot.ui:176
-#. i18n: ectx: property (text), widget (QLabel, statusLabel)
-#: src/pages/RootPage.cpp:134 src/widgets/UserCreationWidget.cpp:51 rc.cpp:42
-#: rc.cpp:412
-msgid "Password is empty"
-msgstr "Wachtwoord is leeg"
-
-#: src/pages/RootPage.cpp:141 src/widgets/UserCreationWidget.cpp:58
-msgid "Password has to be at least 6 characters"
-msgstr "Het wachtwoord moet tenminste 6 karakters lang zijn"
-
-#: src/pages/RootPage.cpp:148 src/widgets/UserCreationWidget.cpp:65
-msgid "Passwords do not match"
-msgstr "Wachtwoorden komen niet overeen"
-
-#: src/pages/RootPage.cpp:155 src/widgets/UserCreationWidget.cpp:72
-msgid "Passwords match"
-msgstr "Wachtwoorden komen overeen"
-
-#: src/pages/SelectPartitionPage.cpp:139
-msgid "Please wait, reading partition table ..."
-msgstr "Ogenblik geduld, bezig met het inlezen van de partitietabel ..."
-
-#: src/pages/SelectPartitionPage.cpp:169
-msgid "Configuring swap space, this could take some time ..."
-msgstr ""
-"Bezig met het configureren van het wisselgeheugen, dit kan even duren ..."
-
-#: src/pages/SelectPartitionPage.cpp:284
-msgid ""
-"You have selected the partition %1 to be mounted twice.\n"
-"Please correct your selection."
-msgstr ""
-"U heeft partitie %1 twee keer aangekoppeld.\n"
-"Corrigeer alstublieft uw keuze."
-
-#: src/pages/SelectPartitionPage.cpp:293
-msgid ""
-"You have to chosen mount point '%1' for two partitions.\n"
-"Please correct your selection."
-msgstr ""
-"U heeft het aankoppelinspunt '%1' voor twee partities gekozen.\n"
-"Corrigeer alstublieft uw keuze."
-
-#: src/pages/SelectPartitionPage.cpp:310
-msgid "You have to select a mount point at least for '/'!"
-msgstr "U moet tenminste een aankoppelingspunt kiezen voor '/'!"
-
-#: src/pages/SettingsPage.cpp:53
+#: src/pages/settingspage.cpp:92
 msgid "chakra-laptop"
 msgstr "chakra-laptop"
 
-#: src/pages/SettingsPage.cpp:56
+#: src/pages/settingspage.cpp:94
 msgid "chakra-desktop"
 msgstr "chakra-desktop"
 
-#: src/pages/UserCreationPage.cpp:96
-msgid ""
-"You have not configured a username for one user.\n"
-"Please correct your settings."
+#: src/pages/usercreationpage.cpp:121
+msgid "You must give at least one login name."
 msgstr ""
-"U heeft geen gebruikersnaam ingesteld voor één gebruiker.\n"
-"Corrigeer alstublieft uw instellingen."
 
-#: src/pages/UserCreationPage.cpp:100
-msgid ""
-"You have not configured a password for user %1.\n"
-"Please correct your settings."
+#: src/pages/usercreationpage.cpp:135
+#, fuzzy
+msgid "Passwords cannot be empty."
+msgstr "Wachtwoord is leeg"
+
+#: src/pages/usercreationpage.cpp:139
+#, fuzzy
+msgid "Passwords do not match..."
+msgstr "Wachtwoorden komen niet overeen"
+
+#: src/pages/usercreationpage.cpp:143
+#, fuzzy
+msgid "Root Passwords do not match..."
+msgstr "Wachtwoorden komen niet overeen"
+
+#: src/pages/usercreationpage.cpp:147
+msgid "Login names cannot be empty."
 msgstr ""
-"U heeft geen wachtwoord ingesteld voor gebruiker %1.\n"
-"Corrigeer alstublieft uw instellingen."
 
-#: src/pages/UserCreationPage.cpp:109
-msgid "Creating account for new user..."
-msgid_plural "Creating accounts for new users..."
-msgstr[0] "Bezig met het aanmaken van account voor nieuwe gebruiker..."
-msgstr[1] "Bezig met het aanmaken van accounts voor nieuwe gebruikers..."
+#: src/pmhandler.cpp:360
+#, fuzzy
+msgid "Preparing hard drive for installation..."
+msgstr "Bezig met het afronden van de installatie..."
 
-#: src/pages/UserCreationPage.cpp:151
-msgid "Setting up password ..."
-msgstr "Bezig met het instellen van het wachtwoord ..."
+#: src/pmhandler.cpp:381
+#, fuzzy
+msgid "Analyzing disk..."
+msgstr "Bezig met installeren..."
 
-#: src/pages/UserCreationPage.cpp:192
-msgid "Creating configurations ..."
-msgstr "Bezig met het aanmaken van configuraties ..."
-
-#. i18n: file: launcher/ui/gui.ui:73
-#. i18n: ectx: property (text), widget (KPushButton, yesButton)
-#: rc.cpp:6
-msgid "Yes"
-msgstr "Ja"
-
-#. i18n: file: launcher/ui/gui.ui:80
-#. i18n: ectx: property (text), widget (KPushButton, noButton)
-#: rc.cpp:9
-msgid "No"
-msgstr "Nee"
-
-#. i18n: file: launcher/ui/gui.ui:102
-#. i18n: ectx: property (text), widget (QLabel, m_label)
-#: rc.cpp:12
-msgid "Please Wait, checking Tribe Updates..."
-msgstr "Ogenblik geduld, bezig met het controleren op updates voor Tribe..."
-
-#. i18n: file: ui/crashWindow.ui:19
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:15
-msgid ""
-"Tribe has crashed due to a fatal error. We are extremely sorry about that, "
-"as this should not happen. However, Tribe collected some important "
-"informations about the crash that will be extremely useful to developers for "
-"fixing this problem. The fastest way to report this, if you have an active "
-"internet connection, is clicking \"Send report to developers\". Otherwise, "
-"you can copy/paste the text below and send it to bugs@chakra-project.org. No "
-"personal informations are included, you can see the log for details."
+#: src/pmhandler.cpp:445
+msgid "There was an error while formatting partitions"
 msgstr ""
-"Tribe is gecrasht vanwege een fatale fout. Wij bieden hiervoor onze excuses "
-"aan, "
-"aangezien dit niet hoort te gebeuren. Gelukkig heeft Tribe een aantal "
-"belangrijke "
-"gegevens over de crash opgeslagen die de ontwikkelaars kunnen gebruiken om "
-"dit "
-"probleem op te lossen. De snelste manier om deze te rapporteren, als u een "
-"actieve "
-"internetverbinding heeft, is door te klikken op \"Verstuur rapport naar "
-"ontwikkelaars\". "
-"Indien dit niet het geval is, kunt u de onderstaande informatie kopiëren en "
-"versturen naar "
-"bugs@chakra-project.org. Er zal geen persoonlijke informatie worden "
-"meegezonden, zie de "
-"log voor meer informatie."
 
-#. i18n: file: ui/crashWindow.ui:50
-#. i18n: ectx: property (text), widget (KPushButton, copyButton)
-#: rc.cpp:18
-msgid "Copy to clipboard"
-msgstr "Kopieer naar klembord"
-
-#. i18n: file: ui/crashWindow.ui:57
-#. i18n: ectx: property (text), widget (KPushButton, sendButton)
-#: rc.cpp:21
-msgid "Send report to developers"
-msgstr "Verstuur rapport naar ontwikkelaars"
-
-#. i18n: file: ui/createUserWidget.ui:32
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:24
-msgid "Name:"
-msgstr "Naam:"
-
-#. i18n: file: ui/createUserWidget.ui:39
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:27
-msgid "Surname:"
-msgstr "Achternaam:"
-
-#. i18n: file: ui/createUserWidget.ui:55
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:30
-msgid "Login:"
-msgstr "Gebruikersnaam:"
-
-#. i18n: file: ui/createUserWidget.ui:65
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:33
-msgid "Password:"
-msgstr "Wachtwoord:"
-
-#. i18n: file: ui/createUserWidget.ui:79
-#. i18n: ectx: property (text), widget (QLabel, confirmLabel)
-#: rc.cpp:36
-msgid "Confirm Password:"
-msgstr "Bevestig wachtwoord:"
-
-#. i18n: file: ui/createUserWidget.ui:111
-#. i18n: ectx: property (text), widget (QCheckBox, sudoBox)
-#: rc.cpp:39
-msgid "Administrator"
-msgstr "Administrator"
-
-#. i18n: file: ui/createUserWidget.ui:160
-#. i18n: ectx: property (text), widget (QPushButton, deleteButton)
-#: rc.cpp:45
-msgid "Delete"
-msgstr "Verwijder"
-
-#. i18n: file: ui/tribeBase.ui:166
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:51
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Welcome</span></p></body></html>"
+#: src/widgets/avatardialog.cpp:52
+msgid "Custom"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Welkom</span></p></body></html>"
 
-#. i18n: file: ui/tribeBase.ui:192
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#. i18n: file: ui/tribeReleaseNotes.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, tribeReleaseNotes)
-#: rc.cpp:58 rc.cpp:371
-msgid "Release Notes"
-msgstr "Release notes"
-
-#. i18n: file: ui/tribeBase.ui:218
-#. i18n: ectx: property (text), widget (QLabel, licenseLabel)
-#: rc.cpp:61
-msgid "License Approval"
-msgstr "Goedkeuring van de licentie"
-
-#. i18n: file: ui/tribeBase.ui:255
-#. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:64
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Preparation</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Voorbereiding</span></p></body></html>"
-
-#. i18n: file: ui/tribeBase.ui:262
-#. i18n: ectx: property (text), widget (QLabel, label_10)
-#: rc.cpp:71
-msgid "Ready to Install"
-msgstr "Klaar om te installeren"
-
-#. i18n: file: ui/tribeBase.ui:288
-#. i18n: ectx: property (text), widget (QLabel, label_19)
-#. i18n: file: ui/tribeInit.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, tribeInit)
-#: rc.cpp:74 rc.cpp:191
-msgid "Ramdisk"
-msgstr "Ramdisk"
-
-#. i18n: file: ui/tribeBase.ui:314
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:77
-msgid "System Settings"
-msgstr "Systeeminstellingen"
-
-#. i18n: file: ui/tribeBase.ui:334
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:80
-msgid "Language & Time"
-msgstr "Taal & tijd"
-
-#. i18n: file: ui/tribeBase.ui:348
-#. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:83
-msgid "Disk setup"
-msgstr "Schijfindeling"
-
-#. i18n: file: ui/tribeBase.ui:404
-#. i18n: ectx: property (text), widget (QLabel, label_11)
-#: rc.cpp:86
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Installation</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Installatie</span></p></body></html>"
-
-#. i18n: file: ui/tribeBase.ui:430
-#. i18n: ectx: property (text), widget (QLabel, label_12)
-#: rc.cpp:93
-msgid "Prepare Partitions"
-msgstr "Bereid partities voor"
-
-#. i18n: file: ui/tribeBase.ui:456
-#. i18n: ectx: property (text), widget (QLabel, label_13)
-#: rc.cpp:96
-msgid "Install System"
-msgstr "Installeer systeem"
-
-#. i18n: file: ui/tribeBase.ui:493
-#. i18n: ectx: property (text), widget (QLabel, label_14)
-#: rc.cpp:99
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Configuration</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Configuratie</span></p></body></html>"
-
-#. i18n: file: ui/tribeBase.ui:519
-#. i18n: ectx: property (text), widget (QLabel, label_15)
-#: rc.cpp:106
-msgid "Create User"
-msgstr "Maak gebruiker aan"
-
-#. i18n: file: ui/tribeBase.ui:526
-#. i18n: ectx: property (text), widget (QLabel, label_17)
-#: rc.cpp:109
-msgid "Bootloader"
-msgstr "Bootloader"
-
-#. i18n: file: ui/tribeBase.ui:552
-#. i18n: ectx: property (text), widget (QLabel, label_18)
-#: rc.cpp:112
-msgid "Root Password"
-msgstr "Root-wachtwoord"
-
-#. i18n: file: ui/tribeBase.ui:578
-#. i18n: ectx: property (text), widget (QLabel, label_16)
-#. i18n: file: ui/tribeFinish.ui:132
-#. i18n: ectx: property (text), widget (QPushButton, configureButton)
-#: rc.cpp:115 rc.cpp:188
-msgid "Configure System"
-msgstr "Configureer systeem"
-
-#. i18n: file: ui/tribeBase.ui:658
-#. i18n: ectx: property (text), widget (QPushButton, abortButton)
-#: rc.cpp:118
-msgid "Abort installation"
-msgstr "Breek installatie af"
-
-#. i18n: file: ui/tribeBase.ui:690
-#. i18n: ectx: property (text), widget (QPushButton, previousButton)
-#: rc.cpp:121
-msgctxt "Previous Page"
-msgid "Previous"
-msgstr "Vorige"
-
-#. i18n: file: ui/tribeBase.ui:709
-#. i18n: ectx: property (text), widget (QPushButton, nextButton)
-#: rc.cpp:124
-msgctxt "Next Page"
-msgid "Next"
-msgstr "Volgende"
-
-#. i18n: file: ui/tribeBootloader.ui:49
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:127
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Bootloader Installation</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Installatie van de bootloader</span></p></body></html>"
-
-#. i18n: file: ui/tribeBootloader.ui:60
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:134
-msgid ""
-"You can now install GRUB as your main bootloader.\n"
-"\n"
-"If you are unsure where you should install the bootloader to, just leave the "
-"default value (hd0)."
-msgstr ""
-"U kunt GRUB nu installeren als uw standaard bootloader.\n"
-"\n"
-"Als u niet zeker weet waar u de bootloader wilt installeren, laat dan de "
-"standaardwaarde (hd0) staan."
-
-#. i18n: file: ui/tribeBootloader.ui:73
-#. i18n: ectx: property (text), widget (QCheckBox, checkBox)
-#: rc.cpp:139
-msgid "Install Bootloader"
-msgstr "Installeer bootloader"
-
-#. i18n: file: ui/tribeBootloader.ui:91
-#. i18n: ectx: property (text), widget (QPushButton, pushButton)
-#: rc.cpp:142
-msgid "Advanced..."
-msgstr "Geavanceerd..."
-
-#. i18n: file: ui/tribeBootloader.ui:137
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:145
-msgid "Install to:"
-msgstr "Installeer naar:"
-
-#. i18n: file: ui/tribeBootloader.ui:144
-#. i18n: ectx: property (text), widget (QLineEdit, lineEdit)
-#: rc.cpp:148
-msgid "hd0"
-msgstr "hd0"
-
-#. i18n: file: ui/tribeConfiguration.ui:44
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:151
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Configure System</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Configureer systeem</span></p></body></html>"
-
-#. i18n: file: ui/tribeConfiguration.ui:51
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:158
-msgid ""
-"Although the installer has created a usable default configuration suitable "
-"for most users, you can now configure your newly installed system. Please "
-"take some time to step through each section and configure your system the "
-"way you want it."
-msgstr ""
-"Hoewel het installatieprogramma een standaardconfiguratie heeft aangemaakt "
-"die bruikbaar is voor de meeste gebruikers, kunt u uw nieuw geïnstalleerde "
-"systeem nu naar uw eigen wensen instellen. Neem uw tijd om bij elke stap "
-"stil te staan en configureer het systeem zoals u het wilt."
-
-#. i18n: file: ui/tribeFinish.ui:49
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:161
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Installation Completed !</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Configureer systeem</span></p></body></html>"
-
-#. i18n: file: ui/tribeFinish.ui:69
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:168
-msgid ""
-"Congratulations, the installation has been completed! We hope you enjoyed "
-"what you have seen as much as we enjoyed creating it.\n"
-"\n"
-"You can now reboot into the installed system or keep using the LiveCD.\n"
-"\n"
-"In case you want to check the installation logs, take a look into /tmp on "
-"the live system or into /var/log on the installed system.\n"
-"\n"
-"Thanks for using Chakra, and get in touch with us in the forums, share "
-"opinions, give advices;\n"
-"To put it simple: Get involved! (http://chakra-project.org)\n"
-"\n"
-"Have Fun!\n"
-"\n"
-"The Chakra Team"
-msgstr ""
-"Gefeliciteerd, de installatie is afgerond! We hopen dat u net zo geniet van "
-"Chakra als dat wij hebben genoten van het maken ervan.\n"
-"\n"
-"U kunt nu opnieuw opstarten in het nieuw geïnstalleerde systeem of de "
-"LiveCD blijven gebruiken.\n"
-"\n"
-"Als u de installatielogs wilt bekijken, kijk dan in de map /tmp op dit "
-"livesysteem "
-"of in de map /var/log op het nieuw geinstalleerde systeem.\n"
-"\n"
-"Bedankt voor uw keuze voor Chakra en kom in contact met ons via het forum, "
-"geef advies, laat uw "
-"mening horen;\n"
-"Oftewel: Wordt betrokken! (http://chakra-project.org)\n"
-"\n"
-"Veel plezier!\n"
-"\n"
-"Het Chakra-team"
-
-#. i18n: file: ui/tribeFinish.ui:103
-#. i18n: ectx: property (text), widget (QPushButton, rebootButton)
-#: rc.cpp:182
-msgid "Restart Computer"
-msgstr "Herstart computer"
-
-#. i18n: file: ui/tribeFinish.ui:116
-#. i18n: ectx: property (text), widget (QPushButton, chakraButton)
-#: rc.cpp:185
-msgid "Keep using the LiveCD"
-msgstr "Blijf de LiveCD gebruiken"
-
-#. i18n: file: ui/tribeInit.ui:49
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:194
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Ramdisk Setup</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Ramdisk-instellingen</span></p></body></html>"
-
-#. i18n: file: ui/tribeInit.ui:58
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:201
-msgid ""
-"Your hardware will be configured automatically during the installation and a "
-"initial ramdisk environment for booting the linux kernel will be built. "
-"Everything should happen without intervention, but you might need some "
-"options for special boot methods. If you are unsure on what this means, "
-"simply press the \"Next\" button. Otherwise check out the ramdisk options "
-"below and select the items you need for your system."
-msgstr ""
-"Uw hardware zal automatisch worden ingesteld tijden de installatie en de "
-"initiële ramdisk-omgeving voor het starten van de Linux-kernel zal worden "
-"opgebouwd. "
-"Dit alles zal gebeuren zonder dat uw tussenkomst nodig is, maar het kan zijn "
-"dat u opties moet instellen voor speciale opstartmethoden. Als u niet zeker "
-"weet "
-"wat dit betekent, druk op de \"Volgende\"-knop. Als u het wel weet, bekijk "
-"de "
-"ramdisk-opties hieronder en kies de opties die u nodig heeft voor uw systeem."
-
-#. i18n: file: ui/tribeInit.ui:81
-#. i18n: ectx: property (text), widget (QPushButton, pushButton)
-#: rc.cpp:204
-msgid "Ramdisk Options"
-msgstr "Ramdisk-opties"
-
-#. i18n: file: ui/tribeInit.ui:111
-#. i18n: ectx: property (text), widget (QCheckBox, usb)
-#: rc.cpp:207
-msgid "Activate support for booting from USB devices"
-msgstr "Activeer ondersteuning voor het opstarten van USB-apparaten"
-
-#. i18n: file: ui/tribeInit.ui:118
-#. i18n: ectx: property (text), widget (QCheckBox, firewire)
-#: rc.cpp:210
-msgid "Activate support for booting from FireWire devices"
-msgstr "Activeer ondersteuning voor het opstarten van FireWire-apparaten"
-
-#. i18n: file: ui/tribeInit.ui:125
-#. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
-#: rc.cpp:213
-msgid "Activate support for booting from PCMCIA devices"
-msgstr "Activeer ondersteuning voor het opstarten van PCMCIA-apparaten"
-
-#. i18n: file: ui/tribeInit.ui:132
-#. i18n: ectx: property (text), widget (QCheckBox, nfs)
-#: rc.cpp:216
-msgid "Activate support for booting from NFS shares"
-msgstr "Activeer ondersteuning voor het opstarten van gedeelde NFS-mappen"
-
-#. i18n: file: ui/tribeInit.ui:139
-#. i18n: ectx: property (text), widget (QCheckBox, raid)
-#: rc.cpp:219
-msgid "Activate support for booting from Software Raid arrays"
-msgstr "Activeer ondersteuning voor het opstarten van Software Raid arrays"
-
-#. i18n: file: ui/tribeInit.ui:146
-#. i18n: ectx: property (text), widget (QCheckBox, mdp)
-#: rc.cpp:222
-msgid "Activate support for booting from Software Raid/MDP Partition arrays"
-msgstr ""
-"Activeer ondersteuning voor het opstarten van Software Raid/MPD partitie "
-"arrays"
-
-#. i18n: file: ui/tribeInit.ui:153
-#. i18n: ectx: property (text), widget (QCheckBox, lvm2)
-#: rc.cpp:225
-msgid "Activate support for booting from LVM2 volumes"
-msgstr "Activeer ondersteuning voor het opstarten van LVM2-schijven"
-
-#. i18n: file: ui/tribeInit.ui:160
-#. i18n: ectx: property (text), widget (QCheckBox, encrypted)
-#: rc.cpp:228
-msgid "Activate support for booting from Encrypted volumes"
-msgstr "Activeer ondersteuning voor het opstarten van versleutelde schijven"
-
-#. i18n: file: ui/tribeInstallation.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, tribeInstallation)
-#: rc.cpp:231
-msgid "Tribe Installation"
-msgstr "Tribe-installatie"
-
-#. i18n: file: ui/tribeInstallation.ui:97
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:234
-msgid "Nine Inch Nails - Discipline"
-msgstr "Nine Inch Nails - Discipline"
-
-#. i18n: file: ui/tribeInstallation.ui:102
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:237
-msgid "Severed Fifth - War"
-msgstr "Severed Fifth - War"
-
-#. i18n: file: ui/tribeInstallation.ui:107
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:240
-msgid "Dunkelstern - Out of the box"
-msgstr "Dunkelstern - Out of the box"
-
-#. i18n: file: ui/tribeIntro.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, tribeIntro)
-#: rc.cpp:243
-msgid "Tribe Intro"
-msgstr "Tribe Intro"
-
-#. i18n: file: ui/tribeIntro.ui:107
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:246
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-size:14pt; color:#eeeeee;\">Welcome to the Chakra Installation!"
-"</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:"
-"#eeeeee;\"><span style=\" font-weight:600;\">Tribe, our installer, will "
-"guide you through the process of installing the Chakra live system</span></"
-"p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\">on your computer. After the installation you "
-"will have a ready-to-use Arch Linux</p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\">desktop system with our modular KDE packages.</"
-"p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-weight:600; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\"> Please take the time to carefully read through "
-"all texts and explanations.</p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-weight:600; color:#eeeeee;\"> Remember:</span><span style=\" "
-"font-weight:600;\"> </span><span style=\" font-weight:600; color:#ff0000;"
-"\">THIS IS ALPHA SOFTWARE, IT COULD EAT YOUR HAMSTER</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-weight:600; color:#ff0000;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#ff0000;\"><span style=\" color:#eeeeee;\">Have fun! - The "
-"Chakra Developers</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-size:14pt; color:#eeeeee;\">Welkom bij de installatie van "
-"Chakra!"
-"</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:"
-"#eeeeee;\"><span style=\" font-weight:600;\">Tribe, onze installer, zal u "
-"leiden door het proces van het installeren "
-"van het Chakra live-systeem</span></"
-"p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\">op uw computer. Na de installatie heeft u "
-"een werkend Arch Linux</p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\">systeem met onze modulaire KDE-pakketten.</"
-"p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-weight:600; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\"> Neem uw tijd om uitgebreid alle tekst en "
-"uitleg "
-"door te lezen.</p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-weight:600; color:#eeeeee;\"> Onthoud:</span><span style=\" "
-"font-weight:600;\"> </span><span style=\" font-weight:600; color:#ff0000;"
-"\">DIT IS ALPHA-SOFTWARE, HIJ KAN JE HAMSTER OPETEN</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-weight:600; color:#ff0000;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#ff0000;\"><span style=\" color:#eeeeee;\">Veel plezier! - "
-"De Chakra-ontwikkelaars</span></p></body></html>"
-
-#. i18n: file: ui/tribeLicense.ui:52
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:263
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">License Approval</span></p></"
-"body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Goedkeurig van de licentie<"
-"/span></p></"
-"body></html>"
-
-#. i18n: file: ui/tribeLicense.ui:64
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:270
-msgid ""
-"Chakra includes some proprietary software like hardware drivers, media "
-"plugins and fonts. To install them, you have to read and accept their "
-"licenses. If you choose against a license, the installer will try to use a "
-"free solution (if one is available)."
-msgstr ""
-"Chakra bevat een aantal propiëtaire softwarepakketten zoals "
-"hardwarestuurprogramma's, "
-"media-plugins en lettertypen. Om deze pakketten te installeren, moet u de "
-"bijbehorende licenties "
-"doorlezen en goedkeuren. Als u een bepaalde licentie niet goedkeurt, zal de "
-"installer een vrij "
-"alternatief proberen te installeren (mits beschikbaar)."
-
-#. i18n: file: ui/tribeLicense.ui:77
-#. i18n: ectx: property (text), widget (QLabel, licenseLabel)
-#: rc.cpp:273
-msgid "Approve license for:"
-msgstr "Keur licentie goed voor:"
-
-#. i18n: file: ui/tribeLicense.ui:106
-#. i18n: ectx: property (text), widget (QRadioButton, declineButton)
-#: rc.cpp:276
-msgid "Decline License"
-msgstr "Keur licentie af"
-
-#. i18n: file: ui/tribeLicense.ui:113
-#. i18n: ectx: property (text), widget (QRadioButton, acceptButton)
-#: rc.cpp:279
-msgid "Accept License"
-msgstr "Accepteer licentie"
-
-#. i18n: file: ui/tribeLocale.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, TribeLocale)
-#: rc.cpp:282
-msgid "Form"
-msgstr "Form"
-
-#. i18n: file: ui/tribeLocale.ui:39
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:285
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Language &amp; Time</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Taal &amp; tijd</span></p></body></html>"
-
-#. i18n: file: ui/tribeLocale.ui:49
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:292
-msgid ""
-"Please select the nearest city on the globe so the installer can suggest the "
-"locale and timezone settings for you. You can fine-tune the suggested "
-"settings at the bottom of the page. If you cant find your region or city on "
-"the globe, you can zoom in by using the slider on the left."
-msgstr ""
-"Kies de dichtstbijzijnde stad op de kaart, zodat de installer de beste "
-"instellingen voor locale en tijdzonde voor u kan suggereren. Onderaan "
-"de pagina kunt u de gesuggereerde instellingen bijstellen. Als u uw "
-"regio of stad niet kunt vinden op de kaart, kunt u inzoomen door de "
-"slider aan de linkerkant te gebruiken."
-
-#. i18n: file: ui/tribeLocale.ui:73
-#. i18n: ectx: property (clickMessage), widget (KLineEdit, locationsSearch)
-#: rc.cpp:295
-msgid "Search..."
-msgstr "Zoeken..."
-
-#. i18n: file: ui/tribeLocale.ui:152
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:298
-msgid "Time Settings"
-msgstr "Tijdsinstellingen"
-
-#. i18n: file: ui/tribeLocale.ui:170
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:301
-msgid "Timezone:"
-msgstr "Tijdzone:"
-
-#. i18n: file: ui/tribeLocale.ui:189
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:304
-msgid "Language Settings"
-msgstr "Taalinstellingen"
-
-#. i18n: file: ui/tribeLocale.ui:195
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:307
-msgid "Locale:"
-msgstr "Locale:"
-
-#. i18n: file: ui/tribeLocale.ui:205
-#. i18n: ectx: property (text), widget (QCheckBox, showLocalesCheck)
-#. i18n: file: ui/tribeLocale.ui:215
-#. i18n: ectx: property (text), widget (QCheckBox, showKDELangsCheck)
-#: rc.cpp:310 rc.cpp:313
-msgid "Show all"
-msgstr "Toon alle"
-
-#. i18n: file: ui/tribeLocale.ui:222
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:316
-msgid "Language:"
-msgstr "Taal:"
-
-#. i18n: file: ui/tribePartition.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, tribePartition)
-#: rc.cpp:319
-msgid "Partition"
-msgstr "Partitie"
-
-#. i18n: file: ui/tribePartition.ui:47
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:322
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Disk setup</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Schijfindeling</span></p></body></html>"
-
-#. i18n: file: ui/tribePartition.ui:56
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:329
-msgid ""
-"Now you have to set up your disks for installation. Please use the tool "
-"below to partition, format and select mountpoints. Once you're satisfied "
-"with your choice, click \"Apply\" if you made any changes to the partition "
-"table or requested to format one or more partitions, and then go ahead. "
-"Formatting the partitions you will mount main system paths on (such as / or /"
-"usr) is strongly advised."
-msgstr ""
-"Nu moet u de partities voor de installatie instellen. Gebruik onderstaand "
-"hulpprogramma om te partitioneren, formatteren en aankoppelingspunten "
-"te kiezen. Zo gauw u tevreden bent met uw keuze, klikt u op \"Toepassen\", "
-"als u veranderingen "
-"heeft gemaakt aan de partitietabel of gekozen hebt om partities te "
-"formatteren. "
-"Het wordt met klem aangeraden de partities die u gebruikt voor paden van het "
-"basissysteem (zoals / of /usr) "
-" te formatteren."
-" "
-
-#. i18n: file: ui/tribePreparePartitions.ui:79
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:332
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">Formatting Partitions...</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">Partities formatteren...</span></p></body></html>"
-
-#. i18n: file: ui/tribePreparePartitions.ui:129
-#. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:339
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">Mounting Partitions...</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">Aankoppelen van partities...</span></p></body></html>"
-
-#. i18n: file: ui/tribeReadyInstall.ui:45
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:346
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Ready to Install</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Klaar om te installeren</span></p></body></html>"
-
-#. i18n: file: ui/tribeReadyInstall.ui:71
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:353
-msgid ""
-"The system will be installed with the following settings. Before continuing, "
-"please review your selections:\n"
-msgstr ""
-"Het systeem zal worden geinstallerd met de volgende instellingen. "
-" Bekijk uw keuzes nauwkeurig, alvorens verder te gaan:\n"
-
-#. i18n: file: ui/tribeReadyInstall.ui:141
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:357
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">The following partitions will be used:</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">De volgende partities zullen worden gebruikt:</span></p></body><"
-"/html>"
-
-#. i18n: file: ui/tribeReadyInstall.ui:205
-#. i18n: ectx: property (text), widget (QLabel, formatLabel)
-#: rc.cpp:364
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">The following partitions will be formatted:</span></p></body></"
-"html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">De volgende partities zullen worden geformatteerd:</span></p><"
-"/body></"
-"html>"
-
-#. i18n: file: ui/tribeReleaseNotes.ui:50
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:374
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
-"style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Release Notes</"
-"span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
-"style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Release Notes</"
-"span></p></body></html>"
-
-#. i18n: file: ui/tribeReleaseNotes.ui:63
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:381
-msgid ""
-"Check out what's new, the known issues and general information about this "
-"version of Chakra. As always, you are encouraged to tell us what you think, "
-"either by visiting our forums or bug tracker."
-msgstr ""
-"Bekijk de nieuwe functies, bekende problemen en algemene informatie over "
-"deze "
-" versie van Chakra. Zoals altijd bent u van harte uitgenodigd ons te "
-"vertellen wat "
-"u vindt, door het forum te bezoeken of door gebruik te maken van de bug "
-"tracker."
-
-#. i18n: file: ui/tribeReleaseNotes.ui:86
-#. i18n: ectx: property (html), widget (QTextEdit, textEdit)
-#: rc.cpp:384
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"family:'Liberation Sans'; font-size:8pt;\"></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"family:'Liberation Sans'; font-size:8pt;\"></p></body></html>"
-
-#. i18n: file: ui/tribeRoot.ui:49
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:391
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Root Setup</span></p></body></"
-"html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Instellingen root</span></p><"
-"/body></"
-"html>"
-
-#. i18n: file: ui/tribeRoot.ui:60
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:398
-msgid ""
-"Now you can define the behaviour of the user root, who is used to manage the "
-"system.\n"
-"\n"
-"Keeping this user is usually recommended, though you can choose to use sudo "
-"only and disable the root user. Please remind that having the root account "
-"disabled and sudo misconfigured may lead to an unusable system."
-msgstr ""
-"Nu kunt u het gedrag instellen van de root-account, die gebruikt wordt om "
-"het systeem te beheren.\n"
-"\n"
-"Het wordt aanbevolen dit op gebruiker te laten staan, hoewel u ook kunt "
-"kiezen voor alleen sudo en het uitschakelen van de root-account. Houd in "
-"gedachten dat "
-"het uitschakelen van de root-account en het verkeerd instellen van sudo kan "
-" leiden tot een onbruikbaar systeem."
-
-#. i18n: file: ui/tribeRoot.ui:93
-#. i18n: ectx: property (text), widget (QCheckBox, rootBox)
-#: rc.cpp:403
-msgid "Enable Root User"
-msgstr "Root-gebruiker inschakelen"
-
-#. i18n: file: ui/tribeRoot.ui:102
-#. i18n: ectx: property (text), widget (QLabel, rootLabel)
-#: rc.cpp:406
-msgid "Password"
-msgstr "Wachtwoord"
-
-#. i18n: file: ui/tribeRoot.ui:132
-#. i18n: ectx: property (text), widget (QLabel, confirmLabel)
-#: rc.cpp:409
-msgid "Confirm Password"
-msgstr "Bevestig wachtwoord"
-
-#. i18n: file: ui/tribeSelectPartitions.ui:49
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:415
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Filesystem Setup</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Instellingen bestandssysteem</span></p></body></html>"
-
-#. i18n: file: ui/tribeSelectPartitions.ui:60
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:422
-msgid ""
-"Please choose what partitions should be used for the installation. Just "
-"select the partition and the mountpoint. You can use the \"Add another "
-"partition\" button to add more of them. To format a partition (most likely "
-"accurate for all system partitions), activate the \"Format\" checkbox and "
-"select a filesystem.\n"
-"\n"
-"You need at least a root (/) and a swap partition. When you have added all "
-"desired partitions, simply press the \"Next\" button."
-msgstr ""
-"Kies welke partities gebruikt moeten worden voor de installatie. U hoeft "
-"alleen een partitie en een aankoppelingspunt te kiezen. U kunt \"Andere "
-"partitie toevoegen\" gebruiken om er meer van toe te voegen. Zet een vinkje "
-"voor \"Formatteer\" om een partitie te formatteren (waarschijnlijk nodig "
-"voor "
-"alle partities waarop het basissysteem geïnstalleerd wordt).\n"
-"\n"
-"U heeft tenminste een root-partitie (/) en een swap-partitie nodig. Wanneer "
-"u alle gewenste partities heeft toegevoegd, drukt u simpelweg op "
-"\"Volgende\"."
-
-#. i18n: file: ui/tribeSelectPartitions.ui:136
-#. i18n: ectx: property (text), widget (QPushButton, addButton)
-#: rc.cpp:427
-msgid "Add another Partition"
-msgstr "Andere partitie toevoegen"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:19
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:430
-msgid "Partition:"
-msgstr "Partitie:"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:29
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:433
-msgid "Size:"
-msgstr "Grootte:"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:44
-#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
-#: rc.cpp:436
-msgid "ext3"
-msgstr "ext3"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:49
-#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
-#: rc.cpp:439
-msgid "ext2"
-msgstr "ext2"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:54
-#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
-#: rc.cpp:442
-msgid "ext4"
-msgstr "ext4"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:59
-#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
-#: rc.cpp:445
-msgid "reiserfs"
-msgstr "reiserfs"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:64
-#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
-#: rc.cpp:448
-msgid "jfs"
-msgstr "jfs"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:69
-#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
-#: rc.cpp:451
-msgid "xfs"
-msgstr "xfs"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:74
-#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
-#: rc.cpp:454
-msgid "linux-swap"
-msgstr "linux-swap"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:82
-#. i18n: ectx: property (text), widget (QCheckBox, formatBox)
-#: rc.cpp:457
-msgid "Format with:"
-msgstr "Formatteren met:"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:89
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:460
-msgid "Mountpoint:"
-msgstr "Aankoppelingspunt:"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:100
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:463
-msgid "/"
-msgstr "/"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:105
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:466
-msgid "/boot"
-msgstr "/boot"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:110
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:469
-msgid "/home"
-msgstr "/home"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:115
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:472
-msgid "/opt"
-msgstr "/opt"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:120
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:475
-msgid "/usr"
-msgstr "/usr"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:125
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:478
-msgid "/tmp"
-msgstr "/tmp"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:130
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:481
-msgid "/var"
-msgstr "/var"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:135
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:484
-msgid "swap"
-msgstr "swap"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:143
-#. i18n: ectx: property (text), widget (QPushButton, deleteButton)
-#: rc.cpp:487
-msgid "Remove"
-msgstr "Verwijder"
-
-#. i18n: file: ui/tribeSettings.ui:56
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:490
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">System Settings</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Systeeminstellingen</span></p></body></html>"
-
-#. i18n: file: ui/tribeSettings.ui:77
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:497
-msgid "General Settings"
-msgstr "Algemene instellingen"
-
-#. i18n: file: ui/tribeSettings.ui:83
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:500
-msgid "The name of this computer:"
-msgstr "Naam van deze computer:"
-
-#. i18n: file: ui/tribeSettings.ui:114
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:503
-msgid "Download Settings"
-msgstr "Downloadinstellingen"
-
-#. i18n: file: ui/tribeSettings.ui:126
-#. i18n: ectx: property (text), widget (QCheckBox, detect_mirror)
-#: rc.cpp:506
-msgid "Detect best mirror server and use it (recommended)"
-msgstr "Zoek beste spiegelserver en gebruik deze (aanbevolen)"
-
-#. i18n: file: ui/tribeSettings.ui:145
-#. i18n: ectx: property (text), widget (QCheckBox, download_doc)
-#: rc.cpp:509
-msgid "Download and install documentation packages"
-msgstr "Download en installeer documentatiepakketten"
-
-#. i18n: file: ui/tribeUserCreation.ui:38
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:512
-msgid ""
-"Enter your name, a corresponding login name and your password to create a "
-"user account. To enable sudo for the created user and allow him to do "
-"administrative tasks, enable the \"Administrator\" option below."
-msgstr ""
-"Voer uw naam, een overeenkomstige gebruikersnaam en uw wachtwoord "
-"in om een gebruikersaccount aan te maken. Kies de \"Administrator\"-optie "
-"hieronder om sudo in te schakelen voor deze gebruiker en hem toe te staan "
-"beheerstaken uit te voeren."
-
-#. i18n: file: ui/tribeUserCreation.ui:84
-#. i18n: ectx: property (text), widget (QPushButton, addButton)
-#: rc.cpp:515
-msgid "Add another User.."
-msgstr "Andere gebruiker toevoegen..."
-
-#. i18n: file: ui/tribeUserCreation.ui:107
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:518
-msgid "Install plain KDE-Configuration"
-msgstr "Installeer standaard KDE-configuratie"
-
-#. i18n: file: ui/tribeUserCreation.ui:112
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:521
-msgid "Install Current-LiveCD-Configuration"
-msgstr "Installeer configuratie van huidig livesysteem"
-
-#. i18n: file: ui/tribeUserCreation.ui:117
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:524
-msgid "Install plain KDEMod-Configuration"
-msgstr "Installeer standaard KDEMod-configuratie"
-
-#. i18n: file: ui/tribeUserCreation.ui:135
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:527
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Create User</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Maak gebruiker aan</span></p></body></html>"
-
-#: rc.cpp:532
+#: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Uw namen"
 
-#: rc.cpp:533
+#: rc.cpp:2
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "Uw e-mailadressen"
 
+#~ msgid "Setting up Tribe..."
+#~ msgstr "Bezig met het starten van Tribe..."
 
+#~ msgid ""
+#~ "It looks like you were not authorized to launch Tribe. Please contact "
+#~ "your system administrator for further details"
+#~ msgstr ""
+#~ "Het lijkt erop dat u niet de juiste rechten hebt om Tribe te starten. "
+#~ "Neem voor meer informatie contact op met uw systeembeheerder"
+
+#~ msgid ""
+#~ "It looks like an unclean start of Tribe has taken place. Please kill all "
+#~ "instances of tribe, tribelauncher and tribelauncherworker and try again"
+#~ msgstr ""
+#~ "Het lijkt erop dat een niet-schone start van Tribe heeft plaatsgevonden. "
+#~ "Beëindig eerst alle lopende sessies van tribe, tribelauncher en "
+#~ "tribelauncherworker en probeer het dan opnieuw"
+
+#~ msgid ""
+#~ "A newer version of Tribe is available.\n"
+#~ "It is strongly advised to upgrade it. Do you want to upgrade Tribe now?"
+#~ msgstr ""
+#~ "Een nieuwe versie van Tribe is beschikbaar.\n"
+#~ "Het wordt met klem aangeraden om op te waarderen. Wilt u Tribe nu "
+#~ "opwaarderen?"
+
+#~ msgid ""
+#~ "A newer version of Arxin is available.\n"
+#~ "Even though not fundamental, upgrading it is recommended. Do you want to "
+#~ "upgrade Arxin now?"
+#~ msgstr ""
+#~ "Een nieuwe versie van Arxin is beschikbaar.\n"
+#~ "Hoewel niet strikt noodzakelijk, is het wel aanbevolen om dit programma "
+#~ "op te waarderen. Wilt u Arxin nu opwaarderen?"
+
+#~ msgid "Please Wait, Upgrading Chakra Installer..."
+#~ msgstr ""
+#~ "Ogenblik geduld, bezig met het opwaarderen van de Chakra Installer..."
+
+#~ msgctxt ""
+#~ "You just have to translate 'remaining' here. Leave everything else as it "
+#~ "is."
+#~ msgid "%p% (%1 KB/s, %2 remaining)"
+#~ msgstr "%p% (%1 KB/s, nog %2 te gaan)"
+
+#~ msgid "Please Wait, Installing Packages..."
+#~ msgstr "Ogenblik geduld, bezig met het installeren van pakketten..."
+
+#~ msgid "Please Wait, Upgrading Packages..."
+#~ msgstr "Ogenblik geduld, bezig met het opwaarderen van pakketten..."
+
+#~ msgid "Please Wait, Downloading Packages..."
+#~ msgstr "Ogenblik geduld, bezig met het downloaden van pakketten..."
+
+#~ msgid ""
+#~ "An error occurred while trying to upgrade.\n"
+#~ "Do you want to run Tribe anyway?"
+#~ msgstr ""
+#~ "Er is een fout opgetreden tijdens het opwaarderen.\n"
+#~ "Wilt u Tribe toch starten?"
+
+#~ msgid "Please wait, Tribe is being started..."
+#~ msgstr "Ogenblik geduld, Tribe wordt gestart..."
+
+#~ msgid "Tribe Launcher"
+#~ msgstr "Tribe Launcher"
+
+#~ msgid "An auto updater and launcher for Tribe"
+#~ msgstr ""
+#~ "Een hulpprogramma voor het automatisch opwaarderen en starten van Tribe"
+
+#~ msgid "team@chakra-project.org"
+#~ msgstr "team@chakra-project.org"
+
+#~ msgid ""
+#~ "We appreciate your dedication, but your backtrace has already been "
+#~ "successfully sent"
+#~ msgstr ""
+#~ "We waarderen uw inzet voor het Chakra-project, maar uw backtrace is al "
+#~ "succesvol verstuurd"
+
+#~ msgid ""
+#~ "Thanks! Your backtrace was successfully submitted. Now just wait for us "
+#~ "to fix this!"
+#~ msgstr ""
+#~ "Bedankt! Uw backtrace is succesvol verstuurd. Nu hoeft u alleen te "
+#~ "wachten tot wij dit probleem oplossen!"
+
+#~ msgid ""
+#~ "There was an error while sending your backtrace!! Probably we could not "
+#~ "connect to the server: you can retry, but the best thing to do would be "
+#~ "saving the backtrace and attaching it to a bug report later."
+#~ msgstr ""
+#~ "Er is een fout opgetreden tijdens het versturen van uw backtrace! "
+#~ "Waarschijnlijk kon er geen contact worden gemaakt met de server: u kunt "
+#~ "het opnieuw proberen, maar het beste is om de backtrace op te slaan en "
+#~ "deze later met een bug report mee te sturen."
+
+#~ msgid "Preparing installation, this might take some time ..."
+#~ msgstr ""
+#~ "Bezig met het voorbereiden van de installatie, dit kan even duren ..."
+
+#~ msgid ""
+#~ "Detecting best mirror server & configuring pacman, this may take a bit..."
+#~ msgstr ""
+#~ "Bezig met het zoekn naar de beste spiegelserver & het configureren van "
+#~ "pacman, dit kan even duren..."
+
+#~ msgid "Setting up X.Org configuration..."
+#~ msgstr "Bezig met het instellen van de configuratie van X.org..."
+
+#~ msgid ""
+#~ "Downloading and installing documentation packages, this may take a bit..."
+#~ msgstr ""
+#~ "Bezig met het downloaden en installeren van documentatiepakketten, dit "
+#~ "kan even duren..."
+
+#~ msgid "Could not format %1"
+#~ msgstr "Kan %1 niet formatteren"
+
+#~ msgid "Do you really want to quit the installation?"
+#~ msgstr "Weet u zeker dat u de installatie wilt afsluiten?"
+
+#~ msgid "Creating menu.lst..."
+#~ msgstr "Bezig met het aanmaken van menu.lst..."
+
+#~ msgid "Adobe Flash Plugin"
+#~ msgstr "Adobe Flash Plugin"
+
+#~ msgid "Microsoft Core TTF Fonts"
+#~ msgstr "Microsoft Core TTF-lettertypen"
+
+#~ msgid ""
+#~ "You still have pending operations, please apply or revert them before "
+#~ "continuing"
+#~ msgstr ""
+#~ "Er zijn nog niet-afgeronde veranderingen, pas deze eerst toe of zet deze "
+#~ "terug, alvorens verder te gaan"
+
+#~ msgid ""
+#~ "It looks like you have selected the mountpoint %1 twice. You can assign "
+#~ "only one partition to a mountpoint"
+#~ msgstr ""
+#~ "Het lijkt erop dat u het aankoppelingspunt %1 twee keer hebt gekozen. U "
+#~ "kunt maar één partitie aan een bepaald aankoppelingspunt toewijzen."
+
+#~ msgid ""
+#~ "Formatting the '/' partition is strongly advised. Going ahead without "
+#~ "formatting it might lead to a non working system after the installation"
+#~ msgstr ""
+#~ "Het wordt met klem aangeraden de '/'-partitie te formatteren. Verdergaan "
+#~ "zonder deze partitie te formatteren kan na de installatie tot een niet-"
+#~ "werkend systeem leiden"
+
+#~ msgid ""
+#~ "You have chosen %1 to be used as swap, however you need a special "
+#~ "filesystem for that. Please mark it for being formatted to continue"
+#~ msgstr ""
+#~ "U heeft %1 gekozen om gebruikt te worden als wisselgeheugen (swap), maar "
+#~ "hiervoor is een speciaal bestandssysteem benodigd. Markeer deze partitie "
+#~ "om te worden geformatteerd, voor u verder gaat"
+
+#~ msgid ""
+#~ "The partition %1 you have chosen to use as swap has a filesystem which is "
+#~ "not linuxswap. Please note that this will be changed during installation "
+#~ "procedure"
+#~ msgstr ""
+#~ "De partitie %1 die u gekozen heeft als wisselgeheugen (swap) heeft een "
+#~ "bestandssysteem dat niet linuxswap is. Dit zal worden aangepast tijdens "
+#~ "de installatieprocedure"
+
+#~ msgid ""
+#~ "It looks like you did not assign a partition to '/'. You have to select a "
+#~ "mount point at least for it"
+#~ msgstr ""
+#~ "Het lijkt erop dat u geen partitie heeft toegewezen aan '/'. U moet hier "
+#~ "tenminste een aankoppelingspunt aan toewijzen"
+
+#~ msgid ""
+#~ "You did not select a partition to be used as swap space. A swap partition "
+#~ "is strongly advised, especially on laptops and system with limited amount "
+#~ "of RAM"
+#~ msgstr ""
+#~ "U heeft geen partitie geselecteerd om gebruikt te worden als "
+#~ "wisselgeheugen (swap). Het gebruik van een swap-partitie wordt met klem "
+#~ "aangeraden, vooral op laptops en computers met een beperkte hoeveelheid "
+#~ "RAM"
+
+#~ msgid "Formatting %1 with %2..."
+#~ msgstr "Bezig met het formatteren van %1 met %2..."
+
+#~ msgid "%1 will be formatted with %2"
+#~ msgstr "%1 zal worden geformatteerd met %2"
+
+#~ msgid "Partitions mounted"
+#~ msgstr "Partities aangekoppeld"
+
+#~ msgid "Setting up root user ..."
+#~ msgstr "Bezig met het instellen van de root-gebruiker"
+
+#~ msgid "Configuring users ..."
+#~ msgstr "Bezig met het instellen van de gebruikers..."
+
+#~ msgid "Password has to be at least 6 characters"
+#~ msgstr "Het wachtwoord moet tenminste 6 karakters lang zijn"
+
+#~ msgid "Passwords match"
+#~ msgstr "Wachtwoorden komen overeen"
+
+#~ msgid "Please wait, reading partition table ..."
+#~ msgstr "Ogenblik geduld, bezig met het inlezen van de partitietabel ..."
+
+#~ msgid "Configuring swap space, this could take some time ..."
+#~ msgstr ""
+#~ "Bezig met het configureren van het wisselgeheugen, dit kan even duren ..."
+
+#~ msgid ""
+#~ "You have selected the partition %1 to be mounted twice.\n"
+#~ "Please correct your selection."
+#~ msgstr ""
+#~ "U heeft partitie %1 twee keer aangekoppeld.\n"
+#~ "Corrigeer alstublieft uw keuze."
+
+#~ msgid ""
+#~ "You have to chosen mount point '%1' for two partitions.\n"
+#~ "Please correct your selection."
+#~ msgstr ""
+#~ "U heeft het aankoppelinspunt '%1' voor twee partities gekozen.\n"
+#~ "Corrigeer alstublieft uw keuze."
+
+#~ msgid "You have to select a mount point at least for '/'!"
+#~ msgstr "U moet tenminste een aankoppelingspunt kiezen voor '/'!"
+
+#~ msgid ""
+#~ "You have not configured a username for one user.\n"
+#~ "Please correct your settings."
+#~ msgstr ""
+#~ "U heeft geen gebruikersnaam ingesteld voor één gebruiker.\n"
+#~ "Corrigeer alstublieft uw instellingen."
+
+#~ msgid ""
+#~ "You have not configured a password for user %1.\n"
+#~ "Please correct your settings."
+#~ msgstr ""
+#~ "U heeft geen wachtwoord ingesteld voor gebruiker %1.\n"
+#~ "Corrigeer alstublieft uw instellingen."
+
+#~ msgid "Creating account for new user..."
+#~ msgid_plural "Creating accounts for new users..."
+#~ msgstr[0] "Bezig met het aanmaken van account voor nieuwe gebruiker..."
+#~ msgstr[1] "Bezig met het aanmaken van accounts voor nieuwe gebruikers..."
+
+#~ msgid "Setting up password ..."
+#~ msgstr "Bezig met het instellen van het wachtwoord ..."
+
+#~ msgid "Yes"
+#~ msgstr "Ja"
+
+#~ msgid "Please Wait, checking Tribe Updates..."
+#~ msgstr "Ogenblik geduld, bezig met het controleren op updates voor Tribe..."
+
+#~ msgid ""
+#~ "Tribe has crashed due to a fatal error. We are extremely sorry about "
+#~ "that, as this should not happen. However, Tribe collected some important "
+#~ "informations about the crash that will be extremely useful to developers "
+#~ "for fixing this problem. The fastest way to report this, if you have an "
+#~ "active internet connection, is clicking \"Send report to developers\". "
+#~ "Otherwise, you can copy/paste the text below and send it to bugs@chakra-"
+#~ "project.org. No personal informations are included, you can see the log "
+#~ "for details."
+#~ msgstr ""
+#~ "Tribe is gecrasht vanwege een fatale fout. Wij bieden hiervoor onze "
+#~ "excuses aan, aangezien dit niet hoort te gebeuren. Gelukkig heeft Tribe "
+#~ "een aantal belangrijke gegevens over de crash opgeslagen die de "
+#~ "ontwikkelaars kunnen gebruiken om dit probleem op te lossen. De snelste "
+#~ "manier om deze te rapporteren, als u een actieve internetverbinding "
+#~ "heeft, is door te klikken op \"Verstuur rapport naar ontwikkelaars\". "
+#~ "Indien dit niet het geval is, kunt u de onderstaande informatie kopiëren "
+#~ "en versturen naar bugs@chakra-project.org. Er zal geen persoonlijke "
+#~ "informatie worden meegezonden, zie de log voor meer informatie."
+
+#~ msgid "Copy to clipboard"
+#~ msgstr "Kopieer naar klembord"
+
+#~ msgid "Send report to developers"
+#~ msgstr "Verstuur rapport naar ontwikkelaars"
+
+#~ msgid "Name:"
+#~ msgstr "Naam:"
+
+#~ msgid "Surname:"
+#~ msgstr "Achternaam:"
+
+#~ msgid "Login:"
+#~ msgstr "Gebruikersnaam:"
+
+#~ msgid "Password:"
+#~ msgstr "Wachtwoord:"
+
+#~ msgid "Confirm Password:"
+#~ msgstr "Bevestig wachtwoord:"
+
+#~ msgid "Administrator"
+#~ msgstr "Administrator"
+
+#~ msgid "Delete"
+#~ msgstr "Verwijder"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600; color:#ffffff;\">Welcome</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600; color:#ffffff;\">Welkom</span></p></body></html>"
+
+#~ msgid "Release Notes"
+#~ msgstr "Release notes"
+
+#~ msgid "License Approval"
+#~ msgstr "Goedkeuring van de licentie"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600; color:#ffffff;\">Preparation</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600; color:#ffffff;\">Voorbereiding</span></p></body></html>"
+
+#~ msgid "Ready to Install"
+#~ msgstr "Klaar om te installeren"
+
+#~ msgid "Ramdisk"
+#~ msgstr "Ramdisk"
+
+#~ msgid "System Settings"
+#~ msgstr "Systeeminstellingen"
+
+#~ msgid "Language & Time"
+#~ msgstr "Taal & tijd"
+
+#~ msgid "Disk setup"
+#~ msgstr "Schijfindeling"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600; color:#ffffff;\">Installation</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600; color:#ffffff;\">Installatie</span></p></body></html>"
+
+#~ msgid "Prepare Partitions"
+#~ msgstr "Bereid partities voor"
+
+#~ msgid "Install System"
+#~ msgstr "Installeer systeem"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600; color:#ffffff;\">Configuration</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600; color:#ffffff;\">Configuratie</span></p></body></html>"
+
+#~ msgid "Create User"
+#~ msgstr "Maak gebruiker aan"
+
+#~ msgid "Bootloader"
+#~ msgstr "Bootloader"
+
+#~ msgid "Root Password"
+#~ msgstr "Root-wachtwoord"
+
+#~ msgid "Configure System"
+#~ msgstr "Configureer systeem"
+
+#~ msgid "Abort installation"
+#~ msgstr "Breek installatie af"
+
+#~ msgctxt "Previous Page"
+#~ msgid "Previous"
+#~ msgstr "Vorige"
+
+#~ msgctxt "Next Page"
+#~ msgid "Next"
+#~ msgstr "Volgende"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Bootloader Installation</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Installatie van de bootloader</span></p></body></html>"
+
+#~ msgid ""
+#~ "You can now install GRUB as your main bootloader.\n"
+#~ "\n"
+#~ "If you are unsure where you should install the bootloader to, just leave "
+#~ "the default value (hd0)."
+#~ msgstr ""
+#~ "U kunt GRUB nu installeren als uw standaard bootloader.\n"
+#~ "\n"
+#~ "Als u niet zeker weet waar u de bootloader wilt installeren, laat dan de "
+#~ "standaardwaarde (hd0) staan."
+
+#~ msgid "Install Bootloader"
+#~ msgstr "Installeer bootloader"
+
+#~ msgid "Advanced..."
+#~ msgstr "Geavanceerd..."
+
+#~ msgid "Install to:"
+#~ msgstr "Installeer naar:"
+
+#~ msgid "hd0"
+#~ msgstr "hd0"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Configure System</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Configureer systeem</span></p></body></html>"
+
+#~ msgid ""
+#~ "Although the installer has created a usable default configuration "
+#~ "suitable for most users, you can now configure your newly installed "
+#~ "system. Please take some time to step through each section and configure "
+#~ "your system the way you want it."
+#~ msgstr ""
+#~ "Hoewel het installatieprogramma een standaardconfiguratie heeft "
+#~ "aangemaakt die bruikbaar is voor de meeste gebruikers, kunt u uw nieuw "
+#~ "geïnstalleerde systeem nu naar uw eigen wensen instellen. Neem uw tijd om "
+#~ "bij elke stap stil te staan en configureer het systeem zoals u het wilt."
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Installation Completed !</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Configureer systeem</span></p></body></html>"
+
+#~ msgid ""
+#~ "Congratulations, the installation has been completed! We hope you enjoyed "
+#~ "what you have seen as much as we enjoyed creating it.\n"
+#~ "\n"
+#~ "You can now reboot into the installed system or keep using the LiveCD.\n"
+#~ "\n"
+#~ "In case you want to check the installation logs, take a look into /tmp on "
+#~ "the live system or into /var/log on the installed system.\n"
+#~ "\n"
+#~ "Thanks for using Chakra, and get in touch with us in the forums, share "
+#~ "opinions, give advices;\n"
+#~ "To put it simple: Get involved! (http://chakra-project.org)\n"
+#~ "\n"
+#~ "Have Fun!\n"
+#~ "\n"
+#~ "The Chakra Team"
+#~ msgstr ""
+#~ "Gefeliciteerd, de installatie is afgerond! We hopen dat u net zo geniet "
+#~ "van Chakra als dat wij hebben genoten van het maken ervan.\n"
+#~ "\n"
+#~ "U kunt nu opnieuw opstarten in het nieuw geïnstalleerde systeem of de "
+#~ "LiveCD blijven gebruiken.\n"
+#~ "\n"
+#~ "Als u de installatielogs wilt bekijken, kijk dan in de map /tmp op dit "
+#~ "livesysteem of in de map /var/log op het nieuw geinstalleerde systeem.\n"
+#~ "\n"
+#~ "Bedankt voor uw keuze voor Chakra en kom in contact met ons via het "
+#~ "forum, geef advies, laat uw mening horen;\n"
+#~ "Oftewel: Wordt betrokken! (http://chakra-project.org)\n"
+#~ "\n"
+#~ "Veel plezier!\n"
+#~ "\n"
+#~ "Het Chakra-team"
+
+#~ msgid "Restart Computer"
+#~ msgstr "Herstart computer"
+
+#~ msgid "Keep using the LiveCD"
+#~ msgstr "Blijf de LiveCD gebruiken"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Ramdisk Setup</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Ramdisk-instellingen</span></p></body></html>"
+
+#~ msgid ""
+#~ "Your hardware will be configured automatically during the installation "
+#~ "and a initial ramdisk environment for booting the linux kernel will be "
+#~ "built. Everything should happen without intervention, but you might need "
+#~ "some options for special boot methods. If you are unsure on what this "
+#~ "means, simply press the \"Next\" button. Otherwise check out the ramdisk "
+#~ "options below and select the items you need for your system."
+#~ msgstr ""
+#~ "Uw hardware zal automatisch worden ingesteld tijden de installatie en de "
+#~ "initiële ramdisk-omgeving voor het starten van de Linux-kernel zal worden "
+#~ "opgebouwd. Dit alles zal gebeuren zonder dat uw tussenkomst nodig is, "
+#~ "maar het kan zijn dat u opties moet instellen voor speciale "
+#~ "opstartmethoden. Als u niet zeker weet wat dit betekent, druk op de "
+#~ "\"Volgende\"-knop. Als u het wel weet, bekijk de ramdisk-opties hieronder "
+#~ "en kies de opties die u nodig heeft voor uw systeem."
+
+#~ msgid "Ramdisk Options"
+#~ msgstr "Ramdisk-opties"
+
+#~ msgid "Activate support for booting from USB devices"
+#~ msgstr "Activeer ondersteuning voor het opstarten van USB-apparaten"
+
+#~ msgid "Activate support for booting from FireWire devices"
+#~ msgstr "Activeer ondersteuning voor het opstarten van FireWire-apparaten"
+
+#~ msgid "Activate support for booting from PCMCIA devices"
+#~ msgstr "Activeer ondersteuning voor het opstarten van PCMCIA-apparaten"
+
+#~ msgid "Activate support for booting from NFS shares"
+#~ msgstr "Activeer ondersteuning voor het opstarten van gedeelde NFS-mappen"
+
+#~ msgid "Activate support for booting from Software Raid arrays"
+#~ msgstr "Activeer ondersteuning voor het opstarten van Software Raid arrays"
+
+#~ msgid "Activate support for booting from Software Raid/MDP Partition arrays"
+#~ msgstr ""
+#~ "Activeer ondersteuning voor het opstarten van Software Raid/MPD partitie "
+#~ "arrays"
+
+#~ msgid "Activate support for booting from LVM2 volumes"
+#~ msgstr "Activeer ondersteuning voor het opstarten van LVM2-schijven"
+
+#~ msgid "Activate support for booting from Encrypted volumes"
+#~ msgstr "Activeer ondersteuning voor het opstarten van versleutelde schijven"
+
+#~ msgid "Tribe Installation"
+#~ msgstr "Tribe-installatie"
+
+#~ msgid "Nine Inch Nails - Discipline"
+#~ msgstr "Nine Inch Nails - Discipline"
+
+#~ msgid "Severed Fifth - War"
+#~ msgstr "Severed Fifth - War"
+
+#~ msgid "Dunkelstern - Out of the box"
+#~ msgstr "Dunkelstern - Out of the box"
+
+#~ msgid "Tribe Intro"
+#~ msgstr "Tribe Intro"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+#~ "style=\" font-size:14pt; color:#eeeeee;\">Welcome to the Chakra "
+#~ "Installation!</span></p>\n"
+#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
+#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+#~ "text-indent:0px; color:#eeeeee;\"></p>\n"
+#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:"
+#~ "#eeeeee;\"><span style=\" font-weight:600;\">Tribe, our installer, will "
+#~ "guide you through the process of installing the Chakra live system</"
+#~ "span></p>\n"
+#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+#~ "weight:600; color:#eeeeee;\">on your computer. After the installation you "
+#~ "will have a ready-to-use Arch Linux</p>\n"
+#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+#~ "weight:600; color:#eeeeee;\">desktop system with our modular KDE packages."
+#~ "</p>\n"
+#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
+#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+#~ "text-indent:0px; font-weight:600; color:#eeeeee;\"></p>\n"
+#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+#~ "weight:600; color:#eeeeee;\"> Please take the time to carefully read "
+#~ "through all texts and explanations.</p>\n"
+#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
+#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+#~ "text-indent:0px; color:#eeeeee;\"></p>\n"
+#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+#~ "style=\" font-weight:600; color:#eeeeee;\"> Remember:</span><span style="
+#~ "\" font-weight:600;\"> </span><span style=\" font-weight:600; color:"
+#~ "#ff0000;\">THIS IS ALPHA SOFTWARE, IT COULD EAT YOUR HAMSTER</span></p>\n"
+#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
+#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+#~ "text-indent:0px; font-weight:600; color:#ff0000;\"></p>\n"
+#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+#~ "weight:600; color:#ff0000;\"><span style=\" color:#eeeeee;\">Have fun! - "
+#~ "The Chakra Developers</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+#~ "style=\" font-size:14pt; color:#eeeeee;\">Welkom bij de installatie van "
+#~ "Chakra!</span></p>\n"
+#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
+#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+#~ "text-indent:0px; color:#eeeeee;\"></p>\n"
+#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:"
+#~ "#eeeeee;\"><span style=\" font-weight:600;\">Tribe, onze installer, zal u "
+#~ "leiden door het proces van het installeren van het Chakra live-systeem</"
+#~ "span></p>\n"
+#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+#~ "weight:600; color:#eeeeee;\">op uw computer. Na de installatie heeft u "
+#~ "een werkend Arch Linux</p>\n"
+#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+#~ "weight:600; color:#eeeeee;\">systeem met onze modulaire KDE-pakketten.</"
+#~ "p>\n"
+#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
+#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+#~ "text-indent:0px; font-weight:600; color:#eeeeee;\"></p>\n"
+#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+#~ "weight:600; color:#eeeeee;\"> Neem uw tijd om uitgebreid alle tekst en "
+#~ "uitleg door te lezen.</p>\n"
+#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
+#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+#~ "text-indent:0px; color:#eeeeee;\"></p>\n"
+#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+#~ "style=\" font-weight:600; color:#eeeeee;\"> Onthoud:</span><span style=\" "
+#~ "font-weight:600;\"> </span><span style=\" font-weight:600; color:#ff0000;"
+#~ "\">DIT IS ALPHA-SOFTWARE, HIJ KAN JE HAMSTER OPETEN</span></p>\n"
+#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
+#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+#~ "text-indent:0px; font-weight:600; color:#ff0000;\"></p>\n"
+#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+#~ "weight:600; color:#ff0000;\"><span style=\" color:#eeeeee;\">Veel "
+#~ "plezier! - De Chakra-ontwikkelaars</span></p></body></html>"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "size:22pt; font-weight:600; color:#ffffff;\">License Approval</span></p></"
+#~ "body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "size:22pt; font-weight:600; color:#ffffff;\">Goedkeurig van de licentie</"
+#~ "span></p></body></html>"
+
+#~ msgid ""
+#~ "Chakra includes some proprietary software like hardware drivers, media "
+#~ "plugins and fonts. To install them, you have to read and accept their "
+#~ "licenses. If you choose against a license, the installer will try to use "
+#~ "a free solution (if one is available)."
+#~ msgstr ""
+#~ "Chakra bevat een aantal propiëtaire softwarepakketten zoals "
+#~ "hardwarestuurprogramma's, media-plugins en lettertypen. Om deze pakketten "
+#~ "te installeren, moet u de bijbehorende licenties doorlezen en goedkeuren. "
+#~ "Als u een bepaalde licentie niet goedkeurt, zal de installer een vrij "
+#~ "alternatief proberen te installeren (mits beschikbaar)."
+
+#~ msgid "Approve license for:"
+#~ msgstr "Keur licentie goed voor:"
+
+#~ msgid "Decline License"
+#~ msgstr "Keur licentie af"
+
+#~ msgid "Accept License"
+#~ msgstr "Accepteer licentie"
+
+#~ msgid "Form"
+#~ msgstr "Form"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Language &amp; Time</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Taal &amp; tijd</span></p></body></html>"
+
+#~ msgid ""
+#~ "Please select the nearest city on the globe so the installer can suggest "
+#~ "the locale and timezone settings for you. You can fine-tune the suggested "
+#~ "settings at the bottom of the page. If you cant find your region or city "
+#~ "on the globe, you can zoom in by using the slider on the left."
+#~ msgstr ""
+#~ "Kies de dichtstbijzijnde stad op de kaart, zodat de installer de beste "
+#~ "instellingen voor locale en tijdzonde voor u kan suggereren. Onderaan de "
+#~ "pagina kunt u de gesuggereerde instellingen bijstellen. Als u uw regio of "
+#~ "stad niet kunt vinden op de kaart, kunt u inzoomen door de slider aan de "
+#~ "linkerkant te gebruiken."
+
+#~ msgid "Search..."
+#~ msgstr "Zoeken..."
+
+#~ msgid "Time Settings"
+#~ msgstr "Tijdsinstellingen"
+
+#~ msgid "Timezone:"
+#~ msgstr "Tijdzone:"
+
+#~ msgid "Language Settings"
+#~ msgstr "Taalinstellingen"
+
+#~ msgid "Locale:"
+#~ msgstr "Locale:"
+
+#~ msgid "Show all"
+#~ msgstr "Toon alle"
+
+#~ msgid "Language:"
+#~ msgstr "Taal:"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Disk setup</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Schijfindeling</span></p></body></html>"
+
+#~ msgid ""
+#~ "Now you have to set up your disks for installation. Please use the tool "
+#~ "below to partition, format and select mountpoints. Once you're satisfied "
+#~ "with your choice, click \"Apply\" if you made any changes to the "
+#~ "partition table or requested to format one or more partitions, and then "
+#~ "go ahead. Formatting the partitions you will mount main system paths on "
+#~ "(such as / or /usr) is strongly advised."
+#~ msgstr ""
+#~ "Nu moet u de partities voor de installatie instellen. Gebruik onderstaand "
+#~ "hulpprogramma om te partitioneren, formatteren en aankoppelingspunten te "
+#~ "kiezen. Zo gauw u tevreden bent met uw keuze, klikt u op \"Toepassen\", "
+#~ "als u veranderingen heeft gemaakt aan de partitietabel of gekozen hebt om "
+#~ "partities te formatteren. Het wordt met klem aangeraden de partities die "
+#~ "u gebruikt voor paden van het basissysteem (zoals / of /usr)  te "
+#~ "formatteren. "
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+#~ "#eeeeee;\">Formatting Partitions...</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+#~ "#eeeeee;\">Partities formatteren...</span></p></body></html>"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+#~ "#eeeeee;\">Mounting Partitions...</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+#~ "#eeeeee;\">Aankoppelen van partities...</span></p></body></html>"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Ready to Install</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Klaar om te installeren</span></p></body></html>"
+
+#~ msgid ""
+#~ "The system will be installed with the following settings. Before "
+#~ "continuing, please review your selections:\n"
+#~ msgstr ""
+#~ "Het systeem zal worden geinstallerd met de volgende instellingen.  Bekijk "
+#~ "uw keuzes nauwkeurig, alvorens verder te gaan:\n"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+#~ "#eeeeee;\">The following partitions will be used:</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+#~ "#eeeeee;\">De volgende partities zullen worden gebruikt:</span></p></"
+#~ "body></html>"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+#~ "#eeeeee;\">The following partitions will be formatted:</span></p></body></"
+#~ "html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+#~ "#eeeeee;\">De volgende partities zullen worden geformatteerd:</span></p></"
+#~ "body></html>"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
+#~ "style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Release Notes</"
+#~ "span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
+#~ "style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Release Notes</"
+#~ "span></p></body></html>"
+
+#~ msgid ""
+#~ "Check out what's new, the known issues and general information about this "
+#~ "version of Chakra. As always, you are encouraged to tell us what you "
+#~ "think, either by visiting our forums or bug tracker."
+#~ msgstr ""
+#~ "Bekijk de nieuwe functies, bekende problemen en algemene informatie over "
+#~ "deze  versie van Chakra. Zoals altijd bent u van harte uitgenodigd ons te "
+#~ "vertellen wat u vindt, door het forum te bezoeken of door gebruik te "
+#~ "maken van de bug tracker."
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Liberation Sans'; font-size:8pt;\"></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Liberation Sans'; font-size:8pt;\"></p></body></html>"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "size:22pt; font-weight:600; color:#ffffff;\">Root Setup</span></p></"
+#~ "body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "size:22pt; font-weight:600; color:#ffffff;\">Instellingen root</span></"
+#~ "p></body></html>"
+
+#~ msgid ""
+#~ "Now you can define the behaviour of the user root, who is used to manage "
+#~ "the system.\n"
+#~ "\n"
+#~ "Keeping this user is usually recommended, though you can choose to use "
+#~ "sudo only and disable the root user. Please remind that having the root "
+#~ "account disabled and sudo misconfigured may lead to an unusable system."
+#~ msgstr ""
+#~ "Nu kunt u het gedrag instellen van de root-account, die gebruikt wordt om "
+#~ "het systeem te beheren.\n"
+#~ "\n"
+#~ "Het wordt aanbevolen dit op gebruiker te laten staan, hoewel u ook kunt "
+#~ "kiezen voor alleen sudo en het uitschakelen van de root-account. Houd in "
+#~ "gedachten dat het uitschakelen van de root-account en het verkeerd "
+#~ "instellen van sudo kan  leiden tot een onbruikbaar systeem."
+
+#~ msgid "Enable Root User"
+#~ msgstr "Root-gebruiker inschakelen"
+
+#~ msgid "Password"
+#~ msgstr "Wachtwoord"
+
+#~ msgid "Confirm Password"
+#~ msgstr "Bevestig wachtwoord"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Filesystem Setup</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Instellingen bestandssysteem</span></p></body></html>"
+
+#~ msgid ""
+#~ "Please choose what partitions should be used for the installation. Just "
+#~ "select the partition and the mountpoint. You can use the \"Add another "
+#~ "partition\" button to add more of them. To format a partition (most "
+#~ "likely accurate for all system partitions), activate the \"Format\" "
+#~ "checkbox and select a filesystem.\n"
+#~ "\n"
+#~ "You need at least a root (/) and a swap partition. When you have added "
+#~ "all desired partitions, simply press the \"Next\" button."
+#~ msgstr ""
+#~ "Kies welke partities gebruikt moeten worden voor de installatie. U hoeft "
+#~ "alleen een partitie en een aankoppelingspunt te kiezen. U kunt \"Andere "
+#~ "partitie toevoegen\" gebruiken om er meer van toe te voegen. Zet een "
+#~ "vinkje voor \"Formatteer\" om een partitie te formatteren (waarschijnlijk "
+#~ "nodig voor alle partities waarop het basissysteem geïnstalleerd wordt).\n"
+#~ "\n"
+#~ "U heeft tenminste een root-partitie (/) en een swap-partitie nodig. "
+#~ "Wanneer u alle gewenste partities heeft toegevoegd, drukt u simpelweg op "
+#~ "\"Volgende\"."
+
+#~ msgid "Add another Partition"
+#~ msgstr "Andere partitie toevoegen"
+
+#~ msgid "Partition:"
+#~ msgstr "Partitie:"
+
+#~ msgid "Size:"
+#~ msgstr "Grootte:"
+
+#~ msgid "ext3"
+#~ msgstr "ext3"
+
+#~ msgid "ext2"
+#~ msgstr "ext2"
+
+#~ msgid "ext4"
+#~ msgstr "ext4"
+
+#~ msgid "reiserfs"
+#~ msgstr "reiserfs"
+
+#~ msgid "jfs"
+#~ msgstr "jfs"
+
+#~ msgid "xfs"
+#~ msgstr "xfs"
+
+#~ msgid "linux-swap"
+#~ msgstr "linux-swap"
+
+#~ msgid "Format with:"
+#~ msgstr "Formatteren met:"
+
+#~ msgid "Mountpoint:"
+#~ msgstr "Aankoppelingspunt:"
+
+#~ msgid "/"
+#~ msgstr "/"
+
+#~ msgid "/boot"
+#~ msgstr "/boot"
+
+#~ msgid "/home"
+#~ msgstr "/home"
+
+#~ msgid "/opt"
+#~ msgstr "/opt"
+
+#~ msgid "/usr"
+#~ msgstr "/usr"
+
+#~ msgid "/tmp"
+#~ msgstr "/tmp"
+
+#~ msgid "/var"
+#~ msgstr "/var"
+
+#~ msgid "swap"
+#~ msgstr "swap"
+
+#~ msgid "Remove"
+#~ msgstr "Verwijder"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">System Settings</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Systeeminstellingen</span></p></body></html>"
+
+#~ msgid "General Settings"
+#~ msgstr "Algemene instellingen"
+
+#~ msgid "The name of this computer:"
+#~ msgstr "Naam van deze computer:"
+
+#~ msgid "Download Settings"
+#~ msgstr "Downloadinstellingen"
+
+#~ msgid "Detect best mirror server and use it (recommended)"
+#~ msgstr "Zoek beste spiegelserver en gebruik deze (aanbevolen)"
+
+#~ msgid ""
+#~ "Enter your name, a corresponding login name and your password to create a "
+#~ "user account. To enable sudo for the created user and allow him to do "
+#~ "administrative tasks, enable the \"Administrator\" option below."
+#~ msgstr ""
+#~ "Voer uw naam, een overeenkomstige gebruikersnaam en uw wachtwoord in om "
+#~ "een gebruikersaccount aan te maken. Kies de \"Administrator\"-optie "
+#~ "hieronder om sudo in te schakelen voor deze gebruiker en hem toe te staan "
+#~ "beheerstaken uit te voeren."
+
+#~ msgid "Add another User.."
+#~ msgstr "Andere gebruiker toevoegen..."
+
+#~ msgid "Install plain KDE-Configuration"
+#~ msgstr "Installeer standaard KDE-configuratie"
+
+#~ msgid "Install Current-LiveCD-Configuration"
+#~ msgstr "Installeer configuratie van huidig livesysteem"
+
+#~ msgid "Install plain KDEMod-Configuration"
+#~ msgstr "Installeer standaard KDEMod-configuratie"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Create User</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Maak gebruiker aan</span></p></body></html>"

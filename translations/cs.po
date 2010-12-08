@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tribe GIT\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2009-09-27 20:36+0200\n"
+"POT-Creation-Date: 2010-12-08 20:39+0100\n"
 "PO-Revision-Date: 2010-02-13 13:37+0100\n"
 "Last-Translator: Josef Luštický <evramp@gmail.com>\n"
 "Language-Team: \n"
@@ -16,235 +16,225 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n>=2 && n<=4 ? 1 : 2;\n"
 
-#: launcher/src/TribeLauncher.cpp:83
-msgid "Setting up Tribe..."
-msgstr "Nastavuje se Tribe..."
-
-#: launcher/src/TribeLauncher.cpp:95
-msgid "It looks like you were not authorized to launch Tribe. Please contact your system administrator for further details"
-msgstr "Zdá se, že nemáte oprávnění ke spuštění instalátoru Tribe. Prosím kontaktujte Vašeho systémového administrátora pro další detaily."
-
-#: launcher/src/TribeLauncher.cpp:102
-msgid "It looks like an unclean start of Tribe has taken place. Please kill all instances of tribe, tribelauncher and tribelauncherworker and try again"
-msgstr "Zdá se, že Tribe byl spuštěn špatným způsobem. Prosím "
-
-#: launcher/src/TribeLauncher.cpp:168
-msgid ""
-"A newer version of Tribe is available.\n"
-"It is strongly advised to upgrade it. Do you want to upgrade Tribe now?"
+#: src/installationhandler.cpp:86
+msgid "Tribe was not able to initialize needed path: "
 msgstr ""
-"Novější verze Tribe je k dispozici.\n"
-"Důrazně doporučujeme aktualizaci. Chcete aktualizovat Tribe hned?"
 
-#: launcher/src/TribeLauncher.cpp:171
-msgid ""
-"A newer version of Arxin is available.\n"
-"Even though not fundamental, upgrading it is recommended. Do you want to upgrade Arxin now?"
+#: src/installationhandler.cpp:86
+msgid " , please resolve the issue, and try again."
 msgstr ""
-"Novější verze Arxin je k dispozici.\n"
-"Ačkoli to není kritické, doporučujeme aktualizaci. Chcete aktualizovat Arxin hned?"
 
-#: launcher/src/TribeLauncher.cpp:194
-msgid "Please Wait, Upgrading Chakra Installer..."
-msgstr "Prosím čekejte, aktualizuji instalátor systému Chakra..."
-
-#: launcher/src/TribeLauncher.cpp:232
-msgctxt "You just have to translate 'remaining' here. Leave everything else as it is."
-msgid "%p% (%1 KB/s, %2 remaining)"
-msgstr "%p% (%1 KB/s, %2 zbývá)"
-
-#: launcher/src/TribeLauncher.cpp:248
-msgid "Installing..."
-msgstr "Instaluje se..."
-
-#: launcher/src/TribeLauncher.cpp:259
-msgid "Please Wait, Installing Packages..."
-msgstr "Prosím čekejte, instalují se balíčky..."
-
-#: launcher/src/TribeLauncher.cpp:262
-msgid "Please Wait, Upgrading Packages..."
-msgstr "Prosím čekejte, aktualizuji balíčky"
-
-#: launcher/src/TribeLauncher.cpp:265
-msgid "Please Wait, Downloading Packages..."
-msgstr "Prosím čekejte, stahuji balíčky"
-
-#: launcher/src/TribeLauncher.cpp:276
-msgid ""
-"An error occurred while trying to upgrade.\n"
-"Do you want to run Tribe anyway?"
-msgstr ""
-"Vyskytla se chyba během aktualizace.\n"
-"Chcete i přesto spustit Tribe?"
-
-#: launcher/src/TribeLauncher.cpp:296
-msgid "Please wait, Tribe is being started..."
-msgstr "Prosím čekejte, Tribe se spouští..."
-
-#. i18n: file: launcher/ui/gui.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, tribeLauncherUi)
-#: launcher/src/main.cpp:32
-#: rc.cpp:3
-msgid "Tribe Launcher"
-msgstr "Spouštěč Tribe"
-
-#: launcher/src/main.cpp:33
-msgid "An auto updater and launcher for Tribe"
-msgstr "Automatický aktualizátor a spouštěč Tribe"
-
-#: launcher/src/main.cpp:34
-#: src/main.cpp:44
-msgid "(c) 2008 the Chakra Development Team"
-msgstr "(c) 2008 Vývojářský tým Chakra"
-
-#: launcher/src/main.cpp:34
-msgid "team@chakra-project.org"
-msgstr "team@chakra-project.org"
-
-#: launcher/src/main.cpp:36
-#: src/main.cpp:46
-msgid "Dario Freddi"
-msgstr "Dario Freddi"
-
-#: launcher/src/main.cpp:36
-#: src/main.cpp:47
-msgid "Developer"
-msgstr "Vývojář"
-
-#: src/CrashHandler.cpp:218
-msgid "We appreciate your dedication, but your backtrace has already been successfully sent"
-msgstr "Vážíme si Vaší obětavosti, ale stejnou zprávu už jsme úspěšně přijali"
-
-#: src/CrashHandler.cpp:234
-msgid "Thanks! Your backtrace was successfully submitted. Now just wait for us to fix this!"
-msgstr "Děkujeme! Vaše zpráva byla úspěšně přijata. Teď už jen počkat, až chybu opravíme!"
-
-#: src/CrashHandler.cpp:238
-msgid "There was an error while sending your backtrace!! Probably we could not connect to the server: you can retry, but the best thing to do would be saving the backtrace and attaching it to a bug report later."
-msgstr "Chyba při odesílání zprávy!! Pravděpodobně se nepodařilo spojení se serverem: můžete to zkusit znovu, ale lepší bude uložit zprávu a připojit ji k bug reportu později."
-
-#: src/InstallationHandler.cpp:79
-#: src/InstallationHandler.cpp:649
-msgid "Tribe was not able to initialize needed directories. You probably do not have enough privileges, please restart Tribe as root."
-msgstr "Tribe nebyl schopen připravit adresáře. Pravděpodobně nemáte příslušná oprávnění, prosím spusťte Tribe pod uživatelem root."
-
-#: src/InstallationHandler.cpp:141
+#: src/installationhandler.cpp:148
 msgid "Installing the system ..."
 msgstr "Instaluje se systém..."
 
-#: src/InstallationHandler.cpp:161
-msgid "Preparing installation, this might take some time ..."
-msgstr "Připravuji instalaci, tato akce může chvíli trvat ..."
+#: src/installationhandler.cpp:176
+#, fuzzy
+msgid "Mounting partitions..."
+msgstr "Připojuji %1 do %2..."
 
-#: src/InstallationHandler.cpp:186
+#: src/installationhandler.cpp:184
+#, fuzzy
+msgid "Preparing installation..."
+msgstr "Dokončuji instalaci..."
+
+#: src/installationhandler.cpp:204
 msgid "Error copying files"
 msgstr "Chyba při kopírování souborů"
 
-#: src/InstallationHandler.cpp:193
+#: src/installationhandler.cpp:207
 msgid "Removing packages whose license has been declined ..."
 msgstr "Odstraňuji balíčky u kterých byla licence odmítnuta ..."
 
-#: src/InstallationHandler.cpp:250
+#: src/installationhandler.cpp:245
 msgid "Initializing target ..."
 msgstr "Připravuji cílový počítač ..."
 
-#: src/InstallationHandler.cpp:342
-msgid "Please wait, configuring and starting PostInstall ..."
+#: src/installationhandler.cpp:336
+#, fuzzy
+msgid "Please wait, configuring the new system ..."
 msgstr "Prosím čekejte, nastavují se a spouští poinstalační skripty"
 
-#: src/InstallationHandler.cpp:391
+#: src/installationhandler.cpp:412
 msgid "Error in Postinstall script. See log for more details"
 msgstr "Chyba v poinstalačním skriptu. Zkontrolujte log pro více detailů"
 
-#: src/InstallationHandler.cpp:402
-msgid "Detecting best mirror server & configuring pacman, this may take a bit..."
-msgstr "Zjišťuje se nejvhodnější zrcadlový server a nastavuje se pacman, tato akce může chvíli trvat..."
+#: src/installationhandler.cpp:421
+#, fuzzy
+msgid "Creating user accounts ..."
+msgstr "Vytvářím konfiguraci ..."
 
-#: src/InstallationHandler.cpp:406
-msgid "Removing superfluous packages..."
+#: src/installationhandler.cpp:424
+#, fuzzy
+msgid "Configuring software management..."
+msgstr "Konfiguruji hardware..."
+
+#: src/installationhandler.cpp:428
+#, fuzzy
+msgid "Removing unused packages..."
 msgstr "Odstraňuji přebytečné balíčky..."
 
-#: src/InstallationHandler.cpp:410
+#: src/installationhandler.cpp:432
 msgid "Installing additional packages..."
 msgstr "Instalují se dodatečné balíčky..."
 
-#: src/InstallationHandler.cpp:414
-msgid "Setting up X.Org configuration..."
-msgstr "Nastavuje se konfiguraci X.Org..."
+#: src/installationhandler.cpp:436
+#, fuzzy
+msgid "Configuring the display..."
+msgstr "Konfiguruji hardware..."
 
-#: src/InstallationHandler.cpp:418
-msgid "Downloading and installing localization packages, this may take a bit..."
-msgstr "Stahují se a instalují se balíčky s překlady, tato akce může chvíli trvat..."
+#: src/installationhandler.cpp:440
+#, fuzzy
+msgid "Downloading and installing localization packages..."
+msgstr ""
+"Stahují se a instalují se balíčky s překlady, tato akce může chvíli trvat..."
 
-#: src/InstallationHandler.cpp:422
-msgid "Downloading and installing documentation packages, this may take a bit..."
-msgstr "Stahují se a instalují se balíčky s dokumentací, tato akce může chvíli trvat..."
+#: src/installationhandler.cpp:444
+#, fuzzy
+msgid "Downloading and installing documentation packages..."
+msgstr "Stáhnout a nainstalovat balíčky s dokumentací"
 
-#: src/InstallationHandler.cpp:426
+#: src/installationhandler.cpp:448
 msgid "Setting up localization..."
 msgstr "Nastavuje se lokalizace..."
 
-#: src/InstallationHandler.cpp:430
+#: src/installationhandler.cpp:452
 msgid "Creating daemon configuration..."
 msgstr "Vytvářím konfiguraci démonů..."
 
-#: src/InstallationHandler.cpp:434
+#: src/installationhandler.cpp:456
 msgid "Creating network configuration..."
 msgstr "Vytvářím nastavení sítě..."
 
-#: src/InstallationHandler.cpp:438
+#: src/installationhandler.cpp:460
 msgid "Creating fstab..."
 msgstr "Vytvářím fstab..."
 
-#: src/InstallationHandler.cpp:442
+#: src/installationhandler.cpp:467
 msgid "Configuring hardware..."
 msgstr "Konfiguruji hardware..."
 
-#: src/InstallationHandler.cpp:446
-msgid "Creating initial ramdisk images. This may take a lot of time, stay tuned..."
-msgstr "Vytvářím počáteční ramdisk. Tato akce může zabrat více času, vyčkejte..."
+#: src/installationhandler.cpp:471
+#, fuzzy
+msgid "Creating initial ramdisk images..."
+msgstr ""
+"Vytvářím počáteční ramdisk. Tato akce může zabrat více času, vyčkejte..."
 
-#: src/InstallationHandler.cpp:450
-msgid "Regenerating locales..."
+#: src/installationhandler.cpp:475
+#, fuzzy
+msgid "Generating locales..."
 msgstr "Obnovuji locales..."
 
-#: src/InstallationHandler.cpp:454
-msgid "Removing superfluous localizations..."
+#: src/installationhandler.cpp:479
+#, fuzzy
+msgid "Removing unused localizations..."
 msgstr "Odstraňuji přebytečné lokalizace..."
 
-#: src/InstallationHandler.cpp:458
-msgid "Removing superfluous drivers..."
+#: src/installationhandler.cpp:483
+#, fuzzy
+msgid "Removing unused drivers..."
 msgstr "Odstraňuji přebytečné ovladače..."
 
-#: src/InstallationHandler.cpp:462
-msgid "Finishing installation..."
+#: src/installationhandler.cpp:487
+#, fuzzy
+msgid "Finishing up..."
 msgstr "Dokončuji instalaci..."
 
-#: src/InstallationHandler.cpp:466
+#: src/installationhandler.cpp:491
 msgid "Installation complete!"
 msgstr "Instalace dokončena!"
 
-#: src/InstallationHandler.cpp:592
-msgid "Could not format %1"
-msgstr "Nemohu formátovat %1"
+#: src/installationhandler.cpp:582
+#, fuzzy
+msgid ""
+"Tribe was not able to initialize needed directories. Something is very "
+"wrong..."
+msgstr ""
+"Tribe nebyl schopen připravit adresáře. Pravděpodobně nemáte příslušná "
+"oprávnění, prosím spusťte Tribe pod uživatelem root."
 
-#: src/InstallationHandler.cpp:672
+#: src/installationhandler.cpp:606
 msgid "Could not mount %1"
 msgstr "Nemohu připojit %1"
 
-#: src/InstallationHandler.h:188
+#: src/installationhandler.h:167
 msgid "No Further details given"
 msgstr "Žádné bližší detaily"
 
-#: src/MainWindow.cpp:121
-msgid "Do you really want to quit the installation?"
-msgstr "Opravdu chcete ukončit instalaci?"
+#: src/main.cpp:44
+msgid "Tribe"
+msgstr "Tribe"
 
-#: src/MainWindow.cpp:139
+#: src/main.cpp:45
+#, fuzzy
+msgid "Graphical Installer for Chakra"
+msgstr "Instalátor pro Chakra LiveCD"
+
+#: src/main.cpp:46
+#, fuzzy
+msgid "(c) 2008 - 2010 the Chakra Development Team"
+msgstr "(c) 2008 Vývojářský tým Chakra"
+
+#: src/main.cpp:46
+msgid "chakra@chakra-project.org"
+msgstr "chakra@chakra-project.org"
+
+#: src/main.cpp:48
+msgid "Dario Freddi"
+msgstr "Dario Freddi"
+
+#: src/main.cpp:48
+msgid "Maintainer"
+msgstr "Správce"
+
+#: src/main.cpp:49
+msgid "Lukas Appelhans"
+msgstr "Lukas Appelhans"
+
+#: src/main.cpp:49 src/main.cpp:53
+msgid "Developer"
+msgstr "Vývojář"
+
+#: src/main.cpp:50
+msgid "Jan Mette"
+msgstr "Jan Mette"
+
+#: src/main.cpp:50
+msgid "PostInstall Backend and Artwork"
+msgstr "Poinstalační backend a artwork"
+
+#: src/main.cpp:51
+msgid "Phil Miller"
+msgstr ""
+
+#: src/main.cpp:51 src/main.cpp:52
+#, fuzzy
+msgid "PostInstall Backend"
+msgstr "Poinstalační backend a artwork"
+
+#: src/main.cpp:52
+msgid "Manuel Tortosa"
+msgstr ""
+
+#: src/main.cpp:53
+msgid "Drake Justice"
+msgstr ""
+
+#: src/main.cpp:67
+msgid ""
+"It looks like your power adaptor is unplugged. Installation is a delicate "
+"and lenghty process, hence it is strongly advised to have your PC connected "
+"to AC to minimize possible risks."
+msgstr ""
+"Zdá se, že nemáte připojené napájení. Instalace je velmi důležitý a dlouhý "
+"proces, proto důrazně doporučujeme mít počítač připojen k napájení ze sítě "
+"abyste předešli případnému nedokončení."
+
+#: src/mainwindow.cpp:101
 msgid "Do you really want to abort the installation?"
 msgstr "Opravdu chcete ukončit instalaci?"
 
-#: src/MainWindow.cpp:785
+#: src/mainwindow.cpp:507
 msgid ""
 "Installation failed! The following error has been reported: %1.\n"
 "Tribe will now quit, please check the installation logs in /tmp\n"
@@ -254,1325 +244,1544 @@ msgstr ""
 "Tribe se nyní ukončí, prosím zkontrolujte instalční log v /tmp\n"
 "nebo požádejte o pomoc na našem fóru."
 
-#. i18n: file: ui/tribeBase.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, TribeBase)
-#: src/main.cpp:42
-#: rc.cpp:48
-msgid "Tribe"
-msgstr "Tribe"
-
-#: src/main.cpp:43
-msgid "LiveCD Installer for Chakra"
-msgstr "Instalátor pro Chakra LiveCD"
-
-#: src/main.cpp:44
-msgid "chakra@chakra-project.org"
-msgstr "chakra@chakra-project.org"
-
-#: src/main.cpp:46
-msgid "Maintainer"
-msgstr "Správce"
-
-#: src/main.cpp:47
-msgid "Lukas Appelhans"
-msgstr "Lukas Appelhans"
-
-#: src/main.cpp:48
-msgid "Jan Mette"
-msgstr "Jan Mette"
-
-#: src/main.cpp:48
-msgid "PostInstall Backend and Artwork"
-msgstr "Poinstalační backend a artwork"
-
-#: src/main.cpp:69
-msgid "It looks like your power adaptor is unplugged. Installation is a delicate and lenghty process, hence it is strongly advised to have your PC connected to AC to minimize possible risks."
-msgstr "Zdá se, že nemáte připojené napájení. Instalace je velmi důležitý a dlouhý proces, proto důrazně doporučujeme mít počítač připojen k napájení ze sítě abyste předešli případnému nedokončení."
-
-#: src/pages/BootloaderPage.cpp:54
+#: src/pages/bootloaderpage.cpp:52
 msgid "Installing bootloader..."
 msgstr "Instaluje se zavaděč.."
 
-#: src/pages/BootloaderPage.cpp:87
-msgid "Creating menu.lst..."
-msgstr "Vytváří se menu.lst..."
+#: src/pages/bootloaderpage.cpp:82
+#, fuzzy
+msgid "Creating OS list..."
+msgstr "Vytvářím fstab..."
 
-#: src/pages/LicensePage.cpp:53
-msgid "Adobe Flash Plugin"
-msgstr "Adobe flash plugin"
-
-#: src/pages/LicensePage.cpp:54
-msgid "Microsoft Core TTF Fonts"
-msgstr "Microsoft core TTF fonty"
-
-#: src/pages/LicensePage.cpp:57
+#: src/pages/licensepage.cpp:53
 msgid "Proprietary ATI Driver"
 msgstr "Proprietární ovladač ATI"
 
-#: src/pages/LicensePage.cpp:61
+#: src/pages/licensepage.cpp:57
 msgid "Proprietary NVidia Driver"
 msgstr "Proprietární ovladač NVIDIA"
 
-#: src/pages/LicensePage.cpp:120
+#: src/pages/licensepage.cpp:117
 msgid "Accept license for: "
 msgstr "Přijmout licenci pro: "
 
-#: src/pages/LocaleSelectorPage.cpp:229
-msgid "You need to select a Timezone."
+#: src/pages/localepage.cpp:269
+#, fuzzy
+msgid "You need to select a timezone"
 msgstr "Musíte vybrat časové pásmo"
 
-#: src/pages/LocaleSelectorPage.cpp:229
-#: src/pages/PartitioningPage.cpp:85
-#: src/pages/PartitioningPage.cpp:107
-#: src/pages/PartitioningPage.cpp:124
-#: src/pages/SelectPartitionPage.cpp:285
-#: src/pages/SelectPartitionPage.cpp:294
-#: src/pages/SelectPartitionPage.cpp:310
-#: src/pages/UserCreationPage.cpp:97
-#: src/pages/UserCreationPage.cpp:101
+#: src/pages/partitionpage.cpp:58 src/pages/partitionpage.cpp:134
+#, fuzzy
+msgid "None"
+msgstr "Ne"
+
+#: src/pages/partitionpage.cpp:67 src/pages/partitionpage.cpp:89
+msgid "Other..."
+msgstr ""
+
+#: src/pages/partitionpage.cpp:95
+msgid "Please enter a custom mountpoint"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:107
+msgid "The mount point must start with /"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:108
 msgid "Error"
 msgstr "Chyba"
 
-#: src/pages/PartitioningPage.cpp:73
-msgid "You still have pending operations, please apply or revert them before continuing"
-msgstr "Stále jsou zde nevyřízené operace, opravdu chcete pokračovat?"
+#: src/pages/partitionpage.cpp:130
+msgid "You can only use each mountpoint once."
+msgstr ""
 
-#: src/pages/PartitioningPage.cpp:83
-msgid "It looks like you have selected the mountpoint %1 twice. You can assign only one partition to a mountpoint"
-msgstr "Zdá se, že přípojný bod %1 byl vybrán dvakrát. Přípojnému bodu lze však přiřadit pouze jeden oddíl"
+#: src/pages/partitionpage.cpp:131
+msgid "Information"
+msgstr ""
 
-#: src/pages/PartitioningPage.cpp:93
-msgid "Formatting the '/' partition is strongly advised. Going ahead without formatting it might lead to a non working system after the installation"
-msgstr "Zformátování oblasti pro '/' je důrazně doporučováno. Pokračování bez zformátování může vést k nefunkčnímu systému po instalaci."
+#: src/pages/partitionpage.cpp:414
+msgid "Loading partitions..."
+msgstr ""
 
-#: src/pages/PartitioningPage.cpp:104
-msgid "You have chosen %1 to be used as swap, however you need a special filesystem for that. Please mark it for being formatted to continue"
-msgstr "%1 bylo vybráno jako swap, ale pro to je potřeba speciální souborový systém. Prosím označte jej pro zformátování, abyste mohli pokračovat"
+#: src/pages/partitionpage.cpp:518
+msgid ""
+"The selected volume already has a partition table.. Overwrite it? (this will "
+"destroy all data on the device)"
+msgstr ""
 
-#: src/pages/PartitioningPage.cpp:110
-msgid "The partition %1 you have chosen to use as swap has a filesystem which is not linuxswap. Please note that this will be changed during installation procedure"
-msgstr "Oddíl %1, který jste vybrali pro swap nemá souborový systém linuxswap. Prosím berte na vědomí, že toto bude změněno během instalace"
+#: src/pages/partitionpage.cpp:518 src/pages/partitionpage.cpp:525
+msgid "Warning"
+msgstr ""
 
-#: src/pages/PartitioningPage.cpp:123
-msgid "It looks like you did not assign a partition to '/'. You have to select a mount point at least for it"
-msgstr "Zdá se, že jste nepřiřadili žádný oddíl pro '/'. Musíte vybrat oddíl alespoň pro tento přípojný bod."
+#: src/pages/partitionpage.cpp:525
+msgid ""
+"This operation will destroy all data on the selected volume.. Continue "
+"anyway?"
+msgstr ""
 
-#: src/pages/PartitioningPage.cpp:129
-msgid "You did not select a partition to be used as swap space. A swap partition is strongly advised, especially on laptops and system with limited amount of RAM"
-msgstr "Nevybral jste žádný oddíl k použití místa pro swap. Oddíl pro swap je důrazně doporučován, zejména na noteboocích a systémech s menší velikostí paměti RAM"
+#: src/pages/partitionpage.cpp:572 src/pages/partitionpage.cpp:796
+#: src/pages/partitionpage.cpp:840
+msgid "Extended"
+msgstr ""
 
-#: src/pages/PreparePartitionsPage.cpp:56
-msgid "Formatting %1 with %2..."
-msgstr "Formátuji %1 jako %2..."
+#: src/pages/partitionpage.cpp:797
+msgid "Primary"
+msgstr ""
 
-#: src/pages/PreparePartitionsPage.cpp:71
-msgid "Mounting %1 on %2..."
-msgstr "Připojuji %1 do %2..."
+#: src/pages/partitionpage.cpp:897
+#, fuzzy
+msgid "New partition"
+msgstr "Oddíl"
 
-#: src/pages/ReadyInstallPage.cpp:63
+#: src/pages/partitionpage.cpp:902
+msgid "Unallocated space"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:907
+msgid "Linux / Extended"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:914
+msgid "Windows / %1"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:920
+msgid "Apple / %1"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:926
+msgid "Linux / %1"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:950
+msgid ""
+"The partition you have chosen to mount as '/' is too small. It should have a "
+"capacity of at least %1 for a successful installation."
+msgstr ""
+
+#: src/pages/partitionpage.cpp:953 src/pages/partitionpage.cpp:968
+msgid "Target's capacity not sufficient"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:966
+msgid ""
+"You have selected '%1' as a mountpoint, which is not valid. A valid "
+"mountpoint always starts with '/' and represents a directory on disk"
+msgstr ""
+
+#: src/pages/readyinstallpage.cpp:77
+msgid "New partition (%1) on %2"
+msgstr ""
+
+#: src/pages/readyinstallpage.cpp:80
 msgid "%1 will be used as %2"
 msgstr "%1 bude použito jako %2"
 
-#: src/pages/ReadyInstallPage.cpp:75
-msgid "%1 will be formatted with %2"
-msgstr "%1 bude zformátováno jako %2"
-
-#: src/pages/ReadyInstallPage.cpp:94
-msgid "The following partitions appear mounted: %1. To let the installation happen correctly, Tribe will now unmount them."
-msgstr "Následují oddíly se zdají být připojeny: %1. Tribe nyní tyto oddíly odpojí, aby se instalace provedla v pořádku."
-
-#: src/pages/ReadyInstallPage.cpp:97
-msgid "Partitions mounted"
-msgstr "Oddíly připojeny"
-
-#: src/pages/RootPage.cpp:61
-msgid "Setting up root user ..."
-msgstr "Nastavuje se uživatel root..."
-
-#: src/pages/RootPage.cpp:88
-#: src/pages/RootPage.cpp:111
-msgid "Configuring users ..."
-msgstr "Konfiguruji uživatele ..."
-
-#. i18n: file: ui/createUserWidget.ui:141
-#. i18n: ectx: property (text), widget (QLabel, statusLabel)
-#. i18n: file: ui/tribeRoot.ui:176
-#. i18n: ectx: property (text), widget (QLabel, statusLabel)
-#: src/pages/RootPage.cpp:134
-#: src/widgets/UserCreationWidget.cpp:51
-#: rc.cpp:42
-#: rc.cpp:412
-msgid "Password is empty"
-msgstr "Heslo je prázdné"
-
-#: src/pages/RootPage.cpp:141
-#: src/widgets/UserCreationWidget.cpp:58
-msgid "Password has to be at least 6 characters"
-msgstr "Heslo musí mít nejméně 6 znaků"
-
-#: src/pages/RootPage.cpp:148
-#: src/widgets/UserCreationWidget.cpp:65
-msgid "Passwords do not match"
-msgstr "Hesla se neshodují"
-
-#: src/pages/RootPage.cpp:155
-#: src/widgets/UserCreationWidget.cpp:72
-msgid "Passwords match"
-msgstr "Hesla se shodují"
-
-#: src/pages/SelectPartitionPage.cpp:139
-msgid "Please wait, reading partition table ..."
-msgstr "Prosím čekejte, čtu tabulku oddílů ..."
-
-#: src/pages/SelectPartitionPage.cpp:169
-msgid "Configuring swap space, this could take some time ..."
-msgstr "Konfiguruji místo pro swap, tato akce může chvíli trvat ..."
-
-#: src/pages/SelectPartitionPage.cpp:284
-msgid ""
-"You have selected the partition %1 to be mounted twice.\n"
-"Please correct your selection."
+#: src/pages/readyinstallpage.cpp:100
+msgid "Continue"
 msgstr ""
-"Vybrali jste dvakrát oddíl %1 k připojení.\n"
-"Prosím opravte Vaši volbu."
 
-#: src/pages/SelectPartitionPage.cpp:293
+#: src/pages/readyinstallpage.cpp:104
+#, fuzzy
 msgid ""
-"You have to chosen mount point '%1' for two partitions.\n"
-"Please correct your selection."
+"The following partitions appear to be mounted: %1. To let the installation "
+"happen correctly, Tribe will now unmount them."
 msgstr ""
-"Vybrali jste přípojný bod %1 pro dva oddíly.\n"
-"Prosím opravte Vaši volbu."
+"Následují oddíly se zdají být připojeny: %1. Tribe nyní tyto oddíly odpojí, "
+"aby se instalace provedla v pořádku."
 
-#: src/pages/SelectPartitionPage.cpp:310
-msgid "You have to select a mount point at least for '/'!"
-msgstr "Musíte vybrat přípojný bod alespoň pro '/'!"
-
-#: src/pages/SettingsPage.cpp:53
+#: src/pages/settingspage.cpp:92
 msgid "chakra-laptop"
 msgstr "chakra-laptop"
 
-#: src/pages/SettingsPage.cpp:56
+#: src/pages/settingspage.cpp:94
 msgid "chakra-desktop"
 msgstr "chakra-desktop"
 
-#: src/pages/UserCreationPage.cpp:96
-msgid ""
-"You have not configured a username for one user.\n"
-"Please correct your settings."
+#: src/pages/usercreationpage.cpp:121
+msgid "You must give at least one login name."
 msgstr ""
-"Nenastavili jste uživatelské jméno pro jednoho uživatele.\n"
-"Prosím opravte Vaše nastavení."
 
-#: src/pages/UserCreationPage.cpp:100
-msgid ""
-"You have not configured a password for user %1.\n"
-"Please correct your settings."
+#: src/pages/usercreationpage.cpp:135
+#, fuzzy
+msgid "Passwords cannot be empty."
+msgstr "Heslo je prázdné"
+
+#: src/pages/usercreationpage.cpp:139
+#, fuzzy
+msgid "Passwords do not match..."
+msgstr "Hesla se neshodují"
+
+#: src/pages/usercreationpage.cpp:143
+#, fuzzy
+msgid "Root Passwords do not match..."
+msgstr "Hesla se neshodují"
+
+#: src/pages/usercreationpage.cpp:147
+msgid "Login names cannot be empty."
 msgstr ""
-"Nenastavil jste heslo pro uživatele %1.\n"
-"Prosím opravte Vaše nastavení."
 
-#: src/pages/UserCreationPage.cpp:109
-msgid "Creating account for new user..."
-msgid_plural "Creating accounts for new users..."
-msgstr[0] "Vytváří se nový uživatelský účet..."
-msgstr[1] "Vytváří se nové uživatelské účty..."
-msgstr[2] "Vytváří se nové uživatelské účty..."
+#: src/pmhandler.cpp:360
+#, fuzzy
+msgid "Preparing hard drive for installation..."
+msgstr "Dokončuji instalaci..."
 
-#: src/pages/UserCreationPage.cpp:151
-msgid "Setting up password ..."
-msgstr "Nastavuje se heslo ..."
+#: src/pmhandler.cpp:381
+#, fuzzy
+msgid "Analyzing disk..."
+msgstr "Instaluje se..."
 
-#: src/pages/UserCreationPage.cpp:192
-msgid "Creating configurations ..."
-msgstr "Vytvářím konfiguraci ..."
-
-#. i18n: file: launcher/ui/gui.ui:73
-#. i18n: ectx: property (text), widget (KPushButton, yesButton)
-#: rc.cpp:6
-msgid "Yes"
-msgstr "Ano"
-
-#. i18n: file: launcher/ui/gui.ui:80
-#. i18n: ectx: property (text), widget (KPushButton, noButton)
-#: rc.cpp:9
-msgid "No"
-msgstr "Ne"
-
-#. i18n: file: launcher/ui/gui.ui:102
-#. i18n: ectx: property (text), widget (QLabel, m_label)
-#: rc.cpp:12
-msgid "Please Wait, checking Tribe Updates..."
-msgstr "Prosím čekejte, zjišťuji aktuální verzi Tribe..."
-
-#. i18n: file: ui/crashWindow.ui:19
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:15
-msgid "Tribe has crashed due to a fatal error. We are extremely sorry about that, as this should not happen. However, Tribe collected some important informations about the crash that will be extremely useful to developers for fixing this problem. The fastest way to report this, if you have an active internet connection, is clicking \"Send report to developers\". Otherwise, you can copy/paste the text below and send it to bugs@chakra-project.org. No personal informations are included, you can see the log for details."
-msgstr "Tribe se ukončil kvůli kritické chybě. Velmi se omlouváme, jelikož by se toto stávat nemělo. Tribe však sepsal některé důležité informace do zprávy o této chybě a byla by velmi užitečná vývojářům pro opravení této chyby. Pokud jste připojeni k internetu je nejrychlejší způsob odeslání zprávy kliknutím na \"Zaslat zprávu vývojářům\".Jinak můžete zkopírovat následující text a poslat jej na bugs@chakra-project.org. Žádné osobní údaje tímto neposíláte, můžete si zobrazit log pro více detailů."
-
-#. i18n: file: ui/crashWindow.ui:50
-#. i18n: ectx: property (text), widget (KPushButton, copyButton)
-#: rc.cpp:18
-msgid "Copy to clipboard"
-msgstr "Kopírovat"
-
-#. i18n: file: ui/crashWindow.ui:57
-#. i18n: ectx: property (text), widget (KPushButton, sendButton)
-#: rc.cpp:21
-msgid "Send report to developers"
-msgstr "Zaslat zprávu vývojářům"
-
-#. i18n: file: ui/createUserWidget.ui:32
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:24
-msgid "Name:"
-msgstr "Jméno:"
-
-#. i18n: file: ui/createUserWidget.ui:39
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:27
-msgid "Surname:"
-msgstr "Přijmení:"
-
-#. i18n: file: ui/createUserWidget.ui:55
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:30
-msgid "Login:"
-msgstr "Login:"
-
-#. i18n: file: ui/createUserWidget.ui:65
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:33
-msgid "Password:"
-msgstr "Heslo:"
-
-#. i18n: file: ui/createUserWidget.ui:79
-#. i18n: ectx: property (text), widget (QLabel, confirmLabel)
-#: rc.cpp:36
-msgid "Confirm Password:"
-msgstr "Potvrzení hesla:"
-
-#. i18n: file: ui/createUserWidget.ui:111
-#. i18n: ectx: property (text), widget (QCheckBox, sudoBox)
-#: rc.cpp:39
-msgid "Administrator"
-msgstr "Administrátor"
-
-#. i18n: file: ui/createUserWidget.ui:160
-#. i18n: ectx: property (text), widget (QPushButton, deleteButton)
-#: rc.cpp:45
-msgid "Delete"
-msgstr "Smazat"
-
-#. i18n: file: ui/tribeBase.ui:166
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:51
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Welcome</span></p></body></html>"
+#: src/pmhandler.cpp:445
+msgid "There was an error while formatting partitions"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Vítejte</span></p></body></html>"
 
-#. i18n: file: ui/tribeBase.ui:192
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#. i18n: file: ui/tribeReleaseNotes.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, tribeReleaseNotes)
-#: rc.cpp:58
-#: rc.cpp:371
-msgid "Release Notes"
-msgstr "Poznámky k vydání"
-
-#. i18n: file: ui/tribeBase.ui:218
-#. i18n: ectx: property (text), widget (QLabel, licenseLabel)
-#: rc.cpp:61
-msgid "License Approval"
-msgstr "Přijmutí licencí"
-
-#. i18n: file: ui/tribeBase.ui:255
-#. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:64
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Preparation</span></p></body></html>"
+#: src/widgets/avatardialog.cpp:52
+msgid "Custom"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Příprava</span></p></body></html>"
 
-#. i18n: file: ui/tribeBase.ui:262
-#. i18n: ectx: property (text), widget (QLabel, label_10)
-#: rc.cpp:71
-msgid "Ready to Install"
-msgstr "Připravení k instalaci"
-
-#. i18n: file: ui/tribeBase.ui:288
-#. i18n: ectx: property (text), widget (QLabel, label_19)
-#. i18n: file: ui/tribeInit.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, tribeInit)
-#: rc.cpp:74
-#: rc.cpp:191
-msgid "Ramdisk"
-msgstr "Ramdisk"
-
-#. i18n: file: ui/tribeBase.ui:314
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:77
-msgid "System Settings"
-msgstr "Nastavení systému"
-
-#. i18n: file: ui/tribeBase.ui:334
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:80
-msgid "Language & Time"
-msgstr "Jazyk a čas"
-
-#. i18n: file: ui/tribeBase.ui:348
-#. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:83
-msgid "Disk setup"
-msgstr "Nastavení disků"
-
-#. i18n: file: ui/tribeBase.ui:404
-#. i18n: ectx: property (text), widget (QLabel, label_11)
-#: rc.cpp:86
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Installation</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Instalace</span></p></body></html>"
-
-#. i18n: file: ui/tribeBase.ui:430
-#. i18n: ectx: property (text), widget (QLabel, label_12)
-#: rc.cpp:93
-msgid "Prepare Partitions"
-msgstr "Připravení oddílů"
-
-#. i18n: file: ui/tribeBase.ui:456
-#. i18n: ectx: property (text), widget (QLabel, label_13)
-#: rc.cpp:96
-msgid "Install System"
-msgstr "Instalace systému"
-
-#. i18n: file: ui/tribeBase.ui:493
-#. i18n: ectx: property (text), widget (QLabel, label_14)
-#: rc.cpp:99
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Configuration</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Nastavení</span></p></body></html>"
-
-#. i18n: file: ui/tribeBase.ui:519
-#. i18n: ectx: property (text), widget (QLabel, label_15)
-#: rc.cpp:106
-msgid "Create User"
-msgstr "Vytvoření uživatelů"
-
-#. i18n: file: ui/tribeBase.ui:526
-#. i18n: ectx: property (text), widget (QLabel, label_17)
-#: rc.cpp:109
-msgid "Bootloader"
-msgstr "Zavaděč"
-
-#. i18n: file: ui/tribeBase.ui:552
-#. i18n: ectx: property (text), widget (QLabel, label_18)
-#: rc.cpp:112
-msgid "Root Password"
-msgstr "Heslo uživatele root"
-
-#. i18n: file: ui/tribeBase.ui:578
-#. i18n: ectx: property (text), widget (QLabel, label_16)
-#. i18n: file: ui/tribeFinish.ui:132
-#. i18n: ectx: property (text), widget (QPushButton, configureButton)
-#: rc.cpp:115
-#: rc.cpp:188
-msgid "Configure System"
-msgstr "Konfigurovat systém"
-
-#. i18n: file: ui/tribeBase.ui:658
-#. i18n: ectx: property (text), widget (QPushButton, abortButton)
-#: rc.cpp:118
-msgid "Abort installation"
-msgstr "Ukončit instalaci"
-
-#. i18n: file: ui/tribeBase.ui:690
-#. i18n: ectx: property (text), widget (QPushButton, previousButton)
-#: rc.cpp:121
-msgctxt "Previous Page"
-msgid "Previous"
-msgstr "Předchozí"
-
-#. i18n: file: ui/tribeBase.ui:709
-#. i18n: ectx: property (text), widget (QPushButton, nextButton)
-#: rc.cpp:124
-msgctxt "Next Page"
-msgid "Next"
-msgstr "Další"
-
-#. i18n: file: ui/tribeBootloader.ui:49
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:127
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Bootloader Installation</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Instalace zavaděče</span></p></body></html>"
-
-#. i18n: file: ui/tribeBootloader.ui:60
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:134
-msgid ""
-"You can now install GRUB as your main bootloader.\n"
-"\n"
-"If you are unsure where you should install the bootloader to, just leave the default value (hd0)."
-msgstr ""
-"Nyní můžete nainstalovat GRUB jako hlavní zavaděč.\n"
-"\n"
-"Pokuď si nejste jisti kam instalovat zavaděč, ponechte nastavenou výchozí volbu (hd0)."
-
-#. i18n: file: ui/tribeBootloader.ui:73
-#. i18n: ectx: property (text), widget (QCheckBox, checkBox)
-#: rc.cpp:139
-msgid "Install Bootloader"
-msgstr "Instalovat zavaděč"
-
-#. i18n: file: ui/tribeBootloader.ui:91
-#. i18n: ectx: property (text), widget (QPushButton, pushButton)
-#: rc.cpp:142
-msgid "Advanced..."
-msgstr "Pokročilé..."
-
-#. i18n: file: ui/tribeBootloader.ui:137
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:145
-msgid "Install to:"
-msgstr "Instalovat na:"
-
-#. i18n: file: ui/tribeBootloader.ui:144
-#. i18n: ectx: property (text), widget (QLineEdit, lineEdit)
-#: rc.cpp:148
-msgid "hd0"
-msgstr "hd0"
-
-#. i18n: file: ui/tribeConfiguration.ui:44
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:151
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Configure System</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Konfigurace systému</span></p></body></html>"
-
-#. i18n: file: ui/tribeConfiguration.ui:51
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:158
-msgid "Although the installer has created a usable default configuration suitable for most users, you can now configure your newly installed system. Please take some time to step through each section and configure your system the way you want it."
-msgstr "Ačkoli instalátor vytvořil použitelnou výchozí konfiguraci pro většinu uživatelů, nyní si můžete Váš nově nainstalovaný systém přizpůsobit. Prosím věnujte následující chvíli každé sekci a nastavte Váš systém přesně podle Vašich představ."
-
-#. i18n: file: ui/tribeFinish.ui:49
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:161
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Installation Completed !</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Dokončení instalace</span></p></body></html>"
-
-#. i18n: file: ui/tribeFinish.ui:69
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:168
-msgid ""
-"Congratulations, the installation has been completed! We hope you enjoyed what you have seen as much as we enjoyed creating it.\n"
-"\n"
-"You can now reboot into the installed system or keep using the LiveCD.\n"
-"\n"
-"In case you want to check the installation logs, take a look into /tmp on the live system or into /var/log on the installed system.\n"
-"\n"
-"Thanks for using Chakra, and get in touch with us in the forums, share opinions, give advices;\n"
-"To put it simple: Get involved! (http://chakra-project.org)\n"
-"\n"
-"Have Fun!\n"
-"\n"
-"The Chakra Team"
-msgstr ""
-"Instalace byla dokončena! Doufáme, že jste si instalaci užili stejně jako my její přípravu pro Vás.\n"
-"\n"
-"Nyní můžete systém restartovat do nově nainstalovaného systému nebo pokračovat v používání LiveCD.\n"
-"\n"
-"V případě, že chcete zkontrolovat instalační log, naleznete je v adresáři /tmp v LiveCD systému nebo ve /var/log na nainstalovaném systému.\n"
-"\n"
-"Děkujeme, že používáte Chakru, připojte se k nám na fóru, sdělte nám Vaše názory a rady,\n"
-"zkrátka: Zapojte se! (http://chakra-project.org)\n"
-"\n"
-"Příjemnou zábavu!\n"
-"\n"
-"Tým Chakra"
-
-#. i18n: file: ui/tribeFinish.ui:103
-#. i18n: ectx: property (text), widget (QPushButton, rebootButton)
-#: rc.cpp:182
-msgid "Restart Computer"
-msgstr "Restartovat počítač"
-
-#. i18n: file: ui/tribeFinish.ui:116
-#. i18n: ectx: property (text), widget (QPushButton, chakraButton)
-#: rc.cpp:185
-msgid "Keep using the LiveCD"
-msgstr "Pokračovat v používání LiveCD"
-
-#. i18n: file: ui/tribeInit.ui:49
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:194
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Ramdisk Setup</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Nastavení ramdisku</span></p></body></html>"
-
-#. i18n: file: ui/tribeInit.ui:58
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:201
-msgid "Your hardware will be configured automatically during the installation and a initial ramdisk environment for booting the linux kernel will be built. Everything should happen without intervention, but you might need some options for special boot methods. If you are unsure on what this means, simply press the \"Next\" button. Otherwise check out the ramdisk options below and select the items you need for your system."
-msgstr "Váš hardware bude automaticky nakonfigurován během instalace a počáteční ramdisk pro zavádění linuxového jádra (kernelu) bude vytvořen. Vše by se mělo odehrát bez potřeby Vašich zásahů, ale můžete požadovat některé speciální možnosti pro zavádění. Pokud si nejste jisti, co tyto možnosti znamenají, jednoduše stiskněte tlačítko \"Další\". V opačném případě zkontrolujte možnosti níže a potřebné vyberte pro Váš systém."
-
-#. i18n: file: ui/tribeInit.ui:81
-#. i18n: ectx: property (text), widget (QPushButton, pushButton)
-#: rc.cpp:204
-msgid "Ramdisk Options"
-msgstr "Možnosti Ramdisku"
-
-#. i18n: file: ui/tribeInit.ui:111
-#. i18n: ectx: property (text), widget (QCheckBox, usb)
-#: rc.cpp:207
-msgid "Activate support for booting from USB devices"
-msgstr "Aktivovat podporu pro zavádění z USB zařízení"
-
-#. i18n: file: ui/tribeInit.ui:118
-#. i18n: ectx: property (text), widget (QCheckBox, firewire)
-#: rc.cpp:210
-msgid "Activate support for booting from FireWire devices"
-msgstr "Aktivovat podporu pro zavádění z FireWire zařízení"
-
-#. i18n: file: ui/tribeInit.ui:125
-#. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
-#: rc.cpp:213
-msgid "Activate support for booting from PCMCIA devices"
-msgstr "Aktivovat podporu pro zavádění z PCMCIA zařízení"
-
-#. i18n: file: ui/tribeInit.ui:132
-#. i18n: ectx: property (text), widget (QCheckBox, nfs)
-#: rc.cpp:216
-msgid "Activate support for booting from NFS shares"
-msgstr "Aktivovat podporu pro zavádění z NFS sdílení"
-
-#. i18n: file: ui/tribeInit.ui:139
-#. i18n: ectx: property (text), widget (QCheckBox, raid)
-#: rc.cpp:219
-msgid "Activate support for booting from Software Raid arrays"
-msgstr "Aktivovat podporu pro zavádění ze Softwarového Raid pole"
-
-#. i18n: file: ui/tribeInit.ui:146
-#. i18n: ectx: property (text), widget (QCheckBox, mdp)
-#: rc.cpp:222
-msgid "Activate support for booting from Software Raid/MDP Partition arrays"
-msgstr "Aktivovat podporu pro zavádění z oddílů Softwarového RAID/MPD pole"
-
-#. i18n: file: ui/tribeInit.ui:153
-#. i18n: ectx: property (text), widget (QCheckBox, lvm2)
-#: rc.cpp:225
-msgid "Activate support for booting from LVM2 volumes"
-msgstr "Aktivovat podporu pro zavádění z LVM2 jednotek"
-
-#. i18n: file: ui/tribeInit.ui:160
-#. i18n: ectx: property (text), widget (QCheckBox, encrypted)
-#: rc.cpp:228
-msgid "Activate support for booting from Encrypted volumes"
-msgstr "Aktivovat podporu pro zavádění ze Šifrovaných jednotek"
-
-#. i18n: file: ui/tribeInstallation.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, tribeInstallation)
-#: rc.cpp:231
-msgid "Tribe Installation"
-msgstr "Instalace Tribe"
-
-#. i18n: file: ui/tribeInstallation.ui:97
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:234
-msgid "Nine Inch Nails - Discipline"
-msgstr "Nine Inch Nails - Discipline"
-
-#. i18n: file: ui/tribeInstallation.ui:102
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:237
-msgid "Severed Fifth - War"
-msgstr "Severed Fifth - War"
-
-#. i18n: file: ui/tribeInstallation.ui:107
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:240
-msgid "Dunkelstern - Out of the box"
-msgstr "Dunkelstern - Out of the box"
-
-#. i18n: file: ui/tribeIntro.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, tribeIntro)
-#: rc.cpp:243
-msgid "Tribe Intro"
-msgstr "Tribe Intro"
-
-#. i18n: file: ui/tribeIntro.ui:107
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:246
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; color:#eeeeee;\">Welcome to the Chakra Installation!</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#eeeeee;\"><span style=\" font-weight:600;\">Tribe, our installer, will guide you through the process of installing the Chakra live system</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600; color:#eeeeee;\">on your computer. After the installation you will have a ready-to-use Arch Linux</p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600; color:#eeeeee;\">desktop system with our modular KDE packages.</p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600; color:#eeeeee;\"> Please take the time to carefully read through all texts and explanations.</p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#eeeeee;\"> Remember:</span><span style=\" font-weight:600;\"> </span><span style=\" font-weight:600; color:#ff0000;\">THIS IS ALPHA SOFTWARE, IT COULD EAT YOUR HAMSTER</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600; color:#ff0000;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600; color:#ff0000;\"><span style=\" color:#eeeeee;\">Have fun! - The Chakra Developers</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; color:#eeeeee;\">Vítejte u instalace systému Chakra!</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#eeeeee;\"><span style=\" font-weight:600;\">Tribe, náš instalační program, Vás provede instalací systému Chakra</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600; color:#eeeeee;\">na Váš počítač. Po dokončení instalace získáte plnohodnotný systém</p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600; color:#eeeeee;\">Arch linux s našemi upravenými balíčky.</p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600; color:#eeeeee;\"> Prosím věnujte čas pečlivému přečtení všech textů a výsvětlivků.</p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#eeeeee;\"> Pamatujte:</span><span style=\" font-weight:600;\"> </span><span style=\" font-weight:600; color:#ff0000;\">TOTO JE ALPHA SOFTWARE, MŮŽE VÁM SNÍST KŘEČKA</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600; color:#ff0000;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600; color:#ff0000;\"><span style=\" color:#eeeeee;\">Příjemnou zábavu! - Vývojáři systému Chakra</span></p></body></html>"
-
-#. i18n: file: ui/tribeLicense.ui:52
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:263
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">License Approval</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Přijmutí licencí</span></p></body></html>"
-
-#. i18n: file: ui/tribeLicense.ui:64
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:270
-msgid "Chakra includes some proprietary software like hardware drivers, media plugins and fonts. To install them, you have to read and accept their licenses. If you choose against a license, the installer will try to use a free solution (if one is available)."
-msgstr "Chakra obsahuje proprietární software jako jsou ovladače hardware, multimediální pluginy a fonty. Abyste je mohli nainstalovat musíte souhlasit s jejich licencí. Pokud licenci odmítnete, instalátor použije svobodné řešení (pokud je dostupné)."
-
-#. i18n: file: ui/tribeLicense.ui:77
-#. i18n: ectx: property (text), widget (QLabel, licenseLabel)
-#: rc.cpp:273
-msgid "Approve license for:"
-msgstr "Souhlas s licencí pro:"
-
-#. i18n: file: ui/tribeLicense.ui:106
-#. i18n: ectx: property (text), widget (QRadioButton, declineButton)
-#: rc.cpp:276
-msgid "Decline License"
-msgstr "Odmítnout licenci"
-
-#. i18n: file: ui/tribeLicense.ui:113
-#. i18n: ectx: property (text), widget (QRadioButton, acceptButton)
-#: rc.cpp:279
-msgid "Accept License"
-msgstr "Přimout licenci"
-
-#. i18n: file: ui/tribeLocale.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, TribeLocale)
-#: rc.cpp:282
-msgid "Form"
-msgstr "Forma"
-
-#. i18n: file: ui/tribeLocale.ui:39
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:285
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Language &amp; Time</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Jazyk a čas</span></p></body></html>"
-
-#. i18n: file: ui/tribeLocale.ui:49
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:292
-msgid "Please select the nearest city on the globe so the installer can suggest the locale and timezone settings for you. You can fine-tune the suggested settings at the bottom of the page. If you cant find your region or city on the globe, you can zoom in by using the slider on the left."
-msgstr "Prosím zvolte nejbližší město na globusu tak, aby Vám instalátor mohl navrhnout lokalizaci a časové pásmo. Můžete upravit navržené nastavení na konci stránky. Pokud nemůžete najít Váš region nebo město, můžete globus přiblížit pomocí sloupečku vlevo."
-
-#. i18n: file: ui/tribeLocale.ui:73
-#. i18n: ectx: property (clickMessage), widget (KLineEdit, locationsSearch)
-#: rc.cpp:295
-msgid "Search..."
-msgstr "Hledat..."
-
-#. i18n: file: ui/tribeLocale.ui:152
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:298
-msgid "Time Settings"
-msgstr "Nastavení Času"
-
-#. i18n: file: ui/tribeLocale.ui:170
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:301
-msgid "Timezone:"
-msgstr "Časové pásmo:"
-
-#. i18n: file: ui/tribeLocale.ui:189
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:304
-msgid "Language Settings"
-msgstr "Jazyková nastavení"
-
-#. i18n: file: ui/tribeLocale.ui:195
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:307
-msgid "Locale:"
-msgstr "Lokalizace:"
-
-#. i18n: file: ui/tribeLocale.ui:205
-#. i18n: ectx: property (text), widget (QCheckBox, showLocalesCheck)
-#. i18n: file: ui/tribeLocale.ui:215
-#. i18n: ectx: property (text), widget (QCheckBox, showKDELangsCheck)
-#: rc.cpp:310
-#: rc.cpp:313
-msgid "Show all"
-msgstr "Zobrazit vše"
-
-#. i18n: file: ui/tribeLocale.ui:222
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:316
-msgid "Language:"
-msgstr "Jazyk:"
-
-#. i18n: file: ui/tribePartition.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, tribePartition)
-#: rc.cpp:319
-msgid "Partition"
-msgstr "Oddíl"
-
-#. i18n: file: ui/tribePartition.ui:47
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:322
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Disk setup</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Nastavení disků</span></p></body></html>"
-
-#. i18n: file: ui/tribePartition.ui:56
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:329
-msgid "Now you have to set up your disks for installation. Please use the tool below to partition, format and select mountpoints. Once you're satisfied with your choice, click \"Apply\" if you made any changes to the partition table or requested to format one or more partitions, and then go ahead. Formatting the partitions you will mount main system paths on (such as / or /usr) is strongly advised."
-msgstr "Nyní musíte nastavit Vaše disky pro instalaci. Prosím použijte nástroj níže k rozdělení, formátování a výběru přípojných bodů. Jakmile budete s nastavením spokojeni, klikněte na \"Apply\", pokud jste provedly změny v tabulce oddílů nebo vyžadujete zformátování jedné či více oddílů a poté pokračujte. Zformátování oddílů, které budou použity pro systém (jako / nebo /usr) je důrazně doporučeno."
-
-#. i18n: file: ui/tribePreparePartitions.ui:79
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:332
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:#eeeeee;\">Formatting Partitions...</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:#eeeeee;\">Formátování oddílů...</span></p></body></html>"
-
-#. i18n: file: ui/tribePreparePartitions.ui:129
-#. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:339
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:#eeeeee;\">Mounting Partitions...</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:#eeeeee;\">Připojování oddílů...</span></p></body></html>"
-
-#. i18n: file: ui/tribeReadyInstall.ui:45
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:346
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Ready to Install</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Připraveno k instalaci</span></p></body></html>"
-
-#. i18n: file: ui/tribeReadyInstall.ui:71
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:353
-msgid "The system will be installed with the following settings. Before continuing, please review your selections:\n"
-msgstr "Systém bude nainstalován s následujícím nastavením. Před pokračováním prosím zkontrolujte Vaše volby:\n"
-
-#. i18n: file: ui/tribeReadyInstall.ui:141
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:357
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:#eeeeee;\">The following partitions will be used:</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:#eeeeee;\">Následující oddíly budou použity:</span></p></body></html>"
-
-#. i18n: file: ui/tribeReadyInstall.ui:205
-#. i18n: ectx: property (text), widget (QLabel, formatLabel)
-#: rc.cpp:364
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:#eeeeee;\">The following partitions will be formatted:</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:#eeeeee;\">Následující oddíly budou zformátovány:</span></p></body></html>"
-
-#. i18n: file: ui/tribeReleaseNotes.ui:50
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:374
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Release Notes</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Poznámky k vydání</span></p></body></html>"
-
-#. i18n: file: ui/tribeReleaseNotes.ui:63
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:381
-msgid "Check out what's new, the known issues and general information about this version of Chakra. As always, you are encouraged to tell us what you think, either by visiting our forums or bug tracker."
-msgstr "Zjistěte co je nového, známé chyby a obecné informace o této verzi Chakra. Jako vždy nám můžete sdělit Vaše názory navštívením našeho bug trackeru nebo fóra."
-
-#. i18n: file: ui/tribeReleaseNotes.ui:86
-#. i18n: ectx: property (html), widget (QTextEdit, textEdit)
-#: rc.cpp:384
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Liberation Sans'; font-size:8pt;\"></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Liberation Sans'; font-size:8pt;\"></p></body></html>"
-
-#. i18n: file: ui/tribeRoot.ui:49
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:391
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Root Setup</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Nastavení uživatele root</span></p></body></html>"
-
-#. i18n: file: ui/tribeRoot.ui:60
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:398
-msgid ""
-"Now you can define the behaviour of the user root, who is used to manage the system.\n"
-"\n"
-"Keeping this user is usually recommended, though you can choose to use sudo only and disable the root user. Please remind that having the root account disabled and sudo misconfigured may lead to an unusable system."
-msgstr ""
-"Nyní můžete nastavit chování uživatele root, který se používá k zásahům do systému.\n"
-"\n"
-"Zachování tohoto uživatele je obvykle doporučováno, ačkoli můžete používat sudo a vypnout uživatele root. Prosím uvědomte si, že pokud by byl účet uživatele root vypnut a sudo špatně nastaveno, nebude moci zasahovat do systému."
-
-#. i18n: file: ui/tribeRoot.ui:93
-#. i18n: ectx: property (text), widget (QCheckBox, rootBox)
-#: rc.cpp:403
-msgid "Enable Root User"
-msgstr "Povolit uživatele root"
-
-#. i18n: file: ui/tribeRoot.ui:102
-#. i18n: ectx: property (text), widget (QLabel, rootLabel)
-#: rc.cpp:406
-msgid "Password"
-msgstr "Heslo"
-
-#. i18n: file: ui/tribeRoot.ui:132
-#. i18n: ectx: property (text), widget (QLabel, confirmLabel)
-#: rc.cpp:409
-msgid "Confirm Password"
-msgstr "Potvrzení hesla"
-
-#. i18n: file: ui/tribeSelectPartitions.ui:49
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:415
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Filesystem Setup</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Nastavení souborových systémů</span></p></body></html>"
-
-#. i18n: file: ui/tribeSelectPartitions.ui:60
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:422
-msgid ""
-"Please choose what partitions should be used for the installation. Just select the partition and the mountpoint. You can use the \"Add another partition\" button to add more of them. To format a partition (most likely accurate for all system partitions), activate the \"Format\" checkbox and select a filesystem.\n"
-"\n"
-"You need at least a root (/) and a swap partition. When you have added all desired partitions, simply press the \"Next\" button."
-msgstr ""
-"Prosím zvolte které oddíly mají být použity k instalaci. Stačí zvolit oddíl a přípojný bod. Můžete použít tlačítko \"Přidat další oddíl\" pro více oddílů. Pro zformátování oddílu (nejspíše vhodné pro všechny oddíly), zatrhněte volbu \"Format\" a vyberte systém souborů.\n"
-"Potřebuje alespoň oddíl pro root (/) a odkládací oddíl (swap). Až budete s přidáváním oddílů hotoví, stiskněte talčítko \"Další\"."
-
-#. i18n: file: ui/tribeSelectPartitions.ui:136
-#. i18n: ectx: property (text), widget (QPushButton, addButton)
-#: rc.cpp:427
-msgid "Add another Partition"
-msgstr "Přidat další oddíl"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:19
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:430
-msgid "Partition:"
-msgstr "Oddíl:"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:29
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:433
-msgid "Size:"
-msgstr "Velikost:"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:44
-#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
-#: rc.cpp:436
-msgid "ext3"
-msgstr "ext3"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:49
-#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
-#: rc.cpp:439
-msgid "ext2"
-msgstr "ext2"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:54
-#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
-#: rc.cpp:442
-msgid "ext4"
-msgstr "ext4"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:59
-#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
-#: rc.cpp:445
-msgid "reiserfs"
-msgstr "reiserfs"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:64
-#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
-#: rc.cpp:448
-msgid "jfs"
-msgstr "jfs"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:69
-#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
-#: rc.cpp:451
-msgid "xfs"
-msgstr "xfs"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:74
-#. i18n: ectx: property (text), item, widget (QComboBox, filesystemBox)
-#: rc.cpp:454
-msgid "linux-swap"
-msgstr "linux-swap"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:82
-#. i18n: ectx: property (text), widget (QCheckBox, formatBox)
-#: rc.cpp:457
-msgid "Format with:"
-msgstr "Formátovat jako:"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:89
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:460
-msgid "Mountpoint:"
-msgstr "Přípojný bod:"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:100
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:463
-msgid "/"
-msgstr "/"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:105
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:466
-msgid "/boot"
-msgstr "/boot"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:110
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:469
-msgid "/home"
-msgstr "/home"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:115
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:472
-msgid "/opt"
-msgstr "/opt"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:120
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:475
-msgid "/usr"
-msgstr "/usr"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:125
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:478
-msgid "/tmp"
-msgstr "/tmp"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:130
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:481
-msgid "/var"
-msgstr "/var"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:135
-#. i18n: ectx: property (text), item, widget (QComboBox, mountpointBox)
-#: rc.cpp:484
-msgid "swap"
-msgstr "swap"
-
-#. i18n: file: ui/tribeSelectPartitionsWidget.ui:143
-#. i18n: ectx: property (text), widget (QPushButton, deleteButton)
-#: rc.cpp:487
-msgid "Remove"
-msgstr "Odstranit"
-
-#. i18n: file: ui/tribeSettings.ui:56
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:490
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">System Settings</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Nastavení systému</span></p></body></html>"
-
-#. i18n: file: ui/tribeSettings.ui:77
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:497
-msgid "General Settings"
-msgstr "Obecná nastavení"
-
-#. i18n: file: ui/tribeSettings.ui:83
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:500
-msgid "The name of this computer:"
-msgstr "Název tohoto počítače:"
-
-#. i18n: file: ui/tribeSettings.ui:114
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:503
-msgid "Download Settings"
-msgstr "Nastavení Stahování"
-
-#. i18n: file: ui/tribeSettings.ui:126
-#. i18n: ectx: property (text), widget (QCheckBox, detect_mirror)
-#: rc.cpp:506
-msgid "Detect best mirror server and use it (recommended)"
-msgstr "Zjistit nejvhodnější zrcadlový server a ten použít (doporučeno)"
-
-#. i18n: file: ui/tribeSettings.ui:145
-#. i18n: ectx: property (text), widget (QCheckBox, download_doc)
-#: rc.cpp:509
-msgid "Download and install documentation packages"
-msgstr "Stáhnout a nainstalovat balíčky s dokumentací"
-
-#. i18n: file: ui/tribeUserCreation.ui:38
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:512
-msgid "Enter your name, a corresponding login name and your password to create a user account. To enable sudo for the created user and allow him to do administrative tasks, enable the \"Administrator\" option below."
-msgstr "Vložte své jméno, login a heslo pro vytvoření uživatelského účtu. Pro povolení příkazu sudo a administrace tohoto počítače vytvořeným uživatelem povolte možnost \"Administrátor\" níže."
-
-#. i18n: file: ui/tribeUserCreation.ui:84
-#. i18n: ectx: property (text), widget (QPushButton, addButton)
-#: rc.cpp:515
-msgid "Add another User.."
-msgstr "Přidat dalšího uživatele.."
-
-#. i18n: file: ui/tribeUserCreation.ui:107
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:518
-msgid "Install plain KDE-Configuration"
-msgstr "Instalovat čistě nastavené KDE"
-
-#. i18n: file: ui/tribeUserCreation.ui:112
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:521
-msgid "Install Current-LiveCD-Configuration"
-msgstr "Instalovat současná nastavení z LiveCD"
-
-#. i18n: file: ui/tribeUserCreation.ui:117
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:524
-msgid "Install plain KDEMod-Configuration"
-msgstr "Instalovat čistě nastavený KDEMod"
-
-#. i18n: file: ui/tribeUserCreation.ui:135
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:527
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Create User</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Vytvoření uživatele</span></p></body></html>"
-
-#: rc.cpp:532
+#: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Josef Luštický"
 
-#: rc.cpp:533
+#: rc.cpp:2
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "evramp@gmail.com"
 
+#~ msgid "Setting up Tribe..."
+#~ msgstr "Nastavuje se Tribe..."
+
+#~ msgid ""
+#~ "It looks like you were not authorized to launch Tribe. Please contact "
+#~ "your system administrator for further details"
+#~ msgstr ""
+#~ "Zdá se, že nemáte oprávnění ke spuštění instalátoru Tribe. Prosím "
+#~ "kontaktujte Vašeho systémového administrátora pro další detaily."
+
+#~ msgid ""
+#~ "It looks like an unclean start of Tribe has taken place. Please kill all "
+#~ "instances of tribe, tribelauncher and tribelauncherworker and try again"
+#~ msgstr "Zdá se, že Tribe byl spuštěn špatným způsobem. Prosím "
+
+#~ msgid ""
+#~ "A newer version of Tribe is available.\n"
+#~ "It is strongly advised to upgrade it. Do you want to upgrade Tribe now?"
+#~ msgstr ""
+#~ "Novější verze Tribe je k dispozici.\n"
+#~ "Důrazně doporučujeme aktualizaci. Chcete aktualizovat Tribe hned?"
+
+#~ msgid ""
+#~ "A newer version of Arxin is available.\n"
+#~ "Even though not fundamental, upgrading it is recommended. Do you want to "
+#~ "upgrade Arxin now?"
+#~ msgstr ""
+#~ "Novější verze Arxin je k dispozici.\n"
+#~ "Ačkoli to není kritické, doporučujeme aktualizaci. Chcete aktualizovat "
+#~ "Arxin hned?"
+
+#~ msgid "Please Wait, Upgrading Chakra Installer..."
+#~ msgstr "Prosím čekejte, aktualizuji instalátor systému Chakra..."
+
+#~ msgctxt ""
+#~ "You just have to translate 'remaining' here. Leave everything else as it "
+#~ "is."
+#~ msgid "%p% (%1 KB/s, %2 remaining)"
+#~ msgstr "%p% (%1 KB/s, %2 zbývá)"
+
+#~ msgid "Please Wait, Installing Packages..."
+#~ msgstr "Prosím čekejte, instalují se balíčky..."
+
+#~ msgid "Please Wait, Upgrading Packages..."
+#~ msgstr "Prosím čekejte, aktualizuji balíčky"
+
+#~ msgid "Please Wait, Downloading Packages..."
+#~ msgstr "Prosím čekejte, stahuji balíčky"
+
+#~ msgid ""
+#~ "An error occurred while trying to upgrade.\n"
+#~ "Do you want to run Tribe anyway?"
+#~ msgstr ""
+#~ "Vyskytla se chyba během aktualizace.\n"
+#~ "Chcete i přesto spustit Tribe?"
+
+#~ msgid "Please wait, Tribe is being started..."
+#~ msgstr "Prosím čekejte, Tribe se spouští..."
+
+#~ msgid "Tribe Launcher"
+#~ msgstr "Spouštěč Tribe"
+
+#~ msgid "An auto updater and launcher for Tribe"
+#~ msgstr "Automatický aktualizátor a spouštěč Tribe"
+
+#~ msgid "team@chakra-project.org"
+#~ msgstr "team@chakra-project.org"
+
+#~ msgid ""
+#~ "We appreciate your dedication, but your backtrace has already been "
+#~ "successfully sent"
+#~ msgstr ""
+#~ "Vážíme si Vaší obětavosti, ale stejnou zprávu už jsme úspěšně přijali"
+
+#~ msgid ""
+#~ "Thanks! Your backtrace was successfully submitted. Now just wait for us "
+#~ "to fix this!"
+#~ msgstr ""
+#~ "Děkujeme! Vaše zpráva byla úspěšně přijata. Teď už jen počkat, až chybu "
+#~ "opravíme!"
+
+#~ msgid ""
+#~ "There was an error while sending your backtrace!! Probably we could not "
+#~ "connect to the server: you can retry, but the best thing to do would be "
+#~ "saving the backtrace and attaching it to a bug report later."
+#~ msgstr ""
+#~ "Chyba při odesílání zprávy!! Pravděpodobně se nepodařilo spojení se "
+#~ "serverem: můžete to zkusit znovu, ale lepší bude uložit zprávu a připojit "
+#~ "ji k bug reportu později."
+
+#~ msgid "Preparing installation, this might take some time ..."
+#~ msgstr "Připravuji instalaci, tato akce může chvíli trvat ..."
+
+#~ msgid ""
+#~ "Detecting best mirror server & configuring pacman, this may take a bit..."
+#~ msgstr ""
+#~ "Zjišťuje se nejvhodnější zrcadlový server a nastavuje se pacman, tato "
+#~ "akce může chvíli trvat..."
+
+#~ msgid "Setting up X.Org configuration..."
+#~ msgstr "Nastavuje se konfiguraci X.Org..."
+
+#~ msgid ""
+#~ "Downloading and installing documentation packages, this may take a bit..."
+#~ msgstr ""
+#~ "Stahují se a instalují se balíčky s dokumentací, tato akce může chvíli "
+#~ "trvat..."
+
+#~ msgid "Could not format %1"
+#~ msgstr "Nemohu formátovat %1"
+
+#~ msgid "Do you really want to quit the installation?"
+#~ msgstr "Opravdu chcete ukončit instalaci?"
+
+#~ msgid "Creating menu.lst..."
+#~ msgstr "Vytváří se menu.lst..."
+
+#~ msgid "Adobe Flash Plugin"
+#~ msgstr "Adobe flash plugin"
+
+#~ msgid "Microsoft Core TTF Fonts"
+#~ msgstr "Microsoft core TTF fonty"
+
+#~ msgid ""
+#~ "You still have pending operations, please apply or revert them before "
+#~ "continuing"
+#~ msgstr "Stále jsou zde nevyřízené operace, opravdu chcete pokračovat?"
+
+#~ msgid ""
+#~ "It looks like you have selected the mountpoint %1 twice. You can assign "
+#~ "only one partition to a mountpoint"
+#~ msgstr ""
+#~ "Zdá se, že přípojný bod %1 byl vybrán dvakrát. Přípojnému bodu lze však "
+#~ "přiřadit pouze jeden oddíl"
+
+#~ msgid ""
+#~ "Formatting the '/' partition is strongly advised. Going ahead without "
+#~ "formatting it might lead to a non working system after the installation"
+#~ msgstr ""
+#~ "Zformátování oblasti pro '/' je důrazně doporučováno. Pokračování bez "
+#~ "zformátování může vést k nefunkčnímu systému po instalaci."
+
+#~ msgid ""
+#~ "You have chosen %1 to be used as swap, however you need a special "
+#~ "filesystem for that. Please mark it for being formatted to continue"
+#~ msgstr ""
+#~ "%1 bylo vybráno jako swap, ale pro to je potřeba speciální souborový "
+#~ "systém. Prosím označte jej pro zformátování, abyste mohli pokračovat"
+
+#~ msgid ""
+#~ "The partition %1 you have chosen to use as swap has a filesystem which is "
+#~ "not linuxswap. Please note that this will be changed during installation "
+#~ "procedure"
+#~ msgstr ""
+#~ "Oddíl %1, který jste vybrali pro swap nemá souborový systém linuxswap. "
+#~ "Prosím berte na vědomí, že toto bude změněno během instalace"
+
+#~ msgid ""
+#~ "It looks like you did not assign a partition to '/'. You have to select a "
+#~ "mount point at least for it"
+#~ msgstr ""
+#~ "Zdá se, že jste nepřiřadili žádný oddíl pro '/'. Musíte vybrat oddíl "
+#~ "alespoň pro tento přípojný bod."
+
+#~ msgid ""
+#~ "You did not select a partition to be used as swap space. A swap partition "
+#~ "is strongly advised, especially on laptops and system with limited amount "
+#~ "of RAM"
+#~ msgstr ""
+#~ "Nevybral jste žádný oddíl k použití místa pro swap. Oddíl pro swap je "
+#~ "důrazně doporučován, zejména na noteboocích a systémech s menší velikostí "
+#~ "paměti RAM"
+
+#~ msgid "Formatting %1 with %2..."
+#~ msgstr "Formátuji %1 jako %2..."
+
+#~ msgid "%1 will be formatted with %2"
+#~ msgstr "%1 bude zformátováno jako %2"
+
+#~ msgid "Partitions mounted"
+#~ msgstr "Oddíly připojeny"
+
+#~ msgid "Setting up root user ..."
+#~ msgstr "Nastavuje se uživatel root..."
+
+#~ msgid "Configuring users ..."
+#~ msgstr "Konfiguruji uživatele ..."
+
+#~ msgid "Password has to be at least 6 characters"
+#~ msgstr "Heslo musí mít nejméně 6 znaků"
+
+#~ msgid "Passwords match"
+#~ msgstr "Hesla se shodují"
+
+#~ msgid "Please wait, reading partition table ..."
+#~ msgstr "Prosím čekejte, čtu tabulku oddílů ..."
+
+#~ msgid "Configuring swap space, this could take some time ..."
+#~ msgstr "Konfiguruji místo pro swap, tato akce může chvíli trvat ..."
+
+#~ msgid ""
+#~ "You have selected the partition %1 to be mounted twice.\n"
+#~ "Please correct your selection."
+#~ msgstr ""
+#~ "Vybrali jste dvakrát oddíl %1 k připojení.\n"
+#~ "Prosím opravte Vaši volbu."
+
+#~ msgid ""
+#~ "You have to chosen mount point '%1' for two partitions.\n"
+#~ "Please correct your selection."
+#~ msgstr ""
+#~ "Vybrali jste přípojný bod %1 pro dva oddíly.\n"
+#~ "Prosím opravte Vaši volbu."
+
+#~ msgid "You have to select a mount point at least for '/'!"
+#~ msgstr "Musíte vybrat přípojný bod alespoň pro '/'!"
+
+#~ msgid ""
+#~ "You have not configured a username for one user.\n"
+#~ "Please correct your settings."
+#~ msgstr ""
+#~ "Nenastavili jste uživatelské jméno pro jednoho uživatele.\n"
+#~ "Prosím opravte Vaše nastavení."
+
+#~ msgid ""
+#~ "You have not configured a password for user %1.\n"
+#~ "Please correct your settings."
+#~ msgstr ""
+#~ "Nenastavil jste heslo pro uživatele %1.\n"
+#~ "Prosím opravte Vaše nastavení."
+
+#~ msgid "Creating account for new user..."
+#~ msgid_plural "Creating accounts for new users..."
+#~ msgstr[0] "Vytváří se nový uživatelský účet..."
+#~ msgstr[1] "Vytváří se nové uživatelské účty..."
+#~ msgstr[2] "Vytváří se nové uživatelské účty..."
+
+#~ msgid "Setting up password ..."
+#~ msgstr "Nastavuje se heslo ..."
+
+#~ msgid "Yes"
+#~ msgstr "Ano"
+
+#~ msgid "Please Wait, checking Tribe Updates..."
+#~ msgstr "Prosím čekejte, zjišťuji aktuální verzi Tribe..."
+
+#~ msgid ""
+#~ "Tribe has crashed due to a fatal error. We are extremely sorry about "
+#~ "that, as this should not happen. However, Tribe collected some important "
+#~ "informations about the crash that will be extremely useful to developers "
+#~ "for fixing this problem. The fastest way to report this, if you have an "
+#~ "active internet connection, is clicking \"Send report to developers\". "
+#~ "Otherwise, you can copy/paste the text below and send it to bugs@chakra-"
+#~ "project.org. No personal informations are included, you can see the log "
+#~ "for details."
+#~ msgstr ""
+#~ "Tribe se ukončil kvůli kritické chybě. Velmi se omlouváme, jelikož by se "
+#~ "toto stávat nemělo. Tribe však sepsal některé důležité informace do "
+#~ "zprávy o této chybě a byla by velmi užitečná vývojářům pro opravení této "
+#~ "chyby. Pokud jste připojeni k internetu je nejrychlejší způsob odeslání "
+#~ "zprávy kliknutím na \"Zaslat zprávu vývojářům\".Jinak můžete zkopírovat "
+#~ "následující text a poslat jej na bugs@chakra-project.org. Žádné osobní "
+#~ "údaje tímto neposíláte, můžete si zobrazit log pro více detailů."
+
+#~ msgid "Copy to clipboard"
+#~ msgstr "Kopírovat"
+
+#~ msgid "Send report to developers"
+#~ msgstr "Zaslat zprávu vývojářům"
+
+#~ msgid "Name:"
+#~ msgstr "Jméno:"
+
+#~ msgid "Surname:"
+#~ msgstr "Přijmení:"
+
+#~ msgid "Login:"
+#~ msgstr "Login:"
+
+#~ msgid "Password:"
+#~ msgstr "Heslo:"
+
+#~ msgid "Confirm Password:"
+#~ msgstr "Potvrzení hesla:"
+
+#~ msgid "Administrator"
+#~ msgstr "Administrátor"
+
+#~ msgid "Delete"
+#~ msgstr "Smazat"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600; color:#ffffff;\">Welcome</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600; color:#ffffff;\">Vítejte</span></p></body></html>"
+
+#~ msgid "Release Notes"
+#~ msgstr "Poznámky k vydání"
+
+#~ msgid "License Approval"
+#~ msgstr "Přijmutí licencí"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600; color:#ffffff;\">Preparation</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600; color:#ffffff;\">Příprava</span></p></body></html>"
+
+#~ msgid "Ready to Install"
+#~ msgstr "Připravení k instalaci"
+
+#~ msgid "Ramdisk"
+#~ msgstr "Ramdisk"
+
+#~ msgid "System Settings"
+#~ msgstr "Nastavení systému"
+
+#~ msgid "Language & Time"
+#~ msgstr "Jazyk a čas"
+
+#~ msgid "Disk setup"
+#~ msgstr "Nastavení disků"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600; color:#ffffff;\">Installation</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600; color:#ffffff;\">Instalace</span></p></body></html>"
+
+#~ msgid "Prepare Partitions"
+#~ msgstr "Připravení oddílů"
+
+#~ msgid "Install System"
+#~ msgstr "Instalace systému"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600; color:#ffffff;\">Configuration</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600; color:#ffffff;\">Nastavení</span></p></body></html>"
+
+#~ msgid "Create User"
+#~ msgstr "Vytvoření uživatelů"
+
+#~ msgid "Bootloader"
+#~ msgstr "Zavaděč"
+
+#~ msgid "Root Password"
+#~ msgstr "Heslo uživatele root"
+
+#~ msgid "Configure System"
+#~ msgstr "Konfigurovat systém"
+
+#~ msgid "Abort installation"
+#~ msgstr "Ukončit instalaci"
+
+#~ msgctxt "Previous Page"
+#~ msgid "Previous"
+#~ msgstr "Předchozí"
+
+#~ msgctxt "Next Page"
+#~ msgid "Next"
+#~ msgstr "Další"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Bootloader Installation</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Instalace zavaděče</span></p></body></html>"
+
+#~ msgid ""
+#~ "You can now install GRUB as your main bootloader.\n"
+#~ "\n"
+#~ "If you are unsure where you should install the bootloader to, just leave "
+#~ "the default value (hd0)."
+#~ msgstr ""
+#~ "Nyní můžete nainstalovat GRUB jako hlavní zavaděč.\n"
+#~ "\n"
+#~ "Pokuď si nejste jisti kam instalovat zavaděč, ponechte nastavenou výchozí "
+#~ "volbu (hd0)."
+
+#~ msgid "Install Bootloader"
+#~ msgstr "Instalovat zavaděč"
+
+#~ msgid "Advanced..."
+#~ msgstr "Pokročilé..."
+
+#~ msgid "Install to:"
+#~ msgstr "Instalovat na:"
+
+#~ msgid "hd0"
+#~ msgstr "hd0"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Configure System</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Konfigurace systému</span></p></body></html>"
+
+#~ msgid ""
+#~ "Although the installer has created a usable default configuration "
+#~ "suitable for most users, you can now configure your newly installed "
+#~ "system. Please take some time to step through each section and configure "
+#~ "your system the way you want it."
+#~ msgstr ""
+#~ "Ačkoli instalátor vytvořil použitelnou výchozí konfiguraci pro většinu "
+#~ "uživatelů, nyní si můžete Váš nově nainstalovaný systém přizpůsobit. "
+#~ "Prosím věnujte následující chvíli každé sekci a nastavte Váš systém "
+#~ "přesně podle Vašich představ."
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Installation Completed !</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Dokončení instalace</span></p></body></html>"
+
+#~ msgid ""
+#~ "Congratulations, the installation has been completed! We hope you enjoyed "
+#~ "what you have seen as much as we enjoyed creating it.\n"
+#~ "\n"
+#~ "You can now reboot into the installed system or keep using the LiveCD.\n"
+#~ "\n"
+#~ "In case you want to check the installation logs, take a look into /tmp on "
+#~ "the live system or into /var/log on the installed system.\n"
+#~ "\n"
+#~ "Thanks for using Chakra, and get in touch with us in the forums, share "
+#~ "opinions, give advices;\n"
+#~ "To put it simple: Get involved! (http://chakra-project.org)\n"
+#~ "\n"
+#~ "Have Fun!\n"
+#~ "\n"
+#~ "The Chakra Team"
+#~ msgstr ""
+#~ "Instalace byla dokončena! Doufáme, že jste si instalaci užili stejně jako "
+#~ "my její přípravu pro Vás.\n"
+#~ "\n"
+#~ "Nyní můžete systém restartovat do nově nainstalovaného systému nebo "
+#~ "pokračovat v používání LiveCD.\n"
+#~ "\n"
+#~ "V případě, že chcete zkontrolovat instalační log, naleznete je v "
+#~ "adresáři /tmp v LiveCD systému nebo ve /var/log na nainstalovaném "
+#~ "systému.\n"
+#~ "\n"
+#~ "Děkujeme, že používáte Chakru, připojte se k nám na fóru, sdělte nám Vaše "
+#~ "názory a rady,\n"
+#~ "zkrátka: Zapojte se! (http://chakra-project.org)\n"
+#~ "\n"
+#~ "Příjemnou zábavu!\n"
+#~ "\n"
+#~ "Tým Chakra"
+
+#~ msgid "Restart Computer"
+#~ msgstr "Restartovat počítač"
+
+#~ msgid "Keep using the LiveCD"
+#~ msgstr "Pokračovat v používání LiveCD"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Ramdisk Setup</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Nastavení ramdisku</span></p></body></html>"
+
+#~ msgid ""
+#~ "Your hardware will be configured automatically during the installation "
+#~ "and a initial ramdisk environment for booting the linux kernel will be "
+#~ "built. Everything should happen without intervention, but you might need "
+#~ "some options for special boot methods. If you are unsure on what this "
+#~ "means, simply press the \"Next\" button. Otherwise check out the ramdisk "
+#~ "options below and select the items you need for your system."
+#~ msgstr ""
+#~ "Váš hardware bude automaticky nakonfigurován během instalace a počáteční "
+#~ "ramdisk pro zavádění linuxového jádra (kernelu) bude vytvořen. Vše by se "
+#~ "mělo odehrát bez potřeby Vašich zásahů, ale můžete požadovat některé "
+#~ "speciální možnosti pro zavádění. Pokud si nejste jisti, co tyto možnosti "
+#~ "znamenají, jednoduše stiskněte tlačítko \"Další\". V opačném případě "
+#~ "zkontrolujte možnosti níže a potřebné vyberte pro Váš systém."
+
+#~ msgid "Ramdisk Options"
+#~ msgstr "Možnosti Ramdisku"
+
+#~ msgid "Activate support for booting from USB devices"
+#~ msgstr "Aktivovat podporu pro zavádění z USB zařízení"
+
+#~ msgid "Activate support for booting from FireWire devices"
+#~ msgstr "Aktivovat podporu pro zavádění z FireWire zařízení"
+
+#~ msgid "Activate support for booting from PCMCIA devices"
+#~ msgstr "Aktivovat podporu pro zavádění z PCMCIA zařízení"
+
+#~ msgid "Activate support for booting from NFS shares"
+#~ msgstr "Aktivovat podporu pro zavádění z NFS sdílení"
+
+#~ msgid "Activate support for booting from Software Raid arrays"
+#~ msgstr "Aktivovat podporu pro zavádění ze Softwarového Raid pole"
+
+#~ msgid "Activate support for booting from Software Raid/MDP Partition arrays"
+#~ msgstr "Aktivovat podporu pro zavádění z oddílů Softwarového RAID/MPD pole"
+
+#~ msgid "Activate support for booting from LVM2 volumes"
+#~ msgstr "Aktivovat podporu pro zavádění z LVM2 jednotek"
+
+#~ msgid "Activate support for booting from Encrypted volumes"
+#~ msgstr "Aktivovat podporu pro zavádění ze Šifrovaných jednotek"
+
+#~ msgid "Tribe Installation"
+#~ msgstr "Instalace Tribe"
+
+#~ msgid "Nine Inch Nails - Discipline"
+#~ msgstr "Nine Inch Nails - Discipline"
+
+#~ msgid "Severed Fifth - War"
+#~ msgstr "Severed Fifth - War"
+
+#~ msgid "Dunkelstern - Out of the box"
+#~ msgstr "Dunkelstern - Out of the box"
+
+#~ msgid "Tribe Intro"
+#~ msgstr "Tribe Intro"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+#~ "style=\" font-size:14pt; color:#eeeeee;\">Welcome to the Chakra "
+#~ "Installation!</span></p>\n"
+#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
+#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+#~ "text-indent:0px; color:#eeeeee;\"></p>\n"
+#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:"
+#~ "#eeeeee;\"><span style=\" font-weight:600;\">Tribe, our installer, will "
+#~ "guide you through the process of installing the Chakra live system</"
+#~ "span></p>\n"
+#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+#~ "weight:600; color:#eeeeee;\">on your computer. After the installation you "
+#~ "will have a ready-to-use Arch Linux</p>\n"
+#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+#~ "weight:600; color:#eeeeee;\">desktop system with our modular KDE packages."
+#~ "</p>\n"
+#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
+#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+#~ "text-indent:0px; font-weight:600; color:#eeeeee;\"></p>\n"
+#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+#~ "weight:600; color:#eeeeee;\"> Please take the time to carefully read "
+#~ "through all texts and explanations.</p>\n"
+#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
+#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+#~ "text-indent:0px; color:#eeeeee;\"></p>\n"
+#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+#~ "style=\" font-weight:600; color:#eeeeee;\"> Remember:</span><span style="
+#~ "\" font-weight:600;\"> </span><span style=\" font-weight:600; color:"
+#~ "#ff0000;\">THIS IS ALPHA SOFTWARE, IT COULD EAT YOUR HAMSTER</span></p>\n"
+#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
+#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+#~ "text-indent:0px; font-weight:600; color:#ff0000;\"></p>\n"
+#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+#~ "weight:600; color:#ff0000;\"><span style=\" color:#eeeeee;\">Have fun! - "
+#~ "The Chakra Developers</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+#~ "style=\" font-size:14pt; color:#eeeeee;\">Vítejte u instalace systému "
+#~ "Chakra!</span></p>\n"
+#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
+#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+#~ "text-indent:0px; color:#eeeeee;\"></p>\n"
+#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:"
+#~ "#eeeeee;\"><span style=\" font-weight:600;\">Tribe, náš instalační "
+#~ "program, Vás provede instalací systému Chakra</span></p>\n"
+#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+#~ "weight:600; color:#eeeeee;\">na Váš počítač. Po dokončení instalace "
+#~ "získáte plnohodnotný systém</p>\n"
+#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+#~ "weight:600; color:#eeeeee;\">Arch linux s našemi upravenými balíčky.</p>\n"
+#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
+#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+#~ "text-indent:0px; font-weight:600; color:#eeeeee;\"></p>\n"
+#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+#~ "weight:600; color:#eeeeee;\"> Prosím věnujte čas pečlivému přečtení všech "
+#~ "textů a výsvětlivků.</p>\n"
+#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
+#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+#~ "text-indent:0px; color:#eeeeee;\"></p>\n"
+#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+#~ "style=\" font-weight:600; color:#eeeeee;\"> Pamatujte:</span><span style="
+#~ "\" font-weight:600;\"> </span><span style=\" font-weight:600; color:"
+#~ "#ff0000;\">TOTO JE ALPHA SOFTWARE, MŮŽE VÁM SNÍST KŘEČKA</span></p>\n"
+#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
+#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+#~ "text-indent:0px; font-weight:600; color:#ff0000;\"></p>\n"
+#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+#~ "weight:600; color:#ff0000;\"><span style=\" color:#eeeeee;\">Příjemnou "
+#~ "zábavu! - Vývojáři systému Chakra</span></p></body></html>"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "size:22pt; font-weight:600; color:#ffffff;\">License Approval</span></p></"
+#~ "body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "size:22pt; font-weight:600; color:#ffffff;\">Přijmutí licencí</span></p></"
+#~ "body></html>"
+
+#~ msgid ""
+#~ "Chakra includes some proprietary software like hardware drivers, media "
+#~ "plugins and fonts. To install them, you have to read and accept their "
+#~ "licenses. If you choose against a license, the installer will try to use "
+#~ "a free solution (if one is available)."
+#~ msgstr ""
+#~ "Chakra obsahuje proprietární software jako jsou ovladače hardware, "
+#~ "multimediální pluginy a fonty. Abyste je mohli nainstalovat musíte "
+#~ "souhlasit s jejich licencí. Pokud licenci odmítnete, instalátor použije "
+#~ "svobodné řešení (pokud je dostupné)."
+
+#~ msgid "Approve license for:"
+#~ msgstr "Souhlas s licencí pro:"
+
+#~ msgid "Decline License"
+#~ msgstr "Odmítnout licenci"
+
+#~ msgid "Accept License"
+#~ msgstr "Přimout licenci"
+
+#~ msgid "Form"
+#~ msgstr "Forma"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Language &amp; Time</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Jazyk a čas</span></p></body></html>"
+
+#~ msgid ""
+#~ "Please select the nearest city on the globe so the installer can suggest "
+#~ "the locale and timezone settings for you. You can fine-tune the suggested "
+#~ "settings at the bottom of the page. If you cant find your region or city "
+#~ "on the globe, you can zoom in by using the slider on the left."
+#~ msgstr ""
+#~ "Prosím zvolte nejbližší město na globusu tak, aby Vám instalátor mohl "
+#~ "navrhnout lokalizaci a časové pásmo. Můžete upravit navržené nastavení na "
+#~ "konci stránky. Pokud nemůžete najít Váš region nebo město, můžete globus "
+#~ "přiblížit pomocí sloupečku vlevo."
+
+#~ msgid "Search..."
+#~ msgstr "Hledat..."
+
+#~ msgid "Time Settings"
+#~ msgstr "Nastavení Času"
+
+#~ msgid "Timezone:"
+#~ msgstr "Časové pásmo:"
+
+#~ msgid "Language Settings"
+#~ msgstr "Jazyková nastavení"
+
+#~ msgid "Locale:"
+#~ msgstr "Lokalizace:"
+
+#~ msgid "Show all"
+#~ msgstr "Zobrazit vše"
+
+#~ msgid "Language:"
+#~ msgstr "Jazyk:"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Disk setup</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Nastavení disků</span></p></body></html>"
+
+#~ msgid ""
+#~ "Now you have to set up your disks for installation. Please use the tool "
+#~ "below to partition, format and select mountpoints. Once you're satisfied "
+#~ "with your choice, click \"Apply\" if you made any changes to the "
+#~ "partition table or requested to format one or more partitions, and then "
+#~ "go ahead. Formatting the partitions you will mount main system paths on "
+#~ "(such as / or /usr) is strongly advised."
+#~ msgstr ""
+#~ "Nyní musíte nastavit Vaše disky pro instalaci. Prosím použijte nástroj "
+#~ "níže k rozdělení, formátování a výběru přípojných bodů. Jakmile budete s "
+#~ "nastavením spokojeni, klikněte na \"Apply\", pokud jste provedly změny v "
+#~ "tabulce oddílů nebo vyžadujete zformátování jedné či více oddílů a poté "
+#~ "pokračujte. Zformátování oddílů, které budou použity pro systém (jako / "
+#~ "nebo /usr) je důrazně doporučeno."
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+#~ "#eeeeee;\">Formatting Partitions...</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+#~ "#eeeeee;\">Formátování oddílů...</span></p></body></html>"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+#~ "#eeeeee;\">Mounting Partitions...</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+#~ "#eeeeee;\">Připojování oddílů...</span></p></body></html>"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Ready to Install</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Připraveno k instalaci</span></p></body></html>"
+
+#~ msgid ""
+#~ "The system will be installed with the following settings. Before "
+#~ "continuing, please review your selections:\n"
+#~ msgstr ""
+#~ "Systém bude nainstalován s následujícím nastavením. Před pokračováním "
+#~ "prosím zkontrolujte Vaše volby:\n"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+#~ "#eeeeee;\">The following partitions will be used:</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+#~ "#eeeeee;\">Následující oddíly budou použity:</span></p></body></html>"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+#~ "#eeeeee;\">The following partitions will be formatted:</span></p></body></"
+#~ "html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+#~ "#eeeeee;\">Následující oddíly budou zformátovány:</span></p></body></html>"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
+#~ "style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Release Notes</"
+#~ "span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
+#~ "style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Poznámky k "
+#~ "vydání</span></p></body></html>"
+
+#~ msgid ""
+#~ "Check out what's new, the known issues and general information about this "
+#~ "version of Chakra. As always, you are encouraged to tell us what you "
+#~ "think, either by visiting our forums or bug tracker."
+#~ msgstr ""
+#~ "Zjistěte co je nového, známé chyby a obecné informace o této verzi "
+#~ "Chakra. Jako vždy nám můžete sdělit Vaše názory navštívením našeho bug "
+#~ "trackeru nebo fóra."
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Liberation Sans'; font-size:8pt;\"></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Liberation Sans'; font-size:8pt;\"></p></body></html>"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "size:22pt; font-weight:600; color:#ffffff;\">Root Setup</span></p></"
+#~ "body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "size:22pt; font-weight:600; color:#ffffff;\">Nastavení uživatele root</"
+#~ "span></p></body></html>"
+
+#~ msgid ""
+#~ "Now you can define the behaviour of the user root, who is used to manage "
+#~ "the system.\n"
+#~ "\n"
+#~ "Keeping this user is usually recommended, though you can choose to use "
+#~ "sudo only and disable the root user. Please remind that having the root "
+#~ "account disabled and sudo misconfigured may lead to an unusable system."
+#~ msgstr ""
+#~ "Nyní můžete nastavit chování uživatele root, který se používá k zásahům "
+#~ "do systému.\n"
+#~ "\n"
+#~ "Zachování tohoto uživatele je obvykle doporučováno, ačkoli můžete "
+#~ "používat sudo a vypnout uživatele root. Prosím uvědomte si, že pokud by "
+#~ "byl účet uživatele root vypnut a sudo špatně nastaveno, nebude moci "
+#~ "zasahovat do systému."
+
+#~ msgid "Enable Root User"
+#~ msgstr "Povolit uživatele root"
+
+#~ msgid "Password"
+#~ msgstr "Heslo"
+
+#~ msgid "Confirm Password"
+#~ msgstr "Potvrzení hesla"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Filesystem Setup</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Nastavení souborových systémů</span></p></body></html>"
+
+#~ msgid ""
+#~ "Please choose what partitions should be used for the installation. Just "
+#~ "select the partition and the mountpoint. You can use the \"Add another "
+#~ "partition\" button to add more of them. To format a partition (most "
+#~ "likely accurate for all system partitions), activate the \"Format\" "
+#~ "checkbox and select a filesystem.\n"
+#~ "\n"
+#~ "You need at least a root (/) and a swap partition. When you have added "
+#~ "all desired partitions, simply press the \"Next\" button."
+#~ msgstr ""
+#~ "Prosím zvolte které oddíly mají být použity k instalaci. Stačí zvolit "
+#~ "oddíl a přípojný bod. Můžete použít tlačítko \"Přidat další oddíl\" pro "
+#~ "více oddílů. Pro zformátování oddílu (nejspíše vhodné pro všechny "
+#~ "oddíly), zatrhněte volbu \"Format\" a vyberte systém souborů.\n"
+#~ "Potřebuje alespoň oddíl pro root (/) a odkládací oddíl (swap). Až budete "
+#~ "s přidáváním oddílů hotoví, stiskněte talčítko \"Další\"."
+
+#~ msgid "Add another Partition"
+#~ msgstr "Přidat další oddíl"
+
+#~ msgid "Partition:"
+#~ msgstr "Oddíl:"
+
+#~ msgid "Size:"
+#~ msgstr "Velikost:"
+
+#~ msgid "ext3"
+#~ msgstr "ext3"
+
+#~ msgid "ext2"
+#~ msgstr "ext2"
+
+#~ msgid "ext4"
+#~ msgstr "ext4"
+
+#~ msgid "reiserfs"
+#~ msgstr "reiserfs"
+
+#~ msgid "jfs"
+#~ msgstr "jfs"
+
+#~ msgid "xfs"
+#~ msgstr "xfs"
+
+#~ msgid "linux-swap"
+#~ msgstr "linux-swap"
+
+#~ msgid "Format with:"
+#~ msgstr "Formátovat jako:"
+
+#~ msgid "Mountpoint:"
+#~ msgstr "Přípojný bod:"
+
+#~ msgid "/"
+#~ msgstr "/"
+
+#~ msgid "/boot"
+#~ msgstr "/boot"
+
+#~ msgid "/home"
+#~ msgstr "/home"
+
+#~ msgid "/opt"
+#~ msgstr "/opt"
+
+#~ msgid "/usr"
+#~ msgstr "/usr"
+
+#~ msgid "/tmp"
+#~ msgstr "/tmp"
+
+#~ msgid "/var"
+#~ msgstr "/var"
+
+#~ msgid "swap"
+#~ msgstr "swap"
+
+#~ msgid "Remove"
+#~ msgstr "Odstranit"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">System Settings</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Nastavení systému</span></p></body></html>"
+
+#~ msgid "General Settings"
+#~ msgstr "Obecná nastavení"
+
+#~ msgid "The name of this computer:"
+#~ msgstr "Název tohoto počítače:"
+
+#~ msgid "Download Settings"
+#~ msgstr "Nastavení Stahování"
+
+#~ msgid "Detect best mirror server and use it (recommended)"
+#~ msgstr "Zjistit nejvhodnější zrcadlový server a ten použít (doporučeno)"
+
+#~ msgid ""
+#~ "Enter your name, a corresponding login name and your password to create a "
+#~ "user account. To enable sudo for the created user and allow him to do "
+#~ "administrative tasks, enable the \"Administrator\" option below."
+#~ msgstr ""
+#~ "Vložte své jméno, login a heslo pro vytvoření uživatelského účtu. Pro "
+#~ "povolení příkazu sudo a administrace tohoto počítače vytvořeným "
+#~ "uživatelem povolte možnost \"Administrátor\" níže."
+
+#~ msgid "Add another User.."
+#~ msgstr "Přidat dalšího uživatele.."
+
+#~ msgid "Install plain KDE-Configuration"
+#~ msgstr "Instalovat čistě nastavené KDE"
+
+#~ msgid "Install Current-LiveCD-Configuration"
+#~ msgstr "Instalovat současná nastavení z LiveCD"
+
+#~ msgid "Install plain KDEMod-Configuration"
+#~ msgstr "Instalovat čistě nastavený KDEMod"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Create User</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+#~ "#ffffff;\">Vytvoření uživatele</span></p></body></html>"

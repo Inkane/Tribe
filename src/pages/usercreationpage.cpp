@@ -122,7 +122,7 @@ void UserCreationPage::aboutToGoToNext()
                                                QStringList(), QString(), &retbool, KMessageBox::Notify);
                 return;
             }
-            
+
             if (!user->rootPassword.isEmpty() && user->rootPasswordsMatch &&
                 user->useRootPw) {
                 rootPw = user->rootPassword;
@@ -130,7 +130,7 @@ void UserCreationPage::aboutToGoToNext()
                 rootPw = user->password;
             }
         }
-        
+
         if ((user->password.isEmpty()) && (user->passwordsMatch == true)) {
             KMessageBox::createKMessageBox(dialog, QMessageBox::Warning, i18n("Passwords cannot be empty."),
                                            QStringList(), QString(), &retbool, KMessageBox::Notify);

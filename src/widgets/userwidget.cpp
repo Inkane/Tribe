@@ -41,16 +41,12 @@ UserWidget::UserWidget(int a_userNumber, QWidget* parent): QWidget(parent)
 
     if (number == 0) {
         autoLogin = true;
-        admin = true;
         useRootPw = false;
         ui.autoLoginCheckBox->setChecked(true);
-        ui.adminCheckBox->setChecked(true);
         ui.rootUsesUserPwCheckBox->setChecked(true);
         ui.removeUser->setVisible(false);
     } else {
         autoLogin = false;
-        admin = false;
-        ui.adminCheckBox->setVisible(false);
         ui.rootUsesUserPwCheckBox->setVisible(false);
     }
 
@@ -59,17 +55,18 @@ UserWidget::UserWidget(int a_userNumber, QWidget* parent): QWidget(parent)
     connect(ui.loginLine, SIGNAL(textChanged(QString)), this, SLOT(testFields()));
     connect(ui.passLine, SIGNAL(textChanged(QString)), this, SLOT(testFields()));
     connect(ui.confirmPassLine, SIGNAL(textChanged(QString)), this, SLOT(testFields()));
-    connect(ui.rootPassLine, SIGNAL(textChanged(QString)), this, SLOT(testFields()));
-    connect(ui.confirmRootPassLine, SIGNAL(textChanged(QString)), this, SLOT(testFields()));
 
     connect(ui.userDetails, SIGNAL(clicked(bool)), this, SLOT(showDetails()));
-    connect(ui.rootUsesUserPwCheckBox, SIGNAL(toggled(bool)), this, SLOT(showRootPw()));
     connect(ui.removeUser, SIGNAL(clicked(bool)), this, SLOT(emitRemove()));
 
     connect(ui.avatar, SIGNAL(clicked(bool)), this, SLOT(avatarClicked()));
     connect(ui.autoLoginCheckBox, SIGNAL(toggled(bool)), this, SLOT(autoLoginToggled()));
-    connect(ui.adminCheckBox, SIGNAL(toggled(bool)), this, SLOT(adminToggled()));
+
+    connect(ui.rootUsesUserPwCheckBox, SIGNAL(toggled(bool)), this, SLOT(showRootPw()));
     connect(ui.rootUsesUserPwCheckBox, SIGNAL(toggled(bool)), this, SLOT(useUserPwToggled()));
+
+    connect(ui.rootPassLine, SIGNAL(textChanged(QString)), this, SLOT(testFields()));
+    connect(ui.confirmRootPassLine, SIGNAL(textChanged(QString)), this, SLOT(testFields()));
     
     connect(m_avatarDialog, SIGNAL(setAvatar(QString)), this, SLOT(setAvatar(QString)));
 }
@@ -140,7 +137,6 @@ void UserWidget::testFields()
     login = ui.loginLine->text();
     name = ui.nameLine->text();
     autoLogin = ui.autoLoginCheckBox->isChecked();
-    admin = ui.adminCheckBox->isChecked();
 }
 
 void UserWidget::setAutoLogin(bool b)
@@ -160,16 +156,6 @@ void UserWidget::autoLoginToggled()
     autoLogin = ui.autoLoginCheckBox->isChecked();
     if (autoLogin)
         emit autoLoginToggled(number);
-}
-
-void UserWidget::adminToggled()
-{
-    admin = ui.adminCheckBox->isChecked();
-    if (!admin) {
-        ui.rootUsesUserPwCheckBox->setEnabled(false);
-    } else {
-        ui.rootUsesUserPwCheckBox->setEnabled(true);
-    }
 }
 
 void UserWidget::useUserPwToggled()

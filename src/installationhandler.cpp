@@ -667,8 +667,10 @@ qDebug() << "::::::: setUpUsers() \n" << users << "\n\n";
             .arg(userLoginList().at(current));
             QProcess::execute(command);
         } else {
-            command = QString("chroot %1 useradd -g users -m -s /bin/bash %2")
-            .arg(INSTALLATION_TARGET).arg(user);
+            command = QString("chroot %1 useradd -g users -c '%2' -m -s /bin/bash %3")
+            .arg(INSTALLATION_TARGET)
+            .arg(userNameList().at(current))
+            .arg(user);
             QProcess::execute(command);
             //clean conflict files
             command = QString("chroot %1 rm -v /home/%2/.bash_profile")
@@ -682,7 +684,7 @@ qDebug() << "::::::: setUpUsers() \n" << users << "\n\n";
             QProcess::execute(command);
         }
 
-        qDebug() << " :: user \'" + user + "\' created";
+qDebug() << " :: user \'" + user + "\' created";
 
         // set kdm/user avatar
         command = QString("mkdir -p " + QString(INSTALLATION_TARGET) + "/usr/share/apps/kdm/faces");
@@ -705,8 +707,10 @@ qDebug() << "::::::: setUpUsers() \n" << users << "\n\n";
         // set user passwd
         m_userProcess = new QProcess(this);
         m_passwdCount = current;
-        qDebug() << "Setting user password...";
-        command = QString("chroot %1 /usr/bin/passwd %2").arg(INSTALLATION_TARGET).arg(user);
+qDebug() << " :: setting user password...";
+        command = QString("chroot %1 /usr/bin/passwd %2")
+                          .arg(INSTALLATION_TARGET)
+                          .arg(user);
         connect(m_userProcess, SIGNAL(readyReadStandardError()), SLOT(streamPassword()));
         m_userProcess->start(command);
         sleep(3);
@@ -716,13 +720,15 @@ qDebug() << "::::::: setUpUsers() \n" << users << "\n\n";
         QDir dir("/home/live");
         foreach(const QString &ent, dir.entryList(QDir::AllEntries | QDir::NoDotAndDotDot | QDir::Hidden)) {
             KIO::Job *job = KIO::copy(KUrl::fromPath(ent),
-                                      KUrl::fromPath(QString("%1/home/%2").arg(INSTALLATION_TARGET).arg(user)),
+                                      KUrl::fromPath(QString("%1/home/%2")
+                                                     .arg(INSTALLATION_TARGET)
+                                                     .arg(user)),
                                       KIO::HideProgressInfo | KIO::Overwrite);
 
             KIO::NetAccess::synchronousRun(job, 0);
         }
 
-        qDebug() << " :: live configuration copied to the user's home";
+qDebug() << " :: live configuration copied to the user's home";
 
         QProcess::execute("sh " +
                           QString(SCRIPTS_INSTALL_PATH) +
@@ -731,7 +737,7 @@ qDebug() << "::::::: setUpUsers() \n" << users << "\n\n";
                           " --user-name " +
                           user);
 
-        qDebug() << ":: user configuration complete";
+qDebug() << ":: user configuration complete";
 
         QProcess::execute("sh " +
                           QString(SCRIPTS_INSTALL_PATH) +
@@ -740,43 +746,35 @@ qDebug() << "::::::: setUpUsers() \n" << users << "\n\n";
                           " --user-name " +
                           user);
 
-        qDebug() << " :: sudoers configuration complete";
+qDebug() << " :: sudoers configuration complete";
 
         current++;
     }
-    
+
     // set root passwd
     m_rootUserProcess = new QProcess(this);
     m_passwdCount = current;
-    qDebug() << "Setting root password...";
+qDebug() << " :: setting root password...";
     command = QString("chroot %1 /usr/bin/passwd").arg(INSTALLATION_TARGET);
     connect(m_rootUserProcess, SIGNAL(readyReadStandardError()), SLOT(streamRootPassword()));
     m_rootUserProcess->start(command);
     sleep(3);
     m_rootUserProcess->waitForFinished();
-    
-    qDebug() << userPasswordList();
 }
 
 void InstallationHandler::streamPassword()
 {
-    qDebug() << "streaming pw for user : " << m_userLoginList.at(m_passwdCount);
-    qDebug() << "                   pw : " << m_userPasswordList.at(m_passwdCount);
     m_userProcess->write(QString(userPasswordList().at(m_passwdCount)).toUtf8().data());
-
     m_userProcess->write("\n");
     
     sleep(3);
 
     m_userProcess->waitForFinished();
-    disconnect(m_userProcess, SIGNAL(readyReadStandardError()), this, SLOT(streamPassword()));
 }
 
 void InstallationHandler::streamRootPassword()
 {
-    qDebug() << "                 root pw : " << m_userPasswordList.last();
     m_rootUserProcess->write(QString(userPasswordList().last()).toUtf8().data());
-
     m_rootUserProcess->write("\n");
     
     sleep(3);

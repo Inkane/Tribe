@@ -176,9 +176,9 @@ void UserWidget::useUserPwToggled()
 {
     useUserPw = ui.rootUsesUserPwCheckBox->isChecked();
     if (!useUserPw) {
-      useRootPw = true;
+        useRootPw = true;
     } else {
-      useRootPw = false;
+        useRootPw = false;
     }
 }
 

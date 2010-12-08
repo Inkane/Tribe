@@ -124,9 +124,9 @@ void UserCreationPage::aboutToGoToNext()
             }
             
             if (!user->rootPassword.isEmpty() && user->rootPasswordsMatch &&
-                !user->useUserPw) {
+                user->useRootPw) {
                 rootPw = user->rootPassword;
-            } else if (user->useUserPw) {
+            } else if (!user->useRootPw) {
                 rootPw = user->password;
             }
         }

@@ -3,42 +3,41 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Manuel Tortosa Moreno <manutortosa@gmail.com>, 2009-2010.
+# Manuel Tortosa Moreno <manutortosa@chakra-project.org>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
 "POT-Creation-Date: 2010-12-08 20:39+0100\n"
-"PO-Revision-Date: 2010-01-07 21:03+0100\n"
-"Last-Translator: Manuel Tortosa Moreno <manutortosa@gmail.com>\n"
+"PO-Revision-Date: 2010-12-08 22:06+0100\n"
+"Last-Translator: Manuel Tortosa Moreno <manutortosa@chakra-project.org>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: none\n"
 "X-Language: ca_ES@valencia\n"
-"X-Generator: Lokalize 1.0\n"
+"X-Generator: Lokalize 1.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: src/installationhandler.cpp:86
 msgid "Tribe was not able to initialize needed path: "
-msgstr ""
+msgstr "Tribe no ha pogut inicialitzar el camí necessari: "
 
 #: src/installationhandler.cpp:86
 msgid " , please resolve the issue, and try again."
-msgstr ""
+msgstr " , arregleu el problema i torneu-ho a provar."
 
 #: src/installationhandler.cpp:148
 msgid "Installing the system ..."
 msgstr "S'està instal·lant el sistema..."
 
 #: src/installationhandler.cpp:176
-#, fuzzy
 msgid "Mounting partitions..."
-msgstr "S'està muntant %1 en %2..."
+msgstr "S'estan muntant les particions..."
 
 #: src/installationhandler.cpp:184
-#, fuzzy
 msgid "Preparing installation..."
-msgstr "S'està finalitzant instal·lació..."
+msgstr "S'està preparant la instal·lació..."
 
 #: src/installationhandler.cpp:204
 msgid "Error copying files"
@@ -53,49 +52,40 @@ msgid "Initializing target ..."
 msgstr "S'està preparant el destí..."
 
 #: src/installationhandler.cpp:336
-#, fuzzy
 msgid "Please wait, configuring the new system ..."
-msgstr "Per favor espereu, s'està iniciant i configurant PostInstall..."
+msgstr "Espereu, s'està configurant el nou sistema..."
 
 #: src/installationhandler.cpp:412
 msgid "Error in Postinstall script. See log for more details"
 msgstr "Error a l'script Postinstall. Per més detalls, mireu el registre"
 
 #: src/installationhandler.cpp:421
-#, fuzzy
 msgid "Creating user accounts ..."
-msgstr "S'estan creant les configuracions..."
+msgstr "S'estan creant els comptes d'usuari..."
 
 #: src/installationhandler.cpp:424
-#, fuzzy
 msgid "Configuring software management..."
-msgstr "S'està configurant el maquinari..."
+msgstr "S'està configurant el programari..."
 
 #: src/installationhandler.cpp:428
-#, fuzzy
 msgid "Removing unused packages..."
-msgstr "S'estan esborrant paquets innecessaris..."
+msgstr "S'estan esborrant els paquets innecessaris..."
 
 #: src/installationhandler.cpp:432
 msgid "Installing additional packages..."
 msgstr "S'estan instal·lant paquets addicionals..."
 
 #: src/installationhandler.cpp:436
-#, fuzzy
 msgid "Configuring the display..."
-msgstr "S'està configurant el maquinari..."
+msgstr "S'està configurant la pantalla..."
 
 #: src/installationhandler.cpp:440
-#, fuzzy
 msgid "Downloading and installing localization packages..."
-msgstr ""
-"S'estan baixant i instal·lant els paquets de localització. Això pot trigar "
-"una mica..."
+msgstr "S'estan baixant i instal·lant els paquets de localització..."
 
 #: src/installationhandler.cpp:444
-#, fuzzy
 msgid "Downloading and installing documentation packages..."
-msgstr "Baixa i instal·la paquets de documentació"
+msgstr "S'estan baixant i instal·la paquets de documentació..."
 
 #: src/installationhandler.cpp:448
 msgid "Setting up localization..."
@@ -118,43 +108,36 @@ msgid "Configuring hardware..."
 msgstr "S'està configurant el maquinari..."
 
 #: src/installationhandler.cpp:471
-#, fuzzy
 msgid "Creating initial ramdisk images..."
-msgstr ""
-"S'estan creant les imatges inicials ramdisk. Això pot trigar molt, espereu..."
+msgstr "S'estan creant les imatges inicials ramdisk.."
 
 #: src/installationhandler.cpp:475
-#, fuzzy
 msgid "Generating locales..."
-msgstr "S'estan regenerant els locals..."
+msgstr "S'estan generant l'arranjament local..."
 
 #: src/installationhandler.cpp:479
-#, fuzzy
 msgid "Removing unused localizations..."
 msgstr "S'estan suprimint les localitzacions innecessàries..."
 
 #: src/installationhandler.cpp:483
-#, fuzzy
 msgid "Removing unused drivers..."
 msgstr "S'estan suprimint els controladors innecessaris..."
 
 #: src/installationhandler.cpp:487
-#, fuzzy
 msgid "Finishing up..."
-msgstr "S'està finalitzant instal·lació..."
+msgstr "S'està finalitzant..."
 
 #: src/installationhandler.cpp:491
 msgid "Installation complete!"
 msgstr "Instal·lació completa!"
 
 #: src/installationhandler.cpp:582
-#, fuzzy
 msgid ""
 "Tribe was not able to initialize needed directories. Something is very "
 "wrong..."
 msgstr ""
-"Tribe no ha pogut crear els directoris necessaris. Potser no teniu prou "
-"privilegis, per favor, executeu Tribe com a root."
+"Tribe no ha pogut crear els directoris necessaris. Alguna cosa ha anat molt "
+"malament..."
 
 #: src/installationhandler.cpp:606
 msgid "Could not mount %1"
@@ -169,14 +152,12 @@ msgid "Tribe"
 msgstr "Tribe"
 
 #: src/main.cpp:45
-#, fuzzy
 msgid "Graphical Installer for Chakra"
-msgstr "Instal·lador LiveCD per Chakra"
+msgstr "Instal·lador gràfic per a Chakra"
 
 #: src/main.cpp:46
-#, fuzzy
 msgid "(c) 2008 - 2010 the Chakra Development Team"
-msgstr "(c) 2008 L'equip de desenvolupament de Chakra"
+msgstr "(c) 2008 - 2010 L'equip de desenvolupament de Chakra"
 
 #: src/main.cpp:46
 msgid "chakra@chakra-project.org"
@@ -208,20 +189,19 @@ msgstr "Dorsal de post-instal·lació i treball artístic"
 
 #: src/main.cpp:51
 msgid "Phil Miller"
-msgstr ""
+msgstr "Phil Miller"
 
 #: src/main.cpp:51 src/main.cpp:52
-#, fuzzy
 msgid "PostInstall Backend"
 msgstr "Dorsal de post-instal·lació i treball artístic"
 
 #: src/main.cpp:52
 msgid "Manuel Tortosa"
-msgstr ""
+msgstr "Manuel Tortosa"
 
 #: src/main.cpp:53
 msgid "Drake Justice"
-msgstr ""
+msgstr "Drake Justice"
 
 #: src/main.cpp:67
 msgid ""
@@ -252,9 +232,8 @@ msgid "Installing bootloader..."
 msgstr "S'està instal·lant el gestor d'arrencada..."
 
 #: src/pages/bootloaderpage.cpp:82
-#, fuzzy
 msgid "Creating OS list..."
-msgstr "S'està creant fstab..."
+msgstr "S'està creant la llista de sistemes operatius..."
 
 #: src/pages/licensepage.cpp:53
 msgid "Proprietary ATI Driver"
@@ -269,26 +248,24 @@ msgid "Accept license for: "
 msgstr "Accepta la llicència per a: "
 
 #: src/pages/localepage.cpp:269
-#, fuzzy
 msgid "You need to select a timezone"
-msgstr "Heu de seleccionar una zona horària."
+msgstr "Heu de seleccionar una zona horària"
 
 #: src/pages/partitionpage.cpp:58 src/pages/partitionpage.cpp:134
-#, fuzzy
 msgid "None"
-msgstr "No"
+msgstr "Cap"
 
 #: src/pages/partitionpage.cpp:67 src/pages/partitionpage.cpp:89
 msgid "Other..."
-msgstr ""
+msgstr "Altre..."
 
 #: src/pages/partitionpage.cpp:95
 msgid "Please enter a custom mountpoint"
-msgstr ""
+msgstr "Introduïu un punt de muntatge personalitzat"
 
 #: src/pages/partitionpage.cpp:107
 msgid "The mount point must start with /"
-msgstr ""
+msgstr "El punt de muntatge ha de començar amb /"
 
 #: src/pages/partitionpage.cpp:108
 msgid "Error"
@@ -296,85 +273,92 @@ msgstr "Heu de seleccionar una zona horària."
 
 #: src/pages/partitionpage.cpp:130
 msgid "You can only use each mountpoint once."
-msgstr ""
+msgstr "Només podeu usar una vegada cada punt de muntatge."
 
 #: src/pages/partitionpage.cpp:131
 msgid "Information"
-msgstr ""
+msgstr "Informació"
 
 #: src/pages/partitionpage.cpp:414
 msgid "Loading partitions..."
-msgstr ""
+msgstr "S'estan carregant les particions..."
 
 #: src/pages/partitionpage.cpp:518
 msgid ""
 "The selected volume already has a partition table.. Overwrite it? (this will "
 "destroy all data on the device)"
 msgstr ""
+"El volum seleccionat ja té una taula de particions.. La sobreescric? (això "
+"destruirà totes les dades al dispositiu)"
 
 #: src/pages/partitionpage.cpp:518 src/pages/partitionpage.cpp:525
 msgid "Warning"
-msgstr ""
+msgstr "Avís"
 
 #: src/pages/partitionpage.cpp:525
 msgid ""
 "This operation will destroy all data on the selected volume.. Continue "
 "anyway?"
 msgstr ""
+"Aquesta operació destruirà totes les dades al volum seleccionat... Continuo "
+"de totes maneres?"
 
 #: src/pages/partitionpage.cpp:572 src/pages/partitionpage.cpp:796
 #: src/pages/partitionpage.cpp:840
 msgid "Extended"
-msgstr ""
+msgstr "Ampliada"
 
 #: src/pages/partitionpage.cpp:797
 msgid "Primary"
-msgstr ""
+msgstr "Primària"
 
 #: src/pages/partitionpage.cpp:897
-#, fuzzy
 msgid "New partition"
 msgstr "Nova partició"
 
 #: src/pages/partitionpage.cpp:902
 msgid "Unallocated space"
-msgstr ""
+msgstr "Espai no assignat"
 
 #: src/pages/partitionpage.cpp:907
 msgid "Linux / Extended"
-msgstr ""
+msgstr "Linx / Ampliada"
 
 #: src/pages/partitionpage.cpp:914
 msgid "Windows / %1"
-msgstr ""
+msgstr "Windows / %1"
 
 #: src/pages/partitionpage.cpp:920
 msgid "Apple / %1"
-msgstr ""
+msgstr "Apple / %1"
 
 #: src/pages/partitionpage.cpp:926
 msgid "Linux / %1"
-msgstr ""
+msgstr "Linux / %1"
 
 #: src/pages/partitionpage.cpp:950
 msgid ""
 "The partition you have chosen to mount as '/' is too small. It should have a "
 "capacity of at least %1 for a successful installation."
 msgstr ""
+"La partició que heu decidit muntar com a «/» és massa petita, ha de tenir "
+"una capacitat d'almenys %1 per a una instal·lació correcta."
 
 #: src/pages/partitionpage.cpp:953 src/pages/partitionpage.cpp:968
 msgid "Target's capacity not sufficient"
-msgstr ""
+msgstr "La capacitat de l'objectiu no és sufficient"
 
 #: src/pages/partitionpage.cpp:966
 msgid ""
 "You have selected '%1' as a mountpoint, which is not valid. A valid "
 "mountpoint always starts with '/' and represents a directory on disk"
 msgstr ""
+"Heu seleccionat «%1» com a punt de muntatge, cosa que no és vàlida. Un punt "
+"de muntatge vàlid, sempre comença amb «/» i representa un directori al disc"
 
 #: src/pages/readyinstallpage.cpp:77
 msgid "New partition (%1) on %2"
-msgstr ""
+msgstr "Nova partició (%1) a %2"
 
 #: src/pages/readyinstallpage.cpp:80
 msgid "%1 will be used as %2"
@@ -382,15 +366,15 @@ msgstr "%1 s'usarà com a %2"
 
 #: src/pages/readyinstallpage.cpp:100
 msgid "Continue"
-msgstr ""
+msgstr "Continua"
 
 #: src/pages/readyinstallpage.cpp:104
-#, fuzzy
 msgid ""
 "The following partitions appear to be mounted: %1. To let the installation "
 "happen correctly, Tribe will now unmount them."
 msgstr ""
-"Les següents particions estan muntades:%1. Tribe les desmuntarà ara per "
+"Les següents particions semblen estar muntades:%1. Tribe les desmuntarà ara "
+"per "
 "poder continuar amb la instal·lació correctament."
 
 #: src/pages/settingspage.cpp:92
@@ -403,44 +387,39 @@ msgstr "chakra-escriptori"
 
 #: src/pages/usercreationpage.cpp:121
 msgid "You must give at least one login name."
-msgstr ""
+msgstr "Heu de proporcionar almenys un nom d'inici de sessió."
 
 #: src/pages/usercreationpage.cpp:135
-#, fuzzy
 msgid "Passwords cannot be empty."
-msgstr "La contrasenya és buida"
+msgstr "La contrasenya no pot ser buida."
 
 #: src/pages/usercreationpage.cpp:139
-#, fuzzy
 msgid "Passwords do not match..."
-msgstr "Les contrasenyes no coincideixen"
+msgstr "Les contrasenyes no coincideixen..."
 
 #: src/pages/usercreationpage.cpp:143
-#, fuzzy
 msgid "Root Passwords do not match..."
-msgstr "Les contrasenyes no coincideixen"
+msgstr "Les contrasenyes de root no coincideixen..."
 
 #: src/pages/usercreationpage.cpp:147
 msgid "Login names cannot be empty."
-msgstr ""
+msgstr "Els noms d'inici no poden ser buits."
 
 #: src/pmhandler.cpp:360
-#, fuzzy
 msgid "Preparing hard drive for installation..."
-msgstr "S'està finalitzant instal·lació..."
+msgstr "S'està preparant el disc dur per a la instal·lació..."
 
 #: src/pmhandler.cpp:381
-#, fuzzy
 msgid "Analyzing disk..."
-msgstr "S'està Instal·lant..."
+msgstr "S'està Instal·lant el disc..."
 
 #: src/pmhandler.cpp:445
 msgid "There was an error while formatting partitions"
-msgstr ""
+msgstr "Ha ocorregut un error en formatar les particions"
 
 #: src/widgets/avatardialog.cpp:52
 msgid "Custom"
-msgstr ""
+msgstr "Personalitzat"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"

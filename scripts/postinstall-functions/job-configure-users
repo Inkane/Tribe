@@ -10,7 +10,7 @@ job_configure_users()
 	mount -v -o bind /dev ${mountpoint}/dev 
 
 	msg "create bundle group"
-	chroot ${mountpoint} /bin/groupadd bundle
+	chroot ${mountpoint} /usr/sbin/groupadd bundle
 
 	msg "setup the user's groups"
 

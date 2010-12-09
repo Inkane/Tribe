@@ -342,8 +342,9 @@ void InstallationHandler::postRemove()
         return;
     }
 
-    QString command  = QString("sh %1 postremove.sh --job %2 --mountpoint %3").arg(SCRIPTS_INSTALL_PATH)
-                       .arg(*m_stringlistIterator).arg(INSTALLATION_TARGET);
+    QString command  = QString("sh " + QString(SCRIPTS_INSTALL_PATH) + "/postremove.sh --job %1 --mountpoint %2")
+                       .arg(*m_stringlistIterator)
+                       .arg(INSTALLATION_TARGET);
 
     m_process = new QProcess(this);
 
@@ -364,10 +365,12 @@ void InstallationHandler::postInstall()
         for (i = m_mount.constBegin(); i != m_mount.constEnd(); ++i) {
             if (i.key() != "/" && i.key() != "swap") {
                 qDebug() << " :: add mountpoint for: " << i.key();
-                QString command = QString("sh ") + SCRIPTS_INSTALL_PATH +
-                                  QString("postinstall.sh --job add-extra-mountpoint --extra-mountpoint %1 "
-                                          "--extra-mountpoint-target %2 --extra-mountpoint-fs %3 %4").arg(i.key())
-                                          .arg(trimDevice(i.value())).arg(i.value()->fileSystem().name())
+                QString command = QString("sh " + QString(SCRIPTS_INSTALL_PATH) +
+                                          "/postinstall.sh --job add-extra-mountpoint --extra-mountpoint %1 "
+                                          "--extra-mountpoint-target %2 --extra-mountpoint-fs %3 %4")
+                                          .arg(i.key())
+                                          .arg(trimDevice(i.value()))
+                                          .arg(i.value()->fileSystem().name())
                                           .arg(m_postcommand);
 
                 QProcess *process = new QProcess(this);
@@ -388,10 +391,10 @@ void InstallationHandler::postInstall()
 
         postInstallDone(0, QProcess::NormalExit);
     } else {
-        QString command  = QString("sh ") +
-                           SCRIPTS_INSTALL_PATH +
-                           QString("postinstall.sh --job %1 %2")
-                           .arg(m_postjob).arg(m_postcommand);
+        QString command  = QString("sh " + QString(SCRIPTS_INSTALL_PATH) +
+                                   "/postinstall.sh --job %1 %2")
+                                   .arg(m_postjob)
+                                   .arg(m_postcommand);
 
         m_process = new QProcess(this);
         connect(m_process, SIGNAL(finished(int, QProcess::ExitStatus)), SLOT(postInstallDone(int, QProcess::ExitStatus)));
@@ -627,10 +630,10 @@ void InstallationHandler::installBootloader(int action, const QString &device)
     QString command;
 
     if (action == 0) {
-        command = QString("sh ") + SCRIPTS_INSTALL_PATH + QString("postinstall.sh --job create-menulst %1")
+        command = QString("sh " + QString(SCRIPTS_INSTALL_PATH) + "/postinstall.sh --job create-menulst %1")
                   .arg(m_postcommand);
     } else {
-        command = QString("sh ") + SCRIPTS_INSTALL_PATH + QString("postinstall.sh --job install-grub %1")
+        command = QString("sh " + QString(SCRIPTS_INSTALL_PATH) + "/postinstall.sh --job install-grub %1")
                   .arg(m_postcommand);
     }
 
@@ -687,11 +690,17 @@ qDebug() << "::::::: setUpUsers() \n" << users << "\n\n";
 qDebug() << " :: user \'" + user + "\' created";
 
         // set kdm/user avatar
-        command = QString("mkdir -p " + QString(INSTALLATION_TARGET) + "/usr/share/apps/kdm/faces");
+        command = QString("bash -c \"mkdir -p " + 
+                          QString(INSTALLATION_TARGET) + 
+                          "/usr/share/apps/kdm/faces > /dev/null 2>&1\"");
         QProcess::execute(command);
-        command = QString("cp " + userAvatarList().at(current) + " " + 
-                                  QString(INSTALLATION_TARGET) + "/usr/share/apps/kdm/faces/" +
-                                  user + ".face.icon");
+        command = QString("bash -c \"cp " + userAvatarList().at(current) + " " + 
+                          QString(INSTALLATION_TARGET) + "/usr/share/apps/kdm/faces/" +
+                          user + ".face.icon > /dev/null 2>&1\"");
+        QProcess::execute(command);
+        command = QString("bash -c \"cp " + userAvatarList().at(current) + " " + 
+                          QString(INSTALLATION_TARGET) + "/home/" +
+                          user + "/.face.icon > /dev/null 2>&1\"");
         QProcess::execute(command);
 
         // set autologin
@@ -741,7 +750,7 @@ qDebug() << ":: user configuration complete";
 
         QProcess::execute("sh " +
                           QString(SCRIPTS_INSTALL_PATH) +
-                          "postinstall.sh --job configure-sudoers " +
+                          "/postinstall.sh --job configure-sudoers " +
                           m_postcommand +
                           " --user-name " +
                           user);
@@ -768,8 +777,6 @@ void InstallationHandler::streamPassword()
     m_userProcess->write("\n");
     
     sleep(3);
-
-    m_userProcess->waitForFinished();
 }
 
 void InstallationHandler::streamRootPassword()
@@ -778,36 +785,27 @@ void InstallationHandler::streamRootPassword()
     m_rootUserProcess->write("\n");
     
     sleep(3);
-
-    m_rootUserProcess->waitForFinished();
 }
 
 void InstallationHandler::unmountAll()
 {
     for (QMap<QString, const Partition*>::const_iterator i = m_mount.constBegin(); i != m_mount.constEnd(); ++i) {
         if (i.key() != "/") {
-            QProcess::execute("sudo umount -fl " + QString(INSTALLATION_TARGET + i.key()));
+            QProcess::execute("bash -c \"sudo umount -fl " + QString(INSTALLATION_TARGET + i.key()) + " > /dev/null 2>&1\"");
         }
     }
 
     foreach (const QString &point, QStringList() << "/proc" << "/sys" << "/dev")
     {
-        QProcess::execute("sudo umount -fl " + QString(INSTALLATION_TARGET + point));
+        QProcess::execute("bash -c \"sudo umount -fl " + QString(INSTALLATION_TARGET + point) + " > /dev/null 2>&1\"");
     }
 
-    QProcess::execute("sudo umount -fl " + QString(INSTALLATION_TARGET));
+    QProcess::execute("bash -c \"sudo umount -fl " + QString(INSTALLATION_TARGET) + " > /dev/null 2>&1\"");
 }
 
 void InstallationHandler::abortInstallation()
 {
-    disconnect(m_process, SIGNAL(readyRead()), this, SLOT(parseUnsquashfsOutput()));
-    disconnect(m_process, SIGNAL(finished(int, QProcess::ExitStatus)), this, SLOT(jobDone(int)));
-    disconnect(m_process, SIGNAL(finished(int, QProcess::ExitStatus)), this, SLOT(postRemove()));
-    disconnect(m_process, SIGNAL(finished(int, QProcess::ExitStatus)), this, SLOT(postInstallDone(int, QProcess::ExitStatus)));
-    disconnect(m_process, SIGNAL(finished(int, QProcess::ExitStatus)), this, SIGNAL(bootloaderInstalled(int,QProcess::ExitStatus)));
-    killProcesses();
     cleanup();
-    killProcesses();
 }
 
 void InstallationHandler::killProcesses()
@@ -815,7 +813,6 @@ void InstallationHandler::killProcesses()
     if (m_process) {
         m_process->terminate();
         m_process->kill();
-        m_process->deleteLater();
     }
 }
 

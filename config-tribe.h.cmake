@@ -11,8 +11,8 @@
 
 /* Defines the installation paths */
 #define IMAGE_INSTALL_PATH "${CMAKE_INSTALL_PREFIX}/share/tribe/images"
-#define SCRIPTS_INSTALL_PATH "${CMAKE_INSTALL_PREFIX}/share/tribe/scripts/"
-#define CONFIG_INSTALL_PATH "${CMAKE_INSTALL_PREFIX}/share/tribe/config/"
+#define SCRIPTS_INSTALL_PATH "${CMAKE_INSTALL_PREFIX}/share/tribe/scripts"
+#define CONFIG_INSTALL_PATH "${CMAKE_INSTALL_PREFIX}/share/tribe/config"
 #define STYLESHEET_INSTALL_PATH "${CMAKE_INSTALL_PREFIX}/share/tribe/style/tribe.qss"
 #define TRIBE_INSTALL_PATH "${CMAKE_INSTALL_PREFIX}"
 #define DATA_INSTALL_DIR "${DATA_INSTALL_DIR}"
@@ -24,6 +24,6 @@
 #define INSTALLATION_TARGET "/mnt/install.root"
 
 /* Defines the version */
-#define TRIBE_VERSION "1.0 alpha"
+#define TRIBE_VERSION "0.3alpha"
 
 #endif /*CONFIG_H*/

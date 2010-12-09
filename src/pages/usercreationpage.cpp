@@ -166,6 +166,11 @@ void UserCreationPage::aboutToGoToNext()
     m_handler->setUserAvatarList(avatarList);
     m_handler->setUserAutoLoginList(autoLoginList);
 
+    if (ui.hostname->text().isEmpty())
+        ui.hostname->setText("chakra");
+
+    m_handler->setHostname(ui.hostname->text());
+
     emit goToNextStep();
 }
 

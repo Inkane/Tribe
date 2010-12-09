@@ -68,18 +68,14 @@ void LocalePage::createWidget()
     marble->setShowGrid(false);
     marble->addPlacemarkFile(QString(DATA_INSTALL_DIR) + "/marble/data/placemarks/cities.kml");
 
-    /** Read our locales file **/
-    QFile fp(QString(CONFIG_INSTALL_PATH) + "timezones");
+    QFile fp(QString(CONFIG_INSTALL_PATH) + "/timezones");
 
-    if (!fp.open(QIODevice::ReadOnly | QIODevice::Text)) {
+    if (!fp.open(QIODevice::ReadOnly | QIODevice::Text))
         qDebug() << "LocalPage: Failed to open file";
-    }
 
     QTextStream in(&fp);
 
     locales.clear();
-
-    /* Get the file contents */
 
     while (!in.atEnd()) {
         QString line(in.readLine());
@@ -88,16 +84,10 @@ void LocalePage::createWidget()
     }
 
     fp.close();
+    fp.setFileName(QString(CONFIG_INSTALL_PATH) + "/all_kde_langpacks");
 
-    fp.setFileName(QString(CONFIG_INSTALL_PATH) + "all_kde_langpacks");
-
-    if (!fp.open(QIODevice::ReadOnly | QIODevice::Text)) {
+    if (!fp.open(QIODevice::ReadOnly | QIODevice::Text))
         qDebug() << "LocalePage: Failed to open file";
-    }
-
-    //QTextStream in(&fp);
-
-    /* Get the file contents */
 
     while (!in.atEnd()) {
         QString line(in.readLine());
@@ -107,35 +97,41 @@ void LocalePage::createWidget()
 
     fp.close();
 
-    qDebug() << locales;
     QStringList keys;
     foreach (const QStringList &l, locales) {
         keys << l.first();
     }
+
     keys.sort();
+
     foreach(const QString &string, keys) {
         QStringList split = string.split("/");
+
         if (m_allTimezones.contains(split.first())) {
             m_allTimezones[split.first()].append(split.last());
         } else {
             m_allTimezones.insert(split.first(), QStringList(split.last()));
             continentCombo->addItem(split.first());
         }
+
         regionCombo->addItem(string);
     }
 
     locationsSearch->hide();
     locationsView->hide();
-    continentChanged(continentCombo->currentIndex());
 
+    continentChanged(continentCombo->currentIndex());
     regionChanged(regionCombo->currentIndex());
 
     connect(zoomInButton, SIGNAL(clicked()), marble, SLOT(zoomIn()));
     connect(zoomOutButton, SIGNAL(clicked()), marble, SLOT(zoomOut()));
     connect(zoomSlider, SIGNAL(valueChanged(int)), SLOT(zoom(int)));
+
     connect(marble, SIGNAL(zoomChanged(int)), this, SLOT(zoomChanged(int)));
+
     connect(continentCombo, SIGNAL(currentIndexChanged(int)), this, SLOT(continentChanged(int)));
     connect(regionCombo, SIGNAL(currentIndexChanged(int)), SLOT(regionChanged(int)));
+
     connect(showLocalesCheck, SIGNAL(stateChanged(int)), SLOT(updateLocales()));
     connect(showKDELangsCheck, SIGNAL(stateChanged(int)), SLOT(updateLocales()));
 
@@ -160,9 +156,11 @@ bool LocalePage::eventFilter(QObject * object, QEvent * event)
                     regionCombo->setCurrentIndex(regionCombo->findText(indexes.first().data(Qt::DisplayRole).toString().replace(' ', '_')));
                 }
             }
+
             return true;
         }
     }
+
     return false;
 }
 
@@ -176,6 +174,7 @@ void LocalePage::continentChanged(int index)
     for (it = timezones.constBegin(); it != timezones.constEnd(); ++it) {
         regionCombo->addItem((*it));
     }
+
     regionChanged(regionCombo->currentIndex());
 }
 
@@ -184,16 +183,20 @@ void LocalePage::regionChanged(int index)
     if (!showLocalesCheck->isChecked() || !showKDELangsCheck->isChecked()) {
         QString time = continentCombo->itemText(continentCombo->currentIndex()) + "/" + regionCombo->itemText(index);
         QList<QStringList>::const_iterator it;
+
         for (it = locales.constBegin(); it != locales.constEnd(); ++it) {
             if ((*it).first() == time) {
                 if (!showLocalesCheck->isChecked()) {
                     localeCombo->clear();
+
                     foreach(const QString &str, (*it).at(1).split(',')) {
                         localeCombo->addItem(str);
                     }
                 }
+
                 if (!showKDELangsCheck->isChecked()) {
                     kdeLanguageCombo->clear();
+
                     foreach(const QString &str, (*it).at(2).split(',')) {
                         kdeLanguageCombo->addItem(m_allKDELangs.value(str));
                     }
@@ -207,15 +210,12 @@ void LocalePage::updateLocales()
 {
     if (showLocalesCheck->isChecked()) {
         if (m_allLocales.isEmpty()) {
-            QFile fp(QString(CONFIG_INSTALL_PATH) + "all_locales");
+            QFile fp(QString(CONFIG_INSTALL_PATH) + "/all_locales");
 
-            if (!fp.open(QIODevice::ReadOnly | QIODevice::Text)) {
+            if (!fp.open(QIODevice::ReadOnly | QIODevice::Text))
                 qDebug() << "LocalePage: Failed to open file";
-            }
 
             QTextStream in(&fp);
-
-            /* Get the file contents */
 
             while (!in.atEnd()) {
                 QString line(in.readLine());
@@ -224,27 +224,35 @@ void LocalePage::updateLocales()
 
             fp.close();
         }
+
         QString current = localeCombo->currentText();
         localeCombo->clear();
+
         foreach (const QString &loc, m_allLocales) {
             localeCombo->addItem(loc);
         }
+
         if (localeCombo->findText(current) != -1) {
             localeCombo->setCurrentIndex(localeCombo->findText(current));
         }
     }
+
     if (showKDELangsCheck->isChecked()) {
         QString current = kdeLanguageCombo->currentText();
-        kdeLanguageCombo->clear();
         QStringList values = m_allKDELangs.values();
         values.sort();
+
+        kdeLanguageCombo->clear();
+
         foreach (const QString &loc, values) {
             kdeLanguageCombo->addItem(loc);
         }
+
         if (kdeLanguageCombo->findText(current) != -1) {
             kdeLanguageCombo->setCurrentIndex(kdeLanguageCombo->findText(current));
         }
     }
+
     if (!showKDELangsCheck->isChecked() || !showLocalesCheck->isChecked()) {
         regionChanged(regionCombo->currentIndex());
     }
@@ -270,8 +278,10 @@ void LocalePage::aboutToGoToNext()
                                         QStringList(), QString(), &retbool, KMessageBox::Notify);
         return;
     }
+
     m_install->setTimezone(regionCombo->currentText());
     m_install->setKDELangPack(m_allKDELangs.key(kdeLanguageCombo->currentText()));
+
     if (localeCombo->currentText().contains("utf-8", Qt::CaseInsensitive)) {
         QStringList localeSplit = localeCombo->currentText().split('.');
         localeSplit.last().replace('-', QString());
@@ -280,6 +290,7 @@ void LocalePage::aboutToGoToNext()
     } else {
         m_install->setLocale(localeCombo->currentText());
     }
+
     emit goToNextStep();
 }
 

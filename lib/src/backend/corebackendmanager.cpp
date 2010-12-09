@@ -66,7 +66,6 @@ bool CoreBackendManager::load(const QString& name)
 	{
 		m_Backend = factory->create<CoreBackend>(NULL);
 		backend()->setAboutData(factory->componentData().aboutData());
-		qDebug() << "Loaded backend plugin: " << backend()->about().programName() << ", " << backend()->about().version();
 		return true;
 	}
 

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
 "POT-Creation-Date: 2010-12-08 23:47+0100\n"
-"PO-Revision-Date: 2010-12-09 01:54+0100\n"
+"PO-Revision-Date: 2010-12-09 02:46+0100\n"
 "Last-Translator: Phil Miller <philm@chakra-project.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -426,7 +426,7 @@ msgstr "Es entstand ein Fehler während der Festplattenformatierung"
 
 #: src/widgets/avatardialog.cpp:52
 msgid "Custom"
-msgstr "Eigen"
+msgstr "Eigener"
 
 #. i18n: file: ui/pages/base.ui:172
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -781,7 +781,7 @@ msgstr ""
 "installierten Systems nach.\n"
 "\n"
 "Danke, dass Sie sich für Chakra entschieden haben. Bleiben Sie mit uns über "
-"unseren Foren in Kontakt.\n"
+"unsere Foren in Kontakt.\n"
 "Sie können uns dort Ihre Meinungen oder Hinweise mitteilen.\n"
 "Ganz einfach: Nehmen Sie teil! (http://chakra-project.org)\n"
 "\n"
@@ -1271,7 +1271,7 @@ msgid ""
 "press \"Next\""
 msgstr ""
 "Wählen Sie einen Einbindungspunkt für Ihre Partitionen aus. Zumindest \"/\" "
-"sollte eingebunden werden. Keine permaneten Veränderungen werden an Ihrer "
+"sollte eingebunden werden. Keine permanenten Veränderungen werden an Ihrer "
 "Festplatte vorgenommen wenn Sie auf \"Weiter\" klicken."
 
 #. i18n: file: ui/pages/partition.ui:118
@@ -1643,7 +1643,7 @@ msgid ""
 "Use this password as \n"
 "the Administrator password"
 msgstr ""
-"Benutze diese Passwort\n"
+"Benutze dieses Passwort\n"
 "als Administrator-Passwort"
 
 #. i18n: file: ui/widgets/userwidget.ui:396

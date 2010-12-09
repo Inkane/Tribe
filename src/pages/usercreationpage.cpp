@@ -165,7 +165,7 @@ void UserCreationPage::aboutToGoToNext()
     m_handler->setUserNameList(nameList);
     m_handler->setUserAvatarList(avatarList);
     m_handler->setUserAutoLoginList(autoLoginList);
-    m_install->setHostname(ui.hostname->text());
+    m_handler->setHostname(ui.hostname->text());
 
     emit goToNextStep();
 }

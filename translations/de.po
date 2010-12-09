@@ -23,7 +23,7 @@ msgstr "Tribe konnte den benötigten Pfad nicht einlesen: "
 
 #: src/installationhandler.cpp:86
 msgid " , please resolve the issue, and try again."
-msgstr " , versuchen Sie das Problem zu lösen, und probiere Sie es wieder."
+msgstr " , versuchen Sie das Problem zu lösen, und probieren Sie es wieder."
 
 #: src/installationhandler.cpp:148
 msgid "Installing the system ..."
@@ -212,7 +212,7 @@ msgid ""
 "to AC to minimize possible risks."
 msgstr ""
 "Sie nutzen Ihren Computer gerade ohne Stromadapter. Eine Installation ist "
-"eine delikate und lange Prozedur, somit empfehlen wir Ihnen Ihren PC am "
+"eine delikate und lange Prozedur, somit empfehlen wir Ihnen ihren PC am "
 "Stromnetz anzuschließen um Probleme zu vermeiden."
 
 #: src/mainwindow.cpp:101
@@ -291,7 +291,7 @@ msgid ""
 "destroy all data on the device)"
 msgstr ""
 "Das ausgewählte Volumen existiert bereits in der Partitionstabelle. "
-"Überschreiben? (dies wird alle enthaltenen Daten des Laufwerks löschen)"
+"Überschreiben? (dies wird alle enthaltenen Daten des Volumens löschen)"
 
 #: src/pages/partitionpage.cpp:518 src/pages/partitionpage.cpp:525
 msgid "Warning"
@@ -714,11 +714,11 @@ msgid ""
 "Please take some time to step through each section and configure your system "
 "the way you want it."
 msgstr ""
-"Der Installer hat eine standatisierte Konfiguration für die meisten Benutzer "
+"Der Installer hat eine standardisierte Konfiguration für die meisten Benutzer "
 "erstellt. Sie können nun Ihr neu-installiertes System anpassen.\n"
 "\n"
-"Nehmen Sie sich Zeit für jeden Schritt und konfigurieren Sie Ihr System nach "
-"Ihren Wünschen."
+"Nehmen Sie sich Zeit für jeden Schritt und konfigurieren Sie ihr System nach "
+"ihren Wünschen."
 
 #. i18n: file: ui/pages/finish.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -773,7 +773,7 @@ msgstr ""
 "\n"
 "Wir hoffen Sie hatten genauso viel Spass bei dem was Sie gesehen haben, so "
 "wie wir beim Erstellen.\n"
-"Sie können nun in Ihr installiertes System booten oder die LiveCD weiterhin "
+"Sie können nun in ihr installiertes System booten oder die LiveCD weiterhin "
 "nutzen.\n"
 "\n"
 "Im Fall, dass Sie die Installationsaufzeichnungen (Logs) lesen wollen,\n"
@@ -782,7 +782,7 @@ msgstr ""
 "\n"
 "Danke, dass Sie sich für Chakra entschieden haben. Bleiben Sie mit uns über "
 "unsere Foren in Kontakt.\n"
-"Sie können uns dort Ihre Meinungen oder Hinweise mitteilen.\n"
+"Sie können uns dort ihre Meinungen oder Hinweise mitteilen.\n"
 "Ganz einfach: Nehmen Sie teil! (http://chakra-project.org)\n"
 "\n"
 "Viel Spass!\n"
@@ -847,7 +847,7 @@ msgid ""
 "below and select the items you need for your system."
 msgstr ""
 "Ihre Hardware wird automatisch während der Installation erkannt und eine "
-"erste Ramdisk-Umgebung um den Linux-Kernel zu starten wird erstellt. Alles "
+"erste Ramdisk-Umgebung, um den Linux-Kernel zu starten, wird erstellt. Alles "
 "sollte ohne Eingriff Ihrerseits ablaufen. Es könnten aber weitere "
 "Einstellungen benötigt werden, wenn spezielle Boot-Einstellungen gewünscht "
 "sind. Falls Sie sich unsicher fühlen, welche Bedeutungen sich hinter den "
@@ -901,7 +901,7 @@ msgstr "Unterstützung für das Booten von NFS-Shares aktivieren "
 #. i18n: ectx: property (text), widget (QCheckBox, raid)
 #: rc.cpp:164 rc.cpp:389
 msgid "Activate support for booting from Software Raid arrays"
-msgstr "Unterstützung für das Booten von Software-Raid aktivieren "
+msgstr "Unterstützung für das Booten von Software-Raid Verbindungen aktivieren "
 
 #. i18n: file: ui/pages/init.ui:146
 #. i18n: ectx: property (text), widget (QCheckBox, mdp)
@@ -909,7 +909,7 @@ msgstr "Unterstützung für das Booten von Software-Raid aktivieren "
 #. i18n: ectx: property (text), widget (QCheckBox, mdp)
 #: rc.cpp:167 rc.cpp:392
 msgid "Activate support for booting from Software Raid/MDP Partition arrays"
-msgstr "Unterstützung für das Booten von Software-Raid/MDP aktivieren "
+msgstr "Unterstützung für das Booten von Software-Raid/MDP Partitionen aktivieren "
 
 #. i18n: file: ui/pages/init.ui:153
 #. i18n: ectx: property (text), widget (QCheckBox, lvm2)
@@ -955,7 +955,7 @@ msgstr "Dunkelstern – Out of the box"
 #. i18n: ectx: property (windowTitle), widget (QWidget, Intro)
 #: rc.cpp:188
 msgid "Tribe Intro"
-msgstr "Tribe-Installation "
+msgstr "Tribe-Intro"
 
 #. i18n: file: ui/pages/intro.ui:105
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -1185,9 +1185,9 @@ msgid ""
 "the globe, you can zoom in by using the slider on the left."
 msgstr ""
 "Wählen Sie ihre nächstliegende Stadt aus, sodass der Installer die "
-"Lokalizierung sowie die Zeitzone für Sie vorschlagen kann. Sie können die "
+"Lokalizierung sowie eine Zeitzone für Sie vorschlagen kann. Sie können die "
 "vorgeschlagenen Einstellungen im unteren Teil der Seite verändern und den "
-"Globus nutzen, um Ihre Region oder Stadt zu finden. Bewegen Sie den "
+"Globus nutzen, um ihre Region oder Stadt zu finden. Bewegen Sie den "
 "Schiebeschalter an der Seite um zu Zoomen."
 
 #. i18n: file: ui/pages/locale.ui:69
@@ -1271,7 +1271,7 @@ msgid ""
 "press \"Next\""
 msgstr ""
 "Wählen Sie einen Einbindungspunkt für Ihre Partitionen aus. Zumindest \"/\" "
-"sollte eingebunden werden. Keine permanenten Veränderungen werden an Ihrer "
+"sollte eingebunden werden. Keine permanenten Veränderungen werden an ihrer "
 "Festplatte vorgenommen wenn Sie auf \"Weiter\" klicken."
 
 #. i18n: file: ui/pages/partition.ui:118
@@ -1380,7 +1380,7 @@ msgid ""
 "please review your selections:\n"
 msgstr ""
 "Das System wird mit folgenden Einstellungen installiert. Vor dem Fortführen "
-"sollten Sie nochmal Ihre Einstellungen überprüfen:\n"
+"sollten Sie nochmal ihre Einstellungen überprüfen:\n"
 
 #. i18n: file: ui/pages/readyinstall.ui:147
 #. i18n: ectx: property (text), widget (QLabel, label_4)

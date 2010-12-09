@@ -665,15 +665,15 @@ qDebug() << "::::::: setUpUsers() \n" << users << "\n\n";
             .arg(INSTALLATION_TARGET)
             .arg(userNameList().at(current))
             .arg(userLoginList().at(current));
+	    qDebug() << " :: Running useradd command: " << command;
             QProcess::execute(command);
-	    qDebug() << " :: Setting useradd command: " << command;
         } else {
             command = QString("chroot %1 useradd -g users -c '%2' -m -s /bin/bash %3")
             .arg(INSTALLATION_TARGET)
             .arg(userNameList().at(current))
             .arg(user);
+	    qDebug() << " :: Running useradd command: " << command;
             QProcess::execute(command);
-	    qDebug() << " :: Setting useradd command: " << command;
             //clean conflict files
             command = QString("chroot %1 rm -v /home/%2/.bash_profile")
                 .arg(INSTALLATION_TARGET).arg(user);
@@ -687,6 +687,11 @@ qDebug() << "::::::: setUpUsers() \n" << users << "\n\n";
         }
 
 qDebug() << " :: user \'" + user + "\' created";
+
+        // resize avatar to 60x60
+        command = QString("convert " + userAvatarList().at(current) + " -resize 60x60 " + userAvatarList().at(current));
+	qDebug() << " :: Running convert command: " << command;
+	QProcess::execute(command);
 
         // set kdm/user avatar to /usr/share/apps/kdm/faces
         command = QString("mkdir -p " + QString(INSTALLATION_TARGET) + "/usr/share/apps/kdm/faces");

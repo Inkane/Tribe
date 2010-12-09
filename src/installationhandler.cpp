@@ -686,12 +686,20 @@ qDebug() << "::::::: setUpUsers() \n" << users << "\n\n";
 
 qDebug() << " :: user \'" + user + "\' created";
 
-        // set kdm/user avatar
+        // set kdm/user avatar to /usr/share/apps/kdm/faces
         command = QString("mkdir -p " + QString(INSTALLATION_TARGET) + "/usr/share/apps/kdm/faces");
         QProcess::execute(command);
         command = QString("cp " + userAvatarList().at(current) + " " + 
                                   QString(INSTALLATION_TARGET) + "/usr/share/apps/kdm/faces/" +
                                   user + ".face.icon");
+        QProcess::execute(command);
+
+        // copy avatar as fallback to ~/.face.icon
+        command = QString("mkdir -p " + QString(INSTALLATION_TARGET) + "/home/" + user);
+        QProcess::execute(command);
+        command = QString("cp " + userAvatarList().at(current) + " " + 
+                                  QString(INSTALLATION_TARGET) + "/home/" +
+                                  user + "/.face.icon");
         QProcess::execute(command);
 
         // set autologin

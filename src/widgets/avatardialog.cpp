@@ -68,7 +68,7 @@ void AvatarDialog::cancelClicked()
 void AvatarDialog::selectionChanged()
 {
     ui.okButton->setEnabled(true);
-    if (ui.avatarList->currentItem()->text() != "_") {
+    if (ui.avatarList->currentItem()->text() != " ") {
         QString x = KFileDialog::getOpenFileName(KUrl(QDir::homePath()), "*.png *.jpg *.bmp|Image Files", this);
 
         if (x.isEmpty()) {

@@ -743,7 +743,7 @@ qDebug() << " :: live configuration copied to the user's home";
 
         QProcess::execute("sh " +
                           QString(SCRIPTS_INSTALL_PATH) +
-                          "postinstall.sh --job configure-users " +
+                          "/postinstall.sh --job configure-users " +
                           m_postcommand +
                           " --user-name " +
                           user);

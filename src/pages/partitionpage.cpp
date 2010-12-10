@@ -55,7 +55,7 @@ const int MOUNTPOINT_ROLE = Qt::UserRole + 123;
 const int PARTITION_ROLE = Qt::UserRole + 51;
 const int DEVICE_ROLE = Qt::UserRole + 50;
 
-QStringList s_mountPoints = QStringList() << i18n("None") <<
+QStringList s_mountPoints = QStringList() << "None" <<
                                              "/" <<
                                              "/usr" <<
                                              "/home" <<
@@ -64,7 +64,7 @@ QStringList s_mountPoints = QStringList() << i18n("None") <<
                                              "/opt" <<
                                              "/etc" <<
                                              "swap" <<
-                                             i18n("Other...");
+                                             "Other...";
 
 QHash<const Partition*, QString> s_partitionToMountPoint;
 
@@ -86,7 +86,7 @@ PartitionDelegate::~PartitionDelegate()
 void PartitionDelegate::slotIndexChanged(const QString &text)
 {
     // what to do what a partition mountpoint was chosen
-    if (text == i18n("Other...")) {
+    if (text == "Other...") {
         // custom mountpoint dialog
 
         KDialog *dialog = new KDialog();
@@ -107,6 +107,9 @@ void PartitionDelegate::slotIndexChanged(const QString &text)
                                          i18n("The mount point must start with /"),
                                          i18n("Error"));
 
+                QComboBox *box = qobject_cast< QComboBox* >(sender());
+                box->setCurrentIndex(box->findText("None"));
+
                 return;
             }
 
@@ -126,12 +129,9 @@ void PartitionDelegate::slotIndexChanged(const QString &text)
 
         const Partition * part = sender()->property("_partition_").value<const Partition*>();
         if (s_partitionToMountPoint.values().contains(text) && text != "None") {
-            KMessageBox::information(0,
-                            i18n("You can only use each mountpoint once."),
-                            i18n("Information"));
 
             QComboBox *box = qobject_cast< QComboBox* >(sender());
-            box->setCurrentIndex(box->findText(i18n("None")));
+            box->setCurrentIndex(box->findText("None"));
 
             return;
         }
@@ -569,7 +569,7 @@ void PartitionPage::setVisibleParts(PartitionPage::VisibleParts parts)
 
 void PartitionPage::slotTypeChanged(const QString &type)
 {
-    if (type == i18n("Extended"))
+    if (type == "Extended")
         m_parts ^= FileSystemPart;
     else
         m_parts |= FileSystemPart;
@@ -793,8 +793,8 @@ void PartitionPage::newClicked()
     Device *device = m_ui->treeWidget->selectedItems().first()->data(0, DEVICE_ROLE).value<Device*>();
     PartitionRole::Roles roles = device->partitionTable()->childRoles(*partition);
     if (roles & PartitionRole::Extended && roles & PartitionRole::Primary) {
-        m_ui->typeBox->addItem(i18n("Extended"), (int)PartitionRole::Extended);
-        m_ui->typeBox->addItem(i18n("Primary"), (int)PartitionRole::Primary);
+        m_ui->typeBox->addItem("Extended", (int)PartitionRole::Extended);
+        m_ui->typeBox->addItem("Primary", (int)PartitionRole::Primary);
         parts |= TypePart;
     } else {
         parts |= FileSystemPart;
@@ -837,7 +837,7 @@ void PartitionPage::applyNew()
     FileSystem::Type filesystem;
     if (m_ui->typeBox->count() > 0) {
         QString type = m_ui->typeBox->currentText();
-        if (type == i18n("Extended")) {
+        if (type == "Extended") {
             m_newPartition->setRoles(PartitionRole(PartitionRole::Extended));
             filesystem = FileSystem::Extended;
         } else {
@@ -894,12 +894,12 @@ QTreeWidgetItem* PartitionPage::createItem(const Partition* p, Device *dev)
     if (p->number() > 0) {
         item->setText(0, QString("%1%2").arg(p->devicePath()).arg(p->number()));
     } else {
-        item->setText(0, i18n("New partition"));
+        item->setText(0, "New partition");
     }
 
     if (p->fileSystem().type() == FileSystem::Unknown) {
         item->setData(0, 50, pCapacity);
-        item->setData(0, 51, i18n("Unallocated space"));
+        item->setData(0, 51, "Unallocated space");
         item->setData(0, 60, m_colorList.at(m_currentPart).name());
     } else if (!p->children().isEmpty()) {
         item->setData(0, 50, pCapacity);

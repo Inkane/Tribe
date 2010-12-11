@@ -139,7 +139,8 @@ void SettingsPage::aboutToGoToNext()
         ui.hostnameEdit->setText("chakra-pc");
     }
 
-    m_install->setHostname(ui.hostnameEdit->text());
+    //This moved to usercreationpage
+    //m_install->setHostname(ui.hostnameEdit->text());
 
     emit goToNextStep();
 

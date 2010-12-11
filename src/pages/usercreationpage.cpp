@@ -165,7 +165,6 @@ void UserCreationPage::aboutToGoToNext()
     m_handler->setUserNameList(nameList);
     m_handler->setUserAvatarList(avatarList);
     m_handler->setUserAutoLoginList(autoLoginList);
-    m_handler->setHostname(ui.hostname->text());
 
     if (ui.hostname->text().isEmpty())
         ui.hostname->setText("chakra");

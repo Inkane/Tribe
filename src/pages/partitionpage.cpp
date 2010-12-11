@@ -904,26 +904,26 @@ QTreeWidgetItem* PartitionPage::createItem(const Partition* p, Device *dev)
     } else if (!p->children().isEmpty()) {
         item->setData(0, 50, pCapacity);
         item->setIcon(0, KIcon("drive-harddisk"));
-        item->setData(0, 51, i18n("Linux / Extended", p->fileSystem().name()));
+        item->setData(0, 51, "Linux / Extended " + p->fileSystem().name());
     } else if (p->fileSystem().type() == FileSystem::Ntfs || p->fileSystem().type() == FileSystem::Fat16 ||
                p->fileSystem().type() == FileSystem::Fat32) {
         item->setData(0, 50, pUsed + " / " + pCapacity);
         item->setData(0, 58, "p");
         item->setData(0, 59, "win");
         item->setData(0, 60, m_colorList.at(m_currentPart).name());
-        item->setData(0, 51, i18n("Windows / %1", p->fileSystem().name()));
+        item->setData(0, 51, "Windows / " + p->fileSystem().name());
     } else if (p->fileSystem().type() == FileSystem::Hfs || p->fileSystem().type() == FileSystem::HfsPlus) {
         item->setData(0, 50, pUsed + " / " + pCapacity);
         item->setData(0, 58, "p");
         item->setData(0, 59, "mac");
         item->setData(0, 60, m_colorList.at(m_currentPart).name());
-        item->setData(0, 51, i18n("Apple / %1", p->fileSystem().name()));
+        item->setData(0, 51, "Apple / " + p->fileSystem().name());
     } else {
         item->setData(0, 50, pUsed + " / " + pCapacity);
         item->setData(0, 58, "p");
         item->setData(0, 59, "lin");
         item->setData(0, 60, m_colorList.at(m_currentPart).name());
-        item->setData(0, 51, i18n("Linux / %1", p->fileSystem().name()));
+        item->setData(0, 51, "Linux / " + p->fileSystem().name());
     }
 
     m_currentPart++;

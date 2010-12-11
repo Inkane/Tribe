@@ -66,11 +66,6 @@ job_configure_users()
 	  rm -v ${mountpoint}/home/${user_name}/10-keyboard.conf
 	fi
 
-	msg "chown ${user_name} /home/${user_name}"
-	chroot ${mountpoint} /bin/chown -v ${user_name}:users /home/${user_name}
-	chroot ${mountpoint} /bin/chown -vR ${user_name}:users /home/${user_name}/.*
-	chroot ${mountpoint} /bin/chown -vR ${user_name}:users /home/${user_name}/Desktop
-
 	msg "ensure correct sudoers permissions"
 	echo "%bundle ALL=NOPASSWD: /bin/mount -o loop -t squashfs *" >> ${mountpoint}/etc/sudoers
 	echo "%bundle ALL=NOPASSWD: /bin/mount -o loop -t ext4 *" >> ${mountpoint}/etc/sudoers
@@ -98,6 +93,13 @@ job_configure_users()
 		  echo "Enabled=false" >> ${mountpoint}/home/${user_name}/.kde4/share/config/kwinrc 
 	  fi
 	fi
+
+	msg "chown ${user_name} /home/${user_name}"
+	chroot ${mountpoint} /bin/chown -v ${user_name}:users /home/${user_name}
+	chroot ${mountpoint} /bin/chown -vR ${user_name}:users /home/${user_name}/Desktop
+	msg "chown ${user_name} /home/${user_name}/.*"
+	find ${mountpoint}/home/${user_name}/.[a-zA-Z0-9_]* | sed "s+${mountpoint}++g" > /tmp/chown.files
+	for i in $(cat /tmp/chown.files); do chroot ${mountpoint} /bin/chown -vR ${user_name}:users $i; done
 
 	msg "umount {proc,sys,dev}"
 	umount -v ${mountpoint}/proc ${mountpoint}/sys ${mountpoint}/dev 

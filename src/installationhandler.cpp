@@ -715,10 +715,10 @@ qDebug() << " :: user \'" + user + "\' created";
             QProcess::execute(command);
         }
 
+qDebug() << " :: setting user password... : " << m_userLoginList.at(current);
         // set user passwd
         m_userProcess = new QProcess(this);
         m_passwdCount = current;
-qDebug() << " :: setting user password...";
         command = QString("chroot %1 /usr/bin/passwd %2")
                           .arg(INSTALLATION_TARGET)
                           .arg(user);
@@ -762,10 +762,11 @@ qDebug() << " :: sudoers configuration complete";
         current++;
     }
 
+qDebug() << " :: setting root password...";
+
     // set root passwd
     m_rootUserProcess = new QProcess(this);
     m_passwdCount = current;
-qDebug() << " :: setting root password...";
     command = QString("chroot %1 /usr/bin/passwd").arg(INSTALLATION_TARGET);
     connect(m_rootUserProcess, SIGNAL(readyReadStandardError()), SLOT(streamRootPassword()));
     m_rootUserProcess->start(command);

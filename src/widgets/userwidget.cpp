@@ -58,6 +58,8 @@ UserWidget::UserWidget(int a_userNumber, QWidget* parent): QWidget(parent)
 
     connect(ui.userDetails, SIGNAL(clicked(bool)), this, SLOT(showDetails()));
     connect(ui.removeUser, SIGNAL(clicked(bool)), this, SLOT(emitRemove()));
+    
+    connect(ui.nameLine, SIGNAL(textChanged(QString)), this, SLOT(testFields()));
 
     connect(ui.avatar, SIGNAL(clicked(bool)), this, SLOT(avatarClicked()));
     connect(ui.autoLoginCheckBox, SIGNAL(toggled(bool)), this, SLOT(autoLoginToggled()));

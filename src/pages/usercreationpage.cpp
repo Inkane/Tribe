@@ -121,7 +121,11 @@ void UserCreationPage::aboutToGoToNext()
                 KMessageBox::createKMessageBox(dialog, QMessageBox::Warning, i18n("You must give at least one login name."),
                                                QStringList(), QString(), &retbool, KMessageBox::Notify);
                 return;
-            }
+            } else if (!user->rootPasswordsMatch) {
+                KMessageBox::createKMessageBox(dialog, QMessageBox::Warning, i18n("Root Passwords do not match..."),
+                                               QStringList(), QString(), &retbool, KMessageBox::Notify);
+                return;
+            } 
 
             if (!user->rootPassword.isEmpty() && user->rootPasswordsMatch &&
                 user->useRootPw) {
@@ -137,10 +141,6 @@ void UserCreationPage::aboutToGoToNext()
             return;
         } else if (!user->passwordsMatch) {
             KMessageBox::createKMessageBox(dialog, QMessageBox::Warning, i18n("Passwords do not match..."),
-                                           QStringList(), QString(), &retbool, KMessageBox::Notify);
-            return;
-        } else if (!user->rootPassword.isEmpty() && user->useRootPw && !user->rootPasswordsMatch) {
-            KMessageBox::createKMessageBox(dialog, QMessageBox::Warning, i18n("Root Passwords do not match..."),
                                            QStringList(), QString(), &retbool, KMessageBox::Notify);
             return;
         } else if (user->login.isEmpty()) {

@@ -668,14 +668,14 @@ qDebug() << "::::::: setUpUsers() \n" << users << "\n\n";
             .arg(INSTALLATION_TARGET)
             .arg(userNameList().at(current))
             .arg(userLoginList().at(current));
-	    qDebug() << " :: Running useradd command: " << command;
+qDebug() << " :: running useradd command: " << command;
             QProcess::execute(command);
         } else {
             command = QString("chroot %1 useradd -g users -c '%2' -m -s /bin/bash %3")
             .arg(INSTALLATION_TARGET)
             .arg(userNameList().at(current))
             .arg(user);
-	    qDebug() << " :: Running useradd command: " << command;
+qDebug() << " :: running useradd command: " << command;
             QProcess::execute(command);
             //clean conflict files
             command = QString("chroot %1 rm -v /home/%2/.bash_profile")

@@ -139,7 +139,7 @@ void UserCreationPage::aboutToGoToNext()
             KMessageBox::createKMessageBox(dialog, QMessageBox::Warning, i18n("Passwords do not match..."),
                                            QStringList(), QString(), &retbool, KMessageBox::Notify);
             return;
-        } else if ((user->useRootPw) && (!user->rootPasswordsMatch)) {
+        } else if (user->useRootPw && !user->rootPasswordsMatch) {
             KMessageBox::createKMessageBox(dialog, QMessageBox::Warning, i18n("Root Passwords do not match..."),
                                            QStringList(), QString(), &retbool, KMessageBox::Notify);
             return;

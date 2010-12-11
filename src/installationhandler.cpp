@@ -664,14 +664,14 @@ qDebug() << "::::::: setUpUsers() \n" << users << "\n\n";
 
     foreach(QString user, users) {
         if (checkExistingHomeDirs().contains(user)) {
-            command = QString("chroot %1 useradd -c '%2' -d /home/%3 -s /bin/bash %3")
+            command = QString("chroot %1 useradd -c \"%2\" -d /home/%3 -s /bin/bash %3")
             .arg(INSTALLATION_TARGET)
             .arg(userNameList().at(current))
             .arg(userLoginList().at(current));
 	    qDebug() << " :: Running useradd command: " << command;
             QProcess::execute(command);
         } else {
-            command = QString("chroot %1 useradd -g users -c '%2' -m -s /bin/bash %3")
+            command = QString("chroot %1 useradd -g users -c \"%2\" -m -s /bin/bash %3")
             .arg(INSTALLATION_TARGET)
             .arg(userNameList().at(current))
             .arg(user);

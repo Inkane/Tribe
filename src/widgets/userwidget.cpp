@@ -47,6 +47,7 @@ UserWidget::UserWidget(int a_userNumber, QWidget* parent): QWidget(parent)
         ui.removeUser->setVisible(false);
     } else {
         autoLogin = false;
+        ui.rootUsesUserPwCheckBox->setChecked(true);
         ui.rootUsesUserPwCheckBox->setVisible(false);
     }
 
@@ -137,6 +138,9 @@ void UserWidget::testFields()
     login = ui.loginLine->text();
     name = ui.nameLine->text();
     autoLogin = ui.autoLoginCheckBox->isChecked();
+    if (!useRootPw) {
+        rootPasswordsMatch = true;
+    }
 }
 
 void UserWidget::setAutoLogin(bool b)

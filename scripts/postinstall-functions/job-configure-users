@@ -67,7 +67,9 @@ job_configure_users()
 	fi
 
 	msg "chown ${user_name} /home/${user_name}"
-	chroot ${mountpoint} /bin/chown -vR ${user_name}:users /home/${user_name}
+	chroot ${mountpoint} /bin/chown -v ${user_name}:users /home/${user_name}
+	chroot ${mountpoint} /bin/chown -vR ${user_name}:users /home/${user_name}/.*
+	chroot ${mountpoint} /bin/chown -vR ${user_name}:users /home/${user_name}/Desktop
 
 	msg "ensure correct sudoers permissions"
 	echo "%bundle ALL=NOPASSWD: /bin/mount -o loop -t squashfs *" >> ${mountpoint}/etc/sudoers

@@ -167,7 +167,7 @@ void UserCreationPage::aboutToGoToNext()
     m_handler->setUserAutoLoginList(autoLoginList);
 
 qDebug() << " :: FULL_NAME_DEBUG: " << nameList;
-    
+
     if (ui.hostname->text().isEmpty())
         ui.hostname->setText("chakra");
 

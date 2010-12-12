@@ -4,41 +4,40 @@
 #
 #
 # Vincenzo Reale <smart2128@baslug.org>,2010.
+# Giuseppe Calà <jiveaxe@gmail.com>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
 "POT-Creation-Date: 2010-12-08 23:47+0100\n"
-"PO-Revision-Date: 2010-02-05 21:40+0100\n"
-"Last-Translator: Vincenzo Reale <smart2128@baslug.org>\n"
+"PO-Revision-Date: 2010-12-12 17:37+0100\n"
+"Last-Translator: Giuseppe Calà <jiveaxe@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 1.0\n"
+"X-Generator: Lokalize 1.1\n"
 
 #: src/installationhandler.cpp:86
 msgid "Tribe was not able to initialize needed path: "
-msgstr ""
+msgstr "Tribe non è stato in grado di inizializzare il percorso richeisto: "
 
 #: src/installationhandler.cpp:86
 msgid " , please resolve the issue, and try again."
-msgstr ""
+msgstr " , si prega di risolvere il problema e provare ancora."
 
 #: src/installationhandler.cpp:148
 msgid "Installing the system ..."
 msgstr "Installazione del sistema..."
 
 #: src/installationhandler.cpp:176
-#, fuzzy
 msgid "Mounting partitions..."
-msgstr "Montaggio di %1 su %2..."
+msgstr "Montaggio partizioni..."
 
 #: src/installationhandler.cpp:184
-#, fuzzy
 msgid "Preparing installation..."
-msgstr "Completamento installazione..."
+msgstr "Preparazione installazione..."
 
 #: src/installationhandler.cpp:204
 msgid "Error copying files"
@@ -53,9 +52,8 @@ msgid "Initializing target ..."
 msgstr "Inizializzazione della destinazione..."
 
 #: src/installationhandler.cpp:336
-#, fuzzy
 msgid "Please wait, configuring the new system ..."
-msgstr "Attendere, configurazione e avvio di PostInstall..."
+msgstr "Attendere, configurazione del nuovo sistema..."
 
 #: src/installationhandler.cpp:412
 msgid "Error in Postinstall script. See log for more details"
@@ -63,14 +61,12 @@ msgstr ""
 "Errore nello script PostInstall. Vedere il registro per ulteriori dettagli"
 
 #: src/installationhandler.cpp:421
-#, fuzzy
 msgid "Creating user accounts ..."
-msgstr "Creazione delle configurazioni..."
+msgstr "Creazione account utenti..."
 
 #: src/installationhandler.cpp:424
-#, fuzzy
 msgid "Configuring software management..."
-msgstr "Configurazione hardware..."
+msgstr "Configurazione gestore software..."
 
 #: src/installationhandler.cpp:428
 #, fuzzy
@@ -82,21 +78,16 @@ msgid "Installing additional packages..."
 msgstr "Installazione di pacchetti aggiuntivi..."
 
 #: src/installationhandler.cpp:436
-#, fuzzy
 msgid "Configuring the display..."
-msgstr "Configurazione hardware..."
+msgstr "Configurazione schermo..."
 
 #: src/installationhandler.cpp:440
-#, fuzzy
 msgid "Downloading and installing localization packages..."
-msgstr ""
-"Scaricamento e installazione dei pacchetti di localizzazione, potrebbe "
-"richiedere del tempo..."
+msgstr "Scaricamento e installazione dei pacchetti di localizzazione..."
 
 #: src/installationhandler.cpp:444
-#, fuzzy
 msgid "Downloading and installing documentation packages..."
-msgstr "Scaricamento e installazione dei pacchetti di documentazione"
+msgstr "Scaricamento e installazione dei pacchetti di documentazione..."
 
 #: src/installationhandler.cpp:448
 msgid "Setting up localization..."
@@ -119,11 +110,8 @@ msgid "Configuring hardware..."
 msgstr "Configurazione hardware..."
 
 #: src/installationhandler.cpp:471
-#, fuzzy
 msgid "Creating initial ramdisk images..."
-msgstr ""
-"Creazione immagini iniziali disco RAM. Potrebbe richiedere molto tempo, "
-"rimani in attesa..."
+msgstr "Creazione immagini iniziali disco RAM..."
 
 #: src/installationhandler.cpp:475
 #, fuzzy
@@ -150,13 +138,12 @@ msgid "Installation complete!"
 msgstr "Installazione completata!"
 
 #: src/installationhandler.cpp:582
-#, fuzzy
 msgid ""
 "Tribe was not able to initialize needed directories. Something is very "
 "wrong..."
 msgstr ""
-"Tribe non è riuscito a inizializzare le cartelle necessarie. Probabilmente "
-"non hai i permessi necessari, riavvia Tribe con l'utente root."
+"Tribe non è riuscito a inizializzare le cartelle necessarie. Qualcosa è "
+"andato storto..."
 
 #: src/installationhandler.cpp:606
 msgid "Could not mount %1"
@@ -173,14 +160,12 @@ msgid "Tribe"
 msgstr "Tribe"
 
 #: src/main.cpp:45
-#, fuzzy
 msgid "Graphical Installer for Chakra"
-msgstr "Installatore del LiveCD di Chakra"
+msgstr "Installatore Grafico per Chakra"
 
 #: src/main.cpp:46
-#, fuzzy
 msgid "(c) 2008 - 2010 the Chakra Development Team"
-msgstr "(c) 2008 la squadra di sviluppo di Chakra"
+msgstr "(c) 2008 - 2010 la Squadra di Sviluppo di Chakra"
 
 #: src/main.cpp:46
 msgid "chakra@chakra-project.org"
@@ -212,20 +197,19 @@ msgstr "Motore di PostInstall e grafica"
 
 #: src/main.cpp:51
 msgid "Phil Miller"
-msgstr ""
+msgstr "Phil Miller"
 
 #: src/main.cpp:51 src/main.cpp:52
-#, fuzzy
 msgid "PostInstall Backend"
-msgstr "Motore di PostInstall e grafica"
+msgstr "Motore di PostInstall"
 
 #: src/main.cpp:52
 msgid "Manuel Tortosa"
-msgstr ""
+msgstr "Manuel Tortosa"
 
 #: src/main.cpp:53
 msgid "Drake Justice"
-msgstr ""
+msgstr "Drake Justice"
 
 #: src/main.cpp:67
 msgid ""
@@ -285,15 +269,15 @@ msgstr "No"
 
 #: src/pages/partitionpage.cpp:67 src/pages/partitionpage.cpp:89
 msgid "Other..."
-msgstr ""
+msgstr "Altro..."
 
 #: src/pages/partitionpage.cpp:95
 msgid "Please enter a custom mountpoint"
-msgstr ""
+msgstr "Si prega di inserire un punto di montaggio personalizzato"
 
 #: src/pages/partitionpage.cpp:107
 msgid "The mount point must start with /"
-msgstr ""
+msgstr "Il punto di montaggio deve iniziare con /"
 
 #: src/pages/partitionpage.cpp:108
 msgid "Error"
@@ -301,89 +285,99 @@ msgstr "Errore"
 
 #: src/pages/partitionpage.cpp:130
 msgid "You can only use each mountpoint once."
-msgstr ""
+msgstr "È possibile usare ciascun punto di montaggio una sola volta."
 
 #: src/pages/partitionpage.cpp:131
 msgid "Information"
-msgstr ""
+msgstr "Informazioni"
 
 #: src/pages/partitionpage.cpp:414
 msgid "Loading partitions..."
-msgstr ""
+msgstr "Caricamento partizioni..."
 
 #: src/pages/partitionpage.cpp:518
 msgid ""
 "The selected volume already has a partition table.. Overwrite it? (this will "
 "destroy all data on the device)"
 msgstr ""
+"Il volume selezionato possiede già una tavola delle partizioni.. "
+"Sovrascriverla? "
+"(questo distruggerà tutti i dati sul dispositivo)"
 
 #: src/pages/partitionpage.cpp:518 src/pages/partitionpage.cpp:525
 msgid "Warning"
-msgstr ""
+msgstr "Attenzione"
 
 #: src/pages/partitionpage.cpp:525
 msgid ""
 "This operation will destroy all data on the selected volume.. Continue "
 "anyway?"
 msgstr ""
+"Questa operazione distruggerà tutti i dati dal volume selezionato.. "
+"Continuare "
+"comunque?"
 
 #. i18n: file: ui/pages/partition.ui:126
 #. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
 #: src/pages/partitionpage.cpp:572 src/pages/partitionpage.cpp:796
 #: src/pages/partitionpage.cpp:840 rc.cpp:278
 msgid "Extended"
-msgstr ""
+msgstr "Estesa"
 
 #. i18n: file: ui/pages/partition.ui:131
 #. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
 #: src/pages/partitionpage.cpp:797 rc.cpp:281
 msgid "Primary"
-msgstr ""
+msgstr "Primaria"
 
 #: src/pages/partitionpage.cpp:897
-#, fuzzy
 msgid "New partition"
-msgstr "Partizione"
+msgstr "Nuova Partizione"
 
 #: src/pages/partitionpage.cpp:902
 msgid "Unallocated space"
-msgstr ""
+msgstr "Spazio non allocato"
 
 #: src/pages/partitionpage.cpp:907
 msgid "Linux / Extended"
-msgstr ""
+msgstr "Linux / Estesa"
 
 #: src/pages/partitionpage.cpp:914
 msgid "Windows / %1"
-msgstr ""
+msgstr "Windows / %1"
 
 #: src/pages/partitionpage.cpp:920
 msgid "Apple / %1"
-msgstr ""
+msgstr "Apple / %1"
 
 #: src/pages/partitionpage.cpp:926
 msgid "Linux / %1"
-msgstr ""
+msgstr "Linux / %1"
 
 #: src/pages/partitionpage.cpp:950
 msgid ""
 "The partition you have chosen to mount as '/' is too small. It should have a "
 "capacity of at least %1 for a successful installation."
 msgstr ""
+"La partizione che si è scelto di montare come '/' è troppo piccola. Dovrebbe "
+"avere una capacità di almeno %1 per riuscire nell'installazione."
 
 #: src/pages/partitionpage.cpp:953 src/pages/partitionpage.cpp:968
 msgid "Target's capacity not sufficient"
-msgstr ""
+msgstr "Capacità del dispositivo di destinazione non sufficiente"
 
 #: src/pages/partitionpage.cpp:966
 msgid ""
 "You have selected '%1' as a mountpoint, which is not valid. A valid "
 "mountpoint always starts with '/' and represents a directory on disk"
 msgstr ""
+"Si è selezionato '%1' come punto di montaggio, ma non è valido. Un punto "
+"di montaggio valido dovrebbe sempre iniziare con '/' e rappresentare una "
+"cartella sul disco"
 
 #: src/pages/readyinstallpage.cpp:77
 msgid "New partition (%1) on %2"
-msgstr ""
+msgstr "Nuova partizione (%1) su %2"
 
 #: src/pages/readyinstallpage.cpp:80
 msgid "%1 will be used as %2"
@@ -391,7 +385,7 @@ msgstr "%1 sarà utilizzato come %2"
 
 #: src/pages/readyinstallpage.cpp:100
 msgid "Continue"
-msgstr ""
+msgstr "Continuare"
 
 #: src/pages/readyinstallpage.cpp:104
 #, fuzzy
@@ -412,7 +406,7 @@ msgstr "chakra-desktop"
 
 #: src/pages/usercreationpage.cpp:121
 msgid "You must give at least one login name."
-msgstr ""
+msgstr "Devi indicare almeno un nome utente e una password."
 
 #: src/pages/usercreationpage.cpp:135
 #, fuzzy
@@ -425,31 +419,28 @@ msgid "Passwords do not match..."
 msgstr "Le password non corrispondono"
 
 #: src/pages/usercreationpage.cpp:143
-#, fuzzy
 msgid "Root Passwords do not match..."
-msgstr "Le password non corrispondono"
+msgstr "Le password di Root non corrispondono"
 
 #: src/pages/usercreationpage.cpp:147
 msgid "Login names cannot be empty."
-msgstr ""
+msgstr "Nome per l'accesso vuoto."
 
 #: src/pmhandler.cpp:360
-#, fuzzy
 msgid "Preparing hard drive for installation..."
-msgstr "Completamento installazione..."
+msgstr "Preparazione dell'hard disk per l'installazione..."
 
 #: src/pmhandler.cpp:381
-#, fuzzy
 msgid "Analyzing disk..."
-msgstr "Installazione in corso..."
+msgstr "Analisi del disco..."
 
 #: src/pmhandler.cpp:445
 msgid "There was an error while formatting partitions"
-msgstr ""
+msgstr "Si è verificato un errore formattando le partizioni"
 
 #: src/widgets/avatardialog.cpp:52
 msgid "Custom"
-msgstr ""
+msgstr "Personalizzato"
 
 #. i18n: file: ui/pages/base.ui:172
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -501,13 +492,13 @@ msgstr "Pronto per l'installazione"
 #. i18n: ectx: property (text), widget (QLabel, label_24)
 #: rc.cpp:22
 msgid "Language & Time"
-msgstr "Lingua e ora"
+msgstr "Lingua e Ora"
 
 #. i18n: file: ui/pages/base.ui:297
 #. i18n: ectx: property (text), widget (QLabel, label_25)
 #: rc.cpp:25
 msgid "Disk setup"
-msgstr "Configurazioni"
+msgstr "Configurazione disco"
 
 #. i18n: file: ui/pages/base.ui:327
 #. i18n: ectx: property (text), widget (QLabel, label_26)
@@ -538,9 +529,8 @@ msgstr ""
 #. i18n: file: ui/pages/base.ui:334
 #. i18n: ectx: property (text), widget (QLabel, label_15)
 #: rc.cpp:35
-#, fuzzy
 msgid "Create Users"
-msgstr "Creazione utente"
+msgstr "Creazione utenti"
 
 #. i18n: file: ui/pages/base.ui:390
 #. i18n: ectx: property (text), widget (QLabel, label_11)
@@ -610,7 +600,7 @@ msgstr "Gestore di avvio"
 #. i18n: ectx: property (text), widget (QLabel, label_16)
 #: rc.cpp:58
 msgid "Reboot / Enjoy"
-msgstr ""
+msgstr "Riavvia / Divertiti"
 
 #. i18n: file: ui/pages/base.ui:609
 #. i18n: ectx: property (text), widget (QPushButton, abortButton)
@@ -731,7 +721,6 @@ msgstr ""
 #. i18n: file: ui/pages/configuration.ui:50
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:102
-#, fuzzy
 msgid ""
 "Although the installer has created a usable default configuration suitable "
 "for most users, you can now configure your newly installed system.\n"
@@ -741,7 +730,9 @@ msgid ""
 msgstr ""
 "Nonostante l'installatore abbia creato una configurazione predefinita adatta "
 "alla maggior parte degli utenti, ora puoi configurare il nuovo sistema "
-"installato. Approfittane per navigare ogni sezione e configurare il sistema "
+"installato.\n"
+"\n"
+"Approfittane per navigare ogni sezione e configurare il sistema "
 "come meglio preferisci."
 
 #. i18n: file: ui/pages/finish.ui:46
@@ -1209,9 +1200,8 @@ msgstr "Cerca..."
 #. i18n: file: ui/pages/locale.ui:162
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:243
-#, fuzzy
 msgid "Continent:"
-msgstr "Punto di montaggio:"
+msgstr "Continente:"
 
 #. i18n: file: ui/pages/locale.ui:185
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -1237,7 +1227,7 @@ msgstr "Mostra tutto"
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: rc.cpp:258
 msgid "Region: "
-msgstr ""
+msgstr "Regione: "
 
 #. i18n: file: ui/pages/partition.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Partition)
@@ -1282,24 +1272,27 @@ msgid ""
 "mounted. No permanent changes to your hard drive will be made when you will "
 "press \"Next\""
 msgstr ""
+"Si prega di selezionare un punto di montaggio per le partizioni esistenti. "
+"Almeno '/' dovrebbe essere montato. Nessuna modifica permanente verrà "
+"fatta sull'hard disk premendo \"Successivo\""
 
 #. i18n: file: ui/pages/partition.ui:118
 #. i18n: ectx: property (text), widget (QLabel, typeLabel)
 #: rc.cpp:275
 msgid "Type"
-msgstr ""
+msgstr "Tipo"
 
 #. i18n: file: ui/pages/partition.ui:146
 #. i18n: ectx: property (text), widget (QLabel, filesystemLabel)
 #: rc.cpp:284
 msgid "Filesystem"
-msgstr ""
+msgstr "Filesystem"
 
 #. i18n: file: ui/pages/partition.ui:173
 #. i18n: ectx: property (suffix), widget (KIntSpinBox, sizeSpinBox)
 #: rc.cpp:287
 msgid " MiB"
-msgstr ""
+msgstr " MiB"
 
 #. i18n: file: ui/pages/partition.ui:193
 #. i18n: ectx: property (text), widget (KPushButton, editPartitionCancelButton)
@@ -1307,7 +1300,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
 #: rc.cpp:290 rc.cpp:426
 msgid "Cancel"
-msgstr ""
+msgstr "Cancella"
 
 #. i18n: file: ui/pages/partition.ui:200
 #. i18n: ectx: property (text), widget (KPushButton, editPartitionOkButton)
@@ -1315,19 +1308,19 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, okButton)
 #: rc.cpp:293 rc.cpp:423
 msgid "Ok"
-msgstr ""
+msgstr "Ok"
 
 #. i18n: file: ui/pages/partition.ui:248
 #. i18n: ectx: property (toolTip), widget (QPushButton, newPartTableButton)
 #: rc.cpp:299
 msgid "Create a new partition table on the selected device"
-msgstr ""
+msgstr "Creare una nuova tabella delle partizioni sul dispositivo selezionato"
 
 #. i18n: file: ui/pages/partition.ui:270
 #. i18n: ectx: property (text), widget (QPushButton, newButton)
 #: rc.cpp:302
 msgid "New"
-msgstr ""
+msgstr "Nuovo"
 
 #. i18n: file: ui/pages/partition.ui:289
 #. i18n: ectx: property (text), widget (QPushButton, deleteButton)
@@ -1338,22 +1331,20 @@ msgstr "Elimina"
 #. i18n: file: ui/pages/partition.ui:308
 #. i18n: ectx: property (text), widget (QPushButton, formatButton)
 #: rc.cpp:308
-#, fuzzy
 msgid "Format"
-msgstr "Modulo"
+msgstr "Formatta"
 
 #. i18n: file: ui/pages/partition.ui:327
 #. i18n: ectx: property (toolTip), widget (QPushButton, undoButton)
 #: rc.cpp:311
 msgid "Undo"
-msgstr ""
+msgstr "Annulla"
 
 #. i18n: file: ui/pages/partition.ui:346
 #. i18n: ectx: property (toolTip), widget (QPushButton, unmountButton)
 #: rc.cpp:314
-#, fuzzy
 msgid "Unmount the selected partition"
-msgstr "Devi selezionare un fuso orario."
+msgstr "Smonta la partizione selezionata"
 
 #. i18n: file: ui/pages/readyinstall.ui:51
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1524,7 +1515,7 @@ msgstr ""
 #. i18n: ectx: property (toolTip), widget (QLabel, label_2)
 #: rc.cpp:362
 msgid "or technically, the hostname"
-msgstr ""
+msgstr "o tecnicamente, l'hostname"
 
 #. i18n: file: ui/pages/settings.ui:76
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -1580,7 +1571,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:408
 msgid "Enter at least one login name and password."
-msgstr ""
+msgstr "Inserire almeno un nome utente e password"
 
 #. i18n: file: ui/pages/usercreation.ui:178
 #. i18n: ectx: property (toolTip), widget (QPushButton, addUser)
@@ -1596,6 +1587,8 @@ msgid ""
 "<small>This name will be used if you make the computer visible to others on "
 "a network.</small>"
 msgstr ""
+"<small>Questo nome verrà usato se il computer è visibile ad altri nella "
+"rete</small>"
 
 #. i18n: file: ui/pages/usercreation.ui:299
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -1608,7 +1601,7 @@ msgstr "Il nome di questo computer:"
 #. i18n: ectx: property (windowTitle), widget (QWidget, AvatarDialog)
 #: rc.cpp:420
 msgid "Select an Avatar..."
-msgstr ""
+msgstr "Seleziona un Avatar..."
 
 #. i18n: file: ui/widgets/userwidget.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1628,7 +1621,7 @@ msgstr "Password:"
 #. i18n: ectx: property (toolTip), widget (QPushButton, userDetails)
 #: rc.cpp:435
 msgid "Include more information about this user."
-msgstr ""
+msgstr "Inserire ulteriori informazioni sull'utente."
 
 #. i18n: file: ui/widgets/userwidget.ui:124
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -1640,7 +1633,7 @@ msgstr "Conferma password:"
 #. i18n: ectx: property (toolTip), widget (QPushButton, removeUser)
 #: rc.cpp:441
 msgid "Remove this user."
-msgstr ""
+msgstr "Rimuovi utente."
 
 #. i18n: file: ui/widgets/userwidget.ui:264
 #. i18n: ectx: property (text), widget (QLabel, label_4)
@@ -1653,7 +1646,7 @@ msgstr "Nome:"
 #. i18n: ectx: property (text), widget (QCheckBox, autoLoginCheckBox)
 #: rc.cpp:447
 msgid "Login Automatically"
-msgstr ""
+msgstr "Accesso Automatico"
 
 #. i18n: file: ui/widgets/userwidget.ui:344
 #. i18n: ectx: property (text), widget (QCheckBox, rootUsesUserPwCheckBox)
@@ -1662,6 +1655,8 @@ msgid ""
 "Use this password as \n"
 "the Administrator password"
 msgstr ""
+"Usa questa password per\n"
+"l'account Amministratore"
 
 #. i18n: file: ui/widgets/userwidget.ui:396
 #. i18n: ectx: property (text), widget (QLabel, label_5)
@@ -1673,19 +1668,22 @@ msgstr "Password di root"
 #. i18n: file: ui/widgets/userwidget.ui:406
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: rc.cpp:457
-#, fuzzy
 msgid "Confirm Root Password:  "
-msgstr "Conferma password:"
+msgstr "Conferma password di Root:"
 
 #: rc.cpp:458
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Vincenzo Reale"
+msgstr ""
+"Vincenzo Reale "
+"Giuseppe Calà"
 
 #: rc.cpp:459
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "smart2128@baslug.org"
+msgstr ""
+"smart2128@baslug.org "
+"jiveaxe@gmail.com"
 
 #~ msgid "Setting up Tribe..."
 #~ msgstr "Configurazione di Tribe..."

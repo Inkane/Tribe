@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2010-12-08 23:47+0100\n"
+"POT-Creation-Date: 2010-12-15 19:47+0100\n"
 "PO-Revision-Date: 2010-12-09 00:39+0100\n"
 "Last-Translator: Adrián Chaves Fernández (Gallaecio) <adriyetichaves@gmail."
 "com>\n"
@@ -58,85 +58,85 @@ msgstr "Inicializando el objetivo...."
 msgid "Please wait, configuring the new system ..."
 msgstr "Espere, configurando el nuevo sistema..."
 
-#: src/installationhandler.cpp:412
+#: src/installationhandler.cpp:415
 msgid "Error in Postinstall script. See log for more details"
 msgstr ""
 "Hubo un error en el guión de post-instalación. Revise el registro para más "
 "información."
 
-#: src/installationhandler.cpp:421
+#: src/installationhandler.cpp:424
 msgid "Creating user accounts ..."
 msgstr "Creando las cuentas de usuario..."
 
-#: src/installationhandler.cpp:424
+#: src/installationhandler.cpp:427
 msgid "Configuring software management..."
 msgstr "Configurando la gestión de software..."
 
-#: src/installationhandler.cpp:428
+#: src/installationhandler.cpp:431
 msgid "Removing unused packages..."
 msgstr "Borrando los paquetes innecesarios..."
 
-#: src/installationhandler.cpp:432
+#: src/installationhandler.cpp:435
 msgid "Installing additional packages..."
 msgstr "Instalando paquetes adicionales..."
 
-#: src/installationhandler.cpp:436
+#: src/installationhandler.cpp:439
 msgid "Configuring the display..."
 msgstr "Configurando la pantalla..."
 
-#: src/installationhandler.cpp:440
+#: src/installationhandler.cpp:443
 msgid "Downloading and installing localization packages..."
 msgstr "Descargando e instalando los paquetes de configuración regional..."
 
-#: src/installationhandler.cpp:444
+#: src/installationhandler.cpp:447
 msgid "Downloading and installing documentation packages..."
 msgstr "Descargando e instalando los paquetes de documentación..."
 
-#: src/installationhandler.cpp:448
+#: src/installationhandler.cpp:451
 msgid "Setting up localization..."
 msgstr "Estableciendo la configuración regional..."
 
-#: src/installationhandler.cpp:452
+#: src/installationhandler.cpp:455
 msgid "Creating daemon configuration..."
 msgstr "Configurando los daemons..."
 
-#: src/installationhandler.cpp:456
+#: src/installationhandler.cpp:459
 msgid "Creating network configuration..."
 msgstr "Configurando la red..."
 
-#: src/installationhandler.cpp:460
+#: src/installationhandler.cpp:463
 msgid "Creating fstab..."
 msgstr "Creando fstab..."
 
-#: src/installationhandler.cpp:467
+#: src/installationhandler.cpp:470
 msgid "Configuring hardware..."
 msgstr "Configurando el hardware..."
 
-#: src/installationhandler.cpp:471
+#: src/installationhandler.cpp:474
 msgid "Creating initial ramdisk images..."
 msgstr "Creando las imágenes ramdisk iniciales..."
 
-#: src/installationhandler.cpp:475
+#: src/installationhandler.cpp:478
 msgid "Generating locales..."
 msgstr "Generando las configuraciones regionales..."
 
-#: src/installationhandler.cpp:479
+#: src/installationhandler.cpp:482
 msgid "Removing unused localizations..."
 msgstr "Borrando las configuraciones regionales innecesarias..."
 
-#: src/installationhandler.cpp:483
+#: src/installationhandler.cpp:486
 msgid "Removing unused drivers..."
 msgstr "Borrando los controladores innecesarios..."
 
-#: src/installationhandler.cpp:487
+#: src/installationhandler.cpp:490
 msgid "Finishing up..."
 msgstr "Terminando..."
 
-#: src/installationhandler.cpp:491
+#: src/installationhandler.cpp:494
 msgid "Installation complete!"
 msgstr "¡Acabó la instalación!"
 
-#: src/installationhandler.cpp:582
+#: src/installationhandler.cpp:585
 msgid ""
 "Tribe was not able to initialize needed directories. Something is very "
 "wrong..."
@@ -144,7 +144,7 @@ msgstr ""
 "Tribe no pudo inicializar los directorios necesarios. Algo va mal... muy "
 "mal..."
 
-#: src/installationhandler.cpp:606
+#: src/installationhandler.cpp:609
 msgid "Could not mount %1"
 msgstr "No se pudo montar «%1»."
 
@@ -256,17 +256,9 @@ msgstr "Controlador privativo de NVidia"
 msgid "Accept license for: "
 msgstr "Aceptar la licencia de: "
 
-#: src/pages/localepage.cpp:269
+#: src/pages/localepage.cpp:277
 msgid "You need to select a timezone"
 msgstr "Debe seleccionar una zona horaria"
-
-#: src/pages/partitionpage.cpp:58 src/pages/partitionpage.cpp:134
-msgid "None"
-msgstr "Ninguna"
-
-#: src/pages/partitionpage.cpp:67 src/pages/partitionpage.cpp:89
-msgid "Other..."
-msgstr "Otra..."
 
 #: src/pages/partitionpage.cpp:95
 msgid "Please enter a custom mountpoint"
@@ -279,14 +271,6 @@ msgstr "El punto de montaje debe empezar con una barra inclinada, «/»."
 #: src/pages/partitionpage.cpp:108
 msgid "Error"
 msgstr "Hubo un error"
-
-#: src/pages/partitionpage.cpp:130
-msgid "You can only use each mountpoint once."
-msgstr "No puede repetir un punto de montaje."
-
-#: src/pages/partitionpage.cpp:131
-msgid "Information"
-msgstr "Información"
 
 #: src/pages/partitionpage.cpp:414
 msgid "Loading partitions..."
@@ -311,43 +295,6 @@ msgid ""
 msgstr ""
 "Esta operación destruirá todos los datos del volumen seleccionado. ¿Quiere "
 "continuar de todos modos?"
-
-#. i18n: file: ui/pages/partition.ui:126
-#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
-#: src/pages/partitionpage.cpp:572 src/pages/partitionpage.cpp:796
-#: src/pages/partitionpage.cpp:840 rc.cpp:278
-msgid "Extended"
-msgstr "Extendida"
-
-#. i18n: file: ui/pages/partition.ui:131
-#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
-#: src/pages/partitionpage.cpp:797 rc.cpp:281
-msgid "Primary"
-msgstr "Primaria"
-
-#: src/pages/partitionpage.cpp:897
-msgid "New partition"
-msgstr "Nueva partición"
-
-#: src/pages/partitionpage.cpp:902
-msgid "Unallocated space"
-msgstr "Espacio sin asignar"
-
-#: src/pages/partitionpage.cpp:907
-msgid "Linux / Extended"
-msgstr "GNU/Linux / Extendida"
-
-#: src/pages/partitionpage.cpp:914
-msgid "Windows / %1"
-msgstr "Windows / %1"
-
-#: src/pages/partitionpage.cpp:920
-msgid "Apple / %1"
-msgstr "Mac OS / %1"
-
-#: src/pages/partitionpage.cpp:926
-msgid "Linux / %1"
-msgstr "GNU/Linux / %1"
 
 #: src/pages/partitionpage.cpp:950
 msgid ""
@@ -402,17 +349,17 @@ msgstr "chakra-sobremesa"
 msgid "You must give at least one login name."
 msgstr "Debe indicar por lo menos un nombre de usuario."
 
-#: src/pages/usercreationpage.cpp:135
+#: src/pages/usercreationpage.cpp:125
+msgid "Root Passwords do not match..."
+msgstr "Las contraseñas de administrador no coinciden."
+
+#: src/pages/usercreationpage.cpp:139
 msgid "Passwords cannot be empty."
 msgstr "No puede dejar el campo de la contraseña vacío."
 
-#: src/pages/usercreationpage.cpp:139
+#: src/pages/usercreationpage.cpp:143
 msgid "Passwords do not match..."
 msgstr "Las contraseñas no coinciden."
-
-#: src/pages/usercreationpage.cpp:143
-msgid "Root Passwords do not match..."
-msgstr "Las contraseñas de administrador no coinciden."
 
 #: src/pages/usercreationpage.cpp:147
 msgid "Login names cannot be empty."
@@ -720,11 +667,11 @@ msgid ""
 "Please take some time to step through each section and configure your system "
 "the way you want it."
 msgstr ""
-"Aunque el instalador ha creado una configuración predeterminada válida "
-"para la mayor parde de los usuarios, puede configurar ahora el sistema "
-"recién instalado.\n"
-"Tómese su tiempo para pasar por cada una de las secciones y configurar "
-"su sistema para que éste se adapte completamente a sus necesidades."
+"Aunque el instalador ha creado una configuración predeterminada válida para "
+"la mayor parde de los usuarios, puede configurar ahora el sistema recién "
+"instalado.\n"
+"Tómese su tiempo para pasar por cada una de las secciones y configurar su "
+"sistema para que éste se adapte completamente a sus necesidades."
 
 #. i18n: file: ui/pages/finish.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -787,9 +734,8 @@ msgstr ""
 "directorio «/var/log» del sistema instalado.\n"
 "\n"
 "Gracias por utilizar Chakra, y recuerde que puede ponerse en contacto con "
-"nosotros a través de los foros, donde "
-"podrá compartir su opinión y sus ideas con otros usuarios y "
-"desarrolladores;\n"
+"nosotros a través de los foros, donde podrá compartir su opinión y sus ideas "
+"con otros usuarios y desarrolladores;\n"
 "Es decir: ¡Involúcrese! (http://chakra-project.org)\n"
 "\n"
 "Páselo bien!\n"
@@ -855,12 +801,10 @@ msgid ""
 msgstr ""
 "Durante la instalación su hardware va a ser configurado de forma automática "
 "y se generará un entorno ramdisk inicial para arrancar el kernel Linux. No "
-"es "
-"necesaria su intervención, aunque es posible que necesite algunas opciones "
-"especiales para el arranque. Si no entiende lo que eso significa, "
-"simplemente "
-"pulse el botón «Siguiente» o consulte las opciones Ramdisk más abajo y "
-"seleccione los elementos que necesita para su sistema."
+"es necesaria su intervención, aunque es posible que necesite algunas "
+"opciones especiales para el arranque. Si no entiende lo que eso significa, "
+"simplemente pulse el botón «Siguiente» o consulte las opciones Ramdisk más "
+"abajo y seleccione los elementos que necesita para su sistema."
 
 #. i18n: file: ui/pages/init.ui:81
 #. i18n: ectx: property (text), widget (QPushButton, pushButton)
@@ -1038,8 +982,7 @@ msgstr ""
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
 "style=\" font-family:'Bitstream Vera Sans'; color:#eeeeee;\">Bienvenido/a a "
-"la "
-"instalación de Chakra.</span></p>\n"
+"la instalación de Chakra.</span></p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
 "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
 "indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;"
@@ -1047,8 +990,8 @@ msgstr ""
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
 "style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\">Este programa le guiará durante el proceso de "
-"instalación</span></p>\n"
+"color:#eeeeee;\">Este programa le guiará durante el proceso de instalación</"
+"span></p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
 "style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
@@ -1074,11 +1017,10 @@ msgstr ""
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
 "style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
 "color:#eeeeee;\">Y recuerde:</span><span style=\" font-family:'Bitstream "
-"Vera "
-"Sans'; font-size:8pt; font-weight:536;\"> </span><span style=\" font-"
+"Vera Sans'; font-size:8pt; font-weight:536;\"> </span><span style=\" font-"
 "family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#ff0000;"
-"\">ESTE SOFTWARE ESTÁ EN FASE “ALFA”, ¡PODRÍA TRAGARSE A SU HAMSTER!</span><"
-"/p>\n"
+"\">ESTE SOFTWARE ESTÁ EN FASE “ALFA”, ¡PODRÍA TRAGARSE A SU HAMSTER!</span></"
+"p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
 "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
 "indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
@@ -1086,8 +1028,8 @@ msgstr ""
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
 "style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\">¡Páselo bien! ─ Desarrolladores de Chakra</span></p></body>"
-"</html>"
+"color:#eeeeee;\">¡Páselo bien! ─ Desarrolladores de Chakra</span></p></"
+"body></html>"
 
 #. i18n: file: ui/pages/license.ui:49
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1114,9 +1056,8 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Revisión de las licencias</span>"
-"</p></"
-"body></html>"
+"size:22pt; font-weight:600; color:#ffffff;\">Revisión de las licencias</"
+"span></p></body></html>"
 
 #. i18n: file: ui/pages/license.ui:61
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -1128,8 +1069,8 @@ msgid ""
 "free solution (if one is available)."
 msgstr ""
 "Chakra incluye algún software privativo como controladores de hardware, "
-"complementos multimedia e tipos de letra. Para instalarlos tendrá que leer "
-"y aceptar sus respectivas licencias. Si no está de acuerdo con alguna de "
+"complementos multimedia e tipos de letra. Para instalarlos tendrá que leer y "
+"aceptar sus respectivas licencias. Si no está de acuerdo con alguna de "
 "ellas, el instalador buscará una alternativa libre (si es que la hay)."
 
 #. i18n: file: ui/pages/license.ui:74
@@ -1196,8 +1137,8 @@ msgstr ""
 "Por favor, seleccione la ciudad más próxima en el globo para que el "
 "instalador pueda sugerirle una configuración de idioma y uso horario "
 "adecuados para su situación. Puede ajustarlos de forma más precisa debajo. "
-"Si no logra encontrar su región o ciudad en el globo puede aumentarlo "
-"usando el deslizador de la izquierda."
+"Si no logra encontrar su región o ciudad en el globo puede aumentarlo usando "
+"el deslizador de la izquierda."
 
 #. i18n: file: ui/pages/locale.ui:69
 #. i18n: ectx: property (clickMessage), widget (KLineEdit, locationsSearch)
@@ -1288,6 +1229,18 @@ msgstr ""
 #: rc.cpp:275
 msgid "Type"
 msgstr "Tipo"
+
+#. i18n: file: ui/pages/partition.ui:126
+#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
+#: rc.cpp:278
+msgid "Extended"
+msgstr "Extendida"
+
+#. i18n: file: ui/pages/partition.ui:131
+#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
+#: rc.cpp:281
+msgid "Primary"
+msgstr "Primaria"
 
 #. i18n: file: ui/pages/partition.ui:146
 #. i18n: ectx: property (text), widget (QLabel, filesystemLabel)
@@ -1475,8 +1428,7 @@ msgstr ""
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
 "style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Notas sobre la "
-"versión</"
-"span></p></body></html>"
+"versión</span></p></body></html>"
 
 #. i18n: file: ui/pages/releasenotes.ui:60
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -1487,9 +1439,9 @@ msgid ""
 "either by visiting our forums or bug tracker."
 msgstr ""
 "Revise las novedades, los problemas conocidos y la información general "
-"acerca de esta versión de Chakra. Como siempre, le animamos a que nos "
-"dé su opinión, ya sea visitando nuestros foros o bien el sistema de gestión "
-"de errores."
+"acerca de esta versión de Chakra. Como siempre, le animamos a que nos dé su "
+"opinión, ya sea visitando nuestros foros o bien el sistema de gestión de "
+"errores."
 
 #. i18n: file: ui/pages/settings.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1568,9 +1520,8 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Creación de los usuarios</span>"
-"</p></body></"
-"html>"
+"size:22pt; font-weight:600; color:#ffffff;\">Creación de los usuarios</"
+"span></p></body></html>"
 
 #. i18n: file: ui/pages/usercreation.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -1679,6 +1630,36 @@ msgstr "Manuel Tortosa, David Correa, Adrián Chaves Fernández (Gallaecio)"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "manutortosa@gmail.com,david.correav@gmail.com,adriyetichaves@gmail.com"
+
+#~ msgid "None"
+#~ msgstr "Ninguna"
+
+#~ msgid "Other..."
+#~ msgstr "Otra..."
+
+#~ msgid "You can only use each mountpoint once."
+#~ msgstr "No puede repetir un punto de montaje."
+
+#~ msgid "Information"
+#~ msgstr "Información"
+
+#~ msgid "New partition"
+#~ msgstr "Nueva partición"
+
+#~ msgid "Unallocated space"
+#~ msgstr "Espacio sin asignar"
+
+#~ msgid "Linux / Extended"
+#~ msgstr "GNU/Linux / Extendida"
+
+#~ msgid "Windows / %1"
+#~ msgstr "Windows / %1"
+
+#~ msgid "Apple / %1"
+#~ msgstr "Mac OS / %1"
+
+#~ msgid "Linux / %1"
+#~ msgstr "GNU/Linux / %1"
 
 #~ msgid "Setting up Tribe..."
 #~ msgstr "Configurando Tribe..."

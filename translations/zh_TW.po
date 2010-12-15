@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zh_TW\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2010-12-08 23:47+0100\n"
+"POT-Creation-Date: 2010-12-15 19:47+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dong-Jun Wu <ziyawu@gmail.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.linux.org.tw>\n"
@@ -51,94 +51,94 @@ msgstr "正在初始化目標 ..."
 msgid "Please wait, configuring the new system ..."
 msgstr "請稍候，正在設定和開始安裝後腳本 ..."
 
-#: src/installationhandler.cpp:412
+#: src/installationhandler.cpp:415
 msgid "Error in Postinstall script. See log for more details"
 msgstr "安裝後腳本發生錯誤。查看日誌獲得更多細節訊息"
 
-#: src/installationhandler.cpp:421
+#: src/installationhandler.cpp:424
 #, fuzzy
 msgid "Creating user accounts ..."
 msgstr "正在建立設定檔 ..."
 
-#: src/installationhandler.cpp:424
+#: src/installationhandler.cpp:427
 #, fuzzy
 msgid "Configuring software management..."
 msgstr "正在設定硬體..."
 
-#: src/installationhandler.cpp:428
+#: src/installationhandler.cpp:431
 #, fuzzy
 msgid "Removing unused packages..."
 msgstr "正在移除多餘的套件..."
 
-#: src/installationhandler.cpp:432
+#: src/installationhandler.cpp:435
 msgid "Installing additional packages..."
 msgstr "正在安裝額外的套件..."
 
-#: src/installationhandler.cpp:436
+#: src/installationhandler.cpp:439
 #, fuzzy
 msgid "Configuring the display..."
 msgstr "正在設定硬體..."
 
-#: src/installationhandler.cpp:440
+#: src/installationhandler.cpp:443
 #, fuzzy
 msgid "Downloading and installing localization packages..."
 msgstr "正在下載並安裝本地化套件，這可能需要一點時間..."
 
-#: src/installationhandler.cpp:444
+#: src/installationhandler.cpp:447
 #, fuzzy
 msgid "Downloading and installing documentation packages..."
 msgstr "下載和安裝使用說明套件"
 
-#: src/installationhandler.cpp:448
+#: src/installationhandler.cpp:451
 msgid "Setting up localization..."
 msgstr "正在建立本地化..."
 
-#: src/installationhandler.cpp:452
+#: src/installationhandler.cpp:455
 msgid "Creating daemon configuration..."
 msgstr "建立服務設定檔..."
 
-#: src/installationhandler.cpp:456
+#: src/installationhandler.cpp:459
 msgid "Creating network configuration..."
 msgstr "建立網路設定檔..."
 
-#: src/installationhandler.cpp:460
+#: src/installationhandler.cpp:463
 msgid "Creating fstab..."
 msgstr "正在建立 fstab..."
 
-#: src/installationhandler.cpp:467
+#: src/installationhandler.cpp:470
 msgid "Configuring hardware..."
 msgstr "正在設定硬體..."
 
-#: src/installationhandler.cpp:471
+#: src/installationhandler.cpp:474
 #, fuzzy
 msgid "Creating initial ramdisk images..."
 msgstr "正在建立初始的記憶體磁碟映像檔。這可能需要很久的時間，請耐心等待..."
 
-#: src/installationhandler.cpp:475
+#: src/installationhandler.cpp:478
 #, fuzzy
 msgid "Generating locales..."
 msgstr "正在重新生成地區設定..."
 
-#: src/installationhandler.cpp:479
+#: src/installationhandler.cpp:482
 #, fuzzy
 msgid "Removing unused localizations..."
 msgstr "正在移除多餘的本地化..."
 
-#: src/installationhandler.cpp:483
+#: src/installationhandler.cpp:486
 #, fuzzy
 msgid "Removing unused drivers..."
 msgstr "正在移除多餘的驅動程式..."
 
-#: src/installationhandler.cpp:487
+#: src/installationhandler.cpp:490
 #, fuzzy
 msgid "Finishing up..."
 msgstr "正在完成安裝..."
 
-#: src/installationhandler.cpp:491
+#: src/installationhandler.cpp:494
 msgid "Installation complete!"
 msgstr "安裝完成 !"
 
-#: src/installationhandler.cpp:582
+#: src/installationhandler.cpp:585
 #, fuzzy
 msgid ""
 "Tribe was not able to initialize needed directories. Something is very "
@@ -147,7 +147,7 @@ msgstr ""
 "Tribe 無法初始化所需的資料夾。可能您沒有足夠的權限，請以 root 身份重新啟動 "
 "Tribe。"
 
-#: src/installationhandler.cpp:606
+#: src/installationhandler.cpp:609
 msgid "Could not mount %1"
 msgstr "無法掛載 %1"
 
@@ -261,18 +261,10 @@ msgstr "專利 NVidia 驅動程式"
 msgid "Accept license for: "
 msgstr "同意授權: "
 
-#: src/pages/localepage.cpp:269
+#: src/pages/localepage.cpp:277
 #, fuzzy
 msgid "You need to select a timezone"
 msgstr "您需要選擇一個時區。"
-
-#: src/pages/partitionpage.cpp:58 src/pages/partitionpage.cpp:134
-msgid "None"
-msgstr ""
-
-#: src/pages/partitionpage.cpp:67 src/pages/partitionpage.cpp:89
-msgid "Other..."
-msgstr ""
 
 #: src/pages/partitionpage.cpp:95
 msgid "Please enter a custom mountpoint"
@@ -285,14 +277,6 @@ msgstr ""
 #: src/pages/partitionpage.cpp:108
 msgid "Error"
 msgstr "錯誤"
-
-#: src/pages/partitionpage.cpp:130
-msgid "You can only use each mountpoint once."
-msgstr ""
-
-#: src/pages/partitionpage.cpp:131
-msgid "Information"
-msgstr ""
 
 #: src/pages/partitionpage.cpp:414
 msgid "Loading partitions..."
@@ -313,44 +297,6 @@ msgstr "硬碟分割"
 msgid ""
 "This operation will destroy all data on the selected volume.. Continue "
 "anyway?"
-msgstr ""
-
-#. i18n: file: ui/pages/partition.ui:126
-#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
-#: src/pages/partitionpage.cpp:572 src/pages/partitionpage.cpp:796
-#: src/pages/partitionpage.cpp:840 rc.cpp:278
-msgid "Extended"
-msgstr ""
-
-#. i18n: file: ui/pages/partition.ui:131
-#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
-#: src/pages/partitionpage.cpp:797 rc.cpp:281
-msgid "Primary"
-msgstr ""
-
-#: src/pages/partitionpage.cpp:897
-#, fuzzy
-msgid "New partition"
-msgstr "分割區"
-
-#: src/pages/partitionpage.cpp:902
-msgid "Unallocated space"
-msgstr ""
-
-#: src/pages/partitionpage.cpp:907
-msgid "Linux / Extended"
-msgstr ""
-
-#: src/pages/partitionpage.cpp:914
-msgid "Windows / %1"
-msgstr ""
-
-#: src/pages/partitionpage.cpp:920
-msgid "Apple / %1"
-msgstr ""
-
-#: src/pages/partitionpage.cpp:926
-msgid "Linux / %1"
 msgstr ""
 
 #: src/pages/partitionpage.cpp:950
@@ -400,19 +346,19 @@ msgstr "Chakra 桌上型電腦"
 msgid "You must give at least one login name."
 msgstr ""
 
-#: src/pages/usercreationpage.cpp:135
+#: src/pages/usercreationpage.cpp:125
+#, fuzzy
+msgid "Root Passwords do not match..."
+msgstr "密碼不吻合"
+
+#: src/pages/usercreationpage.cpp:139
 #, fuzzy
 msgid "Passwords cannot be empty."
 msgstr "密碼是空的"
 
-#: src/pages/usercreationpage.cpp:139
-#, fuzzy
-msgid "Passwords do not match..."
-msgstr "密碼不吻合"
-
 #: src/pages/usercreationpage.cpp:143
 #, fuzzy
-msgid "Root Passwords do not match..."
+msgid "Passwords do not match..."
 msgstr "密碼不吻合"
 
 #: src/pages/usercreationpage.cpp:147
@@ -1264,6 +1210,18 @@ msgstr ""
 msgid "Type"
 msgstr ""
 
+#. i18n: file: ui/pages/partition.ui:126
+#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
+#: rc.cpp:278
+msgid "Extended"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:131
+#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
+#: rc.cpp:281
+msgid "Primary"
+msgstr ""
+
 #. i18n: file: ui/pages/partition.ui:146
 #. i18n: ectx: property (text), widget (QLabel, filesystemLabel)
 #: rc.cpp:284
@@ -1657,6 +1615,10 @@ msgstr "您的名字"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "您的信箱"
+
+#, fuzzy
+#~ msgid "New partition"
+#~ msgstr "分割區"
 
 #, fuzzy
 #~ msgid "Setting up Tribe..."

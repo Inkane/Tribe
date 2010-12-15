@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2010-12-08 23:47+0100\n"
+"POT-Creation-Date: 2010-12-15 19:47+0100\n"
 "PO-Revision-Date: 2010-12-09 00:01+0100\n"
 "Last-Translator: Manuel Tortosa Moreno <manutortosa@chakra-project.org>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -54,83 +54,83 @@ msgstr "S'està preparant el destí..."
 msgid "Please wait, configuring the new system ..."
 msgstr "Espereu, s'està configurant el nou sistema..."
 
-#: src/installationhandler.cpp:412
+#: src/installationhandler.cpp:415
 msgid "Error in Postinstall script. See log for more details"
 msgstr "Error a l'script Postinstall. Per més detalls, mireu el registre"
 
-#: src/installationhandler.cpp:421
+#: src/installationhandler.cpp:424
 msgid "Creating user accounts ..."
 msgstr "S'estan creant els comptes d'usuari..."
 
-#: src/installationhandler.cpp:424
+#: src/installationhandler.cpp:427
 msgid "Configuring software management..."
 msgstr "S'està configurant el programari..."
 
-#: src/installationhandler.cpp:428
+#: src/installationhandler.cpp:431
 msgid "Removing unused packages..."
 msgstr "S'estan esborrant els paquets innecessaris..."
 
-#: src/installationhandler.cpp:432
+#: src/installationhandler.cpp:435
 msgid "Installing additional packages..."
 msgstr "S'estan instal·lant paquets addicionals..."
 
-#: src/installationhandler.cpp:436
+#: src/installationhandler.cpp:439
 msgid "Configuring the display..."
 msgstr "S'està configurant la pantalla..."
 
-#: src/installationhandler.cpp:440
+#: src/installationhandler.cpp:443
 msgid "Downloading and installing localization packages..."
 msgstr "S'estan baixant i instal·lant els paquets de localització..."
 
-#: src/installationhandler.cpp:444
+#: src/installationhandler.cpp:447
 msgid "Downloading and installing documentation packages..."
 msgstr "S'estan baixant i instal·la paquets de documentació..."
 
-#: src/installationhandler.cpp:448
+#: src/installationhandler.cpp:451
 msgid "Setting up localization..."
 msgstr "S'està establint la localització..."
 
-#: src/installationhandler.cpp:452
+#: src/installationhandler.cpp:455
 msgid "Creating daemon configuration..."
 msgstr "S'està creant la configuració dels dimonis..."
 
-#: src/installationhandler.cpp:456
+#: src/installationhandler.cpp:459
 msgid "Creating network configuration..."
 msgstr "S'està creant la configuració de la xarxa..."
 
-#: src/installationhandler.cpp:460
+#: src/installationhandler.cpp:463
 msgid "Creating fstab..."
 msgstr "S'està creant fstab..."
 
-#: src/installationhandler.cpp:467
+#: src/installationhandler.cpp:470
 msgid "Configuring hardware..."
 msgstr "S'està configurant el maquinari..."
 
-#: src/installationhandler.cpp:471
+#: src/installationhandler.cpp:474
 msgid "Creating initial ramdisk images..."
 msgstr "S'estan creant les imatges inicials ramdisk.."
 
-#: src/installationhandler.cpp:475
+#: src/installationhandler.cpp:478
 msgid "Generating locales..."
 msgstr "S'estan generant l'arranjament local..."
 
-#: src/installationhandler.cpp:479
+#: src/installationhandler.cpp:482
 msgid "Removing unused localizations..."
 msgstr "S'estan suprimint les localitzacions innecessàries..."
 
-#: src/installationhandler.cpp:483
+#: src/installationhandler.cpp:486
 msgid "Removing unused drivers..."
 msgstr "S'estan suprimint els controladors innecessaris..."
 
-#: src/installationhandler.cpp:487
+#: src/installationhandler.cpp:490
 msgid "Finishing up..."
 msgstr "S'està finalitzant..."
 
-#: src/installationhandler.cpp:491
+#: src/installationhandler.cpp:494
 msgid "Installation complete!"
 msgstr "Instal·lació completa!"
 
-#: src/installationhandler.cpp:582
+#: src/installationhandler.cpp:585
 msgid ""
 "Tribe was not able to initialize needed directories. Something is very "
 "wrong..."
@@ -138,7 +138,7 @@ msgstr ""
 "Tribe no ha pogut crear els directoris necessaris. Alguna cosa ha anat molt "
 "malament..."
 
-#: src/installationhandler.cpp:606
+#: src/installationhandler.cpp:609
 msgid "Could not mount %1"
 msgstr "No es pot muntar %1"
 
@@ -248,17 +248,9 @@ msgstr "Controlador propietari de NVidia"
 msgid "Accept license for: "
 msgstr "Accepta la llicència per a: "
 
-#: src/pages/localepage.cpp:269
+#: src/pages/localepage.cpp:277
 msgid "You need to select a timezone"
 msgstr "Heu de seleccionar una zona horària"
-
-#: src/pages/partitionpage.cpp:58 src/pages/partitionpage.cpp:134
-msgid "None"
-msgstr "Cap"
-
-#: src/pages/partitionpage.cpp:67 src/pages/partitionpage.cpp:89
-msgid "Other..."
-msgstr "Altre..."
 
 #: src/pages/partitionpage.cpp:95
 msgid "Please enter a custom mountpoint"
@@ -271,14 +263,6 @@ msgstr "El punt de muntatge ha de començar amb /"
 #: src/pages/partitionpage.cpp:108
 msgid "Error"
 msgstr "Heu de seleccionar una zona horària."
-
-#: src/pages/partitionpage.cpp:130
-msgid "You can only use each mountpoint once."
-msgstr "Només podeu usar una vegada cada punt de muntatge."
-
-#: src/pages/partitionpage.cpp:131
-msgid "Information"
-msgstr "Informació"
 
 #: src/pages/partitionpage.cpp:414
 msgid "Loading partitions..."
@@ -303,43 +287,6 @@ msgid ""
 msgstr ""
 "Aquesta operació destruirà totes les dades al volum seleccionat... Continuo "
 "de totes maneres?"
-
-#. i18n: file: ui/pages/partition.ui:126
-#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
-#: src/pages/partitionpage.cpp:572 src/pages/partitionpage.cpp:796
-#: src/pages/partitionpage.cpp:840 rc.cpp:278
-msgid "Extended"
-msgstr "Ampliada"
-
-#. i18n: file: ui/pages/partition.ui:131
-#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
-#: src/pages/partitionpage.cpp:797 rc.cpp:281
-msgid "Primary"
-msgstr "Primària"
-
-#: src/pages/partitionpage.cpp:897
-msgid "New partition"
-msgstr "Nova partició"
-
-#: src/pages/partitionpage.cpp:902
-msgid "Unallocated space"
-msgstr "Espai no assignat"
-
-#: src/pages/partitionpage.cpp:907
-msgid "Linux / Extended"
-msgstr "Linx / Ampliada"
-
-#: src/pages/partitionpage.cpp:914
-msgid "Windows / %1"
-msgstr "Windows / %1"
-
-#: src/pages/partitionpage.cpp:920
-msgid "Apple / %1"
-msgstr "Apple / %1"
-
-#: src/pages/partitionpage.cpp:926
-msgid "Linux / %1"
-msgstr "Linux / %1"
 
 #: src/pages/partitionpage.cpp:950
 msgid ""
@@ -393,17 +340,17 @@ msgstr "chakra-escriptori"
 msgid "You must give at least one login name."
 msgstr "Heu de proporcionar almenys un nom d'inici de sessió."
 
-#: src/pages/usercreationpage.cpp:135
+#: src/pages/usercreationpage.cpp:125
+msgid "Root Passwords do not match..."
+msgstr "Les contrasenyes de root no coincideixen..."
+
+#: src/pages/usercreationpage.cpp:139
 msgid "Passwords cannot be empty."
 msgstr "La contrasenya no pot ser buida."
 
-#: src/pages/usercreationpage.cpp:139
+#: src/pages/usercreationpage.cpp:143
 msgid "Passwords do not match..."
 msgstr "Les contrasenyes no coincideixen..."
-
-#: src/pages/usercreationpage.cpp:143
-msgid "Root Passwords do not match..."
-msgstr "Les contrasenyes de root no coincideixen..."
 
 #: src/pages/usercreationpage.cpp:147
 msgid "Login names cannot be empty."
@@ -715,8 +662,7 @@ msgstr ""
 "no obstant això podeu configurar ara el nou sistema instal·lat.\n"
 "\n"
 "Si us plau, passeu per cada secció i configureu el sistema de la manera més "
-"adient "
-"conforme a les vostres necessitats."
+"adient conforme a les vostres necessitats."
 
 #. i18n: file: ui/pages/finish.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1038,7 +984,8 @@ msgstr ""
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
 "style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\">tindreu un sistema Chakra llest per a ésser usat</span></p>\n"
+"color:#eeeeee;\">tindreu un sistema Chakra llest per a ésser usat</span></"
+"p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
 "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
 "indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
@@ -1258,15 +1205,27 @@ msgid ""
 "mounted. No permanent changes to your hard drive will be made when you will "
 "press \"Next\""
 msgstr ""
-"Si us plau, seleccioneu un punt de muntatge per a les vostres particions. Heu "
-"de muntar almenys «/». No es farà cap canvi permanent al vostre disc fins que "
-"premeu «Següent»"
+"Si us plau, seleccioneu un punt de muntatge per a les vostres particions. "
+"Heu de muntar almenys «/». No es farà cap canvi permanent al vostre disc fins "
+"que premeu «Següent»"
 
 #. i18n: file: ui/pages/partition.ui:118
 #. i18n: ectx: property (text), widget (QLabel, typeLabel)
 #: rc.cpp:275
 msgid "Type"
 msgstr "Tipus"
+
+#. i18n: file: ui/pages/partition.ui:126
+#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
+#: rc.cpp:278
+msgid "Extended"
+msgstr "Ampliada"
+
+#. i18n: file: ui/pages/partition.ui:131
+#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
+#: rc.cpp:281
+msgid "Primary"
+msgstr "Primària"
 
 #. i18n: file: ui/pages/partition.ui:146
 #. i18n: ectx: property (text), widget (QLabel, filesystemLabel)
@@ -1544,15 +1503,15 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Creació usuaris</span></p></body>"
-"</"
-"html>"
+"size:22pt; font-weight:600; color:#ffffff;\">Creació usuaris</span></p></"
+"body></html>"
 
 #. i18n: file: ui/pages/usercreation.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:408
 msgid "Enter at least one login name and password."
-msgstr "Heu de proporcionar almenys un nom d'inici de sessió i una contrasenya."
+msgstr ""
+"Heu de proporcionar almenys un nom d'inici de sessió i una contrasenya."
 
 #. i18n: file: ui/pages/usercreation.ui:178
 #. i18n: ectx: property (toolTip), widget (QPushButton, addUser)
@@ -1656,3 +1615,32 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "manutortosa@gmail.com"
 
+#~ msgid "None"
+#~ msgstr "Cap"
+
+#~ msgid "Other..."
+#~ msgstr "Altre..."
+
+#~ msgid "You can only use each mountpoint once."
+#~ msgstr "Només podeu usar una vegada cada punt de muntatge."
+
+#~ msgid "Information"
+#~ msgstr "Informació"
+
+#~ msgid "New partition"
+#~ msgstr "Nova partició"
+
+#~ msgid "Unallocated space"
+#~ msgstr "Espai no assignat"
+
+#~ msgid "Linux / Extended"
+#~ msgstr "Linx / Ampliada"
+
+#~ msgid "Windows / %1"
+#~ msgstr "Windows / %1"
+
+#~ msgid "Apple / %1"
+#~ msgstr "Apple / %1"
+
+#~ msgid "Linux / %1"
+#~ msgstr "Linux / %1"

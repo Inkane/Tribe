@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2010-12-08 23:47+0100\n"
+"POT-Creation-Date: 2010-12-15 19:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,89 +52,89 @@ msgstr ""
 msgid "Please wait, configuring the new system ..."
 msgstr ""
 
-#: src/installationhandler.cpp:412
+#: src/installationhandler.cpp:415
 msgid "Error in Postinstall script. See log for more details"
 msgstr ""
 
-#: src/installationhandler.cpp:421
+#: src/installationhandler.cpp:424
 msgid "Creating user accounts ..."
 msgstr ""
 
-#: src/installationhandler.cpp:424
+#: src/installationhandler.cpp:427
 msgid "Configuring software management..."
 msgstr ""
 
-#: src/installationhandler.cpp:428
+#: src/installationhandler.cpp:431
 msgid "Removing unused packages..."
 msgstr ""
 
-#: src/installationhandler.cpp:432
+#: src/installationhandler.cpp:435
 msgid "Installing additional packages..."
 msgstr ""
 
-#: src/installationhandler.cpp:436
+#: src/installationhandler.cpp:439
 msgid "Configuring the display..."
 msgstr ""
 
-#: src/installationhandler.cpp:440
+#: src/installationhandler.cpp:443
 msgid "Downloading and installing localization packages..."
 msgstr ""
 
-#: src/installationhandler.cpp:444
+#: src/installationhandler.cpp:447
 msgid "Downloading and installing documentation packages..."
 msgstr ""
 
-#: src/installationhandler.cpp:448
+#: src/installationhandler.cpp:451
 msgid "Setting up localization..."
 msgstr ""
 
-#: src/installationhandler.cpp:452
+#: src/installationhandler.cpp:455
 msgid "Creating daemon configuration..."
 msgstr ""
 
-#: src/installationhandler.cpp:456
+#: src/installationhandler.cpp:459
 msgid "Creating network configuration..."
 msgstr ""
 
-#: src/installationhandler.cpp:460
+#: src/installationhandler.cpp:463
 msgid "Creating fstab..."
 msgstr ""
 
-#: src/installationhandler.cpp:467
+#: src/installationhandler.cpp:470
 msgid "Configuring hardware..."
 msgstr ""
 
-#: src/installationhandler.cpp:471
+#: src/installationhandler.cpp:474
 msgid "Creating initial ramdisk images..."
 msgstr ""
 
-#: src/installationhandler.cpp:475
+#: src/installationhandler.cpp:478
 msgid "Generating locales..."
 msgstr ""
 
-#: src/installationhandler.cpp:479
+#: src/installationhandler.cpp:482
 msgid "Removing unused localizations..."
 msgstr ""
 
-#: src/installationhandler.cpp:483
+#: src/installationhandler.cpp:486
 msgid "Removing unused drivers..."
 msgstr ""
 
-#: src/installationhandler.cpp:487
+#: src/installationhandler.cpp:490
 msgid "Finishing up..."
 msgstr ""
 
-#: src/installationhandler.cpp:491
+#: src/installationhandler.cpp:494
 msgid "Installation complete!"
 msgstr ""
 
-#: src/installationhandler.cpp:582
+#: src/installationhandler.cpp:585
 msgid ""
 "Tribe was not able to initialize needed directories. Something is very "
 "wrong..."
 msgstr ""
 
-#: src/installationhandler.cpp:606
+#: src/installationhandler.cpp:609
 msgid "Could not mount %1"
 msgstr ""
 
@@ -238,16 +238,8 @@ msgstr ""
 msgid "Accept license for: "
 msgstr ""
 
-#: src/pages/localepage.cpp:269
+#: src/pages/localepage.cpp:277
 msgid "You need to select a timezone"
-msgstr ""
-
-#: src/pages/partitionpage.cpp:58 src/pages/partitionpage.cpp:134
-msgid "None"
-msgstr ""
-
-#: src/pages/partitionpage.cpp:67 src/pages/partitionpage.cpp:89
-msgid "Other..."
 msgstr ""
 
 #: src/pages/partitionpage.cpp:95
@@ -260,14 +252,6 @@ msgstr ""
 
 #: src/pages/partitionpage.cpp:108
 msgid "Error"
-msgstr ""
-
-#: src/pages/partitionpage.cpp:130
-msgid "You can only use each mountpoint once."
-msgstr ""
-
-#: src/pages/partitionpage.cpp:131
-msgid "Information"
 msgstr ""
 
 #: src/pages/partitionpage.cpp:414
@@ -288,43 +272,6 @@ msgstr ""
 msgid ""
 "This operation will destroy all data on the selected volume.. Continue "
 "anyway?"
-msgstr ""
-
-#. i18n: file: ui/pages/partition.ui:126
-#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
-#: src/pages/partitionpage.cpp:572 src/pages/partitionpage.cpp:796
-#: src/pages/partitionpage.cpp:840 rc.cpp:278
-msgid "Extended"
-msgstr ""
-
-#. i18n: file: ui/pages/partition.ui:131
-#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
-#: src/pages/partitionpage.cpp:797 rc.cpp:281
-msgid "Primary"
-msgstr ""
-
-#: src/pages/partitionpage.cpp:897
-msgid "New partition"
-msgstr ""
-
-#: src/pages/partitionpage.cpp:902
-msgid "Unallocated space"
-msgstr ""
-
-#: src/pages/partitionpage.cpp:907
-msgid "Linux / Extended"
-msgstr ""
-
-#: src/pages/partitionpage.cpp:914
-msgid "Windows / %1"
-msgstr ""
-
-#: src/pages/partitionpage.cpp:920
-msgid "Apple / %1"
-msgstr ""
-
-#: src/pages/partitionpage.cpp:926
-msgid "Linux / %1"
 msgstr ""
 
 #: src/pages/partitionpage.cpp:950
@@ -373,16 +320,16 @@ msgstr ""
 msgid "You must give at least one login name."
 msgstr ""
 
-#: src/pages/usercreationpage.cpp:135
-msgid "Passwords cannot be empty."
+#: src/pages/usercreationpage.cpp:125
+msgid "Root Passwords do not match..."
 msgstr ""
 
 #: src/pages/usercreationpage.cpp:139
-msgid "Passwords do not match..."
+msgid "Passwords cannot be empty."
 msgstr ""
 
 #: src/pages/usercreationpage.cpp:143
-msgid "Root Passwords do not match..."
+msgid "Passwords do not match..."
 msgstr ""
 
 #: src/pages/usercreationpage.cpp:147
@@ -1028,6 +975,18 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, typeLabel)
 #: rc.cpp:275
 msgid "Type"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:126
+#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
+#: rc.cpp:278
+msgid "Extended"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:131
+#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
+#: rc.cpp:281
+msgid "Primary"
 msgstr ""
 
 #. i18n: file: ui/pages/partition.ui:146

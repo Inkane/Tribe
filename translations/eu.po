@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2010-12-08 23:47+0100\n"
+"POT-Creation-Date: 2010-12-15 19:47+0100\n"
 "PO-Revision-Date: 2010-02-09 18:49+0100\n"
 "Last-Translator: marcos <marcos@euskalgnu.org>\n"
 "Language-Team: Euskara <itzulpena@euskalgnu.org>\n"
@@ -56,100 +56,100 @@ msgstr "Helburua hasieratzen..."
 msgid "Please wait, configuring the new system ..."
 msgstr "Mesedez itxaron, Postinstall konfiguratzen eta abiarazten..."
 
-#: src/installationhandler.cpp:412
+#: src/installationhandler.cpp:415
 msgid "Error in Postinstall script. See log for more details"
 msgstr ""
 "Errorea Postinstall script-ean. Begiratu egunkaria fitxategian xehetasun "
 "gehiagorako"
 
-#: src/installationhandler.cpp:421
+#: src/installationhandler.cpp:424
 #, fuzzy
 msgid "Creating user accounts ..."
 msgstr "Konfigurazioak sortzen..."
 
-#: src/installationhandler.cpp:424
+#: src/installationhandler.cpp:427
 #, fuzzy
 msgid "Configuring software management..."
 msgstr "Hardware konfiguratzen..."
 
-#: src/installationhandler.cpp:428
+#: src/installationhandler.cpp:431
 #, fuzzy
 msgid "Removing unused packages..."
 msgstr "Alferrikako paketeak kentzen..."
 
-#: src/installationhandler.cpp:432
+#: src/installationhandler.cpp:435
 msgid "Installing additional packages..."
 msgstr "Pakete gehigarriak instalatzen..."
 
-#: src/installationhandler.cpp:436
+#: src/installationhandler.cpp:439
 #, fuzzy
 msgid "Configuring the display..."
 msgstr "Hardware konfiguratzen..."
 
-#: src/installationhandler.cpp:440
+#: src/installationhandler.cpp:443
 #, fuzzy
 msgid "Downloading and installing localization packages..."
 msgstr ""
 "Lokalizazio paketeak deskargatzen eta instalatzen, honek apur bat beharko "
 "du..."
 
-#: src/installationhandler.cpp:444
+#: src/installationhandler.cpp:447
 #, fuzzy
 msgid "Downloading and installing documentation packages..."
 msgstr "Deskargatu eta instalatu dokumentazio paketeak"
 
-#: src/installationhandler.cpp:448
+#: src/installationhandler.cpp:451
 msgid "Setting up localization..."
 msgstr "Lokalizazioa konfiguratzen..."
 
-#: src/installationhandler.cpp:452
+#: src/installationhandler.cpp:455
 msgid "Creating daemon configuration..."
 msgstr "Deabru konfigurazioa sortzen..."
 
-#: src/installationhandler.cpp:456
+#: src/installationhandler.cpp:459
 msgid "Creating network configuration..."
 msgstr "Sare konfigurazio sortzen..."
 
-#: src/installationhandler.cpp:460
+#: src/installationhandler.cpp:463
 msgid "Creating fstab..."
 msgstr "Fstab sortzen..."
 
-#: src/installationhandler.cpp:467
+#: src/installationhandler.cpp:470
 msgid "Configuring hardware..."
 msgstr "Hardware konfiguratzen..."
 
-#: src/installationhandler.cpp:471
+#: src/installationhandler.cpp:474
 #, fuzzy
 msgid "Creating initial ramdisk images..."
 msgstr ""
 "Hasierako ramdisk irudiak sortzen. Honek denbora luzea har dezake, adi "
 "egon..."
 
-#: src/installationhandler.cpp:475
+#: src/installationhandler.cpp:478
 #, fuzzy
 msgid "Generating locales..."
 msgstr "Locale-ak bersortzen..."
 
-#: src/installationhandler.cpp:479
+#: src/installationhandler.cpp:482
 #, fuzzy
 msgid "Removing unused localizations..."
 msgstr "Alferrikako lokalizazioak kentzen..."
 
-#: src/installationhandler.cpp:483
+#: src/installationhandler.cpp:486
 #, fuzzy
 msgid "Removing unused drivers..."
 msgstr "Alferrikako kontrolatzaileak kentzen..."
 
-#: src/installationhandler.cpp:487
+#: src/installationhandler.cpp:490
 #, fuzzy
 msgid "Finishing up..."
 msgstr "Instalazioa amaitzen..."
 
-#: src/installationhandler.cpp:491
+#: src/installationhandler.cpp:494
 msgid "Installation complete!"
 msgstr "Instalazioa burutu da!"
 
-#: src/installationhandler.cpp:582
+#: src/installationhandler.cpp:585
 #, fuzzy
 msgid ""
 "Tribe was not able to initialize needed directories. Something is very "
@@ -158,7 +158,7 @@ msgstr ""
 "Tribek ezin izan du beharreko direktorioak hasieratu. Ziur aski ez duzu "
 "baimen nahikorik, berhasi Tribe root gisa."
 
-#: src/installationhandler.cpp:606
+#: src/installationhandler.cpp:609
 msgid "Could not mount %1"
 msgstr "Eziin muntatu %1"
 
@@ -272,19 +272,10 @@ msgstr "NVidia kontrolatzaile jabeduna"
 msgid "Accept license for: "
 msgstr "Onartu lizentzi honako honentzako:"
 
-#: src/pages/localepage.cpp:269
+#: src/pages/localepage.cpp:277
 #, fuzzy
 msgid "You need to select a timezone"
 msgstr "Ordu-zona bat aukeratu behar duzu."
-
-#: src/pages/partitionpage.cpp:58 src/pages/partitionpage.cpp:134
-#, fuzzy
-msgid "None"
-msgstr "Ez"
-
-#: src/pages/partitionpage.cpp:67 src/pages/partitionpage.cpp:89
-msgid "Other..."
-msgstr ""
 
 #: src/pages/partitionpage.cpp:95
 msgid "Please enter a custom mountpoint"
@@ -297,14 +288,6 @@ msgstr ""
 #: src/pages/partitionpage.cpp:108
 msgid "Error"
 msgstr "Errorea"
-
-#: src/pages/partitionpage.cpp:130
-msgid "You can only use each mountpoint once."
-msgstr ""
-
-#: src/pages/partitionpage.cpp:131
-msgid "Information"
-msgstr ""
 
 #: src/pages/partitionpage.cpp:414
 msgid "Loading partitions..."
@@ -324,44 +307,6 @@ msgstr ""
 msgid ""
 "This operation will destroy all data on the selected volume.. Continue "
 "anyway?"
-msgstr ""
-
-#. i18n: file: ui/pages/partition.ui:126
-#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
-#: src/pages/partitionpage.cpp:572 src/pages/partitionpage.cpp:796
-#: src/pages/partitionpage.cpp:840 rc.cpp:278
-msgid "Extended"
-msgstr ""
-
-#. i18n: file: ui/pages/partition.ui:131
-#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
-#: src/pages/partitionpage.cpp:797 rc.cpp:281
-msgid "Primary"
-msgstr ""
-
-#: src/pages/partitionpage.cpp:897
-#, fuzzy
-msgid "New partition"
-msgstr "Zatiketa"
-
-#: src/pages/partitionpage.cpp:902
-msgid "Unallocated space"
-msgstr ""
-
-#: src/pages/partitionpage.cpp:907
-msgid "Linux / Extended"
-msgstr ""
-
-#: src/pages/partitionpage.cpp:914
-msgid "Windows / %1"
-msgstr ""
-
-#: src/pages/partitionpage.cpp:920
-msgid "Apple / %1"
-msgstr ""
-
-#: src/pages/partitionpage.cpp:926
-msgid "Linux / %1"
 msgstr ""
 
 #: src/pages/partitionpage.cpp:950
@@ -413,19 +358,19 @@ msgstr "chakra-mahaigaina"
 msgid "You must give at least one login name."
 msgstr ""
 
-#: src/pages/usercreationpage.cpp:135
+#: src/pages/usercreationpage.cpp:125
+#, fuzzy
+msgid "Root Passwords do not match..."
+msgstr "Pasahitzak ez datoz ba"
+
+#: src/pages/usercreationpage.cpp:139
 #, fuzzy
 msgid "Passwords cannot be empty."
 msgstr "Pasahitza hutsik dago"
 
-#: src/pages/usercreationpage.cpp:139
-#, fuzzy
-msgid "Passwords do not match..."
-msgstr "Pasahitzak ez datoz ba"
-
 #: src/pages/usercreationpage.cpp:143
 #, fuzzy
-msgid "Root Passwords do not match..."
+msgid "Passwords do not match..."
 msgstr "Pasahitzak ez datoz ba"
 
 #: src/pages/usercreationpage.cpp:147
@@ -1283,6 +1228,18 @@ msgstr ""
 msgid "Type"
 msgstr ""
 
+#. i18n: file: ui/pages/partition.ui:126
+#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
+#: rc.cpp:278
+msgid "Extended"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:131
+#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
+#: rc.cpp:281
+msgid "Primary"
+msgstr ""
+
 #. i18n: file: ui/pages/partition.ui:146
 #. i18n: ectx: property (text), widget (QLabel, filesystemLabel)
 #: rc.cpp:284
@@ -1678,6 +1635,14 @@ msgstr "Marcos"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "marcos@euskalgnu.org"
+
+#, fuzzy
+#~ msgid "None"
+#~ msgstr "Ez"
+
+#, fuzzy
+#~ msgid "New partition"
+#~ msgstr "Zatiketa"
 
 #~ msgid "Setting up Tribe..."
 #~ msgstr "Tribe konfiguratzen... "

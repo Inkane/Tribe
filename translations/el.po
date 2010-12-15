@@ -1,43 +1,43 @@
 # Greek translation of tribe installer.
 # Copyright (C) 2009 The Chakra Team
 # This file is distributed under the same license as the Tribe package.
-# Socrates Tzagiousis <antisocrates@gmail.com>, 2009.
 #
-#, fuzzy
+# Socrates Tzagiousis <antisocrates@gmail.com>, 2009, 2010.
+# Neo Kolokotronis <tetris4@gmail.com> 2010
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2010-12-08 23:47+0100\n"
-"PO-Revision-Date: 2009-12-18 18:41+0200\n"
-"Last-Translator: Socrates Tzagiousis <antisocrates@gmail.com>\n"
-"Language-Team: Greek-Translations <antisocrates@gmail.com>\n"
+"POT-Creation-Date: 2010-12-15 19:47+0100\n"
+"PO-Revision-Date: 2010-12-15 01:38+0200\n"
+"Last-Translator: \n"
+"Language-Team: American English <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: none\n"
 "X-Language: el_GR\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/installationhandler.cpp:86
 msgid "Tribe was not able to initialize needed path: "
-msgstr ""
+msgstr "To Tribe δεν μπόρεσε να αρχικοποιήσει την αναγκαία διαδρομή:"
 
 #: src/installationhandler.cpp:86
 msgid " , please resolve the issue, and try again."
-msgstr ""
+msgstr ", παρακαλώ επιλύστε το πρόβλημα και ξαναδοκιμάστε."
 
 #: src/installationhandler.cpp:148
 msgid "Installing the system ..."
 msgstr "Εγκαθίσταται το σύστημα..."
 
 #: src/installationhandler.cpp:176
-#, fuzzy
 msgid "Mounting partitions..."
-msgstr "Γίνεται σύνδεση του %1 στο %2..."
+msgstr "Συναρμολόγηση κατατμήσεων..."
 
 #: src/installationhandler.cpp:184
-#, fuzzy
 msgid "Preparing installation..."
-msgstr "Ολοκλήρωση της εγκατάστασης..."
+msgstr "Ετοιμασία εγκατάστασης..."
 
 #: src/installationhandler.cpp:204
 msgid "Error copying files"
@@ -52,116 +52,98 @@ msgid "Initializing target ..."
 msgstr "Γίνεται εκκίνηση του αντικειμένου..."
 
 #: src/installationhandler.cpp:336
-#, fuzzy
 msgid "Please wait, configuring the new system ..."
-msgstr "Παρακαλώ περιμένετε, ρυμίζεται και ξεκινά το η εφαρμογή PostInstall..."
+msgstr "Παρακαλώ περιμένετε, γίνεται ρύθμιση του νέου συστήματος.."
 
-#: src/installationhandler.cpp:412
+#: src/installationhandler.cpp:415
 msgid "Error in Postinstall script. See log for more details"
 msgstr ""
-"Σφάλμα στο Postinstall πρωτότυπο. Δείτε τα καταγεγραμμένα αρχέιαγια "
+"Σφάλμα στο Postinstall πρωτότυπο. Δείτε τα καταγεγραμμένα αρχεία για "
 "πληροφορίες"
 
-#: src/installationhandler.cpp:421
-#, fuzzy
-msgid "Creating user accounts ..."
-msgstr "Δημιουργία ρυθμίσεων..."
-
 #: src/installationhandler.cpp:424
-#, fuzzy
+msgid "Creating user accounts ..."
+msgstr "Δημιουργία λογαριασμών χρήστη..."
+
+#: src/installationhandler.cpp:427
 msgid "Configuring software management..."
-msgstr "Ρύθμιση του υλικού..."
+msgstr "Ρύθμιση διαχείρισης λογισμικού..."
 
-#: src/installationhandler.cpp:428
-#, fuzzy
+#: src/installationhandler.cpp:431
 msgid "Removing unused packages..."
-msgstr "Αφαίρεση των περιττών πακέτων..."
+msgstr "Διαγραφή αχρησιμοποίητων πακέτων..."
 
-#: src/installationhandler.cpp:432
+#: src/installationhandler.cpp:435
 msgid "Installing additional packages..."
 msgstr "Εγκατάσταση επιπλέον πακέτων..."
 
-#: src/installationhandler.cpp:436
-#, fuzzy
+#: src/installationhandler.cpp:439
 msgid "Configuring the display..."
-msgstr "Ρύθμιση του υλικού..."
+msgstr "Ρύθμιση οθόνης..."
 
-#: src/installationhandler.cpp:440
-#, fuzzy
+#: src/installationhandler.cpp:443
 msgid "Downloading and installing localization packages..."
-msgstr ""
-"Γίνεται κατέβασμα και εγκατάσταση των πακέτων τοπικών ρυθμίσων, αυτο ίσως "
-"διαρκέσει λίγο..."
+msgstr "Γίνεται κατέβασμα και εγκατάσταση των πακέτων τοπικών ρυθμίσων.."
 
-#: src/installationhandler.cpp:444
-#, fuzzy
+#: src/installationhandler.cpp:447
 msgid "Downloading and installing documentation packages..."
-msgstr "Κατεβάσμα και εγκατάσταση πακέτων εγχειριδίων"
+msgstr "Κατεβάσμα και εγκατάσταση πακέτων εγχειριδίων..."
 
-#: src/installationhandler.cpp:448
+#: src/installationhandler.cpp:451
 msgid "Setting up localization..."
 msgstr "Γίνεται ρύθμιση τοπικών παραμέτρων..."
 
-#: src/installationhandler.cpp:452
+#: src/installationhandler.cpp:455
 msgid "Creating daemon configuration..."
 msgstr "Δημιουργούνται οι ρυθμίσεις υπηρεσιών..."
 
-#: src/installationhandler.cpp:456
+#: src/installationhandler.cpp:459
 msgid "Creating network configuration..."
 msgstr "Δημιουργούνται ρυθμίσεις δυκτίου..."
 
-#: src/installationhandler.cpp:460
+#: src/installationhandler.cpp:463
 msgid "Creating fstab..."
 msgstr "Δημιουργείται το αρχείο fstab..."
 
-#: src/installationhandler.cpp:467
+#: src/installationhandler.cpp:470
 msgid "Configuring hardware..."
 msgstr "Ρύθμιση του υλικού..."
 
-#: src/installationhandler.cpp:471
-#, fuzzy
+#: src/installationhandler.cpp:474
 msgid "Creating initial ramdisk images..."
-msgstr ""
-"Δημιουργούνται οι αρχικές εικόνες ramdisk. Αυτό ίσως διαρκέσει αρκετή ώρα, "
-"περιμένετε..."
+msgstr "Δημιουργία αρχικών εικόνων ramdisk..."
 
-#: src/installationhandler.cpp:475
-#, fuzzy
+#: src/installationhandler.cpp:478
 msgid "Generating locales..."
-msgstr "Παράγονται ρυθμίσης τοποθεσίας..."
+msgstr "Παραγωγή ρυθμίσεων τοποθεσίας..."
 
-#: src/installationhandler.cpp:479
-#, fuzzy
+#: src/installationhandler.cpp:482
 msgid "Removing unused localizations..."
-msgstr "Αφαιρούνται περιττές τοπικές ρυθμίσεις..."
+msgstr "Διαγραφή αχρησιμοποίητων ρυθμίσεων τοπικών..."
 
-#: src/installationhandler.cpp:483
-#, fuzzy
+#: src/installationhandler.cpp:486
 msgid "Removing unused drivers..."
-msgstr "Αφαιρούνται περιττοί οδηγοί συσκευών..."
+msgstr "Διαγραφή αχρησιμοποίητων οδηγών..."
 
-#: src/installationhandler.cpp:487
-#, fuzzy
+#: src/installationhandler.cpp:490
 msgid "Finishing up..."
 msgstr "Ολοκλήρωση της εγκατάστασης..."
 
-#: src/installationhandler.cpp:491
+#: src/installationhandler.cpp:494
 msgid "Installation complete!"
 msgstr "Η εγκατάσταση ολοκληρώθηκε!"
 
-#: src/installationhandler.cpp:582
-#, fuzzy
+#: src/installationhandler.cpp:585
 msgid ""
 "Tribe was not able to initialize needed directories. Something is very "
 "wrong..."
 msgstr ""
-"Το Tribe δεν κατάφερε να ανοίξει τους ζητούμενους καταλόγους. Πιθανό να να "
-"μηνδιαθέτετε αρκετά δικαιώματα, παρακαλώ επανεκκινήστε το Tribe σαν root "
-"χρήστης."
+"To Tribe δεν μπόρεσε να αρχικοποιήσει τους αναγκαίους καταλόγους. Κάτι πήγε "
+"πολύ λάθος.."
 
-#: src/installationhandler.cpp:606
+#: src/installationhandler.cpp:609
 msgid "Could not mount %1"
-msgstr "Δεν μπόρεσε να συνδεθεί %1"
+msgstr "Δεν μπόρεσε να προσαρτηθεί το %1"
 
 #: src/installationhandler.h:167
 msgid "No Further details given"
@@ -174,14 +156,12 @@ msgid "Tribe"
 msgstr "Tribe"
 
 #: src/main.cpp:45
-#, fuzzy
 msgid "Graphical Installer for Chakra"
-msgstr "Πρόγραμμα εγκατάστασης LiveCD του Chakra"
+msgstr "Πρόγραμμα γραφικής εγκατάστασης Chakra"
 
 #: src/main.cpp:46
-#, fuzzy
 msgid "(c) 2008 - 2010 the Chakra Development Team"
-msgstr "(c) 2008 η Ομάδα ανάπτυξης του Chakra"
+msgstr "(c) 2008 η oμάδα ανάπτυξης Chakra"
 
 #: src/main.cpp:46
 msgid "chakra@chakra-project.org"
@@ -209,24 +189,23 @@ msgstr "Jan Mette"
 
 #: src/main.cpp:50
 msgid "PostInstall Backend and Artwork"
-msgstr "Σχέδια και Backend του PostInstall"
+msgstr "Σχέδια και Σύστημα Υποστήριξης της Μετα-Εγκατάστασης"
 
 #: src/main.cpp:51
 msgid "Phil Miller"
-msgstr ""
+msgstr "Phil Miller"
 
 #: src/main.cpp:51 src/main.cpp:52
-#, fuzzy
 msgid "PostInstall Backend"
-msgstr "Σχέδια και Backend του PostInstall"
+msgstr "Σύστημα υποστήριξης της μετα-εγκατάστασης"
 
 #: src/main.cpp:52
 msgid "Manuel Tortosa"
-msgstr ""
+msgstr "Manuel Tortosa"
 
 #: src/main.cpp:53
 msgid "Drake Justice"
-msgstr ""
+msgstr "Drake Justice"
 
 #: src/main.cpp:67
 msgid ""
@@ -236,7 +215,7 @@ msgid ""
 msgstr ""
 "Φαίνεται πως o προσαρμογέας ρεύματος έχει αποσυνδεθεί. Η εγκατάσταση είναι "
 "μιαευαίσθητη και χρονοβόρα διαδικασία, επομένως συνιστάται εντόνως να "
-"συνδέσεται το PC σαςστο ρεύμα ώστε να ελαχιστοποιήσεται πιθανούς κινδύνους"
+"συνδέσεται το PC σαςστο ρεύμα ώστε να ελαχιστοποιήσετε πιθανούς κινδύνους"
 
 #: src/mainwindow.cpp:101
 msgid "Do you really want to abort the installation?"
@@ -258,9 +237,8 @@ msgid "Installing bootloader..."
 msgstr "Εγκατάσταση του bootloader..."
 
 #: src/pages/bootloaderpage.cpp:82
-#, fuzzy
 msgid "Creating OS list..."
-msgstr "Δημιουργείται το αρχείο fstab..."
+msgstr "Δημιουργία λίστας Λειτουργικών Συστημάτων..."
 
 #: src/pages/licensepage.cpp:53
 msgid "Proprietary ATI Driver"
@@ -274,117 +252,70 @@ msgstr "Iδιόκτητος οδηγός συσκευών NVidia"
 msgid "Accept license for: "
 msgstr "Αποδοχή αδείας για:"
 
-#: src/pages/localepage.cpp:269
-#, fuzzy
+#: src/pages/localepage.cpp:277
 msgid "You need to select a timezone"
-msgstr "Πρέπει να επιλέξεται μια ζώνη ώρας"
-
-#: src/pages/partitionpage.cpp:58 src/pages/partitionpage.cpp:134
-#, fuzzy
-msgid "None"
-msgstr "Όχι"
-
-#: src/pages/partitionpage.cpp:67 src/pages/partitionpage.cpp:89
-msgid "Other..."
-msgstr ""
+msgstr "Πρέπει να επιλέξετε μια ζώνη ώρας"
 
 #: src/pages/partitionpage.cpp:95
 msgid "Please enter a custom mountpoint"
-msgstr ""
+msgstr "Παρακαλώ εισάγετε ένα προσαρμοσμένο σημείο προσάρτησης"
 
 #: src/pages/partitionpage.cpp:107
 msgid "The mount point must start with /"
-msgstr ""
+msgstr "Το σημείο προσάρτισης πρέπει να αρχίζει με /"
 
 #: src/pages/partitionpage.cpp:108
 msgid "Error"
 msgstr "Σφάλμα"
 
-#: src/pages/partitionpage.cpp:130
-msgid "You can only use each mountpoint once."
-msgstr ""
-
-#: src/pages/partitionpage.cpp:131
-msgid "Information"
-msgstr ""
-
 #: src/pages/partitionpage.cpp:414
 msgid "Loading partitions..."
-msgstr ""
+msgstr "Φόρτωση κατατμήσεων"
 
 #: src/pages/partitionpage.cpp:518
 msgid ""
 "The selected volume already has a partition table.. Overwrite it? (this will "
 "destroy all data on the device)"
 msgstr ""
+"Ο επιλεγμένος τόμος έχει ήδη ένα πίνακα κατατμήσης...Να αντικατασταθεί; "
+"(αυτό θα διαγράψει όλα τα δεδομένα στη συσκευή) "
 
 #: src/pages/partitionpage.cpp:518 src/pages/partitionpage.cpp:525
 msgid "Warning"
-msgstr ""
+msgstr "Προειδοποίηση"
 
 #: src/pages/partitionpage.cpp:525
 msgid ""
 "This operation will destroy all data on the selected volume.. Continue "
 "anyway?"
 msgstr ""
-
-#. i18n: file: ui/pages/partition.ui:126
-#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
-#: src/pages/partitionpage.cpp:572 src/pages/partitionpage.cpp:796
-#: src/pages/partitionpage.cpp:840 rc.cpp:278
-msgid "Extended"
-msgstr ""
-
-#. i18n: file: ui/pages/partition.ui:131
-#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
-#: src/pages/partitionpage.cpp:797 rc.cpp:281
-msgid "Primary"
-msgstr ""
-
-#: src/pages/partitionpage.cpp:897
-#, fuzzy
-msgid "New partition"
-msgstr "Διαμέρισμα"
-
-#: src/pages/partitionpage.cpp:902
-msgid "Unallocated space"
-msgstr ""
-
-#: src/pages/partitionpage.cpp:907
-msgid "Linux / Extended"
-msgstr ""
-
-#: src/pages/partitionpage.cpp:914
-msgid "Windows / %1"
-msgstr ""
-
-#: src/pages/partitionpage.cpp:920
-msgid "Apple / %1"
-msgstr ""
-
-#: src/pages/partitionpage.cpp:926
-msgid "Linux / %1"
-msgstr ""
+"Η πράξη αυτή θα καταστρέψει όλα τα δεδομένα στον επιλεγμένο τόμο.. Συνέχεια "
+"παρ' αυτά;"
 
 #: src/pages/partitionpage.cpp:950
 msgid ""
 "The partition you have chosen to mount as '/' is too small. It should have a "
 "capacity of at least %1 for a successful installation."
 msgstr ""
+"Η κατάτμηση που επιλέξατε  να προσαρτήσετε σαν '/' είναι πολύ μικρή. Θα "
+"πρέπει να έχει χωρητικότητα τουλάχιστο %1 για μια επιτυχημένη εγκατάσταση."
 
 #: src/pages/partitionpage.cpp:953 src/pages/partitionpage.cpp:968
 msgid "Target's capacity not sufficient"
-msgstr ""
+msgstr "Η χωριτηκότητα του στόχου δεν είναι αρκετή"
 
 #: src/pages/partitionpage.cpp:966
 msgid ""
 "You have selected '%1' as a mountpoint, which is not valid. A valid "
 "mountpoint always starts with '/' and represents a directory on disk"
 msgstr ""
+"Έχετε επιλέξει '%1' σαν σημείο προσάρτησης, το οποίο δεν είναι έγκυρο. Ένα "
+"έγκυρο σημείο προσάρτησης πάντα ξεκινά με '/' και αντιπροσωπεύει ένα "
+"κατάλογο στο δίσκο."
 
 #: src/pages/readyinstallpage.cpp:77
 msgid "New partition (%1) on %2"
-msgstr ""
+msgstr "Νέα κατάτμηση  (%1) στο %2"
 
 #: src/pages/readyinstallpage.cpp:80
 msgid "%1 will be used as %2"
@@ -392,16 +323,15 @@ msgstr "Το %1 θα χρησιμοποιηθεί σαν το %2"
 
 #: src/pages/readyinstallpage.cpp:100
 msgid "Continue"
-msgstr ""
+msgstr "Συνέχεια"
 
 #: src/pages/readyinstallpage.cpp:104
-#, fuzzy
 msgid ""
 "The following partitions appear to be mounted: %1. To let the installation "
 "happen correctly, Tribe will now unmount them."
 msgstr ""
-"Τα ακόλουθα διαμερίσματα φαίνεται πως έχουν συνδεθεί: %1. Για να "
-"πραγματοποιηθείη εγκατάσταση σωστά, το Tribe θα τα αποσυνδέσει τώρα."
+"Τα ακόλουθα διαμερίσματα φαίνεται να έχουν προσαρτηθεί: %1. Για να "
+"πραγματοποιηθεί η εγκατάσταση σωστά, το Tribe θα τα αποπροσαρτήσει τώρα."
 
 #: src/pages/settingspage.cpp:92
 msgid "chakra-laptop"
@@ -413,44 +343,39 @@ msgstr "chakra-desktop"
 
 #: src/pages/usercreationpage.cpp:121
 msgid "You must give at least one login name."
-msgstr ""
+msgstr "Πρέπει να επιλέξετε τουλάχιστο ένα όνομα σύνδεσης."
 
-#: src/pages/usercreationpage.cpp:135
-#, fuzzy
-msgid "Passwords cannot be empty."
-msgstr "Ο κωδικός είναι κενός"
+#: src/pages/usercreationpage.cpp:125
+msgid "Root Passwords do not match..."
+msgstr "Οι κωδικοί  Υπερχρήστη δεν ταιρίαζουν"
 
 #: src/pages/usercreationpage.cpp:139
-#, fuzzy
-msgid "Passwords do not match..."
-msgstr "Οι κωδικοί δεν ταιρίαζουν"
+msgid "Passwords cannot be empty."
+msgstr "Ο κωδικός δεν μπορεί να είναι κενός."
 
 #: src/pages/usercreationpage.cpp:143
-#, fuzzy
-msgid "Root Passwords do not match..."
-msgstr "Οι κωδικοί δεν ταιρίαζουν"
+msgid "Passwords do not match..."
+msgstr "Οι κωδικοί δεν ταιριάζουν..."
 
 #: src/pages/usercreationpage.cpp:147
 msgid "Login names cannot be empty."
-msgstr ""
+msgstr "Τα ονόματα σύνδεσης δεν μπορεί να είναι κενά"
 
 #: src/pmhandler.cpp:360
-#, fuzzy
 msgid "Preparing hard drive for installation..."
-msgstr "Ολοκλήρωση της εγκατάστασης..."
+msgstr "Ετοιμασία σκληρού δίσκου για εγκατάσταση"
 
 #: src/pmhandler.cpp:381
-#, fuzzy
 msgid "Analyzing disk..."
-msgstr "Πραγματοποιείται η εγκατάσταση..."
+msgstr "Ανάλυση δίσκου.."
 
 #: src/pmhandler.cpp:445
 msgid "There was an error while formatting partitions"
-msgstr ""
+msgstr "Υπήρξε ένα σφάλμα κατά την μορφοποίηση των κατατμήσεων"
 
 #: src/widgets/avatardialog.cpp:52
 msgid "Custom"
-msgstr ""
+msgstr "Προσαρμοσμένο"
 
 #. i18n: file: ui/pages/base.ui:172
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -539,9 +464,8 @@ msgstr ""
 #. i18n: file: ui/pages/base.ui:334
 #. i18n: ectx: property (text), widget (QLabel, label_15)
 #: rc.cpp:35
-#, fuzzy
 msgid "Create Users"
-msgstr "Δημιουργία χρήστη"
+msgstr "Δημιουργία χρηστών"
 
 #. i18n: file: ui/pages/base.ui:390
 #. i18n: ectx: property (text), widget (QLabel, label_11)
@@ -611,7 +535,7 @@ msgstr "Bootloader"
 #. i18n: ectx: property (text), widget (QLabel, label_16)
 #: rc.cpp:58
 msgid "Reboot / Enjoy"
-msgstr ""
+msgstr "Επανεκκίνηση / Απολαύστε"
 
 #. i18n: file: ui/pages/base.ui:609
 #. i18n: ectx: property (text), widget (QPushButton, abortButton)
@@ -664,14 +588,13 @@ msgstr ""
 #. i18n: file: ui/pages/bootloader.ui:58
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:77
-#, fuzzy
 msgid ""
 "You can now install GRUB as your main bootloader.\n"
 "\n"
 "If you are unsure where you should install the bootloader to, \n"
 "just leave the default value (hd0)."
 msgstr ""
-"Μπορείται τώρα να εγκαταστήσετε τον GRUB ως τον κύριο bootloader σας.\n"
+"Μπορείτε τώρα να εγκαταστήσετε τον GRUB ως τον κύριο bootloader σας.\n"
 "\n"
 "Εάν δεν είστε βέβαιοι που να εγκαταστήσετε τον bootloader, απλα αφήστε την "
 "προεπιλεγμένη τιμή (hd0)."
@@ -680,7 +603,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, checkBox)
 #: rc.cpp:83
 msgid "Install Bootloader"
-msgstr "Εγκατάσταση του Bootloader"
+msgstr "Εγκατάσταση Προγράμματος Εκκίνησης"
 
 #. i18n: file: ui/pages/bootloader.ui:89
 #. i18n: ectx: property (text), widget (QPushButton, pushButton)
@@ -733,7 +656,6 @@ msgstr ""
 #. i18n: file: ui/pages/configuration.ui:50
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:102
-#, fuzzy
 msgid ""
 "Although the installer has created a usable default configuration suitable "
 "for most users, you can now configure your newly installed system.\n"
@@ -741,15 +663,15 @@ msgid ""
 "Please take some time to step through each section and configure your system "
 "the way you want it."
 msgstr ""
-"Aν και το πρόγραμμα εγκατάστασης δημιούργησε ενα προεπιλεγμένο σύστημα "
-"κατάλληλο για τους περισσότερους χρήστες,μπορείται τώρα να το τροποποιήσετε. "
-"Παρακαλώ διαθέστε μερικό απο τον χρονο σας σε κάθε τομέα ώστε να "
-"παραμετροποιήσετε το συστήμα σας όπως το θέλετε."
+"Aν και το πρόγραμμα εγκατάστασης δημιούργησε μια προεπιλεγμένη "
+"ρύθμισηκατάλληλη για τους περισσότερους χρήστες, μπορείτε τώρα να "
+"τροποποιήσετε το νέο εγκατεστημένο σας σύστημα. Παρακαλώ διαθέστε μερικό απο "
+"τον χρονο σας σε κάθε τομέα ώστε να παραμετροποιήσετε το συστήμα σας όπως το "
+"θέλετε."
 
 #. i18n: file: ui/pages/finish.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:107
-#, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -773,12 +695,11 @@ msgstr ""
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
 "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Η εγκατάσταση ολοκληρώθηκε !</span></p></body></html>"
+"#ffffff;\">H Εγκατάσταση Ολοκληρώθηκε!</span></p></body></html>"
 
 #. i18n: file: ui/pages/finish.ui:68
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:114
-#, fuzzy
 msgid ""
 "Congratulations, the installation has been completed!\n"
 "\n"
@@ -801,13 +722,13 @@ msgstr ""
 "είδατε όσο εμείς απολάυσαμε τη δημιουργία του.\n"
 "\n"
 "Μπορείτε τωρα να κανετε επανεκκίνηση και χρησιμοποιήσετε το νέο σύστημα ή να "
-"συνεχίσετε να χρησιμοποιείται το LiveCD.\n"
-"Σε περίπτωση που επιθυμείτε να ελέγξετε τα αρχέια καταχώρησης της "
+"συνεχίσετε να χρησιμοποιείτε το LiveCD.\n"
+"Σε περίπτωση που επιθυμείτε να ελέγξετε τα αρχεια καταχώρησης της "
 "εγκατάστασης, κοιτάξετε στο /tmp στο live σύστημα ή στο /var/log στο "
 "εγκατεστημένο σύστημα.\n"
 "\n"
-"Ευχαριστούμε που χρησιμοποιείσατε το Chakra, επικοινωνήστε μαζί μας στο "
-"φόρουμ, μοιραστείτε απόψεις, συμβουλέψτε μας;\n"
+"Ευχαριστούμε που χρησιμοποιησατε το Chakra, επικοινωνήστε μαζί μας στο "
+"φόρουμ, μοιραστείτε απόψεις, συμβουλέψτε μας.\n"
 "Ή πιο απλά, συμμετέχετε ενεργά! (http://chakra-project.org)\n"
 "\n"
 "Καλή διασκέδαση!\n"
@@ -987,7 +908,6 @@ msgstr "Εισαγωγή Tribe"
 #. i18n: file: ui/pages/intro.ui:105
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:191
-#, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1051,50 +971,60 @@ msgstr ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:12pt; font-"
+"weight:400; font-style:normal;\">\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-size:14pt; color:#eeeeee;\">Καλοσήρθατε στην εγκατάσταση του "
-"Chakra!</span></p>\n"
+"style=\" font-family:'Bitstream Vera Sans'; color:#eeeeee;\">Καλωσήρθατε "
+"στην εγκατάσταση του Chakra!</span></p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
 "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:"
-"#eeeeee;\"><span style=\" font-weight:600;\">Το πρόγραμμα εγκατάστασης μας "
-"Tribe θα σας καθοδηγήσει κατα την διεργασία της εγκάταστασης του live "
-"συστήματος Chakra</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\">στον υπολογιστή σας. Μετα την εγκατάσταση Θα "
-"έχετε ενα Arch-Linux έτοιμο προς χρήση</p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\">σύστημα με τα KDEMod πακέτα μας.</p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-weight:600; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\"> Παρακαλώ αφιερώστε μερικό χρόνο για να "
-"διαβάσετε προσεκτικάόλα τα κέιμενα και τις επεξηγήσεις.</p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; color:#eeeeee;\"></p>\n"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;"
+"\"></p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-weight:600; color:#eeeeee;\"> Θυμηθείτε:</span><span style=\" "
-"font-weight:600;\"> </span><span style=\" font-weight:600; color:#ff0000;"
-"\">ΠΡΟΚΕΙΤΑΙ ΓΙΑ ΠΡΩΙΜΟ (ALPHA) ΛΟΓΙΣΜΙΚΟ, ΠΟΥ ΙΣΩΣ ΟΔΗΓΗΣΕΙ ΣΕ ΑΣΤΑΘΕΣ "
-"ΣΥΣΤΗΜΑ</span></p>\n"
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">Το πρόγραμμα εγκατάστασης θα σας καθοδηγήσει στην "
+"διαδικασία της εγκατάστασης</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">του Chakra στον υπολογιστή σας. Μετά την εγκατάσταση θα</"
+"span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">έχετε ένα έτοιμο προς χρήση σύστημα Chakra Linux</span></"
+"p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
 "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-weight:600; color:#ff0000;\"></p>\n"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
+"weight:536; color:#eeeeee;\"></p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#ff0000;\"><span style=\" color:#eeeeee;\">! - Oι "
-"Προγραμματιστές του Chakra</span></p></body></html>"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">Παρακαλώ διαβάστε προσεκτικά όλες τις οδηγίες.</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;"
+"\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\"> Remember:</span><span style=\" font-family:'Bitstream Vera "
+"Sans'; font-size:8pt; font-weight:536;\"> </span><span style=\" font-"
+"family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#ff0000;"
+"\">Αυτό το λογισμικό είναι ακόμη σε πρόωρο στάδιο, μπορεί να φάει το χαμστερ "
+"σας!!</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
+"weight:536; color:#ff0000;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">Καλή Διασκέδαση! Η ομάδα ανάπτυξης του Chakra</span></p></"
+"body></html>"
 
 #. i18n: file: ui/pages/license.ui:49
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1215,9 +1145,8 @@ msgstr "Αναζήτηση..."
 #. i18n: file: ui/pages/locale.ui:162
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:243
-#, fuzzy
 msgid "Continent:"
-msgstr "Σημείο σύνδεσης:"
+msgstr "Ήπειρος:"
 
 #. i18n: file: ui/pages/locale.ui:185
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -1243,14 +1172,13 @@ msgstr "Εμφάνιση όλων"
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: rc.cpp:258
 msgid "Region: "
-msgstr ""
+msgstr "Περιοχή:"
 
 #. i18n: file: ui/pages/partition.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Partition)
 #: rc.cpp:261
-#, fuzzy
 msgid "Partition"
-msgstr "Διαμέρισμα:"
+msgstr "Κατάτμηση:"
 
 #. i18n: file: ui/pages/partition.ui:43
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1278,7 +1206,7 @@ msgstr ""
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
 "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Οργάνωση δίσκου</span></p></body></html>"
+"#ffffff;\">Ρύθμιση δίσκου</span></p></body></html>"
 
 #. i18n: file: ui/pages/partition.ui:58
 #. i18n: ectx: property (text), widget (QLabel, descriptionLabel)
@@ -1288,24 +1216,39 @@ msgid ""
 "mounted. No permanent changes to your hard drive will be made when you will "
 "press \"Next\""
 msgstr ""
+"Παρακαλώ επιλεξτε ένα σημείο προσάρτησης για της κατατμήσεις σας. Τουλάχιστο "
+"το '/' θα πρέπει να προσαρτηθεί. Καμία μόνιμη αλλαγή στον σκληρό σας δίσκο "
+"δεν θα γίνει όταν πατήσετε \"Επόμενο\""
 
 #. i18n: file: ui/pages/partition.ui:118
 #. i18n: ectx: property (text), widget (QLabel, typeLabel)
 #: rc.cpp:275
 msgid "Type"
-msgstr ""
+msgstr "Τύπος"
+
+#. i18n: file: ui/pages/partition.ui:126
+#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
+#: rc.cpp:278
+msgid "Extended"
+msgstr "Εκτεταμένος"
+
+#. i18n: file: ui/pages/partition.ui:131
+#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
+#: rc.cpp:281
+msgid "Primary"
+msgstr "Κύριος"
 
 #. i18n: file: ui/pages/partition.ui:146
 #. i18n: ectx: property (text), widget (QLabel, filesystemLabel)
 #: rc.cpp:284
 msgid "Filesystem"
-msgstr ""
+msgstr "Σύστημα αρχείων"
 
 #. i18n: file: ui/pages/partition.ui:173
 #. i18n: ectx: property (suffix), widget (KIntSpinBox, sizeSpinBox)
 #: rc.cpp:287
 msgid " MiB"
-msgstr ""
+msgstr "ΜiB"
 
 #. i18n: file: ui/pages/partition.ui:193
 #. i18n: ectx: property (text), widget (KPushButton, editPartitionCancelButton)
@@ -1313,7 +1256,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
 #: rc.cpp:290 rc.cpp:426
 msgid "Cancel"
-msgstr ""
+msgstr "Ακύρωση"
 
 #. i18n: file: ui/pages/partition.ui:200
 #. i18n: ectx: property (text), widget (KPushButton, editPartitionOkButton)
@@ -1321,19 +1264,19 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, okButton)
 #: rc.cpp:293 rc.cpp:423
 msgid "Ok"
-msgstr ""
+msgstr "Εντάξει"
 
 #. i18n: file: ui/pages/partition.ui:248
 #. i18n: ectx: property (toolTip), widget (QPushButton, newPartTableButton)
 #: rc.cpp:299
 msgid "Create a new partition table on the selected device"
-msgstr ""
+msgstr "Δημιουργία νέου πίνακα κατατμήσεων στην επιλεγμένη συσκευή"
 
 #. i18n: file: ui/pages/partition.ui:270
 #. i18n: ectx: property (text), widget (QPushButton, newButton)
 #: rc.cpp:302
 msgid "New"
-msgstr ""
+msgstr "Νέο"
 
 #. i18n: file: ui/pages/partition.ui:289
 #. i18n: ectx: property (text), widget (QPushButton, deleteButton)
@@ -1344,22 +1287,20 @@ msgstr "Διαγραφή"
 #. i18n: file: ui/pages/partition.ui:308
 #. i18n: ectx: property (text), widget (QPushButton, formatButton)
 #: rc.cpp:308
-#, fuzzy
 msgid "Format"
-msgstr "Σχηματισμός"
+msgstr "Μορφοποίηση"
 
 #. i18n: file: ui/pages/partition.ui:327
 #. i18n: ectx: property (toolTip), widget (QPushButton, undoButton)
 #: rc.cpp:311
 msgid "Undo"
-msgstr ""
+msgstr "Αναίρεση"
 
 #. i18n: file: ui/pages/partition.ui:346
 #. i18n: ectx: property (toolTip), widget (QPushButton, unmountButton)
 #: rc.cpp:314
-#, fuzzy
 msgid "Unmount the selected partition"
-msgstr "Πρέπει να επιλέξεται μια ζώνη ώρας"
+msgstr "Αποπροσάρτηση επιλεγμένης κατάτμησης"
 
 #. i18n: file: ui/pages/readyinstall.ui:51
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1530,34 +1471,29 @@ msgstr ""
 #. i18n: ectx: property (toolTip), widget (QLabel, label_2)
 #: rc.cpp:362
 msgid "or technically, the hostname"
-msgstr ""
+msgstr "ή τεχνικώς, το όνομα υπολογιστή"
 
 #. i18n: file: ui/pages/settings.ui:76
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:365
-#, fuzzy
 msgid "What's the name of this computer?         "
-msgstr "Όνομα του υπολογιστή:"
+msgstr "Τι είναι το όνομα του υπολογιστή?"
 
 #. i18n: file: ui/pages/settings.ui:125
 #. i18n: ectx: property (text), widget (QCheckBox, download_doc)
 #: rc.cpp:368
-#, fuzzy
 msgid "Download and install documentation packages"
-msgstr "Κατεβάσμα και εγκατάσταση πακέτων εγχειριδίων"
+msgstr "Κατεβάσμα και εγκατάσταση πακέτων εγχειριδίων "
 
 #. i18n: file: ui/pages/settings.ui:135
 #. i18n: ectx: property (text), widget (QCheckBox, detect_mirror)
 #: rc.cpp:371
-#, fuzzy
 msgid "Detect best mirror server and use it"
-msgstr ""
-"Επιλογή του καλύτερου εναλλακτικου διακομιστή και χρήση του (συνίσταται)"
+msgstr "Επιλογή του καλύτερου εναλλακτικου διακομιστή και χρήση του"
 
 #. i18n: file: ui/pages/usercreation.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:401
-#, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1576,25 +1512,24 @@ msgstr ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:14pt; font-"
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Εγκατάσταση χρήστη Root</span></"
-"p></body></html>"
+"size:22pt; font-weight:600; color:#ffffff;\">Δημιουργία Χρηστών</span></p></"
+"body></html>"
 
 #. i18n: file: ui/pages/usercreation.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:408
 msgid "Enter at least one login name and password."
-msgstr ""
+msgstr "Εισάγετε τουλάχιστο ένα όνομα σύνδεσης και κωδικό."
 
 #. i18n: file: ui/pages/usercreation.ui:178
 #. i18n: ectx: property (toolTip), widget (QPushButton, addUser)
 #: rc.cpp:411
-#, fuzzy
 msgid "Add another user account."
-msgstr "Προσθήκη άλλου χρήστη.."
+msgstr "Προσθήκη άλλου χρήστη.. "
 
 #. i18n: file: ui/pages/usercreation.ui:286
 #. i18n: ectx: property (text), widget (QLabel, hostname_extra_label)
@@ -1603,39 +1538,38 @@ msgid ""
 "<small>This name will be used if you make the computer visible to others on "
 "a network.</small>"
 msgstr ""
+"<small>Αυτό το όνομα θα χρησιμοποιηθεί αν κάνετε τον υπολογιστή σας ορατό σε "
+"άλλους σε ένα δίκτυο.</small>"
 
 #. i18n: file: ui/pages/usercreation.ui:299
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:417
-#, fuzzy
 msgid "...and, what is the name of this computer?"
-msgstr "Όνομα του υπολογιστή:"
+msgstr "...και, ποιο είναι το όνομα αυτού του υπολογιστή;"
 
 #. i18n: file: ui/widgets/avatardialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, AvatarDialog)
 #: rc.cpp:420
 msgid "Select an Avatar..."
-msgstr ""
+msgstr "Επιλογή Αvatar..."
 
 #. i18n: file: ui/widgets/userwidget.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:429
-#, fuzzy
 msgid "Login: "
-msgstr "Είσοδος:"
+msgstr "Είσοδος: "
 
 #. i18n: file: ui/widgets/userwidget.ui:56
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:432
-#, fuzzy
 msgid "Password: "
-msgstr "Kωδικός:"
+msgstr "Kωδικός: "
 
 #. i18n: file: ui/widgets/userwidget.ui:94
 #. i18n: ectx: property (toolTip), widget (QPushButton, userDetails)
 #: rc.cpp:435
 msgid "Include more information about this user."
-msgstr ""
+msgstr "Συμπεριλάβετε περισσότερες πληροφορίες για αυτό το χρήστη."
 
 #. i18n: file: ui/widgets/userwidget.ui:124
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -1647,20 +1581,19 @@ msgstr "Επαλήθευση κωδικού:"
 #. i18n: ectx: property (toolTip), widget (QPushButton, removeUser)
 #: rc.cpp:441
 msgid "Remove this user."
-msgstr ""
+msgstr "Διαγραφή αυτού του χρήστη."
 
 #. i18n: file: ui/widgets/userwidget.ui:264
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: rc.cpp:444
-#, fuzzy
 msgid "Name: "
-msgstr "Όνομα:"
+msgstr "Όνομα: "
 
 #. i18n: file: ui/widgets/userwidget.ui:307
 #. i18n: ectx: property (text), widget (QCheckBox, autoLoginCheckBox)
 #: rc.cpp:447
 msgid "Login Automatically"
-msgstr ""
+msgstr "Αυτόματη Είσοδος"
 
 #. i18n: file: ui/widgets/userwidget.ui:344
 #. i18n: ectx: property (text), widget (QCheckBox, rootUsesUserPwCheckBox)
@@ -1669,32 +1602,60 @@ msgid ""
 "Use this password as \n"
 "the Administrator password"
 msgstr ""
+"Χρησιμοποιήστε αυτόν τον κωδικό σαν \n"
+"κωδικό Διαχειριστή Συστήματος"
 
 #. i18n: file: ui/widgets/userwidget.ui:396
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: rc.cpp:454
-#, fuzzy
 msgid "Root Password:  "
-msgstr "Κωδικός χρήστη root"
+msgstr "Κωδικός Υπερχρήστη:"
 
 #. i18n: file: ui/widgets/userwidget.ui:406
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: rc.cpp:457
-#, fuzzy
 msgid "Confirm Root Password:  "
-msgstr "Επαλήθευση κωδικού:"
+msgstr "Επαλήθευση κωδικού Υπερχρήστη:"
 
 #: rc.cpp:458
-#, fuzzy
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Socrates Tzagiousis"
+msgstr "Neo Kolokotronis Socrates Tzagiousis"
 
 #: rc.cpp:459
-#, fuzzy
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "antisocrates@gmail.com"
+msgstr "tetris4@gmail.com antisocrates@gmail.com"
+
+#~ msgid "None"
+#~ msgstr "Κανένα"
+
+#~ msgid "Other..."
+#~ msgstr "Άλλα..."
+
+#~ msgid "You can only use each mountpoint once."
+#~ msgstr "Μπορείτε να χρησιμοποιήσετε το κάθε σημείο προσάρτησης μια φορά."
+
+#~ msgid "Information"
+#~ msgstr "Πληροφορίες"
+
+#~ msgid "New partition"
+#~ msgstr "Νέα κατάτμηση"
+
+#~ msgid "Unallocated space"
+#~ msgstr "Αδέσμευτος χώρος"
+
+#~ msgid "Linux / Extended"
+#~ msgstr "Linux / Εκτεταμένος"
+
+#~ msgid "Windows / %1"
+#~ msgstr "Windows / %1"
+
+#~ msgid "Apple / %1"
+#~ msgstr "Appla / %1"
+
+#~ msgid "Linux / %1"
+#~ msgstr "Linux / %1"
 
 #~ msgid "Setting up Tribe..."
 #~ msgstr "Ρύθμiση του Tribe"

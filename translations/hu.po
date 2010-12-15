@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2010-12-08 23:47+0100\n"
+"POT-Creation-Date: 2010-12-15 19:47+0100\n"
 "PO-Revision-Date: 2010-01-19 01:11+0100\n"
 "Last-Translator: Manuel Tortosa <manutortosa@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -58,98 +58,98 @@ msgstr "A cél inicializálása ..."
 msgid "Please wait, configuring the new system ..."
 msgstr "Kérem várjon, PostInstall konfigurálása és elindítása történik ..."
 
-#: src/installationhandler.cpp:412
+#: src/installationhandler.cpp:415
 msgid "Error in Postinstall script. See log for more details"
 msgstr ""
 "Hiba a PostInstall szkripben. Tekintse meg a logot továbbiinformációkért"
 
-#: src/installationhandler.cpp:421
+#: src/installationhandler.cpp:424
 #, fuzzy
 msgid "Creating user accounts ..."
 msgstr "Konfigurációk létrehozása ..."
 
-#: src/installationhandler.cpp:424
+#: src/installationhandler.cpp:427
 #, fuzzy
 msgid "Configuring software management..."
 msgstr "Hardver konfigurálása..."
 
-#: src/installationhandler.cpp:428
+#: src/installationhandler.cpp:431
 #, fuzzy
 msgid "Removing unused packages..."
 msgstr "Felesleges csomagok eltávolítása..."
 
-#: src/installationhandler.cpp:432
+#: src/installationhandler.cpp:435
 msgid "Installing additional packages..."
 msgstr "További csomagok telepítése..."
 
-#: src/installationhandler.cpp:436
+#: src/installationhandler.cpp:439
 #, fuzzy
 msgid "Configuring the display..."
 msgstr "Hardver konfigurálása..."
 
-#: src/installationhandler.cpp:440
+#: src/installationhandler.cpp:443
 #, fuzzy
 msgid "Downloading and installing localization packages..."
 msgstr ""
 "Lokalizációs csomagok letöltése és telepítése történik, ez eltarthat "
 "egydarabig..."
 
-#: src/installationhandler.cpp:444
+#: src/installationhandler.cpp:447
 #, fuzzy
 msgid "Downloading and installing documentation packages..."
 msgstr "Dokumentációs csomagok letöltése és telepítése"
 
-#: src/installationhandler.cpp:448
+#: src/installationhandler.cpp:451
 msgid "Setting up localization..."
 msgstr "Lokalizáció beállítása..."
 
-#: src/installationhandler.cpp:452
+#: src/installationhandler.cpp:455
 msgid "Creating daemon configuration..."
 msgstr "Daemon konfiguráció létrehozása..."
 
-#: src/installationhandler.cpp:456
+#: src/installationhandler.cpp:459
 msgid "Creating network configuration..."
 msgstr "Hálózati konfiguráció létrehozása..."
 
-#: src/installationhandler.cpp:460
+#: src/installationhandler.cpp:463
 msgid "Creating fstab..."
 msgstr "Fstab létrehozása..."
 
-#: src/installationhandler.cpp:467
+#: src/installationhandler.cpp:470
 msgid "Configuring hardware..."
 msgstr "Hardver konfigurálása..."
 
-#: src/installationhandler.cpp:471
+#: src/installationhandler.cpp:474
 #, fuzzy
 msgid "Creating initial ramdisk images..."
 msgstr ""
 "Kezdeti ramlemez kép létrehozása. Ez sokáig is eltarthat, maradjonitt..."
 
-#: src/installationhandler.cpp:475
+#: src/installationhandler.cpp:478
 #, fuzzy
 msgid "Generating locales..."
 msgstr "Lokális dolgok regenerálása..."
 
-#: src/installationhandler.cpp:479
+#: src/installationhandler.cpp:482
 #, fuzzy
 msgid "Removing unused localizations..."
 msgstr "Felesleges lokalizációk eltávolítása..."
 
-#: src/installationhandler.cpp:483
+#: src/installationhandler.cpp:486
 #, fuzzy
 msgid "Removing unused drivers..."
 msgstr "Felesleges vezérlők eltávolítása..."
 
-#: src/installationhandler.cpp:487
+#: src/installationhandler.cpp:490
 #, fuzzy
 msgid "Finishing up..."
 msgstr "Telepítés befejezése..."
 
-#: src/installationhandler.cpp:491
+#: src/installationhandler.cpp:494
 msgid "Installation complete!"
 msgstr "Telepítés megtörtént!"
 
-#: src/installationhandler.cpp:582
+#: src/installationhandler.cpp:585
 #, fuzzy
 msgid ""
 "Tribe was not able to initialize needed directories. Something is very "
@@ -159,7 +159,7 @@ msgstr ""
 "nincsen meg a megfelelő joga hozzá, kérem indítsa újra a Tribe-t  "
 "rendszergazdajént."
 
-#: src/installationhandler.cpp:606
+#: src/installationhandler.cpp:609
 msgid "Could not mount %1"
 msgstr "%1 csatolása nem sikerült"
 
@@ -274,19 +274,10 @@ msgstr "Megfelelő NVidia meghajtó"
 msgid "Accept license for: "
 msgstr "Következő licensz elfogadása: "
 
-#: src/pages/localepage.cpp:269
+#: src/pages/localepage.cpp:277
 #, fuzzy
 msgid "You need to select a timezone"
 msgstr "Időzóna kiválasztása szükséges."
-
-#: src/pages/partitionpage.cpp:58 src/pages/partitionpage.cpp:134
-#, fuzzy
-msgid "None"
-msgstr "Nem"
-
-#: src/pages/partitionpage.cpp:67 src/pages/partitionpage.cpp:89
-msgid "Other..."
-msgstr ""
 
 #: src/pages/partitionpage.cpp:95
 msgid "Please enter a custom mountpoint"
@@ -299,14 +290,6 @@ msgstr ""
 #: src/pages/partitionpage.cpp:108
 msgid "Error"
 msgstr "Hiba"
-
-#: src/pages/partitionpage.cpp:130
-msgid "You can only use each mountpoint once."
-msgstr ""
-
-#: src/pages/partitionpage.cpp:131
-msgid "Information"
-msgstr ""
 
 #: src/pages/partitionpage.cpp:414
 msgid "Loading partitions..."
@@ -326,44 +309,6 @@ msgstr ""
 msgid ""
 "This operation will destroy all data on the selected volume.. Continue "
 "anyway?"
-msgstr ""
-
-#. i18n: file: ui/pages/partition.ui:126
-#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
-#: src/pages/partitionpage.cpp:572 src/pages/partitionpage.cpp:796
-#: src/pages/partitionpage.cpp:840 rc.cpp:278
-msgid "Extended"
-msgstr ""
-
-#. i18n: file: ui/pages/partition.ui:131
-#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
-#: src/pages/partitionpage.cpp:797 rc.cpp:281
-msgid "Primary"
-msgstr ""
-
-#: src/pages/partitionpage.cpp:897
-#, fuzzy
-msgid "New partition"
-msgstr "Partició"
-
-#: src/pages/partitionpage.cpp:902
-msgid "Unallocated space"
-msgstr ""
-
-#: src/pages/partitionpage.cpp:907
-msgid "Linux / Extended"
-msgstr ""
-
-#: src/pages/partitionpage.cpp:914
-msgid "Windows / %1"
-msgstr ""
-
-#: src/pages/partitionpage.cpp:920
-msgid "Apple / %1"
-msgstr ""
-
-#: src/pages/partitionpage.cpp:926
-msgid "Linux / %1"
 msgstr ""
 
 #: src/pages/partitionpage.cpp:950
@@ -415,19 +360,19 @@ msgstr "chakra-asztal"
 msgid "You must give at least one login name."
 msgstr ""
 
-#: src/pages/usercreationpage.cpp:135
+#: src/pages/usercreationpage.cpp:125
+#, fuzzy
+msgid "Root Passwords do not match..."
+msgstr "A jelszavak nem egyeznek meg"
+
+#: src/pages/usercreationpage.cpp:139
 #, fuzzy
 msgid "Passwords cannot be empty."
 msgstr "A jelszó üres"
 
-#: src/pages/usercreationpage.cpp:139
-#, fuzzy
-msgid "Passwords do not match..."
-msgstr "A jelszavak nem egyeznek meg"
-
 #: src/pages/usercreationpage.cpp:143
 #, fuzzy
-msgid "Root Passwords do not match..."
+msgid "Passwords do not match..."
 msgstr "A jelszavak nem egyeznek meg"
 
 #: src/pages/usercreationpage.cpp:147
@@ -1293,6 +1238,18 @@ msgstr ""
 msgid "Type"
 msgstr ""
 
+#. i18n: file: ui/pages/partition.ui:126
+#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
+#: rc.cpp:278
+msgid "Extended"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:131
+#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
+#: rc.cpp:281
+msgid "Primary"
+msgstr ""
+
 #. i18n: file: ui/pages/partition.ui:146
 #. i18n: ectx: property (text), widget (QLabel, filesystemLabel)
 #: rc.cpp:284
@@ -1688,6 +1645,14 @@ msgstr "Laszlo Papp"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "djszapi@archlinux.us"
+
+#, fuzzy
+#~ msgid "None"
+#~ msgstr "Nem"
+
+#, fuzzy
+#~ msgid "New partition"
+#~ msgstr "Partició"
 
 #~ msgid "Setting up Tribe..."
 #~ msgstr "Tribe beállítása..."

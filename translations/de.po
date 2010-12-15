@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2010-12-08 23:47+0100\n"
+"POT-Creation-Date: 2010-12-15 19:47+0100\n"
 "PO-Revision-Date: 2010-12-09 02:46+0100\n"
 "Last-Translator: Phil Miller <philm@chakra-project.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -53,85 +53,85 @@ msgstr "Initialisierung des Installationsziels ..."
 msgid "Please wait, configuring the new system ..."
 msgstr "Bitte warten. Das neue System wird eingestellt ..."
 
-#: src/installationhandler.cpp:412
+#: src/installationhandler.cpp:415
 msgid "Error in Postinstall script. See log for more details"
 msgstr ""
 "Fehler im Postinstall-Skript. Lesen Sie das Protokoll für weitere "
 "Informationen."
 
-#: src/installationhandler.cpp:421
+#: src/installationhandler.cpp:424
 msgid "Creating user accounts ..."
 msgstr "Konten für neue Benutzer werden erstellt … "
 
-#: src/installationhandler.cpp:424
+#: src/installationhandler.cpp:427
 msgid "Configuring software management..."
 msgstr "Software-Management wird eingerichtet …"
 
-#: src/installationhandler.cpp:428
+#: src/installationhandler.cpp:431
 msgid "Removing unused packages..."
 msgstr "Nicht benötigte Pakete werden entfernt …"
 
-#: src/installationhandler.cpp:432
+#: src/installationhandler.cpp:435
 msgid "Installing additional packages..."
 msgstr "Zusätzliche Pakete werden installiert …"
 
-#: src/installationhandler.cpp:436
+#: src/installationhandler.cpp:439
 msgid "Configuring the display..."
 msgstr "Hardware wird eingerichtet … "
 
-#: src/installationhandler.cpp:440
+#: src/installationhandler.cpp:443
 msgid "Downloading and installing localization packages..."
 msgstr "Lokalisierungspakete werden heruntergeladen und installiert ..."
 
-#: src/installationhandler.cpp:444
+#: src/installationhandler.cpp:447
 msgid "Downloading and installing documentation packages..."
 msgstr "Dokumentationspakete werden heruntergeladen und installiert ..."
 
-#: src/installationhandler.cpp:448
+#: src/installationhandler.cpp:451
 msgid "Setting up localization..."
 msgstr "Lokalisierung wird eingerichtet …"
 
-#: src/installationhandler.cpp:452
+#: src/installationhandler.cpp:455
 msgid "Creating daemon configuration..."
 msgstr "Daemon-Einstellungen werden erstellt ..."
 
-#: src/installationhandler.cpp:456
+#: src/installationhandler.cpp:459
 msgid "Creating network configuration..."
 msgstr "Netzwerkeinrichtung wird erstellt …"
 
-#: src/installationhandler.cpp:460
+#: src/installationhandler.cpp:463
 msgid "Creating fstab..."
 msgstr "fstab wird erstellt …"
 
-#: src/installationhandler.cpp:467
+#: src/installationhandler.cpp:470
 msgid "Configuring hardware..."
 msgstr "Hardware wird eingerichtet …"
 
-#: src/installationhandler.cpp:471
+#: src/installationhandler.cpp:474
 msgid "Creating initial ramdisk images..."
 msgstr "Ramdisk-Images werden erstellt ..."
 
-#: src/installationhandler.cpp:475
+#: src/installationhandler.cpp:478
 msgid "Generating locales..."
 msgstr "Lokalizierungen werden erstellt ..."
 
-#: src/installationhandler.cpp:479
+#: src/installationhandler.cpp:482
 msgid "Removing unused localizations..."
 msgstr "Nicht benötigte Übersetzungen werden entfernt … "
 
-#: src/installationhandler.cpp:483
+#: src/installationhandler.cpp:486
 msgid "Removing unused drivers..."
 msgstr "Nicht benötigte Treiber werden entfernt … "
 
-#: src/installationhandler.cpp:487
+#: src/installationhandler.cpp:490
 msgid "Finishing up..."
 msgstr "Installation wird abgeschlossen … "
 
-#: src/installationhandler.cpp:491
+#: src/installationhandler.cpp:494
 msgid "Installation complete!"
 msgstr "Installation abgeschlossen!"
 
-#: src/installationhandler.cpp:582
+#: src/installationhandler.cpp:585
 msgid ""
 "Tribe was not able to initialize needed directories. Something is very "
 "wrong..."
@@ -139,7 +139,7 @@ msgstr ""
 "Tribe konnte die benötigten Verzeichnisse nicht laden. Es scheint was falsch "
 "gelaufen zu sein ..."
 
-#: src/installationhandler.cpp:606
+#: src/installationhandler.cpp:609
 msgid "Could not mount %1"
 msgstr "%1 konnte nicht eingebunden werden"
 
@@ -249,17 +249,9 @@ msgstr "Proprietärer NVidia-Treiber"
 msgid "Accept license for: "
 msgstr "Lizenz akzeptieren für: "
 
-#: src/pages/localepage.cpp:269
+#: src/pages/localepage.cpp:277
 msgid "You need to select a timezone"
 msgstr "Sie müssen eine Zeitzone auswählen. "
-
-#: src/pages/partitionpage.cpp:58 src/pages/partitionpage.cpp:134
-msgid "None"
-msgstr "Keine"
-
-#: src/pages/partitionpage.cpp:67 src/pages/partitionpage.cpp:89
-msgid "Other..."
-msgstr "Andere ..."
 
 #: src/pages/partitionpage.cpp:95
 msgid "Please enter a custom mountpoint"
@@ -272,14 +264,6 @@ msgstr "Der Einbindungspunkt muss mit / starten"
 #: src/pages/partitionpage.cpp:108
 msgid "Error"
 msgstr "Fehler"
-
-#: src/pages/partitionpage.cpp:130
-msgid "You can only use each mountpoint once."
-msgstr "Sie können jeden Einbindungspunkt nur einmal nutzen."
-
-#: src/pages/partitionpage.cpp:131
-msgid "Information"
-msgstr "Information"
 
 #: src/pages/partitionpage.cpp:414
 msgid "Loading partitions..."
@@ -304,43 +288,6 @@ msgid ""
 msgstr ""
 "Diese Funktion wird alle enthaltenen Daten des ausgewählten Volumens "
 "löschen. Fortfahren?"
-
-#. i18n: file: ui/pages/partition.ui:126
-#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
-#: src/pages/partitionpage.cpp:572 src/pages/partitionpage.cpp:796
-#: src/pages/partitionpage.cpp:840 rc.cpp:278
-msgid "Extended"
-msgstr "Erweitert"
-
-#. i18n: file: ui/pages/partition.ui:131
-#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
-#: src/pages/partitionpage.cpp:797 rc.cpp:281
-msgid "Primary"
-msgstr "Primär"
-
-#: src/pages/partitionpage.cpp:897
-msgid "New partition"
-msgstr "Neue Partition"
-
-#: src/pages/partitionpage.cpp:902
-msgid "Unallocated space"
-msgstr "Ungenutzter Speicher"
-
-#: src/pages/partitionpage.cpp:907
-msgid "Linux / Extended"
-msgstr "Linux / Erweitert"
-
-#: src/pages/partitionpage.cpp:914
-msgid "Windows / %1"
-msgstr "Windows / %1"
-
-#: src/pages/partitionpage.cpp:920
-msgid "Apple / %1"
-msgstr "Apple / %1"
-
-#: src/pages/partitionpage.cpp:926
-msgid "Linux / %1"
-msgstr "Linux / %1"
 
 #: src/pages/partitionpage.cpp:950
 msgid ""
@@ -396,17 +343,17 @@ msgstr "chakra-desktop"
 msgid "You must give at least one login name."
 msgstr "Sie müssen zumindest einen Benutzernamen eingeben."
 
-#: src/pages/usercreationpage.cpp:135
+#: src/pages/usercreationpage.cpp:125
+msgid "Root Passwords do not match..."
+msgstr "Root-Passwörter stimmen nicht überein"
+
+#: src/pages/usercreationpage.cpp:139
 msgid "Passwords cannot be empty."
 msgstr "Passwort ist leer "
 
-#: src/pages/usercreationpage.cpp:139
+#: src/pages/usercreationpage.cpp:143
 msgid "Passwords do not match..."
 msgstr "Passwörter stimmen nicht überein "
-
-#: src/pages/usercreationpage.cpp:143
-msgid "Root Passwords do not match..."
-msgstr "Root-Passwörter stimmen nicht überein"
 
 #: src/pages/usercreationpage.cpp:147
 msgid "Login names cannot be empty."
@@ -714,8 +661,8 @@ msgid ""
 "Please take some time to step through each section and configure your system "
 "the way you want it."
 msgstr ""
-"Der Installer hat eine standardisierte Konfiguration für die meisten Benutzer "
-"erstellt. Sie können nun Ihr neu-installiertes System anpassen.\n"
+"Der Installer hat eine standardisierte Konfiguration für die meisten "
+"Benutzer erstellt. Sie können nun Ihr neu-installiertes System anpassen.\n"
 "\n"
 "Nehmen Sie sich Zeit für jeden Schritt und konfigurieren Sie ihr System nach "
 "ihren Wünschen."
@@ -901,7 +848,8 @@ msgstr "Unterstützung für das Booten von NFS-Shares aktivieren "
 #. i18n: ectx: property (text), widget (QCheckBox, raid)
 #: rc.cpp:164 rc.cpp:389
 msgid "Activate support for booting from Software Raid arrays"
-msgstr "Unterstützung für das Booten von Software-Raid Verbindungen aktivieren "
+msgstr ""
+"Unterstützung für das Booten von Software-Raid Verbindungen aktivieren "
 
 #. i18n: file: ui/pages/init.ui:146
 #. i18n: ectx: property (text), widget (QCheckBox, mdp)
@@ -909,7 +857,8 @@ msgstr "Unterstützung für das Booten von Software-Raid Verbindungen aktivieren
 #. i18n: ectx: property (text), widget (QCheckBox, mdp)
 #: rc.cpp:167 rc.cpp:392
 msgid "Activate support for booting from Software Raid/MDP Partition arrays"
-msgstr "Unterstützung für das Booten von Software-Raid/MDP Partitionen aktivieren "
+msgstr ""
+"Unterstützung für das Booten von Software-Raid/MDP Partitionen aktivieren "
 
 #. i18n: file: ui/pages/init.ui:153
 #. i18n: ectx: property (text), widget (QCheckBox, lvm2)
@@ -1041,13 +990,13 @@ msgstr ""
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
 "style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\">des Chakra Live-Systems auf Ihrem Computer führen. "
-"Nach der Installation werden Sie</span></p>\n"
+"color:#eeeeee;\">des Chakra Live-Systems auf Ihrem Computer führen. Nach der "
+"Installation werden Sie</span></p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
 "style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\">ein funktionsfähiges Chakra Linux-System besitzen.</span><"
-"/p>\n"
+"color:#eeeeee;\">ein funktionsfähiges Chakra Linux-System besitzen.</span></"
+"p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
 "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
 "indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
@@ -1065,8 +1014,7 @@ msgstr ""
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
 "style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
 "color:#eeeeee;\"> Bedenken Sie:</span><span style=\" font-family:'Bitstream "
-"Vera "
-"Sans'; font-size:8pt; font-weight:536;\"> </span><span style=\" font-"
+"Vera Sans'; font-size:8pt; font-weight:536;\"> </span><span style=\" font-"
 "family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#ff0000;"
 "\">DIES IST IMMER NOCH EINE ALPHA SOFTWARE - IHR HAMSTER KÖNNTE VERNASCHT "
 "WERDEN!</span></p>\n"
@@ -1077,8 +1025,8 @@ msgstr ""
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
 "style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\">Viel Spass! - Das Chakra Entwickler-Team</span></p></body><"
-"/html>"
+"color:#eeeeee;\">Viel Spass! - Das Chakra Entwickler-Team</span></p></body></"
+"html>"
 
 #. i18n: file: ui/pages/license.ui:49
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1280,6 +1228,18 @@ msgstr ""
 msgid "Type"
 msgstr "Typ"
 
+#. i18n: file: ui/pages/partition.ui:126
+#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
+#: rc.cpp:278
+msgid "Extended"
+msgstr "Erweitert"
+
+#. i18n: file: ui/pages/partition.ui:131
+#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
+#: rc.cpp:281
+msgid "Primary"
+msgstr "Primär"
+
 #. i18n: file: ui/pages/partition.ui:146
 #. i18n: ectx: property (text), widget (QLabel, filesystemLabel)
 #: rc.cpp:284
@@ -1477,8 +1437,8 @@ msgid ""
 msgstr ""
 "Bekannte Fehler und wichtige Informationen über diese Version von Chakra "
 "sind hier zu lesen. Wie immer sind Sie aufgefordert uns mitzuteilen, was "
-"vermisst wird oder wir verbessern könnten. Besuchen Sie unsere Foren und "
-"Bug-Tracker."
+"vermisst wird oder wir verbessern könnten. Besuchen Sie unsere Foren und Bug-"
+"Tracker."
 
 #. i18n: file: ui/pages/settings.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1557,8 +1517,8 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Erstelle Benutzer</"
-"span></p></body></html>"
+"size:22pt; font-weight:600; color:#ffffff;\">Erstelle Benutzer</span></p></"
+"body></html>"
 
 #. i18n: file: ui/pages/usercreation.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -1667,6 +1627,36 @@ msgstr "Phil Miller"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "philm@chakra-project.org"
+
+#~ msgid "None"
+#~ msgstr "Keine"
+
+#~ msgid "Other..."
+#~ msgstr "Andere ..."
+
+#~ msgid "You can only use each mountpoint once."
+#~ msgstr "Sie können jeden Einbindungspunkt nur einmal nutzen."
+
+#~ msgid "Information"
+#~ msgstr "Information"
+
+#~ msgid "New partition"
+#~ msgstr "Neue Partition"
+
+#~ msgid "Unallocated space"
+#~ msgstr "Ungenutzter Speicher"
+
+#~ msgid "Linux / Extended"
+#~ msgstr "Linux / Erweitert"
+
+#~ msgid "Windows / %1"
+#~ msgstr "Windows / %1"
+
+#~ msgid "Apple / %1"
+#~ msgstr "Apple / %1"
+
+#~ msgid "Linux / %1"
+#~ msgstr "Linux / %1"
 
 #~ msgid "Setting up Tribe..."
 #~ msgstr "Tribe wird eingerichtet …"

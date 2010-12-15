@@ -78,26 +78,24 @@ job_configure_users()
 	echo "%bundle ALL=NOPASSWD: /bin/umount *" >> ${mountpoint}/etc/sudoers
 	chmod -v 0440 ${mountpoint}/etc/sudoers
 
-	if [ -e "/.livesys/write/etc/X11/xorg.conf.d/10-keyboard.conf" ] ; then
-	  msg "fix driver issues"
-	  USED_DRIVER=`cat /etc/X11/xorg.conf | sed -n '/Section.*."Device"/,/EndSection/p' | grep -v "#" | grep Driver | cut -d '"' -f 2`
+	msg "fix driver issues"
+	USED_DRIVER=`cat /etc/X11/xorg.conf | sed -n '/Section.*."Device"/,/EndSection/p' | grep -v "#" | grep Driver | cut -d '"' -f 2`
   
-	  if [ "${USED_DRIVER}" = "radeon" ] ; then
+	if [ "${USED_DRIVER}" = "radeon" ] ; then
 		  echo "[Compositing]" >> ${mountpoint}/home/${user_name}/.kde4/share/config/kwinrc 
 		  echo "Enabled=false" >> ${mountpoint}/home/${user_name}/.kde4/share/config/kwinrc 
-	  elif [ "${USED_DRIVER}" = "mach64" ] ; then
+	elif [ "${USED_DRIVER}" = "mach64" ] ; then
 		  echo "[Compositing]" >> ${mountpoint}/home/${user_name}/.kde4/share/config/kwinrc 
 		  echo "Enabled=false" >> ${mountpoint}/home/${user_name}/.kde4/share/config/kwinrc 
-	  elif  [ "${USED_DRIVER}" = "r128" ] ; then
+	elif  [ "${USED_DRIVER}" = "r128" ] ; then
 		  echo "[Compositing]" >> ${mountpoint}/home/${user_name}/.kde4/share/config/kwinrc 
 		  echo "Enabled=false" >> ${mountpoint}/home/${user_name}/.kde4/share/config/kwinrc 
-	  elif  [ "${USED_DRIVER}" = "ati" ] ; then
+	elif  [ "${USED_DRIVER}" = "ati" ] ; then
 		  echo "[Compositing]" >> ${mountpoint}/home/${user_name}/.kde4/share/config/kwinrc 
 		  echo "Enabled=false" >> ${mountpoint}/home/${user_name}/.kde4/share/config/kwinrc 
-	  elif  [ "${USED_DRIVER}" = "intel" ] ; then
+	elif  [ "${USED_DRIVER}" = "intel" ] ; then
 		  echo "[Compositing]" >> ${mountpoint}/home/${user_name}/.kde4/share/config/kwinrc 
 		  echo "Enabled=false" >> ${mountpoint}/home/${user_name}/.kde4/share/config/kwinrc 
-	  fi
 	fi
 
 	msg "chown ${user_name} /home/${user_name}"

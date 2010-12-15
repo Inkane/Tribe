@@ -664,17 +664,29 @@ qDebug() << "::::::: setUpUsers() \n" << users << "\n\n";
 
     foreach(QString user, users) {
         if (checkExistingHomeDirs().contains(user)) {
-            command = QString("chroot %1 useradd -c \"%2\" -d /home/%3 -s /bin/bash %3")
-            .arg(INSTALLATION_TARGET)
-            .arg(m_userNameList.at(current))
-            .arg(user);
+            if (m_userNameList.at(current) == "") {
+               command = QString("chroot %1 useradd -d /home/%2 -s /bin/bash %2")
+               .arg(INSTALLATION_TARGET)
+               .arg(user);
+            } else {
+               command = QString("chroot %1 useradd -c \"%2\" -d /home/%3 -s /bin/bash %3")
+               .arg(INSTALLATION_TARGET)
+               .arg(m_userNameList.at(current))
+               .arg(user);
+            }
 qDebug() << " :: running useradd command: " << command;
             QProcess::execute(command);
         } else {
-            command = QString("chroot %1 useradd -g users -c \"%2\" -m -s /bin/bash %3")
-            .arg(INSTALLATION_TARGET)
-            .arg(m_userNameList.at(current))
-            .arg(user);
+            if (m_userNameList.at(current) == "") {
+               command = QString("chroot %1 useradd -g users -m -s /bin/bash %2")
+               .arg(INSTALLATION_TARGET)
+               .arg(user);
+            } else {
+               command = QString("chroot %1 useradd -g users -c \"%2\" -m -s /bin/bash %3")
+               .arg(INSTALLATION_TARGET)
+               .arg(m_userNameList.at(current))
+               .arg(user);
+            }
 qDebug() << " :: running useradd command: " << command;
             QProcess::execute(command);
             //clean conflict files

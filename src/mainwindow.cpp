@@ -167,6 +167,10 @@ void MainWindow::loadPage(InstallationStep page)
         m_ui.nextButton->setVisible(false);
         break;
 
+    case MainWindow::Configuration:
+        m_ui.stackedWidget->addWidget(new ConfigPage(this));
+        break;
+        
     case MainWindow::Bootloader:
         m_ui.stackedWidget->addWidget(new BootloaderPage(this));
         m_ui.previousButton->setVisible(false);
@@ -306,6 +310,16 @@ void MainWindow::setInstallationStep(InstallationStep step, StepStatus status)
 
         break;
 
+    case MainWindow::Configuration:
+        if (status == MainWindow::Done) {
+            m_ui.configurationIcon->setPixmap(QPixmap(":/Images/images/installation-stage-notdone.png"));
+        } else if (status == MainWindow::ToDo) {
+            m_ui.configurationIcon->setPixmap(QPixmap(":/Images/images/installation-stage-notdone.png"));
+        } else if (status == MainWindow::InProgress)
+            m_ui.configurationIcon->setMovie(m_movie);
+
+        break;
+        
     case MainWindow::Bootloader:
         if (status == MainWindow::Done)
             m_ui.bootloaderIcon->setPixmap(KIcon("games-endturn").pixmap(18));
@@ -352,7 +366,7 @@ void MainWindow::goToNextStep()
         m_currAction = MainWindow::CreateUser;
         setInstallationStep(MainWindow::Language, MainWindow::Done);
         break;
-
+        
     case MainWindow::CreateUser:
         m_currAction = MainWindow::Partition;
         setInstallationStep(MainWindow::CreateUser, MainWindow::Done);
@@ -369,10 +383,15 @@ void MainWindow::goToNextStep()
         break;
 
     case MainWindow::InstallSystem:
-        m_currAction = MainWindow::Bootloader;
+        m_currAction = MainWindow::Configuration;
         setInstallationStep(MainWindow::InstallSystem, MainWindow::Done);
         break;
 
+    case MainWindow::Configuration:
+        m_currAction = MainWindow::Bootloader;
+        setInstallationStep(MainWindow::Configuration, MainWindow::Done);
+        break;
+        
     case MainWindow::Bootloader:
         m_currAction = MainWindow::FinishStep;
         setInstallationStep(MainWindow::Bootloader, MainWindow::Done);
@@ -430,6 +449,9 @@ void MainWindow::goToPreviousStep()
 
     case MainWindow::InstallSystem:
         return;
+        break;
+        
+    case MainWindow::Configuration:
         break;
 
     case MainWindow::Bootloader:

@@ -97,15 +97,6 @@ class PartitionPage : public AbstractPage
     Q_OBJECT
 
 public:
-    enum VisiblePart {
-        None = 0,
-        TypePart = 1,
-        FileSystemPart = 2,
-        ShrinkPart = 4
-    };
-
-    Q_DECLARE_FLAGS(VisibleParts, VisiblePart)
-
     enum Mode {
         EasyMode = 1,
         AdvancedMode = 2
@@ -128,10 +119,10 @@ private slots:
     void advancedClicked();
 
     void populateTreeWidget();
-    void setVisibleParts(VisibleParts parts);
+    void setVisibleParts(bool);
     void currentItemChanged(QTreeWidgetItem*,QTreeWidgetItem*);
     void dataChanged(QModelIndex,QModelIndex);
-    void slotTypeChanged(const QString&);
+    void slotTypeChanged(QString);
 
     void cancelFormat();
     void applyFormat();
@@ -146,14 +137,11 @@ private:
     QWidget* m_pmWidget;
 
     QHash<const Partition*, QString> m_toFormat;
-    VisibleParts m_parts;
 
     QList<QColor> m_colorList;
     int m_currentPart;
     
     InstallationHandler *m_install;
 };
-
-Q_DECLARE_OPERATORS_FOR_FLAGS(PartitionPage::VisibleParts)
 
 #endif /*PARTITIONPAGE_H*/

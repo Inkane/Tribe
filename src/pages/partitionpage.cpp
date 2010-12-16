@@ -1,22 +1,14 @@
-/***************************************************************************
- *   Copyright (C) 2008, 2009  Dario Freddi <drf@chakra-project.org>       *
- *                 2010        Drake Justice <djustice@chakra-project.org> *
- *                                                                         *
- *   This program is free software; you can redistribute it and/or modify  *
- *   it under the terms of the GNU General Public License as published by  *
- *   the Free Software Foundation; either version 2 of the License, or     *
- *   (at your option) any later version.                                   *
- *                                                                         *
- *   This program is distributed in the hope that it will be useful,       *
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of        *
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
- *   GNU General Public License for more details.                          *
- *                                                                         *
- *   You should have received a copy of the GNU General Public License     *
- *   along with this program; if not, write to the                         *
- *   Free Software Foundation, Inc.,                                       *
- *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
- ***************************************************************************/
+/*
+ * Copyright (c) 2008, 2009  Dario Freddi <drf@chakra-project.org>
+ *               2010        Drake Justice <djustice.kde@gmail.com>
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ */
+
 
 #include <QDebug>
 
@@ -67,6 +59,7 @@ QStringList s_mountPoints = QStringList() << "None" <<
                                              "Other...";
 
 QHash<const Partition*, QString> s_partitionToMountPoint;
+
 
 bool caseInsensitiveLessThan(const QString& s1, const QString& s2)
 {
@@ -194,15 +187,17 @@ void PartitionDelegate::paint(QPainter * painter, const QStyleOptionViewItem & o
 
     QRect iconRect = optV4.rect;
     iconRect.setSize(QSize(optV4.rect.height() - SPACING * 2 - 10, optV4.rect.height() - SPACING * 2 - 10));
-    iconRect.moveTo(QPoint(iconRect.x() + SPACING + 1, iconRect.y() + SPACING + 1));
+    iconRect.moveTo(QPoint(iconRect.x() + SPACING + 3, iconRect.y() + SPACING + 4));
 
     painter->setPen(Qt::NoPen);
 
     if (idx.data(58) != "p") {
-        if (optV4.text.left(3) == "New") {
-
-        } else if (optV4.text.left(3) == "Unsupp") {
-
+        if (optV4.text.left(3) == "New" || optV4.text.left(3) == "Unsupp") {
+            QRect overlayRect = QRect(QPoint(optV4.rect.left() + 2, optV4.rect.top() + 2),
+                                    QPoint(optV4.rect.right() - 2, optV4.rect.bottom() - 2));
+            painter->setBrush(QBrush(QColor(Qt::black)));
+            painter->drawRect(overlayRect);
+            painter->drawPixmap(iconRect, optV4.icon.pixmap(iconRect.size()));
         } else {
             QRect overlayRect = QRect(QPoint(optV4.rect.left() + 2, optV4.rect.top() + 2),
                                     QPoint(optV4.rect.right() - 2, optV4.rect.bottom() - 2));
@@ -211,6 +206,12 @@ void PartitionDelegate::paint(QPainter * painter, const QStyleOptionViewItem & o
             painter->drawPixmap(iconRect, optV4.icon.pixmap(iconRect.size()));
         }
     } else if (idx.data(58) == "p") {
+        QRect overlayRect = QRect(QPoint(optV4.rect.left() + 2, optV4.rect.top() + 2),
+                                  QPoint(optV4.rect.right() - 2, optV4.rect.bottom() - 2));
+        painter->setBrush(QBrush(QColor(Qt::black)));
+        painter->drawRect(overlayRect);
+        painter->drawPixmap(iconRect, optV4.icon.pixmap(iconRect.size()));
+
         painter->setBrush(QColor(idx.data(60).toString()).darker().darker());
         painter->drawRect(iconRect);
         painter->setBrush(QColor(idx.data(60).toString()).darker());
@@ -253,7 +254,7 @@ void PartitionDelegate::paint(QPainter * painter, const QStyleOptionViewItem & o
 
     QRect textRect = optV4.rect;
     textRect.setX(iconRect.x() + iconRect.width() + 8);
-    textRect.setY(iconRect.y());
+    textRect.setY(iconRect.y() + 1);
 
     if (idx.data(58) != "p") {
         painter->drawText(textRect, optV4.text + "  (" + idx.data(50).toString() + ")");
@@ -488,23 +489,30 @@ void PartitionPage::createWidget()
     m_ui->treeWidget->setSelectionMode(QAbstractItemView::SingleSelection);
     m_ui->treeWidget->setEnabled(false);
 
-    setVisibleParts(PartitionPage::None);
+    setVisibleParts(false);
 
     QStringList fsNames;
     foreach (const FileSystem* fs, FileSystemFactory::map()) {
-        if (fs->supportCreate() != FileSystem::cmdSupportNone && fs->type() != FileSystem::Extended) {
+        if (fs->supportCreate() != FileSystem::cmdSupportNone && 
+            fs->type() != FileSystem::Extended &&
+            fs->type() != FileSystem::Unformatted) {
             fsNames.append(fs->name());
         }
     }
 
     qSort(fsNames.begin(), fsNames.end(), caseInsensitiveLessThan);
+
     m_ui->filesystemBox->addItems(fsNames);
+    m_ui->filesystemBox->setVisible(false);
+    m_ui->filesystemLabel->setVisible(false);
+
+    m_ui->editPartitionCancelButton->setIcon(KIcon("dialog-cancel"));
+    m_ui->editPartitionOkButton->setIcon(KIcon("dialog-ok"));
 
     enableNextButton(false);
 
     m_currentPart = 0;
 
-    // Now set up PartitionManager and load
     PMHandler::instance();
     connect(PMHandler::instance(), SIGNAL(devicesReady()), this, SLOT(populateTreeWidget()));
     PMHandler::instance()->reload();
@@ -541,40 +549,22 @@ void PartitionPage::advancedClicked()
     populateTreeWidget();
 }
 
-void PartitionPage::setVisibleParts(PartitionPage::VisibleParts parts)
+void PartitionPage::setVisibleParts(bool b)
 {
-    bool notNone = true;
+    m_ui->editPartitionCancelButton->setVisible(b);
+    m_ui->editPartitionOkButton->setVisible(b);
+    m_ui->lowLine->setVisible(b);
+    m_ui->filesystemLabel->setVisible(b);
+    m_ui->filesystemBox->setVisible(b);
+    m_ui->typeLabel->setVisible(b);
+    m_ui->typeBox->setVisible(b);
+    m_ui->sizeSlider->setVisible(b);
+    m_ui->sizeSpinBox->setVisible(b);
 
-    if (parts == PartitionPage::None) {
-        notNone = false;
+    if (m_ui->typeBox->currentText() == i18n("Extended")) {
+        m_ui->filesystemLabel->setVisible(false);
+        m_ui->filesystemBox->setVisible(false);
     }
-
-    m_ui->editPartitionCancelButton->setVisible(notNone);
-    m_ui->editPartitionOkButton->setVisible(notNone);
-    m_ui->line->setVisible(notNone);
-    m_ui->upLine->setVisible(notNone);
-    m_ui->lowLine->setVisible(notNone);
-
-    m_ui->filesystemLabel->setVisible(parts & FileSystemPart);
-    m_ui->filesystemBox->setVisible(parts & FileSystemPart);
-
-    m_ui->typeLabel->setVisible(parts & TypePart);
-    m_ui->typeBox->setVisible(parts & TypePart);
-
-    m_ui->sizeSlider->setVisible(parts & ShrinkPart);
-    m_ui->sizeSpinBox->setVisible(parts & ShrinkPart);
-
-    m_parts = parts;
-}
-
-void PartitionPage::slotTypeChanged(const QString &type)
-{
-    if (type == "Extended")
-        m_parts ^= FileSystemPart;
-    else
-        m_parts |= FileSystemPart;
-
-    setVisibleParts(m_parts);
 }
 
 void PartitionPage::populateTreeWidget()
@@ -648,8 +638,6 @@ void PartitionPage::populateTreeWidget()
 
 void PartitionPage::currentItemChanged(QTreeWidgetItem* current, QTreeWidgetItem* )
 {
-    // Check current item
-
     if (!current) {
         m_ui->deleteButton->setEnabled(false);
         m_ui->newButton->setEnabled(false);
@@ -724,17 +712,26 @@ void PartitionPage::unmountClicked()
     populateTreeWidget();
 }
 
+void PartitionPage::slotTypeChanged(QString s)
+{
+    if (s == i18n("Extended")) {
+        m_ui->filesystemLabel->setVisible(false);
+        m_ui->filesystemBox->setVisible(false);
+    } else {
+        m_ui->filesystemLabel->setVisible(true);
+        m_ui->filesystemBox->setVisible(true);
+    }
+}
+
 void PartitionPage::formatToggled(bool status)
 {
     if (status) {
-        // Display the dialog
-        setVisibleParts(FileSystemPart);
+        setVisibleParts(true);
     } else {
         cancelFormat();
         return;
     }
 
-    // Set the combobox to the current filesystem, of course
     const Partition *p = m_ui->treeWidget->selectedItems().first()->data(0, PARTITION_ROLE).value<const Partition*>();
     m_ui->filesystemBox->setCurrentIndex(m_ui->filesystemBox->findText(FileSystem::nameForType(p->fileSystem().type())));
 
@@ -753,7 +750,7 @@ void PartitionPage::applyFormat()
     const Partition *p = m_ui->treeWidget->selectedItems().first()->data(0, PARTITION_ROLE).value<const Partition*>();
     m_toFormat.insert(p, m_ui->filesystemBox->currentText());
     m_ui->formatButton->setChecked(true);
-    setVisibleParts(None);
+    setVisibleParts(false);
 
     connect(m_ui->formatButton, SIGNAL(toggled(bool)), this, SLOT(formatToggled(bool)));
 }
@@ -768,7 +765,7 @@ void PartitionPage::cancelFormat()
     m_ui->formatButton->setChecked(false);
     const Partition *p = m_ui->treeWidget->selectedItems().first()->data(0, PARTITION_ROLE).value<const Partition*>();
     m_toFormat.remove(p);
-    setVisibleParts(None);
+    setVisibleParts(false);
 
     connect(m_ui->formatButton, SIGNAL(toggled(bool)), this, SLOT(formatToggled(bool)));
 }
@@ -788,21 +785,16 @@ void PartitionPage::deleteClicked()
 void PartitionPage::newClicked()
 {
     m_ui->typeBox->clear();
-    VisibleParts parts = ShrinkPart;
+
     const Partition *partition = m_ui->treeWidget->selectedItems().first()->data(0, PARTITION_ROLE).value<const Partition*>();
-    Device *device = m_ui->treeWidget->selectedItems().first()->data(0, DEVICE_ROLE).value<Device*>();
-    PartitionRole::Roles roles = device->partitionTable()->childRoles(*partition);
-    if (roles & PartitionRole::Extended && roles & PartitionRole::Primary) {
-        m_ui->typeBox->addItem("Extended", (int)PartitionRole::Extended);
-        m_ui->typeBox->addItem("Primary", (int)PartitionRole::Primary);
-        parts |= TypePart;
-    } else {
-        parts |= FileSystemPart;
-    }
+
+    m_ui->typeBox->addItem(i18n("Extended"), (int)PartitionRole::Extended);
+    m_ui->typeBox->addItem(i18n("Primary"), (int)PartitionRole::Primary);
 
     QString selected = FileSystem::nameForType(FileSystem::Ext4);
     m_ui->filesystemBox->setCurrentIndex(m_ui->filesystemBox->findText(selected));
-    setVisibleParts(parts);
+
+    setVisibleParts(true);
 
     m_newPartition = NewOperation::createNew(*partition);
 
@@ -810,11 +802,12 @@ void PartitionPage::newClicked()
     qint64 maxSize = qMin(m_newPartition->length(), m_newPartition->maximumSectors()) * m_newPartition->sectorSize();
 
     m_ui->sizeSpinBox->setRange(Capacity(minSize).toInt(Capacity::MiB), Capacity(maxSize).toInt(Capacity::MiB));
-    m_ui->sizeSlider->setRange(Capacity(minSize).toInt(Capacity::MiB), Capacity(maxSize).toInt(Capacity::MiB));
 
+    m_ui->sizeSlider->setRange(Capacity(minSize).toInt(Capacity::MiB), Capacity(maxSize).toInt(Capacity::MiB));
     m_ui->sizeSlider->setValue(Capacity(maxSize).toInt(Capacity::MiB));
 
     connect(m_ui->treeWidget, SIGNAL(itemSelectionChanged()), this, SLOT(cancelNew()));
+
     connect(m_ui->editPartitionCancelButton, SIGNAL(clicked(bool)), this, SLOT(cancelNew()));
     connect(m_ui->editPartitionOkButton, SIGNAL(clicked(bool)), this, SLOT(applyNew()));
 }
@@ -822,6 +815,7 @@ void PartitionPage::newClicked()
 void PartitionPage::applyNew()
 {
     disconnect(m_ui->treeWidget, SIGNAL(itemSelectionChanged()), this, SLOT(cancelNew()));
+
     disconnect(m_ui->editPartitionCancelButton, SIGNAL(clicked(bool)), this, SLOT(cancelNew()));
     disconnect(m_ui->editPartitionOkButton, SIGNAL(clicked(bool)), this, SLOT(applyNew()));
 
@@ -857,9 +851,11 @@ void PartitionPage::applyNew()
     m_newPartition->setFileSystem(FileSystemFactory::create(filesystem,
                                                             m_newPartition->firstSector(),
                                                             m_newPartition->lastSector()));
+
     PMHandler::instance()->operationStack().push(new NewOperation(*device, m_newPartition));
 
-    setVisibleParts(None);
+    setVisibleParts(false);
+
     populateTreeWidget();
 }
 
@@ -870,7 +866,8 @@ void PartitionPage::cancelNew()
     disconnect(m_ui->editPartitionOkButton, SIGNAL(clicked(bool)), this, SLOT(applyNew()));
 
     delete m_newPartition;
-    setVisibleParts(None);
+
+    setVisibleParts(false);
 }
 
 void PartitionPage::undoClicked()
@@ -969,19 +966,22 @@ void PartitionPage::aboutToGoToNext()
             PMHandler::instance()->clearMountList();
             return;
         }
+
         ++it;
     }
 
     s_partitionToMountPoint.clear();
+
     emit goToNextStep();
 }
 
 void PartitionPage::aboutToGoToPrevious()
 {
     enableNextButton(true);
+
     s_partitionToMountPoint.clear();
+
     emit goToPreviousStep();
 }
-
 
 #include "partitionpage.moc"

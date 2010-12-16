@@ -146,7 +146,7 @@ void LocalePage::zoom(int value)
 bool LocalePage::eventFilter(QObject * object, QEvent * event)
 {
     if (object == marble && event->type() == QEvent::MouseButtonPress) {
-        QVector<QModelIndex> indexes = marble->model()->whichFeatureAt(marble->mapFromGlobal(QCursor::pos()));
+        QVector<QModelIndex> indexes = marble->whichFeatureAt(marble->mapFromGlobal(QCursor::pos()));
         if (!indexes.isEmpty()) {
             QHash<QString, QStringList>::const_iterator it;
 

@@ -26,7 +26,7 @@
 #include "pages/releasenotespage.h"
 #include "pages/licensepage.h"
 #include "pages/localepage.h"
-#include "pages/settingspage.h"
+#include "pages/configpage.h"
 #include "pages/usercreationpage.h"
 #include "pages/partitionpage.h"
 #include "pages/readyinstallpage.h"

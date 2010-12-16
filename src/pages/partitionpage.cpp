@@ -731,6 +731,8 @@ void PartitionPage::formatToggled(bool status)
         m_ui->sizeSpinBox->setVisible(false);
         m_ui->typeBox->setVisible(false);
         m_ui->typeLabel->setVisible(false);
+        m_ui->filesystemLabel->setVisible(true);
+        m_ui->filesystemBox->setVisible(true);
     } else {
         cancelFormat();
         return;

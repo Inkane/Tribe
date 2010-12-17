@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
 "POT-Creation-Date: 2010-12-17 01:39+0100\n"
-"PO-Revision-Date: 2010-12-09 00:01+0100\n"
+"PO-Revision-Date: 2010-12-17 01:45+0100\n"
 "Last-Translator: Manuel Tortosa Moreno <manutortosa@chakra-project.org>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -17,6 +17,7 @@ msgstr ""
 "X-Language: ca_ES\n"
 "X-Generator: Lokalize 1.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Language: ca"
 
 #: src/installationhandler.cpp:86
 msgid "Tribe was not able to initialize needed path: "
@@ -230,21 +231,20 @@ msgstr "S'està creant la llista de sistemes operatius..."
 #. i18n: file: ui/pages/config.ui:97
 #. i18n: ectx: property (text), widget (QPushButton, installPkgzButton)
 #: src/pages/configpage.cpp:175 rc.cpp:102
-#, fuzzy
 msgid "Install Packaged Software"
-msgstr "Dorsal de post-instal·lació i treball artístic"
+msgstr "Instal·la paquets de programari"
 
 #. i18n: file: ui/pages/config.ui:122
 #. i18n: ectx: property (text), widget (QPushButton, downloadBundlesButton)
 #: src/pages/configpage.cpp:192 rc.cpp:105
 msgid "Download Bundled Software"
-msgstr ""
+msgstr "Baixa «bundles» de programari"
 
 #. i18n: file: ui/pages/config.ui:188
 #. i18n: ectx: property (text), widget (QPushButton, initRamDiskButton)
 #: src/pages/configpage.cpp:208 rc.cpp:111
 msgid "Customize Initial Ramdisk"
-msgstr ""
+msgstr "Personalitza la imatge Ramdisk inicial"
 
 #: src/pages/licensepage.cpp:53
 msgid "Proprietary ATI Driver"
@@ -640,7 +640,6 @@ msgstr "hd0"
 #. i18n: file: ui/pages/config.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:95
-#, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -663,103 +662,99 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Creació usuaris</span></p></"
+"size:22pt; font-weight:600; color:#ffffff;\">Configuració</span></p></"
 "body></html>"
 
 #. i18n: file: ui/pages/config.ui:160
 #. i18n: ectx: property (text), widget (QPushButton, changeAppearanceButton)
 #: rc.cpp:108
 msgid "Change System Appearance"
-msgstr ""
+msgstr "Canvia l'aparença del sistema"
 
 #. i18n: file: ui/pages/config.ui:198
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:114
-#, fuzzy
 msgid "Advanced Options"
-msgstr "Opcions de Ramdisk"
+msgstr "Opcions avançades"
 
 #. i18n: file: ui/pages/config.ui:252
 #. i18n: ectx: property (text), widget (QCheckBox, usb)
 #: rc.cpp:117
 msgid "USB"
-msgstr ""
+msgstr "USB"
 
 #. i18n: file: ui/pages/config.ui:259
 #. i18n: ectx: property (text), widget (QCheckBox, nfs)
 #: rc.cpp:120
 msgid "NFS Shares"
-msgstr ""
+msgstr "Comparticions NFS"
 
 #. i18n: file: ui/pages/config.ui:266
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: rc.cpp:123
-#, fuzzy
 msgid "Activate support for booting from:"
-msgstr "Activa implementació per arrencar des de dispositius d'intercanvi NFS"
+msgstr "Habilita la possibilitat d'arrencar des de:"
 
 #. i18n: file: ui/pages/config.ui:273
 #. i18n: ectx: property (text), widget (QCheckBox, firewire)
 #: rc.cpp:126
 msgid "FireWire"
-msgstr ""
+msgstr "FireWire"
 
 #. i18n: file: ui/pages/config.ui:280
 #. i18n: ectx: property (text), widget (QCheckBox, raid)
 #: rc.cpp:129
 msgid "Software Raid Arrays"
-msgstr ""
+msgstr "Matrius Raid de programari"
 
 #. i18n: file: ui/pages/config.ui:287
 #. i18n: ectx: property (text), widget (QCheckBox, lvm2)
 #: rc.cpp:132
 msgid "LVM2 Volumes"
-msgstr ""
+msgstr "Volums LVM2"
 
 #. i18n: file: ui/pages/config.ui:294
 #. i18n: ectx: property (text), widget (QCheckBox, encrypted)
 #: rc.cpp:135
 msgid "Encrypted Volumes"
-msgstr ""
+msgstr "Volums encriptats"
 
 #. i18n: file: ui/pages/config.ui:313
 #. i18n: ectx: property (text), widget (QPushButton, generateInitRamDiskButton)
 #: rc.cpp:138
 msgid "Generate Initial Ramdisk"
-msgstr ""
+msgstr "Genera la imatge Ramdisk inicial"
 
 #. i18n: file: ui/pages/config.ui:349
 #. i18n: ectx: property (text), widget (QCheckBox, mdp)
 #: rc.cpp:141
-#, fuzzy
 msgid "MDP Partition Arrays"
-msgstr "Partició"
+msgstr "Matrius de partició MDP"
 
 #. i18n: file: ui/pages/config.ui:356
 #. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
 #: rc.cpp:144
 msgid "PCMCIA"
-msgstr ""
+msgstr "PCMCIA"
 
 #. i18n: file: ui/pages/config.ui:670
 #. i18n: ectx: property (text), widget (QPushButton, pkgInstallButton)
 #: rc.cpp:147
-#, fuzzy
 msgid "Install"
-msgstr "Instal·la en:"
+msgstr "Instal·la"
 
 #. i18n: file: ui/pages/config.ui:687
 #. i18n: ectx: property (text), widget (QPushButton, bundlesDownloadButton)
 #: rc.cpp:150
 msgid "Download"
-msgstr ""
+msgstr "Baixa"
 
 #. i18n: file: ui/pages/config.ui:768
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:153
 msgid ""
 "Now that you have a Chakra install, you can now configure it to your liking."
-msgstr ""
+msgstr "Ara que heu instal·lat Chakra, la podeu configurar com vulgueu."
 
 #. i18n: file: ui/pages/finish.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1291,16 +1286,14 @@ msgstr ""
 #. i18n: file: ui/pages/partition.ui:100
 #. i18n: ectx: property (text), widget (QLabel, typeLabel)
 #: rc.cpp:324
-#, fuzzy
 msgid "Type: "
-msgstr "Tipus"
+msgstr "Tipus: "
 
 #. i18n: file: ui/pages/partition.ui:127
 #. i18n: ectx: property (text), widget (QLabel, filesystemLabel)
 #: rc.cpp:333
-#, fuzzy
 msgid "Filesystem: "
-msgstr "Sistema de fitxers"
+msgstr "Sistema de fitxers: "
 
 #. i18n: file: ui/pages/partition.ui:173
 #. i18n: ectx: property (text), widget (KPushButton, editPartitionOkButton)
@@ -1529,8 +1522,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:417
 msgid "Enter at least one login name and password."
-msgstr ""
-"Heu de proporcionar almenys un nom d'inici de sessió i una contrasenya."
+msgstr "Heu de proporcionar almenys un nom d'inici de sessió i una contrasenya."
 
 #. i18n: file: ui/pages/usercreation.ui:178
 #. i18n: ectx: property (toolTip), widget (QPushButton, addUser)

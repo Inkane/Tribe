@@ -111,7 +111,7 @@ void ConfigPage::populatePkgzList()
         item->setText(pkg.split("::").at(1));
         item->setData(60, pkg.split("::").at(0));
         item->setData(61, pkg.split("::").at(2));
-        item->setIcon(KIcon(QString(CONFIG_INSTALL_PATH) + "/" + item->data(60).toString() + ".png"));
+        item->setIcon(QIcon(QString(CONFIG_INSTALL_PATH) + "/" + item->data(60).toString() + ".png"));
         ui.pkgList->addItem(item);
     }
 }
@@ -139,7 +139,7 @@ void ConfigPage::populateBundlesList()
         item->setCheckState(Qt::Unchecked);
         item->setData(60, pkg.split("::").at(0));
         item->setData(61, pkg.split("::").at(2));
-        item->setIcon(KIcon(QString(CONFIG_INSTALL_PATH) + "/" + item->data(60).toString() + ".png"));
+        item->setIcon(QIcon(QString(CONFIG_INSTALL_PATH) + "/" + item->data(60).toString() + ".png"));
         ui.bundlesList->addItem(item);
     }
 }

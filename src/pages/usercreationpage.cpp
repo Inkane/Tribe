@@ -173,7 +173,6 @@ void UserCreationPage::aboutToGoToNext()
 
     QProcess::execute("touch /tmp/tribe_initcpio_enable_usb");
     QProcess::execute("touch /tmp/tribe_initcpio_enable_nfs");
-    QProcess::execute("touch /tmp/tribe_initcpio_enable_lvm2");
 
     emit goToNextStep();
 }

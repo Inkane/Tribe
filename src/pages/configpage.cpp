@@ -72,6 +72,18 @@ void ConfigPage::createWidget()
     
     ui.generateInitRamDiskButton->setIcon(KIcon("debug-run"));
     
+    ui.usb->setChecked(true);
+    ui.nfs->setChecked(true);
+
+    QProcess::execute("rm " + USB);
+    QProcess::execute("rm " + FIREWIRE);
+    QProcess::execute("rm " + PCMCIA);
+    QProcess::execute("rm " + NFS);
+    QProcess::execute("rm " + SOFTWARE_RAID);
+    QProcess::execute("rm " + SOFTWARE_RAID_MDP);
+    QProcess::execute("rm " + LVM2);
+    QProcess::execute("rm " + ENCRYPTED);
+    
     populatePkgzList();
     populateBundlesList();
 }

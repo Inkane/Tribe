@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2010-12-17 01:39+0100\n"
+"POT-Creation-Date: 2010-12-17 02:14+0100\n"
 "PO-Revision-Date: 2010-12-17 01:45+0100\n"
 "Last-Translator: Manuel Tortosa Moreno <manutortosa@chakra-project.org>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "X-Language: ca_ES@valencia\n"
 "X-Generator: Lokalize 1.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"Language: ca"
+"Language: ca\n"
 
 #: src/installationhandler.cpp:86
 msgid "Tribe was not able to initialize needed path: "
@@ -661,8 +661,8 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Configuració</span></p></"
-"body></html>"
+"size:22pt; font-weight:600; color:#ffffff;\">Configuració</span></p></body></"
+"html>"
 
 #. i18n: file: ui/pages/config.ui:160
 #. i18n: ectx: property (text), widget (QPushButton, changeAppearanceButton)
@@ -1521,7 +1521,8 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:417
 msgid "Enter at least one login name and password."
-msgstr "Heu de proporcionar almenys un nom d'inici de sessió i una contrasenya."
+msgstr ""
+"Heu de proporcionar almenys un nom d'inici de sessió i una contrasenya."
 
 #. i18n: file: ui/pages/usercreation.ui:178
 #. i18n: ectx: property (toolTip), widget (QPushButton, addUser)

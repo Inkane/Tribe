@@ -162,7 +162,7 @@ void ConfigPage::currentPkgItemChanged(int i)
     QProcess p;
     p.start("pacman -Sp --print-format %v " + ui.pkgList->item(i)->data(60).toString());
     p.waitForFinished();
-    QString pkgVer = p.readAll();
+    QString pkgVer = QString(p.readAll()).split("\n").last();
     ui.pkgVerLabel->setText(pkgVer);
 
     ui.pkgDescLabel->setText(ui.pkgList->item(i)->data(61).toString());

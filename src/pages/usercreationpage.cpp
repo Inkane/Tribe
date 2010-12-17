@@ -155,7 +155,7 @@ void UserCreationPage::aboutToGoToNext()
         avatarList.append(user->avatar);
         autoLoginList.append(QString::number(user->autoLogin));
     }
-    
+
     passwordList.append(rootPw);
 
     m_userList.clear();

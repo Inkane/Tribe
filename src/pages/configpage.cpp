@@ -23,6 +23,7 @@
 #include "../installationhandler.h"
 #include "configpage.h"
 #include <QMovie>
+#include <KIO/Job>
 
 
 const QString USB = "/tmp/tribe_initcpio_enable_usb";
@@ -93,19 +94,18 @@ void ConfigPage::populatePkgzList()
 {
     ui.pkgList->clear();
 
-    QStringList pkgDataList;
     QFile pkglistFile(QString(CONFIG_INSTALL_PATH) + "/configPagePkgData");
 
     if (pkglistFile.open(QIODevice::ReadOnly)) {
-        pkgDataList = QString(pkglistFile.readAll()).trimmed().split("\n");
+        m_incomingList = QString(pkglistFile.readAll()).trimmed().split("\n");
     } else {
         qDebug() << pkglistFile.errorString();
     }
-    
-    if (pkgDataList.isEmpty())
+
+    if (m_incomingList.isEmpty())
         return;
-    
-    foreach (QString pkg, pkgDataList) {
+
+    foreach (QString pkg, m_incomingList) {
         QListWidgetItem *item = new QListWidgetItem(ui.pkgList);
         item->setSizeHint(QSize(0, 22));
         item->setText(pkg.split("::").at(1));
@@ -113,7 +113,49 @@ void ConfigPage::populatePkgzList()
         item->setData(61, pkg.split("::").at(2));
         item->setIcon(QIcon(QString(CONFIG_INSTALL_PATH) + "/" + item->data(60).toString() + ".png"));
         ui.pkgList->addItem(item);
+        m_incomingList.append(pkg + "_thumb");
     }
+
+    m_incomingIncr = 0;
+    m_incomingExtension = ".jpeg";
+
+    KUrl r(QUrl("http://chakra-project.org/packages/screenshots/" + 
+                m_incomingList.at(m_incomingIncr) + m_incomingExtension));
+    m_job = KIO::get(r, KIO::Reload, KIO::Overwrite | KIO::HideProgressInfo);
+    connect(m_job, SIGNAL(data(KIO::Job*,QByteArray)), this, SLOT(incomingData(KIO::Job*, QByteArray)));
+}
+
+void ConfigPage::incomingData(KIO::Job* job, QByteArray data)
+{
+    if (data.isNull()) {
+        if (job->processedAmount(KJob::Bytes) == job->totalAmount(KJob::Bytes))
+            downloadComplete();
+
+        return;
+    }
+
+    QFile x("/tmp/" + m_incomingList.at(m_incomingIncr) + m_incomingExtension);
+    if (x.open(QIODevice::Append)) {
+        x.write(data);
+        x.flush();
+    }
+}
+
+void ConfigPage::downloadComplete()
+{
+    m_incomingIncr++;
+
+    if (m_incomingIncr == m_incomingList.count()) {
+        m_incomingIncr = 0;
+        m_incomingList.clear();
+        m_incomingExtension = "";
+        return;
+    }
+
+    KUrl r(QUrl("http://chakra-project.org/packages/screenshots/" + 
+                m_incomingList.at(m_incomingIncr) + m_incomingExtension));
+    m_job = KIO::get(r, KIO::Reload, KIO::Overwrite | KIO::HideProgressInfo);
+    connect(m_job, SIGNAL(data(KIO::Job*,QByteArray)), this, SLOT(incomingData(KIO::Job*, QByteArray)));
 }
 
 void ConfigPage::populateBundlesList()
@@ -146,13 +188,20 @@ void ConfigPage::populateBundlesList()
 
 void ConfigPage::bundlesDownloadButtonClicked()
 {
-    QStringList selectedBundles;
+    m_incomingList.clear();
+    m_incomingExtension = ".cb";
+    m_incomingIncr = 0;
     
     for ( int i = 0; i < ui.bundlesList->count(); i++ ) {
         if (ui.bundlesList->item(i)->checkState() == Qt::Checked) {
-            selectedBundles.append(ui.bundlesList->item(i)->data(60).toString());
+            m_incomingList.append(ui.bundlesList->item(i)->data(60).toString());
         }
     }
+
+    KUrl r(QUrl("http://chakra-project.org/packages/screenshots/" + 
+                m_incomingList.at(m_incomingIncr) + m_incomingExtension));
+    m_job = KIO::get(r, KIO::Reload, KIO::Overwrite | KIO::HideProgressInfo);
+    connect(m_job, SIGNAL(data(KIO::Job*,QByteArray)), this, SLOT(incomingData(KIO::Job*, QByteArray)));
 }
 
 void ConfigPage::currentPkgItemChanged(int i)
@@ -166,6 +215,8 @@ void ConfigPage::currentPkgItemChanged(int i)
     ui.pkgVerLabel->setText(pkgVer);
 
     ui.pkgDescLabel->setText(ui.pkgList->item(i)->data(61).toString());
+
+    ui.pkgScreenLabel->setPixmap(QPixmap("/tmp/" + ui.pkgList->item(i)->data(60).toString() + "_thumb.jpeg"));
 }
 
 void ConfigPage::setInstallPkgzPage()

@@ -13,10 +13,15 @@
 #ifndef CONFIGPAGE_H
 #define CONFIGPAGE_H
 
-#include "../abstractpage.h"
-#include "ui_config.h"
 #include <QProcess>
 #include <QMovie>
+
+#include <KIO/NetAccess>
+#include <KIO/TransferJob>
+#include <KIO/Job>
+
+#include "../abstractpage.h"
+#include "ui_config.h"
 
 
 class InstallationHandler;
@@ -39,6 +44,9 @@ private slots:
     void setChangeAppearancePage();
     void setInitRamDiskPage();
 
+    void incomingData(KIO::Job*, QByteArray);
+    void downloadComplete();
+
     // install pkg page
     void populatePkgzList();
     void currentPkgItemChanged(int);
@@ -54,9 +62,13 @@ private slots:
 
 private:
     Ui::Config ui;
+    KIO::TransferJob *m_job;
     InstallationHandler *m_install;
     QProcess *m_process;
     QMovie *m_busyAnim;
+    QStringList m_incomingList;
+    QString m_incomingExtension;
+    int m_incomingIncr;
 };
 
 #endif /* CONFIGPAGE_H */

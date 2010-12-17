@@ -216,7 +216,9 @@ void ConfigPage::generateInitRamDisk()
 {
     ui.generateInitRamDiskButton->setEnabled(false);
     m_busyAnim = new QMovie(":Images/images/busywidget.gif");
+    m_busyAnim->start();
     ui.initRdLabel->setMovie(m_busyAnim);
+    ui.initRdLabel->setVisible(true);
 
     if (ui.usb->isChecked())
         QProcess::execute("touch " + USB);
@@ -246,8 +248,7 @@ void ConfigPage::generateInitRamDisk()
 void ConfigPage::initRdGenerationComplete()
 {
     ui.generateInitRamDiskButton->setEnabled(true);
-    m_busyAnim = new QMovie(this);
-    ui.initRdLabel->setMovie(m_busyAnim);
+    ui.initRdLabel->setVisible(false);
 
     QProcess::execute("rm " + USB);
     QProcess::execute("rm " + FIREWIRE);

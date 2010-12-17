@@ -22,6 +22,7 @@
 
 #include "../installationhandler.h"
 #include "configpage.h"
+#include <QMovie>
 
 
 const QString USB = "/tmp/tribe_initcpio_enable_usb";
@@ -213,6 +214,10 @@ void ConfigPage::setInitRamDiskPage()
 
 void ConfigPage::generateInitRamDisk()
 {
+    ui.generateInitRamDiskButton->setEnabled(false);
+    m_busyAnim = new QMovie(":Images/images/busywidget.gif");
+    ui.initRdLabel->setMovie(m_busyAnim);
+
     if (ui.usb->isChecked())
         QProcess::execute("touch " + USB);
     if (ui.firewire->isChecked())
@@ -233,7 +238,16 @@ void ConfigPage::generateInitRamDisk()
     QString command  = QString("sh " + QString(SCRIPTS_INSTALL_PATH) +
                                "/postinstall.sh --job create-initrd %1")
                                .arg(m_install->m_postcommand);
-    QProcess::execute(command);
+    m_process = new QProcess(this);
+    connect(m_process, SIGNAL(finished(int)), this, SLOT(initRdGenerationComplete()));
+    m_process->start(command);
+}
+
+void ConfigPage::initRdGenerationComplete()
+{
+    ui.generateInitRamDiskButton->setEnabled(true);
+    m_busyAnim = new QMovie(this);
+    ui.initRdLabel->setMovie(m_busyAnim);
 }
 
 void ConfigPage::aboutToGoToNext()

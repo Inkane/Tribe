@@ -15,6 +15,8 @@
 
 #include "../abstractpage.h"
 #include "ui_config.h"
+#include <QProcess>
+#include <QMovie>
 
 
 class InstallationHandler;
@@ -47,11 +49,14 @@ private slots:
     void bundlesDownloadButtonClicked();
 
     // customize initrd page
+    void initRdGenerationComplete();
     void generateInitRamDisk();
 
 private:
     Ui::Config ui;
-    InstallationHandler* m_install;
+    InstallationHandler *m_install;
+    QProcess *m_process;
+    QMovie *m_busyAnim;
 };
 
 #endif /* CONFIGPAGE_H */

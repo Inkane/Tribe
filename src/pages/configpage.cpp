@@ -236,10 +236,10 @@ void ConfigPage::pkgInstallButtonClicked()
     ui.pkgInstallButton->setEnabled(false);
     enableNextButton(false);
     // mount special folders
-    QProcess::execute("mount -v -t proc none " + QString(INSTALLATION_TARGET) + "/proc"
-    QProcess::execute("mount -v -t sysfs none " + QString(INSTALLATION_TARGET) + "/sys"
-    QProcess::execute("mount -v -o bind /dev " + QString(INSTALLATION_TARGET) + "/dev"
-    QProcess::execute("mount -v -t devpts devpts " + QString(INSTALLATION_TARGET) + "/dev/pts"
+    QProcess::execute("mount -v -t proc none " + QString(INSTALLATION_TARGET) + "/proc");
+    QProcess::execute("mount -v -t sysfs none " + QString(INSTALLATION_TARGET) + "/sys");
+    QProcess::execute("mount -v -o bind /dev " + QString(INSTALLATION_TARGET) + "/dev");
+    QProcess::execute("mount -v -t devpts devpts " + QString(INSTALLATION_TARGET) + "/dev/pts");
     // cinstall cmd
     QProcess p;
     p.start("chroot " + QString(INSTALLATION_TARGET) + "/usr/bin/cinstall -i " + ui.pkgList->currentItem()->data(60).toString());

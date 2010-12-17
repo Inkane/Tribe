@@ -232,16 +232,21 @@ void ConfigPage::setInstallPkgzPage()
 
 void ConfigPage::pkgInstallButtonClicked()
 {
+    // disable buttons
     ui.pkgInstallButton->setEnabled(false);
     enableNextButton(false);
-    enablePreviousButton(false);
+    // mount special folders
+    QProcess::execute("mount -v -t proc none " + QString(INSTALLATION_TARGET) + "/proc"
+    QProcess::execute("mount -v -t sysfs none " + QString(INSTALLATION_TARGET) + "/sys"
+    QProcess::execute("mount -v -o bind /dev " + QString(INSTALLATION_TARGET) + "/dev"
+    QProcess::execute("mount -v -t devpts devpts " + QString(INSTALLATION_TARGET) + "/dev/pts"
+    // cinstall cmd
     QProcess p;
-    p.start("chroot " + QString(INSTALLATION_TARGET) + "/usr/bin/pacman -Syf " + ui.pkgList->currentItem()->data(60).toString() + " --noconfirm");
-qDebug() << "pkgInstall cmd: chroot " + QString(INSTALLATION_TARGET) + "/usr/bin/pacman -Syf " + ui.pkgList->currentItem()->data(60).toString() + " --noconfirm";
+    p.start("chroot " + QString(INSTALLATION_TARGET) + "/usr/bin/cinstall -i " + ui.pkgList->currentItem()->data(60).toString());
     p.waitForFinished();
+    // re-enable buttons
     ui.pkgInstallButton->setEnabled(true);
     enableNextButton(true);
-    enablePreviousButton(true);
 }
 
 void ConfigPage::setDownloadBundlesPage()
@@ -275,7 +280,6 @@ void ConfigPage::generateInitRamDisk()
 {
     ui.generateInitRamDiskButton->setEnabled(false);
     enableNextButton(false);
-    enablePreviousButton(false);
     m_busyAnim = new QMovie(":Images/images/busywidget.gif");
     m_busyAnim->start();
     ui.initRdLabel->setMovie(m_busyAnim);
@@ -310,7 +314,6 @@ void ConfigPage::initRdGenerationComplete()
 {
     ui.generateInitRamDiskButton->setEnabled(true);
     enableNextButton(true);
-    enablePreviousButton(true);
     ui.initRdLabel->setVisible(false);
 
     QProcess::execute("rm " + USB);

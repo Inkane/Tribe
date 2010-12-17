@@ -169,11 +169,11 @@ void MainWindow::loadPage(InstallationStep page)
 
     case MainWindow::Configuration:
         m_ui.stackedWidget->addWidget(new ConfigPage(this));
+        m_ui.previousButton->setVisible(false);
         break;
         
     case MainWindow::Bootloader:
         m_ui.stackedWidget->addWidget(new BootloaderPage(this));
-        m_ui.previousButton->setVisible(false);
         break;
 
     case MainWindow::FinishStep:

@@ -244,6 +244,8 @@ void ConfigPage::pkgInstallButtonClicked()
     QProcess p;
     p.start("chroot " + QString(INSTALLATION_TARGET) + "/usr/bin/cinstall -i " + ui.pkgList->currentItem()->data(60).toString());
     p.waitForFinished();
+    // clean-up
+    QProcess::execute("umount -v " + QString(INSTALLATION_TARGET) + "/proc " + QString(INSTALLATION_TARGET) + "/sys "  + QString(INSTALLATION_TARGET) + "/dev/pts " + QString(INSTALLATION_TARGET) + "/dev");
     // re-enable buttons
     ui.pkgInstallButton->setEnabled(true);
     enableNextButton(true);

@@ -240,9 +240,10 @@ void ConfigPage::pkgInstallButtonClicked()
     QProcess::execute("mount -v -t sysfs none " + QString(INSTALLATION_TARGET) + "/sys");
     QProcess::execute("mount -v -o bind /dev " + QString(INSTALLATION_TARGET) + "/dev");
     QProcess::execute("mount -v -t devpts devpts " + QString(INSTALLATION_TARGET) + "/dev/pts");
+    QProcess::execute("xhost +");
     // cinstall cmd
     QProcess p;
-    p.start("chroot " + QString(INSTALLATION_TARGET) + " su - " + m_install->userLoginList().first() + " -c \"cinstall -i " + ui.pkgList->currentItem()->data(60).toString() + "\"");
+    p.start("chroot " + QString(INSTALLATION_TARGET) + " su " + m_install->userLoginList().first() + " -c \"cinstall -i " + ui.pkgList->currentItem()->data(60).toString() + "\"");
     p.waitForFinished();
     // clean-up
     QProcess::execute("umount -v " + QString(INSTALLATION_TARGET) + "/proc " + QString(INSTALLATION_TARGET) + "/sys "  + QString(INSTALLATION_TARGET) + "/dev/pts " + QString(INSTALLATION_TARGET) + "/dev");

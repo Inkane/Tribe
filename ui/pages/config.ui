@@ -236,7 +236,7 @@ p, li { white-space: pre-wrap; }
    <item row="10" column="0">
     <widget class="QStackedWidget" name="stackedWidget">
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="emptyPage"/>
      <widget class="QWidget" name="initRamDiskPage">
@@ -383,7 +383,7 @@ p, li { white-space: pre-wrap; }
            </property>
           </spacer>
          </item>
-         <item row="13" column="1" colspan="2">
+         <item row="13" column="0" colspan="2">
           <widget class="QLabel" name="initRdLabel">
            <property name="text">
             <string/>

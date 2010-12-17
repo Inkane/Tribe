@@ -182,7 +182,7 @@ void ConfigPage::setInstallPkgzPage()
 void ConfigPage::pkgInstallButtonClicked()
 {
     QProcess::execute("xhost +");
-    QProcess::execute("chroot " + QString(INSTALLATION_TARGET) + " su - " + m_install->userLoginList().first() + " -c \"cinstall -i " + ui.pkgList->currentItem()->data(60).toString() + "\"");
+    QProcess::execute("chroot " + QString(INSTALLATION_TARGET) + " su - " + m_install->userLoginList().first() + " -c \"pacman -Sy " + ui.pkgList->currentItem()->data(60).toString() + "\"");
 }
 
 void ConfigPage::setDownloadBundlesPage()

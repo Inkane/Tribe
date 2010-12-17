@@ -727,6 +727,10 @@ void PartitionPage::formatToggled(bool status)
 {
     if (status) {
         setVisibleParts(true);
+        m_ui->sizeSlider->setVisible(false);
+        m_ui->sizeSpinBox->setVisible(false);
+        m_ui->typeBox->setVisible(false);
+        m_ui->typeLabel->setVisible(false);
     } else {
         cancelFormat();
         return;

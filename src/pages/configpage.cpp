@@ -181,13 +181,13 @@ void ConfigPage::setInstallPkgzPage()
 
 void ConfigPage::pkgInstallButtonClicked()
 {
-    pkgInstallButton->setEnabled(false);
+    ui.pkgInstallButton->setEnabled(false);
     enableNextButton(false);
     enablePreviousButton(false);
     QProcess p;
     p.start("chroot " + QString(INSTALLATION_TARGET) + " su - " + m_install->userLoginList().first() + " -c \"pacman -Sy " + ui.pkgList->currentItem()->data(60).toString() + "\"");
     p.waitForFinished();
-    pkgInstallButton->setEnabled(true);
+    ui.pkgInstallButton->setEnabled(true);
     enableNextButton(true);
     enablePreviousButton(true);
 }

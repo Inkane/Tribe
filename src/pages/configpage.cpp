@@ -185,7 +185,8 @@ void ConfigPage::pkgInstallButtonClicked()
     enableNextButton(false);
     enablePreviousButton(false);
     QProcess p;
-    p.start("chroot " + QString(INSTALLATION_TARGET) + " su - " + m_install->userLoginList().first() + " -c \"pacman -Sy " + ui.pkgList->currentItem()->data(60).toString() + "\"");
+    p.start("chroot " + QString(INSTALLATION_TARGET) + "/usr/bin/pacman -Syf " + ui.pkgList->currentItem()->data(60).toString() + " --noconfirm");
+qDebug() << "pkgInstall cmd: chroot " + QString(INSTALLATION_TARGET) + "/usr/bin/pacman -Syf " + ui.pkgList->currentItem()->data(60).toString() + " --noconfirm";
     p.waitForFinished();
     ui.pkgInstallButton->setEnabled(true);
     enableNextButton(true);

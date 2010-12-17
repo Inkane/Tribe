@@ -248,6 +248,15 @@ void ConfigPage::initRdGenerationComplete()
     ui.generateInitRamDiskButton->setEnabled(true);
     m_busyAnim = new QMovie(this);
     ui.initRdLabel->setMovie(m_busyAnim);
+
+    QProcess::execute("rm " + USB);
+    QProcess::execute("rm " + FIREWIRE);
+    QProcess::execute("rm " + PCMCIA);
+    QProcess::execute("rm " + NFS);
+    QProcess::execute("rm " + SOFTWARE_RAID);
+    QProcess::execute("rm " + SOFTWARE_RAID_MDP);
+    QProcess::execute("rm " + LVM2);
+    QProcess::execute("rm " + ENCRYPTED);
 }
 
 void ConfigPage::aboutToGoToNext()

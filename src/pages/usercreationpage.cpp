@@ -171,6 +171,15 @@ void UserCreationPage::aboutToGoToNext()
 
     m_handler->setHostname(ui.hostname->text());
 
+    QProcess::execute("touch /tmp/tribe_initcpio_enable_usb");
+    QProcess::execute("touch /tmp/tribe_initcpio_enable_firewire");
+    QProcess::execute("touch /tmp/tribe_initcpio_enable_pcmcia");
+    QProcess::execute("touch /tmp/tribe_initcpio_enable_nfs");
+    QProcess::execute("touch /tmp/tribe_initcpio_enable_softwareraid");
+    QProcess::execute("touch /tmp/tribe_initcpio_enable_softwareraidmdp");
+    QProcess::execute("touch /tmp/tribe_initcpio_enable_lvm2");
+    QProcess::execute("touch /tmp/tribe_initcpio_enable_encrypted");
+
     emit goToNextStep();
 }
 

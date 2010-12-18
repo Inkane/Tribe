@@ -113,7 +113,8 @@ void ConfigPage::populatePkgzList()
         item->setData(61, pkg.split("::").at(2));
         item->setIcon(QIcon(QString(CONFIG_INSTALL_PATH) + "/" + item->data(60).toString() + ".png"));
         ui.pkgList->addItem(item);
-        m_incomingList.append(pkg + "_thumb");
+        m_incomingList.append(pkg.split("::").at(0) + "_thumb");
+        m_incomingList.append(pkg.split("::").at(0));
     }
 
     m_incomingIncr = 0;
@@ -241,9 +242,7 @@ void ConfigPage::pkgInstallButtonClicked()
     QProcess::execute("mount -v -o bind /dev " + QString(INSTALLATION_TARGET) + "/dev");
     QProcess::execute("mount -v -t devpts devpts " + QString(INSTALLATION_TARGET) + "/dev/pts");
     // cinstall cmd
-    QProcess p;
-    p.start("chroot " + QString(INSTALLATION_TARGET) + "/usr/bin/cinstall -i " + ui.pkgList->currentItem()->data(60).toString());
-    p.waitForFinished();
+    QProcess::execute("chroot " + QString(INSTALLATION_TARGET) + "/usr/bin/cinstall -i " + ui.pkgList->currentItem()->data(60).toString());
     // clean-up
     QProcess::execute("umount -v " + QString(INSTALLATION_TARGET) + "/proc " + QString(INSTALLATION_TARGET) + "/sys "  + QString(INSTALLATION_TARGET) + "/dev/pts " + QString(INSTALLATION_TARGET) + "/dev");
     // re-enable buttons

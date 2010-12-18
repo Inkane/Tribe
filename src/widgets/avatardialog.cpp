@@ -43,7 +43,7 @@ void AvatarDialog::populateList()
         QListWidgetItem *item = new QListWidgetItem(ui.avatarList);
         item->setIcon(KIcon(d.path() + "/" + file));
         item->setData(58, d.path() + "/" + file);
-        item->setText(" ");
+        item->setText("");
         ui.avatarList->addItem(item);
     }
 
@@ -68,7 +68,7 @@ void AvatarDialog::cancelClicked()
 void AvatarDialog::selectionChanged()
 {
     ui.okButton->setEnabled(true);
-    if (ui.avatarList->currentItem()->text() != " ") {
+    if (ui.avatarList->currentItem()->text() == i18n("Custom")) {
         QString x = KFileDialog::getOpenFileName(KUrl(QDir::homePath()), "*.png *.jpg *.bmp|Image Files", this);
 
         if (x.isEmpty()) {

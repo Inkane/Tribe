@@ -56,6 +56,7 @@ void LocalePage::createWidget()
     zoomInButton->setIcon(KIcon("zoom-in"));
     zoomOutButton->setIcon(KIcon("zoom-out"));
 
+    // setup marble widget
     marble->installEventFilter(this);
     marble->setCenterLatitude(35.0);
     marble->setCenterLongitude(-28.0);
@@ -68,42 +69,38 @@ void LocalePage::createWidget()
     marble->setShowGrid(false);
     marble->addGeoDataFile(QString(DATA_INSTALL_DIR) + "/marble/data/placemarks/cities.kml");
 
-    QFile fp(QString(CONFIG_INSTALL_PATH) + "/timezones");
-
-    if (!fp.open(QIODevice::ReadOnly | QIODevice::Text))
-        qDebug() << "LocalPage: Failed to open file";
-
-    QTextStream in(&fp);
-
+    // parse timezone data
+    QFile f(QString(CONFIG_INSTALL_PATH) + "/timezones");
+    if (!f.open(QIODevice::ReadOnly))
+        qDebug() << f.errorString();
+    QTextStream stream(&f);
     locales.clear();
-
-    while (!in.atEnd()) {
-        QString line(in.readLine());
+    while (!stream.atEnd()) {
+        QString line(stream.readLine());
         QStringList split = line.split(':');
         locales.append(split);
     }
+    f.close();
 
-    fp.close();
-    fp.setFileName(QString(CONFIG_INSTALL_PATH) + "/all_kde_langpacks");
-
-    if (!fp.open(QIODevice::ReadOnly | QIODevice::Text))
-        qDebug() << "LocalePage: Failed to open file";
-
-    while (!in.atEnd()) {
-        QString line(in.readLine());
+    // parse language pkg data
+    f.setFileName(QString(CONFIG_INSTALL_PATH) + "/all_kde_langpacks");
+    if (!f.open(QIODevice::ReadOnly))
+        qDebug() << f.errorString();
+    while (!stream.atEnd()) {
+        QString line(stream.readLine());
         QStringList split = line.split(":");
         m_allKDELangs.insert(split.first(), split.last());
     }
+    f.close();
 
-    fp.close();
-
+    // sort locales
     QStringList keys;
     foreach (const QStringList &l, locales) {
         keys << l.first();
     }
-
     keys.sort();
 
+    // populate combo boxes
     foreach(const QString &string, keys) {
         QStringList split = string.split("/");
 
@@ -117,9 +114,11 @@ void LocalePage::createWidget()
         regionCombo->addItem(string);
     }
 
+    // this looks interesting.. finish it. ;)
     locationsSearch->hide();
     locationsView->hide();
 
+    // trigger changed for new combo box data
     continentChanged(continentCombo->currentIndex());
     regionChanged(regionCombo->currentIndex());
 
@@ -145,11 +144,15 @@ void LocalePage::zoom(int value)
 
 bool LocalePage::eventFilter(QObject * object, QEvent * event)
 {
+    /// there is some way to stop the long/lat popup menu from here..
+
+    // if mouse was pressed on the marble widget
     if (object == marble && event->type() == QEvent::MouseButtonPress) {
+        // if an actual place was clicked
         QVector<QModelIndex> indexes = marble->whichFeatureAt(marble->mapFromGlobal(QCursor::pos()));
         if (!indexes.isEmpty()) {
+            // check the place against the data, and set the combo box accordingly
             QHash<QString, QStringList>::const_iterator it;
-
             for (it = m_allTimezones.constBegin(); it != m_allTimezones.constEnd(); it++) {
                 if ((*it).contains(indexes.first().data(Qt::DisplayRole).toString().replace(' ', '_'))) {
                     continentCombo->setCurrentIndex(continentCombo->findText(it.key()));
@@ -166,11 +169,11 @@ bool LocalePage::eventFilter(QObject * object, QEvent * event)
 
 void LocalePage::continentChanged(int index)
 {
-    QStringList timezones = m_allTimezones.value(continentCombo->itemText(index));
-    QStringList::const_iterator it;
-
     regionCombo->clear();
+    
+    QStringList timezones = m_allTimezones.value(continentCombo->itemText(index));
 
+    QStringList::const_iterator it;
     for (it = timezones.constBegin(); it != timezones.constEnd(); ++it) {
         regionCombo->addItem((*it));
     }
@@ -182,8 +185,8 @@ void LocalePage::regionChanged(int index)
 {
     if (!showLocalesCheck->isChecked() || !showKDELangsCheck->isChecked()) {
         QString time = continentCombo->itemText(continentCombo->currentIndex()) + "/" + regionCombo->itemText(index);
-        QList<QStringList>::const_iterator it;
 
+        QList<QStringList>::const_iterator it;
         for (it = locales.constBegin(); it != locales.constEnd(); ++it) {
             if ((*it).first() == time) {
                 if (!showLocalesCheck->isChecked()) {

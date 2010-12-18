@@ -31,8 +31,8 @@ MainWindow::MainWindow(QWidget *parent)
           : KMainWindow(parent,
                        (Qt::WindowFlags) KDE_DEFAULT_WINDOWFLAGS | Qt::FramelessWindowHint)
 {
-    QWidget *widget = new QWidget(this);
-    m_ui.setupUi(widget);
+    m_centralWidget = new QWidget(this);
+    m_ui.setupUi(m_centralWidget);
 
     m_ui.buildSignatureLabel->setText(QString("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN"
                                               "http://www.w3.org/TR/REC-html40/strict.dtd\">"
@@ -58,17 +58,10 @@ MainWindow::MainWindow(QWidget *parent)
     m_ui.nextButton->setIcon(KIcon("go-next"));
     m_ui.previousButton->setIcon(KIcon("go-previous"));
 
-    setCentralWidget(widget);
-
-    m_currAction = MainWindow::Welcome;
-
     m_ui.welcomeIcon->setPixmap(QPixmap(":/Images/images/installation-stage-icon.png"));
-
     m_ui.preparationIcon->setPixmap(QPixmap(":/Images/images/installation-stage-icon.png"));
     m_ui.installationIcon->setPixmap(QPixmap(":/Images/images/installation-stage-icon.png"));
     m_ui.configurationIcon->setPixmap(QPixmap(":/Images/images/installation-stage-icon.png"));
-
-    setWindowState(windowState() ^ Qt::WindowFullScreen);
 
     m_movie = new QMovie(":/Images/images/active-page-anim-18.mng", QByteArray(), this);
     m_movie->start();
@@ -78,7 +71,12 @@ MainWindow::MainWindow(QWidget *parent)
 
     m_install->init();
 
-    loadPage(m_currAction);
+    m_currentAction = MainWindow::Welcome;
+
+    setCentralWidget(m_centralWidget);
+    setWindowState(Qt::WindowFullScreen);
+
+    loadPage(m_currentAction);
 }
 
 MainWindow::~MainWindow()
@@ -116,9 +114,6 @@ void MainWindow::abortInstallation()
 
 void MainWindow::loadPage(InstallationStep page)
 {
-    AbstractPage *curPage = 0;
-    QWidget * wg;
-
     m_ui.nextButton->setVisible(true);
     m_ui.previousButton->setVisible(true);
 
@@ -126,9 +121,9 @@ void MainWindow::loadPage(InstallationStep page)
     disconnect(this, SIGNAL(readyToCreate()), 0, 0);
 
     while (m_ui.stackedWidget->count() != 0) {
-        QWidget *wtmp = m_ui.stackedWidget->widget(0);
-        m_ui.stackedWidget->removeWidget(wtmp);
-        wtmp->deleteLater();
+        QWidget *w = m_ui.stackedWidget->widget(0);
+        m_ui.stackedWidget->removeWidget(w);
+        w->deleteLater();
     }
 
     switch (page) {
@@ -185,31 +180,32 @@ void MainWindow::loadPage(InstallationStep page)
     }
 
     setInstallationStep(page, MainWindow::InProgress);
+
     m_ui.stackedWidget->setCurrentIndex(0);
-    wg = m_ui.stackedWidget->widget(0);
-    curPage = qobject_cast<AbstractPage *>(wg);
 
-    if (curPage) {
-        connect(curPage, SIGNAL(abortInstallation()), SLOT(abortInstallation()));
-        connect(curPage, SIGNAL(goToNextStep()), SLOT(goToNextStep()));
-        connect(curPage, SIGNAL(goToPreviousStep()), SLOT(goToPreviousStep()));
-        connect(curPage, SIGNAL(showProgressWidget()), SLOT(showProgressWidget()));
-        connect(curPage, SIGNAL(deleteProgressWidget()), SLOT(deleteProgressWidget()));
-        connect(curPage, SIGNAL(updateProgressWidget(int)), SIGNAL(updateProgressWidget(int)));
-        connect(curPage, SIGNAL(setProgressWidgetText(const QString&)), SIGNAL(setProgressWidgetText(const QString&)));
-        connect(curPage, SIGNAL(enableNextButton(bool)), SLOT(enableNextButton(bool)));
-        connect(curPage, SIGNAL(enablePreviousButton(bool)), SLOT(enablePreviousButton(bool)));
+    AbstractPage *abstractPage = qobject_cast<AbstractPage *>(m_ui.stackedWidget->widget(0));
 
-        connect(m_ui.nextButton, SIGNAL(clicked()), curPage, SLOT(aboutToGoToNext()));
-        connect(m_ui.previousButton, SIGNAL(clicked()), curPage, SLOT(aboutToGoToPrevious()));
+    if (abstractPage) {
+        connect(abstractPage, SIGNAL(abortInstallation()), this, SLOT(abortInstallation()));
+        connect(abstractPage, SIGNAL(goToNextStep()), this, SLOT(goToNextStep()));
+        connect(abstractPage, SIGNAL(goToPreviousStep()), this, SLOT(goToPreviousStep()));
+        connect(abstractPage, SIGNAL(showProgressWidget()), this, SLOT(showProgressWidget()));
+        connect(abstractPage, SIGNAL(deleteProgressWidget()), this, SLOT(deleteProgressWidget()));
+        connect(abstractPage, SIGNAL(updateProgressWidget(int)), this, SIGNAL(updateProgressWidget(int)));
+        connect(abstractPage, SIGNAL(setProgressWidgetText(const QString&)), this, SIGNAL(setProgressWidgetText(const QString&)));
+        connect(abstractPage, SIGNAL(enableNextButton(bool)), this, SLOT(enableNextButton(bool)));
+        connect(abstractPage, SIGNAL(enablePreviousButton(bool)), this, SLOT(enablePreviousButton(bool)));
 
-        connect(this, SIGNAL(readyToCreate()), curPage, SLOT(createWidget()));
+        connect(m_ui.nextButton, SIGNAL(clicked()), abstractPage, SLOT(aboutToGoToNext()));
+        connect(m_ui.previousButton, SIGNAL(clicked()), abstractPage, SLOT(aboutToGoToPrevious()));
+
+        connect(this, SIGNAL(readyToCreate()), abstractPage, SLOT(createWidget()));
 
         if (page == MainWindow::FinishStep) {
-            FinishPage *fPage = qobject_cast<FinishPage *>(curPage);
+            FinishPage *finishPage = qobject_cast<FinishPage *>(abstractPage);
 
-            connect(fPage, SIGNAL(reboot()), SLOT(quitAndReboot()));
-            connect(fPage, SIGNAL(keepChakra()), SLOT(quitToChakra()));
+            connect(finishPage, SIGNAL(reboot()), this, SLOT(quitAndReboot()));
+            connect(finishPage, SIGNAL(keepChakra()), this, SLOT(quitToChakra()));
         }
     }
 
@@ -333,54 +329,54 @@ void MainWindow::setInstallationStep(InstallationStep step, StepStatus status)
 
 void MainWindow::goToNextStep()
 {
-    switch (m_currAction) {
+    switch (m_currentAction) {
     case MainWindow::Welcome:
-        m_currAction = MainWindow::ReleaseNotes;
+        m_currentAction = MainWindow::ReleaseNotes;
         setInstallationStep(MainWindow::Welcome, MainWindow::Done);
         break;
 
     case MainWindow::ReleaseNotes:
-        m_currAction = MainWindow::LicenseApproval;
+        m_currentAction = MainWindow::LicenseApproval;
         setInstallationStep(MainWindow::ReleaseNotes, MainWindow::Done);
         break;
 
     case MainWindow::LicenseApproval:
-        m_currAction = MainWindow::Language;
+        m_currentAction = MainWindow::Language;
         setInstallationStep(MainWindow::LicenseApproval, MainWindow::Done);
         break;
 
     case MainWindow::Language:
-        m_currAction = MainWindow::CreateUser;
+        m_currentAction = MainWindow::CreateUser;
         setInstallationStep(MainWindow::Language, MainWindow::Done);
         break;
         
     case MainWindow::CreateUser:
-        m_currAction = MainWindow::Partition;
+        m_currentAction = MainWindow::Partition;
         setInstallationStep(MainWindow::CreateUser, MainWindow::Done);
         break;
 
     case MainWindow::Partition:
-        m_currAction = MainWindow::ReadyToInstall;
+        m_currentAction = MainWindow::ReadyToInstall;
         setInstallationStep(MainWindow::Partition, MainWindow::Done);
         break;
 
     case MainWindow::ReadyToInstall:
-        m_currAction = MainWindow::InstallSystem;
+        m_currentAction = MainWindow::InstallSystem;
         setInstallationStep(MainWindow::ReadyToInstall, MainWindow::Done);
         break;
 
     case MainWindow::InstallSystem:
-        m_currAction = MainWindow::Configuration;
+        m_currentAction = MainWindow::Configuration;
         setInstallationStep(MainWindow::InstallSystem, MainWindow::Done);
         break;
 
     case MainWindow::Configuration:
-        m_currAction = MainWindow::FinishStep;
+        m_currentAction = MainWindow::FinishStep;
         setInstallationStep(MainWindow::Configuration, MainWindow::Done);
         break;
 
     case MainWindow::FinishStep:
-        m_currAction = MainWindow::FinishStep;
+        m_currentAction = MainWindow::FinishStep;
         setInstallationStep(MainWindow::FinishStep, MainWindow::Done);
         break;
 
@@ -388,51 +384,51 @@ void MainWindow::goToNextStep()
         break;
     }
 
-    loadPage(m_currAction);
+    loadPage(m_currentAction);
 }
 
 void MainWindow::goToPreviousStep()
 {
-    switch (m_currAction) {
+    switch (m_currentAction) {
     case MainWindow::Welcome:
         return;
         break;
 
     case MainWindow::ReleaseNotes:
-        m_currAction = MainWindow::Welcome;
+        m_currentAction = MainWindow::Welcome;
         setInstallationStep(MainWindow::ReleaseNotes, MainWindow::ToDo);
         break;
 
     case MainWindow::LicenseApproval:
-        m_currAction = MainWindow::ReleaseNotes;
+        m_currentAction = MainWindow::ReleaseNotes;
         setInstallationStep(MainWindow::LicenseApproval, MainWindow::ToDo);
         break;
 
     case MainWindow::Language:
-        m_currAction = MainWindow::ReleaseNotes;
+        m_currentAction = MainWindow::ReleaseNotes;
         setInstallationStep(MainWindow::LicenseApproval, MainWindow::ToDo);
         setInstallationStep(MainWindow::Language, MainWindow::ToDo);
         break;
 
     case MainWindow::CreateUser:
-        m_currAction = MainWindow::Language;
+        m_currentAction = MainWindow::Language;
         setInstallationStep(MainWindow::CreateUser, MainWindow::ToDo);
         break;
 
     case MainWindow::Partition:
-        m_currAction = MainWindow::CreateUser;
+        m_currentAction = MainWindow::CreateUser;
         setInstallationStep(MainWindow::Partition, MainWindow::ToDo);
         break;
 
     case MainWindow::ReadyToInstall:
-        m_currAction = MainWindow::Partition;
+        m_currentAction = MainWindow::Partition;
         setInstallationStep(MainWindow::ReadyToInstall, MainWindow::Done);
         break;
 
     case MainWindow::InstallSystem:
         return;
         break;
-        
+
     case MainWindow::Configuration:
         break;
 
@@ -443,22 +439,22 @@ void MainWindow::goToPreviousStep()
         break;
     }
 
-    loadPage(m_currAction);
+    loadPage(m_currentAction);
 }
 
 void MainWindow::showProgressWidget()
 {
-    ProgressWidget *curPage = new ProgressWidget(this);
+    ProgressWidget *page = new ProgressWidget(this);
 
-    m_ui.stackedWidget->addWidget(curPage);
+    connect(this, SIGNAL(updateProgressWidget(int)), page, SLOT(updateProgressWidget(int)));
+    connect(this, SIGNAL(setProgressWidgetText(const QString&)), page, SLOT(setProgressWidgetText(const QString&)));
+    
+    m_ui.stackedWidget->addWidget(page);
     m_ui.stackedWidget->setCurrentIndex(1);
 
     m_ui.abortButton->setVisible(false);
     m_ui.nextButton->setVisible(false);
     m_ui.previousButton->setVisible(false);
-
-    connect(this, SIGNAL(updateProgressWidget(int)), curPage, SLOT(updateProgressWidget(int)));
-    connect(this, SIGNAL(setProgressWidgetText(const QString&)), curPage, SLOT(setProgressWidgetText(const QString&)));
 }
 
 void MainWindow::deleteProgressWidget()
@@ -471,9 +467,9 @@ void MainWindow::deleteProgressWidget()
     m_ui.previousButton->setVisible(true);
 
     while (m_ui.stackedWidget->count() != 1) {
-        QWidget *wtmp = m_ui.stackedWidget->widget(1);
-        m_ui.stackedWidget->removeWidget(wtmp);
-        wtmp->deleteLater();
+        QWidget *w = m_ui.stackedWidget->widget(1);
+        m_ui.stackedWidget->removeWidget(w);
+        w->deleteLater();
     }
 }
 
@@ -490,9 +486,12 @@ void MainWindow::enablePreviousButton(bool enable)
 void MainWindow::quitAndReboot()
 {
     setUpCleanupPage();
+
     m_install->cleanup();
+
     QProcess p;
     p.startDetached("shutdown -r now");
+
     qApp->exit(0);
 }
 
@@ -528,21 +527,23 @@ void MainWindow::setUpCleanupPage()
         w->deleteLater();
     }
 
-    QWidget *w = new QWidget;
     QVBoxLayout *lay = new QVBoxLayout;
+    lay->addStretch();
 
     QLabel *logo = new QLabel();
     logo->setPixmap(KIcon("chakra-shiny").pixmap(128));
-
-    QLabel *l = new QLabel("Please wait, cleaning up installation...");
-
-    lay->addStretch();
     lay->addWidget(logo);
+
+    QLabel *l = new QLabel("Cleaning up...");
     lay->addWidget(l);
+
     lay->addStretch();
+
+    QWidget *w = new QWidget;
     w->setLayout(lay);
 
     m_ui.stackedWidget->addWidget(w);
+
     m_ui.previousButton->setVisible(false);
     m_ui.nextButton->setVisible(false);
     m_ui.abortButton->setVisible(false);

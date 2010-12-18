@@ -82,8 +82,12 @@ signals:
 
 private:
     Ui::Base m_ui;
-    InstallationStep m_currAction;
+
+    QWidget *m_centralWidget;
+
     InstallationHandler *m_install;
+    
+    InstallationStep m_currentAction;
 
     QMovie *m_movie;
 };

@@ -134,6 +134,7 @@ void MainWindow::loadPage(InstallationStep page)
     switch (page) {
     case MainWindow::Welcome:
         m_ui.stackedWidget->addWidget(new IntroPage(this));
+        m_ui.abortButton->setVisible(true);
         m_ui.previousButton->setVisible(false);
         break;
 

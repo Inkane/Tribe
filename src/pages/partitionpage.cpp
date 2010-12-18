@@ -174,7 +174,7 @@ QWidget* PartitionDelegate::createEditor(QWidget* parent, const QStyleOptionView
     return combo;
 }
 
-void PartitionDelegate::paint(QPainter * painter, const QStyleOptionViewItem & option, const QModelIndex & idx) const
+void PartitionDelegate::paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &idx) const
 {
     QStyleOptionViewItemV4 optV4 = option;
     initStyleOption(&optV4, idx);
@@ -192,7 +192,7 @@ void PartitionDelegate::paint(QPainter * painter, const QStyleOptionViewItem & o
     painter->setPen(Qt::NoPen);
 
     if (idx.data(58) != "p") {
-        if (optV4.text.left(3) == "New" || optV4.text.left(3) == "Unsupp") {
+        if (optV4.text.left(3) == i18n("New") || optV4.text.left(11) == i18n("Unsupported")) {
             QRect overlayRect = QRect(QPoint(optV4.rect.left() + 2, optV4.rect.top() + 2),
                                     QPoint(optV4.rect.right() - 2, optV4.rect.bottom() - 2));
             painter->setBrush(QBrush(QColor(Qt::black)));

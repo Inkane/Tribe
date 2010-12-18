@@ -94,7 +94,7 @@ p, li { white-space: pre-wrap; }
         </size>
        </property>
        <property name="text">
-        <string>Install Packaged Software</string>
+        <string>Install Packages</string>
        </property>
        <property name="checkable">
         <bool>true</bool>
@@ -119,7 +119,7 @@ p, li { white-space: pre-wrap; }
         </size>
        </property>
        <property name="text">
-        <string>Download Bundled Software</string>
+        <string>Download Popular Bundles</string>
        </property>
        <property name="checkable">
         <bool>true</bool>

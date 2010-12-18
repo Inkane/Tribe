@@ -1,6 +1,5 @@
 /*
  * Copyright (c) 2008, 2009  Dario Freddi <drf@chakra-project.org>
- *               2009        Lukas Appelhans <l.appelhans@gmx.de>
  *               2010        Drake Justice <djustice.kde@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -71,13 +70,21 @@ private slots:
 
 private:
     Ui::Config ui;
-    KIO::TransferJob *m_job;
+
     InstallationHandler *m_install;
+
     QProcess *m_process;
+
+    KIO::TransferJob *m_job;
+    
     QMovie *m_busyAnim;
+
     QStringList m_incomingList;
     QString m_incomingExtension;
     int m_incomingIncr;
+
+    QString m_currentBranch;
+    QString m_currentArch;
 };
 
 #endif /* CONFIGPAGE_H */

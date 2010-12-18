@@ -1,6 +1,5 @@
 /*
  * Copyright (c) 2008, 2009  Dario Freddi <drf@chakra-project.org>
- *               2009        Lukas Appelhans <l.appelhans@gmx.de>
  *               2010        Drake Justice <djustice.kde@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -12,28 +11,25 @@
 
 #include <QDebug>
 
-#include <KIcon>
-
+#include <QFile>
+#include <QMovie>
 #include <QProcess>
 #include <QRegExpValidator>
-#include <QFile>
+
+#include <KIcon>
+#include <KIO/Job>
 
 #include <config-tribe.h>
 
 #include "../installationhandler.h"
 #include "configpage.h"
-#include <QMovie>
-#include <KIO/Job>
 
 
-const QString USB = "/tmp/tribe_initcpio_enable_usb";
-const QString FIREWIRE = "/tmp/tribe_initcpio_enable_firewire";
-const QString PCMCIA = "/tmp/tribe_initcpio_enable_pcmcia";
-const QString NFS = "/tmp/tribe_initcpio_enable_nfs";
-const QString SOFTWARE_RAID = "/tmp/tribe_initcpio_enable_softwareraid";
-const QString SOFTWARE_RAID_MDP = "/tmp/tribe_initcpio_enable_softwareraidmdp";
-const QString LVM2 = "/tmp/tribe_initcpio_enable_lvm2";
-const QString ENCRYPTED = "/tmp/tribe_initcpio_enable_encrypted";
+const QString tI = "/tmp/tribe_initcpio_enable_";
+QStringList tmpInitRd = QStringList() << QString(tI + "usb") << QString(tI + "firewire")
+                                      << QString(tI + "pcmcia") << QString(tI + "nfs")
+                                      << QString(tI + "softwareraid") << QString(tI + "softwareraidmdp")
+                                      << QString(tI + "lvm2") << QString(tI + "encrypted");
 
 
 ConfigPage::ConfigPage(QWidget *parent)
@@ -76,7 +72,6 @@ void ConfigPage::createWidget()
     // pkg installer
     ui.pkgInstallButton->setIcon(KIcon("run-build-install"));
     // bundle download
-    ui.bundlesList->setSelectionMode(QAbstractItemView::NoSelection);
     ui.bundlesDownloadButton->setIcon(KIcon("download"));
     // generate initrd
     ui.generateInitRamDiskButton->setIcon(KIcon("debug-run"));
@@ -86,9 +81,7 @@ void ConfigPage::createWidget()
     ui.nfs->setChecked(true);
 
     // remove the initrd tmp files
-    QProcess::execute("bash -c \"rm " + USB + " " + FIREWIRE + " " + PCMCIA + " " + 
-                                        NFS + " " + SOFTWARE_RAID + " " + SOFTWARE_RAID_MDP + " " + 
-                                        LVM2 + " " + ENCRYPTED + " > /dev/null 2&>1\"");
+    QProcess::execute("bash -c \"rm " + tmpInitRd.join(" ") + " > /dev/null 2&>1\"");
 
     populatePkgzList();
     populateBundlesList();
@@ -160,10 +153,18 @@ void ConfigPage::incomingData(KIO::Job* job, QByteArray data)
         return;
     }
 
-    QFile x("/tmp/" + m_incomingList.at(m_incomingIncr) + m_incomingExtension);
-    if (x.open(QIODevice::Append)) {
-        x.write(data);
-        x.flush();
+    if (m_incomingExtension == ".jpeg") {
+        QFile x("/tmp/" + m_incomingList.at(m_incomingIncr) + m_incomingExtension);
+        if (x.open(QIODevice::Append)) {
+            x.write(data);
+            x.flush();
+        }
+    } else {
+        QFile x("/home/" + m_install->userLoginList().first() + "/Desktop/" + m_incomingList.at(m_incomingIncr));
+        if (x.open(QIODevice::Append)) {
+            x.write(data);
+            x.flush();
+        }
     }
 }
 
@@ -202,7 +203,7 @@ void ConfigPage::populateBundlesList()
 
     foreach (QString pkg, bundleDataList) {
         QListWidgetItem *item = new QListWidgetItem(ui.bundlesList);
-        item->setSizeHint(QSize(100, 60));
+        item->setSizeHint(QSize(160, 36));
         item->setText(pkg.split("::").at(1));
         item->setCheckState(Qt::Unchecked);
         item->setData(60, pkg.split("::").at(0));
@@ -215,17 +216,61 @@ void ConfigPage::populateBundlesList()
 void ConfigPage::bundlesDownloadButtonClicked()
 {
     m_incomingList.clear();
-    m_incomingExtension = ".cb";
+    m_incomingExtension = "";
     m_incomingIncr = 0;
+
+    QStringList checkedList;
     
     for ( int i = 0; i < ui.bundlesList->count(); i++ ) {
         if (ui.bundlesList->item(i)->checkState() == Qt::Checked) {
-            m_incomingList.append(ui.bundlesList->item(i)->data(60).toString());
+            checkedList.append(ui.bundlesList->item(i)->data(60).toString());
         }
     }
 
-    KUrl r(QUrl("http://chakra-project.org/packages/screenshots/" + 
-                m_incomingList.at(m_incomingIncr) + m_incomingExtension));
+    m_process = new QProcess(this);
+    m_process->setProcessChannelMode(QProcess::MergedChannels);
+
+    // check stable/testing
+    QFile pacmanConf("/etc/pacman.conf", this);
+    pacmanConf.open(QIODevice::ReadOnly);
+    QString sPacmanConf(pacmanConf.readAll());
+    pacmanConf.close();
+
+    foreach (QString line, sPacmanConf.split("\n")) {
+        if (line.contains("-testing")) {
+            if (line.simplified().trimmed().startsWith("#"))
+                continue;
+
+            m_currentBranch = "-testing";
+        }
+    }
+
+    // check uname for arch
+    m_process->start("uname -m");
+    m_process->waitForFinished();
+    if (m_process->readAll().contains("x86_64")) {
+        m_currentArch = "x86_64";
+    } else {
+        m_currentArch = "i686";
+    }
+
+    // call rsync
+    foreach (QString bundle, checkedList) {
+        m_process->start("bash -c \"echo $(rsync -avh --list-only cinstall@chakra-project.org::cinstall/bundles" +
+                        m_currentBranch + "/" + m_currentArch +
+                        "/*  | cut -d \':\' -f 3 | cut -d \' \' -f 2 | grep " + 
+                        bundle + ")\"");
+        m_process->waitForFinished();
+        QString result(m_process->readAll());
+        if (result.simplified().trimmed().split(" ").count() > 1) {
+            m_incomingList.append(result.simplified().trimmed().split(" ").last());
+        } else {
+            m_incomingList.append(result);
+        }
+    }
+
+    KUrl r(QUrl("http://chakra-project.org/repo/bundles" + m_currentBranch + "/" +
+                    m_currentArch + "/" + m_incomingList.at(m_incomingIncr)));
     m_job = KIO::get(r, KIO::Reload, KIO::Overwrite | KIO::HideProgressInfo);
     connect(m_job, SIGNAL(data(KIO::Job*,QByteArray)), this, SLOT(incomingData(KIO::Job*, QByteArray)));
 }
@@ -342,21 +387,21 @@ void ConfigPage::generateInitRamDisk()
     ui.initRdBusyLabel->setVisible(true);
 
     if (ui.usb->isChecked())
-        QProcess::execute("touch " + USB);
+        QProcess::execute("touch " + tmpInitRd.at(0));
     if (ui.firewire->isChecked())
-        QProcess::execute("touch " + FIREWIRE);
+        QProcess::execute("touch " + tmpInitRd.at(1));
     if (ui.pcmcia->isChecked())
-        QProcess::execute("touch " + PCMCIA);
+        QProcess::execute("touch " + tmpInitRd.at(2));
     if (ui.nfs->isChecked())
-        QProcess::execute("touch " + NFS);
+        QProcess::execute("touch " + tmpInitRd.at(3));
     if (ui.raid->isChecked())
-        QProcess::execute("touch " + SOFTWARE_RAID);
+        QProcess::execute("touch " + tmpInitRd.at(4));
     if (ui.mdp->isChecked())
-        QProcess::execute("touch " + SOFTWARE_RAID_MDP);
+        QProcess::execute("touch " + tmpInitRd.at(5));
     if (ui.lvm2->isChecked())
-        QProcess::execute("touch " + LVM2);
+        QProcess::execute("touch " + tmpInitRd.at(6));
     if (ui.encrypted->isChecked())
-        QProcess::execute("touch " + ENCRYPTED);
+        QProcess::execute("touch " + tmpInitRd.at(7));
     
     QString command  = QString("sh " + QString(SCRIPTS_INSTALL_PATH) +
                                "/postinstall.sh --job create-initrd %1")
@@ -372,9 +417,7 @@ void ConfigPage::initRdGenerationComplete()
     ui.initRdBusyLabel->setVisible(false);
 
     // remove tmp files
-    QProcess::execute("bash -c \"rm " + USB + " " + FIREWIRE + " " + PCMCIA + " " + 
-                                        NFS + " " + SOFTWARE_RAID + " " + SOFTWARE_RAID_MDP + " " + 
-                                        LVM2 + " " + ENCRYPTED + " > /dev/null 2&>1\"");
+    QProcess::execute("bash -c \"rm " + tmpInitRd.join(" ") + " > /dev/null 2&>1\"");
 }
 
 void ConfigPage::bootloaderInstalled(int exitCode, QProcess::ExitStatus exitStatus)

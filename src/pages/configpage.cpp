@@ -232,8 +232,16 @@ void ConfigPage::setInstallPkgzPage()
 
 void ConfigPage::pkgInstallButtonClicked()
 {
-    QProcess::execute("xhost +");
-    QProcess::execute("chroot " + QString(INSTALLATION_TARGET) + " su - " + m_install->userLoginList().first() + " -c \"cinstall -i " + ui.pkgList->currentItem()->data(60).toString() + "\"");
+    ui.pkgInstallButton->setEnabled(false);
+    enableNextButton(false);
+    enablePreviousButton(false);
+    QProcess p;
+    p.start("chroot " + QString(INSTALLATION_TARGET) + "/usr/bin/pacman -Syf " + ui.pkgList->currentItem()->data(60).toString() + " --noconfirm");
+qDebug() << "pkgInstall cmd: chroot " + QString(INSTALLATION_TARGET) + "/usr/bin/pacman -Syf " + ui.pkgList->currentItem()->data(60).toString() + " --noconfirm";
+    p.waitForFinished();
+    ui.pkgInstallButton->setEnabled(true);
+    enableNextButton(true);
+    enablePreviousButton(true);
 }
 
 void ConfigPage::setDownloadBundlesPage()
@@ -266,6 +274,8 @@ void ConfigPage::setInitRamDiskPage()
 void ConfigPage::generateInitRamDisk()
 {
     ui.generateInitRamDiskButton->setEnabled(false);
+    enableNextButton(false);
+    enablePreviousButton(false);
     m_busyAnim = new QMovie(":Images/images/busywidget.gif");
     m_busyAnim->start();
     ui.initRdLabel->setMovie(m_busyAnim);
@@ -299,6 +309,8 @@ void ConfigPage::generateInitRamDisk()
 void ConfigPage::initRdGenerationComplete()
 {
     ui.generateInitRamDiskButton->setEnabled(true);
+    enableNextButton(true);
+    enablePreviousButton(true);
     ui.initRdLabel->setVisible(false);
 
     QProcess::execute("rm " + USB);

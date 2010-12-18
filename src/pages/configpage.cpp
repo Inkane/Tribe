@@ -298,7 +298,7 @@ void ConfigPage::setDownloadBundlesPage()
 {
     if (ui.stackedWidget->currentIndex() != 3) {
         ui.stackedWidget->setCurrentIndex(3);
-        ui.currentPageLabel->setText(i18n("Download Bundled Software"));
+        ui.currentPageLabel->setText(i18n("Download Popular Bundles"));
     } else {
         ui.stackedWidget->setCurrentIndex(0);
         ui.currentPageLabel->setText("");

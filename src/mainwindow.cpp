@@ -171,10 +171,6 @@ void MainWindow::loadPage(InstallationStep page)
         m_ui.stackedWidget->addWidget(new ConfigPage(this));
         m_ui.previousButton->setVisible(false);
         break;
-        
-    case MainWindow::Bootloader:
-        m_ui.stackedWidget->addWidget(new BootloaderPage(this));
-        break;
 
     case MainWindow::FinishStep:
         m_ui.stackedWidget->addWidget(new FinishPage(this));
@@ -319,16 +315,6 @@ void MainWindow::setInstallationStep(InstallationStep step, StepStatus status)
             m_ui.configurationIcon->setMovie(m_movie);
 
         break;
-        
-    case MainWindow::Bootloader:
-        if (status == MainWindow::Done)
-            m_ui.bootloaderIcon->setPixmap(KIcon("games-endturn").pixmap(18));
-        else if (status == MainWindow::ToDo)
-            m_ui.bootloaderIcon->setPixmap(QPixmap());
-        else if (status == MainWindow::InProgress)
-            m_ui.bootloaderIcon->setMovie(m_movie);
-
-        break;
 
     case MainWindow::FinishStep:
         if (status == MainWindow::Done) {
@@ -388,13 +374,8 @@ void MainWindow::goToNextStep()
         break;
 
     case MainWindow::Configuration:
-        m_currAction = MainWindow::Bootloader;
-        setInstallationStep(MainWindow::Configuration, MainWindow::Done);
-        break;
-        
-    case MainWindow::Bootloader:
         m_currAction = MainWindow::FinishStep;
-        setInstallationStep(MainWindow::Bootloader, MainWindow::Done);
+        setInstallationStep(MainWindow::Configuration, MainWindow::Done);
         break;
 
     case MainWindow::FinishStep:
@@ -452,9 +433,6 @@ void MainWindow::goToPreviousStep()
         break;
         
     case MainWindow::Configuration:
-        break;
-
-    case MainWindow::Bootloader:
         break;
 
     case MainWindow::FinishStep:

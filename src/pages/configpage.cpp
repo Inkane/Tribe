@@ -40,6 +40,7 @@ ConfigPage::ConfigPage(QWidget *parent)
         : AbstractPage(parent),
         m_install(InstallationHandler::instance())
 {
+    m_process = new QProcess(this);
 }
 
 ConfigPage::~ConfigPage()
@@ -50,44 +51,68 @@ void ConfigPage::createWidget()
 {
     ui.setupUi(this);
 
+    // page connections
     connect(ui.installPkgzButton, SIGNAL(clicked()), this, SLOT(setInstallPkgzPage()));
     connect(ui.downloadBundlesButton, SIGNAL(clicked()), this, SLOT(setDownloadBundlesPage()));
     connect(ui.changeAppearanceButton, SIGNAL(clicked()), this, SLOT(setChangeAppearancePage()));
-    connect(ui.initRamDiskButton, SIGNAL(clicked()), this, SLOT(setInitRamDiskPage()));
-
+    connect(ui.initRamDiskButton, SIGNAL(clicked()), this, SLOT(setInitRamdiskPage()));
+    connect(ui.bootloaderSettingsButton, SIGNAL(clicked()), this, SLOT(setBootloaderPage()));
+    // pkg installer
     connect(ui.pkgList, SIGNAL(currentRowChanged(int)), this, SLOT(currentPkgItemChanged(int)));
     connect(ui.pkgInstallButton, SIGNAL(clicked()), this, SLOT(pkgInstallButtonClicked()));
-
+    ui.pkgScreenLabel->installEventFilter(this);
+    ui.screenshotLabel->installEventFilter(this);
+    // bundle download
     connect(ui.bundlesDownloadButton, SIGNAL(clicked()), this, SLOT(bundlesDownloadButtonClicked()));
-
+    // generate initrd
     connect(ui.generateInitRamDiskButton, SIGNAL(clicked()), this, SLOT(generateInitRamDisk()));
 
+    // page icons
     ui.installPkgzButton->setIcon(KIcon("repository"));
     ui.downloadBundlesButton->setIcon(KIcon("x-cb-bundle"));
     ui.changeAppearanceButton->setIcon(KIcon("preferences-desktop-color"));
     ui.initRamDiskButton->setIcon(KIcon("cpu"));
-    
+    ui.bootloaderSettingsButton->setIcon(KIcon("go-first"));
+    // pkg installer
     ui.pkgInstallButton->setIcon(KIcon("run-build-install"));
-
+    // bundle download
     ui.bundlesList->setSelectionMode(QAbstractItemView::NoSelection);
     ui.bundlesDownloadButton->setIcon(KIcon("download"));
-    
+    // generate initrd
     ui.generateInitRamDiskButton->setIcon(KIcon("debug-run"));
-    
+
+    // enable usb & nfs, they are initrd built-in
     ui.usb->setChecked(true);
     ui.nfs->setChecked(true);
 
-    QProcess::execute("rm " + USB);
-    QProcess::execute("rm " + FIREWIRE);
-    QProcess::execute("rm " + PCMCIA);
-    QProcess::execute("rm " + NFS);
-    QProcess::execute("rm " + SOFTWARE_RAID);
-    QProcess::execute("rm " + SOFTWARE_RAID_MDP);
-    QProcess::execute("rm " + LVM2);
-    QProcess::execute("rm " + ENCRYPTED);
-    
+    // remove the initrd tmp files
+    QProcess::execute("bash -c \"rm " + USB + " " + FIREWIRE + " " + PCMCIA + " " + 
+                                        NFS + " " + SOFTWARE_RAID + " " + SOFTWARE_RAID_MDP + " " + 
+                                        LVM2 + " " + ENCRYPTED + " > /dev/null 2&>1\"");
+
     populatePkgzList();
     populateBundlesList();
+}
+
+bool ConfigPage::eventFilter(QObject* obj, QEvent* event)
+{
+    if (event->type() == QEvent::MouseButtonRelease) {
+        if (obj == ui.pkgScreenLabel) {
+            ui.stackedWidget->setCurrentIndex(5);
+        } else if (obj == ui.screenshotLabel) {
+            ui.stackedWidget->setCurrentIndex(2);
+        }
+    }
+    
+    return 0;
+}
+
+void ConfigPage::switchPkgScreenshot()
+{
+    if (ui.stackedWidget->currentIndex() == 5)
+        ui.stackedWidget->setCurrentIndex(2);
+    else if (ui.stackedWidget->currentIndex() == 2)
+        ui.stackedWidget->setCurrentIndex(5);
 }
 
 void ConfigPage::populatePkgzList()
@@ -207,17 +232,27 @@ void ConfigPage::bundlesDownloadButtonClicked()
 
 void ConfigPage::currentPkgItemChanged(int i)
 {
+    // pkg name
     ui.pkgNameLabel->setText("<font size=5><b>" + ui.pkgList->item(i)->data(60).toString());
 
+    // pkg version
     QProcess p;
     p.start("pacman -Sp --print-format %v " + ui.pkgList->item(i)->data(60).toString());
     p.waitForFinished();
     QString pkgVer = QString(p.readAll()).simplified().split(" ").last();
+    p.start("chroot " + QString(INSTALLATION_TARGET) + " pacman -Qq");
+    p.waitForFinished();
+    QString installedPkgz(p.readAll());
+    if (installedPkgz.contains(ui.pkgList->item(i)->data(60).toString()))
+        pkgVer.append("  (" + i18n("installed") + ")");
     ui.pkgVerLabel->setText(pkgVer);
 
+    // pkg description
     ui.pkgDescLabel->setText(ui.pkgList->item(i)->data(61).toString());
 
+    // pkg screenshot
     ui.pkgScreenLabel->setPixmap(QPixmap("/tmp/" + ui.pkgList->item(i)->data(60).toString() + "_thumb.jpeg"));
+    ui.screenshotLabel->setPixmap(QPixmap("/tmp/" + ui.pkgList->item(i)->data(60).toString() + ".jpeg"));
 }
 
 void ConfigPage::setInstallPkgzPage()
@@ -237,13 +272,18 @@ void ConfigPage::pkgInstallButtonClicked()
     ui.pkgInstallButton->setEnabled(false);
     enableNextButton(false);
     // mount special folders
-    QProcess::execute("mount -v -t proc none " + QString(INSTALLATION_TARGET) + "/proc");
-    QProcess::execute("mount -v -t sysfs none " + QString(INSTALLATION_TARGET) + "/sys");
-    QProcess::execute("mount -v -o bind /dev " + QString(INSTALLATION_TARGET) + "/dev");
-    QProcess::execute("mount -v -t devpts devpts " + QString(INSTALLATION_TARGET) + "/dev/pts");
-    QProcess::execute("xhost +");
-    // cinstall cmd
-    QProcess::execute("chroot " + QString(INSTALLATION_TARGET) + " su " + m_install->userLoginList().first() + " -c \"cinstall -i " + ui.pkgList->currentItem()->data(60).toString() + "\"");
+    QProcess::execute("bash -c \"mount -v -t proc none " + QString(INSTALLATION_TARGET) + "/proc\" > /dev/null 2&>1");
+    QProcess::execute("bash -c \"mount -v -t sysfs none " + QString(INSTALLATION_TARGET) + "/sys\" > /dev/null 2&>1");
+    QProcess::execute("bash -c \"mount -v -o bind /dev " + QString(INSTALLATION_TARGET) + "/dev\" > /dev/null 2&>1");
+    QProcess::execute("bash -c \"mount -v -t devpts devpts " + QString(INSTALLATION_TARGET) + "/dev/pts \" > /dev/null 2&>1");
+    QProcess::execute("bash -c \"xhost +\" > /dev/null 2&>1");
+    // cinstall pkg
+    connect(m_process, SIGNAL(finished(int)), this, SLOT(processComplete()));
+    m_process->start("chroot " + QString(INSTALLATION_TARGET) + " su " + m_install->userLoginList().first() + " -c \"cinstall -i " + ui.pkgList->currentItem()->data(60).toString() + "\"");
+}
+
+void ConfigPage::processComplete()
+{
     // clean-up
     QProcess::execute("umount -v " + QString(INSTALLATION_TARGET) + "/proc " + QString(INSTALLATION_TARGET) + "/sys "  + QString(INSTALLATION_TARGET) + "/dev/pts " + QString(INSTALLATION_TARGET) + "/dev");
     // re-enable buttons
@@ -267,7 +307,18 @@ void ConfigPage::setChangeAppearancePage()
 
 }
 
-void ConfigPage::setInitRamDiskPage()
+void ConfigPage::setBootloaderPage()
+{
+    if (ui.stackedWidget->currentIndex() != 6) {
+        ui.stackedWidget->setCurrentIndex(6);
+        ui.currentPageLabel->setText(i18n("Bootloader Settings"));
+    } else {
+        ui.stackedWidget->setCurrentIndex(0);
+        ui.currentPageLabel->setText("");
+    }
+}
+
+void ConfigPage::setInitRamdiskPage()
 {
     if (ui.stackedWidget->currentIndex() != 1) {
         ui.stackedWidget->setCurrentIndex(1);
@@ -284,8 +335,8 @@ void ConfigPage::generateInitRamDisk()
     enableNextButton(false);
     m_busyAnim = new QMovie(":Images/images/busywidget.gif");
     m_busyAnim->start();
-    ui.initRdLabel->setMovie(m_busyAnim);
-    ui.initRdLabel->setVisible(true);
+    ui.initRdBusyLabel->setMovie(m_busyAnim);
+    ui.initRdBusyLabel->setVisible(true);
 
     if (ui.usb->isChecked())
         QProcess::execute("touch " + USB);
@@ -307,7 +358,6 @@ void ConfigPage::generateInitRamDisk()
     QString command  = QString("sh " + QString(SCRIPTS_INSTALL_PATH) +
                                "/postinstall.sh --job create-initrd %1")
                                .arg(m_install->m_postcommand);
-    m_process = new QProcess(this);
     connect(m_process, SIGNAL(finished(int)), this, SLOT(initRdGenerationComplete()));
     m_process->start(command);
 }
@@ -316,23 +366,61 @@ void ConfigPage::initRdGenerationComplete()
 {
     ui.generateInitRamDiskButton->setEnabled(true);
     enableNextButton(true);
-    ui.initRdLabel->setVisible(false);
+    ui.initRdBusyLabel->setVisible(false);
 
-    QProcess::execute("rm " + USB);
-    QProcess::execute("rm " + FIREWIRE);
-    QProcess::execute("rm " + PCMCIA);
-    QProcess::execute("rm " + NFS);
-    QProcess::execute("rm " + SOFTWARE_RAID);
-    QProcess::execute("rm " + SOFTWARE_RAID_MDP);
-    QProcess::execute("rm " + LVM2);
-    QProcess::execute("rm " + ENCRYPTED);
+    // remove tmp files
+    QProcess::execute("bash -c \"rm " + USB + " " + FIREWIRE + " " + PCMCIA + " " + 
+                                        NFS + " " + SOFTWARE_RAID + " " + SOFTWARE_RAID_MDP + " " + 
+                                        LVM2 + " " + ENCRYPTED + " > /dev/null 2&>1\"");
+}
+
+void ConfigPage::bootloaderInstalled(int exitCode, QProcess::ExitStatus exitStatus)
+{
+    disconnect(m_install, SIGNAL(bootloaderInstalled(int, QProcess::ExitStatus)), 0, 0);
+
+    Q_UNUSED(exitStatus)
+
+    if (exitCode != 0) {
+
+    } else {
+        connect(m_install, SIGNAL(bootloaderInstalled(int, QProcess::ExitStatus)), SLOT(menulstInstalled(int, QProcess::ExitStatus)));
+
+        emit setProgressWidgetText(i18n("Creating OS list..."));
+        emit updateProgressWidget(50);
+
+        m_install->installBootloader(1, "0");  /// hardcoding fail
+    }
+}
+
+void ConfigPage::menulstInstalled(int exitCode, QProcess::ExitStatus exitStatus)
+{
+    Q_UNUSED(exitStatus)
+
+    if (exitCode != 0) {
+
+    } else {
+        emit deleteProgressWidget();
+        emit goToNextStep();
+    }
 }
 
 void ConfigPage::aboutToGoToNext()
 {
-    ui.stackedWidget->setCurrentIndex(2);
+    ui.stackedWidget->setCurrentIndex(0);
 
-    emit goToNextStep();
+    if (!ui.bootloaderCheckBox->isChecked()) {
+        emit goToNextStep();
+        return;
+    }
+
+    emit showProgressWidget();
+    emit setProgressWidgetText(i18n("Installing bootloader..."));
+    emit updateProgressWidget(0);
+
+    connect(m_install, SIGNAL(bootloaderInstalled(int, QProcess::ExitStatus)), SLOT(bootloaderInstalled(int, QProcess::ExitStatus)));
+
+    m_install->installBootloader(0, "0"); /// NOTE!! this is the hardcoded 'first disk only' bug
+                                                 /// or where it starts rather.
 }
 
 void ConfigPage::aboutToGoToPrevious()

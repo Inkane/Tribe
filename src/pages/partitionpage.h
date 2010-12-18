@@ -97,11 +97,6 @@ class PartitionPage : public AbstractPage
     Q_OBJECT
 
 public:
-    enum Mode {
-        EasyMode = 1,
-        AdvancedMode = 2
-    };
-
     PartitionPage(QWidget *parent = 0);
     virtual ~PartitionPage();
 
@@ -131,17 +126,18 @@ private slots:
 
 private:
     Ui::Partition *m_ui;
+    QWidget *m_pmWidget;
+    InstallationHandler *m_install;
+
     PartitionManagerInterface *m_iface;
     Partition *m_newPartition;
+
     QTreeWidgetItem *createItem(const Partition *p, Device *dev);
-    QWidget* m_pmWidget;
 
     QHash<const Partition*, QString> m_toFormat;
 
     QList<QColor> m_colorList;
     int m_currentPart;
-    
-    InstallationHandler *m_install;
 };
 
 #endif /*PARTITIONPAGE_H*/

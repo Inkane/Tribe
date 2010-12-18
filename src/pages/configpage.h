@@ -38,19 +38,24 @@ private slots:
     virtual void createWidget();
     virtual void aboutToGoToNext();
     virtual void aboutToGoToPrevious();
+    
+    bool eventFilter(QObject*, QEvent*);
 
     void setInstallPkgzPage();
     void setDownloadBundlesPage();
     void setChangeAppearancePage();
-    void setInitRamDiskPage();
+    void setInitRamdiskPage();
+    void setBootloaderPage();
 
     void incomingData(KIO::Job*, QByteArray);
     void downloadComplete();
+    void processComplete();
 
     // install pkg page
     void populatePkgzList();
     void currentPkgItemChanged(int);
     void pkgInstallButtonClicked();
+    void switchPkgScreenshot();
     
     // download bundles page
     void populateBundlesList();
@@ -59,6 +64,10 @@ private slots:
     // customize initrd page
     void initRdGenerationComplete();
     void generateInitRamDisk();
+    
+    // bootloader page
+    void bootloaderInstalled(int, QProcess::ExitStatus);
+    void menulstInstalled(int, QProcess::ExitStatus);
 
 private:
     Ui::Config ui;

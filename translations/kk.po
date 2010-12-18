@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: trunk\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2010-12-18 22:36+0100\n"
+"POT-Creation-Date: 2010-12-18 23:05+0100\n"
 "PO-Revision-Date: 2010-02-20 22:35+0600\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
@@ -163,7 +163,9 @@ msgstr "%1 тіркеу мүмкін емес"
 msgid "No Further details given"
 msgstr "Көбірек білу мүмкін емес"
 
-#: src/main.cpp:42
+#. i18n: file: ui/pages/base.ui:20
+#. i18n: ectx: property (windowTitle), widget (QWidget, Base)
+#: src/main.cpp:42 rc.cpp:3
 msgid "Tribe"
 msgstr "Tribe"
 
@@ -236,35 +238,46 @@ msgstr ""
 "Tribe қазір өз жұмысын аяқтайды, /tmp ішіндегі орнату логтарын\n"
 "тексеріңіз, немесе біздің форумнан көмек сұраңыз."
 
-#: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:465
+#: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:486
 msgid "Installing bootloader..."
 msgstr "Жүктеушіні орнату..."
 
-#: src/pages/bootloaderpage.cpp:82 src/pages/configpage.cpp:436
+#: src/pages/bootloaderpage.cpp:82 src/pages/configpage.cpp:457
 #, fuzzy
 msgid "Creating OS list..."
 msgstr "fstab жасау..."
 
-#: src/pages/configpage.cpp:294
+#: src/pages/configpage.cpp:170
+#, fuzzy
+msgid "Downloading"
+msgstr "Жүктемелер баптаулары"
+
+#: src/pages/configpage.cpp:315
 #, fuzzy
 msgid "installed"
 msgstr "Қайда орнату:"
 
-#: src/pages/configpage.cpp:309
+#: src/pages/configpage.cpp:330
 #, fuzzy
 msgid "Install Packaged Software"
 msgstr "Орнатудан кейінгі бейнеленуі"
 
-#: src/pages/configpage.cpp:348
+#. i18n: file: ui/pages/config.ui:122
+#. i18n: ectx: property (text), widget (QPushButton, downloadBundlesButton)
+#: src/pages/configpage.cpp:369 rc.cpp:102
 msgid "Download Popular Bundles"
 msgstr ""
 
-#: src/pages/configpage.cpp:364
+#. i18n: file: ui/pages/config.ui:202
+#. i18n: ectx: property (text), widget (QPushButton, bootloaderSettingsButton)
+#: src/pages/configpage.cpp:385 rc.cpp:111
 #, fuzzy
 msgid "Bootloader Settings"
 msgstr "Жүктеуші"
 
-#: src/pages/configpage.cpp:375
+#. i18n: file: ui/pages/config.ui:163
+#. i18n: ectx: property (text), widget (QPushButton, initRamDiskButton)
+#: src/pages/configpage.cpp:396 rc.cpp:105
 msgid "Customize Initial Ramdisk"
 msgstr ""
 
@@ -297,7 +310,9 @@ msgstr ""
 msgid "Error"
 msgstr "Қате"
 
-#: src/pages/partitionpage.cpp:195
+#. i18n: file: ui/pages/partition.ui:354
+#. i18n: ectx: property (text), widget (QPushButton, newButton)
+#: src/pages/partitionpage.cpp:195 rc.cpp:369
 msgid "New"
 msgstr ""
 
@@ -325,12 +340,16 @@ msgid ""
 "anyway?"
 msgstr ""
 
+#. i18n: file: ui/pages/partition.ui:111
+#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
 #: src/pages/partitionpage.cpp:564 src/pages/partitionpage.cpp:717
-#: src/pages/partitionpage.cpp:797
+#: src/pages/partitionpage.cpp:797 rc.cpp:342
 msgid "Extended"
 msgstr ""
 
-#: src/pages/partitionpage.cpp:798
+#. i18n: file: ui/pages/partition.ui:116
+#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
+#: src/pages/partitionpage.cpp:798 rc.cpp:345
 msgid "Primary"
 msgstr ""
 
@@ -412,813 +431,1277 @@ msgstr ""
 msgid "Custom"
 msgstr ""
 
-#: rc.cpp:1
+#. i18n: file: ui/pages/base.ui:172
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:6
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Welcome</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Қош келдіңіз</span></p></body></html>"
+
+#. i18n: file: ui/pages/base.ui:198
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: file: ui/pages/releasenotes.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, ReleaseNotes)
+#: rc.cpp:13 rc.cpp:412
+msgid "Release Notes"
+msgstr "Шығарылым ескертпесі"
+
+#. i18n: file: ui/pages/base.ui:224
+#. i18n: ectx: property (text), widget (QLabel, licenseLabel)
+#: rc.cpp:16
+msgid "License Approval"
+msgstr "Лицензияларды қабылдау"
+
+#. i18n: file: ui/pages/base.ui:257
+#. i18n: ectx: property (text), widget (QLabel, label_21)
+#: rc.cpp:19
+msgid "Ready to Install"
+msgstr "Орнатуға дайын"
+
+#. i18n: file: ui/pages/base.ui:283
+#. i18n: ectx: property (text), widget (QLabel, label_24)
+#: rc.cpp:22
+msgid "Language & Time"
+msgstr "Тіл мен уақыт"
+
+#. i18n: file: ui/pages/base.ui:297
+#. i18n: ectx: property (text), widget (QLabel, label_25)
+#: rc.cpp:25
+msgid "Disk setup"
+msgstr "Дискті баптау"
+
+#. i18n: file: ui/pages/base.ui:327
+#. i18n: ectx: property (text), widget (QLabel, label_26)
+#: rc.cpp:28
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Preparation</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Дайындау</span></p></body></html>"
+
+#. i18n: file: ui/pages/base.ui:334
+#. i18n: ectx: property (text), widget (QLabel, label_15)
+#: rc.cpp:35
+#, fuzzy
+msgid "Create Users"
+msgstr "Пайдаланушыны жасау"
+
+#. i18n: file: ui/pages/base.ui:390
+#. i18n: ectx: property (text), widget (QLabel, label_11)
+#: rc.cpp:38
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Installation</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Орнату</span></p></body></html>"
+
+#. i18n: file: ui/pages/base.ui:416
+#. i18n: ectx: property (text), widget (QLabel, label_13)
+#: rc.cpp:45
+msgid "Install System"
+msgstr "Жүйені орнату"
+
+#. i18n: file: ui/pages/base.ui:453
+#. i18n: ectx: property (text), widget (QLabel, label_14)
+#: rc.cpp:48
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Configuration</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Баптаулар</span></p></body></html>"
+
+#. i18n: file: ui/pages/base.ui:460
+#. i18n: ectx: property (text), widget (QLabel, label_16)
+#: rc.cpp:55
+msgid "Reboot / Enjoy"
+msgstr ""
+
+#. i18n: file: ui/pages/base.ui:583
+#. i18n: ectx: property (text), widget (QPushButton, abortButton)
+#: rc.cpp:58
+msgid "Abort installation"
+msgstr "Орнатуды үзу"
+
+#. i18n: file: ui/pages/base.ui:615
+#. i18n: ectx: property (text), widget (QPushButton, previousButton)
+#: rc.cpp:61
+msgctxt "Previous Page"
+msgid "Previous"
+msgstr "Алдыңғысы"
+
+#. i18n: file: ui/pages/base.ui:634
+#. i18n: ectx: property (text), widget (QPushButton, nextButton)
+#: rc.cpp:64
+msgctxt "Next Page"
+msgid "Next"
+msgstr "Келесі"
+
+#. i18n: file: ui/pages/bootloader.ui:46
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:67
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Bootloader Installation</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Жүктеушіні орнату</span></p></body></html>"
+
+#. i18n: file: ui/pages/bootloader.ui:58
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:74
+#, fuzzy
+msgid ""
+"You can now install GRUB as your main bootloader.\n"
+"\n"
+"If you are unsure where you should install the bootloader to, \n"
+"just leave the default value (hd0)."
+msgstr ""
+"Сіз қазір негізгі жүктеуші ретінде You can now GRUB орната аласыз.\n"
+"\n"
+"Оны қайда орнату керектігіне сенімді болмасаңыз, бастапқы мәнінде қалдырыңыз "
+"(hd0)."
+
+#. i18n: file: ui/pages/bootloader.ui:71
+#. i18n: ectx: property (text), widget (QCheckBox, checkBox)
+#: rc.cpp:80
+msgid "Install Bootloader"
+msgstr "Жүктеушіні орнату"
+
+#. i18n: file: ui/pages/bootloader.ui:89
+#. i18n: ectx: property (text), widget (QPushButton, pushButton)
+#. i18n: file: ui/pages/partition.ui:316
+#. i18n: ectx: property (toolTip), widget (QPushButton, advancedButton)
+#. i18n: file: ui/pages/partition.ui:319
+#. i18n: ectx: property (text), widget (QPushButton, advancedButton)
+#: rc.cpp:83 rc.cpp:360 rc.cpp:363
+msgid "Advanced..."
+msgstr "Кеңейтілген..."
+
+#. i18n: file: ui/pages/bootloader.ui:135
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:86
+msgid "Install to:"
+msgstr "Қайда орнату:"
+
+#. i18n: file: ui/pages/bootloader.ui:142
+#. i18n: ectx: property (text), widget (QLineEdit, lineEdit)
+#: rc.cpp:89
+msgid "hd0"
+msgstr "hd0"
+
+#. i18n: file: ui/pages/config.ui:46
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:92
+#, fuzzy
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:14pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:22pt; font-weight:600; color:#ffffff;\">Configuration</span></p></"
+"body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:22pt; font-weight:600; color:#ffffff;\">Root пайдаланушысын баптау</"
+"span></p></body></html>"
+
+#. i18n: file: ui/pages/config.ui:97
+#. i18n: ectx: property (text), widget (QPushButton, installPkgzButton)
+#: rc.cpp:99
+#, fuzzy
+msgid "Install Packages"
+msgstr "Орнатудан кейінгі бейнеленуі"
+
+#. i18n: file: ui/pages/config.ui:173
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:108
+#, fuzzy
+msgid "Advanced Options"
+msgstr "Ramdisk баптаулары"
+
+#. i18n: file: ui/pages/config.ui:227
+#. i18n: ectx: property (text), widget (QPushButton, changeAppearanceButton)
+#: rc.cpp:114
+msgid "Change System Appearance"
+msgstr ""
+
+#. i18n: file: ui/pages/config.ui:268
+#. i18n: ectx: property (text), widget (QCheckBox, usb)
+#: rc.cpp:117
+msgid "USB"
+msgstr ""
+
+#. i18n: file: ui/pages/config.ui:275
+#. i18n: ectx: property (text), widget (QCheckBox, nfs)
+#: rc.cpp:120
+msgid "NFS Shares"
+msgstr ""
+
+#. i18n: file: ui/pages/config.ui:282
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:123
+#, fuzzy
+msgid "Activate support for booting from:"
+msgstr "NFS ортақ бумаларынан жүктелу қолдауын белсендіру"
+
+#. i18n: file: ui/pages/config.ui:289
+#. i18n: ectx: property (text), widget (QCheckBox, firewire)
+#: rc.cpp:126
+msgid "FireWire"
+msgstr ""
+
+#. i18n: file: ui/pages/config.ui:296
+#. i18n: ectx: property (text), widget (QCheckBox, raid)
+#: rc.cpp:129
+msgid "Software Raid Arrays"
+msgstr ""
+
+#. i18n: file: ui/pages/config.ui:303
+#. i18n: ectx: property (text), widget (QCheckBox, lvm2)
+#: rc.cpp:132
+msgid "LVM2 Volumes"
+msgstr ""
+
+#. i18n: file: ui/pages/config.ui:310
+#. i18n: ectx: property (text), widget (QCheckBox, encrypted)
+#: rc.cpp:135
+msgid "Encrypted Volumes"
+msgstr ""
+
+#. i18n: file: ui/pages/config.ui:329
+#. i18n: ectx: property (text), widget (QPushButton, generateInitRamDiskButton)
+#: rc.cpp:138
+msgid "Generate Initial Ramdisk"
+msgstr ""
+
+#. i18n: file: ui/pages/config.ui:365
+#. i18n: ectx: property (text), widget (QCheckBox, mdp)
+#: rc.cpp:141
+#, fuzzy
+msgid "MDP Partition Arrays"
+msgstr "Бөлімдерді дайындау"
+
+#. i18n: file: ui/pages/config.ui:372
+#. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
+#: rc.cpp:144
+msgid "PCMCIA"
+msgstr ""
+
+#. i18n: file: ui/pages/config.ui:756
+#. i18n: ectx: property (text), widget (QPushButton, pkgInstallButton)
+#: rc.cpp:147
+#, fuzzy
+msgid "Install"
+msgstr "Қайда орнату:"
+
+#. i18n: file: ui/pages/config.ui:773
+#. i18n: ectx: property (text), widget (QPushButton, bundlesDownloadButton)
+#: rc.cpp:150
+#, fuzzy
+msgid "Download"
+msgstr "Жүктемелер баптаулары"
+
+#. i18n: file: ui/pages/config.ui:845
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:153
+msgid "Chakra"
+msgstr ""
+
+#. i18n: file: ui/pages/config.ui:893
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: rc.cpp:156
+msgid "Mac"
+msgstr ""
+
+#. i18n: file: ui/pages/config.ui:922
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: rc.cpp:159
+msgid "Windows"
+msgstr ""
+
+#. i18n: file: ui/pages/config.ui:1001
+#. i18n: ectx: property (text), widget (QPushButton, colorizeButton)
+#: rc.cpp:162
+msgid "Colorize"
+msgstr ""
+
+#. i18n: file: ui/pages/config.ui:1161
+#. i18n: ectx: property (text), widget (QCheckBox, bootloaderCheckBox)
+#: rc.cpp:165
+#, fuzzy
+msgid "Install GRUB"
+msgstr "Қайда орнату:"
+
+#. i18n: file: ui/pages/config.ui:1251
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:168
+msgid ""
+"Now that you have a Chakra install, you can now configure it to your liking."
+msgstr ""
+
+#. i18n: file: ui/pages/finish.ui:46
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:171
+#, fuzzy
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Installation Completed!</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Орнату аяқталды !</span></p></body></html>"
+
+#. i18n: file: ui/pages/finish.ui:68
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:178
+#, fuzzy
+msgid ""
+"Congratulations, the installation has been completed!\n"
+"\n"
+"We hope you enjoyed what you have seen as much as we enjoyed creating it.\n"
+"You can now reboot into the installed system or keep using the LiveCD.\n"
+"\n"
+"In case you want to check the installation logs,\n"
+"take a look into /tmp on the live system or into /var/log on the installed "
+"system.\n"
+"\n"
+"Thanks for using Chakra, and get in touch with us in the forums, share "
+"opinions, give advices;\n"
+"To put it simple: Get involved! (http://chakra-project.org)\n"
+"\n"
+"Have Fun!\n"
+"\n"
+"The Chakra Team"
+msgstr ""
+"Құттықтаймыз, орнату аяқталды! Көргеніңізден алған көңіліңіз біз оны "
+"жасағанда бөлген көңілден аз емес деп сенеміз.\n"
+"\n"
+"Сіз қазір жаңа орнатылған жүйеге қайта жүктеліп, немесе әрі қарай LiveCD "
+"қолдана аласыз.\n"
+"\n"
+"Орнату логтарын тексергіңіз келсе, live жүйедегі /tmp, ал орнатылған жүйеде /"
+"var/log бумаларын қараңыз.\n"
+"\n"
+"Chakra тандағаныңыз үшін рахмет, біздің форумда көңіл алысып, кеңес бере "
+"аласыз;\n"
+"Қысқаша айтсақ: Кірісіңіз! (http://chakra-project.org)\n"
+"\n"
+"Рахат алыңыз!\n"
+"\n"
+"Chakra жасаушылар тобы"
+
+#. i18n: file: ui/pages/finish.ui:105
+#. i18n: ectx: property (text), widget (QPushButton, rebootButton)
+#: rc.cpp:194
+msgid "Restart Computer"
+msgstr "Компьютерді қайта қосу"
+
+#. i18n: file: ui/pages/finish.ui:118
+#. i18n: ectx: property (text), widget (QPushButton, chakraButton)
+#: rc.cpp:197
+msgid "Keep using the LiveCD"
+msgstr "LiveCD қолдануды жалғастыру"
+
+#. i18n: file: ui/pages/init.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, tribeInit)
+#: rc.cpp:200
+msgid "Ramdisk"
+msgstr "Ramdisk"
+
+#. i18n: file: ui/pages/init.ui:49
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:203
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Ramdisk Setup</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Ramdisk баптау</span></p></body></html>"
+
+#. i18n: file: ui/pages/init.ui:58
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:210
+msgid ""
+"Your hardware will be configured automatically during the installation and a "
+"initial ramdisk environment for booting the linux kernel will be built. "
+"Everything should happen without intervention, but you might need some "
+"options for special boot methods. If you are unsure on what this means, "
+"simply press the \"Next\" button. Otherwise check out the ramdisk options "
+"below and select the items you need for your system."
+msgstr ""
+"Жүйеңіздегі құрылғылар орнату кезінде автобапталады, және linux ядросын "
+"жүктеу үшін керек бастапқы ramdisk қоршамы жасалады. Көбінесе, бүл үрдіске "
+"араласу керек емес, тек жүктеудің ерекше түрлері болмаса. Осының не екеніне "
+"сенімді болмасаңыз, жай ғана \"Келесі\" батырмасын басыңыз. Немесе төмендегі "
+"ramdisk баптауларын қарап шығып, жүйеңізге керек опцияларын белгілеңіз."
+
+#. i18n: file: ui/pages/init.ui:81
+#. i18n: ectx: property (text), widget (QPushButton, pushButton)
+#: rc.cpp:213
+msgid "Ramdisk Options"
+msgstr "Ramdisk баптаулары"
+
+#. i18n: file: ui/pages/init.ui:111
+#. i18n: ectx: property (text), widget (QCheckBox, usb)
+#: rc.cpp:216
+msgid "Activate support for booting from USB devices"
+msgstr "USB құрылғыларынан жүктелу қолдауын белсендіру"
+
+#. i18n: file: ui/pages/init.ui:118
+#. i18n: ectx: property (text), widget (QCheckBox, firewire)
+#: rc.cpp:219
+msgid "Activate support for booting from FireWire devices"
+msgstr "FireWire құрылғыларынан жүктелу қолдауын белсендіру"
+
+#. i18n: file: ui/pages/init.ui:125
+#. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
+#: rc.cpp:222
+msgid "Activate support for booting from PCMCIA devices"
+msgstr "PCMCIA құрылғыларынан жүктелу қолдауын белсендіру"
+
+#. i18n: file: ui/pages/init.ui:132
+#. i18n: ectx: property (text), widget (QCheckBox, nfs)
+#: rc.cpp:225
+msgid "Activate support for booting from NFS shares"
+msgstr "NFS ортақ бумаларынан жүктелу қолдауын белсендіру"
+
+#. i18n: file: ui/pages/init.ui:139
+#. i18n: ectx: property (text), widget (QCheckBox, raid)
+#: rc.cpp:228
+msgid "Activate support for booting from Software Raid arrays"
+msgstr "Бағдарламалық Raid массивтерінен жүктелу қолдауын белсендіру"
+
+#. i18n: file: ui/pages/init.ui:146
+#. i18n: ectx: property (text), widget (QCheckBox, mdp)
+#: rc.cpp:231
+msgid "Activate support for booting from Software Raid/MDP Partition arrays"
+msgstr ""
+"Бағдарламалық Raid/MDP бөлімдер массивтерінен жүктелу қолдауын белсендіру"
+
+#. i18n: file: ui/pages/init.ui:153
+#. i18n: ectx: property (text), widget (QCheckBox, lvm2)
+#: rc.cpp:234
+msgid "Activate support for booting from LVM2 volumes"
+msgstr "LVM2 бөлімдерінен жүктелу қолдауын қосуды белсендіру"
+
+#. i18n: file: ui/pages/init.ui:160
+#. i18n: ectx: property (text), widget (QCheckBox, encrypted)
+#: rc.cpp:237
+msgid "Activate support for booting from Encrypted volumes"
+msgstr "Шифрленген бөлімдерден жүктелу қолдауын қосуды белсендіру"
+
+#. i18n: file: ui/pages/installation.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Installation)
+#: rc.cpp:240
+msgid "Tribe Installation"
+msgstr "Tribe орнату"
+
+#. i18n: file: ui/pages/installation.ui:88
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#: rc.cpp:243
+msgid "Nine Inch Nails - Discipline"
+msgstr "Nine Inch Nails - Discipline"
+
+#. i18n: file: ui/pages/installation.ui:93
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#: rc.cpp:246
+msgid "Severed Fifth - War"
+msgstr "Severed Fifth - War"
+
+#. i18n: file: ui/pages/installation.ui:98
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#: rc.cpp:249
+msgid "Dunkelstern - Out of the box"
+msgstr "Dunkelstern - Out of the box"
+
+#. i18n: file: ui/pages/intro.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Intro)
+#: rc.cpp:252
+msgid "Tribe Intro"
+msgstr "Tribe кіріспесі"
+
+#. i18n: file: ui/pages/intro.ui:105
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:255
+#, fuzzy
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:12pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; color:#eeeeee;\">Welcome to the "
+"Chakra Installation!</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;"
+"\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">This installer will guide you through the process of "
+"installing</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">the Chakra live system on your computer. After the "
+"installation you will</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">have a ready-to-use Chakra Linux system.</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
+"weight:536; color:#eeeeee;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\"> Please carefully read all of the instructions.</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;"
+"\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\"> Remember:</span><span style=\" font-family:'Bitstream Vera "
+"Sans'; font-size:8pt; font-weight:536;\"> </span><span style=\" font-"
+"family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#ff0000;"
+"\">THIS IS ALPHA SOFTWARE, IT COULD EAT YOUR HAMSTER</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
+"weight:536; color:#ff0000;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">Have fun! - The Chakra Developers</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-size:14pt; color:#eeeeee;\">Chakra орнатқышына қош келдіңіз!</"
+"span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; color:#eeeeee;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:"
+"#eeeeee;\"><span style=\" font-weight:600;\">Tribe, біздің орнатқыш, сізді "
+"Chakra live жүйесін компьютеріңізге орнату</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+"weight:600; color:#eeeeee;\"> үрдісінен өткізеді. Орнатудан кейін сіз "
+"құрамындағы біздің модульді KDE дестелері</p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+"weight:600; color:#eeeeee;\">бар қолдануға дайын Arch Linux жүйесін аласыз.</"
+"p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-weight:600; color:#eeeeee;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+"weight:600; color:#eeeeee;\"> Мәтін мен түсіндірмелерді назар аударып оқыңыз."
+"</p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; color:#eeeeee;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-weight:600; color:#eeeeee;\"> Есіңізде болсын:</span><span "
+"style=\" font-weight:600;\"> </span><span style=\" font-weight:600; color:"
+"#ff0000;\">БҰЛ БАҒДАРЛАМАЛЫҚ ҚАМТАМА ӘЛІ ДЕ СЫНАУ ҮСТІНДЕ</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-weight:600; color:#ff0000;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+"weight:600; color:#ff0000;\"><span style=\" color:#eeeeee;\">Қызық алыңыз! - "
+"Chakra жасаушылары</span></p></body></html>"
+
+#. i18n: file: ui/pages/license.ui:49
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:272
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:22pt; font-weight:600; color:#ffffff;\">License Approval</span></p></"
+"body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:22pt; font-weight:600; color:#ffffff;\">Лицензияларды қабылдау</span></"
+"p></body></html>"
+
+#. i18n: file: ui/pages/license.ui:61
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:279
+msgid ""
+"Chakra includes some proprietary software like hardware drivers, media "
+"plugins and fonts. To install them, you have to read and accept their "
+"licenses. If you choose against a license, the installer will try to use a "
+"free solution (if one is available)."
+msgstr ""
+"Chakra құрамында құрылғылар драйверлер, медиа плагиндер мен қаріптер сияқты "
+"біраз проприетарлы нірселер бар. Оларды орнату үшін, сізге олардың "
+"лицензияларын оқып, оларды қабылдау керек. Лицензияны қабылдаудан бас "
+"тартсаңыз, орнатқыш оларды еркін бағдарламалық қамтамамен алмастыруға "
+"тырысады (ондай бар болса)"
+
+#. i18n: file: ui/pages/license.ui:74
+#. i18n: ectx: property (text), widget (QLabel, licenseLabel)
+#: rc.cpp:282
+msgid "Approve license for:"
+msgstr "Келесі үшін лицензияны қабылдау:"
+
+#. i18n: file: ui/pages/license.ui:103
+#. i18n: ectx: property (text), widget (QRadioButton, declineButton)
+#: rc.cpp:285
+msgid "Decline License"
+msgstr "Лицензияны қабылдамау"
+
+#. i18n: file: ui/pages/license.ui:110
+#. i18n: ectx: property (text), widget (QRadioButton, acceptButton)
+#: rc.cpp:288
+msgid "Accept License"
+msgstr "Лицензияны қабылдау"
+
+#. i18n: file: ui/pages/locale.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Locale)
+#: rc.cpp:291
+msgid "Form"
+msgstr "Түрі"
+
+#. i18n: file: ui/pages/locale.ui:35
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:294
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Language &amp; Time</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Тіл мен уақыт</span></p></body></html>"
+
+#. i18n: file: ui/pages/locale.ui:45
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:301
+msgid ""
+"Please select the nearest city on the globe so the installer can suggest the "
+"locale and timezone settings for you. You can fine-tune the suggested "
+"settings at the bottom of the page. If you cant find your region or city on "
+"the globe, you can zoom in by using the slider on the left."
+msgstr ""
+"Глобуста өзіңізге ең жақын орналасқан қаланы тандаңыз, орнатқыш осыған "
+"сәйкес сізге локаль мен уақыт баптауларын ұсынады. Осыны парақтың төменде "
+"өзгерте аласыз. Глобустан өзіңіздің қалаңызды таба алмасаңыз, сол жағындағы "
+"тұтқа көмегімен масштабты өзгерте аласыз."
+
+#. i18n: file: ui/pages/locale.ui:69
+#. i18n: ectx: property (clickMessage), widget (KLineEdit, locationsSearch)
+#: rc.cpp:304
+msgid "Search..."
+msgstr "Іздеу..."
+
+#. i18n: file: ui/pages/locale.ui:162
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:307
+#, fuzzy
+msgid "Continent:"
+msgstr "Тіркелу нүктесі:"
+
+#. i18n: file: ui/pages/locale.ui:185
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:310
+msgid "Language:"
+msgstr "Тіл:"
+
+#. i18n: file: ui/pages/locale.ui:208
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:313
+msgid "Locale:"
+msgstr "Локаль:"
+
+#. i18n: file: ui/pages/locale.ui:263
+#. i18n: ectx: property (text), widget (QCheckBox, showLocalesCheck)
+#. i18n: file: ui/pages/locale.ui:270
+#. i18n: ectx: property (text), widget (QCheckBox, showKDELangsCheck)
+#: rc.cpp:316 rc.cpp:319
+msgid "Show all"
+msgstr "Барлығын көрсету"
+
+#. i18n: file: ui/pages/locale.ui:277
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: rc.cpp:322
+#, fuzzy
+msgid "Region: "
+msgstr "Логин:"
+
+#. i18n: file: ui/pages/partition.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Partition)
+#: rc.cpp:325
+#, fuzzy
+msgid "Partition"
+msgstr "Бөлім:"
+
+#. i18n: file: ui/pages/partition.ui:43
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:328
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Disk setup</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Дискті баптау</span></p></body></html>"
+
+#. i18n: file: ui/pages/partition.ui:58
+#. i18n: ectx: property (text), widget (QLabel, descriptionLabel)
+#: rc.cpp:335
+msgid ""
+"Please select a mountpoint for your partitions. At least '/' should be "
+"mounted. No permanent changes to your hard drive will be made when you will "
+"press \"Next\""
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:100
+#. i18n: ectx: property (text), widget (QLabel, typeLabel)
+#: rc.cpp:339
+msgid "Type: "
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:127
+#. i18n: ectx: property (text), widget (QLabel, filesystemLabel)
+#: rc.cpp:348
+msgid "Filesystem: "
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:173
+#. i18n: ectx: property (text), widget (KPushButton, editPartitionOkButton)
+#. i18n: file: ui/widgets/avatardialog.ui:85
+#. i18n: ectx: property (text), widget (QPushButton, okButton)
+#: rc.cpp:351 rc.cpp:447
+msgid "Ok"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:186
+#. i18n: ectx: property (text), widget (KPushButton, editPartitionCancelButton)
+#. i18n: file: ui/widgets/avatardialog.ui:114
+#. i18n: ectx: property (text), widget (QPushButton, cancelButton)
+#: rc.cpp:354 rc.cpp:450
+msgid "Cancel"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:231
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, sizeSpinBox)
+#: rc.cpp:357
+msgid " MiB"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:332
+#. i18n: ectx: property (toolTip), widget (QPushButton, newPartTableButton)
+#: rc.cpp:366
+msgid "Create a new partition table on the selected device"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:373
+#. i18n: ectx: property (text), widget (QPushButton, deleteButton)
+#: rc.cpp:372
+msgid "Delete"
+msgstr "Өшіру"
+
+#. i18n: file: ui/pages/partition.ui:392
+#. i18n: ectx: property (text), widget (QPushButton, formatButton)
+#: rc.cpp:375
+#, fuzzy
+msgid "Format"
+msgstr "Түрі"
+
+#. i18n: file: ui/pages/partition.ui:411
+#. i18n: ectx: property (toolTip), widget (QPushButton, undoButton)
+#. i18n: file: ui/pages/partition.ui:414
+#. i18n: ectx: property (text), widget (QPushButton, undoButton)
+#: rc.cpp:378 rc.cpp:381
+msgid "Undo"
+msgstr ""
+
+#. i18n: file: ui/pages/partition.ui:430
+#. i18n: ectx: property (toolTip), widget (QPushButton, unmountButton)
+#: rc.cpp:384
+#, fuzzy
+msgid "Unmount the selected partition"
+msgstr "Уақыт белдеуін таңдауға тиістісіз."
+
+#. i18n: file: ui/pages/readyinstall.ui:51
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:387
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Ready to Install</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Орнатуға дайын</span></p></body></html>"
+
+#. i18n: file: ui/pages/readyinstall.ui:77
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:394
+msgid ""
+"The system will be installed with the following settings. Before continuing, "
+"please review your selections:\n"
+msgstr ""
+"Жүйе келесі баптаулармен орнатылады. Жалғастыру алдында, тандауларыңызды "
+"қарап шығыңыз:\n"
+
+#. i18n: file: ui/pages/readyinstall.ui:147
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:398
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+"#eeeeee;\">The following partitions will be used:</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+"#eeeeee;\">Келесі бөлімдер қолданылады:</span></p></body></html>"
+
+#. i18n: file: ui/pages/readyinstall.ui:211
+#. i18n: ectx: property (text), widget (QLabel, formatLabel)
+#: rc.cpp:405
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+"#eeeeee;\">The following partitions will be formatted:</span></p></body></"
+"html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+"#eeeeee;\">Келесі бөлідмер пішімделеді:</span></p></body></html>"
+
+#. i18n: file: ui/pages/releasenotes.ui:47
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:415
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
+"style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Release Notes</"
+"span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
+"style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Шығарылым "
+"ескертпесі</span></p></body></html>"
+
+#. i18n: file: ui/pages/releasenotes.ui:60
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:422
+msgid ""
+"Check out what's new, the known issues and general information about this "
+"version of Chakra. As always, you are encouraged to tell us what you think, "
+"either by visiting our forums or bug tracker."
+msgstr ""
+"Chakra осы нұсқасындағы жаңалықтар, белгілі ақаулықтар мен жалпы ақпаратты "
+"қарап шығыңыз. Өзіңіздің ойларыңызды біздің форумда не багтрекерде қалдыру "
+"арқылы бізге жеткізуге әрқашан да жол ашық."
+
+#. i18n: file: ui/pages/usercreation.ui:35
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:425
+#, fuzzy
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:14pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:22pt; font-weight:600; color:#ffffff;\">Create Users</span></p></body></"
+"html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:22pt; font-weight:600; color:#ffffff;\">Root пайдаланушысын баптау</"
+"span></p></body></html>"
+
+#. i18n: file: ui/pages/usercreation.ui:42
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:432
+msgid "Enter at least one login name and password."
+msgstr ""
+
+#. i18n: file: ui/pages/usercreation.ui:178
+#. i18n: ectx: property (toolTip), widget (QPushButton, addUser)
+#: rc.cpp:435
+#, fuzzy
+msgid "Add another user account."
+msgstr "Басқа пайдаланушыны қосу.."
+
+#. i18n: file: ui/pages/usercreation.ui:286
+#. i18n: ectx: property (text), widget (QLabel, hostname_extra_label)
+#: rc.cpp:438
+msgid ""
+"<small>This name will be used if you make the computer visible to others on "
+"a network.</small>"
+msgstr ""
+
+#. i18n: file: ui/pages/usercreation.ui:299
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:441
+#, fuzzy
+msgid "...and, what is the name of this computer?"
+msgstr "Бұл компьютердің аты:"
+
+#. i18n: file: ui/widgets/avatardialog.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, AvatarDialog)
+#: rc.cpp:444
+msgid "Select an Avatar..."
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:46
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:453
+#, fuzzy
+msgid "Login: "
+msgstr "Логин:"
+
+#. i18n: file: ui/widgets/userwidget.ui:56
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:456
+#, fuzzy
+msgid "Password: "
+msgstr "Пароль:"
+
+#. i18n: file: ui/widgets/userwidget.ui:94
+#. i18n: ectx: property (toolTip), widget (QPushButton, userDetails)
+#: rc.cpp:459
+msgid "Include more information about this user."
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:124
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:462
+msgid "Confirm Password:"
+msgstr "Парольді тексеру:"
+
+#. i18n: file: ui/widgets/userwidget.ui:146
+#. i18n: ectx: property (toolTip), widget (QPushButton, removeUser)
+#: rc.cpp:465
+msgid "Remove this user."
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:264
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:468
+#, fuzzy
+msgid "Name: "
+msgstr "Аты:"
+
+#. i18n: file: ui/widgets/userwidget.ui:307
+#. i18n: ectx: property (text), widget (QCheckBox, autoLoginCheckBox)
+#: rc.cpp:471
+msgid "Login Automatically"
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:344
+#. i18n: ectx: property (text), widget (QCheckBox, rootUsesUserPwCheckBox)
+#: rc.cpp:474
+msgid ""
+"Use this password as \n"
+"the Administrator password"
+msgstr ""
+
+#. i18n: file: ui/widgets/userwidget.ui:396
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:478
+#, fuzzy
+msgid "Root Password:  "
+msgstr "Root паролі"
+
+#. i18n: file: ui/widgets/userwidget.ui:406
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: rc.cpp:481
+#, fuzzy
+msgid "Confirm Root Password:  "
+msgstr "Парольді тексеру:"
+
+#: rc.cpp:482
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Baurzhan Muftakhidinov"
 
-#: rc.cpp:2
+#: rc.cpp:483
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "baurthefirst@gmail.com"
-
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~ "weight:600; color:#ffffff;\">Welcome</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~ "weight:600; color:#ffffff;\">Қош келдіңіз</span></p></body></html>"
-
-#~ msgid "Release Notes"
-#~ msgstr "Шығарылым ескертпесі"
-
-#~ msgid "License Approval"
-#~ msgstr "Лицензияларды қабылдау"
-
-#~ msgid "Ready to Install"
-#~ msgstr "Орнатуға дайын"
-
-#~ msgid "Language & Time"
-#~ msgstr "Тіл мен уақыт"
-
-#~ msgid "Disk setup"
-#~ msgstr "Дискті баптау"
-
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~ "weight:600; color:#ffffff;\">Preparation</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~ "weight:600; color:#ffffff;\">Дайындау</span></p></body></html>"
-
-#, fuzzy
-#~ msgid "Create Users"
-#~ msgstr "Пайдаланушыны жасау"
-
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~ "weight:600; color:#ffffff;\">Installation</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~ "weight:600; color:#ffffff;\">Орнату</span></p></body></html>"
-
-#~ msgid "Install System"
-#~ msgstr "Жүйені орнату"
-
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~ "weight:600; color:#ffffff;\">Configuration</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~ "weight:600; color:#ffffff;\">Баптаулар</span></p></body></html>"
-
-#~ msgid "Abort installation"
-#~ msgstr "Орнатуды үзу"
-
-#~ msgctxt "Previous Page"
-#~ msgid "Previous"
-#~ msgstr "Алдыңғысы"
-
-#~ msgctxt "Next Page"
-#~ msgid "Next"
-#~ msgstr "Келесі"
-
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Bootloader Installation</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Жүктеушіні орнату</span></p></body></html>"
-
-#, fuzzy
-#~ msgid ""
-#~ "You can now install GRUB as your main bootloader.\n"
-#~ "\n"
-#~ "If you are unsure where you should install the bootloader to, \n"
-#~ "just leave the default value (hd0)."
-#~ msgstr ""
-#~ "Сіз қазір негізгі жүктеуші ретінде You can now GRUB орната аласыз.\n"
-#~ "\n"
-#~ "Оны қайда орнату керектігіне сенімді болмасаңыз, бастапқы мәнінде "
-#~ "қалдырыңыз (hd0)."
-
-#~ msgid "Install Bootloader"
-#~ msgstr "Жүктеушіні орнату"
-
-#~ msgid "Advanced..."
-#~ msgstr "Кеңейтілген..."
-
-#~ msgid "Install to:"
-#~ msgstr "Қайда орнату:"
-
-#~ msgid "hd0"
-#~ msgstr "hd0"
-
-#, fuzzy
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:14pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~ "size:22pt; font-weight:600; color:#ffffff;\">Configuration</span></p></"
-#~ "body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~ "size:22pt; font-weight:600; color:#ffffff;\">Root пайдаланушысын баптау</"
-#~ "span></p></body></html>"
-
-#, fuzzy
-#~ msgid "Advanced Options"
-#~ msgstr "Ramdisk баптаулары"
-
-#, fuzzy
-#~ msgid "Activate support for booting from:"
-#~ msgstr "NFS ортақ бумаларынан жүктелу қолдауын белсендіру"
-
-#, fuzzy
-#~ msgid "MDP Partition Arrays"
-#~ msgstr "Бөлімдерді дайындау"
-
-#, fuzzy
-#~ msgid "Download"
-#~ msgstr "Жүктемелер баптаулары"
-
-#, fuzzy
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Installation Completed!</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Орнату аяқталды !</span></p></body></html>"
-
-#, fuzzy
-#~ msgid ""
-#~ "Congratulations, the installation has been completed!\n"
-#~ "\n"
-#~ "We hope you enjoyed what you have seen as much as we enjoyed creating "
-#~ "it.\n"
-#~ "You can now reboot into the installed system or keep using the LiveCD.\n"
-#~ "\n"
-#~ "In case you want to check the installation logs,\n"
-#~ "take a look into /tmp on the live system or into /var/log on the "
-#~ "installed system.\n"
-#~ "\n"
-#~ "Thanks for using Chakra, and get in touch with us in the forums, share "
-#~ "opinions, give advices;\n"
-#~ "To put it simple: Get involved! (http://chakra-project.org)\n"
-#~ "\n"
-#~ "Have Fun!\n"
-#~ "\n"
-#~ "The Chakra Team"
-#~ msgstr ""
-#~ "Құттықтаймыз, орнату аяқталды! Көргеніңізден алған көңіліңіз біз оны "
-#~ "жасағанда бөлген көңілден аз емес деп сенеміз.\n"
-#~ "\n"
-#~ "Сіз қазір жаңа орнатылған жүйеге қайта жүктеліп, немесе әрі қарай LiveCD "
-#~ "қолдана аласыз.\n"
-#~ "\n"
-#~ "Орнату логтарын тексергіңіз келсе, live жүйедегі /tmp, ал орнатылған "
-#~ "жүйеде /var/log бумаларын қараңыз.\n"
-#~ "\n"
-#~ "Chakra тандағаныңыз үшін рахмет, біздің форумда көңіл алысып, кеңес бере "
-#~ "аласыз;\n"
-#~ "Қысқаша айтсақ: Кірісіңіз! (http://chakra-project.org)\n"
-#~ "\n"
-#~ "Рахат алыңыз!\n"
-#~ "\n"
-#~ "Chakra жасаушылар тобы"
-
-#~ msgid "Restart Computer"
-#~ msgstr "Компьютерді қайта қосу"
-
-#~ msgid "Keep using the LiveCD"
-#~ msgstr "LiveCD қолдануды жалғастыру"
-
-#~ msgid "Ramdisk"
-#~ msgstr "Ramdisk"
-
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Ramdisk Setup</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Ramdisk баптау</span></p></body></html>"
-
-#~ msgid ""
-#~ "Your hardware will be configured automatically during the installation "
-#~ "and a initial ramdisk environment for booting the linux kernel will be "
-#~ "built. Everything should happen without intervention, but you might need "
-#~ "some options for special boot methods. If you are unsure on what this "
-#~ "means, simply press the \"Next\" button. Otherwise check out the ramdisk "
-#~ "options below and select the items you need for your system."
-#~ msgstr ""
-#~ "Жүйеңіздегі құрылғылар орнату кезінде автобапталады, және linux ядросын "
-#~ "жүктеу үшін керек бастапқы ramdisk қоршамы жасалады. Көбінесе, бүл "
-#~ "үрдіске араласу керек емес, тек жүктеудің ерекше түрлері болмаса. Осының "
-#~ "не екеніне сенімді болмасаңыз, жай ғана \"Келесі\" батырмасын басыңыз. "
-#~ "Немесе төмендегі ramdisk баптауларын қарап шығып, жүйеңізге керек "
-#~ "опцияларын белгілеңіз."
-
-#~ msgid "Ramdisk Options"
-#~ msgstr "Ramdisk баптаулары"
-
-#~ msgid "Activate support for booting from USB devices"
-#~ msgstr "USB құрылғыларынан жүктелу қолдауын белсендіру"
-
-#~ msgid "Activate support for booting from FireWire devices"
-#~ msgstr "FireWire құрылғыларынан жүктелу қолдауын белсендіру"
-
-#~ msgid "Activate support for booting from PCMCIA devices"
-#~ msgstr "PCMCIA құрылғыларынан жүктелу қолдауын белсендіру"
-
-#~ msgid "Activate support for booting from NFS shares"
-#~ msgstr "NFS ортақ бумаларынан жүктелу қолдауын белсендіру"
-
-#~ msgid "Activate support for booting from Software Raid arrays"
-#~ msgstr "Бағдарламалық Raid массивтерінен жүктелу қолдауын белсендіру"
-
-#~ msgid "Activate support for booting from Software Raid/MDP Partition arrays"
-#~ msgstr ""
-#~ "Бағдарламалық Raid/MDP бөлімдер массивтерінен жүктелу қолдауын белсендіру"
-
-#~ msgid "Activate support for booting from LVM2 volumes"
-#~ msgstr "LVM2 бөлімдерінен жүктелу қолдауын қосуды белсендіру"
-
-#~ msgid "Activate support for booting from Encrypted volumes"
-#~ msgstr "Шифрленген бөлімдерден жүктелу қолдауын қосуды белсендіру"
-
-#~ msgid "Tribe Installation"
-#~ msgstr "Tribe орнату"
-
-#~ msgid "Nine Inch Nails - Discipline"
-#~ msgstr "Nine Inch Nails - Discipline"
-
-#~ msgid "Severed Fifth - War"
-#~ msgstr "Severed Fifth - War"
-
-#~ msgid "Dunkelstern - Out of the box"
-#~ msgstr "Dunkelstern - Out of the box"
-
-#~ msgid "Tribe Intro"
-#~ msgstr "Tribe кіріспесі"
-
-#, fuzzy
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:12pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-#~ "style=\" font-family:'Bitstream Vera Sans'; color:#eeeeee;\">Welcome to "
-#~ "the Chakra Installation!</span></p>\n"
-#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
-#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
-#~ "text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:"
-#~ "#eeeeee;\"></p>\n"
-#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-#~ "style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
-#~ "weight:536; color:#eeeeee;\">This installer will guide you through the "
-#~ "process of installing</span></p>\n"
-#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-#~ "style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
-#~ "weight:536; color:#eeeeee;\">the Chakra live system on your computer. "
-#~ "After the installation you will</span></p>\n"
-#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-#~ "style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
-#~ "weight:536; color:#eeeeee;\">have a ready-to-use Chakra Linux system.</"
-#~ "span></p>\n"
-#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
-#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
-#~ "text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
-#~ "weight:536; color:#eeeeee;\"></p>\n"
-#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-#~ "style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
-#~ "weight:536; color:#eeeeee;\"> Please carefully read all of the "
-#~ "instructions.</span></p>\n"
-#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
-#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
-#~ "text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:"
-#~ "#eeeeee;\"></p>\n"
-#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-#~ "style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
-#~ "weight:536; color:#eeeeee;\"> Remember:</span><span style=\" font-"
-#~ "family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536;\"> </"
-#~ "span><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; "
-#~ "font-weight:536; color:#ff0000;\">THIS IS ALPHA SOFTWARE, IT COULD EAT "
-#~ "YOUR HAMSTER</span></p>\n"
-#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
-#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
-#~ "text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
-#~ "weight:536; color:#ff0000;\"></p>\n"
-#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-#~ "style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
-#~ "weight:536; color:#eeeeee;\">Have fun! - The Chakra Developers</span></"
-#~ "p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-#~ "style=\" font-size:14pt; color:#eeeeee;\">Chakra орнатқышына қош келдіңіз!"
-#~ "</span></p>\n"
-#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
-#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
-#~ "text-indent:0px; color:#eeeeee;\"></p>\n"
-#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:"
-#~ "#eeeeee;\"><span style=\" font-weight:600;\">Tribe, біздің орнатқыш, "
-#~ "сізді Chakra live жүйесін компьютеріңізге орнату</span></p>\n"
-#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-#~ "weight:600; color:#eeeeee;\"> үрдісінен өткізеді. Орнатудан кейін сіз "
-#~ "құрамындағы біздің модульді KDE дестелері</p>\n"
-#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-#~ "weight:600; color:#eeeeee;\">бар қолдануға дайын Arch Linux жүйесін "
-#~ "аласыз.</p>\n"
-#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
-#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
-#~ "text-indent:0px; font-weight:600; color:#eeeeee;\"></p>\n"
-#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-#~ "weight:600; color:#eeeeee;\"> Мәтін мен түсіндірмелерді назар аударып "
-#~ "оқыңыз.</p>\n"
-#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
-#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
-#~ "text-indent:0px; color:#eeeeee;\"></p>\n"
-#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-#~ "style=\" font-weight:600; color:#eeeeee;\"> Есіңізде болсын:</span><span "
-#~ "style=\" font-weight:600;\"> </span><span style=\" font-weight:600; color:"
-#~ "#ff0000;\">БҰЛ БАҒДАРЛАМАЛЫҚ ҚАМТАМА ӘЛІ ДЕ СЫНАУ ҮСТІНДЕ</span></p>\n"
-#~ "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
-#~ "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
-#~ "text-indent:0px; font-weight:600; color:#ff0000;\"></p>\n"
-#~ "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-#~ "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-#~ "weight:600; color:#ff0000;\"><span style=\" color:#eeeeee;\">Қызық "
-#~ "алыңыз! - Chakra жасаушылары</span></p></body></html>"
-
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~ "size:22pt; font-weight:600; color:#ffffff;\">License Approval</span></p></"
-#~ "body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~ "size:22pt; font-weight:600; color:#ffffff;\">Лицензияларды қабылдау</"
-#~ "span></p></body></html>"
-
-#~ msgid ""
-#~ "Chakra includes some proprietary software like hardware drivers, media "
-#~ "plugins and fonts. To install them, you have to read and accept their "
-#~ "licenses. If you choose against a license, the installer will try to use "
-#~ "a free solution (if one is available)."
-#~ msgstr ""
-#~ "Chakra құрамында құрылғылар драйверлер, медиа плагиндер мен қаріптер "
-#~ "сияқты біраз проприетарлы нірселер бар. Оларды орнату үшін, сізге олардың "
-#~ "лицензияларын оқып, оларды қабылдау керек. Лицензияны қабылдаудан бас "
-#~ "тартсаңыз, орнатқыш оларды еркін бағдарламалық қамтамамен алмастыруға "
-#~ "тырысады (ондай бар болса)"
-
-#~ msgid "Approve license for:"
-#~ msgstr "Келесі үшін лицензияны қабылдау:"
-
-#~ msgid "Decline License"
-#~ msgstr "Лицензияны қабылдамау"
-
-#~ msgid "Accept License"
-#~ msgstr "Лицензияны қабылдау"
-
-#~ msgid "Form"
-#~ msgstr "Түрі"
-
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Language &amp; Time</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Тіл мен уақыт</span></p></body></html>"
-
-#~ msgid ""
-#~ "Please select the nearest city on the globe so the installer can suggest "
-#~ "the locale and timezone settings for you. You can fine-tune the suggested "
-#~ "settings at the bottom of the page. If you cant find your region or city "
-#~ "on the globe, you can zoom in by using the slider on the left."
-#~ msgstr ""
-#~ "Глобуста өзіңізге ең жақын орналасқан қаланы тандаңыз, орнатқыш осыған "
-#~ "сәйкес сізге локаль мен уақыт баптауларын ұсынады. Осыны парақтың төменде "
-#~ "өзгерте аласыз. Глобустан өзіңіздің қалаңызды таба алмасаңыз, сол "
-#~ "жағындағы тұтқа көмегімен масштабты өзгерте аласыз."
-
-#~ msgid "Search..."
-#~ msgstr "Іздеу..."
-
-#, fuzzy
-#~ msgid "Continent:"
-#~ msgstr "Тіркелу нүктесі:"
-
-#~ msgid "Language:"
-#~ msgstr "Тіл:"
-
-#~ msgid "Locale:"
-#~ msgstr "Локаль:"
-
-#~ msgid "Show all"
-#~ msgstr "Барлығын көрсету"
-
-#, fuzzy
-#~ msgid "Partition"
-#~ msgstr "Бөлім:"
-
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Disk setup</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Дискті баптау</span></p></body></html>"
-
-#~ msgid "Delete"
-#~ msgstr "Өшіру"
-
-#, fuzzy
-#~ msgid "Format"
-#~ msgstr "Түрі"
-
-#, fuzzy
-#~ msgid "Unmount the selected partition"
-#~ msgstr "Уақыт белдеуін таңдауға тиістісіз."
-
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Ready to Install</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Орнатуға дайын</span></p></body></html>"
-
-#~ msgid ""
-#~ "The system will be installed with the following settings. Before "
-#~ "continuing, please review your selections:\n"
-#~ msgstr ""
-#~ "Жүйе келесі баптаулармен орнатылады. Жалғастыру алдында, тандауларыңызды "
-#~ "қарап шығыңыз:\n"
-
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-#~ "#eeeeee;\">The following partitions will be used:</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-#~ "#eeeeee;\">Келесі бөлімдер қолданылады:</span></p></body></html>"
-
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-#~ "#eeeeee;\">The following partitions will be formatted:</span></p></body></"
-#~ "html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-#~ "#eeeeee;\">Келесі бөлідмер пішімделеді:</span></p></body></html>"
-
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
-#~ "style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Release Notes</"
-#~ "span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
-#~ "style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Шығарылым "
-#~ "ескертпесі</span></p></body></html>"
-
-#~ msgid ""
-#~ "Check out what's new, the known issues and general information about this "
-#~ "version of Chakra. As always, you are encouraged to tell us what you "
-#~ "think, either by visiting our forums or bug tracker."
-#~ msgstr ""
-#~ "Chakra осы нұсқасындағы жаңалықтар, белгілі ақаулықтар мен жалпы "
-#~ "ақпаратты қарап шығыңыз. Өзіңіздің ойларыңызды біздің форумда не "
-#~ "багтрекерде қалдыру арқылы бізге жеткізуге әрқашан да жол ашық."
-
-#, fuzzy
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:14pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~ "size:22pt; font-weight:600; color:#ffffff;\">Create Users</span></p></"
-#~ "body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~ "size:22pt; font-weight:600; color:#ffffff;\">Root пайдаланушысын баптау</"
-#~ "span></p></body></html>"
-
-#, fuzzy
-#~ msgid "Add another user account."
-#~ msgstr "Басқа пайдаланушыны қосу.."
-
-#, fuzzy
-#~ msgid "...and, what is the name of this computer?"
-#~ msgstr "Бұл компьютердің аты:"
-
-#, fuzzy
-#~ msgid "Login: "
-#~ msgstr "Логин:"
-
-#, fuzzy
-#~ msgid "Password: "
-#~ msgstr "Пароль:"
-
-#~ msgid "Confirm Password:"
-#~ msgstr "Парольді тексеру:"
-
-#, fuzzy
-#~ msgid "Name: "
-#~ msgstr "Аты:"
-
-#, fuzzy
-#~ msgid "Root Password:  "
-#~ msgstr "Root паролі"
-
-#, fuzzy
-#~ msgid "Confirm Root Password:  "
-#~ msgstr "Парольді тексеру:"
 
 #~ msgid ""
 #~ "It looks like your power adaptor is unplugged. Installation is a delicate "

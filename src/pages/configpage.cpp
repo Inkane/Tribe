@@ -272,10 +272,10 @@ void ConfigPage::pkgInstallButtonClicked()
     ui.pkgInstallButton->setEnabled(false);
     enableNextButton(false);
     // mount special folders
-    QProcess::execute("bash -c \"mount -v -t proc none " + QString(INSTALLATION_TARGET) + "/proc\" > /dev/null 2&>1");
-    QProcess::execute("bash -c \"mount -v -t sysfs none " + QString(INSTALLATION_TARGET) + "/sys\" > /dev/null 2&>1");
-    QProcess::execute("bash -c \"mount -v -o bind /dev " + QString(INSTALLATION_TARGET) + "/dev\" > /dev/null 2&>1");
-    QProcess::execute("bash -c \"mount -v -t devpts devpts " + QString(INSTALLATION_TARGET) + "/dev/pts \" > /dev/null 2&>1");
+    QProcess::execute("bash -c \"mount -v -t proc none " + QString(INSTALLATION_TARGET) + "/proc > /dev/null 2&>1\"");
+    QProcess::execute("bash -c \"mount -v -t sysfs none " + QString(INSTALLATION_TARGET) + "/sys > /dev/null 2&>1\"");
+    QProcess::execute("bash -c \"mount -v -o bind /dev " + QString(INSTALLATION_TARGET) + "/dev > /dev/null 2&>1\"");
+    QProcess::execute("bash -c \"mount -v -t devpts devpts " + QString(INSTALLATION_TARGET) + "/dev/pts > /dev/null 2&>1\"");
     QProcess::execute("bash -c \"xhost +\" > /dev/null 2&>1");
     // cinstall pkg
     connect(m_process, SIGNAL(finished(int)), this, SLOT(processComplete()));
@@ -285,7 +285,10 @@ void ConfigPage::pkgInstallButtonClicked()
 void ConfigPage::processComplete()
 {
     // clean-up
-    QProcess::execute("umount -v " + QString(INSTALLATION_TARGET) + "/proc " + QString(INSTALLATION_TARGET) + "/sys "  + QString(INSTALLATION_TARGET) + "/dev/pts " + QString(INSTALLATION_TARGET) + "/dev");
+    QProcess::execute("umount -v " + QString(INSTALLATION_TARGET) + "/proc " + 
+                                     QString(INSTALLATION_TARGET) + "/sys "  + 
+                                     QString(INSTALLATION_TARGET) + "/dev/pts " + 
+                                     QString(INSTALLATION_TARGET) + "/dev");
     // re-enable buttons
     ui.pkgInstallButton->setEnabled(true);
     enableNextButton(true);

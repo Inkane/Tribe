@@ -330,6 +330,8 @@ void ConfigPage::setInstallPkgzPage()
     if (ui.stackedWidget->currentIndex() != 2) {
         ui.stackedWidget->setCurrentIndex(2);
         ui.currentPageLabel->setText(i18n("Install Packaged Software"));
+        ui.pkgInstallButton->setEnabled(true);
+        enableNextButton(true);
     } else {
         ui.stackedWidget->setCurrentIndex(0);
         ui.currentPageLabel->setText("");
@@ -369,6 +371,8 @@ void ConfigPage::setDownloadBundlesPage()
     if (ui.stackedWidget->currentIndex() != 3) {
         ui.stackedWidget->setCurrentIndex(3);
         ui.currentPageLabel->setText(i18n("Download Popular Bundles"));
+        ui.bundlesDownloadButton->setEnabled(true);
+        enableNextButton(true);
     } else {
         ui.stackedWidget->setCurrentIndex(0);
         ui.currentPageLabel->setText("");
@@ -385,6 +389,7 @@ void ConfigPage::setBootloaderPage()
     if (ui.stackedWidget->currentIndex() != 6) {
         ui.stackedWidget->setCurrentIndex(6);
         ui.currentPageLabel->setText(i18n("Bootloader Settings"));
+        enableNextButton(true);
     } else {
         ui.stackedWidget->setCurrentIndex(0);
         ui.currentPageLabel->setText("");
@@ -396,6 +401,7 @@ void ConfigPage::setInitRamdiskPage()
     if (ui.stackedWidget->currentIndex() != 1) {
         ui.stackedWidget->setCurrentIndex(1);
         ui.currentPageLabel->setText(i18n("Customize Initial Ramdisk"));
+        enableNextButton(true);
     } else {
         ui.stackedWidget->setCurrentIndex(0);
         ui.currentPageLabel->setText("");

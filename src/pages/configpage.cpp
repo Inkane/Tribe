@@ -46,6 +46,8 @@ ConfigPage::~ConfigPage()
 void ConfigPage::createWidget()
 {
     ui.setupUi(this);
+    
+    ui.changeAppearanceButton->setVisible(false);
 
     // page connections
     connect(ui.installPkgzButton, SIGNAL(clicked()), this, SLOT(setInstallPkgzPage()));

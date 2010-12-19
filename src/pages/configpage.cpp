@@ -196,6 +196,9 @@ void ConfigPage::result(KJob* job)
 
     if (job->error()) {
         qDebug() << job->errorString();
+        ui.stackedWidget->setCurrentIndex(3);
+        ui.bundlesDownloadButton->setEnabled(true);
+        enableNextButton(true);
         return;
     }
 

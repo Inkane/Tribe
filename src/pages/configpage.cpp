@@ -319,11 +319,11 @@ void ConfigPage::pkgInstallButtonClicked()
     ui.pkgInstallButton->setEnabled(false);
     enableNextButton(false);
     // mount special folders
-    QProcess::execute("bash -c \"mount -v -t proc none " + QString(INSTALLATION_TARGET) + "/proc > /dev/null 2&>1\"");
-    QProcess::execute("bash -c \"mount -v -t sysfs none " + QString(INSTALLATION_TARGET) + "/sys > /dev/null 2&>1\"");
-    QProcess::execute("bash -c \"mount -v -o bind /dev " + QString(INSTALLATION_TARGET) + "/dev > /dev/null 2&>1\"");
-    QProcess::execute("bash -c \"mount -v -t devpts devpts " + QString(INSTALLATION_TARGET) + "/dev/pts > /dev/null 2&>1\"");
-    QProcess::execute("bash -c \"xhost +\" > /dev/null 2&>1");
+    QProcess::execute("mount -v -t proc none " + QString(INSTALLATION_TARGET) + "/proc");
+    QProcess::execute("mount -v -t sysfs none " + QString(INSTALLATION_TARGET) + "/sys");
+    QProcess::execute("mount -v -o bind /dev " + QString(INSTALLATION_TARGET) + "/dev");
+    QProcess::execute("mount -v -t devpts devpts " + QString(INSTALLATION_TARGET) + "/dev/pts");
+    QProcess::execute("xhost +");
     // cinstall pkg
     connect(m_process, SIGNAL(finished(int)), this, SLOT(processComplete()));
     m_process->start("chroot " + QString(INSTALLATION_TARGET) + " su " + m_install->userLoginList().first() + " -c \"cinstall -i " + ui.pkgList->currentItem()->data(60).toString() + "\"");

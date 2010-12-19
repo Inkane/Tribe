@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2010-12-18 23:05+0100\n"
+"POT-Creation-Date: 2010-12-19 14:44+0100\n"
 "PO-Revision-Date: 2010-12-14 22:29+0100\n"
 "Last-Translator: Adrián Chaves Fernández (Gallaecio) <adriyetichaves@gmail."
 "com>\n"
@@ -220,11 +220,11 @@ msgstr ""
 "Agora pecharase Tribe, consulte os rexistros da instalación\n"
 "no directorio /tmp ou pida axuda nos foros."
 
-#: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:486
+#: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:494
 msgid "Installing bootloader..."
 msgstr "Instalando o xestor de inicio..."
 
-#: src/pages/bootloaderpage.cpp:82 src/pages/configpage.cpp:457
+#: src/pages/bootloaderpage.cpp:82 src/pages/configpage.cpp:465
 msgid "Creating OS list..."
 msgstr "Xerando a lista de sistemas operativos..."
 
@@ -233,32 +233,32 @@ msgstr "Xerando a lista de sistemas operativos..."
 msgid "Downloading"
 msgstr "Configuración de descarga"
 
-#: src/pages/configpage.cpp:315
+#: src/pages/configpage.cpp:317
 #, fuzzy
 msgid "installed"
 msgstr "Instalar en:"
 
-#: src/pages/configpage.cpp:330
+#: src/pages/configpage.cpp:332
 #, fuzzy
 msgid "Install Packaged Software"
 msgstr "Infraestrutura de pos-instalación e material gráfico"
 
 #. i18n: file: ui/pages/config.ui:122
 #. i18n: ectx: property (text), widget (QPushButton, downloadBundlesButton)
-#: src/pages/configpage.cpp:369 rc.cpp:102
+#: src/pages/configpage.cpp:373 rc.cpp:102
 msgid "Download Popular Bundles"
 msgstr ""
 
 #. i18n: file: ui/pages/config.ui:202
 #. i18n: ectx: property (text), widget (QPushButton, bootloaderSettingsButton)
-#: src/pages/configpage.cpp:385 rc.cpp:111
+#: src/pages/configpage.cpp:391 rc.cpp:111
 #, fuzzy
 msgid "Bootloader Settings"
 msgstr "Xestor de inicio"
 
 #. i18n: file: ui/pages/config.ui:163
 #. i18n: ectx: property (text), widget (QPushButton, initRamDiskButton)
-#: src/pages/configpage.cpp:396 rc.cpp:105
+#: src/pages/configpage.cpp:403 rc.cpp:105
 msgid "Customize Initial Ramdisk"
 msgstr ""
 

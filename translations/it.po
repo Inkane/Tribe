@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2010-12-18 23:05+0100\n"
+"POT-Creation-Date: 2010-12-19 14:44+0100\n"
 "PO-Revision-Date: 2010-12-19 12:33+0100\n"
 "Last-Translator: Giuseppe Calà <jiveaxe@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -227,11 +227,11 @@ msgstr ""
 "in /tmp\n"
 "o chiedi aiuto nel nostro forum."
 
-#: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:486
+#: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:494
 msgid "Installing bootloader..."
 msgstr "Installazione gestore di avvio..."
 
-#: src/pages/bootloaderpage.cpp:82 src/pages/configpage.cpp:457
+#: src/pages/bootloaderpage.cpp:82 src/pages/configpage.cpp:465
 #, fuzzy
 msgid "Creating OS list..."
 msgstr "Creazione fstab..."
@@ -241,30 +241,30 @@ msgstr "Creazione fstab..."
 msgid "Downloading"
 msgstr "Scarica"
 
-#: src/pages/configpage.cpp:315
+#: src/pages/configpage.cpp:317
 #, fuzzy
 msgid "installed"
 msgstr "Installa"
 
-#: src/pages/configpage.cpp:330
+#: src/pages/configpage.cpp:332
 msgid "Install Packaged Software"
 msgstr "Installa Software Pacchettizzato"
 
 #. i18n: file: ui/pages/config.ui:122
 #. i18n: ectx: property (text), widget (QPushButton, downloadBundlesButton)
-#: src/pages/configpage.cpp:369 rc.cpp:102
+#: src/pages/configpage.cpp:373 rc.cpp:102
 msgid "Download Popular Bundles"
 msgstr "Scarica i Bundle più in voga"
 
 #. i18n: file: ui/pages/config.ui:202
 #. i18n: ectx: property (text), widget (QPushButton, bootloaderSettingsButton)
-#: src/pages/configpage.cpp:385 rc.cpp:111
+#: src/pages/configpage.cpp:391 rc.cpp:111
 msgid "Bootloader Settings"
 msgstr "Impostazioni Gestore di avvio"
 
 #. i18n: file: ui/pages/config.ui:163
 #. i18n: ectx: property (text), widget (QPushButton, initRamDiskButton)
-#: src/pages/configpage.cpp:396 rc.cpp:105
+#: src/pages/configpage.cpp:403 rc.cpp:105
 msgid "Customize Initial Ramdisk"
 msgstr "Personalizza il disco RAM Iniziale"
 
@@ -1112,8 +1112,7 @@ msgstr ""
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
 "style=\" font-family:'Bitstream Vera Sans'; color:#eeeeee;\">Benvenuti "
-"nell'installazione di "
-"Chakra!</span></p>\n"
+"nell'installazione di Chakra!</span></p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
 "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
 "indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;"
@@ -1150,8 +1149,8 @@ msgstr ""
 "color:#eeeeee;\"> Ricorda:</span><span style=\" font-family:'Bitstream Vera "
 "Sans'; font-size:8pt; font-weight:536;\"> </span><span style=\" font-"
 "family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#ff0000;"
-"\">QUESTO PROGRAMMA È IN FASE ALFA, POTREBBE MANGIARE IL TUO CRICETO</span><"
-"/p>\n"
+"\">QUESTO PROGRAMMA È IN FASE ALFA, POTREBBE MANGIARE IL TUO CRICETO</span></"
+"p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
 "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
 "indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
@@ -1159,8 +1158,8 @@ msgstr ""
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
 "style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\">Divertiti! - Gli sviluppatori di Chakra</span></p></body><"
-"/html>"
+"color:#eeeeee;\">Divertiti! - Gli sviluppatori di Chakra</span></p></body></"
+"html>"
 
 #. i18n: file: ui/pages/license.ui:49
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1584,9 +1583,8 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Creazione Utenti</span></p><"
-"/body></"
-"html>"
+"size:22pt; font-weight:600; color:#ffffff;\">Creazione Utenti</span></p></"
+"body></html>"
 
 #. i18n: file: ui/pages/usercreation.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -1695,16 +1693,12 @@ msgstr "Conferma password di Root:"
 #: rc.cpp:482
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
-"Vincenzo Reale "
-"Giuseppe Calà"
+msgstr "Vincenzo Reale Giuseppe Calà"
 
 #: rc.cpp:483
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
-"smart2128@baslug.org "
-"jiveaxe@gmail.com"
+msgstr "smart2128@baslug.org jiveaxe@gmail.com"
 
 #~ msgid ""
 #~ "It looks like your power adaptor is unplugged. Installation is a delicate "

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2010-12-18 23:05+0100\n"
+"POT-Creation-Date: 2010-12-19 14:44+0100\n"
 "PO-Revision-Date: 2009-08-05 22:07+1\n"
 "Last-Translator: Mladen Pejakovi <pejakm@gmail.com>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -238,11 +238,11 @@ msgstr ""
 "   ,     /tmp\n"
 "     ."
 
-#: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:486
+#: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:494
 msgid "Installing bootloader..."
 msgstr " ..."
 
-#: src/pages/bootloaderpage.cpp:82 src/pages/configpage.cpp:457
+#: src/pages/bootloaderpage.cpp:82 src/pages/configpage.cpp:465
 #, fuzzy
 msgid "Creating OS list..."
 msgstr " fstab..."
@@ -252,32 +252,32 @@ msgstr " fstab..."
 msgid "Downloading"
 msgstr " "
 
-#: src/pages/configpage.cpp:315
+#: src/pages/configpage.cpp:317
 #, fuzzy
 msgid "installed"
 msgstr " :"
 
-#: src/pages/configpage.cpp:330
+#: src/pages/configpage.cpp:332
 #, fuzzy
 msgid "Install Packaged Software"
 msgstr "PostInstall   "
 
 #. i18n: file: ui/pages/config.ui:122
 #. i18n: ectx: property (text), widget (QPushButton, downloadBundlesButton)
-#: src/pages/configpage.cpp:369 rc.cpp:102
+#: src/pages/configpage.cpp:373 rc.cpp:102
 msgid "Download Popular Bundles"
 msgstr ""
 
 #. i18n: file: ui/pages/config.ui:202
 #. i18n: ectx: property (text), widget (QPushButton, bootloaderSettingsButton)
-#: src/pages/configpage.cpp:385 rc.cpp:111
+#: src/pages/configpage.cpp:391 rc.cpp:111
 #, fuzzy
 msgid "Bootloader Settings"
 msgstr " "
 
 #. i18n: file: ui/pages/config.ui:163
 #. i18n: ectx: property (text), widget (QPushButton, initRamDiskButton)
-#: src/pages/configpage.cpp:396 rc.cpp:105
+#: src/pages/configpage.cpp:403 rc.cpp:105
 msgid "Customize Initial Ramdisk"
 msgstr ""
 

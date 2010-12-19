@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tribe HEAD\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2010-12-18 23:05+0100\n"
+"POT-Creation-Date: 2010-12-19 14:44+0100\n"
 "PO-Revision-Date: 2009-05-23 10:23+0800\n"
 "Last-Translator: Xiang Yixiang <lovelinux229@gmail.com>\n"
 "Language-Team: Chinese (simplified) <translation-team-zh-cn@lists."
@@ -236,11 +236,11 @@ msgstr ""
 "安装失败！发生如下错误：%1。\n"
 "Tribe 即将退出，请到/tmp目录下查看安装日志或在我们的论坛中寻求帮助。"
 
-#: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:486
+#: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:494
 msgid "Installing bootloader..."
 msgstr "正在安装启动引导器..."
 
-#: src/pages/bootloaderpage.cpp:82 src/pages/configpage.cpp:457
+#: src/pages/bootloaderpage.cpp:82 src/pages/configpage.cpp:465
 #, fuzzy
 msgid "Creating OS list..."
 msgstr "正在创建 fstab 文件..."
@@ -250,32 +250,32 @@ msgstr "正在创建 fstab 文件..."
 msgid "Downloading"
 msgstr "下载设置"
 
-#: src/pages/configpage.cpp:315
+#: src/pages/configpage.cpp:317
 #, fuzzy
 msgid "installed"
 msgstr "安装至："
 
-#: src/pages/configpage.cpp:330
+#: src/pages/configpage.cpp:332
 #, fuzzy
 msgid "Install Packaged Software"
 msgstr "PostInstall Backend and Artwork"
 
 #. i18n: file: ui/pages/config.ui:122
 #. i18n: ectx: property (text), widget (QPushButton, downloadBundlesButton)
-#: src/pages/configpage.cpp:369 rc.cpp:102
+#: src/pages/configpage.cpp:373 rc.cpp:102
 msgid "Download Popular Bundles"
 msgstr ""
 
 #. i18n: file: ui/pages/config.ui:202
 #. i18n: ectx: property (text), widget (QPushButton, bootloaderSettingsButton)
-#: src/pages/configpage.cpp:385 rc.cpp:111
+#: src/pages/configpage.cpp:391 rc.cpp:111
 #, fuzzy
 msgid "Bootloader Settings"
 msgstr "启动管理器"
 
 #. i18n: file: ui/pages/config.ui:163
 #. i18n: ectx: property (text), widget (QPushButton, initRamDiskButton)
-#: src/pages/configpage.cpp:396 rc.cpp:105
+#: src/pages/configpage.cpp:403 rc.cpp:105
 msgid "Customize Initial Ramdisk"
 msgstr ""
 

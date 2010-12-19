@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2010-12-18 23:05+0100\n"
+"POT-Creation-Date: 2010-12-19 14:44+0100\n"
 "PO-Revision-Date: 2010-12-18 22:55+0100\n"
 "Last-Translator: Manuel Tortosa Moreno <manutortosa@chakra-project.org>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -220,11 +220,11 @@ msgstr ""
 "tmp\n"
 "o demaneu ajuda als nostres fòrums."
 
-#: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:486
+#: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:494
 msgid "Installing bootloader..."
 msgstr "S'està instal·lant el gestor d'arrencada..."
 
-#: src/pages/bootloaderpage.cpp:82 src/pages/configpage.cpp:457
+#: src/pages/bootloaderpage.cpp:82 src/pages/configpage.cpp:465
 msgid "Creating OS list..."
 msgstr "S'està creant la llista de sistemes operatius..."
 
@@ -233,29 +233,29 @@ msgstr "S'està creant la llista de sistemes operatius..."
 msgid "Downloading"
 msgstr "Baixa"
 
-#: src/pages/configpage.cpp:315
+#: src/pages/configpage.cpp:317
 msgid "installed"
 msgstr "Instal·lat"
 
-#: src/pages/configpage.cpp:330
+#: src/pages/configpage.cpp:332
 msgid "Install Packaged Software"
 msgstr "Instal·la paquets de programari"
 
 #. i18n: file: ui/pages/config.ui:122
 #. i18n: ectx: property (text), widget (QPushButton, downloadBundlesButton)
-#: src/pages/configpage.cpp:369 rc.cpp:102
+#: src/pages/configpage.cpp:373 rc.cpp:102
 msgid "Download Popular Bundles"
 msgstr "Baixa «bundles» populars"
 
 #. i18n: file: ui/pages/config.ui:202
 #. i18n: ectx: property (text), widget (QPushButton, bootloaderSettingsButton)
-#: src/pages/configpage.cpp:385 rc.cpp:111
+#: src/pages/configpage.cpp:391 rc.cpp:111
 msgid "Bootloader Settings"
 msgstr "Arranjament del gestor d'arrencada"
 
 #. i18n: file: ui/pages/config.ui:163
 #. i18n: ectx: property (text), widget (QPushButton, initRamDiskButton)
-#: src/pages/configpage.cpp:396 rc.cpp:105
+#: src/pages/configpage.cpp:403 rc.cpp:105
 msgid "Customize Initial Ramdisk"
 msgstr "Personalitza la imatge Ramdisk inicial"
 

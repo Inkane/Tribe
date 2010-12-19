@@ -187,6 +187,7 @@ void ConfigPage::downloadComplete()
         if (m_incomingExtension != ".jpeg")
             ui.stackedWidget->setCurrentIndex(3);
             ui.bundlesDownloadButton->setEnabled(true);
+            enableNextButton(true);
         m_incomingExtension = "";
         return;
     }
@@ -239,6 +240,7 @@ void ConfigPage::bundlesDownloadButtonClicked()
     m_incomingIncr = 0;
 
     ui.bundlesDownloadButton->setEnabled(false);
+    enableNextButton(false);
     ui.stackedWidget->setCurrentIndex(7);
     ui.progressLabel->setText("Waiting for server...");
     
@@ -284,11 +286,11 @@ void ConfigPage::bundlesDownloadButtonClicked()
                         "/*  | cut -d \':\' -f 3 | cut -d \' \' -f 2 | grep " + 
                         bundle + ")\"");
         m_process->waitForFinished();
-        QString result(m_process->readAll());
+        QString result(m_process->readAll());	
         if (result.simplified().trimmed().split(" ").count() > 1) {
-            m_incomingList.append(result.simplified().trimmed().split(" ").last());
+            m_incomingList.append(result.simplified().trimmed().split(" ").first().simplified().trimmed().replace("\n", ""));
         } else {
-            m_incomingList.append(result);
+            m_incomingList.append(result.trimmed().replace("\n", ""));
         }
     }
 

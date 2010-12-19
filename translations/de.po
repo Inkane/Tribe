@@ -229,7 +229,7 @@ msgstr "Bootmenu wird erstellt …"
 
 #: src/pages/configpage.cpp:170
 msgid "Downloading"
-msgstr "Herunterladen "
+msgstr "Herunterladen"
 
 #: src/pages/configpage.cpp:315
 msgid "installed"
@@ -686,7 +686,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, installPkgzButton)
 #: rc.cpp:99
 msgid "Install Packages"
-msgstr "Pakete installieren "
+msgstr "Pakete installieren"
 
 #. i18n: file: ui/pages/config.ui:173
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -764,7 +764,7 @@ msgstr "PCMCIA"
 #. i18n: ectx: property (text), widget (QPushButton, pkgInstallButton)
 #: rc.cpp:147
 msgid "Install"
-msgstr "Installieren "
+msgstr "Installieren"
 
 #. i18n: file: ui/pages/config.ui:773
 #. i18n: ectx: property (text), widget (QPushButton, bundlesDownloadButton)
@@ -794,7 +794,7 @@ msgstr "Windows"
 #. i18n: ectx: property (text), widget (QPushButton, colorizeButton)
 #: rc.cpp:162
 msgid "Colorize"
-msgstr "Farben"
+msgstr "Einfärben"
 
 #. i18n: file: ui/pages/config.ui:1161
 #. i18n: ectx: property (text), widget (QCheckBox, bootloaderCheckBox)

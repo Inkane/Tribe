@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2010-12-18 23:05+0100\n"
+"POT-Creation-Date: 2010-12-19 14:44+0100\n"
 "PO-Revision-Date: 2010-12-15 01:38+0200\n"
 "Last-Translator: \n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
@@ -222,11 +222,11 @@ msgstr ""
 "εγκατάστασης στο /tmp\n"
 "ή ζητήστε βοήθεια στα φόρουμ μας."
 
-#: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:486
+#: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:494
 msgid "Installing bootloader..."
 msgstr "Εγκατάσταση του bootloader..."
 
-#: src/pages/bootloaderpage.cpp:82 src/pages/configpage.cpp:457
+#: src/pages/bootloaderpage.cpp:82 src/pages/configpage.cpp:465
 msgid "Creating OS list..."
 msgstr "Δημιουργία λίστας Λειτουργικών Συστημάτων..."
 
@@ -235,32 +235,32 @@ msgstr "Δημιουργία λίστας Λειτουργικών Συστημ�
 msgid "Downloading"
 msgstr "Επιλογές κατεβάσματος"
 
-#: src/pages/configpage.cpp:315
+#: src/pages/configpage.cpp:317
 #, fuzzy
 msgid "installed"
 msgstr "Εγκατάσταση σε:"
 
-#: src/pages/configpage.cpp:330
+#: src/pages/configpage.cpp:332
 #, fuzzy
 msgid "Install Packaged Software"
 msgstr "Σχέδια και Σύστημα Υποστήριξης της Μετα-Εγκατάστασης"
 
 #. i18n: file: ui/pages/config.ui:122
 #. i18n: ectx: property (text), widget (QPushButton, downloadBundlesButton)
-#: src/pages/configpage.cpp:369 rc.cpp:102
+#: src/pages/configpage.cpp:373 rc.cpp:102
 msgid "Download Popular Bundles"
 msgstr ""
 
 #. i18n: file: ui/pages/config.ui:202
 #. i18n: ectx: property (text), widget (QPushButton, bootloaderSettingsButton)
-#: src/pages/configpage.cpp:385 rc.cpp:111
+#: src/pages/configpage.cpp:391 rc.cpp:111
 #, fuzzy
 msgid "Bootloader Settings"
 msgstr "Bootloader"
 
 #. i18n: file: ui/pages/config.ui:163
 #. i18n: ectx: property (text), widget (QPushButton, initRamDiskButton)
-#: src/pages/configpage.cpp:396 rc.cpp:105
+#: src/pages/configpage.cpp:403 rc.cpp:105
 msgid "Customize Initial Ramdisk"
 msgstr ""
 

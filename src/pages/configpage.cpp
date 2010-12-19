@@ -198,7 +198,7 @@ void ConfigPage::downloadComplete()
         m_job = KIO::get(r, KIO::Reload, KIO::Overwrite | KIO::HideProgressInfo);
         connect(m_job, SIGNAL(data(KIO::Job*,QByteArray)), this, SLOT(incomingData(KIO::Job*, QByteArray)));
     } else {
-        KUrl r(QUrl("http://chakra-project.org/repo/bundles" + m_currentBranch + "/" +
+        KUrl r(QUrl("http://mirror.rit.edu/kdemod/bundles" + m_currentBranch + "/" +
                     m_currentArch + "/" + m_incomingList.at(m_incomingIncr)));
         m_job = KIO::get(r, KIO::Reload, KIO::Overwrite | KIO::HideProgressInfo);
         connect(m_job, SIGNAL(data(KIO::Job*,QByteArray)), this, SLOT(incomingData(KIO::Job*, QByteArray)));
@@ -294,7 +294,7 @@ void ConfigPage::bundlesDownloadButtonClicked()
         }
     }
 
-    KUrl r(QUrl("http://chakra-project.org/repo/bundles" + m_currentBranch + "/" +
+    KUrl r(QUrl("http://mirror.rit.edu/kdemod/bundles" + m_currentBranch + "/" +
                     m_currentArch + "/" + m_incomingList.at(m_incomingIncr)));
     m_job = KIO::get(r, KIO::Reload, KIO::Overwrite | KIO::HideProgressInfo);
     connect(m_job, SIGNAL(data(KIO::Job*,QByteArray)), this, SLOT(incomingData(KIO::Job*, QByteArray)));

@@ -1672,15 +1672,9 @@ msgstr "Konfirmasi Kata Sandi Root:"
 #: rc.cpp:482
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Martin Lee"
 
 #: rc.cpp:483
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
-
-#~ msgid "NAME OF TRANSLATORS"
-#~ msgstr "Martin Lee"
-
-#~ msgid "EMAIL OF TRANSLATORS"
-#~ msgstr "hellnest.fuah@gmail.com"
+msgstr "hellnest.fuah@gmail.com"

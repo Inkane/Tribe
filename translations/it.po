@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
 "POT-Creation-Date: 2010-12-18 23:05+0100\n"
-"PO-Revision-Date: 2010-12-17 20:22+0100\n"
+"PO-Revision-Date: 2010-12-19 12:33+0100\n"
 "Last-Translator: Giuseppe Calà <jiveaxe@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -194,7 +194,7 @@ msgstr "Jan Mette"
 
 #: src/main.cpp:48
 msgid "PostInstall Backend and Artwork"
-msgstr "Motore di PostInstall e grafica"
+msgstr "Motore di PostInstall e Grafica"
 
 #: src/main.cpp:49
 msgid "Phil Miller"
@@ -253,16 +253,14 @@ msgstr "Installa Software Pacchettizzato"
 #. i18n: file: ui/pages/config.ui:122
 #. i18n: ectx: property (text), widget (QPushButton, downloadBundlesButton)
 #: src/pages/configpage.cpp:369 rc.cpp:102
-#, fuzzy
 msgid "Download Popular Bundles"
-msgstr "Scarica Software in Bundle"
+msgstr "Scarica i Bundle più in voga"
 
 #. i18n: file: ui/pages/config.ui:202
 #. i18n: ectx: property (text), widget (QPushButton, bootloaderSettingsButton)
 #: src/pages/configpage.cpp:385 rc.cpp:111
-#, fuzzy
 msgid "Bootloader Settings"
-msgstr "Gestore di avvio"
+msgstr "Impostazioni Gestore di avvio"
 
 #. i18n: file: ui/pages/config.ui:163
 #. i18n: ectx: property (text), widget (QPushButton, initRamDiskButton)
@@ -283,7 +281,6 @@ msgid "Accept license for: "
 msgstr "Accetta licenza per: "
 
 #: src/pages/localepage.cpp:280
-#, fuzzy
 msgid "You need to select a timezone"
 msgstr "Devi selezionare un fuso orario."
 
@@ -307,7 +304,7 @@ msgstr "Nuovo"
 
 #: src/pages/partitionpage.cpp:195
 msgid "Unsupported"
-msgstr ""
+msgstr "Non supportato"
 
 #: src/pages/partitionpage.cpp:415
 msgid "Loading partitions..."
@@ -380,7 +377,6 @@ msgid "Continue"
 msgstr "Continuare"
 
 #: src/pages/readyinstallpage.cpp:104
-#, fuzzy
 msgid ""
 "The following partitions appear to be mounted: %1. To let the installation "
 "happen correctly, Tribe will now unmount them."
@@ -402,7 +398,6 @@ msgid "Passwords cannot be empty."
 msgstr "La password è vuota"
 
 #: src/pages/usercreationpage.cpp:143
-#, fuzzy
 msgid "Passwords do not match..."
 msgstr "Le password non corrispondono"
 
@@ -781,9 +776,8 @@ msgstr "PCMCIA"
 #. i18n: file: ui/pages/config.ui:756
 #. i18n: ectx: property (text), widget (QPushButton, pkgInstallButton)
 #: rc.cpp:147
-#, fuzzy
 msgid "Install"
-msgstr "Installa in:"
+msgstr "Installa"
 
 #. i18n: file: ui/pages/config.ui:773
 #. i18n: ectx: property (text), widget (QPushButton, bundlesDownloadButton)
@@ -795,33 +789,31 @@ msgstr "Scarica"
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: rc.cpp:153
 msgid "Chakra"
-msgstr ""
+msgstr "Chakra"
 
 #. i18n: file: ui/pages/config.ui:893
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: rc.cpp:156
 msgid "Mac"
-msgstr ""
+msgstr "Mac"
 
 #. i18n: file: ui/pages/config.ui:922
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #: rc.cpp:159
-#, fuzzy
 msgid "Windows"
-msgstr "Windows / %1"
+msgstr "Windows"
 
 #. i18n: file: ui/pages/config.ui:1001
 #. i18n: ectx: property (text), widget (QPushButton, colorizeButton)
 #: rc.cpp:162
 msgid "Colorize"
-msgstr ""
+msgstr "Colora"
 
 #. i18n: file: ui/pages/config.ui:1161
 #. i18n: ectx: property (text), widget (QCheckBox, bootloaderCheckBox)
 #: rc.cpp:165
-#, fuzzy
 msgid "Install GRUB"
-msgstr "Installa in:"
+msgstr "Installa GRUB"
 
 #. i18n: file: ui/pages/config.ui:1251
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -863,7 +855,6 @@ msgstr ""
 #. i18n: file: ui/pages/finish.ui:68
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:178
-#, fuzzy
 msgid ""
 "Congratulations, the installation has been completed!\n"
 "\n"
@@ -882,17 +873,20 @@ msgid ""
 "\n"
 "The Chakra Team"
 msgstr ""
-"Congratulazioni, l'installazione è stata completata! Speriamo che ciò che "
-"hai visto sia stato piacevole tanto quanto lo è stato per noi crearlo.\n"
+"Congratulazioni, l'installazione è stata completata!\n"
 "\n"
+"Speriamo che ciò che hai visto sia stato piacevole tanto quanto lo è stato "
+"per noi crearlo.\n"
 "Puoi riavviare per accedere al sistema installato o continuare a utilizzare "
 "il LiveCD.\n"
 "\n"
-"Se vuoi controllare i registri di installazione, dai un'occhiata nella "
-"cartella /tmp del sistema live o in /var/log del sistema installato.\n"
+"Se vuoi controllare i registri di installazione,\n"
+"dai un'occhiata nella cartella /tmp del sistema live o in /var/log del "
+"sistema installato.\n"
 "\n"
 "Grazie per l'utilizzo di Chakra, e contattaci sul forum, condividi le tue "
 "opinioni o consigli;\n"
+"Per farla breve: Collabora! (http://chakra-project.org)\n"
 "\n"
 "Divertiti!\n"
 "\n"
@@ -1050,7 +1044,6 @@ msgstr "Introduzione a Tribe"
 #. i18n: file: ui/pages/intro.ui:105
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:255
-#, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1114,51 +1107,60 @@ msgstr ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:12pt; font-"
+"weight:400; font-style:normal;\">\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-size:14pt; color:#eeeeee;\">Benvenuti nell'installazione di "
+"style=\" font-family:'Bitstream Vera Sans'; color:#eeeeee;\">Benvenuti "
+"nell'installazione di "
 "Chakra!</span></p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
 "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:"
-"#eeeeee;\"><span style=\" font-weight:600;\">Tribe, l'installatore, ti "
-"guiderà attraverso il processo di installazione del sistema live Chakra</"
-"span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\">sul tuo  computer. Dopo l'installazione avrai "
-"un sistema desktop Arch Linux</p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\"> pronta all'uso con i nostri pacchetti modulari "
-"per KDE.</p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-weight:600; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\"> Leggi attentamente il testo e le spiegazioni.</"
-"p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; color:#eeeeee;\"></p>\n"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;"
+"\"></p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-weight:600; color:#eeeeee;\"> Ricorda:</span><span style=\" "
-"font-weight:600;\"> </span><span style=\" font-weight:600; color:#ff0000;"
-"\">QUESTO PROGRAMMA È IN FASE ALFA, POTREBBE MANGIARE IL TUO CRICETO</span></"
-"p>\n"
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">Tribe, l'installatore, ti guiderà attraverso il processo di "
+"installazione</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">del sistema live di Chakra sul tuo computer. Alla fine "
+"dell'installazione</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">avrai un sistema Chakra Linux pronto all'uso.</span></p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
 "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-weight:600; color:#ff0000;\"></p>\n"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
+"weight:536; color:#eeeeee;\"></p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#ff0000;\"><span style=\" color:#eeeeee;\">Divertiti! - "
-"Gli sviluppatori di Chakra</span></p></body></html>"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\"> Leggi attentamente il testo e le spiegazioni.</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;"
+"\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\"> Ricorda:</span><span style=\" font-family:'Bitstream Vera "
+"Sans'; font-size:8pt; font-weight:536;\"> </span><span style=\" font-"
+"family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#ff0000;"
+"\">QUESTO PROGRAMMA È IN FASE ALFA, POTREBBE MANGIARE IL TUO CRICETO</span><"
+"/p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
+"weight:536; color:#ff0000;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">Divertiti! - Gli sviluppatori di Chakra</span></p></body><"
+"/html>"
 
 #. i18n: file: ui/pages/license.ui:49
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1310,9 +1312,8 @@ msgstr "Regione: "
 #. i18n: file: ui/pages/partition.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Partition)
 #: rc.cpp:325
-#, fuzzy
 msgid "Partition"
-msgstr "Partizione:"
+msgstr "Partizione"
 
 #. i18n: file: ui/pages/partition.ui:43
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1364,7 +1365,6 @@ msgstr "Tipo"
 #. i18n: file: ui/pages/partition.ui:127
 #. i18n: ectx: property (text), widget (QLabel, filesystemLabel)
 #: rc.cpp:348
-#, fuzzy
 msgid "Filesystem: "
 msgstr "Filesystem"
 
@@ -1562,7 +1562,6 @@ msgstr ""
 #. i18n: file: ui/pages/usercreation.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:425
-#, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1581,12 +1580,13 @@ msgstr ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:14pt; font-"
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Configurazione root</span></p></"
-"body></html>"
+"size:22pt; font-weight:600; color:#ffffff;\">Creazione Utenti</span></p><"
+"/body></"
+"html>"
 
 #. i18n: file: ui/pages/usercreation.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -1695,12 +1695,16 @@ msgstr "Conferma password di Root:"
 #: rc.cpp:482
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Vincenzo RealeGiuseppe Calà"
+msgstr ""
+"Vincenzo Reale "
+"Giuseppe Calà"
 
 #: rc.cpp:483
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "smart2128@baslug.org jiveaxe@gmail.com"
+msgstr ""
+"smart2128@baslug.org "
+"jiveaxe@gmail.com"
 
 #~ msgid ""
 #~ "It looks like your power adaptor is unplugged. Installation is a delicate "

@@ -148,6 +148,9 @@ void ConfigPage::populatePkgzList()
 
 void ConfigPage::incomingData(KIO::Job* job, QByteArray data)
 {
+    if (ui.progressBar->maximum() != job->totalAmount(KJob::Bytes))
+        ui.progressBar->setMaximum(job->totalAmount(KJob::Bytes));
+    
     if (data.isNull()) {
         if (job->processedAmount(KJob::Bytes) == job->totalAmount(KJob::Bytes))
             downloadComplete();
@@ -161,12 +164,16 @@ void ConfigPage::incomingData(KIO::Job* job, QByteArray data)
             x.write(data);
             x.flush();
         }
+        x.close();
     } else {
-        QFile x("/home/" + m_install->userLoginList().first() + "/Desktop/" + m_incomingList.at(m_incomingIncr));
+        ui.progressBar->setValue(job->processedAmount(KJob::Bytes));
+        ui.progressLabel->setText(i18n("Downloading") + " " + m_incomingList.at(m_incomingIncr));
+        QFile x(QString(INSTALLATION_TARGET) + "/home/" + m_install->userLoginList().first() + "/Desktop/" + m_incomingList.at(m_incomingIncr));
         if (x.open(QIODevice::Append)) {
             x.write(data);
             x.flush();
         }
+        x.close();
     }
 }
 
@@ -177,14 +184,24 @@ void ConfigPage::downloadComplete()
     if (m_incomingIncr == m_incomingList.count()) {
         m_incomingIncr = 0;
         m_incomingList.clear();
+        if (m_incomingExtension != ".jpeg")
+            ui.stackedWidget->setCurrentIndex(3);
+            ui.bundlesDownloadButton->setEnabled(true);
         m_incomingExtension = "";
         return;
     }
 
-    KUrl r(QUrl("http://chakra-project.org/packages/screenshots/" + 
-                m_incomingList.at(m_incomingIncr) + m_incomingExtension));
-    m_job = KIO::get(r, KIO::Reload, KIO::Overwrite | KIO::HideProgressInfo);
-    connect(m_job, SIGNAL(data(KIO::Job*,QByteArray)), this, SLOT(incomingData(KIO::Job*, QByteArray)));
+    if (m_incomingExtension == ".jpeg") {
+        KUrl r(QUrl("http://chakra-project.org/packages/screenshots/" + 
+                    m_incomingList.at(m_incomingIncr) + m_incomingExtension));
+        m_job = KIO::get(r, KIO::Reload, KIO::Overwrite | KIO::HideProgressInfo);
+        connect(m_job, SIGNAL(data(KIO::Job*,QByteArray)), this, SLOT(incomingData(KIO::Job*, QByteArray)));
+    } else {
+        KUrl r(QUrl("http://chakra-project.org/repo/bundles" + m_currentBranch + "/" +
+                    m_currentArch + "/" + m_incomingList.at(m_incomingIncr)));
+        m_job = KIO::get(r, KIO::Reload, KIO::Overwrite | KIO::HideProgressInfo);
+        connect(m_job, SIGNAL(data(KIO::Job*,QByteArray)), this, SLOT(incomingData(KIO::Job*, QByteArray)));
+    }
 }
 
 void ConfigPage::populateBundlesList()
@@ -221,6 +238,10 @@ void ConfigPage::bundlesDownloadButtonClicked()
     m_incomingExtension = "";
     m_incomingIncr = 0;
 
+    ui.bundlesDownloadButton->setEnabled(false);
+    ui.stackedWidget->setCurrentIndex(7);
+    ui.progressLabel->setText("Waiting for server...");
+    
     QStringList checkedList;
     
     for ( int i = 0; i < ui.bundlesList->count(); i++ ) {

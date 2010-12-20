@@ -351,7 +351,7 @@ void MainWindow::goToNextStep()
         break;
         
     case MainWindow::CreateUser:
-        m_currentAction = MainWindow::Configuration;
+        m_currentAction = MainWindow::Partition;
         setInstallationStep(MainWindow::CreateUser, MainWindow::Done);
         break;
 

@@ -494,8 +494,6 @@ void ConfigPage::setDownloadBundlesPage()
         ui.stackedWidget->setCurrentIndex(3);
         m_currentPage = 3;
         ui.currentPageLabel->setText(i18n("Download Popular Bundles"));
-        ui.bundlesDownloadButton->setEnabled(true);
-        enableNextButton(true);
     } else {
         ui.stackedWidget->setCurrentIndex(0);
         m_currentPage = 0;
@@ -514,7 +512,6 @@ void ConfigPage::setBootloaderPage()
         ui.stackedWidget->setCurrentIndex(6);
         m_currentPage = 6;
         ui.currentPageLabel->setText(i18n("Bootloader Settings"));
-        enableNextButton(true);
     } else {
         ui.stackedWidget->setCurrentIndex(0);
         m_currentPage = 0;
@@ -528,7 +525,6 @@ void ConfigPage::setInitRamdiskPage()
         ui.stackedWidget->setCurrentIndex(1);
         m_currentPage = 1;
         ui.currentPageLabel->setText(i18n("Customize Initial Ramdisk"));
-        enableNextButton(true);
     } else {
         ui.stackedWidget->setCurrentIndex(0);
         m_currentPage = 0;

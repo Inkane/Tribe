@@ -271,6 +271,9 @@ void ConfigPage::cancelButtonClicked()
     m_process->setProcessChannelMode(QProcess::MergedChannels);
     connect(m_process, SIGNAL(finished(int)), this, SLOT(processComplete()));
     
+    ui.bundlesDownloadButton->setEnabled(true);
+    ui.installPkgzButton->setEnabled(true);
+    enableNextButton(true);
     ui.stackedWidget->setCurrentIndex(m_currentPage);
 }
 

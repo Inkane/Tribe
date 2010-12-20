@@ -144,6 +144,7 @@ void ConfigPage::populatePkgzList()
                 m_incomingList.at(m_incomingIncr) + m_incomingExtension));
     m_job = KIO::get(r, KIO::Reload, KIO::Overwrite | KIO::HideProgressInfo);
     connect(m_job, SIGNAL(data(KIO::Job*,QByteArray)), this, SLOT(incomingData(KIO::Job*, QByteArray)));
+    connect(m_job, SIGNAL(result(KJob*)), this, SLOT(result(KJob*)));
 }
 
 void ConfigPage::incomingData(KIO::Job* job, QByteArray data)
@@ -153,9 +154,7 @@ void ConfigPage::incomingData(KIO::Job* job, QByteArray data)
     
     if (data.isNull()) {
         if (job->processedAmount(KJob::Bytes) == job->totalAmount(KJob::Bytes))
-            downloadComplete();
-
-        return;
+            return;
     }
 
     if (m_incomingExtension == ".jpeg") {
@@ -179,6 +178,10 @@ void ConfigPage::incomingData(KIO::Job* job, QByteArray data)
 
 void ConfigPage::downloadComplete()
 {
+}
+
+void ConfigPage::result(KJob* job)
+{
     m_incomingIncr++;
 
     if (m_incomingIncr == m_incomingList.count()) {
@@ -192,16 +195,23 @@ void ConfigPage::downloadComplete()
         return;
     }
 
+    if (job->error()) {
+        qDebug() << job->errorString();
+        return;
+    }
+
     if (m_incomingExtension == ".jpeg") {
         KUrl r(QUrl("http://chakra-project.org/packages/screenshots/" + 
                     m_incomingList.at(m_incomingIncr) + m_incomingExtension));
         m_job = KIO::get(r, KIO::Reload, KIO::Overwrite | KIO::HideProgressInfo);
         connect(m_job, SIGNAL(data(KIO::Job*,QByteArray)), this, SLOT(incomingData(KIO::Job*, QByteArray)));
+        connect(m_job, SIGNAL(result(KJob*)), this, SLOT(result(KJob*)));
     } else {
         KUrl r(QUrl("http://mirror.rit.edu/kdemod/bundles" + m_currentBranch + "/" +
                     m_currentArch + "/" + m_incomingList.at(m_incomingIncr)));
         m_job = KIO::get(r, KIO::Reload, KIO::Overwrite | KIO::HideProgressInfo);
         connect(m_job, SIGNAL(data(KIO::Job*,QByteArray)), this, SLOT(incomingData(KIO::Job*, QByteArray)));
+        connect(m_job, SIGNAL(result(KJob*)), this, SLOT(result(KJob*)));
     }
 }
 

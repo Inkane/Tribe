@@ -47,6 +47,7 @@ private slots:
     void setBootloaderPage();
 
     void incomingData(KIO::Job*, QByteArray);
+    void result(KJob*);
     void downloadComplete();
     void processComplete();
 

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>822</width>
-    <height>670</height>
+    <width>857</width>
+    <height>747</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -49,7 +49,17 @@ p, li { white-space: pre-wrap; }
      </item>
     </layout>
    </item>
-   <item row="2" column="0" colspan="2">
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Now that you have a Chakra install, you can now configure it to your liking.</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
     <spacer name="verticalSpacer_3">
      <property name="orientation">
       <enum>Qt::Vertical</enum>
@@ -65,19 +75,7 @@ p, li { white-space: pre-wrap; }
      </property>
     </spacer>
    </item>
-   <item row="9" column="0">
-    <widget class="QLabel" name="currentPageLabel">
-     <property name="font">
-      <font>
-       <pointsize>14</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-   </item>
-   <item row="5" column="0">
+   <item row="3" column="0">
     <layout class="QGridLayout" name="gridLayout_6">
      <item row="0" column="0">
       <widget class="QPushButton" name="installPkgzButton">
@@ -233,7 +231,14 @@ p, li { white-space: pre-wrap; }
      </item>
     </layout>
    </item>
-   <item row="7" column="0">
+   <item row="4" column="0">
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
     <spacer name="verticalSpacer_4">
      <property name="orientation">
       <enum>Qt::Vertical</enum>
@@ -249,7 +254,19 @@ p, li { white-space: pre-wrap; }
      </property>
     </spacer>
    </item>
-   <item row="10" column="0">
+   <item row="6" column="0">
+    <widget class="QLabel" name="currentPageLabel">
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
     <widget class="QStackedWidget" name="stackedWidget">
      <property name="currentIndex">
       <number>0</number>
@@ -460,8 +477,14 @@ p, li { white-space: pre-wrap; }
        <property name="margin">
         <number>0</number>
        </property>
-       <item row="1" column="1" rowspan="2" colspan="5">
+       <item row="1" column="1" rowspan="6" colspan="2">
         <widget class="QGroupBox" name="groupBox">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="minimumSize">
           <size>
            <width>400</width>
@@ -587,19 +610,6 @@ p, li { white-space: pre-wrap; }
             </property>
            </spacer>
           </item>
-          <item row="7" column="1" colspan="2">
-           <spacer name="verticalSpacer_10">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>40</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
           <item row="4" column="0">
            <spacer name="horizontalSpacer_21">
             <property name="orientation">
@@ -648,10 +658,82 @@ p, li { white-space: pre-wrap; }
             </property>
            </spacer>
           </item>
+          <item row="7" column="0" colspan="7">
+           <spacer name="verticalSpacer_10">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="8" column="0" colspan="7">
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <spacer name="horizontalSpacer_7">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pkgInstallButton">
+              <property name="minimumSize">
+               <size>
+                <width>125</width>
+                <height>45</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Install</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_8">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item row="9" column="0" colspan="7">
+           <spacer name="verticalSpacer_13">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>30</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
          </layout>
         </widget>
        </item>
-       <item row="0" column="0" rowspan="6">
+       <item row="1" column="0" rowspan="6">
         <widget class="KListWidget" name="pkgList">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
@@ -689,84 +771,16 @@ p, li { white-space: pre-wrap; }
          </property>
         </spacer>
        </item>
-       <item row="3" column="2">
-        <spacer name="verticalSpacer_13">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeType">
-          <enum>QSizePolicy::Fixed</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>30</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="5" column="2">
-        <spacer name="verticalSpacer_12">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="4" column="1">
-        <spacer name="horizontalSpacer_7">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="4" column="5">
-        <spacer name="horizontalSpacer_8">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="4" column="2" colspan="3">
-        <widget class="QPushButton" name="pkgInstallButton">
-         <property name="minimumSize">
-          <size>
-           <width>125</width>
-           <height>45</height>
-          </size>
-         </property>
-         <property name="text">
-          <string>Install</string>
-         </property>
-        </widget>
-       </item>
       </layout>
      </widget>
      <widget class="QWidget" name="installBundlesPage">
       <layout class="QGridLayout" name="gridLayout_7">
-       <item row="1" column="2">
+       <item row="1" column="1">
         <widget class="QPushButton" name="bundlesDownloadButton">
          <property name="minimumSize">
           <size>
            <width>0</width>
-           <height>35</height>
+           <height>45</height>
           </size>
          </property>
          <property name="text">
@@ -774,21 +788,11 @@ p, li { white-space: pre-wrap; }
          </property>
         </widget>
        </item>
-       <item row="1" column="0" colspan="2">
-        <spacer name="horizontalSpacer_4">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
        <item row="0" column="0" colspan="3">
         <widget class="KListWidget" name="bundlesList">
+         <property name="autoScroll">
+          <bool>false</bool>
+         </property>
          <property name="selectionMode">
           <enum>QAbstractItemView::NoSelection</enum>
          </property>
@@ -804,6 +808,9 @@ p, li { white-space: pre-wrap; }
          <property name="flow">
           <enum>QListView::TopToBottom</enum>
          </property>
+         <property name="isWrapping" stdset="0">
+          <bool>true</bool>
+         </property>
          <property name="spacing">
           <number>10</number>
          </property>
@@ -817,6 +824,32 @@ p, li { white-space: pre-wrap; }
           <bool>false</bool>
          </property>
         </widget>
+       </item>
+       <item row="1" column="2">
+        <spacer name="horizontalSpacer_25">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="0">
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
        </item>
       </layout>
      </widget>
@@ -1181,8 +1214,8 @@ p, li { white-space: pre-wrap; }
       </layout>
      </widget>
      <widget class="QWidget" name="progressPage">
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
+      <layout class="QGridLayout" name="gridLayout_12">
+       <item row="0" column="0" colspan="3">
         <spacer name="verticalSpacer">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
@@ -1195,7 +1228,7 @@ p, li { white-space: pre-wrap; }
          </property>
         </spacer>
        </item>
-       <item>
+       <item row="1" column="0" colspan="3">
         <widget class="QLabel" name="progressLabel">
          <property name="text">
           <string/>
@@ -1205,7 +1238,7 @@ p, li { white-space: pre-wrap; }
          </property>
         </widget>
        </item>
-       <item>
+       <item row="2" column="0" colspan="3">
         <spacer name="verticalSpacer_20">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
@@ -1221,14 +1254,33 @@ p, li { white-space: pre-wrap; }
          </property>
         </spacer>
        </item>
-       <item>
+       <item row="3" column="0" colspan="3">
         <widget class="QProgressBar" name="progressBar">
          <property name="value">
           <number>24</number>
          </property>
         </widget>
        </item>
-       <item>
+       <item row="4" column="1">
+        <widget class="QPushButton" name="cancelButton">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150200</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Cancel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0" colspan="3">
         <spacer name="verticalSpacer_2">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
@@ -1241,25 +1293,34 @@ p, li { white-space: pre-wrap; }
          </property>
         </spacer>
        </item>
+       <item row="4" column="0">
+        <spacer name="horizontalSpacer_23">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="4" column="2">
+        <spacer name="horizontalSpacer_24">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
       </layout>
      </widget>
-    </widget>
-   </item>
-   <item row="1" column="0">
-    <widget class="QLabel" name="label_2">
-     <property name="text">
-      <string>Now that you have a Chakra install, you can now configure it to your liking.</string>
-     </property>
-     <property name="wordWrap">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </item>
-   <item row="6" column="0">
-    <widget class="Line" name="line">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
     </widget>
    </item>
   </layout>

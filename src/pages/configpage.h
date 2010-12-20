@@ -21,6 +21,7 @@
 
 #include "../abstractpage.h"
 #include "ui_config.h"
+#include <QTimer>
 
 
 class InstallationHandler;
@@ -48,6 +49,7 @@ private slots:
 
     void incomingData(KIO::Job*, QByteArray);
     void result(KJob*);
+    void updatePacmanProgress();
     void processComplete();
 
     // install pkg page
@@ -67,6 +69,8 @@ private slots:
     // bootloader page
     void bootloaderInstalled(int, QProcess::ExitStatus);
     void menulstInstalled(int, QProcess::ExitStatus);
+    
+    void cancelButtonClicked();
 
 private:
     Ui::Config ui;
@@ -85,6 +89,15 @@ private:
 
     QString m_currentBranch;
     QString m_currentArch;
+    QString m_currentPkgName;
+    
+    int m_downloadSize;
+    int m_soFarDownloadSize;
+    int m_soFarPkgDownloadSize;
+
+    QTimer *m_timer;
+    
+    int m_currentPage;
 };
 
 #endif /* CONFIGPAGE_H */

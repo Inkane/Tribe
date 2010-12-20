@@ -37,6 +37,15 @@ ConfigPage::ConfigPage(QWidget *parent)
         m_install(InstallationHandler::instance())
 {
     m_process = new QProcess(this);
+    m_process->setProcessChannelMode(QProcess::MergedChannels);
+    connect(m_process, SIGNAL(finished(int)), this, SLOT(processComplete()));
+    
+    m_timer = new QTimer(this);
+    
+    m_soFarDownloadSize = 0;
+    m_soFarPkgDownloadSize = 0;
+    m_downloadSize = 0;
+    m_currentPage = 0;
 }
 
 ConfigPage::~ConfigPage()
@@ -55,6 +64,7 @@ void ConfigPage::createWidget()
     connect(ui.changeAppearanceButton, SIGNAL(clicked()), this, SLOT(setChangeAppearancePage()));
     connect(ui.initRamDiskButton, SIGNAL(clicked()), this, SLOT(setInitRamdiskPage()));
     connect(ui.bootloaderSettingsButton, SIGNAL(clicked()), this, SLOT(setBootloaderPage()));
+    connect(ui.cancelButton, SIGNAL(clicked()), this, SLOT(cancelButtonClicked()));
     // pkg installer
     connect(ui.pkgList, SIGNAL(currentRowChanged(int)), this, SLOT(currentPkgItemChanged(int)));
     connect(ui.pkgInstallButton, SIGNAL(clicked()), this, SLOT(pkgInstallButtonClicked()));
@@ -71,6 +81,7 @@ void ConfigPage::createWidget()
     ui.changeAppearanceButton->setIcon(KIcon("preferences-desktop-color"));
     ui.initRamDiskButton->setIcon(KIcon("cpu"));
     ui.bootloaderSettingsButton->setIcon(KIcon("go-first"));
+    ui.cancelButton->setIcon(KIcon("dialog-cancel"));
     // pkg installer
     ui.pkgInstallButton->setIcon(KIcon("run-build-install"));
     // bundle download
@@ -94,8 +105,10 @@ bool ConfigPage::eventFilter(QObject* obj, QEvent* event)
     if (event->type() == QEvent::MouseButtonRelease) {
         if (obj == ui.pkgScreenLabel) {
             ui.stackedWidget->setCurrentIndex(5);
+            m_currentPage = 5;
         } else if (obj == ui.screenshotLabel) {
             ui.stackedWidget->setCurrentIndex(2);
+            m_currentPage = 2;
         }
     }
     
@@ -104,10 +117,13 @@ bool ConfigPage::eventFilter(QObject* obj, QEvent* event)
 
 void ConfigPage::switchPkgScreenshot()
 {
-    if (ui.stackedWidget->currentIndex() == 5)
+    if (ui.stackedWidget->currentIndex() == 5) {
         ui.stackedWidget->setCurrentIndex(2);
-    else if (ui.stackedWidget->currentIndex() == 2)
+        m_currentPage = 2;
+    } else if (ui.stackedWidget->currentIndex() == 2) {
         ui.stackedWidget->setCurrentIndex(5);
+        m_currentPage = 5;
+    }
 }
 
 void ConfigPage::populatePkgzList()
@@ -132,6 +148,7 @@ void ConfigPage::populatePkgzList()
         item->setData(60, pkg.split("::").at(0));
         item->setData(61, pkg.split("::").at(2));
         item->setIcon(QIcon(QString(CONFIG_INSTALL_PATH) + "/" + item->data(60).toString() + ".png"));
+        item->setCheckState(Qt::Unchecked);
         ui.pkgList->addItem(item);
         m_incomingList.append(pkg.split("::").at(0) + "_thumb");
         m_incomingList.append(pkg.split("::").at(0));
@@ -188,6 +205,7 @@ void ConfigPage::result(KJob* job)
         m_incomingList.clear();
         if (m_incomingExtension != ".jpeg")
             ui.stackedWidget->setCurrentIndex(3);
+            m_currentPage = 3;
             ui.bundlesDownloadButton->setEnabled(true);
             enableNextButton(true);
         m_incomingExtension = "";
@@ -196,6 +214,10 @@ void ConfigPage::result(KJob* job)
 
     if (job->error()) {
         qDebug() << job->errorString();
+        ui.stackedWidget->setCurrentIndex(3);
+        m_currentPage = 3;
+        ui.bundlesDownloadButton->setEnabled(true);
+        enableNextButton(true);
         return;
     }
 
@@ -242,6 +264,16 @@ void ConfigPage::populateBundlesList()
     }
 }
 
+void ConfigPage::cancelButtonClicked()
+{
+    delete m_process;
+    m_process = new QProcess(this);
+    m_process->setProcessChannelMode(QProcess::MergedChannels);
+    connect(m_process, SIGNAL(finished(int)), this, SLOT(processComplete()));
+    
+    ui.stackedWidget->setCurrentIndex(m_currentPage);
+}
+
 void ConfigPage::bundlesDownloadButtonClicked()
 {
     m_incomingList.clear();
@@ -251,6 +283,7 @@ void ConfigPage::bundlesDownloadButtonClicked()
     ui.bundlesDownloadButton->setEnabled(false);
     enableNextButton(false);
     ui.stackedWidget->setCurrentIndex(7);
+    ui.progressBar->setValue(0);
     ui.progressLabel->setText("Waiting for server...");
     
     QStringList checkedList;
@@ -338,11 +371,11 @@ void ConfigPage::setInstallPkgzPage()
 {
     if (ui.stackedWidget->currentIndex() != 2) {
         ui.stackedWidget->setCurrentIndex(2);
+        m_currentPage = 2;
         ui.currentPageLabel->setText(i18n("Install Packaged Software"));
-        ui.pkgInstallButton->setEnabled(true);
-        enableNextButton(true);
     } else {
         ui.stackedWidget->setCurrentIndex(0);
+        m_currentPage = 0;
         ui.currentPageLabel->setText("");
     }
 }
@@ -358,9 +391,85 @@ void ConfigPage::pkgInstallButtonClicked()
     QProcess::execute("mount -v -o bind /dev " + QString(INSTALLATION_TARGET) + "/dev");
     QProcess::execute("mount -v -t devpts devpts " + QString(INSTALLATION_TARGET) + "/dev/pts");
     QProcess::execute("xhost +");
-    // cinstall pkg
-    connect(m_process, SIGNAL(finished(int)), this, SLOT(processComplete()));
-    m_process->start("chroot " + QString(INSTALLATION_TARGET) + " su " + m_install->userLoginList().first() + " -c \"cinstall -i " + ui.pkgList->currentItem()->data(60).toString() + "\"");
+    // install pkgz
+
+    QStringList pkgz;
+    for (int i = 0; i < ui.pkgList->count(); i++) {
+        if (ui.pkgList->item(i)->checkState() == Qt::Checked)
+            pkgz.append(ui.pkgList->item(i)->data(60).toString());
+    }
+    
+    if (pkgz.isEmpty())
+        return;
+
+    QProcess::execute("rm -f " + QString(INSTALLATION_TARGET) + "/var/lib/pacman/db.lck");
+    
+    connect(m_timer, SIGNAL(timeout()), this, SLOT(updatePacmanProgress()));
+    m_timer->start(500);
+
+    m_process->start("chroot " + QString(INSTALLATION_TARGET) + " su " + m_install->userLoginList().first() + 
+                     " -c \"kdesu -t -d --noignorebutton -- pacman --noconfirm -Sf " + pkgz.join(" ") + "\"");
+
+    ui.progressLabel->setText(i18n("Waiting for server..."));
+    ui.progressBar->setValue(0);
+    ui.stackedWidget->setCurrentIndex(7);
+}
+
+void ConfigPage::updatePacmanProgress()
+{
+    QString str = QString::fromUtf8(m_process->readAll());
+    QRegExp targetRegEx("(*/*)");
+    targetRegEx.setPatternSyntax(QRegExp::Wildcard);
+
+    foreach (QString line, str.split("\n")) {
+        if (line.contains(i18n("loading package data..."))) {
+            ui.progressLabel->setText(i18n("Loading package data..."));
+        } else if (line.contains(i18n("checking dependencies..."))) {
+            ui.progressLabel->setText(i18n("Checking dependencies..."));
+        } else if (line.contains(i18n("resolving dependencies..."))) {
+            ui.progressLabel->setText(i18n("Resolving dependencies..."));
+        } else if (line.contains(i18n("checking package integrity..."))) {
+            ui.progressLabel->setText(i18n("Checking package integrity..."));
+        } else if (line.contains(i18n("Total Download Size:"))) {
+            int mb = line.simplified().split(" ").at(3).split(".").at(0).toInt();
+            int kb = line.simplified().split(" ").at(3).split(".").at(1).toInt();
+            m_downloadSize = (mb * 1000) + (kb * 10);
+            ui.progressBar->setMaximum(m_downloadSize);
+        } else if (line.contains("/s 0")) {
+            ui.progressLabel->setText(i18n("Downloading") + " " + m_currentPkgName);
+
+            QString cDld = line.simplified().split(" ").at(1);
+            m_currentPkgName = line.simplified().split(" ").at(0);
+            cDld.append(" ");
+            if (cDld.contains("K ")) {
+                if (cDld.contains("0.0K")) {
+                    m_soFarDownloadSize += m_soFarPkgDownloadSize;
+                    if (m_soFarDownloadSize >= ui.progressBar->value())
+                        ui.progressBar->setValue(m_soFarDownloadSize);
+                    m_soFarPkgDownloadSize = 0;
+                } else {
+                    m_soFarPkgDownloadSize = cDld.split(".").at(0).toInt();
+                    if (m_soFarDownloadSize >= ui.progressBar->value())
+                        ui.progressBar->setValue(m_soFarDownloadSize);
+                }
+            } else if (cDld.contains("M ")) {
+                m_soFarPkgDownloadSize = cDld.split(".").at(0).toInt() * 1000;
+                if (m_soFarDownloadSize >= ui.progressBar->value())
+                    ui.progressBar->setValue(m_soFarDownloadSize);
+            }
+
+            int v = m_soFarDownloadSize + m_soFarPkgDownloadSize;
+            if (v >= ui.progressBar->value())
+                ui.progressBar->setValue(v);
+        } else if (line.left(6) == "kdesu(") {
+
+        } else if (line.contains(targetRegEx)) {
+            ui.progressLabel->setText(str.simplified().split(" (").at(0));
+            m_currentPkgName = str.simplified();
+            ui.progressBar->setMaximum(str.split("/").at(1).split(")").at(0).toInt());
+            ui.progressBar->setValue(str.split("/").at(0).split("(").at(1).toInt());
+        }
+    }
 }
 
 void ConfigPage::processComplete()
@@ -371,19 +480,25 @@ void ConfigPage::processComplete()
                                      QString(INSTALLATION_TARGET) + "/dev/pts " + 
                                      QString(INSTALLATION_TARGET) + "/dev");
     // re-enable buttons
+    ui.stackedWidget->setCurrentIndex(2);
+    m_currentPage = 2;
     ui.pkgInstallButton->setEnabled(true);
     enableNextButton(true);
+
+    m_timer->stop();
 }
 
 void ConfigPage::setDownloadBundlesPage()
 {
     if (ui.stackedWidget->currentIndex() != 3) {
         ui.stackedWidget->setCurrentIndex(3);
+        m_currentPage = 3;
         ui.currentPageLabel->setText(i18n("Download Popular Bundles"));
         ui.bundlesDownloadButton->setEnabled(true);
         enableNextButton(true);
     } else {
         ui.stackedWidget->setCurrentIndex(0);
+        m_currentPage = 0;
         ui.currentPageLabel->setText("");
     }
 }
@@ -397,10 +512,12 @@ void ConfigPage::setBootloaderPage()
 {
     if (ui.stackedWidget->currentIndex() != 6) {
         ui.stackedWidget->setCurrentIndex(6);
+        m_currentPage = 6;
         ui.currentPageLabel->setText(i18n("Bootloader Settings"));
         enableNextButton(true);
     } else {
         ui.stackedWidget->setCurrentIndex(0);
+        m_currentPage = 0;
         ui.currentPageLabel->setText("");
     }
 }
@@ -409,10 +526,12 @@ void ConfigPage::setInitRamdiskPage()
 {
     if (ui.stackedWidget->currentIndex() != 1) {
         ui.stackedWidget->setCurrentIndex(1);
+        m_currentPage = 1;
         ui.currentPageLabel->setText(i18n("Customize Initial Ramdisk"));
         enableNextButton(true);
     } else {
         ui.stackedWidget->setCurrentIndex(0);
+        m_currentPage = 0;
         ui.currentPageLabel->setText("");
     }
 }
@@ -493,6 +612,7 @@ void ConfigPage::menulstInstalled(int exitCode, QProcess::ExitStatus exitStatus)
 void ConfigPage::aboutToGoToNext()
 {
     ui.stackedWidget->setCurrentIndex(0);
+    m_currentPage = 0;
 
     if (!ui.bootloaderCheckBox->isChecked()) {
         emit goToNextStep();

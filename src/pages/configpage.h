@@ -48,7 +48,6 @@ private slots:
 
     void incomingData(KIO::Job*, QByteArray);
     void result(KJob*);
-    void downloadComplete();
     void processComplete();
 
     // install pkg page

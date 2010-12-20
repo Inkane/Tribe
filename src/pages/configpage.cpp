@@ -156,6 +156,9 @@ void ConfigPage::incomingData(KIO::Job* job, QByteArray data)
         if (job->processedAmount(KJob::Bytes) == job->totalAmount(KJob::Bytes))
             return;
     }
+    
+    if (m_incomingIncr == m_incomingList.count())
+        return;
 
     if (m_incomingExtension == ".jpeg") {
         QFile x("/tmp/" + m_incomingList.at(m_incomingIncr) + m_incomingExtension);
@@ -174,10 +177,6 @@ void ConfigPage::incomingData(KIO::Job* job, QByteArray data)
         }
         x.close();
     }
-}
-
-void ConfigPage::downloadComplete()
-{
 }
 
 void ConfigPage::result(KJob* job)
@@ -293,14 +292,13 @@ void ConfigPage::bundlesDownloadButtonClicked()
     foreach (QString bundle, checkedList) {
         m_process->start("bash -c \"echo $(rsync -avh --list-only cinstall@chakra-project.org::cinstall/bundles" +
                         m_currentBranch + "/" + m_currentArch +
-                        "/*  | cut -d \':\' -f 3 | cut -d \' \' -f 2 | grep " + 
-                        bundle + ")\"");
+                        "/" + bundle + "*  | cut -d\':\' -f3 | cut -d\' \' -f2)\"");
         m_process->waitForFinished();
-        QString result(m_process->readAll());	
-        if (result.simplified().trimmed().split(" ").count() > 1) {
-            m_incomingList.append(result.simplified().trimmed().split(" ").first().simplified().trimmed().replace("\n", ""));
+        QString result(m_process->readAll());
+        if (result.simplified().trimmed().split("\n").count() > 1) {
+            m_incomingList.append(result.simplified().trimmed().split("\n").first().simplified().trimmed().split(" ").at(1));
         } else {
-            m_incomingList.append(result.trimmed().replace("\n", ""));
+            m_incomingList.append(result.simplified().trimmed().split(" ").at(1));
         }
     }
 
@@ -308,6 +306,7 @@ void ConfigPage::bundlesDownloadButtonClicked()
                     m_currentArch + "/" + m_incomingList.at(m_incomingIncr)));
     m_job = KIO::get(r, KIO::Reload, KIO::Overwrite | KIO::HideProgressInfo);
     connect(m_job, SIGNAL(data(KIO::Job*,QByteArray)), this, SLOT(incomingData(KIO::Job*, QByteArray)));
+    connect(m_job, SIGNAL(result(KJob*)), this, SLOT(result(KJob*)));
 }
 
 void ConfigPage::currentPkgItemChanged(int i)

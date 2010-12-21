@@ -12,6 +12,7 @@
 #ifndef USERWIDGET_H
 #define USERWIDGET_H
 
+#include "avatardialog.h"
 #include "ui_userwidget.h"
 
 
@@ -25,28 +26,41 @@ public:
 
     QString login;
     QString password;
+    QString rootPassword;
     QString avatar;
     QString name;
     bool autoLogin;
-    bool admin;
+    bool useRootPw;
+    bool useUserPw;
+    bool passwordsMatch;
+    bool rootPasswordsMatch;
+
+    int number;
+    void setNumber(int i) { number = i; }
+    
+    void setAutoLogin(bool);
 
 signals:
     void addUserClicked();
     void removeUserClicked(int);
+    void autoLoginToggled(int);
 
 private slots:
     void showDetails();
+    void showRootPw();
+
     void emitRemove();
 
     void avatarClicked();
+    void setAvatar(QString);
     void autoLoginToggled();
-    void adminToggled();
+    void useUserPwToggled();
 
     void testFields();
 
 private:
     Ui::UserWidget ui;
-    int m_userNumber;
+    AvatarDialog *m_avatarDialog;
 };
 
 #endif /* USERWIDGET_H */

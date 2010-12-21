@@ -42,6 +42,7 @@ namespace Ui {
     class Partition;
 }
 
+
 class PartitionDelegate : public QStyledItemDelegate
 {
     Q_OBJECT
@@ -64,6 +65,7 @@ private slots:
 
 private:
     KIcon m_lockIcon;
+    KIcon m_partIcon;
 };
 
 class PartitionViewWidget : public QTreeWidget
@@ -87,7 +89,7 @@ private:
     QTimeLine *m_fadeTimeLine;
     QTimeLine *m_spinnerTimeLine;
     KPixmapSequence m_sequence;
-    QPixmap m_backgroundPixmap;
+    QPixmap m_loadingPixmap;
 };
 
 class PartitionPage : public AbstractPage
@@ -95,20 +97,6 @@ class PartitionPage : public AbstractPage
     Q_OBJECT
 
 public:
-    enum VisiblePart {
-        None = 0,
-        TypePart = 1,
-        FileSystemPart = 2,
-        ShrinkPart = 4
-    };
-
-    Q_DECLARE_FLAGS(VisibleParts, VisiblePart)
-
-    enum Mode {
-        EasyMode = 1,
-        AdvancedMode = 2
-    };
-
     PartitionPage(QWidget *parent = 0);
     virtual ~PartitionPage();
 
@@ -126,10 +114,10 @@ private slots:
     void advancedClicked();
 
     void populateTreeWidget();
-    void setVisibleParts(VisibleParts parts);
+    void setVisibleParts(bool);
     void currentItemChanged(QTreeWidgetItem*,QTreeWidgetItem*);
     void dataChanged(QModelIndex,QModelIndex);
-    void slotTypeChanged(const QString&);
+    void slotTypeChanged(QString);
 
     void cancelFormat();
     void applyFormat();
@@ -138,17 +126,18 @@ private slots:
 
 private:
     Ui::Partition *m_ui;
+    QWidget *m_pmWidget;
+    InstallationHandler *m_install;
+
     PartitionManagerInterface *m_iface;
     Partition *m_newPartition;
+
     QTreeWidgetItem *createItem(const Partition *p, Device *dev);
-    QWidget* m_pmWidget;
 
     QHash<const Partition*, QString> m_toFormat;
-    VisibleParts m_parts;
 
-    InstallationHandler *m_install;
+    QList<QColor> m_colorList;
+    int m_currentPart;
 };
-
-Q_DECLARE_OPERATORS_FOR_FLAGS(PartitionPage::VisibleParts)
 
 #endif /*PARTITIONPAGE_H*/

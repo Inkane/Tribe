@@ -61,7 +61,7 @@ job_configure_pacman()
 			cp -fv ${mountpoint}/etc/pacman.d/mirrorlist ${mountpoint}/etc/pacman.d/mirrorlist.pacsave
 			
 			# enable default server
-			sed -i 's~#Server = http://mirror.selfnet.de/~Server = http://mirror.selfnet.de/~g' ${mountpoint}/etc/pacman.d/mirrorlist
+			sed -i 's~#Server = http://mirror.rit.edu/~Server = http://mirror.rit.edu/~g' ${mountpoint}/etc/pacman.d/mirrorlist
 
 		fi
 
@@ -74,7 +74,7 @@ job_configure_pacman()
 			cp -v ${mountpoint}/etc/pacman.d/mirrorlist ${mountpoint}/etc/pacman.d/mirrorlist.pacsave
 
 			# enable default server
-			sed -i 's~#Server = http://mirror.selfnet.de/~Server = http://mirror.selfnet.de/~g' ${mountpoint}/etc/pacman.d/mirrorlist
+			sed -i 's~#Server = http://mirror.rit.edu/~Server = http://mirror.rit.edu/~g' ${mountpoint}/etc/pacman.d/mirrorlist
 
 			# apply mirrorlist also for the installation
 			cp -fv ${mountpoint}/etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist
@@ -89,7 +89,7 @@ job_configure_pacman()
 			cp -fv ${mountpoint}/etc/pacman.d/mirrorlist ${mountpoint}/etc/pacman.d/mirrorlist.pacsave
 			
 			# enable default server
-			sed -i 's~#Server = http://mirror.selfnet.de/~Server = http://mirror.selfnet.de/~g' ${mountpoint}/etc/pacman.d/mirrorlist
+			sed -i 's~#Server = http://mirror.rit.edu/~Server = http://mirror.rit.edu/~g' ${mountpoint}/etc/pacman.d/mirrorlist
 
 		fi
 

@@ -43,6 +43,8 @@ SET(tribe_SRCS
 
 SET(tribe_WIDGETS
     src/widgets/progresswidget.cpp
+    src/widgets/userwidget.cpp
+    src/widgets/avatardialog.cpp
 )
 
 SET(tribe_PAGES
@@ -55,7 +57,7 @@ SET(tribe_PAGES
     src/pages/bootloaderpage.cpp
     src/pages/finishpage.cpp
     src/pages/licensepage.cpp
-    src/pages/settingspage.cpp
+    src/pages/configpage.cpp
     src/pages/localepage.cpp
 )
 
@@ -65,7 +67,7 @@ SET(tribe_PAGE_UIS
     ui/pages/releasenotes.ui
     ui/pages/license.ui
     ui/pages/locale.ui
-    ui/pages/settings.ui
+    ui/pages/config.ui
     ui/pages/partition.ui
     ui/pages/usercreation.ui
     ui/pages/installation.ui
@@ -76,6 +78,8 @@ SET(tribe_PAGE_UIS
 
 set(tribe_WIDGET_UIS
     ui/widgets/progresswidget.ui
+    ui/widgets/userwidget.ui
+    ui/widgets/avatardialog.ui
 )
 
 SET(tribe_IMAGES
@@ -105,16 +109,19 @@ target_link_libraries(tribe
                       ${KDE4_KIO_LIBRARY}
                       ${LIBMARBLEWIDGET_LIBRARY}
                       ${TRIBEPARTITIONMANAGER_LIBRARY}
-                      -lsolidcontrol # is that right?
 )
 
 file(GLOB POSTINSTALL_FUNCTIONS
-    scripts/postinstall-functions/*
-)
+    scripts/postinstall-functions/* )
 
 file(GLOB tribe_SCRIPTS
-    scripts/*.sh
-)
+    scripts/*.sh )
+
+file(GLOB tribe_AVATARS
+    ui/images/avatars/*.png )
+
+file(GLOB appIcons
+    data/appIcons/*.png )
 
 install(TARGETS tribe DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
 
@@ -126,6 +133,9 @@ install(FILES ${tribe_SCRIPTS}
                     GROUP_EXECUTE
                     OWNER_EXECUTE
                     WORLD_EXECUTE)
+
+install(FILES ${tribe_AVATARS} 
+        DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/avatars)
 
 install(FILES ${POSTINSTALL_FUNCTIONS} DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/scripts)
 install(FILES data/postinstall.conf DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/config)
@@ -139,3 +149,6 @@ install(FILES data/timezones DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/con
 
 install(FILES data/all_locales DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/config)
 install(FILES data/all_kde_langpacks DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/config)
+install(FILES ${appIcons} DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/config)
+install(FILES data/configPagePkgData DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/config)
+install(FILES data/configPageBundleData DESTINATION ${CMAKE_INSTALL_PREFIX}/share/tribe/config)

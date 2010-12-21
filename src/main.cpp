@@ -31,8 +31,6 @@
 
 #include <KMessageBox>
 
-#include <solid/control/powermanager.h>
-
 #include <config-tribe.h>
 
 #include "mainwindow.h"
@@ -63,16 +61,16 @@ int main(int argc, char *argv[])
 
     app.setWindowIcon(KIcon("tribe"));
 
-    if (Solid::Control::PowerManager::acAdapterState() == Solid::Control::PowerManager::Unplugged) {
-        int r = KMessageBox::warningContinueCancel(0, i18n("It looks like your power adaptor is unplugged. "
-                "Installation is a delicate and lenghty process, "
-                "hence it is strongly advised to have your "
-                "PC connected to AC to minimize possible risks."));
-
-        if (r == KMessageBox::Cancel) {
-            return 0;
-        }
-    }
+//     if (Solid::Control::PowerManager::acAdapterState() == Solid::Control::PowerManager::Unplugged) {
+//         int r = KMessageBox::warningContinueCancel(0, i18n("It looks like your power adaptor is unplugged. "
+//                 "Installation is a delicate and lenghty process, "
+//                 "hence it is strongly advised to have your "
+//                 "PC connected to AC to minimize possible risks."));
+// 
+//         if (r == KMessageBox::Cancel) {
+//             return 0;
+//         }
+//     }
 
     /* Load the stylesheet */
     QFile file(STYLESHEET_INSTALL_PATH);

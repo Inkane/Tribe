@@ -98,6 +98,7 @@ void ConfigPage::createWidget()
 
     populatePkgzList();
     populateBundlesList();
+    ui.stackedWidget->setCurrentIndex(0);
 }
 
 bool ConfigPage::eventFilter(QObject* obj, QEvent* event)

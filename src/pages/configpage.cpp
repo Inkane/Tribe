@@ -98,7 +98,6 @@ void ConfigPage::createWidget()
 
     populatePkgzList();
     populateBundlesList();
-    ui.stackedWidget->setCurrentIndex(0);
 }
 
 bool ConfigPage::eventFilter(QObject* obj, QEvent* event)
@@ -214,10 +213,10 @@ void ConfigPage::result(KJob* job)
     }
 
     if (job->error()) {
-        qDebug() << job->errorString();
-        ui.stackedWidget->setCurrentIndex(3);
-        m_currentPage = 3;
+        qDebug() << ">> m_job error " + job->errorString();
+        ui.stackedWidget->setCurrentIndex(m_currentPage);
         ui.bundlesDownloadButton->setEnabled(true);
+        ui.installPkgzButton->setEnabled(true);
         enableNextButton(true);
         return;
     }
@@ -247,7 +246,7 @@ void ConfigPage::populateBundlesList()
     if (bundlelistFile.open(QIODevice::ReadOnly)) {
         bundleDataList = QString(bundlelistFile.readAll()).trimmed().split("\n");
     } else {
-        qDebug() << bundlelistFile.errorString();
+        qDebug() << ">> bundlelistFile error: " + bundlelistFile.errorString();
     }
     
     if (bundleDataList.isEmpty())

@@ -19,6 +19,8 @@
 #include <KIcon>
 #include <KIO/Job>
 
+#include <Solid/Networking>
+
 #include <config-tribe.h>
 
 #include "../installationhandler.h"
@@ -279,6 +281,11 @@ void ConfigPage::cancelButtonClicked()
 
 void ConfigPage::bundlesDownloadButtonClicked()
 {
+    if (Solid::Networking::status() != Solid::Networking::Connected ||
+        Solid::Networking::status() != Solid::Networking::Unknown) {
+        return;
+    }
+
     m_incomingList.clear();
     m_incomingExtension = "";
     m_incomingIncr = 0;
@@ -385,6 +392,11 @@ void ConfigPage::setInstallPkgzPage()
 
 void ConfigPage::pkgInstallButtonClicked()
 {
+    if (Solid::Networking::status() != Solid::Networking::Connected ||
+        Solid::Networking::status() != Solid::Networking::Unknown) {
+        return;
+    }
+
     // disable buttons
     ui.pkgInstallButton->setEnabled(false);
     enableNextButton(false);

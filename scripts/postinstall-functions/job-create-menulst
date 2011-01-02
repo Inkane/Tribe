@@ -122,11 +122,11 @@ job_create_menulst()
 
 	echo "root (hd${grub_device},${grub_partition})" >>${mountpoint}/boot/grub/menu.lst.new
 	if [ "${use_swap}" = "yes" ] ; then
-		echo "kernel /boot/vmlinuz26 resume=/dev/disk/by-uuid/${_suuid} root=/dev/disk/by-uuid/${_uuid} ro" >>${mountpoint}/boot/grub/menu.lst.new
+		echo "kernel ${_boot}/vmlinuz26 resume=/dev/disk/by-uuid/${_suuid} root=/dev/disk/by-uuid/${_uuid} ro" >>${mountpoint}/boot/grub/menu.lst.new
 	else
-		echo "kernel /boot/vmlinuz26 root=/dev/disk/by-uuid/${_uuid} ro" >>${mountpoint}/boot/grub/menu.lst.new
+		echo "kernel ${_boot}/vmlinuz26 root=/dev/disk/by-uuid/${_uuid} ro" >>${mountpoint}/boot/grub/menu.lst.new
 	fi
-	echo "initrd /boot/kernel26-fallback.img" >>${mountpoint}/boot/grub/menu.lst.new
+	echo "initrd ${_boot}/kernel26-fallback.img" >>${mountpoint}/boot/grub/menu.lst.new
 
 	# install new menu.lst
 	msg "installing menu.lst to target"

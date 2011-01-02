@@ -7,37 +7,77 @@ job_install_grub()
 
 	msg_job_start "job_install_grub"
 
+	# cut ${grub_device}
+	grub_device=`echo ${grub_device} | cut -c3`
+	msg "converting ${grub_device} to valid device"
+
+	if [ ${grub_device} == "a" ] ; then
+	    grub_device=0
+	elif [ ${grub_device} == "b" ] ; then
+	    grub_device=1
+	elif [ ${grub_device} == "c" ] ; then
+	    grub_device=2
+	elif [ ${grub_device} == "d" ] ; then
+	    grub_device=3
+	elif [ ${grub_device} == "e" ] ; then
+	    grub_device=4
+	elif [ ${grub_device} == "f" ] ; then
+	    grub_device=5
+	elif [ ${grub_device} == "g" ] ; then
+	    grub_device=6
+	elif [ ${grub_device} == "h" ] ; then
+	    grub_device=7
+	elif [ ${grub_device} == "i" ] ; then
+	    grub_device=8
+	elif [ ${grub_device} == "j" ] ; then
+	    grub_device=9
+	elif [ ${grub_device} == "k" ] ; then
+	    grub_device=10
+	elif [ ${grub_device} == "l" ] ; then
+	    grub_device=11
+	elif [ ${grub_device} == "m" ] ; then
+	    grub_device=12
+	elif [ ${grub_device} == "n" ] ; then
+	    grub_device=13
+	elif [ ${grub_device} == "o" ] ; then
+	    grub_device=14
+	elif [ ${grub_device} == "p" ] ; then
+	    grub_device=15
+	elif [ ${grub_device} == "q" ] ; then
+	    grub_device=16
+	elif [ ${grub_device} == "r" ] ; then
+	    grub_device=17
+	elif [ ${grub_device} == "s" ] ; then
+	    grub_device=18
+	elif [ ${grub_device} == "t" ] ; then
+	    grub_device=19
+	elif [ ${grub_device} == "u" ] ; then
+	    grub_device=20
+	elif [ ${grub_device} == "v" ] ; then
+	    grub_device=21
+	elif [ ${grub_device} == "w" ] ; then
+	    grub_device=22
+	elif [ ${grub_device} == "x" ] ; then
+	    grub_device=23
+	elif [ ${grub_device} == "y" ] ; then
+	    grub_device=24
+	elif [ ${grub_device} == "z" ] ; then
+	    grub_device=25
+	fi
+
 	msg "installing grub"
 	echo "GRUB_DEBUG___ >>>> mountpoint: ${mountpoint}"
 
 	cp -avf ${mountpoint}/usr/lib/grub/i386-pc/* ${mountpoint}/boot/grub/
 
-	if [ "${use_boot}" = "yes" ] ; then
+	echo "GRUB_DEBUG___ >>>> grub_device: ${grub_device}"
+	echo "GRUB_DEBUG___ >>>> grub_part: ${grub_partition}"
 
-		msg "we are using a separate /boot partition"
-
-		_real_boot=$(echo ${target_boot} | cut -c 4)
-		_real_grub_partition=$(($_real_boot-1))
-		echo "GRUB_DEBUG___ >>>> grub_device: ${grub_device}"
-		echo "GRUB_DEBUG___ >>>> real_grub_part: ${_real_grub_partition}"
-
-		${mountpoint}/sbin/grub --no-floppy --batch >/tmp/grub.log 2>&1 <<EOF
-root (hd${grub_device},${_real_grub_partition})
-setup (hd${grub_device})
-quit
-EOF
-
-	else
-		echo "GRUB_DEBUG___ >>>> grub_device: ${grub_device}"
-		echo "GRUB_DEBUG___ >>>> real_grub_part: ${_real_grub_partition}"
-
-		${mountpoint}/sbin/grub --no-floppy --batch >/tmp/grub.log 2>&1 <<EOF
+	${mountpoint}/sbin/grub --no-floppy --batch >/tmp/grub.log 2>&1 <<EOF
 root (hd${grub_device},${grub_partition})
 setup (hd${grub_device})
 quit
 EOF
-
-	fi
 
 	msg "copy installation logs to target /var/log"
 

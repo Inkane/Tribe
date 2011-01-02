@@ -58,7 +58,7 @@ void BootloaderPage::aboutToGoToNext()
 
     device.remove(0, 2);
 
-    m_handler->installBootloader(0, device);
+    m_handler->installBootloader(0);
 }
 
 void BootloaderPage::aboutToGoToPrevious()
@@ -86,7 +86,7 @@ void BootloaderPage::bootloaderInstalled(int exitCode, QProcess::ExitStatus exit
 
         device.remove(0, 2);
 
-        m_handler->installBootloader(1, device);
+        m_handler->installBootloader(1);
     }
 }
 

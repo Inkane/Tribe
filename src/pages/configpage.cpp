@@ -604,7 +604,7 @@ void ConfigPage::bootloaderInstalled(int exitCode, QProcess::ExitStatus exitStat
         emit setProgressWidgetText(i18n("Creating OS list..."));
         emit updateProgressWidget(50);
 
-        m_install->installBootloader(1, "0");  /// hardcoding fail
+        m_install->installBootloader(1);  /// Start second step of grub install
     }
 }
 
@@ -636,8 +636,7 @@ void ConfigPage::aboutToGoToNext()
 
     connect(m_install, SIGNAL(bootloaderInstalled(int, QProcess::ExitStatus)), SLOT(bootloaderInstalled(int, QProcess::ExitStatus)));
 
-    m_install->installBootloader(0, "0"); /// NOTE!! this is the hardcoded 'first disk only' bug
-                                                 /// or where it starts rather.
+    m_install->installBootloader(0); /// Start first step of grub install
 }
 
 void ConfigPage::aboutToGoToPrevious()

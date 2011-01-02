@@ -66,7 +66,7 @@ job_initialize_target()
 	  echo "Using $FOLDER"
 	cp -Rvf /usr/share/apps/kdm/themes/${THEME}/$CURRENT_RES/* ${mountpoint}/usr/share/apps/kdm/themes/${THEME}
 	else
-	  echo "File $FILE does not exists! Using 1280x800"
+	  echo "Folder $FOLDER does not exists! Using 1280x800"
 	  CURRENT_RES="1280x800"
 	  cp -Rvf /usr/share/apps/kdm/themes/${THEME}/$CURRENT_RES/* ${mountpoint}/usr/share/apps/kdm/themes/${THEME}
 	fi

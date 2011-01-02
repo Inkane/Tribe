@@ -11,59 +11,13 @@ job_create_menulst()
 	# cut ${grub_device}
 	grub_device=`echo ${grub_device} | cut -c3`
 
-	if [ ${grub_device} == "a" ] ; then
-	    grub_device=0
-	elif [ ${grub_device} == "b" ] ; then
-	    grub_device=1
-	elif [ ${grub_device} == "c" ] ; then
-	    grub_device=2
-	elif [ ${grub_device} == "d" ] ; then
-	    grub_device=3
-	elif [ ${grub_device} == "e" ] ; then
-	    grub_device=4
-	elif [ ${grub_device} == "f" ] ; then
-	    grub_device=5
-	elif [ ${grub_device} == "g" ] ; then
-	    grub_device=6
-	elif [ ${grub_device} == "h" ] ; then
-	    grub_device=7
-	elif [ ${grub_device} == "i" ] ; then
-	    grub_device=8
-	elif [ ${grub_device} == "j" ] ; then
-	    grub_device=9
-	elif [ ${grub_device} == "k" ] ; then
-	    grub_device=10
-	elif [ ${grub_device} == "l" ] ; then
-	    grub_device=11
-	elif [ ${grub_device} == "m" ] ; then
-	    grub_device=12
-	elif [ ${grub_device} == "n" ] ; then
-	    grub_device=13
-	elif [ ${grub_device} == "o" ] ; then
-	    grub_device=14
-	elif [ ${grub_device} == "p" ] ; then
-	    grub_device=15
-	elif [ ${grub_device} == "q" ] ; then
-	    grub_device=16
-	elif [ ${grub_device} == "r" ] ; then
-	    grub_device=17
-	elif [ ${grub_device} == "s" ] ; then
-	    grub_device=18
-	elif [ ${grub_device} == "t" ] ; then
-	    grub_device=19
-	elif [ ${grub_device} == "u" ] ; then
-	    grub_device=20
-	elif [ ${grub_device} == "v" ] ; then
-	    grub_device=21
-	elif [ ${grub_device} == "w" ] ; then
-	    grub_device=22
-	elif [ ${grub_device} == "x" ] ; then
-	    grub_device=23
-	elif [ ${grub_device} == "y" ] ; then
-	    grub_device=24
-	elif [ ${grub_device} == "z" ] ; then
-	    grub_device=25
-	fi
+	x=0
+	for letter in {a..z} ; do
+	      if [ "${grub_device}" = "${letter}" ] ; then
+		grub_device=$x
+	      fi
+	      x=$((x+1))
+	done
     
 	msg "create /boot/grub"
 	mkdir -p ${mountpoint}/boot/grub

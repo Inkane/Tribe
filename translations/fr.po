@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the TRIBE package.
 #
 # Glad Deschrijver <glad.deschrijver@gmail.com>, 2010.
-# Fabien Valthier, 2010.
+# Fabien Valthier, 2010, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
 "POT-Creation-Date: 2010-12-19 14:44+0100\n"
-"PO-Revision-Date: 2010-12-15 00:33+0000\n"
-"Last-Translator: Fabien Valthier\n"
+"PO-Revision-Date: 2011-01-05 15:42+0000\n"
+"Last-Translator: \n"
 "Language-Team: French <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -105,7 +105,7 @@ msgstr "Création de fstab..."
 
 #: src/installationhandler.cpp:470
 msgid "Configuring hardware..."
-msgstr "Configuration du matériel informatique..."
+msgstr "Configuration du matériel..."
 
 #: src/installationhandler.cpp:474
 msgid "Creating initial ramdisk images..."
@@ -228,38 +228,34 @@ msgid "Creating OS list..."
 msgstr "Création de la liste des OS..."
 
 #: src/pages/configpage.cpp:170
-#, fuzzy
 msgid "Downloading"
-msgstr "Paramètres de téléchargement"
+msgstr "Téléchargement de "
 
 #: src/pages/configpage.cpp:317
-#, fuzzy
 msgid "installed"
-msgstr "Installer dans :"
+msgstr "Installé"
 
 #: src/pages/configpage.cpp:332
-#, fuzzy
 msgid "Install Packaged Software"
-msgstr "Moteur PostInstall et graphismes"
+msgstr "Installer des paquets logiciels"
 
 #. i18n: file: ui/pages/config.ui:122
 #. i18n: ectx: property (text), widget (QPushButton, downloadBundlesButton)
 #: src/pages/configpage.cpp:373 rc.cpp:102
 msgid "Download Popular Bundles"
-msgstr ""
+msgstr "Télécharger les \"bundles\" populaires"
 
 #. i18n: file: ui/pages/config.ui:202
 #. i18n: ectx: property (text), widget (QPushButton, bootloaderSettingsButton)
 #: src/pages/configpage.cpp:391 rc.cpp:111
-#, fuzzy
 msgid "Bootloader Settings"
-msgstr "Gestionnaire de démarrage"
+msgstr "Configuration du gestionnaire de démarrage"
 
 #. i18n: file: ui/pages/config.ui:163
 #. i18n: ectx: property (text), widget (QPushButton, initRamDiskButton)
 #: src/pages/configpage.cpp:403 rc.cpp:105
 msgid "Customize Initial Ramdisk"
-msgstr ""
+msgstr "Personnaliser la Ramdisk initiale"
 
 #: src/pages/licensepage.cpp:53
 msgid "Proprietary ATI Driver"
@@ -297,7 +293,7 @@ msgstr "Nouveau"
 
 #: src/pages/partitionpage.cpp:195
 msgid "Unsupported"
-msgstr ""
+msgstr "Non supporté"
 
 #: src/pages/partitionpage.cpp:415
 msgid "Loading partitions..."
@@ -661,7 +657,6 @@ msgstr "hd0"
 #. i18n: file: ui/pages/config.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:92
-#, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -684,138 +679,128 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Creation des utilisateurs</"
+"size:22pt; font-weight:600; color:#ffffff;\">Configuration</"
 "span></p></body></html>"
 
 #. i18n: file: ui/pages/config.ui:97
 #. i18n: ectx: property (text), widget (QPushButton, installPkgzButton)
 #: rc.cpp:99
-#, fuzzy
 msgid "Install Packages"
-msgstr "Moteur PostInstall et graphismes"
+msgstr "Installer des paquets"
 
 #. i18n: file: ui/pages/config.ui:173
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:108
-#, fuzzy
 msgid "Advanced Options"
-msgstr "Options du ramdisk"
+msgstr "Options avancées"
 
 #. i18n: file: ui/pages/config.ui:227
 #. i18n: ectx: property (text), widget (QPushButton, changeAppearanceButton)
 #: rc.cpp:114
 msgid "Change System Appearance"
-msgstr ""
+msgstr "Changer l'apparence du système"
 
 #. i18n: file: ui/pages/config.ui:268
 #. i18n: ectx: property (text), widget (QCheckBox, usb)
 #: rc.cpp:117
 msgid "USB"
-msgstr ""
+msgstr "USB"
 
 #. i18n: file: ui/pages/config.ui:275
 #. i18n: ectx: property (text), widget (QCheckBox, nfs)
 #: rc.cpp:120
 msgid "NFS Shares"
-msgstr ""
+msgstr "Partages NFS"
 
 #. i18n: file: ui/pages/config.ui:282
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: rc.cpp:123
-#, fuzzy
 msgid "Activate support for booting from:"
-msgstr ""
-"Activer la fonction permettant le démarrage à partir d'un système de "
-"fichiers en réseau NFS"
+msgstr "Activer le support pour un démarrage depuis : "
 
 #. i18n: file: ui/pages/config.ui:289
 #. i18n: ectx: property (text), widget (QCheckBox, firewire)
 #: rc.cpp:126
 msgid "FireWire"
-msgstr ""
+msgstr "FireWire"
 
 #. i18n: file: ui/pages/config.ui:296
 #. i18n: ectx: property (text), widget (QCheckBox, raid)
 #: rc.cpp:129
 msgid "Software Raid Arrays"
-msgstr ""
+msgstr "matrices RAID logiciel"
 
 #. i18n: file: ui/pages/config.ui:303
 #. i18n: ectx: property (text), widget (QCheckBox, lvm2)
 #: rc.cpp:132
 msgid "LVM2 Volumes"
-msgstr ""
+msgstr "volumes LVM2"
 
 #. i18n: file: ui/pages/config.ui:310
 #. i18n: ectx: property (text), widget (QCheckBox, encrypted)
 #: rc.cpp:135
 msgid "Encrypted Volumes"
-msgstr ""
+msgstr "volumes cryptés"
 
 #. i18n: file: ui/pages/config.ui:329
 #. i18n: ectx: property (text), widget (QPushButton, generateInitRamDiskButton)
 #: rc.cpp:138
 msgid "Generate Initial Ramdisk"
-msgstr ""
+msgstr "Générer le ramdisk initiale"
 
 #. i18n: file: ui/pages/config.ui:365
 #. i18n: ectx: property (text), widget (QCheckBox, mdp)
 #: rc.cpp:141
-#, fuzzy
 msgid "MDP Partition Arrays"
-msgstr "Préparation des partitions"
+msgstr "matrices partition MDP"
 
 #. i18n: file: ui/pages/config.ui:372
 #. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
 #: rc.cpp:144
 msgid "PCMCIA"
-msgstr ""
+msgstr "PCMCIA"
 
 #. i18n: file: ui/pages/config.ui:756
 #. i18n: ectx: property (text), widget (QPushButton, pkgInstallButton)
 #: rc.cpp:147
-#, fuzzy
 msgid "Install"
-msgstr "Installer dans :"
+msgstr "Installer"
 
 #. i18n: file: ui/pages/config.ui:773
 #. i18n: ectx: property (text), widget (QPushButton, bundlesDownloadButton)
 #: rc.cpp:150
-#, fuzzy
 msgid "Download"
-msgstr "Paramètres de téléchargement"
+msgstr "Télécharger"
 
 #. i18n: file: ui/pages/config.ui:845
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: rc.cpp:153
 msgid "Chakra"
-msgstr ""
+msgstr "Chakra"
 
 #. i18n: file: ui/pages/config.ui:893
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: rc.cpp:156
 msgid "Mac"
-msgstr ""
+msgstr "Mac"
 
 #. i18n: file: ui/pages/config.ui:922
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #: rc.cpp:159
-#, fuzzy
 msgid "Windows"
-msgstr "Windows / %1"
+msgstr "Windows"
 
 #. i18n: file: ui/pages/config.ui:1001
 #. i18n: ectx: property (text), widget (QPushButton, colorizeButton)
 #: rc.cpp:162
 msgid "Colorize"
-msgstr ""
+msgstr "Colorer"
 
 #. i18n: file: ui/pages/config.ui:1161
 #. i18n: ectx: property (text), widget (QCheckBox, bootloaderCheckBox)
 #: rc.cpp:165
-#, fuzzy
 msgid "Install GRUB"
-msgstr "Installer dans :"
+msgstr "Installer GRUB"
 
 #. i18n: file: ui/pages/config.ui:1251
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -823,6 +808,8 @@ msgstr "Installer dans :"
 msgid ""
 "Now that you have a Chakra install, you can now configure it to your liking."
 msgstr ""
+"Maintenant que la distribution Chakra est installée, vous pouvez la "
+"configurer selon vos goûts."
 
 #. i18n: file: ui/pages/finish.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1352,23 +1339,21 @@ msgid ""
 "mounted. No permanent changes to your hard drive will be made when you will "
 "press \"Next\""
 msgstr ""
-"Veuillez sélectionner un point de montage pour vos partitions. '/' doit être "
-"au moins monté. Aucune modification défnitive de votre disque dur ne sera "
+"Veuillez sélectionner un point de montage pour vos partitions. '/' au moins "
+"doit être monté. Aucune modification défnitive de votre disque dur ne sera "
 "faite lorsque le bouton \"Suivant\" sera utilisé"
 
 #. i18n: file: ui/pages/partition.ui:100
 #. i18n: ectx: property (text), widget (QLabel, typeLabel)
 #: rc.cpp:339
-#, fuzzy
 msgid "Type: "
-msgstr "Type"
+msgstr "Type : "
 
 #. i18n: file: ui/pages/partition.ui:127
 #. i18n: ectx: property (text), widget (QLabel, filesystemLabel)
 #: rc.cpp:348
-#, fuzzy
 msgid "Filesystem: "
-msgstr "Système de fichiers"
+msgstr "Système de fichiers : "
 
 #. i18n: file: ui/pages/partition.ui:173
 #. i18n: ectx: property (text), widget (KPushButton, editPartitionOkButton)
@@ -1697,3 +1682,4 @@ msgstr "Glad Deschrijver/Fabien Valthier"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "glad.deschrijver@gmail.com/hcoohb@gmail.com"
+

@@ -24,6 +24,6 @@
 #define INSTALLATION_TARGET "/mnt/install.root"
 
 /* Defines the version */
-#define TRIBE_VERSION "0.3.1pre1"
+#define TRIBE_VERSION "0.3.1pre2"
 
 #endif /*CONFIG_H*/

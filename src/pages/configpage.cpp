@@ -91,10 +91,6 @@ void ConfigPage::createWidget()
     // generate initrd
     ui.generateInitRamDiskButton->setIcon(KIcon("debug-run"));
 
-    // enable usb & nfs, they are initrd built-in
-    ui.usb->setChecked(true);
-    ui.nfs->setChecked(true);
-
     // remove the initrd tmp files
     QProcess::execute("bash -c \"rm " + tmpInitRd.join(" ") + " > /dev/null 2&>1\"");
 

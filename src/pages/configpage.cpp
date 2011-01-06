@@ -280,7 +280,7 @@ void ConfigPage::bundlesDownloadButtonClicked()
 {
     if (Solid::Networking::status() != Solid::Networking::Connected) {
         QString completeMessage = i18n("Sorry, you have no internet connection at the moment \n"
-                                       "Will stop bundle(s) installation now", message);
+                                       "Will stop bundle(s) installation now");
 
         KDialog *dialog = new KDialog(this, Qt::FramelessWindowHint);
         dialog->setButtons(KDialog::Ok);
@@ -400,7 +400,7 @@ void ConfigPage::pkgInstallButtonClicked()
 {
     if (Solid::Networking::status() != Solid::Networking::Connected) {
         QString completeMessage = i18n("Sorry, you have no internet connection at the moment \n"
-                                       "Will stop package(s) installation now", message);
+                                       "Will stop package(s) installation now");
 
         KDialog *dialog = new KDialog(this, Qt::FramelessWindowHint);
         dialog->setButtons(KDialog::Ok);

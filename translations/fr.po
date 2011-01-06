@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
 "POT-Creation-Date: 2010-12-19 14:44+0100\n"
-"PO-Revision-Date: 2011-01-05 15:42+0000\n"
+"PO-Revision-Date: 2011-01-06 16:48+0000\n"
 "Last-Translator: \n"
 "Language-Team: French <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -1393,7 +1393,7 @@ msgstr "Supprimer"
 #. i18n: ectx: property (text), widget (QPushButton, formatButton)
 #: rc.cpp:375
 msgid "Format"
-msgstr "Format"
+msgstr "Formater"
 
 #. i18n: file: ui/pages/partition.ui:411
 #. i18n: ectx: property (toolTip), widget (QPushButton, undoButton)
@@ -1625,7 +1625,7 @@ msgstr "Mot de passe :"
 #. i18n: ectx: property (toolTip), widget (QPushButton, userDetails)
 #: rc.cpp:459
 msgid "Include more information about this user."
-msgstr "Indiquer plus d'iformations sur cet utilisateur"
+msgstr "Ajouter plus d'informations sur cet utilisateur"
 
 #. i18n: file: ui/widgets/userwidget.ui:124
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -1682,4 +1682,5 @@ msgstr "Glad Deschrijver/Fabien Valthier"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "glad.deschrijver@gmail.com/hcoohb@gmail.com"
+
 

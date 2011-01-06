@@ -725,6 +725,7 @@ void PartitionPage::slotTypeChanged(QString s)
 
 void PartitionPage::formatToggled(bool status)
 {
+    m_ui->advancedButton->setEnabled(false);
     if (status) {
         setVisibleParts(true);
         m_ui->sizeSlider->setVisible(false);
@@ -759,6 +760,7 @@ void PartitionPage::applyFormat()
     setVisibleParts(false);
 
     connect(m_ui->formatButton, SIGNAL(toggled(bool)), this, SLOT(formatToggled(bool)));
+    m_ui->advancedButton->setEnabled(true);
 }
 
 void PartitionPage::cancelFormat()
@@ -774,6 +776,7 @@ void PartitionPage::cancelFormat()
     setVisibleParts(false);
 
     connect(m_ui->formatButton, SIGNAL(toggled(bool)), this, SLOT(formatToggled(bool)));
+    m_ui->advancedButton->setEnabled(true);
 }
 
 void PartitionPage::deleteClicked()

@@ -20,6 +20,7 @@
 #include <KIO/Job>
 
 #include <Solid/Networking>
+#include <KMessageBox>
 
 #include <config-tribe.h>
 

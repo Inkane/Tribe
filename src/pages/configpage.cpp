@@ -277,8 +277,17 @@ void ConfigPage::cancelButtonClicked()
 
 void ConfigPage::bundlesDownloadButtonClicked()
 {
-    if (Solid::Networking::status() != Solid::Networking::Connected ||
-        Solid::Networking::status() != Solid::Networking::Unknown) {
+    if (Solid::Networking::status() != Solid::Networking::Connected) {
+        QString completeMessage = i18n("Sorry, you have no internet connection at the moment \n"
+                                       "Will stop bundle(s) installation now", message);
+
+        KDialog *dialog = new KDialog(this, Qt::FramelessWindowHint);
+        dialog->setButtons(KDialog::Ok);
+        dialog->setModal(true);
+        bool retbool;
+
+        KMessageBox::createKMessageBox(dialog, QMessageBox::Warning, completeMessage,
+                                       QStringList(), QString(), &retbool, KMessageBox::Notify);
         return;
     }
 
@@ -388,8 +397,17 @@ void ConfigPage::setInstallPkgzPage()
 
 void ConfigPage::pkgInstallButtonClicked()
 {
-    if (Solid::Networking::status() != Solid::Networking::Connected ||
-        Solid::Networking::status() != Solid::Networking::Unknown) {
+    if (Solid::Networking::status() != Solid::Networking::Connected) {
+        QString completeMessage = i18n("Sorry, you have no internet connection at the moment \n"
+                                       "Will stop package(s) installation now", message);
+
+        KDialog *dialog = new KDialog(this, Qt::FramelessWindowHint);
+        dialog->setButtons(KDialog::Ok);
+        dialog->setModal(true);
+        bool retbool;
+
+        KMessageBox::createKMessageBox(dialog, QMessageBox::Warning, completeMessage,
+                                       QStringList(), QString(), &retbool, KMessageBox::Notify);
         return;
     }
 

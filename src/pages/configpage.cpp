@@ -19,7 +19,7 @@
 #include <KIcon>
 #include <KIO/Job>
 
-#include <Solid/Networking>
+#include <QNetworkAccessManager>
 #include <KMessageBox>
 
 #include <config-tribe.h>
@@ -278,7 +278,7 @@ void ConfigPage::cancelButtonClicked()
 
 void ConfigPage::bundlesDownloadButtonClicked()
 {
-    if (Solid::Networking::status() != Solid::Networking::Connected) {
+    if (0 == QNetworkAccessManager::NotAccessible) {
         QString completeMessage = i18n("Sorry, you have no internet connection at the moment \n"
                                        "Will stop bundle(s) installation now");
 
@@ -398,7 +398,7 @@ void ConfigPage::setInstallPkgzPage()
 
 void ConfigPage::pkgInstallButtonClicked()
 {
-    if (Solid::Networking::status() != Solid::Networking::Connected) {
+    if (0 == QNetworkAccessManager::NotAccessible) {
         QString completeMessage = i18n("Sorry, you have no internet connection at the moment \n"
                                        "Will stop package(s) installation now");
 

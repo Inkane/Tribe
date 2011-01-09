@@ -20,6 +20,8 @@
 #include <KIO/Job>
 
 #include <QNetworkAccessManager>
+#include <QNetworkReply>
+#include <QNetworkRequest>
 #include <KMessageBox>
 
 #include <config-tribe.h>
@@ -276,9 +278,25 @@ void ConfigPage::cancelButtonClicked()
     ui.stackedWidget->setCurrentIndex(m_currentPage);
 }
 
+void ConfigPage::handleNetworkData(QNetworkReply *networkReply)
+{
+  // no error -> internet access
+  if (!networkReply->error())
+    m_currentOnlineStatus = "Online";
+  else
+    m_currentOnlineStatus = "Offline";
+
+  networkReply->deleteLater();
+}
+
 void ConfigPage::bundlesDownloadButtonClicked()
 {
-    if (0 == QNetworkAccessManager::NotAccessible) {
+    connect(&networkManager, SIGNAL(finished(QNetworkReply*)),
+             this, SLOT(handleNetworkData(QNetworkReply*)));
+    
+    //use the url of the preferred mirror 
+    networkManager.get(QNetworkRequest(QString("http://chakra-project.org")));
+    if (m_currentOnlineStatus == "Offline") {
         QString completeMessage = i18n("Sorry, you have no internet connection at the moment \n"
                                        "Will stop bundle(s) installation now");
 
@@ -398,7 +416,12 @@ void ConfigPage::setInstallPkgzPage()
 
 void ConfigPage::pkgInstallButtonClicked()
 {
-    if (0 == QNetworkAccessManager::NotAccessible) {
+    connect(&networkManager, SIGNAL(finished(QNetworkReply*)),
+             this, SLOT(handleNetworkData(QNetworkReply*)));
+    
+    //use the url of the preferred mirror 
+    networkManager.get(QNetworkRequest(QString("http://chakra-project.org")));
+    if (m_currentOnlineStatus == "Offline") {
         QString completeMessage = i18n("Sorry, you have no internet connection at the moment \n"
                                        "Will stop package(s) installation now");
 

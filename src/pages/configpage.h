@@ -23,6 +23,7 @@
 #include "ui_config.h"
 #include <QTimer>
 
+#include <QNetworkAccessManager>
 
 class InstallationHandler;
 
@@ -33,6 +34,10 @@ class ConfigPage : public AbstractPage
 public:
     ConfigPage(QWidget *parent = 0);
     virtual ~ConfigPage();
+    
+public slots:
+    // handle network data
+    void handleNetworkData(QNetworkReply *networkReply);
 
 private slots:
     virtual void createWidget();
@@ -61,7 +66,7 @@ private slots:
     // download bundles page
     void populateBundlesList();
     void bundlesDownloadButtonClicked();
-
+    
     // customize initrd page
     void initRdGenerationComplete();
     void generateInitRamDisk();
@@ -90,6 +95,9 @@ private:
     QString m_currentBranch;
     QString m_currentArch;
     QString m_currentPkgName;
+    QString m_currentOnlineStatus;
+    
+    QNetworkAccessManager networkManager;
     
     int m_downloadSize;
     int m_soFarDownloadSize;

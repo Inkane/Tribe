@@ -8,7 +8,7 @@ job_rcconf_daemons()
 	msg_job_start "job_rcconf_daemons"
 
 	msg "add basic daemon configuration"
-	if [[ "`cat /etc/chakra-release`" > "0.3.49" ]] ; then
+	if [[ "`cat ${mountpoint}/etc/chakra-release`" > "0.3.49" ]] ; then
 	  sed -i -e 's/^.*DAEMONS=.*/DAEMONS=(syslog-ng dbus network alsa cdemud kdm)/' ${mountpoint}/etc/rc.conf
 	else
 	  sed -i -e 's/^.*DAEMONS=.*/DAEMONS=(syslog-ng dbus network hal alsa cdemud kdm)/' ${mountpoint}/etc/rc.conf

@@ -96,6 +96,11 @@ void ConfigPage::createWidget()
 
     // remove the initrd tmp files
     QProcess::execute("bash -c \"rm " + tmpInitRd.join(" ") + " > /dev/null 2&>1\"");
+    
+    // first call to check internet connection
+    connect(&networkManager, SIGNAL(finished(QNetworkReply*)),
+             this, SLOT(handleNetworkData(QNetworkReply*)));
+    networkManager.get(QNetworkRequest(QString("http://chakra-project.org")));
 
     populatePkgzList();
     populateBundlesList();

@@ -32,10 +32,18 @@ job_rcconf_network()
 	if [ -f "${mountpoint}/usr/bin/knetworkmanager" ];
 	then
 		msg "adding networkmanager daemons"
-		sed -i -e 's/^.*DAEMONS=.*/DAEMONS=(syslog-ng dbus hal !network networkmanager avahi-daemon avahi-dnsconfd alsa cdemud kdm)/' ${mountpoint}/etc/rc.conf
+		if [`cat /etc/chakra-release` > "0.3.49" ] ; then
+		    sed -i -e 's/^.*DAEMONS=.*/DAEMONS=(syslog-ng dbus !network networkmanager avahi-daemon avahi-dnsconfd alsa cdemud kdm)/' ${mountpoint}/etc/rc.conf
+		else
+		    sed -i -e 's/^.*DAEMONS=.*/DAEMONS=(syslog-ng dbus hal !network networkmanager avahi-daemon avahi-dnsconfd alsa cdemud kdm)/' ${mountpoint}/etc/rc.conf
+		fi
 	else
 		msg "adding wicd daemons"
-		sed -i -e 's/^.*DAEMONS=.*/DAEMONS=(syslog-ng dbus hal !network wicd avahi-daemon avahi-dnsconfd alsa cdemud kdm)/' ${mountpoint}/etc/rc.conf
+		if [`cat /etc/chakra-release` > "0.3.49" ] ; then
+		    sed -i -e 's/^.*DAEMONS=.*/DAEMONS=(syslog-ng dbus hal !network wicd avahi-daemon avahi-dnsconfd alsa cdemud kdm)/' ${mountpoint}/etc/rc.conf
+		else
+		    sed -i -e 's/^.*DAEMONS=.*/DAEMONS=(syslog-ng dbus hal !network wicd avahi-daemon avahi-dnsconfd alsa cdemud kdm)/' ${mountpoint}/etc/rc.conf
+		fi
 	fi
 	msg_job_done
 }

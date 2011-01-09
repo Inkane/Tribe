@@ -40,5 +40,5 @@ msg_job_done() {
 }
 
 # check if we have a internet connection
-ping_check=$(LC_ALL=C netstat -r | grep "default") 
+ping_check=$(LC_ALL=C ping -c 1 www.chakra-project.org | grep "1 received")
 

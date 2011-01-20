@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>676</width>
+    <width>786</width>
     <height>530</height>
    </rect>
   </property>
@@ -55,7 +55,7 @@ p, li { white-space: pre-wrap; }
       </size>
      </property>
      <property name="text">
-      <string>Please select a mountpoint for your partitions. At least '/' should be mounted. No permanent changes to your hard drive will be made when you will press &quot;Next&quot;</string>
+      <string>Please select a mountpoint for your partitions. No permanent changes to your hard drive will be made when you will press &quot;Next&quot;. Note: selected partitions are not explicitly formatted.</string>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -204,7 +204,7 @@ p, li { white-space: pre-wrap; }
             <widget class="QSlider" name="sizeSlider">
              <property name="minimumSize">
               <size>
-               <width>250</width>
+               <width>300</width>
                <height>0</height>
               </size>
              </property>
@@ -227,8 +227,17 @@ p, li { white-space: pre-wrap; }
                <height>16777215</height>
               </size>
              </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
              <property name="suffix">
               <string> MiB</string>
+             </property>
+             <property name="singleStep">
+              <number>10</number>
+             </property>
+             <property name="base">
+              <number>100</number>
              </property>
             </widget>
            </item>

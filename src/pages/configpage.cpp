@@ -44,9 +44,9 @@ ConfigPage::ConfigPage(QWidget *parent)
     m_process = new QProcess(this);
     m_process->setProcessChannelMode(QProcess::MergedChannels);
     connect(m_process, SIGNAL(finished(int)), this, SLOT(processComplete()));
-    
+
     m_timer = new QTimer(this);
-    
+
     m_soFarDownloadSize = 0;
     m_soFarPkgDownloadSize = 0;
     m_downloadSize = 0;
@@ -60,7 +60,7 @@ ConfigPage::~ConfigPage()
 void ConfigPage::createWidget()
 {
     ui.setupUi(this);
-    
+
     ui.changeAppearanceButton->setVisible(false);
 
     // page connections
@@ -96,7 +96,7 @@ void ConfigPage::createWidget()
 
     // remove the initrd tmp files
     QProcess::execute("bash -c \"rm " + tmpInitRd.join(" ") + " > /dev/null 2&>1\"");
-    
+
     // first call to check internet connection
     connect(&networkManager, SIGNAL(finished(QNetworkReply*)),
              this, SLOT(handleNetworkData(QNetworkReply*)));
@@ -117,7 +117,7 @@ bool ConfigPage::eventFilter(QObject* obj, QEvent* event)
             m_currentPage = 2;
         }
     }
-    
+
     return 0;
 }
 
@@ -174,12 +174,12 @@ void ConfigPage::incomingData(KIO::Job* job, QByteArray data)
 {
     if (ui.progressBar->maximum() != job->totalAmount(KJob::Bytes))
         ui.progressBar->setMaximum(job->totalAmount(KJob::Bytes));
-    
+
     if (data.isNull()) {
         if (job->processedAmount(KJob::Bytes) == job->totalAmount(KJob::Bytes))
             return;
     }
-    
+
     if (m_incomingIncr == m_incomingList.count())
         return;
 
@@ -188,8 +188,8 @@ void ConfigPage::incomingData(KIO::Job* job, QByteArray data)
         if (x.open(QIODevice::Append)) {
             x.write(data);
             x.flush();
+            x.close();
         }
-        x.close();
     } else {
         ui.progressBar->setValue(job->processedAmount(KJob::Bytes));
         ui.progressLabel->setText(i18n("Downloading") + " " + m_incomingList.at(m_incomingIncr));
@@ -197,8 +197,8 @@ void ConfigPage::incomingData(KIO::Job* job, QByteArray data)
         if (x.open(QIODevice::Append)) {
             x.write(data);
             x.flush();
+            x.close();
         }
-        x.close();
     }
 }
 
@@ -254,7 +254,7 @@ void ConfigPage::populateBundlesList()
     } else {
         qDebug() << ">> bundlelistFile error: " + bundlelistFile.errorString();
     }
-    
+
     if (bundleDataList.isEmpty())
         return;
 
@@ -276,7 +276,7 @@ void ConfigPage::cancelButtonClicked()
     m_process = new QProcess(this);
     m_process->setProcessChannelMode(QProcess::MergedChannels);
     connect(m_process, SIGNAL(finished(int)), this, SLOT(processComplete()));
-    
+
     ui.bundlesDownloadButton->setEnabled(true);
     ui.installPkgzButton->setEnabled(true);
     enableNextButton(true);
@@ -298,7 +298,7 @@ void ConfigPage::bundlesDownloadButtonClicked()
 {
     connect(&networkManager, SIGNAL(finished(QNetworkReply*)),
              this, SLOT(handleNetworkData(QNetworkReply*)));
-    
+
     //use the url of the preferred mirror 
     networkManager.get(QNetworkRequest(QString("http://chakra-project.org")));
     if (m_currentOnlineStatus == "Offline") {
@@ -324,9 +324,9 @@ void ConfigPage::bundlesDownloadButtonClicked()
     ui.stackedWidget->setCurrentIndex(7);
     ui.progressBar->setValue(0);
     ui.progressLabel->setText("Waiting for server...");
-    
+
     QStringList checkedList;
-    
+
     for ( int i = 0; i < ui.bundlesList->count(); i++ ) {
         if (ui.bundlesList->item(i)->checkState() == Qt::Checked) {
             checkedList.append(ui.bundlesList->item(i)->data(60).toString());
@@ -423,7 +423,7 @@ void ConfigPage::pkgInstallButtonClicked()
 {
     connect(&networkManager, SIGNAL(finished(QNetworkReply*)),
              this, SLOT(handleNetworkData(QNetworkReply*)));
-    
+
     //use the url of the preferred mirror 
     networkManager.get(QNetworkRequest(QString("http://chakra-project.org")));
     if (m_currentOnlineStatus == "Offline") {
@@ -456,12 +456,12 @@ void ConfigPage::pkgInstallButtonClicked()
         if (ui.pkgList->item(i)->checkState() == Qt::Checked)
             pkgz.append(ui.pkgList->item(i)->data(60).toString());
     }
-    
+
     if (pkgz.isEmpty())
         return;
 
     QProcess::execute("rm -f " + QString(INSTALLATION_TARGET) + "/var/lib/pacman/db.lck");
-    
+
     connect(m_timer, SIGNAL(timeout()), this, SLOT(updatePacmanProgress()));
     m_timer->start(500);
 
@@ -615,7 +615,7 @@ void ConfigPage::generateInitRamDisk()
         QProcess::execute("touch " + tmpInitRd.at(6));
     if (ui.encrypted->isChecked())
         QProcess::execute("touch " + tmpInitRd.at(7));
-    
+
     QString command  = QString("sh " + QString(SCRIPTS_INSTALL_PATH) +
                                "/postinstall.sh --job create-initrd %1")
                                .arg(m_install->m_postcommand);

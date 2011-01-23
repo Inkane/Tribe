@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2011-01-23 18:48+0100\n"
+"POT-Creation-Date: 2011-01-23 19:11+0100\n"
 "PO-Revision-Date: 2010-12-19 12:33+0100\n"
 "Last-Translator: Giuseppe Calà <jiveaxe@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -406,11 +406,18 @@ msgstr ""
 "La partizione che si è scelto di montare come '/' è troppo piccola. Dovrebbe "
 "avere una capacità di almeno %1 per riuscire nell'installazione."
 
-#: src/pages/partitionpage.cpp:960 src/pages/partitionpage.cpp:975
+#: src/pages/partitionpage.cpp:960 src/pages/partitionpage.cpp:990
 msgid "Target's capacity not sufficient"
 msgstr "Capacità del dispositivo di destinazione non sufficiente"
 
-#: src/pages/partitionpage.cpp:973
+#: src/pages/partitionpage.cpp:971
+msgid ""
+"The partition you have chosen to mount as '/' is not marked for formatation. "
+"This might create problems. Do you still want to continue without formating "
+"it?"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:988
 msgid ""
 "You have selected '%1' as a mountpoint, which is not valid. A valid "
 "mountpoint always starts with '/' and represents a directory on disk"

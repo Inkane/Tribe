@@ -2,13 +2,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Panagiotis Papadopoulos <pano_90@gmx.net>, 2010.
-# Phil Miller <philm@chakra-project.org>, 2010.
+# Phil Miller <philm@chakra-project.org>, 2010, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
 "POT-Creation-Date: 2011-01-23 19:11+0100\n"
-"PO-Revision-Date: 2010-12-19 00:13+0100\n"
+"PO-Revision-Date: 2011-01-23 19:34+0100\n"
 "Last-Translator: Phil Miller <philm@chakra-project.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -250,49 +250,48 @@ msgid ""
 "Sorry, you have no internet connection at the moment \n"
 "Will stop package(s) installation now"
 msgstr ""
+"Sorry, Sie haben zur Zeit keine Internetverbindung \n"
+"Die Paket(e)-Installation wird nun beendet."
 
 #: src/pages/configpage.cpp:471
 msgid "Waiting for server..."
-msgstr ""
+msgstr "Warte auf den Server ..."
 
 #: src/pages/configpage.cpp:483
-#, fuzzy
 msgid "loading package data..."
-msgstr "Nicht benötigte Pakete werden entfernt …"
+msgstr "lade Paket-Daten ..."
 
 #: src/pages/configpage.cpp:484
-#, fuzzy
 msgid "Loading package data..."
-msgstr "Lade Partitionen ..."
+msgstr "Lade Paket-Daten ..."
 
 #: src/pages/configpage.cpp:485
 msgid "checking dependencies..."
-msgstr ""
+msgstr "überprüfe Abhängigkeiten"
 
 #: src/pages/configpage.cpp:486
 msgid "Checking dependencies..."
-msgstr ""
+msgstr "Prüfe Abhängigkeiten"
 
 #: src/pages/configpage.cpp:487
 msgid "resolving dependencies..."
-msgstr ""
+msgstr "Abhängigkeiten auflösen ..."
 
 #: src/pages/configpage.cpp:488
-#, fuzzy
 msgid "Resolving dependencies..."
-msgstr "Nicht benötigte Treiber werden entfernt … "
+msgstr "Abhängigkeiten auflösen ..."
 
 #: src/pages/configpage.cpp:489
 msgid "checking package integrity..."
-msgstr ""
+msgstr "prüfe Paketvollständigkeit"
 
 #: src/pages/configpage.cpp:490
 msgid "Checking package integrity..."
-msgstr ""
+msgstr "Prüfe Paketvollständigkeit ..."
 
 #: src/pages/configpage.cpp:491
 msgid "Total Download Size:"
-msgstr ""
+msgstr "Gesammte Downloadgröße"
 
 #. i18n: file: ui/pages/config.ui:120
 #. i18n: ectx: property (text), widget (QPushButton, downloadBundlesButton)
@@ -406,6 +405,10 @@ msgid ""
 "This might create problems. Do you still want to continue without formating "
 "it?"
 msgstr ""
+"Die Partition welche Sie als Einbindungspunkt '/' auswählten ist nicht zur "
+"Formatierung vorgesehen. "
+"Dies könnte Probleme verursachen. Wollen Sie denoch fortfahren ohne diese zu "
+"formatieren?"
 
 #: src/pages/partitionpage.cpp:988
 msgid ""
@@ -1409,15 +1412,16 @@ msgstr ""
 #. i18n: file: ui/pages/partition.ui:58
 #. i18n: ectx: property (text), widget (QLabel, descriptionLabel)
 #: rc.cpp:338
-#, fuzzy
 msgid ""
 "Please select a mountpoint for your partitions. No permanent changes to your "
 "hard drive will be made when you will press \"Next\". Note: selected "
 "partitions are not explicitly formatted."
 msgstr ""
-"Wählen Sie einen Einbindungspunkt für Ihre Partitionen aus. Zumindest \"/\" "
-"sollte eingebunden werden. Keine permanenten Veränderungen werden an ihrer "
-"Festplatte vorgenommen wenn Sie auf \"Weiter\" klicken."
+"Wählen Sie einen Einbindungspunkt für Ihre Partitionen aus. Keine "
+"permanenten "
+"Veränderungen werden an ihrer Festplatte vorgenommen wenn Sie auf \"Weiter\" "
+"klicken. "
+"Notiz: Ausgewählte Partitionen sind nicht ausdrücklich formatiert."
 
 #. i18n: file: ui/pages/partition.ui:100
 #. i18n: ectx: property (text), widget (QLabel, typeLabel)
@@ -1748,3 +1752,4 @@ msgstr "Phil Miller"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "philm@chakra-project.org"
+

@@ -76,7 +76,10 @@ job_create_initrd()
     umount -v ${mountpoint}/proc ${mountpoint}/sys ${mountpoint}/dev
 
     msg "creating loop devices"
-    chroot ${mountpoint} /bin/bash -c "for i in $(seq 8 255); do mknod -m0660 /dev/loop$i b 7 $i; chown root.disk /dev/loop$i; done"
+    for i in $(seq 8 255)
+    do
+         chroot ${mountpoint} /bin/bash -c "mknod -m0660 /dev/loop$i b 7 $i; chown root.disk /dev/loop$i;"
+    done
 
     msg_job_done
 }

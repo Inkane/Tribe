@@ -55,6 +55,7 @@ QStringList s_mountPoints = QStringList() << "None" <<
                                              "/tmp" <<
                                              "/opt" <<
                                              "/etc" <<
+                                             "/boot" <<
                                              "swap" <<
                                              "Other...";
 

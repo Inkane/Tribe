@@ -300,7 +300,7 @@ void InstallationHandler::populateCommandParameters()
     }
 
     if (!m_timezone.isEmpty()) {
-        m_postcommand.append(QString("--timezone %1 ").arg(m_timezone));
+        m_postcommand.append(QString("--timezone %1 ").arg(m_timezone.replace('/', '-')));
     }
 
     if (!m_locale.isEmpty()) {

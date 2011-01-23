@@ -963,9 +963,11 @@ void PartitionPage::aboutToGoToNext()
             }
 
             if (m_toFormat.contains(partition)) {
-                if (text == "/") {
+                if (text == "/")
                     m_install->setRootDevice(QString(partition->devicePath()).left(-1));
-                } else {
+                PMHandler::instance()->addSectorToMountList(device, partition->firstSector(), text, m_toFormat[partition]);
+            } else {
+                if (text == "/") {
                     QString msg;
 
                     msg.append(i18n("The partition you have chosen to mount as '/' is not marked for formatation. "
@@ -977,11 +979,10 @@ void PartitionPage::aboutToGoToNext()
 
                     if (KMessageBox::createKMessageBox(dialog, KIcon("dialog-warning"), msg, QStringList(),
                                        QString(), &retbool, KMessageBox::Notify) == KDialog::No) {
+                    PMHandler::instance()->clearMountList();
                     return;
                     }
                 }
-                PMHandler::instance()->addSectorToMountList(device, partition->firstSector(), text, m_toFormat[partition]);
-            } else {
                 PMHandler::instance()->addSectorToMountList(device, partition->firstSector(), text);
             }
         } else if (!text.isEmpty() && text != "None") {

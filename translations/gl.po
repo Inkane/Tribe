@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the TRIBE package.
 #
 # Adrián Chaves Fernández <adriyetichaves@gmail.com>, 2010.
-# Adrián Chaves Fernández (Gallaecio) <adriyetichaves@gmail.com>, 2010.
+# Adrián Chaves Fernández (Gallaecio) <adriyetichaves@gmail.com>, 2010, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
 "POT-Creation-Date: 2011-01-23 19:11+0100\n"
-"PO-Revision-Date: 2010-12-14 22:29+0100\n"
+"PO-Revision-Date: 2011-01-24 07:55+0100\n"
 "Last-Translator: Adrián Chaves Fernández (Gallaecio) <adriyetichaves@gmail."
 "com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
@@ -17,7 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 1.1\n"
+"X-Generator: Lokalize 1.2\n"
+"Language: gl"
 
 #: src/installationhandler.cpp:86
 msgid "Tribe was not able to initialize needed path: "
@@ -229,93 +230,90 @@ msgid "Creating OS list..."
 msgstr "Xerando a lista de sistemas operativos..."
 
 #: src/pages/configpage.cpp:195 src/pages/configpage.cpp:497
-#, fuzzy
 msgid "Downloading"
-msgstr "Configuración de descarga"
+msgstr "Descargando"
 
 #: src/pages/configpage.cpp:305
 msgid ""
 "Sorry, you have no internet connection at the moment \n"
 "Will stop bundle(s) installation now"
 msgstr ""
+"Nestes momentos non dispón de conexión á Internet.\n"
+"Interrompeuse a instalación dos bundles."
 
 #: src/pages/configpage.cpp:398
-#, fuzzy
 msgid "installed"
-msgstr "Instalar en:"
+msgstr "instalado"
 
 #: src/pages/configpage.cpp:414
-#, fuzzy
 msgid "Install Packaged Software"
-msgstr "Infraestrutura de pos-instalación e material gráfico"
+msgstr "Instalar o software empaquetado"
 
 #: src/pages/configpage.cpp:430
 msgid ""
 "Sorry, you have no internet connection at the moment \n"
 "Will stop package(s) installation now"
 msgstr ""
+"Nestes momentos non dispón de conexión á Internet.\n"
+"Interrompeuse a instalación dos paquetes."
 
 #: src/pages/configpage.cpp:471
 msgid "Waiting for server..."
-msgstr ""
+msgstr "Esperando polo servidor..."
 
 #: src/pages/configpage.cpp:483
-#, fuzzy
 msgid "loading package data..."
-msgstr "Borrando os paquetes innecesarios..."
+msgstr "cargando os datos do paquete..."
 
 #: src/pages/configpage.cpp:484
-#, fuzzy
 msgid "Loading package data..."
-msgstr "Cargando as particións..."
+msgstr "Cargando os datos do paquete..."
 
 #: src/pages/configpage.cpp:485
 msgid "checking dependencies..."
-msgstr ""
+msgstr "comprobando as dependencias..."
 
 #: src/pages/configpage.cpp:486
 msgid "Checking dependencies..."
-msgstr ""
+msgstr "Comprobando as dependencias..."
 
 #: src/pages/configpage.cpp:487
 msgid "resolving dependencies..."
-msgstr ""
+msgstr "resolvendo as dependencias..."
 
 #: src/pages/configpage.cpp:488
-#, fuzzy
 msgid "Resolving dependencies..."
-msgstr "Borrando os controladores innecesarios..."
+msgstr "Resolvendo as dependencias..."
 
 #: src/pages/configpage.cpp:489
 msgid "checking package integrity..."
-msgstr ""
+msgstr "comprobando a integridade dos paquetes..."
 
 #: src/pages/configpage.cpp:490
 msgid "Checking package integrity..."
-msgstr ""
+msgstr "Comprobando a integridade dos paquetes..."
 
 #: src/pages/configpage.cpp:491
 msgid "Total Download Size:"
-msgstr ""
+msgstr "Volume total descargado:"
 
 #. i18n: file: ui/pages/config.ui:120
 #. i18n: ectx: property (text), widget (QPushButton, downloadBundlesButton)
 #: src/pages/configpage.cpp:554 rc.cpp:105
 msgid "Download Popular Bundles"
-msgstr ""
+msgstr "Descargar bundles populares"
 
 #. i18n: file: ui/pages/config.ui:200
 #. i18n: ectx: property (text), widget (QPushButton, bootloaderSettingsButton)
 #: src/pages/configpage.cpp:572 rc.cpp:114
-#, fuzzy
 msgid "Bootloader Settings"
-msgstr "Xestor de inicio"
+msgstr "Configuración do xestor de inicio"
 
 #. i18n: file: ui/pages/config.ui:161
 #. i18n: ectx: property (text), widget (QPushButton, initRamDiskButton)
 #: src/pages/configpage.cpp:585 rc.cpp:108
 msgid "Customize Initial Ramdisk"
-msgstr ""
+msgstr "Personalizar o Ramdisk inicial"
 
 #: src/pages/licensepage.cpp:53
 msgid "Proprietary ATI Driver"
@@ -353,7 +351,7 @@ msgstr "Nova"
 
 #: src/pages/partitionpage.cpp:196
 msgid "Unsupported"
-msgstr ""
+msgstr "Non soportado"
 
 #: src/pages/partitionpage.cpp:416
 msgid "Loading partitions..."
@@ -1755,3 +1753,4 @@ msgstr "Adrián Chaves Fernández (Gallaecio)."
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "adriyetichaves@gmail.com"
+

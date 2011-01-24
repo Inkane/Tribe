@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
 "POT-Creation-Date: 2011-01-23 19:11+0100\n"
-"PO-Revision-Date: 2011-01-24 07:55+0100\n"
+"PO-Revision-Date: 2011-01-24 15:47+0100\n"
 "Last-Translator: Adrián Chaves Fernández (Gallaecio) <adriyetichaves@gmail."
 "com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
@@ -409,6 +409,9 @@ msgid ""
 "This might create problems. Do you still want to continue without formating "
 "it?"
 msgstr ""
+"A partición que escolleu para montar como «/» non está marcada para "
+"formatarse, "
+"o cal pode dar problemas. Está seguro de que quere continuar sen formatala?"
 
 #: src/pages/partitionpage.cpp:988
 msgid ""
@@ -721,7 +724,6 @@ msgstr "hd0"
 #. i18n: file: ui/pages/config.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:92
-#, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -744,8 +746,8 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Creación dos usuarios</span></"
-"p></body></html>"
+"size:22pt; font-weight:600; color:#ffffff;\">Configuración</span></p></"
+"body></html>"
 
 #. i18n: file: ui/pages/config.ui:55
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -753,134 +755,128 @@ msgstr ""
 msgid ""
 "Now that you have a Chakra install, you can now configure it to your liking."
 msgstr ""
+"Agora que xa ten Chakra instalada pode aproveitar para configurala e adaptala "
+"ás súas preferencias."
 
 #. i18n: file: ui/pages/config.ui:95
 #. i18n: ectx: property (text), widget (QPushButton, installPkgzButton)
 #: rc.cpp:102
-#, fuzzy
 msgid "Install Packages"
-msgstr "Infraestrutura de pos-instalación e material gráfico"
+msgstr "Instalar os paquetes"
 
 #. i18n: file: ui/pages/config.ui:171
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:111
-#, fuzzy
 msgid "Advanced Options"
-msgstr "Opcións de Ramdisk"
+msgstr "Opcións avanzadas"
 
 #. i18n: file: ui/pages/config.ui:225
 #. i18n: ectx: property (text), widget (QPushButton, changeAppearanceButton)
 #: rc.cpp:117
 msgid "Change System Appearance"
-msgstr ""
+msgstr "Cambiar o aspecto do sistema"
 
 #. i18n: file: ui/pages/config.ui:285
 #. i18n: ectx: property (text), widget (QCheckBox, usb)
 #: rc.cpp:120
 msgid "USB"
-msgstr ""
+msgstr "USB"
 
 #. i18n: file: ui/pages/config.ui:292
 #. i18n: ectx: property (text), widget (QCheckBox, nfs)
 #: rc.cpp:123
 msgid "NFS Shares"
-msgstr ""
+msgstr "Comparticións NFS"
 
 #. i18n: file: ui/pages/config.ui:299
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: rc.cpp:126
-#, fuzzy
 msgid "Activate support for booting from:"
-msgstr "Activar o soporte para arrincar dende comparticións NFS."
+msgstr "Activar o soporte para arrincar dende:"
 
 #. i18n: file: ui/pages/config.ui:306
 #. i18n: ectx: property (text), widget (QCheckBox, firewire)
 #: rc.cpp:129
 msgid "FireWire"
-msgstr ""
+msgstr "FireWire"
 
 #. i18n: file: ui/pages/config.ui:313
 #. i18n: ectx: property (text), widget (QCheckBox, raid)
 #: rc.cpp:132
 msgid "Software Raid Arrays"
-msgstr ""
+msgstr "Matrices de raid por software"
 
 #. i18n: file: ui/pages/config.ui:320
 #. i18n: ectx: property (text), widget (QCheckBox, lvm2)
 #: rc.cpp:135
 msgid "LVM2 Volumes"
-msgstr ""
+msgstr "Volumes LVM2"
 
 #. i18n: file: ui/pages/config.ui:327
 #. i18n: ectx: property (text), widget (QCheckBox, encrypted)
 #: rc.cpp:138
 msgid "Encrypted Volumes"
-msgstr ""
+msgstr "Volumes cifrados"
 
 #. i18n: file: ui/pages/config.ui:346
 #. i18n: ectx: property (text), widget (QPushButton, generateInitRamDiskButton)
 #: rc.cpp:141
 msgid "Generate Initial Ramdisk"
-msgstr ""
+msgstr "Xerar o Ramdisk inicial"
 
 #. i18n: file: ui/pages/config.ui:382
 #. i18n: ectx: property (text), widget (QCheckBox, mdp)
 #: rc.cpp:144
-#, fuzzy
 msgid "MDP Partition Arrays"
-msgstr "Preparar as particións"
+msgstr "Matrices de particións MDP"
 
 #. i18n: file: ui/pages/config.ui:389
 #. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
 #: rc.cpp:147
 msgid "PCMCIA"
-msgstr ""
+msgstr "PCMCIA"
 
 #. i18n: file: ui/pages/config.ui:701
 #. i18n: ectx: property (text), widget (QPushButton, pkgInstallButton)
 #: rc.cpp:150
-#, fuzzy
 msgid "Install"
-msgstr "Instalar en:"
+msgstr "Instalar"
 
 #. i18n: file: ui/pages/config.ui:790
 #. i18n: ectx: property (text), widget (QPushButton, bundlesDownloadButton)
 #: rc.cpp:153
-#, fuzzy
 msgid "Download"
-msgstr "Configuración de descarga"
+msgstr "Descargar"
 
 #. i18n: file: ui/pages/config.ui:884
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: rc.cpp:156
 msgid "Chakra"
-msgstr ""
+msgstr "Chakra"
 
 #. i18n: file: ui/pages/config.ui:932
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: rc.cpp:159
 msgid "Mac"
-msgstr ""
+msgstr "Mac"
 
 #. i18n: file: ui/pages/config.ui:961
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #: rc.cpp:162
-#, fuzzy
 msgid "Windows"
-msgstr "Windows / %1"
+msgstr "Windows"
 
 #. i18n: file: ui/pages/config.ui:1040
 #. i18n: ectx: property (text), widget (QPushButton, colorizeButton)
 #: rc.cpp:165
 msgid "Colorize"
-msgstr ""
+msgstr "Colorar"
 
 #. i18n: file: ui/pages/config.ui:1200
 #. i18n: ectx: property (text), widget (QCheckBox, bootloaderCheckBox)
 #: rc.cpp:168
-#, fuzzy
 msgid "Install GRUB"
-msgstr "Instalar en:"
+msgstr "Instalar GRUB"
 
 #. i18n: file: ui/pages/config.ui:1285
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
@@ -1414,28 +1410,27 @@ msgstr ""
 #. i18n: file: ui/pages/partition.ui:58
 #. i18n: ectx: property (text), widget (QLabel, descriptionLabel)
 #: rc.cpp:338
-#, fuzzy
 msgid ""
 "Please select a mountpoint for your partitions. No permanent changes to your "
 "hard drive will be made when you will press \"Next\". Note: selected "
 "partitions are not explicitly formatted."
 msgstr ""
-"Escolla un punto de montaxe para as particións. Debería montar polo menos "
-"«/». Pode premer «Seguinte» sen medo, que os cambios aínda non se van aplicar."
+"Escolla un punto de montaxe para as particións. Pode premer «Seguinte» sen "
+"medo, que os cambios aínda non se van aplicar. Teña en conta antes de seguir "
+"que as particións non se formatan polo mero feito de escollelas, hai que "
+"especificalo."
 
 #. i18n: file: ui/pages/partition.ui:100
 #. i18n: ectx: property (text), widget (QLabel, typeLabel)
 #: rc.cpp:342
-#, fuzzy
 msgid "Type: "
-msgstr "Tipo"
+msgstr "Tipo: "
 
 #. i18n: file: ui/pages/partition.ui:127
 #. i18n: ectx: property (text), widget (QLabel, filesystemLabel)
 #: rc.cpp:351
-#, fuzzy
 msgid "Filesystem: "
-msgstr "Sistema de ficheiros"
+msgstr "Sistema de ficheiros: "
 
 #. i18n: file: ui/pages/partition.ui:173
 #. i18n: ectx: property (text), widget (KPushButton, editPartitionOkButton)
@@ -1753,4 +1748,5 @@ msgstr "Adrián Chaves Fernández (Gallaecio)."
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "adriyetichaves@gmail.com"
+
 

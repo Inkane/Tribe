@@ -139,8 +139,8 @@ void LocalePage::createWidget()
         continentCombo->setCurrentIndex(continentCombo->count() - 1);
     }
 
-    if (!m_install->timezone().isEmpty()) {
-        regionCombo->addItem(m_install->timezone());
+    if (!m_install->region().isEmpty()) {
+        regionCombo->addItem(m_install->region());
         regionCombo->setCurrentIndex(regionCombo->count() - 1);
     }
 
@@ -303,6 +303,7 @@ bool LocalePage::validate()
     }
 
     m_install->setContinent(continentCombo->currentText());
+    m_install->setRegion(regionCombo->currentText());
     m_install->setTimezone(continentCombo->currentText()+"/"+regionCombo->currentText());
     m_install->setKDELangPack(m_allKDELangs.key(kdeLanguageCombo->currentText()));
 

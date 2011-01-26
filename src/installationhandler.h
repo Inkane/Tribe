@@ -22,6 +22,7 @@
 #include <KLocalizedString>
 #include <KIO/CopyJob>
 
+
 class Partition;
 
 class InstallationHandler : public QObject
@@ -99,6 +100,9 @@ class InstallationHandler : public QObject
 
         void setContinent(const QString &continent) { m_continent = continent; }
         QString continent() { return m_continent; }
+
+        void setRegion(const QString &region) { m_region = region; }
+        QString region() { return m_region; }
 
         void setTimezone(const QString &time) { m_timezone = time; }
         QString timezone() { return m_timezone; }
@@ -215,6 +219,7 @@ class InstallationHandler : public QObject
 
         QString m_hostname;
         QString m_continent;
+        QString m_region;
         QString m_timezone;
         QString m_locale;
         QString m_KDELangPack;

@@ -1,20 +1,21 @@
 # The Traditional Chinese translation of tribe.
 # Copyright (C) 2008 THE tribe'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the tribe package.
-# Dong-Jun Wu <ziyawu@gmail.com>, 2010
+# Dong-Jun Wu <ziyawu@gmail.com>, 2010 
+# Cheng-Chia Tseng <pswo10680@gmail.com>, 2010, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: tribe HEAD\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2010-12-19 14:44+0100\n"
+"POT-Creation-Date: 2011-01-23 19:11+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.linux.org.tw>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/installationhandler.cpp:86
@@ -217,45 +218,102 @@ msgstr ""
 "或者到我們的論壇詢問以獲得幫助。"
 
 #: src/pages/bootloaderpage.cpp:52
-#: src/pages/configpage.cpp:494
+#: src/pages/configpage.cpp:677
 msgid "Installing bootloader..."
 msgstr "正在安裝開機載入程式..."
 
 #: src/pages/bootloaderpage.cpp:82
-#: src/pages/configpage.cpp:465
+#: src/pages/configpage.cpp:647
 msgid "Creating OS list..."
 msgstr "正在建立作業系統清單..."
 
-#: src/pages/configpage.cpp:170
+#: src/pages/configpage.cpp:195
+#: src/pages/configpage.cpp:497
 msgid "Downloading"
 msgstr "正在下載"
 
-#: src/pages/configpage.cpp:317
+#: src/pages/configpage.cpp:305
+msgid ""
+"Sorry, you have no internet connection at the moment \n"
+"Will stop bundle(s) installation now"
+msgstr ""
+"很抱歉，您目前沒有網際網路連線\n"
+"現在將停止 bundle 安裝"
+
+#: src/pages/configpage.cpp:398
 msgid "installed"
 msgstr "已安裝"
 
-#: src/pages/configpage.cpp:332
+#: src/pages/configpage.cpp:414
 msgid "Install Packaged Software"
 msgstr "安裝套件軟體"
 
-#. i18n: file: ui/pages/config.ui:122
+#: src/pages/configpage.cpp:430
+msgid ""
+"Sorry, you have no internet connection at the moment \n"
+"Will stop package(s) installation now"
+msgstr ""
+"很抱歉，您目前沒有網際網路連線\n"
+"現在將停止套件安裝"
+
+#: src/pages/configpage.cpp:471
+msgid "Waiting for server..."
+msgstr "正在等候伺服器..."
+
+#: src/pages/configpage.cpp:483
+msgid "loading package data..."
+msgstr "正在載入套件資料..."
+
+#: src/pages/configpage.cpp:484
+msgid "Loading package data..."
+msgstr "正在載入套件資料..."
+
+#: src/pages/configpage.cpp:485
+msgid "checking dependencies..."
+msgstr "正在檢查相依性..."
+
+#: src/pages/configpage.cpp:486
+msgid "Checking dependencies..."
+msgstr "正在檢查相依性..."
+
+#: src/pages/configpage.cpp:487
+msgid "resolving dependencies..."
+msgstr "正在解析相依性..."
+
+#: src/pages/configpage.cpp:488
+msgid "Resolving dependencies..."
+msgstr "正在解析相依性..."
+
+#: src/pages/configpage.cpp:489
+msgid "checking package integrity..."
+msgstr "正在檢查套件完整性..."
+
+#: src/pages/configpage.cpp:490
+msgid "Checking package integrity..."
+msgstr "正在檢查套件完整性..."
+
+#: src/pages/configpage.cpp:491
+msgid "Total Download Size:"
+msgstr "總共下載大小："
+
+#. i18n: file: ui/pages/config.ui:120
 #. i18n: ectx: property (text), widget (QPushButton, downloadBundlesButton)
-#: src/pages/configpage.cpp:373
-#: rc.cpp:102
+#: src/pages/configpage.cpp:554
+#: rc.cpp:105
 msgid "Download Popular Bundles"
 msgstr "下載受歡迎的 Bundles "
 
-#. i18n: file: ui/pages/config.ui:202
+#. i18n: file: ui/pages/config.ui:200
 #. i18n: ectx: property (text), widget (QPushButton, bootloaderSettingsButton)
-#: src/pages/configpage.cpp:391
-#: rc.cpp:111
+#: src/pages/configpage.cpp:572
+#: rc.cpp:114
 msgid "Bootloader Settings"
 msgstr "開機載入程式設定值"
 
-#. i18n: file: ui/pages/config.ui:163
+#. i18n: file: ui/pages/config.ui:161
 #. i18n: ectx: property (text), widget (QPushButton, initRamDiskButton)
-#: src/pages/configpage.cpp:403
-#: rc.cpp:105
+#: src/pages/configpage.cpp:585
+#: rc.cpp:108
 msgid "Customize Initial Ramdisk"
 msgstr "自訂初始 Ramdisk"
 
@@ -275,72 +333,76 @@ msgstr "同意授權："
 msgid "You need to select a timezone"
 msgstr "您需要選取時區"
 
-#: src/pages/partitionpage.cpp:88
+#: src/pages/partitionpage.cpp:89
 msgid "Please enter a custom mountpoint"
 msgstr "請輸入自訂的掛載點"
 
-#: src/pages/partitionpage.cpp:100
+#: src/pages/partitionpage.cpp:101
 msgid "The mount point must start with /"
 msgstr "掛載點必須以 / 開頭"
 
-#: src/pages/partitionpage.cpp:101
+#: src/pages/partitionpage.cpp:102
 msgid "Error"
 msgstr "錯誤"
 
-#. i18n: file: ui/pages/partition.ui:354
+#. i18n: file: ui/pages/partition.ui:363
 #. i18n: ectx: property (text), widget (QPushButton, newButton)
-#: src/pages/partitionpage.cpp:195
-#: rc.cpp:369
+#: src/pages/partitionpage.cpp:196
+#: rc.cpp:372
 msgid "New"
 msgstr "新增"
 
-#: src/pages/partitionpage.cpp:195
+#: src/pages/partitionpage.cpp:196
 msgid "Unsupported"
 msgstr "未支援"
 
-#: src/pages/partitionpage.cpp:415
+#: src/pages/partitionpage.cpp:416
 msgid "Loading partitions..."
 msgstr "正在載入分割區..."
 
-#: src/pages/partitionpage.cpp:526
+#: src/pages/partitionpage.cpp:527
 msgid "The selected volume already has a partition table.. Overwrite it? (this will destroy all data on the device)"
 msgstr "所選的儲存區已經有分割表了...要覆寫嗎？(這會清除所有該裝置上的資料)"
 
-#: src/pages/partitionpage.cpp:526
-#: src/pages/partitionpage.cpp:533
+#: src/pages/partitionpage.cpp:527
+#: src/pages/partitionpage.cpp:534
 msgid "Warning"
 msgstr "警告"
 
-#: src/pages/partitionpage.cpp:533
+#: src/pages/partitionpage.cpp:534
 msgid "This operation will destroy all data on the selected volume.. Continue anyway?"
 msgstr "此操作將清除所選儲存區上的所有資料...無論如何都要繼續嗎？"
 
 #. i18n: file: ui/pages/partition.ui:111
 #. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
-#: src/pages/partitionpage.cpp:564
-#: src/pages/partitionpage.cpp:717
-#: src/pages/partitionpage.cpp:797
-#: rc.cpp:342
+#: src/pages/partitionpage.cpp:565
+#: src/pages/partitionpage.cpp:718
+#: src/pages/partitionpage.cpp:801
+#: rc.cpp:345
 msgid "Extended"
 msgstr "延伸分割"
 
 #. i18n: file: ui/pages/partition.ui:116
 #. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
-#: src/pages/partitionpage.cpp:798
-#: rc.cpp:345
+#: src/pages/partitionpage.cpp:802
+#: rc.cpp:348
 msgid "Primary"
 msgstr "主要分割"
 
-#: src/pages/partitionpage.cpp:953
+#: src/pages/partitionpage.cpp:957
 msgid "The partition you have chosen to mount as '/' is too small. It should have a capacity of at least %1 for a successful installation."
 msgstr "您選擇要掛載 '/' 的分割區太小。它應該至少要有 %1 的容量以確保安裝成功。"
 
-#: src/pages/partitionpage.cpp:956
-#: src/pages/partitionpage.cpp:971
+#: src/pages/partitionpage.cpp:960
+#: src/pages/partitionpage.cpp:990
 msgid "Target's capacity not sufficient"
 msgstr "目標的容量不足"
 
-#: src/pages/partitionpage.cpp:969
+#: src/pages/partitionpage.cpp:971
+msgid "The partition you have chosen to mount as '/' is not marked for formatation. This might create problems. Do you still want to continue without formating it?"
+msgstr "您選擇要掛載 '/' 的分割區未被標記為需要格式化，這可能會產生問題。您仍然想要繼續而不將它格式化嗎？"
+
+#: src/pages/partitionpage.cpp:988
 msgid "You have selected '%1' as a mountpoint, which is not valid. A valid mountpoint always starts with '/' and represents a directory on disk"
 msgstr "您已經選取「%1」為掛載點，但那是無效的。有效的掛載點是以 '/' 開頭，並代表磁碟上的一個目錄"
 
@@ -418,7 +480,7 @@ msgstr ""
 #. i18n: file: ui/pages/releasenotes.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, ReleaseNotes)
 #: rc.cpp:13
-#: rc.cpp:412
+#: rc.cpp:415
 msgid "Release Notes"
 msgstr "發行說明"
 
@@ -570,13 +632,13 @@ msgstr "安裝開機載入程式"
 
 #. i18n: file: ui/pages/bootloader.ui:89
 #. i18n: ectx: property (text), widget (QPushButton, pushButton)
-#. i18n: file: ui/pages/partition.ui:316
+#. i18n: file: ui/pages/partition.ui:325
 #. i18n: ectx: property (toolTip), widget (QPushButton, advancedButton)
-#. i18n: file: ui/pages/partition.ui:319
+#. i18n: file: ui/pages/partition.ui:328
 #. i18n: ectx: property (text), widget (QPushButton, advancedButton)
 #: rc.cpp:83
-#: rc.cpp:360
 #: rc.cpp:363
+#: rc.cpp:366
 msgid "Advanced..."
 msgstr "進階..."
 
@@ -608,135 +670,147 @@ msgstr ""
 "</style></head><body style=\" font-family:'Sans Serif'; font-size:14pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">調整設定</span></p></body></html>"
 
-#. i18n: file: ui/pages/config.ui:97
-#. i18n: ectx: property (text), widget (QPushButton, installPkgzButton)
-#: rc.cpp:99
-msgid "Install Packages"
-msgstr "安裝套件"
-
-#. i18n: file: ui/pages/config.ui:173
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:108
-msgid "Advanced Options"
-msgstr "進階選項"
-
-#. i18n: file: ui/pages/config.ui:227
-#. i18n: ectx: property (text), widget (QPushButton, changeAppearanceButton)
-#: rc.cpp:114
-msgid "Change System Appearance"
-msgstr "變更系統外觀"
-
-#. i18n: file: ui/pages/config.ui:268
-#. i18n: ectx: property (text), widget (QCheckBox, usb)
-#: rc.cpp:117
-msgid "USB"
-msgstr "USB"
-
-#. i18n: file: ui/pages/config.ui:275
-#. i18n: ectx: property (text), widget (QCheckBox, nfs)
-#: rc.cpp:120
-msgid "NFS Shares"
-msgstr "NFS 共享"
-
-#. i18n: file: ui/pages/config.ui:282
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:123
-msgid "Activate support for booting from:"
-msgstr "啟動從下列選項開機的支援："
-
-#. i18n: file: ui/pages/config.ui:289
-#. i18n: ectx: property (text), widget (QCheckBox, firewire)
-#: rc.cpp:126
-msgid "FireWire"
-msgstr "FireWire"
-
-#. i18n: file: ui/pages/config.ui:296
-#. i18n: ectx: property (text), widget (QCheckBox, raid)
-#: rc.cpp:129
-msgid "Software Raid Arrays"
-msgstr "軟體 Raid 陣列"
-
-#. i18n: file: ui/pages/config.ui:303
-#. i18n: ectx: property (text), widget (QCheckBox, lvm2)
-#: rc.cpp:132
-msgid "LVM2 Volumes"
-msgstr "LVM2 儲存區"
-
-#. i18n: file: ui/pages/config.ui:310
-#. i18n: ectx: property (text), widget (QCheckBox, encrypted)
-#: rc.cpp:135
-msgid "Encrypted Volumes"
-msgstr "加密儲存區"
-
-#. i18n: file: ui/pages/config.ui:329
-#. i18n: ectx: property (text), widget (QPushButton, generateInitRamDiskButton)
-#: rc.cpp:138
-msgid "Generate Initial Ramdisk"
-msgstr "生成初始 Ramdisk"
-
-#. i18n: file: ui/pages/config.ui:365
-#. i18n: ectx: property (text), widget (QCheckBox, mdp)
-#: rc.cpp:141
-msgid "MDP Partition Arrays"
-msgstr "MDP 分割區陣列"
-
-#. i18n: file: ui/pages/config.ui:372
-#. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
-#: rc.cpp:144
-msgid "PCMCIA"
-msgstr "PCMCIA"
-
-#. i18n: file: ui/pages/config.ui:756
-#. i18n: ectx: property (text), widget (QPushButton, pkgInstallButton)
-#: rc.cpp:147
-msgid "Install"
-msgstr "安裝"
-
-#. i18n: file: ui/pages/config.ui:773
-#. i18n: ectx: property (text), widget (QPushButton, bundlesDownloadButton)
-#: rc.cpp:150
-msgid "Download"
-msgstr "下載"
-
-#. i18n: file: ui/pages/config.ui:845
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:153
-msgid "Chakra"
-msgstr "Chakra"
-
-#. i18n: file: ui/pages/config.ui:893
-#. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:156
-msgid "Mac"
-msgstr "Mac"
-
-#. i18n: file: ui/pages/config.ui:922
-#. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:159
-msgid "Windows"
-msgstr "Windows"
-
-#. i18n: file: ui/pages/config.ui:1001
-#. i18n: ectx: property (text), widget (QPushButton, colorizeButton)
-#: rc.cpp:162
-msgid "Colorize"
-msgstr "色彩化"
-
-#. i18n: file: ui/pages/config.ui:1161
-#. i18n: ectx: property (text), widget (QCheckBox, bootloaderCheckBox)
-#: rc.cpp:165
-msgid "Install GRUB"
-msgstr "安裝 GRUB"
-
-#. i18n: file: ui/pages/config.ui:1251
+#. i18n: file: ui/pages/config.ui:55
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:168
+#: rc.cpp:99
 msgid "Now that you have a Chakra install, you can now configure it to your liking."
 msgstr "現在您已經裝好 Chakra 了，您可以立刻調整設定以貼近您的喜好。"
 
+#. i18n: file: ui/pages/config.ui:95
+#. i18n: ectx: property (text), widget (QPushButton, installPkgzButton)
+#: rc.cpp:102
+msgid "Install Packages"
+msgstr "安裝套件"
+
+#. i18n: file: ui/pages/config.ui:171
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:111
+msgid "Advanced Options"
+msgstr "進階選項"
+
+#. i18n: file: ui/pages/config.ui:225
+#. i18n: ectx: property (text), widget (QPushButton, changeAppearanceButton)
+#: rc.cpp:117
+msgid "Change System Appearance"
+msgstr "變更系統外觀"
+
+#. i18n: file: ui/pages/config.ui:285
+#. i18n: ectx: property (text), widget (QCheckBox, usb)
+#: rc.cpp:120
+msgid "USB"
+msgstr "USB"
+
+#. i18n: file: ui/pages/config.ui:292
+#. i18n: ectx: property (text), widget (QCheckBox, nfs)
+#: rc.cpp:123
+msgid "NFS Shares"
+msgstr "NFS 共享"
+
+#. i18n: file: ui/pages/config.ui:299
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:126
+msgid "Activate support for booting from:"
+msgstr "啟動從下列選項開機的支援："
+
+#. i18n: file: ui/pages/config.ui:306
+#. i18n: ectx: property (text), widget (QCheckBox, firewire)
+#: rc.cpp:129
+msgid "FireWire"
+msgstr "FireWire"
+
+#. i18n: file: ui/pages/config.ui:313
+#. i18n: ectx: property (text), widget (QCheckBox, raid)
+#: rc.cpp:132
+msgid "Software Raid Arrays"
+msgstr "軟體 Raid 陣列"
+
+#. i18n: file: ui/pages/config.ui:320
+#. i18n: ectx: property (text), widget (QCheckBox, lvm2)
+#: rc.cpp:135
+msgid "LVM2 Volumes"
+msgstr "LVM2 儲存區"
+
+#. i18n: file: ui/pages/config.ui:327
+#. i18n: ectx: property (text), widget (QCheckBox, encrypted)
+#: rc.cpp:138
+msgid "Encrypted Volumes"
+msgstr "加密儲存區"
+
+#. i18n: file: ui/pages/config.ui:346
+#. i18n: ectx: property (text), widget (QPushButton, generateInitRamDiskButton)
+#: rc.cpp:141
+msgid "Generate Initial Ramdisk"
+msgstr "生成初始 Ramdisk"
+
+#. i18n: file: ui/pages/config.ui:382
+#. i18n: ectx: property (text), widget (QCheckBox, mdp)
+#: rc.cpp:144
+msgid "MDP Partition Arrays"
+msgstr "MDP 分割區陣列"
+
+#. i18n: file: ui/pages/config.ui:389
+#. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
+#: rc.cpp:147
+msgid "PCMCIA"
+msgstr "PCMCIA"
+
+#. i18n: file: ui/pages/config.ui:701
+#. i18n: ectx: property (text), widget (QPushButton, pkgInstallButton)
+#: rc.cpp:150
+msgid "Install"
+msgstr "安裝"
+
+#. i18n: file: ui/pages/config.ui:790
+#. i18n: ectx: property (text), widget (QPushButton, bundlesDownloadButton)
+#: rc.cpp:153
+msgid "Download"
+msgstr "下載"
+
+#. i18n: file: ui/pages/config.ui:884
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:156
+msgid "Chakra"
+msgstr "Chakra"
+
+#. i18n: file: ui/pages/config.ui:932
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: rc.cpp:159
+msgid "Mac"
+msgstr "Mac"
+
+#. i18n: file: ui/pages/config.ui:961
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: rc.cpp:162
+msgid "Windows"
+msgstr "Windows"
+
+#. i18n: file: ui/pages/config.ui:1040
+#. i18n: ectx: property (text), widget (QPushButton, colorizeButton)
+#: rc.cpp:165
+msgid "Colorize"
+msgstr "色彩化"
+
+#. i18n: file: ui/pages/config.ui:1200
+#. i18n: ectx: property (text), widget (QCheckBox, bootloaderCheckBox)
+#: rc.cpp:168
+msgid "Install GRUB"
+msgstr "安裝 GRUB"
+
+#. i18n: file: ui/pages/config.ui:1285
+#. i18n: ectx: property (text), widget (QPushButton, cancelButton)
+#. i18n: file: ui/pages/partition.ui:186
+#. i18n: ectx: property (text), widget (KPushButton, editPartitionCancelButton)
+#. i18n: file: ui/widgets/avatardialog.ui:114
+#. i18n: ectx: property (text), widget (QPushButton, cancelButton)
+#: rc.cpp:171
+#: rc.cpp:357
+#: rc.cpp:453
+msgid "Cancel"
+msgstr "取消"
+
 #. i18n: file: ui/pages/finish.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:171
+#: rc.cpp:174
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
@@ -752,7 +826,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/finish.ui:68
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:178
+#: rc.cpp:181
 msgid ""
 "Congratulations, the installation has been completed!\n"
 "\n"
@@ -786,25 +860,25 @@ msgstr ""
 
 #. i18n: file: ui/pages/finish.ui:105
 #. i18n: ectx: property (text), widget (QPushButton, rebootButton)
-#: rc.cpp:194
+#: rc.cpp:197
 msgid "Restart Computer"
 msgstr "重新啟動電腦"
 
 #. i18n: file: ui/pages/finish.ui:118
 #. i18n: ectx: property (text), widget (QPushButton, chakraButton)
-#: rc.cpp:197
+#: rc.cpp:200
 msgid "Keep using the LiveCD"
 msgstr "繼續使用 LiveCD"
 
 #. i18n: file: ui/pages/init.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, tribeInit)
-#: rc.cpp:200
+#: rc.cpp:203
 msgid "Ramdisk"
 msgstr "Ramdisk"
 
 #. i18n: file: ui/pages/init.ui:49
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:203
+#: rc.cpp:206
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
@@ -820,97 +894,97 @@ msgstr ""
 
 #. i18n: file: ui/pages/init.ui:58
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:210
+#: rc.cpp:213
 msgid "Your hardware will be configured automatically during the installation and a initial ramdisk environment for booting the linux kernel will be built. Everything should happen without intervention, but you might need some options for special boot methods. If you are unsure on what this means, simply press the \"Next\" button. Otherwise check out the ramdisk options below and select the items you need for your system."
 msgstr "安裝期間會自動設定您的硬體，並且建立 Linux 內核啟動的初始記憶體磁碟環境。無干預情況下上述都會被執行，但您可能需要一些特殊開機方式的選項。如果您不確定這個的作用是什麼，直接按「下一步」按鈕。不然的話看看下面的 ramdisk 選項並選取您的系統需要的項目。"
 
 #. i18n: file: ui/pages/init.ui:81
 #. i18n: ectx: property (text), widget (QPushButton, pushButton)
-#: rc.cpp:213
+#: rc.cpp:216
 msgid "Ramdisk Options"
 msgstr "Ramdisk 選項"
 
 #. i18n: file: ui/pages/init.ui:111
 #. i18n: ectx: property (text), widget (QCheckBox, usb)
-#: rc.cpp:216
+#: rc.cpp:219
 msgid "Activate support for booting from USB devices"
 msgstr "啟動由 USB 裝置開機的支援"
 
 #. i18n: file: ui/pages/init.ui:118
 #. i18n: ectx: property (text), widget (QCheckBox, firewire)
-#: rc.cpp:219
+#: rc.cpp:222
 msgid "Activate support for booting from FireWire devices"
 msgstr "啟動由 FireWire 裝置開機的支援"
 
 #. i18n: file: ui/pages/init.ui:125
 #. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
-#: rc.cpp:222
+#: rc.cpp:225
 msgid "Activate support for booting from PCMCIA devices"
 msgstr "啟動由 PCMCIA 裝置開機的支援"
 
 #. i18n: file: ui/pages/init.ui:132
 #. i18n: ectx: property (text), widget (QCheckBox, nfs)
-#: rc.cpp:225
+#: rc.cpp:228
 msgid "Activate support for booting from NFS shares"
 msgstr "啟動由 NFS 共享開機的支援"
 
 #. i18n: file: ui/pages/init.ui:139
 #. i18n: ectx: property (text), widget (QCheckBox, raid)
-#: rc.cpp:228
+#: rc.cpp:231
 msgid "Activate support for booting from Software Raid arrays"
 msgstr "啟動由軟體 Raid 陣列開機的支援"
 
 #. i18n: file: ui/pages/init.ui:146
 #. i18n: ectx: property (text), widget (QCheckBox, mdp)
-#: rc.cpp:231
+#: rc.cpp:234
 msgid "Activate support for booting from Software Raid/MDP Partition arrays"
 msgstr "啟動由軟體 Raid/MDP 陣列開機的支援"
 
 #. i18n: file: ui/pages/init.ui:153
 #. i18n: ectx: property (text), widget (QCheckBox, lvm2)
-#: rc.cpp:234
+#: rc.cpp:237
 msgid "Activate support for booting from LVM2 volumes"
 msgstr "啟動由 LVM2 儲存區開機的支援"
 
 #. i18n: file: ui/pages/init.ui:160
 #. i18n: ectx: property (text), widget (QCheckBox, encrypted)
-#: rc.cpp:237
+#: rc.cpp:240
 msgid "Activate support for booting from Encrypted volumes"
 msgstr "啟動由加密儲存區開機的支援"
 
 #. i18n: file: ui/pages/installation.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Installation)
-#: rc.cpp:240
+#: rc.cpp:243
 msgid "Tribe Installation"
 msgstr "Tribe 安裝程式"
 
 #. i18n: file: ui/pages/installation.ui:88
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:243
+#: rc.cpp:246
 msgid "Nine Inch Nails - Discipline"
 msgstr "Nine Inch Nails - Discipline"
 
 #. i18n: file: ui/pages/installation.ui:93
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:246
+#: rc.cpp:249
 msgid "Severed Fifth - War"
 msgstr "Severed Fifth - War"
 
 #. i18n: file: ui/pages/installation.ui:98
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:249
+#: rc.cpp:252
 msgid "Dunkelstern - Out of the box"
 msgstr "Dunkelstern - Out of the box"
 
 #. i18n: file: ui/pages/intro.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Intro)
-#: rc.cpp:252
+#: rc.cpp:255
 msgid "Tribe Intro"
 msgstr "Tribe 介紹"
 
 #. i18n: file: ui/pages/intro.ui:105
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:255
+#: rc.cpp:258
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
@@ -946,7 +1020,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/license.ui:49
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:272
+#: rc.cpp:275
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
@@ -962,37 +1036,37 @@ msgstr ""
 
 #. i18n: file: ui/pages/license.ui:61
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:279
+#: rc.cpp:282
 msgid "Chakra includes some proprietary software like hardware drivers, media plugins and fonts. To install them, you have to read and accept their licenses. If you choose against a license, the installer will try to use a free solution (if one is available)."
 msgstr "Chakra 包含一些專利軟體，如硬體驅動程式、多媒體外掛模組和字型。您必須閱讀並同意它們的授權才可安裝。如果您選擇不同意授權，那麼安裝程式會試著使用自由開放的解決方案 (若有可用的話)。"
 
 #. i18n: file: ui/pages/license.ui:74
 #. i18n: ectx: property (text), widget (QLabel, licenseLabel)
-#: rc.cpp:282
+#: rc.cpp:285
 msgid "Approve license for:"
 msgstr "同意條款："
 
 #. i18n: file: ui/pages/license.ui:103
 #. i18n: ectx: property (text), widget (QRadioButton, declineButton)
-#: rc.cpp:285
+#: rc.cpp:288
 msgid "Decline License"
 msgstr "拒絕條款"
 
 #. i18n: file: ui/pages/license.ui:110
 #. i18n: ectx: property (text), widget (QRadioButton, acceptButton)
-#: rc.cpp:288
+#: rc.cpp:291
 msgid "Accept License"
 msgstr "接受條款"
 
 #. i18n: file: ui/pages/locale.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Locale)
-#: rc.cpp:291
+#: rc.cpp:294
 msgid "Form"
 msgstr "表單"
 
 #. i18n: file: ui/pages/locale.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:294
+#: rc.cpp:297
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
@@ -1008,31 +1082,31 @@ msgstr ""
 
 #. i18n: file: ui/pages/locale.ui:45
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:301
+#: rc.cpp:304
 msgid "Please select the nearest city on the globe so the installer can suggest the locale and timezone settings for you. You can fine-tune the suggested settings at the bottom of the page. If you cant find your region or city on the globe, you can zoom in by using the slider on the left."
 msgstr "請選取地球儀上最靠近的城市，這樣安裝程式才能建議您的語言地區碼和時區設定值。您可以在這個頁面的底部調整建議設定值。如果無法在地球儀上找到您所在的區域或程式，可以使用左側的滑動拉桿來縮放畫面。"
 
 #. i18n: file: ui/pages/locale.ui:69
 #. i18n: ectx: property (clickMessage), widget (KLineEdit, locationsSearch)
-#: rc.cpp:304
+#: rc.cpp:307
 msgid "Search..."
 msgstr "搜尋..."
 
 #. i18n: file: ui/pages/locale.ui:162
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:307
+#: rc.cpp:310
 msgid "Continent:"
 msgstr "洲："
 
 #. i18n: file: ui/pages/locale.ui:185
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:310
+#: rc.cpp:313
 msgid "Language:"
 msgstr "語言："
 
 #. i18n: file: ui/pages/locale.ui:208
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:313
+#: rc.cpp:316
 msgid "Locale:"
 msgstr "語言地區碼："
 
@@ -1040,26 +1114,26 @@ msgstr "語言地區碼："
 #. i18n: ectx: property (text), widget (QCheckBox, showLocalesCheck)
 #. i18n: file: ui/pages/locale.ui:270
 #. i18n: ectx: property (text), widget (QCheckBox, showKDELangsCheck)
-#: rc.cpp:316
 #: rc.cpp:319
+#: rc.cpp:322
 msgid "Show all"
 msgstr "顯示全部"
 
 #. i18n: file: ui/pages/locale.ui:277
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:322
+#: rc.cpp:325
 msgid "Region: "
 msgstr "地區："
 
 #. i18n: file: ui/pages/partition.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Partition)
-#: rc.cpp:325
+#: rc.cpp:328
 msgid "Partition"
 msgstr "分割區"
 
 #. i18n: file: ui/pages/partition.ui:43
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:328
+#: rc.cpp:331
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
@@ -1075,19 +1149,19 @@ msgstr ""
 
 #. i18n: file: ui/pages/partition.ui:58
 #. i18n: ectx: property (text), widget (QLabel, descriptionLabel)
-#: rc.cpp:335
-msgid "Please select a mountpoint for your partitions. At least '/' should be mounted. No permanent changes to your hard drive will be made when you will press \"Next\""
-msgstr "請選取您分割區的掛載點。至少要掛載 '/'。在您按下「下一步」之前，您的硬碟不會受到任何永久性的更動。"
+#: rc.cpp:338
+msgid "Please select a mountpoint for your partitions. No permanent changes to your hard drive will be made when you will press \"Next\". Note: selected partitions are not explicitly formatted."
+msgstr "請選取您分割區的掛載點。在您按下「下一步」之前，您的硬碟不會受到任何永久性的更動。註：選取的分割區不是立刻就格式化。"
 
 #. i18n: file: ui/pages/partition.ui:100
 #. i18n: ectx: property (text), widget (QLabel, typeLabel)
-#: rc.cpp:339
+#: rc.cpp:342
 msgid "Type: "
 msgstr "類型："
 
 #. i18n: file: ui/pages/partition.ui:127
 #. i18n: ectx: property (text), widget (QLabel, filesystemLabel)
-#: rc.cpp:348
+#: rc.cpp:351
 msgid "Filesystem: "
 msgstr "檔案系統："
 
@@ -1095,62 +1169,53 @@ msgstr "檔案系統："
 #. i18n: ectx: property (text), widget (KPushButton, editPartitionOkButton)
 #. i18n: file: ui/widgets/avatardialog.ui:85
 #. i18n: ectx: property (text), widget (QPushButton, okButton)
-#: rc.cpp:351
-#: rc.cpp:447
+#: rc.cpp:354
+#: rc.cpp:450
 msgid "Ok"
 msgstr "確定"
 
-#. i18n: file: ui/pages/partition.ui:186
-#. i18n: ectx: property (text), widget (KPushButton, editPartitionCancelButton)
-#. i18n: file: ui/widgets/avatardialog.ui:114
-#. i18n: ectx: property (text), widget (QPushButton, cancelButton)
-#: rc.cpp:354
-#: rc.cpp:450
-msgid "Cancel"
-msgstr "取消"
-
-#. i18n: file: ui/pages/partition.ui:231
+#. i18n: file: ui/pages/partition.ui:234
 #. i18n: ectx: property (suffix), widget (KIntSpinBox, sizeSpinBox)
-#: rc.cpp:357
+#: rc.cpp:360
 msgid " MiB"
 msgstr " MiB"
 
-#. i18n: file: ui/pages/partition.ui:332
+#. i18n: file: ui/pages/partition.ui:341
 #. i18n: ectx: property (toolTip), widget (QPushButton, newPartTableButton)
-#: rc.cpp:366
+#: rc.cpp:369
 msgid "Create a new partition table on the selected device"
 msgstr "在所選的裝置上建立新的分割表"
 
-#. i18n: file: ui/pages/partition.ui:373
+#. i18n: file: ui/pages/partition.ui:382
 #. i18n: ectx: property (text), widget (QPushButton, deleteButton)
-#: rc.cpp:372
+#: rc.cpp:375
 msgid "Delete"
 msgstr "刪除"
 
-#. i18n: file: ui/pages/partition.ui:392
+#. i18n: file: ui/pages/partition.ui:401
 #. i18n: ectx: property (text), widget (QPushButton, formatButton)
-#: rc.cpp:375
+#: rc.cpp:378
 msgid "Format"
 msgstr "格式化"
 
-#. i18n: file: ui/pages/partition.ui:411
+#. i18n: file: ui/pages/partition.ui:420
 #. i18n: ectx: property (toolTip), widget (QPushButton, undoButton)
-#. i18n: file: ui/pages/partition.ui:414
+#. i18n: file: ui/pages/partition.ui:423
 #. i18n: ectx: property (text), widget (QPushButton, undoButton)
-#: rc.cpp:378
 #: rc.cpp:381
+#: rc.cpp:384
 msgid "Undo"
 msgstr "取消"
 
-#. i18n: file: ui/pages/partition.ui:430
+#. i18n: file: ui/pages/partition.ui:439
 #. i18n: ectx: property (toolTip), widget (QPushButton, unmountButton)
-#: rc.cpp:384
+#: rc.cpp:387
 msgid "Unmount the selected partition"
 msgstr "卸載所選的分割區"
 
 #. i18n: file: ui/pages/readyinstall.ui:51
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:387
+#: rc.cpp:390
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
@@ -1166,13 +1231,13 @@ msgstr ""
 
 #. i18n: file: ui/pages/readyinstall.ui:77
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:394
+#: rc.cpp:397
 msgid "The system will be installed with the following settings. Before continuing, please review your selections:\n"
 msgstr "將以下列的設定進行系統安裝。繼續下一步前請再次檢查您的選擇：\n"
 
 #. i18n: file: ui/pages/readyinstall.ui:147
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:398
+#: rc.cpp:401
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
@@ -1188,7 +1253,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/readyinstall.ui:211
 #. i18n: ectx: property (text), widget (QLabel, formatLabel)
-#: rc.cpp:405
+#: rc.cpp:408
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
@@ -1204,7 +1269,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/releasenotes.ui:47
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:415
+#: rc.cpp:418
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
@@ -1220,13 +1285,13 @@ msgstr ""
 
 #. i18n: file: ui/pages/releasenotes.ui:60
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:422
+#: rc.cpp:425
 msgid "Check out what's new, the known issues and general information about this version of Chakra. As always, you are encouraged to tell us what you think, either by visiting our forums or bug tracker."
 msgstr "看看這個版本 Chakra 的新聞、已知的問題和一般訊息。永遠鼓勵您藉由訪問我們的論壇或錯誤追蹤器來告訴我們您的感受。"
 
 #. i18n: file: ui/pages/usercreation.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:425
+#: rc.cpp:428
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
@@ -1242,79 +1307,79 @@ msgstr ""
 
 #. i18n: file: ui/pages/usercreation.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:432
+#: rc.cpp:435
 msgid "Enter at least one login name and password."
 msgstr "輸入至少一個登入名稱與密碼。"
 
 #. i18n: file: ui/pages/usercreation.ui:178
 #. i18n: ectx: property (toolTip), widget (QPushButton, addUser)
-#: rc.cpp:435
+#: rc.cpp:438
 msgid "Add another user account."
 msgstr "新增其他使用者帳號。"
 
 #. i18n: file: ui/pages/usercreation.ui:286
 #. i18n: ectx: property (text), widget (QLabel, hostname_extra_label)
-#: rc.cpp:438
+#: rc.cpp:441
 msgid "<small>This name will be used if you make the computer visible to others on a network.</small>"
 msgstr "<small>如果您不想讓本電腦對於網路上的其它電腦隱藏的話將使用此名稱。</small>"
 
 #. i18n: file: ui/pages/usercreation.ui:299
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:441
+#: rc.cpp:444
 msgid "...and, what is the name of this computer?"
 msgstr "...那麼，這臺電腦的名稱是什麼呢？"
 
 #. i18n: file: ui/widgets/avatardialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, AvatarDialog)
-#: rc.cpp:444
+#: rc.cpp:447
 msgid "Select an Avatar..."
 msgstr "選取個人圖示..."
 
 #. i18n: file: ui/widgets/userwidget.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:453
+#: rc.cpp:456
 msgid "Login: "
 msgstr "登入名稱："
 
 #. i18n: file: ui/widgets/userwidget.ui:56
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:456
+#: rc.cpp:459
 msgid "Password: "
 msgstr "密碼："
 
 #. i18n: file: ui/widgets/userwidget.ui:94
 #. i18n: ectx: property (toolTip), widget (QPushButton, userDetails)
-#: rc.cpp:459
+#: rc.cpp:462
 msgid "Include more information about this user."
 msgstr "包含更多關於此使用者的資訊。"
 
 #. i18n: file: ui/widgets/userwidget.ui:124
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:462
+#: rc.cpp:465
 msgid "Confirm Password:"
 msgstr "確認密碼："
 
 #. i18n: file: ui/widgets/userwidget.ui:146
 #. i18n: ectx: property (toolTip), widget (QPushButton, removeUser)
-#: rc.cpp:465
+#: rc.cpp:468
 msgid "Remove this user."
 msgstr "移除此使用者。"
 
 #. i18n: file: ui/widgets/userwidget.ui:264
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:468
+#: rc.cpp:471
 msgid "Name: "
 msgstr "名稱："
 
 #. i18n: file: ui/widgets/userwidget.ui:307
 #. i18n: ectx: property (text), widget (QCheckBox, autoLoginCheckBox)
-#: rc.cpp:471
+#: rc.cpp:474
 msgid "Login Automatically"
 msgstr "自動登入"
 
 #. i18n: file: ui/widgets/userwidget.ui:344
 #. i18n: ectx: property (text), widget (QCheckBox, rootUsesUserPwCheckBox)
-#: rc.cpp:474
+#: rc.cpp:477
 msgid ""
 "Use this password as \n"
 "the Administrator password"
@@ -1324,22 +1389,23 @@ msgstr ""
 
 #. i18n: file: ui/widgets/userwidget.ui:396
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:478
+#: rc.cpp:481
 msgid "Root Password:  "
 msgstr "Root 密碼："
 
 #. i18n: file: ui/widgets/userwidget.ui:406
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:481
+#: rc.cpp:484
 msgid "Confirm Root Password:  "
 msgstr "確認 Root 密碼："
 
-#: rc.cpp:482
+#: rc.cpp:485
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Cheng-Chia Tseng"
 
-#: rc.cpp:483
+#: rc.cpp:486
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "pswo10680@gmail.com"
+

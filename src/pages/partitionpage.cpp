@@ -55,6 +55,7 @@ QStringList s_mountPoints = QStringList() << "None" <<
                                              "/tmp" <<
                                              "/opt" <<
                                              "/etc" <<
+                                             "/boot" <<
                                              "swap" <<
                                              "Other...";
 
@@ -969,6 +970,22 @@ void PartitionPage::aboutToGoToNext()
 
                 PMHandler::instance()->addSectorToMountList(device, partition->firstSector(), text, m_toFormat[partition]);
             } else {
+                if (text == "/") {
+                    QString msg;
+
+                    msg.append(i18n("The partition you have chosen to mount as '/' is not marked for formatation. "
+                                    "This might create problems. Do you still want to continue without formating it?"));
+
+                    KDialog *dialog = new KDialog(this, Qt::FramelessWindowHint);
+                    bool retbool = true;
+                    dialog->setButtons(KDialog::Yes | KDialog::No);
+
+                    if (KMessageBox::createKMessageBox(dialog, KIcon("dialog-warning"), msg, QStringList(),
+                                       QString(), &retbool, KMessageBox::Notify) == KDialog::No) {
+                    PMHandler::instance()->clearMountList();
+                    return;
+                    }
+                }
                 PMHandler::instance()->addSectorToMountList(device, partition->firstSector(), text);
             }
         } else if (!text.isEmpty() && text != "None") {

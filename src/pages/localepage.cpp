@@ -303,7 +303,7 @@ bool LocalePage::validate()
     }
 
     m_install->setContinent(continentCombo->currentText());
-    m_install->setTimezone(regionCombo->currentText());
+    m_install->setTimezone(continentCombo->currentText()+"/"+regionCombo->currentText());
     m_install->setKDELangPack(m_allKDELangs.key(kdeLanguageCombo->currentText()));
 
     if (localeCombo->currentText().contains("utf-8", Qt::CaseInsensitive)) {

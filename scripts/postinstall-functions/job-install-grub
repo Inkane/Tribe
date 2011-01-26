@@ -32,25 +32,5 @@ root (hd${grub_device},${grub_partition})
 setup (hd${grub_device})
 quit
 EOF
-
-	msg "copy installation logs to target /var/log"
-
-        # fix no device.map bug
-        echo > ${mountpoint}/boot/grub/device.map
-
-	# last thing to do: copy installation logs to target
-
-	if [ -e "/tmp/installation.log" ] ; then
-		cp -v -f /tmp/installation.log ${mountpoint}/var/log/installation.log
-	fi
-
-	if [ -e "/tmp/initramfs.log" ] ; then
-		cp -v -f /tmp/initramfs.log ${mountpoint}/var/log/installation-initramfs.log
-	fi
-
-	if [ -e "/tmp/grub.log" ] ; then
-		cp -v -f /tmp/grub.log ${mountpoint}/var/log/installation-grub.log
-	fi
-
 	msg_job_done
 }

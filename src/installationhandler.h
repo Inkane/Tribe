@@ -97,6 +97,9 @@ class InstallationHandler : public QObject
         void setHostname(const QString &name) { m_hostname = name; }
         QString hostname() { return m_hostname; }
 
+        void setContinent(const QString &continent) { m_continent = continent; }
+        QString continent() { return m_continent; }
+
         void setTimezone(const QString &time) { m_timezone = time; }
         QString timezone() { return m_timezone; }
 
@@ -132,7 +135,7 @@ class InstallationHandler : public QObject
 
         void setRootDevice(const QString& s) { m_rootDevice = s; }
         QString rootDevice() { return m_rootDevice; }
-        
+
         QString m_postcommand;
 
     public slots:
@@ -214,6 +217,7 @@ class InstallationHandler : public QObject
         QStringList m_userAutoLoginList;
 
         QString m_hostname;
+        QString m_continent;
         QString m_timezone;
         QString m_locale;
         QString m_KDELangPack;

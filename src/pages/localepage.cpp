@@ -288,7 +288,7 @@ void LocalePage::zoomChanged(int)
     connect(zoomSlider, SIGNAL(valueChanged(int)), this, SLOT(zoom(int)));
 }
 
-void LocalePage::aboutToGoToNext()
+bool LocalePage::validate()
 {
     if (regionCombo->currentText().isEmpty()) {
         bool retbool;
@@ -299,7 +299,7 @@ void LocalePage::aboutToGoToNext()
         KMessageBox::createKMessageBox(dialog, QMessageBox::Warning,
                                         i18n("You need to select a timezone"),
                                         QStringList(), QString(), &retbool, KMessageBox::Notify);
-        return;
+        return false;
     }
 
     m_install->setContinent(continentCombo->currentText());
@@ -315,12 +315,19 @@ void LocalePage::aboutToGoToNext()
         m_install->setLocale(localeCombo->currentText());
     }
 
-    emit goToNextStep();
+    return true;
+}
+
+void LocalePage::aboutToGoToNext()
+{
+    if (validate())
+        emit goToNextStep();
 }
 
 void LocalePage::aboutToGoToPrevious()
 {
-    emit goToPreviousStep();
+    if (validate())
+        emit goToPreviousStep();
 }
 
 #include "localepage.moc"

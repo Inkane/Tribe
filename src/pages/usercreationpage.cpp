@@ -124,7 +124,7 @@ void UserCreationPage::updateScrollView()
     ui.scrollArea->ensureWidgetVisible(ui.addUser);
 }
 
-void UserCreationPage::aboutToGoToNext()
+bool UserCreationPage::validate()
 {
     QStringList loginList;
     QStringList passwordList;
@@ -147,12 +147,12 @@ void UserCreationPage::aboutToGoToNext()
             if (user->login.isEmpty()) {
                 KMessageBox::createKMessageBox(dialog, QMessageBox::Warning, i18n("You must give at least one login name."),
                                                QStringList(), QString(), &retbool, KMessageBox::Notify);
-                return;
+                return false;
             } else if (!user->rootPasswordsMatch) {
                 KMessageBox::createKMessageBox(dialog, QMessageBox::Warning, i18n("Root Passwords do not match..."),
                                                QStringList(), QString(), &retbool, KMessageBox::Notify);
-                return;
-            } 
+                return false;
+            }
 
             if (!user->rootPassword.isEmpty() && user->rootPasswordsMatch &&
                 user->useRootPw) {
@@ -165,15 +165,15 @@ void UserCreationPage::aboutToGoToNext()
         if ((user->password.isEmpty()) && (user->passwordsMatch == true)) {
             KMessageBox::createKMessageBox(dialog, QMessageBox::Warning, i18n("Passwords cannot be empty."),
                                            QStringList(), QString(), &retbool, KMessageBox::Notify);
-            return;
+            return false;
         } else if (!user->passwordsMatch) {
             KMessageBox::createKMessageBox(dialog, QMessageBox::Warning, i18n("Passwords do not match..."),
                                            QStringList(), QString(), &retbool, KMessageBox::Notify);
-            return;
+            return false;
         } else if (user->login.isEmpty()) {
             KMessageBox::createKMessageBox(dialog, QMessageBox::Warning, i18n("Login names cannot be empty."),
                                            QStringList(), QString(), &retbool, KMessageBox::Notify);
-            return;
+            return false;
         }
 
         loginList.append(user->login);
@@ -198,12 +198,19 @@ void UserCreationPage::aboutToGoToNext()
 
     m_handler->setHostname(ui.hostname->text());
 
-    emit goToNextStep();
+    return true;
+}
+
+void UserCreationPage::aboutToGoToNext()
+{
+    if (validate())
+        emit goToNextStep();
 }
 
 void UserCreationPage::aboutToGoToPrevious()
 {
-    emit goToPreviousStep();
+    if (validate())
+        emit goToPreviousStep();
 }
 
 void UserCreationPage::validateNext()

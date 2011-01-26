@@ -39,6 +39,8 @@ private slots:
 
     void updateAutoLogin(int);
 
+    bool validate();
+
     void validateNext();
 
     void updateScrollView();

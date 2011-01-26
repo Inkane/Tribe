@@ -127,9 +127,6 @@ class InstallationHandler : public QObject
         void setUserAutoLoginList(QStringList s) { m_userAutoLoginList = s; }
         QStringList userAutoLoginList() { return m_userAutoLoginList; }
 
-        void setUserAdminList(QStringList s) { m_userAdminList = s; }
-        QStringList userAdminList() { return m_userAdminList; }
-
         void setConfigurePacman(bool pac) { m_configurePacman = pac; }
         bool configurePacman() { return m_configurePacman; }
 

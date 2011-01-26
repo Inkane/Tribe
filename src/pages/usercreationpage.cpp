@@ -51,6 +51,34 @@ void UserCreationPage::createWidget()
     ui.verticalLayout->insertWidget(0, f);
     connect(f, SIGNAL(removeUserClicked(int)), this, SLOT(removeUserClicked(int)));
     connect(f, SIGNAL(autoLoginToggled(int)), this, SLOT(updateAutoLogin(int)));
+
+    if (!m_handler->userLoginList().isEmpty()) {
+        foreach (QString login, m_handler->userLoginList()) {
+            int i = m_userList.count() - 1;
+            QString password = m_handler->userPasswordList().at(i);
+            QString rootpassword = m_handler->userPasswordList().last();
+            QString autologin = m_handler->userAutoLoginList().at(i);
+            QString name = m_handler->userNameList().at(i);
+            QString avatar = m_handler->userAvatarList().at(i);
+
+            QString userootpw = "0";
+            if (password == rootpassword)
+                userootpw = "1";
+
+            m_userList.at(i)->setLogin(login);
+            m_userList.at(i)->setPassword(password);
+            m_userList.at(i)->setUseRootPassword(userootpw);
+            m_userList.at(i)->setRootPassword(rootpassword);
+            m_userList.at(i)->setAutoLogin(autologin);
+            m_userList.at(i)->setName(name);
+            m_userList.at(i)->setAvatar(avatar);
+
+            if (m_handler->userLoginList().count() > m_userList.count())
+                addUserClicked();
+        }
+
+        ui.hostname->setText(m_handler->hostname());
+    }
 }
 
 void UserCreationPage::addUserClicked()
@@ -76,7 +104,7 @@ void UserCreationPage::updateAutoLogin(int i)
     if (m_userList.at(i)->autoLogin) {
         foreach (UserWidget *user, m_userList) {
             if (user->number != i) {
-                user->setAutoLogin(false);
+                user->setAutoLogin("0");
             }
         }
     }
@@ -103,8 +131,7 @@ void UserCreationPage::aboutToGoToNext()
     QStringList nameList;
     QStringList avatarList;
     QStringList autoLoginList;
-    QStringList adminList;
-    
+
     QString rootPw;
 
     int n = 0;

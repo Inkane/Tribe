@@ -37,8 +37,15 @@ public:
 
     int number;
     void setNumber(int i) { number = i; }
-    
-    void setAutoLogin(bool);
+
+public slots:
+    void setLogin(const QString&);
+    void setPassword(const QString&);
+    void setRootPassword(const QString&);
+    void setAvatar(const QString&);
+    void setName(const QString&);
+    void setAutoLogin(const QString&);
+    void setUseRootPassword(const QString&);
 
 signals:
     void addUserClicked();
@@ -52,7 +59,6 @@ private slots:
     void emitRemove();
 
     void avatarClicked();
-    void setAvatar(QString);
     void autoLoginToggled();
     void useUserPwToggled();
 

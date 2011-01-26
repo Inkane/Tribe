@@ -58,7 +58,7 @@ UserWidget::UserWidget(int a_userNumber, QWidget* parent): QWidget(parent)
 
     connect(ui.userDetails, SIGNAL(clicked(bool)), this, SLOT(showDetails()));
     connect(ui.removeUser, SIGNAL(clicked(bool)), this, SLOT(emitRemove()));
-    
+
     connect(ui.nameLine, SIGNAL(textChanged(QString)), this, SLOT(testFields()));
 
     connect(ui.avatar, SIGNAL(clicked(bool)), this, SLOT(avatarClicked()));
@@ -69,7 +69,7 @@ UserWidget::UserWidget(int a_userNumber, QWidget* parent): QWidget(parent)
 
     connect(ui.rootPassLine, SIGNAL(textChanged(QString)), this, SLOT(testFields()));
     connect(ui.confirmRootPassLine, SIGNAL(textChanged(QString)), this, SLOT(testFields()));
-    
+
     connect(m_avatarDialog, SIGNAL(setAvatar(QString)), this, SLOT(setAvatar(QString)));
 }
 
@@ -78,13 +78,13 @@ UserWidget::~UserWidget()
 
 }
 
-void UserWidget::setAvatar(QString a)
+void UserWidget::setAvatar(const QString& avatar_)
 {
-    if (a == "z") {
-         
+    if (avatar_ == "z") {
+
     } else {
-        ui.avatar->setIcon(KIcon(a));
-        avatar = a;
+        ui.avatar->setIcon(KIcon(avatar_));
+        avatar = avatar_;
     }
 }
 
@@ -114,7 +114,7 @@ void UserWidget::testFields()
         ui.confirmPwCheck->setPixmap(QPixmap());
         passwordsMatch = false;
     }
-    
+
     if ((ui.rootPassLine->text() == ui.confirmRootPassLine->text()) &&
         (!ui.rootPassLine->text().isEmpty())) {
         ui.confirmRootPwCheck->setPixmap(QPixmap(":Images/images/green-check.png"));
@@ -144,12 +144,6 @@ void UserWidget::testFields()
     }
 }
 
-void UserWidget::setAutoLogin(bool b)
-{
-    ui.autoLoginCheckBox->setChecked(b);
-    autoLogin = b;
-}
-
 void UserWidget::avatarClicked()
 {
     m_avatarDialog->show();
@@ -171,6 +165,53 @@ void UserWidget::useUserPwToggled()
         useRootPw = true;
     } else {
         useRootPw = false;
+    }
+}
+
+void UserWidget::setLogin(const QString& login_)
+{
+    ui.loginLine->setText(login_);
+    login = login_;
+}
+
+void UserWidget::setName(const QString& name_)
+{
+    ui.nameLine->setText(name_);
+    name  = name_;
+}
+
+void UserWidget::setPassword(const QString& pass_)
+{
+    ui.passLine->setText(pass_);
+    ui.confirmPassLine->setText(pass_);
+    password = pass_;
+}
+
+void UserWidget::setRootPassword(const QString& pass_)
+{
+    ui.rootPassLine->setText(pass_);
+    ui.confirmRootPassLine->setText(pass_);
+    rootPassword = pass_;
+}
+
+void UserWidget::setUseRootPassword(const QString& useRootPw_)
+{
+    if (useRootPw_.toInt() > 0) {
+        ui.rootUsesUserPwCheckBox->setCheckState(Qt::Checked);
+    } else {
+        ui.rootUsesUserPwCheckBox->setCheckState(Qt::Unchecked);
+    }
+
+    useUserPwToggled();
+}
+
+void UserWidget::setAutoLogin(const QString& autologin_) {
+    if (autologin_.toInt() > 0) {
+        ui.autoLoginCheckBox->setCheckState(Qt::Checked);
+        autoLogin = true;
+    } else {
+        ui.autoLoginCheckBox->setCheckState(Qt::Unchecked);
+        autoLogin = false;
     }
 }
 

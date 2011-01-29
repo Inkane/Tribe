@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2011-01-23 19:11+0100\n"
+"POT-Creation-Date: 2011-01-29 13:58+0100\n"
 "PO-Revision-Date: 2011-01-25 15:31+0000\n"
 "Last-Translator: ivan <ivanblago1@gmail.com>\n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
@@ -132,15 +132,13 @@ msgstr "Инсталација завршена!"
 msgid ""
 "Tribe was not able to initialize needed directories. Something is very "
 "wrong..."
-msgstr ""
-"Трибе не може да покрене потребне директоријуме. Нешто није "
-"у реду..."
+msgstr "Трибе не може да покрене потребне директоријуме. Нешто није у реду..."
 
 #: src/installationhandler.cpp:609
 msgid "Could not mount %1"
 msgstr "Не може да монтира %1"
 
-#: src/installationhandler.h:167
+#: src/installationhandler.h:171
 msgid "No Further details given"
 msgstr "Није дато више детаља"
 
@@ -322,7 +320,7 @@ msgstr "Власнички NVidia драјвер"
 msgid "Accept license for: "
 msgstr "Прихвати лиценцу за:"
 
-#: src/pages/localepage.cpp:280
+#: src/pages/localepage.cpp:300
 msgid "You need to select a timezone"
 msgstr "Потребно је одабрати временску зону"
 
@@ -383,7 +381,7 @@ msgstr "Продужена"
 msgid "Primary"
 msgstr "Примарна"
 
-#: src/pages/partitionpage.cpp:957
+#: src/pages/partitionpage.cpp:956
 msgid ""
 "The partition you have chosen to mount as '/' is too small. It should have a "
 "capacity of at least %1 for a successful installation."
@@ -391,28 +389,27 @@ msgstr ""
 "Партиција коју желите да накачите као '/' је премала. Треба да буде "
 "капацитета најмање %1 за успешну инсталацију."
 
-#: src/pages/partitionpage.cpp:960 src/pages/partitionpage.cpp:990
+#: src/pages/partitionpage.cpp:959 src/pages/partitionpage.cpp:994
 msgid "Target's capacity not sufficient"
 msgstr "Циљани капацитет није довољан"
 
-#: src/pages/partitionpage.cpp:971
+#: src/pages/partitionpage.cpp:976
 msgid ""
 "The partition you have chosen to mount as '/' is not marked for formatation. "
 "This might create problems. Do you still want to continue without formating "
 "it?"
 msgstr ""
-"Партиција коју сте одабрали да накачите као '/' није означена за форматирање."
-" "
-"Ово може створити проблеме. Да ли и даље желите да наставите без "
-"форматирања?"
+"Партиција коју сте одабрали да накачите као '/' није означена за "
+"форматирање. Ово може створити проблеме. Да ли и даље желите да наставите "
+"без форматирања?"
 
-#: src/pages/partitionpage.cpp:988
+#: src/pages/partitionpage.cpp:992
 msgid ""
 "You have selected '%1' as a mountpoint, which is not valid. A valid "
 "mountpoint always starts with '/' and represents a directory on disk"
 msgstr ""
-"Одабрали сте '%1' као тачку качења, што није валидно. Валидна "
-"тачка качења увек почиње са '/'  и представља директоријум на диску"
+"Одабрали сте '%1' као тачку качења, што није валидно. Валидна тачка качења "
+"увек почиње са '/'  и представља директоријум на диску"
 
 #: src/pages/readyinstallpage.cpp:77
 msgid "New partition (%1) on %2"
@@ -431,26 +428,26 @@ msgid ""
 "The following partitions appear to be mounted: %1. To let the installation "
 "happen correctly, Tribe will now unmount them."
 msgstr ""
-"Следеће партиције изгледа да су монтиране: %1. Ради успешне "
-"инсталације Трибе ће их сада одкачити."
+"Следеће партиције изгледа да су монтиране: %1. Ради успешне инсталације "
+"Трибе ће их сада одкачити."
 
-#: src/pages/usercreationpage.cpp:121
+#: src/pages/usercreationpage.cpp:148
 msgid "You must give at least one login name."
 msgstr "Морате дати барем једно корисничко име."
 
-#: src/pages/usercreationpage.cpp:125
+#: src/pages/usercreationpage.cpp:152
 msgid "Root Passwords do not match..."
 msgstr "Корене лозинке се не поклапају..."
 
-#: src/pages/usercreationpage.cpp:139
+#: src/pages/usercreationpage.cpp:166
 msgid "Passwords cannot be empty."
 msgstr "Лозинка не може остати празна."
 
-#: src/pages/usercreationpage.cpp:143
+#: src/pages/usercreationpage.cpp:170
 msgid "Passwords do not match..."
 msgstr "Лозинке се не поклапају..."
 
-#: src/pages/usercreationpage.cpp:147
+#: src/pages/usercreationpage.cpp:174
 msgid "Login names cannot be empty."
 msgstr "Имена за логовање не могу бити празна."
 
@@ -739,8 +736,7 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Састав</span></p></"
-"body></html>"
+"size:22pt; font-weight:600; color:#ffffff;\">Састав</span></p></body></html>"
 
 #. i18n: file: ui/pages/config.ui:55
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -938,8 +934,8 @@ msgstr ""
 "баците поглед у  /tmp у живом систему или у /var/log  на инсталираном "
 "систему.\n"
 "\n"
-"Хвала што користите Chakra, ступите у контакт са нама на форумима, "
-"поделите мишљење, дајте савет;\n"
+"Хвала што користите Chakra, ступите у контакт са нама на форумима, поделите "
+"мишљење, дајте савет;\n"
 "Да поједноставимо: Умешајте се!  (http://chakra-project.org)\n"
 "\n"
 "Забавите се!\n"
@@ -1003,12 +999,11 @@ msgid ""
 "simply press the \"Next\" button. Otherwise check out the ramdisk options "
 "below and select the items you need for your system."
 msgstr ""
-"Ваша гвожђурија ће бити подешена током инсталације као и "
-"покретачко ramdisk окружење за покретање линукс језгра. "
-"Све би требало да протекне без инстервенција, али је могуће "
-"да ће вам требати посебне опције за покретање. Ако сте несигурни шта "
-"ово значи, само кликните на дугме Следеће. У супротном подесите "
-"ramdisk опције испод и одаберите неопходно за ваш систем."
+"Ваша гвожђурија ће бити подешена током инсталације као и покретачко ramdisk "
+"окружење за покретање линукс језгра. Све би требало да протекне без "
+"инстервенција, али је могуће да ће вам требати посебне опције за покретање. "
+"Ако сте несигурни шта ово значи, само кликните на дугме Следеће. У супротном "
+"подесите ramdisk опције испод и одаберите неопходно за ваш систем."
 
 #. i18n: file: ui/pages/init.ui:81
 #. i18n: ectx: property (text), widget (QPushButton, pushButton)
@@ -1200,8 +1195,7 @@ msgstr ""
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
 "style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
 "color:#eeeeee;\"> Запамтите:</span><span style=\" font-family:'Bitstream "
-"Vera "
-"Sans'; font-size:8pt; font-weight:536;\"> </span><span style=\" font-"
+"Vera Sans'; font-size:8pt; font-weight:536;\"> </span><span style=\" font-"
 "family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#ff0000;"
 "\">ОВО ЈЕ АЛФА СОФТВЕР, И МОЖЕ ДА ПОЈЕДЕ ВАШЕГ ХРЧКА</span></p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
@@ -1250,10 +1244,10 @@ msgid ""
 "licenses. If you choose against a license, the installer will try to use a "
 "free solution (if one is available)."
 msgstr ""
-"Chakra укључује неки власнички софтвер као што су драјвери, медиа "
-"прикључци и фонтови. Да их инсталирате, прочитајте и прихватите "
-"њихове лиценце. Ако одбијете лиценцу, инсталер ће покушати са "
-"слободним решењем (ако је доступно)."
+"Chakra укључује неки власнички софтвер као што су драјвери, медиа прикључци "
+"и фонтови. Да их инсталирате, прочитајте и прихватите њихове лиценце. Ако "
+"одбијете лиценцу, инсталер ће покушати са слободним решењем (ако је "
+"доступно)."
 
 #. i18n: file: ui/pages/license.ui:74
 #. i18n: ectx: property (text), widget (QLabel, licenseLabel)
@@ -1316,10 +1310,10 @@ msgid ""
 "settings at the bottom of the page. If you cant find your region or city on "
 "the globe, you can zoom in by using the slider on the left."
 msgstr ""
-"Молим одаберите најближи град на мапи да би инсталер предложио "
-"локалитет и временску зону за вас. Можете преподесити предложено "
-"на дну странице. Ако не можете да пронађете регион или град на "
-"мапи, можете је зумирати коришћењем клизача са леве стране."
+"Молим одаберите најближи град на мапи да би инсталер предложио локалитет и "
+"временску зону за вас. Можете преподесити предложено на дну странице. Ако не "
+"можете да пронађете регион или град на мапи, можете је зумирати коришћењем "
+"клизача са леве стране."
 
 #. i18n: file: ui/pages/locale.ui:69
 #. i18n: ectx: property (clickMessage), widget (KLineEdit, locationsSearch)
@@ -1498,8 +1492,8 @@ msgid ""
 "The system will be installed with the following settings. Before continuing, "
 "please review your selections:\n"
 msgstr ""
-"Систем ће бити инсталиран са следећим поставкама. Пре него наставите, "
-"молим прегледајте учињено:\n"
+"Систем ће бити инсталиран са следећим поставкама. Пре него наставите, молим "
+"прегледајте учињено:\n"
 
 #. i18n: file: ui/pages/readyinstall.ui:147
 #. i18n: ectx: property (text), widget (QLabel, label_4)
@@ -1556,8 +1550,7 @@ msgstr ""
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
 "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">Следеће партиције ће бити форматиране:</span></p></body></"
-"html>"
+"#eeeeee;\">Следеће партиције ће бити форматиране:</span></p></body></html>"
 
 #. i18n: file: ui/pages/releasenotes.ui:47
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1595,9 +1588,9 @@ msgid ""
 "version of Chakra. As always, you are encouraged to tell us what you think, "
 "either by visiting our forums or bug tracker."
 msgstr ""
-"Видите шта је ново, позната питања и генералне информације о "
-"овој верзији Chakra.  Као и увек, охрабрени сте да изнесете мишљење, "
-"посећивањем форума или пријављивањем буба."
+"Видите шта је ново, позната питања и генералне информације о овој верзији "
+"Chakra.  Као и увек, охрабрени сте да изнесете мишљење, посећивањем форума "
+"или пријављивањем буба."
 
 #. i18n: file: ui/pages/usercreation.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1624,9 +1617,8 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Направи кориснике</span></p><"
-"/body></"
-"html>"
+"size:22pt; font-weight:600; color:#ffffff;\">Направи кориснике</span></p></"
+"body></html>"
 
 #. i18n: file: ui/pages/usercreation.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -1647,8 +1639,8 @@ msgid ""
 "<small>This name will be used if you make the computer visible to others on "
 "a network.</small>"
 msgstr ""
-"<small>Ово име ће бити коришћено ако означите ваш рачунар "
-"видљивим на мрежи.</small>"
+"<small>Ово име ће бити коришћено ако означите ваш рачунар видљивим на мрежи."
+"</small>"
 
 #. i18n: file: ui/pages/usercreation.ui:299
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -1729,12 +1721,9 @@ msgstr "Потврдите корену лозинку:"
 #: rc.cpp:485
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
-"Иван Благојевић "
-"Жељана Благојевић"
+msgstr "Иван Благојевић Жељана Благојевић"
 
 #: rc.cpp:486
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "ivanblago1@gmail.com"
-

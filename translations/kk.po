@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: trunk\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2011-01-23 19:11+0100\n"
+"POT-Creation-Date: 2011-01-29 13:58+0100\n"
 "PO-Revision-Date: 2010-02-20 22:35+0600\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
@@ -159,7 +159,7 @@ msgstr ""
 msgid "Could not mount %1"
 msgstr "%1 тіркеу мүмкін емес"
 
-#: src/installationhandler.h:167
+#: src/installationhandler.h:171
 msgid "No Further details given"
 msgstr "Көбірек білу мүмкін емес"
 
@@ -348,7 +348,7 @@ msgstr "Проприетарлы NVidia драйвері"
 msgid "Accept license for: "
 msgstr "Келесі үшін лицензия қабылдау: "
 
-#: src/pages/localepage.cpp:280
+#: src/pages/localepage.cpp:300
 #, fuzzy
 msgid "You need to select a timezone"
 msgstr "Уақыт белдеуін таңдауға тиістісіз."
@@ -408,24 +408,24 @@ msgstr ""
 msgid "Primary"
 msgstr ""
 
-#: src/pages/partitionpage.cpp:957
+#: src/pages/partitionpage.cpp:956
 msgid ""
 "The partition you have chosen to mount as '/' is too small. It should have a "
 "capacity of at least %1 for a successful installation."
 msgstr ""
 
-#: src/pages/partitionpage.cpp:960 src/pages/partitionpage.cpp:990
+#: src/pages/partitionpage.cpp:959 src/pages/partitionpage.cpp:994
 msgid "Target's capacity not sufficient"
 msgstr ""
 
-#: src/pages/partitionpage.cpp:971
+#: src/pages/partitionpage.cpp:976
 msgid ""
 "The partition you have chosen to mount as '/' is not marked for formatation. "
 "This might create problems. Do you still want to continue without formating "
 "it?"
 msgstr ""
 
-#: src/pages/partitionpage.cpp:988
+#: src/pages/partitionpage.cpp:992
 msgid ""
 "You have selected '%1' as a mountpoint, which is not valid. A valid "
 "mountpoint always starts with '/' and represents a directory on disk"
@@ -452,26 +452,26 @@ msgstr ""
 "Келесі бөлімдер тіркелген сияқты: %1. Орнату үрдісі дұрыс өту үшін, Tribe "
 "қазір оларды тіркеуден босатады."
 
-#: src/pages/usercreationpage.cpp:121
+#: src/pages/usercreationpage.cpp:148
 msgid "You must give at least one login name."
 msgstr ""
 
-#: src/pages/usercreationpage.cpp:125
+#: src/pages/usercreationpage.cpp:152
 #, fuzzy
 msgid "Root Passwords do not match..."
 msgstr "Парольдер өзара сәйкес келмейді"
 
-#: src/pages/usercreationpage.cpp:139
+#: src/pages/usercreationpage.cpp:166
 #, fuzzy
 msgid "Passwords cannot be empty."
 msgstr "Пароль бос"
 
-#: src/pages/usercreationpage.cpp:143
+#: src/pages/usercreationpage.cpp:170
 #, fuzzy
 msgid "Passwords do not match..."
 msgstr "Парольдер өзара сәйкес келмейді"
 
-#: src/pages/usercreationpage.cpp:147
+#: src/pages/usercreationpage.cpp:174
 msgid "Login names cannot be empty."
 msgstr ""
 

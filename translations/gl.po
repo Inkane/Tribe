@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2011-01-23 19:11+0100\n"
+"POT-Creation-Date: 2011-01-29 13:58+0100\n"
 "PO-Revision-Date: 2011-01-24 15:47+0100\n"
 "Last-Translator: Adrián Chaves Fernández (Gallaecio) <adriyetichaves@gmail."
 "com>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 1.2\n"
-"Language: gl"
+"Language: gl\n"
 
 #: src/installationhandler.cpp:86
 msgid "Tribe was not able to initialize needed path: "
@@ -145,7 +145,7 @@ msgstr ""
 msgid "Could not mount %1"
 msgstr "Non se puido montar «%1»."
 
-#: src/installationhandler.h:167
+#: src/installationhandler.h:171
 msgid "No Further details given"
 msgstr "Non hai máis información ao respecto."
 
@@ -327,7 +327,7 @@ msgstr "Controlador privativo de NVidia"
 msgid "Accept license for: "
 msgstr "Aceptar a licenza de: "
 
-#: src/pages/localepage.cpp:280
+#: src/pages/localepage.cpp:300
 msgid "You need to select a timezone"
 msgstr "Debe escoller un fuso horario."
 
@@ -390,7 +390,7 @@ msgstr "Estendida"
 msgid "Primary"
 msgstr "Primaria"
 
-#: src/pages/partitionpage.cpp:957
+#: src/pages/partitionpage.cpp:956
 msgid ""
 "The partition you have chosen to mount as '/' is too small. It should have a "
 "capacity of at least %1 for a successful installation."
@@ -399,21 +399,21 @@ msgstr ""
 "polo menos unha capacidade de %1 para que a instalación poda efectuarse "
 "correctamente."
 
-#: src/pages/partitionpage.cpp:960 src/pages/partitionpage.cpp:990
+#: src/pages/partitionpage.cpp:959 src/pages/partitionpage.cpp:994
 msgid "Target's capacity not sufficient"
 msgstr "A capacidade do dispositivo escollido non abonda."
 
-#: src/pages/partitionpage.cpp:971
+#: src/pages/partitionpage.cpp:976
 msgid ""
 "The partition you have chosen to mount as '/' is not marked for formatation. "
 "This might create problems. Do you still want to continue without formating "
 "it?"
 msgstr ""
 "A partición que escolleu para montar como «/» non está marcada para "
-"formatarse, "
-"o cal pode dar problemas. Está seguro de que quere continuar sen formatala?"
+"formatarse, o cal pode dar problemas. Está seguro de que quere continuar sen "
+"formatala?"
 
-#: src/pages/partitionpage.cpp:988
+#: src/pages/partitionpage.cpp:992
 msgid ""
 "You have selected '%1' as a mountpoint, which is not valid. A valid "
 "mountpoint always starts with '/' and represents a directory on disk"
@@ -442,23 +442,23 @@ msgstr ""
 "As seguintes particións parecen estar montadas: %1. Tribe procederá agora a "
 "desmontalas para que a instalación se efectúe correctamente."
 
-#: src/pages/usercreationpage.cpp:121
+#: src/pages/usercreationpage.cpp:148
 msgid "You must give at least one login name."
 msgstr "Debe indicar polo menos un nome de usuario."
 
-#: src/pages/usercreationpage.cpp:125
+#: src/pages/usercreationpage.cpp:152
 msgid "Root Passwords do not match..."
 msgstr "Os contrasinais de administrador non coinciden..."
 
-#: src/pages/usercreationpage.cpp:139
+#: src/pages/usercreationpage.cpp:166
 msgid "Passwords cannot be empty."
 msgstr "O contrasinal non pode estar baleiro."
 
-#: src/pages/usercreationpage.cpp:143
+#: src/pages/usercreationpage.cpp:170
 msgid "Passwords do not match..."
 msgstr "Os contrasinais non coinciden..."
 
-#: src/pages/usercreationpage.cpp:147
+#: src/pages/usercreationpage.cpp:174
 msgid "Login names cannot be empty."
 msgstr "Non pode deixar baleiro o campo do nome de usuario."
 
@@ -755,8 +755,8 @@ msgstr ""
 msgid ""
 "Now that you have a Chakra install, you can now configure it to your liking."
 msgstr ""
-"Agora que xa ten Chakra instalada pode aproveitar para configurala e adaptala "
-"ás súas preferencias."
+"Agora que xa ten Chakra instalada pode aproveitar para configurala e "
+"adaptala ás súas preferencias."
 
 #. i18n: file: ui/pages/config.ui:95
 #. i18n: ectx: property (text), widget (QPushButton, installPkgzButton)
@@ -1748,5 +1748,3 @@ msgstr "Adrián Chaves Fernández (Gallaecio)."
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "adriyetichaves@gmail.com"
-
-

@@ -940,10 +940,7 @@ QTreeWidgetItem* PartitionPage::createItem(const Partition* p, Device *dev)
 
 void PartitionPage::aboutToGoToNext()
 {
-    if (m_ui->treeWidget->selectedItems().isEmpty()) {
-        return;
-    }
-
+    bool foundRoot = false;
     QTreeWidgetItemIterator it(m_ui->treeWidget);
     while (*it) {
         QString text = (*it)->data(0, MOUNTPOINT_ROLE).toString();
@@ -953,18 +950,24 @@ void PartitionPage::aboutToGoToNext()
             Device *device = m_ui->treeWidget->selectedItems().first()->data(0, DEVICE_ROLE).value<Device*>();
 
             // If '/' is being considered, check target capacity.
-            if (text == "/" && partition->capacity() < InstallationHandler::instance()->minSizeForTarget()) {
+            if (text == "/") {
+                foundRoot = true;
+                if (partition->capacity() < InstallationHandler::instance()->minSizeForTarget()) {
                 KMessageBox::error(this, i18n("The partition you have chosen to mount as '/' is too small. It should "
                                               "have a capacity of at least %1 for a successful installation.",
                                               KIO::convertSize(InstallationHandler::instance()->minSizeForTarget())),
                                    i18n("Target's capacity not sufficient"));
                 PMHandler::instance()->clearMountList();
                 return;
+                }
             }
 
             if (m_toFormat.contains(partition)) {
-                if (text == "/")
+                if (text == "/") {
                     m_install->setRootDevice(QString(partition->devicePath()).left(-1));
+                    foundRoot = true;
+                }
+
                 PMHandler::instance()->addSectorToMountList(device, partition->firstSector(), text, m_toFormat[partition]);
             } else {
                 if (text == "/") {
@@ -995,6 +998,9 @@ void PartitionPage::aboutToGoToNext()
 
         ++it;
     }
+
+    if (!foundRoot)
+        return;   /// todo: give a msgbox
 
     s_partitionToMountPoint.clear();
 

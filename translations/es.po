@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2011-01-23 19:11+0100\n"
+"POT-Creation-Date: 2011-01-29 13:58+0100\n"
 "PO-Revision-Date: 2010-12-09 00:39+0100\n"
 "Last-Translator: Adrián Chaves Fernández (Gallaecio) <adriyetichaves@gmail."
 "com>\n"
@@ -148,7 +148,7 @@ msgstr ""
 msgid "Could not mount %1"
 msgstr "No se pudo montar «%1»."
 
-#: src/installationhandler.h:167
+#: src/installationhandler.h:171
 msgid "No Further details given"
 msgstr "No hay más información al respecto."
 
@@ -334,7 +334,7 @@ msgstr "Controlador privativo de NVidia"
 msgid "Accept license for: "
 msgstr "Aceptar la licencia de: "
 
-#: src/pages/localepage.cpp:280
+#: src/pages/localepage.cpp:300
 msgid "You need to select a timezone"
 msgstr "Debe seleccionar una zona horaria"
 
@@ -397,7 +397,7 @@ msgstr "Extendida"
 msgid "Primary"
 msgstr "Primaria"
 
-#: src/pages/partitionpage.cpp:957
+#: src/pages/partitionpage.cpp:956
 msgid ""
 "The partition you have chosen to mount as '/' is too small. It should have a "
 "capacity of at least %1 for a successful installation."
@@ -405,18 +405,18 @@ msgstr ""
 "La partición escogida para montar como «/» es demasiado pequeña. Debería ser "
 "de por lo menos %1 para que la instalación pueda llevarse a cabo."
 
-#: src/pages/partitionpage.cpp:960 src/pages/partitionpage.cpp:990
+#: src/pages/partitionpage.cpp:959 src/pages/partitionpage.cpp:994
 msgid "Target's capacity not sufficient"
 msgstr "La capacidad de la partición seleccionada no es suficiente."
 
-#: src/pages/partitionpage.cpp:971
+#: src/pages/partitionpage.cpp:976
 msgid ""
 "The partition you have chosen to mount as '/' is not marked for formatation. "
 "This might create problems. Do you still want to continue without formating "
 "it?"
 msgstr ""
 
-#: src/pages/partitionpage.cpp:988
+#: src/pages/partitionpage.cpp:992
 msgid ""
 "You have selected '%1' as a mountpoint, which is not valid. A valid "
 "mountpoint always starts with '/' and represents a directory on disk"
@@ -445,23 +445,23 @@ msgstr ""
 "Las siguientes particiones parecen estar montadas: %1. Tribe procederá ahora "
 "a desmontarlas para que la instalación se efectúe sin problemas."
 
-#: src/pages/usercreationpage.cpp:121
+#: src/pages/usercreationpage.cpp:148
 msgid "You must give at least one login name."
 msgstr "Debe indicar por lo menos un nombre de usuario."
 
-#: src/pages/usercreationpage.cpp:125
+#: src/pages/usercreationpage.cpp:152
 msgid "Root Passwords do not match..."
 msgstr "Las contraseñas de administrador no coinciden."
 
-#: src/pages/usercreationpage.cpp:139
+#: src/pages/usercreationpage.cpp:166
 msgid "Passwords cannot be empty."
 msgstr "No puede dejar el campo de la contraseña vacío."
 
-#: src/pages/usercreationpage.cpp:143
+#: src/pages/usercreationpage.cpp:170
 msgid "Passwords do not match..."
 msgstr "Las contraseñas no coinciden."
 
-#: src/pages/usercreationpage.cpp:147
+#: src/pages/usercreationpage.cpp:174
 msgid "Login names cannot be empty."
 msgstr "No puede dejar vacío el campo del nombre de usuario."
 

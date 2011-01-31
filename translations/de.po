@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2011-01-23 19:11+0100\n"
+"POT-Creation-Date: 2011-01-29 13:58+0100\n"
 "PO-Revision-Date: 2011-01-23 19:34+0100\n"
 "Last-Translator: Phil Miller <philm@chakra-project.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -143,7 +143,7 @@ msgstr ""
 msgid "Could not mount %1"
 msgstr "%1 konnte nicht eingebunden werden"
 
-#: src/installationhandler.h:167
+#: src/installationhandler.h:171
 msgid "No Further details given"
 msgstr "Keine weiteren Details angegeben"
 
@@ -323,7 +323,7 @@ msgstr "Proprietärer NVidia-Treiber"
 msgid "Accept license for: "
 msgstr "Lizenz akzeptieren für: "
 
-#: src/pages/localepage.cpp:280
+#: src/pages/localepage.cpp:300
 msgid "You need to select a timezone"
 msgstr "Sie müssen eine Zeitzone auswählen. "
 
@@ -386,7 +386,7 @@ msgstr "Erweitert"
 msgid "Primary"
 msgstr "Primär"
 
-#: src/pages/partitionpage.cpp:957
+#: src/pages/partitionpage.cpp:956
 msgid ""
 "The partition you have chosen to mount as '/' is too small. It should have a "
 "capacity of at least %1 for a successful installation."
@@ -395,22 +395,21 @@ msgstr ""
 "zumindest %1 freien Speicher enthalten um eine Installation durchführen zu "
 "können."
 
-#: src/pages/partitionpage.cpp:960 src/pages/partitionpage.cpp:990
+#: src/pages/partitionpage.cpp:959 src/pages/partitionpage.cpp:994
 msgid "Target's capacity not sufficient"
 msgstr "Zielgröße nicht ausreichend"
 
-#: src/pages/partitionpage.cpp:971
+#: src/pages/partitionpage.cpp:976
 msgid ""
 "The partition you have chosen to mount as '/' is not marked for formatation. "
 "This might create problems. Do you still want to continue without formating "
 "it?"
 msgstr ""
 "Die Partition welche Sie als Einbindungspunkt '/' auswählten ist nicht zur "
-"Formatierung vorgesehen. "
-"Dies könnte Probleme verursachen. Wollen Sie denoch fortfahren ohne diese zu "
-"formatieren?"
+"Formatierung vorgesehen. Dies könnte Probleme verursachen. Wollen Sie denoch "
+"fortfahren ohne diese zu formatieren?"
 
-#: src/pages/partitionpage.cpp:988
+#: src/pages/partitionpage.cpp:992
 msgid ""
 "You have selected '%1' as a mountpoint, which is not valid. A valid "
 "mountpoint always starts with '/' and represents a directory on disk"
@@ -439,23 +438,23 @@ msgstr ""
 "Folgende Partitionen scheinen eingebunden zu sein: %1. Um die Installation "
 "fehlerfrei zu starten, wird Tribe die Einbindungen nun lösen. "
 
-#: src/pages/usercreationpage.cpp:121
+#: src/pages/usercreationpage.cpp:148
 msgid "You must give at least one login name."
 msgstr "Sie müssen zumindest einen Benutzernamen eingeben."
 
-#: src/pages/usercreationpage.cpp:125
+#: src/pages/usercreationpage.cpp:152
 msgid "Root Passwords do not match..."
 msgstr "Root-Passwörter stimmen nicht überein"
 
-#: src/pages/usercreationpage.cpp:139
+#: src/pages/usercreationpage.cpp:166
 msgid "Passwords cannot be empty."
 msgstr "Passwort ist leer "
 
-#: src/pages/usercreationpage.cpp:143
+#: src/pages/usercreationpage.cpp:170
 msgid "Passwords do not match..."
 msgstr "Passwörter stimmen nicht überein "
 
-#: src/pages/usercreationpage.cpp:147
+#: src/pages/usercreationpage.cpp:174
 msgid "Login names cannot be empty."
 msgstr "Benutzername kann nicht leer sein."
 
@@ -1418,10 +1417,9 @@ msgid ""
 "partitions are not explicitly formatted."
 msgstr ""
 "Wählen Sie einen Einbindungspunkt für Ihre Partitionen aus. Keine "
-"permanenten "
-"Veränderungen werden an ihrer Festplatte vorgenommen wenn Sie auf \"Weiter\" "
-"klicken. "
-"Notiz: Ausgewählte Partitionen sind nicht ausdrücklich formatiert."
+"permanenten Veränderungen werden an ihrer Festplatte vorgenommen wenn Sie "
+"auf \"Weiter\" klicken. Notiz: Ausgewählte Partitionen sind nicht "
+"ausdrücklich formatiert."
 
 #. i18n: file: ui/pages/partition.ui:100
 #. i18n: ectx: property (text), widget (QLabel, typeLabel)
@@ -1752,4 +1750,3 @@ msgstr "Phil Miller"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "philm@chakra-project.org"
-

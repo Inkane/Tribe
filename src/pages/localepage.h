@@ -38,21 +38,27 @@ public:
     LocalePage(QWidget *parent = 0);
     virtual ~LocalePage();
 
-    bool eventFilter(QObject * object, QEvent * event);
+    bool eventFilter(QObject *object, QEvent *event);
 
 private slots:
     void createWidget();
+
     void zoom(int value);
     void zoomChanged(int value);
+
     void continentChanged(int index);
     void regionChanged(int index);
     void updateLocales();
+
+    bool validate();
+
     void aboutToGoToPrevious();
     void aboutToGoToNext();
 
 private:
+    InstallationHandler *m_install;
+
     QList<QStringList> locales;
-    InstallationHandler * m_install;
     QStringList m_allLocales;
     QHash<QString, QString> m_allKDELangs;
     QHash<QString, QStringList> m_allTimezones;

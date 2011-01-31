@@ -1,161 +1,160 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
-# ivan <ivanblago1@gmail.com>, 2010.
+# ivan <ivanblago1@gmail.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2011-01-23 19:11+0100\n"
-"PO-Revision-Date: 2010-12-31 19:06+0000\n"
+"POT-Creation-Date: 2011-01-29 13:58+0100\n"
+"PO-Revision-Date: 2011-01-25 15:31+0000\n"
 "Last-Translator: ivan <ivanblago1@gmail.com>\n"
-"Language-Team: Serbian <kde-i18n-doc@kde.org>\n"
+"Language-Team: American English <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.1\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/installationhandler.cpp:86
 msgid "Tribe was not able to initialize needed path: "
-msgstr "Tribe ne može da pokrene potrebnu putanju:"
+msgstr "Трибе не може да покрене потребну путању:"
 
 #: src/installationhandler.cpp:86
 msgid " , please resolve the issue, and try again."
-msgstr ", molim rešite problem, i pokušajte ponovo."
+msgstr ",молим да решите проблем и покушате поново."
 
 #: src/installationhandler.cpp:148
 msgid "Installing the system ..."
-msgstr "Instaliranje sistema ..."
+msgstr "Инсталирање система ..."
 
 #: src/installationhandler.cpp:176
 msgid "Mounting partitions..."
-msgstr "Montiranje particija..."
+msgstr "Монтирање партиција..."
 
 #: src/installationhandler.cpp:184
 msgid "Preparing installation..."
-msgstr "Priprema instalacije..."
+msgstr "Припрема за инсталацију..."
 
 #: src/installationhandler.cpp:204
 msgid "Error copying files"
-msgstr "Greška pri kopiranju fajlova"
+msgstr "Грешка при копирању фајлова"
 
 #: src/installationhandler.cpp:207
 msgid "Removing packages whose license has been declined ..."
-msgstr "Uklanjanje paketa čija dozvola nije odabrana ..."
+msgstr "Уклањање пакета који нису прихваћени ..."
 
 #: src/installationhandler.cpp:245
 msgid "Initializing target ..."
-msgstr "Pokretanje cilja ..."
+msgstr "Покретање потребног ..."
 
 #: src/installationhandler.cpp:336
 msgid "Please wait, configuring the new system ..."
-msgstr "Molim sačekajte, podešavam novi sistem ..."
+msgstr "Молим чекајте, конфигурација новог система ..."
 
 #: src/installationhandler.cpp:415
 msgid "Error in Postinstall script. See log for more details"
-msgstr "Greška u Postinstall skripti. Vidite log fajl za više detalja"
+msgstr "Грешка у Postinstall скрипти. Видите запис за више детаља"
 
 #: src/installationhandler.cpp:424
 msgid "Creating user accounts ..."
-msgstr "Pravljenje korisničkih naloga ..."
+msgstr "Прављење корисничких налога ..."
 
 #: src/installationhandler.cpp:427
 msgid "Configuring software management..."
-msgstr "Podešavanje softverske organizacije..."
+msgstr "Подешавање софтверске организације..."
 
 #: src/installationhandler.cpp:431
 msgid "Removing unused packages..."
-msgstr "Uklanjanje nepotrebnih paketa..."
+msgstr "Уклањање некоришћених пакета..."
 
 #: src/installationhandler.cpp:435
 msgid "Installing additional packages..."
-msgstr "Instaliranje dodatnih paketa..."
+msgstr "Инсталирање додатних пакета..."
 
 #: src/installationhandler.cpp:439
 msgid "Configuring the display..."
-msgstr "Podešavanje ekrana..."
+msgstr "Подешавање монитора..."
 
 #: src/installationhandler.cpp:443
 msgid "Downloading and installing localization packages..."
-msgstr "Preuzimanje i instalacija paketa lokalizacije..."
+msgstr "Преузимање и инсталирање пакета локализације..."
 
 #: src/installationhandler.cpp:447
 msgid "Downloading and installing documentation packages..."
-msgstr "Preuzimanje i instaliranje paketa dokumentacije..."
+msgstr "Преузимање и инсталирање пакета документације..."
 
 #: src/installationhandler.cpp:451
 msgid "Setting up localization..."
-msgstr "Podešavanje lokalizacije..."
+msgstr "Подешавање локализације..."
 
 #: src/installationhandler.cpp:455
 msgid "Creating daemon configuration..."
-msgstr "Podešavanje demona..."
+msgstr "Прављење демон састава..."
 
 #: src/installationhandler.cpp:459
 msgid "Creating network configuration..."
-msgstr "Pravljenje mrežnih podešavanja..."
+msgstr "Прављење мрежног састава..."
 
 #: src/installationhandler.cpp:463
 msgid "Creating fstab..."
-msgstr "Pravljenje fstab..."
+msgstr "Прављење fstab..."
 
 #: src/installationhandler.cpp:470
 msgid "Configuring hardware..."
-msgstr "Podešavanje hardvera..."
+msgstr "Подeшавање гвожђурије..."
 
 #: src/installationhandler.cpp:474
 msgid "Creating initial ramdisk images..."
-msgstr "Pravljenje pokretačkih ramdisk slika..."
+msgstr "Прављење покретачких ramdisk слика..."
 
 #: src/installationhandler.cpp:478
 msgid "Generating locales..."
-msgstr "Generisanje lokalizacije..."
+msgstr "Генерисање локализације..."
 
 #: src/installationhandler.cpp:482
 msgid "Removing unused localizations..."
-msgstr "Uklanjanje neiskorišćenih lokalizacija..."
+msgstr "Уклањање некоришћених локализација..."
 
 #: src/installationhandler.cpp:486
 msgid "Removing unused drivers..."
-msgstr "Uklanjanje neiskorišćenih drajvera..."
+msgstr "Уклањање некоришћених драјвера..."
 
 #: src/installationhandler.cpp:490
 msgid "Finishing up..."
-msgstr "Završavam..."
+msgstr "Привођење крају..."
 
 #: src/installationhandler.cpp:494
 msgid "Installation complete!"
-msgstr "Instalacija je završena!"
+msgstr "Инсталација завршена!"
 
 #: src/installationhandler.cpp:585
 msgid ""
 "Tribe was not able to initialize needed directories. Something is very "
 "wrong..."
-msgstr "Tribe ne može da pokrene potrebne direktorijume. Nešto nije u redu..."
+msgstr "Трибе не може да покрене потребне директоријуме. Нешто није у реду..."
 
 #: src/installationhandler.cpp:609
 msgid "Could not mount %1"
-msgstr "Ne mogu da montiram %1"
+msgstr "Не може да монтира %1"
 
-#: src/installationhandler.h:167
+#: src/installationhandler.h:171
 msgid "No Further details given"
-msgstr "Nije dato više detalja"
+msgstr "Није дато више детаља"
 
 #. i18n: file: ui/pages/base.ui:20
 #. i18n: ectx: property (windowTitle), widget (QWidget, Base)
 #: src/main.cpp:42 rc.cpp:3
 msgid "Tribe"
-msgstr "Tribe"
+msgstr "Трибе"
 
 #: src/main.cpp:43
 msgid "Graphical Installer for Chakra"
-msgstr "Grafički instaler Čakre"
+msgstr "Графички инсталер за Chakra"
 
 #: src/main.cpp:44
 msgid "(c) 2008 - 2010 the Chakra Development Team"
-msgstr "(c) 2008 - 2010 Čakra Razvojni Tim"
+msgstr "(c) 2008 - 2010 Chakra razvojni tim "
 
 #: src/main.cpp:44
 msgid "chakra@chakra-project.org"
@@ -175,7 +174,7 @@ msgstr "Lukas Appelhans"
 
 #: src/main.cpp:47 src/main.cpp:51
 msgid "Developer"
-msgstr "Razvijač"
+msgstr "Developer"
 
 #: src/main.cpp:48
 msgid "Jan Mette"
@@ -183,11 +182,11 @@ msgstr "Jan Mette"
 
 #: src/main.cpp:48
 msgid "PostInstall Backend and Artwork"
-msgstr "Postinstall Backend and Artwork"
+msgstr "PostInstall Backend and Artwork"
 
 #: src/main.cpp:49
 msgid "Phil Miller"
-msgstr "Phill Miller"
+msgstr "Phil Miller"
 
 #: src/main.cpp:49 src/main.cpp:50
 msgid "PostInstall Backend"
@@ -203,7 +202,7 @@ msgstr "Drake Justice"
 
 #: src/mainwindow.cpp:99
 msgid "Do you really want to abort the installation?"
-msgstr "Da li zaista želite da prekinete instalaciju?"
+msgstr "Да ли заиста желите да прекинете инсталацију?"
 
 #: src/mainwindow.cpp:507
 msgid ""
@@ -211,260 +210,262 @@ msgid ""
 "Tribe will now quit, please check the installation logs in /tmp\n"
 "or ask for help in our forums."
 msgstr ""
-"Instalacija je prekinuta! Greška je prijavljena: %1 Tribe će se ugasiti, "
-"molim proverite instalacijske podatke u /tmp ili zatražite pomoć na našim "
-"forumima."
+"Инсталација неуспела! Следеће грешке су пријављене: %1.\n"
+"Трибе ће се угасити, молим проверите записе инсталације у /tmp\n"
+"или затражите помоћ на нашем форуму."
 
 #: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:677
 msgid "Installing bootloader..."
-msgstr "Instaliranje pokretača..."
+msgstr "Инсталирање покретача..."
 
 #: src/pages/bootloaderpage.cpp:82 src/pages/configpage.cpp:647
 msgid "Creating OS list..."
-msgstr "Pravljenje OS liste..."
+msgstr "Прављење ОС листе..."
 
 #: src/pages/configpage.cpp:195 src/pages/configpage.cpp:497
 msgid "Downloading"
-msgstr "Preuzimanje"
+msgstr "Преузимање"
 
 #: src/pages/configpage.cpp:305
 msgid ""
 "Sorry, you have no internet connection at the moment \n"
 "Will stop bundle(s) installation now"
 msgstr ""
+"Извините, нисте повезани на интернет trenutno \n"
+"Инсталација Скупова ће бити прекинута сада"
 
 #: src/pages/configpage.cpp:398
 msgid "installed"
-msgstr "Instaliran"
+msgstr "инсталирано"
 
 #: src/pages/configpage.cpp:414
 msgid "Install Packaged Software"
-msgstr "Instalacija Paketa Softvera"
+msgstr "Инсталирати запаковани софтвер"
 
 #: src/pages/configpage.cpp:430
 msgid ""
 "Sorry, you have no internet connection at the moment \n"
 "Will stop package(s) installation now"
 msgstr ""
+"Извините,  нисте повезани на интернет тренутно \n"
+"Инсталација пакета ће бити прекинута"
 
 #: src/pages/configpage.cpp:471
 msgid "Waiting for server..."
-msgstr ""
+msgstr "Чекање на сервер..."
 
 #: src/pages/configpage.cpp:483
-#, fuzzy
 msgid "loading package data..."
-msgstr "Uklanjanje nepotrebnih paketa..."
+msgstr "прикупљање пакета података..."
 
 #: src/pages/configpage.cpp:484
-#, fuzzy
 msgid "Loading package data..."
-msgstr "Učitavanje particija..."
+msgstr "Прикупљање пакета података..."
 
 #: src/pages/configpage.cpp:485
 msgid "checking dependencies..."
-msgstr ""
+msgstr "проверавање зависности..."
 
 #: src/pages/configpage.cpp:486
 msgid "Checking dependencies..."
-msgstr ""
+msgstr "Проваравање зависности..."
 
 #: src/pages/configpage.cpp:487
 msgid "resolving dependencies..."
-msgstr ""
+msgstr "разрешавање зависности..."
 
 #: src/pages/configpage.cpp:488
-#, fuzzy
 msgid "Resolving dependencies..."
-msgstr "Uklanjanje neiskorišćenih drajvera..."
+msgstr "Разрешавање зависности..."
 
 #: src/pages/configpage.cpp:489
 msgid "checking package integrity..."
-msgstr ""
+msgstr "Проверавање целовитости пакета..."
 
 #: src/pages/configpage.cpp:490
 msgid "Checking package integrity..."
-msgstr ""
+msgstr "Проверавање целовитости пакета..."
 
 #: src/pages/configpage.cpp:491
 msgid "Total Download Size:"
-msgstr ""
+msgstr "Укупно за преузимање:"
 
 #. i18n: file: ui/pages/config.ui:120
 #. i18n: ectx: property (text), widget (QPushButton, downloadBundlesButton)
 #: src/pages/configpage.cpp:554 rc.cpp:105
 msgid "Download Popular Bundles"
-msgstr "Preuzimanje Popularnih Paketa (Bundles)"
+msgstr "Преузимање популарних Скупова"
 
 #. i18n: file: ui/pages/config.ui:200
 #. i18n: ectx: property (text), widget (QPushButton, bootloaderSettingsButton)
 #: src/pages/configpage.cpp:572 rc.cpp:114
 msgid "Bootloader Settings"
-msgstr "Podešavanje Pokretača"
+msgstr "Подешавање покретача"
 
 #. i18n: file: ui/pages/config.ui:161
 #. i18n: ectx: property (text), widget (QPushButton, initRamDiskButton)
 #: src/pages/configpage.cpp:585 rc.cpp:108
 msgid "Customize Initial Ramdisk"
-msgstr "Uređivanje Pokretačkog Ramdiska"
+msgstr "Подешавање покретачког Ramdisk"
 
 #: src/pages/licensepage.cpp:53
 msgid "Proprietary ATI Driver"
-msgstr "Vlasnički ATI Drajver"
+msgstr "Власнички ATI драјвер"
 
 #: src/pages/licensepage.cpp:57
 msgid "Proprietary NVidia Driver"
-msgstr "Vlasnički NVidia Drajver"
+msgstr "Власнички NVidia драјвер"
 
 #: src/pages/licensepage.cpp:117
 msgid "Accept license for: "
-msgstr "Prihvati dozvolu za:"
+msgstr "Прихвати лиценцу за:"
 
-#: src/pages/localepage.cpp:280
+#: src/pages/localepage.cpp:300
 msgid "You need to select a timezone"
-msgstr "Potrebno je da obaberete vremensku zonu"
+msgstr "Потребно је одабрати временску зону"
 
 #: src/pages/partitionpage.cpp:89
 msgid "Please enter a custom mountpoint"
-msgstr "Molim unesite prilagođenu tačku kačenja"
+msgstr "Молим унесите тачку качења"
 
 #: src/pages/partitionpage.cpp:101
 msgid "The mount point must start with /"
-msgstr "Tačka kačenja mora počinjati sa /"
+msgstr "Тачка качења мора почети са /"
 
 #: src/pages/partitionpage.cpp:102
 msgid "Error"
-msgstr "Greška"
+msgstr "Грешка"
 
 #. i18n: file: ui/pages/partition.ui:363
 #. i18n: ectx: property (text), widget (QPushButton, newButton)
 #: src/pages/partitionpage.cpp:196 rc.cpp:372
 msgid "New"
-msgstr "Novi"
+msgstr "Ново"
 
 #: src/pages/partitionpage.cpp:196
 msgid "Unsupported"
-msgstr "Nepodržani"
+msgstr "Не подржано"
 
 #: src/pages/partitionpage.cpp:416
 msgid "Loading partitions..."
-msgstr "Učitavanje particija..."
+msgstr "Прикупљање партиција..."
 
 #: src/pages/partitionpage.cpp:527
 msgid ""
 "The selected volume already has a partition table.. Overwrite it? (this will "
 "destroy all data on the device)"
 msgstr ""
-"Obabrano parče već poseduje particionu tabelu..Pisati preko nje? (ovo će "
-"iništiti sve podatke na vašem uređaju)"
+"Одабрано парче већ има партициону  табелу.. Писати преко ње? (ово ће "
+"уништити све податке на уређају)"
 
 #: src/pages/partitionpage.cpp:527 src/pages/partitionpage.cpp:534
 msgid "Warning"
-msgstr "Upozorenje"
+msgstr "Упозорење"
 
 #: src/pages/partitionpage.cpp:534
 msgid ""
 "This operation will destroy all data on the selected volume.. Continue "
 "anyway?"
-msgstr ""
-"Ova operacija će uništiti sve podatke na odabranom parčetu..Nastaviti "
-"svakako?"
+msgstr "Ова операција ће уништити све податке на одабраном парчету..Наставити?"
 
 #. i18n: file: ui/pages/partition.ui:111
 #. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
 #: src/pages/partitionpage.cpp:565 src/pages/partitionpage.cpp:718
 #: src/pages/partitionpage.cpp:801 rc.cpp:345
 msgid "Extended"
-msgstr "Produženje"
+msgstr "Продужена"
 
 #. i18n: file: ui/pages/partition.ui:116
 #. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
 #: src/pages/partitionpage.cpp:802 rc.cpp:348
 msgid "Primary"
-msgstr "Primarna"
+msgstr "Примарна"
 
-#: src/pages/partitionpage.cpp:957
+#: src/pages/partitionpage.cpp:956
 msgid ""
 "The partition you have chosen to mount as '/' is too small. It should have a "
 "capacity of at least %1 for a successful installation."
 msgstr ""
-"Particija koju ste odabrali da nakačite kao '/' je premala. Potrebno je da "
-"ima kapacitet najmanje %1 za uspešnu instalaciju."
+"Партиција коју желите да накачите као '/' је премала. Треба да буде "
+"капацитета најмање %1 за успешну инсталацију."
 
-#: src/pages/partitionpage.cpp:960 src/pages/partitionpage.cpp:990
+#: src/pages/partitionpage.cpp:959 src/pages/partitionpage.cpp:994
 msgid "Target's capacity not sufficient"
-msgstr "Ciljani kapacitet nije dovoljan"
+msgstr "Циљани капацитет није довољан"
 
-#: src/pages/partitionpage.cpp:971
+#: src/pages/partitionpage.cpp:976
 msgid ""
 "The partition you have chosen to mount as '/' is not marked for formatation. "
 "This might create problems. Do you still want to continue without formating "
 "it?"
 msgstr ""
+"Партиција коју сте одабрали да накачите као '/' није означена за "
+"форматирање. Ово може створити проблеме. Да ли и даље желите да наставите "
+"без форматирања?"
 
-#: src/pages/partitionpage.cpp:988
+#: src/pages/partitionpage.cpp:992
 msgid ""
 "You have selected '%1' as a mountpoint, which is not valid. A valid "
 "mountpoint always starts with '/' and represents a directory on disk"
 msgstr ""
-"Odabrali ste '%1' kao tačku kačenja, što nije ispravno. Ispravna tačka "
-"kačenja uvek počinje sa '/' i predstavlja direktorijum diska"
+"Одабрали сте '%1' као тачку качења, што није валидно. Валидна тачка качења "
+"увек почиње са '/'  и представља директоријум на диску"
 
 #: src/pages/readyinstallpage.cpp:77
 msgid "New partition (%1) on %2"
-msgstr "Nova particija (%1) na %2"
+msgstr "Нова партиција (%1) на %2"
 
 #: src/pages/readyinstallpage.cpp:80
 msgid "%1 will be used as %2"
-msgstr "%1 će biti korišćena kao %2"
+msgstr "%1 ће бити коришћен за %2"
 
 #: src/pages/readyinstallpage.cpp:100
 msgid "Continue"
-msgstr "Nastavi"
+msgstr "Настави"
 
 #: src/pages/readyinstallpage.cpp:104
 msgid ""
 "The following partitions appear to be mounted: %1. To let the installation "
 "happen correctly, Tribe will now unmount them."
 msgstr ""
-"Sledeće particije su se pojavile kao nakačene: %1. Da bi se instalacija "
-"izvršila ispravno, Tribe će ih otkačiti."
+"Следеће партиције изгледа да су монтиране: %1. Ради успешне инсталације "
+"Трибе ће их сада одкачити."
 
-#: src/pages/usercreationpage.cpp:121
+#: src/pages/usercreationpage.cpp:148
 msgid "You must give at least one login name."
-msgstr "Morate uneti najmanje jedno korisničko ime."
+msgstr "Морате дати барем једно корисничко име."
 
-#: src/pages/usercreationpage.cpp:125
+#: src/pages/usercreationpage.cpp:152
 msgid "Root Passwords do not match..."
-msgstr "Korene Lozinke se ne poklapaju..."
+msgstr "Корене лозинке се не поклапају..."
 
-#: src/pages/usercreationpage.cpp:139
+#: src/pages/usercreationpage.cpp:166
 msgid "Passwords cannot be empty."
-msgstr "Lozinke ne mogu biti prazne."
+msgstr "Лозинка не може остати празна."
 
-#: src/pages/usercreationpage.cpp:143
+#: src/pages/usercreationpage.cpp:170
 msgid "Passwords do not match..."
-msgstr "Lozinke se ne poklapaju..."
+msgstr "Лозинке се не поклапају..."
 
-#: src/pages/usercreationpage.cpp:147
+#: src/pages/usercreationpage.cpp:174
 msgid "Login names cannot be empty."
-msgstr "Korisnička imena ne mogu biti prazna."
+msgstr "Имена за логовање не могу бити празна."
 
 #: src/pmhandler.cpp:360
 msgid "Preparing hard drive for installation..."
-msgstr "Priprema hard diska za instalaciju..."
+msgstr "Припрема хард диска за инсталацију..."
 
 #: src/pmhandler.cpp:381
 msgid "Analyzing disk..."
-msgstr "Analiza diska..."
+msgstr "Анализа диска..."
 
 #: src/pmhandler.cpp:445
 msgid "There was an error while formatting partitions"
-msgstr "Dogodila se greška pri formatiranju particija"
+msgstr "Постоји грешка у форматирању партиција"
 
 #: src/widgets/avatardialog.cpp:52 src/widgets/avatardialog.cpp:71
 msgid "Custom"
-msgstr "Prilagođeno"
+msgstr "Својеручно"
 
 #. i18n: file: ui/pages/base.ui:172
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -490,7 +491,7 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Dobrodošli</span></p></body></html>"
+"weight:600; color:#ffffff;\">Добродошли</span></p></body></html>"
 
 #. i18n: file: ui/pages/base.ui:198
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -498,31 +499,31 @@ msgstr ""
 #. i18n: ectx: property (windowTitle), widget (QWidget, ReleaseNotes)
 #: rc.cpp:13 rc.cpp:415
 msgid "Release Notes"
-msgstr "Beleške o izdanju"
+msgstr "Белешке издања"
 
 #. i18n: file: ui/pages/base.ui:224
 #. i18n: ectx: property (text), widget (QLabel, licenseLabel)
 #: rc.cpp:16
 msgid "License Approval"
-msgstr "Dokaz Dozvole"
+msgstr "Дознаке дозволе"
 
 #. i18n: file: ui/pages/base.ui:257
 #. i18n: ectx: property (text), widget (QLabel, label_21)
 #: rc.cpp:19
 msgid "Ready to Install"
-msgstr "Spreman za Instalaciju"
+msgstr "Спремно за инсталацију"
 
 #. i18n: file: ui/pages/base.ui:283
 #. i18n: ectx: property (text), widget (QLabel, label_24)
 #: rc.cpp:22
 msgid "Language & Time"
-msgstr "Jezik i Vreme"
+msgstr "Језик и Време"
 
 #. i18n: file: ui/pages/base.ui:297
 #. i18n: ectx: property (text), widget (QLabel, label_25)
 #: rc.cpp:25
 msgid "Disk setup"
-msgstr "Podešavanje diska"
+msgstr "Поставке диска"
 
 #. i18n: file: ui/pages/base.ui:327
 #. i18n: ectx: property (text), widget (QLabel, label_26)
@@ -548,13 +549,13 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Priprema</span></p></body></html>"
+"weight:600; color:#ffffff;\">Припремање</span></p></body></html>"
 
 #. i18n: file: ui/pages/base.ui:334
 #. i18n: ectx: property (text), widget (QLabel, label_15)
 #: rc.cpp:35
 msgid "Create Users"
-msgstr "Pravljenje Korisnika"
+msgstr "Прављење корисника"
 
 #. i18n: file: ui/pages/base.ui:390
 #. i18n: ectx: property (text), widget (QLabel, label_11)
@@ -580,13 +581,13 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Instalacija</span></p></body></html>"
+"weight:600; color:#ffffff;\">Инсталација</span></p></body></html>"
 
 #. i18n: file: ui/pages/base.ui:416
 #. i18n: ectx: property (text), widget (QLabel, label_13)
 #: rc.cpp:45
 msgid "Install System"
-msgstr "Instaliranje Sistema"
+msgstr "Инсталација Система"
 
 #. i18n: file: ui/pages/base.ui:453
 #. i18n: ectx: property (text), widget (QLabel, label_14)
@@ -612,33 +613,33 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Konfiguracija</span></p></body></html>"
+"weight:600; color:#ffffff;\">Конфигурација</span></p></body></html>"
 
 #. i18n: file: ui/pages/base.ui:460
 #. i18n: ectx: property (text), widget (QLabel, label_16)
 #: rc.cpp:55
 msgid "Reboot / Enjoy"
-msgstr "Restartuj / Uživaj"
+msgstr "Рестартуј / Уживај"
 
 #. i18n: file: ui/pages/base.ui:583
 #. i18n: ectx: property (text), widget (QPushButton, abortButton)
 #: rc.cpp:58
 msgid "Abort installation"
-msgstr "Prekini instalaciju"
+msgstr "Прекини инсталацију"
 
 #. i18n: file: ui/pages/base.ui:615
 #. i18n: ectx: property (text), widget (QPushButton, previousButton)
 #: rc.cpp:61
 msgctxt "Previous Page"
 msgid "Previous"
-msgstr "Prethodno"
+msgstr "Претходно"
 
 #. i18n: file: ui/pages/base.ui:634
 #. i18n: ectx: property (text), widget (QPushButton, nextButton)
 #: rc.cpp:64
 msgctxt "Next Page"
 msgid "Next"
-msgstr "Sledeće"
+msgstr "Следеће"
 
 #. i18n: file: ui/pages/bootloader.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -666,7 +667,7 @@ msgstr ""
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
 "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Instalacija Pokretača</span></p></body></html>"
+"#ffffff;\">Инсталација Покретача</span></p></body></html>"
 
 #. i18n: file: ui/pages/bootloader.ui:58
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -677,14 +678,16 @@ msgid ""
 "If you are unsure where you should install the bootloader to, \n"
 "just leave the default value (hd0)."
 msgstr ""
-"Sada možete instalirati GRUB kao glavni pokretač Ako ste nesigurni gde treba "
-"instalirati pokretač, ostavite podrazumevanu vrednost (hd0)."
+"Сада можете инсталирати ГРУБ као главни покретач.\n"
+"\n"
+"Ако сте несигурни где треба инсталирати покретач,\n"
+"само оставите подразумевану вредност  (hd0)."
 
 #. i18n: file: ui/pages/bootloader.ui:71
 #. i18n: ectx: property (text), widget (QCheckBox, checkBox)
 #: rc.cpp:80
 msgid "Install Bootloader"
-msgstr "Instalacija Pokretača"
+msgstr "Инсталација Покретача"
 
 #. i18n: file: ui/pages/bootloader.ui:89
 #. i18n: ectx: property (text), widget (QPushButton, pushButton)
@@ -694,13 +697,13 @@ msgstr "Instalacija Pokretača"
 #. i18n: ectx: property (text), widget (QPushButton, advancedButton)
 #: rc.cpp:83 rc.cpp:363 rc.cpp:366
 msgid "Advanced..."
-msgstr "Napredno"
+msgstr "Напредно..."
 
 #. i18n: file: ui/pages/bootloader.ui:135
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:86
 msgid "Install to:"
-msgstr "Instalirati na:"
+msgstr "Инсталирати на:"
 
 #. i18n: file: ui/pages/bootloader.ui:142
 #. i18n: ectx: property (text), widget (QLineEdit, lineEdit)
@@ -733,33 +736,33 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Konfiguracija</span></p></"
-"body></html>"
+"size:22pt; font-weight:600; color:#ffffff;\">Састав</span></p></body></html>"
 
 #. i18n: file: ui/pages/config.ui:55
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:99
 msgid ""
 "Now that you have a Chakra install, you can now configure it to your liking."
-msgstr "Sada kada imate instaliranu Čakru, možete je podesiti kako volite."
+msgstr ""
+"Сада када вам је инсталирана Chakra, можете је подесити онако како волите."
 
 #. i18n: file: ui/pages/config.ui:95
 #. i18n: ectx: property (text), widget (QPushButton, installPkgzButton)
 #: rc.cpp:102
 msgid "Install Packages"
-msgstr "Instaliranje Paketa"
+msgstr "Инсталација пакета"
 
 #. i18n: file: ui/pages/config.ui:171
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:111
 msgid "Advanced Options"
-msgstr "Napredne Opcije"
+msgstr "Напредне опције"
 
 #. i18n: file: ui/pages/config.ui:225
 #. i18n: ectx: property (text), widget (QPushButton, changeAppearanceButton)
 #: rc.cpp:117
 msgid "Change System Appearance"
-msgstr "Izmeni Izgled Sistema"
+msgstr "Измена изгледа Система"
 
 #. i18n: file: ui/pages/config.ui:285
 #. i18n: ectx: property (text), widget (QCheckBox, usb)
@@ -771,13 +774,13 @@ msgstr "USB"
 #. i18n: ectx: property (text), widget (QCheckBox, nfs)
 #: rc.cpp:123
 msgid "NFS Shares"
-msgstr "NDS Deljenja"
+msgstr "NFS Shares"
 
 #. i18n: file: ui/pages/config.ui:299
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: rc.cpp:126
 msgid "Activate support for booting from:"
-msgstr "Aktivirajte podršku za pokretanje sa:"
+msgstr "Активирати подршку за покретање са:"
 
 #. i18n: file: ui/pages/config.ui:306
 #. i18n: ectx: property (text), widget (QCheckBox, firewire)
@@ -825,19 +828,19 @@ msgstr "PCMCIA"
 #. i18n: ectx: property (text), widget (QPushButton, pkgInstallButton)
 #: rc.cpp:150
 msgid "Install"
-msgstr "Instaliranje"
+msgstr "Инсталација"
 
 #. i18n: file: ui/pages/config.ui:790
 #. i18n: ectx: property (text), widget (QPushButton, bundlesDownloadButton)
 #: rc.cpp:153
 msgid "Download"
-msgstr "Preuzimanje"
+msgstr "Преузимање"
 
 #. i18n: file: ui/pages/config.ui:884
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: rc.cpp:156
 msgid "Chakra"
-msgstr "Čakra"
+msgstr "Chakra"
 
 #. i18n: file: ui/pages/config.ui:932
 #. i18n: ectx: property (text), widget (QLabel, label_6)
@@ -855,13 +858,13 @@ msgstr "Windows"
 #. i18n: ectx: property (text), widget (QPushButton, colorizeButton)
 #: rc.cpp:165
 msgid "Colorize"
-msgstr "Obojiti"
+msgstr "Colorize"
 
 #. i18n: file: ui/pages/config.ui:1200
 #. i18n: ectx: property (text), widget (QCheckBox, bootloaderCheckBox)
 #: rc.cpp:168
 msgid "Install GRUB"
-msgstr "Instalacija GRUB-a"
+msgstr "Инсталација ГРУБа"
 
 #. i18n: file: ui/pages/config.ui:1285
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
@@ -871,7 +874,7 @@ msgstr "Instalacija GRUB-a"
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
 #: rc.cpp:171 rc.cpp:357 rc.cpp:453
 msgid "Cancel"
-msgstr "Prekini"
+msgstr "Прекини"
 
 #. i18n: file: ui/pages/finish.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -899,7 +902,7 @@ msgstr ""
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
 "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Instalacija Završena!</span></p></body></html>"
+"#ffffff;\">Инсталација завршена!</span></p></body></html>"
 
 #. i18n: file: ui/pages/finish.ui:68
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -922,34 +925,34 @@ msgid ""
 "\n"
 "The Chakra Team"
 msgstr ""
-"Čestitamo, instalacija je završena\n"
+"Честитамо, инсталација је комплетирана!\n"
 "\n"
-"Nadamo se da ste uživali u onome što ste videli kao što smo i mi dok smo "
-"kreirali\n"
-"You can now reboot into the installed system or keep using the LiveCD.\n"
+"Надамо се да сте уживали у ономе до сада као и ми током креирања.\n"
+"Можете рестартовати или наставити да користите живи диск.\n"
 "\n"
-"U slučaju da želite da proverite beleške o instalaciji,\n"
-"bacite pogled u /tmp na živom CD-u ili u /var/log na instaliranom sistemu\n"
+"За случај да желите да видите записе инсталације,\n"
+"баците поглед у  /tmp у живом систему или у /var/log  на инсталираном "
+"систему.\n"
 "\n"
-"Hvala Vam što koristite Čakru, stupite u kontakt sa nama na forumu, podelite "
-"mišljenje ili dajte savet\n"
-"Da pojednostavimo:Uključite se u razvoj! (http://chakra-project.org)\n"
+"Хвала што користите Chakra, ступите у контакт са нама на форумима, поделите "
+"мишљење, дајте савет;\n"
+"Да поједноставимо: Умешајте се!  (http://chakra-project.org)\n"
 "\n"
-"Zabavite se!\n"
+"Забавите се!\n"
 "\n"
-"Čakra Tim"
+"Chakra тим"
 
 #. i18n: file: ui/pages/finish.ui:105
 #. i18n: ectx: property (text), widget (QPushButton, rebootButton)
 #: rc.cpp:197
 msgid "Restart Computer"
-msgstr "Restartujte Računar"
+msgstr "Рестартујте Рачунар"
 
 #. i18n: file: ui/pages/finish.ui:118
 #. i18n: ectx: property (text), widget (QPushButton, chakraButton)
 #: rc.cpp:200
 msgid "Keep using the LiveCD"
-msgstr "Nastavite sa korišćenjem ŽivogCD-a"
+msgstr "Наставите са живим диском"
 
 #. i18n: file: ui/pages/init.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, tribeInit)
@@ -983,7 +986,7 @@ msgstr ""
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
 "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Podešavanje Ramdiska</span></p></body></html>"
+"#ffffff;\">Ramdisk поставке</span></p></body></html>"
 
 #. i18n: file: ui/pages/init.ui:58
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -996,73 +999,71 @@ msgid ""
 "simply press the \"Next\" button. Otherwise check out the ramdisk options "
 "below and select the items you need for your system."
 msgstr ""
-"Vaš hardver će biti podešen automatski tokom instalacije  i pokretačko "
-"ramdisk okruženje za pokretanje kernela biće napravljeno. Sve bi trebalo da "
-"teče bez intervencija, ali je moguće da će vam biti potrebne opciije za "
-"posebne pokretačke metode. Ako niste sigurni šta ovo znači,jednostavno "
-"odaberite dugme \"Sledeće\". U suprotnom proverite opcije ramdiskaispod i "
-"odaberite šta vam je potrebno za vaš sistem."
+"Ваша гвожђурија ће бити подешена током инсталације као и покретачко ramdisk "
+"окружење за покретање линукс језгра. Све би требало да протекне без "
+"инстервенција, али је могуће да ће вам требати посебне опције за покретање. "
+"Ако сте несигурни шта ово значи, само кликните на дугме Следеће. У супротном "
+"подесите ramdisk опције испод и одаберите неопходно за ваш систем."
 
 #. i18n: file: ui/pages/init.ui:81
 #. i18n: ectx: property (text), widget (QPushButton, pushButton)
 #: rc.cpp:216
 msgid "Ramdisk Options"
-msgstr "Ramdisk Opcije"
+msgstr "Ramdisk Options"
 
 #. i18n: file: ui/pages/init.ui:111
 #. i18n: ectx: property (text), widget (QCheckBox, usb)
 #: rc.cpp:219
 msgid "Activate support for booting from USB devices"
-msgstr "Aktivirajte podršku za pokretanje sa USB uređaja"
+msgstr "Активирајте подршку за покретање са USB уређаја"
 
 #. i18n: file: ui/pages/init.ui:118
 #. i18n: ectx: property (text), widget (QCheckBox, firewire)
 #: rc.cpp:222
 msgid "Activate support for booting from FireWire devices"
-msgstr "Aktivirajte podršku za pokretanje sa FireWire uređaja"
+msgstr "Активирајте подршку за покретање са FireWire урађаја"
 
 #. i18n: file: ui/pages/init.ui:125
 #. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
 #: rc.cpp:225
 msgid "Activate support for booting from PCMCIA devices"
-msgstr "Aktivirajte podršku za pokretanje sa PCMCIA uređaja"
+msgstr "Активирајте подршку за покретање са PCMCIA  уређаја"
 
 #. i18n: file: ui/pages/init.ui:132
 #. i18n: ectx: property (text), widget (QCheckBox, nfs)
 #: rc.cpp:228
 msgid "Activate support for booting from NFS shares"
-msgstr "Aktivirajte podršku za pokretanje sa NFS deljenja"
+msgstr "Активирајте подршку за покретање са NFS дељења"
 
 #. i18n: file: ui/pages/init.ui:139
 #. i18n: ectx: property (text), widget (QCheckBox, raid)
 #: rc.cpp:231
 msgid "Activate support for booting from Software Raid arrays"
-msgstr "Aktivirajte podršku za pokretanje sa Software Raid arrays"
+msgstr "Активирајте подршку за покретање са Software Raid arrays"
 
 #. i18n: file: ui/pages/init.ui:146
 #. i18n: ectx: property (text), widget (QCheckBox, mdp)
 #: rc.cpp:234
 msgid "Activate support for booting from Software Raid/MDP Partition arrays"
-msgstr ""
-"Aktivirajte podršku za pokretanje sa Software Raid/MDP Partition arrays"
+msgstr "Активирајте подршку за покретање са Software Raid/MDP Partition arrays"
 
 #. i18n: file: ui/pages/init.ui:153
 #. i18n: ectx: property (text), widget (QCheckBox, lvm2)
 #: rc.cpp:237
 msgid "Activate support for booting from LVM2 volumes"
-msgstr "Aktivirajte podršku za pokretanje sa LVM2 volumes"
+msgstr "Активирајте подршку за покретање са  LVM2 volumes"
 
 #. i18n: file: ui/pages/init.ui:160
 #. i18n: ectx: property (text), widget (QCheckBox, encrypted)
 #: rc.cpp:240
 msgid "Activate support for booting from Encrypted volumes"
-msgstr "Aktivirajte podršku za pokretanje sa Encrypted volumes"
+msgstr "Активирајте подршку за покретање са Encrypted volumes"
 
 #. i18n: file: ui/pages/installation.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Installation)
 #: rc.cpp:243
 msgid "Tribe Installation"
-msgstr "Tribe instalacija"
+msgstr "Трибе инсталација"
 
 #. i18n: file: ui/pages/installation.ui:88
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
@@ -1086,7 +1087,7 @@ msgstr "Dunkelstern - Out of the box"
 #. i18n: ectx: property (windowTitle), widget (QWidget, Intro)
 #: rc.cpp:255
 msgid "Tribe Intro"
-msgstr "Tribe predstavljanje"
+msgstr "Трибе увод"
 
 #. i18n: file: ui/pages/intro.ui:105
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -1158,8 +1159,8 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-family:'Bitstream Vera Sans'; color:#eeeeee;\">Dobrodošli "
-"nainstalaciju Čakre!</span></p>\n"
+"style=\" font-family:'Bitstream Vera Sans'; color:#eeeeee;\">Welcome to the "
+"Chakra Installation!</span></p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
 "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
 "indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;"
@@ -1167,17 +1168,17 @@ msgstr ""
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
 "style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\">Ovaj instaler će vas provesti kroz celuinstalaciju</span></"
-"p>\n"
+"color:#eeeeee;\">This installer will guide you through the process of "
+"installing</span></p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
 "style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\">Čakra sistema na vašem računaru. Nakon instalacije</span></"
-"p>\n"
+"color:#eeeeee;\">the Chakra live system on your computer. After the "
+"installation you will</span></p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
 "style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\">dobićete ready-to-use Čakra Linux sistem</span></p>\n"
+"color:#eeeeee;\">have a ready-to-use Chakra Linux system.</span></p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
 "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
 "indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
@@ -1185,7 +1186,7 @@ msgstr ""
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
 "style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\"> Molim da pročitate sve instrukcije.</span></p>\n"
+"color:#eeeeee;\"> Молим да пажљиво прочитате сва упутства.</span></p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
 "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
 "indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;"
@@ -1193,10 +1194,10 @@ msgstr ""
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
 "style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\"> Zapamtite:</span><span style=\" font-family:'Bitstream "
+"color:#eeeeee;\"> Запамтите:</span><span style=\" font-family:'Bitstream "
 "Vera Sans'; font-size:8pt; font-weight:536;\"> </span><span style=\" font-"
 "family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#ff0000;"
-"\">OVO JE ALFA SOFTVER, I MOŽE DA POJEDE VAŠEG HRČKA</span></p>\n"
+"\">ОВО ЈЕ АЛФА СОФТВЕР, И МОЖЕ ДА ПОЈЕДЕ ВАШЕГ ХРЧКА</span></p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
 "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
 "indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
@@ -1204,7 +1205,7 @@ msgstr ""
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
 "style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\">Zabavite se! - Čakra Programeri</span></p></body></html>"
+"color:#eeeeee;\">Забавите се! - Chakra програмери</span></p></body></html>"
 
 #. i18n: file: ui/pages/license.ui:49
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1231,7 +1232,7 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Dokaz Dozvole</span></p></"
+"size:22pt; font-weight:600; color:#ffffff;\">Одобрење Лиценце</span></p></"
 "body></html>"
 
 #. i18n: file: ui/pages/license.ui:61
@@ -1243,34 +1244,34 @@ msgid ""
 "licenses. If you choose against a license, the installer will try to use a "
 "free solution (if one is available)."
 msgstr ""
-"Čakra nosi neke vlasničke drajvere, medijske zakrpre i fontove. Da bi ih "
-"instalirali, trebate  da pročitate i prihvatite njihovedozvole. Ako ne "
-"prihvatite dozvole, instaler će pokušati da upotrebi besplatno rešenje "
-"(ukoliko je dostupno)."
+"Chakra укључује неки власнички софтвер као што су драјвери, медиа прикључци "
+"и фонтови. Да их инсталирате, прочитајте и прихватите њихове лиценце. Ако "
+"одбијете лиценцу, инсталер ће покушати са слободним решењем (ако је "
+"доступно)."
 
 #. i18n: file: ui/pages/license.ui:74
 #. i18n: ectx: property (text), widget (QLabel, licenseLabel)
 #: rc.cpp:285
 msgid "Approve license for:"
-msgstr "Odobri dozvolu za:"
+msgstr "Прихвати лиценцу за:"
 
 #. i18n: file: ui/pages/license.ui:103
 #. i18n: ectx: property (text), widget (QRadioButton, declineButton)
 #: rc.cpp:288
 msgid "Decline License"
-msgstr "Odbij dozvolu"
+msgstr "Одбиј лиценцу"
 
 #. i18n: file: ui/pages/license.ui:110
 #. i18n: ectx: property (text), widget (QRadioButton, acceptButton)
 #: rc.cpp:291
 msgid "Accept License"
-msgstr "Prihvati dozvolu"
+msgstr "Прихвати лиценцу"
 
 #. i18n: file: ui/pages/locale.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Locale)
 #: rc.cpp:294
 msgid "Form"
-msgstr "Forma"
+msgstr "Форма"
 
 #. i18n: file: ui/pages/locale.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label_4)
@@ -1298,7 +1299,7 @@ msgstr ""
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
 "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Jezik &amp; Vreme</span></p></body></html>"
+"#ffffff;\">Језик &amp; Време</span></p></body></html>"
 
 #. i18n: file: ui/pages/locale.ui:45
 #. i18n: ectx: property (text), widget (QLabel, label_5)
@@ -1309,34 +1310,34 @@ msgid ""
 "settings at the bottom of the page. If you cant find your region or city on "
 "the globe, you can zoom in by using the slider on the left."
 msgstr ""
-"Molim odaberite najbliži grad da mapi da bi instaler mogao da predloži "
-"lokaciju i vremensku zonu za vas. Možete da tačnije podesite predlog "
-"podešavanja na dnu stranice. Ako ne možete da pronađete region ili grad na  "
-"na mapi, možete je zumirati koristeći klizač sa leve strane."
+"Молим одаберите најближи град на мапи да би инсталер предложио локалитет и "
+"временску зону за вас. Можете преподесити предложено на дну странице. Ако не "
+"можете да пронађете регион или град на мапи, можете је зумирати коришћењем "
+"клизача са леве стране."
 
 #. i18n: file: ui/pages/locale.ui:69
 #. i18n: ectx: property (clickMessage), widget (KLineEdit, locationsSearch)
 #: rc.cpp:307
 msgid "Search..."
-msgstr "Tražim..."
+msgstr "Тражи..."
 
 #. i18n: file: ui/pages/locale.ui:162
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:310
 msgid "Continent:"
-msgstr "Kontinent:"
+msgstr "Континент:"
 
 #. i18n: file: ui/pages/locale.ui:185
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:313
 msgid "Language:"
-msgstr "Jezik:"
+msgstr "Језик:"
 
 #. i18n: file: ui/pages/locale.ui:208
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:316
 msgid "Locale:"
-msgstr "Lokalizacija:"
+msgstr "Место:"
 
 #. i18n: file: ui/pages/locale.ui:263
 #. i18n: ectx: property (text), widget (QCheckBox, showLocalesCheck)
@@ -1344,19 +1345,19 @@ msgstr "Lokalizacija:"
 #. i18n: ectx: property (text), widget (QCheckBox, showKDELangsCheck)
 #: rc.cpp:319 rc.cpp:322
 msgid "Show all"
-msgstr "Prikaži sve"
+msgstr "Прикажи све"
 
 #. i18n: file: ui/pages/locale.ui:277
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: rc.cpp:325
 msgid "Region: "
-msgstr "Region:"
+msgstr "Регион:"
 
 #. i18n: file: ui/pages/partition.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Partition)
 #: rc.cpp:328
 msgid "Partition"
-msgstr "Particija"
+msgstr "Подела"
 
 #. i18n: file: ui/pages/partition.ui:43
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1384,32 +1385,31 @@ msgstr ""
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
 "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Podešavanje diska</span></p></body></html>"
+"#ffffff;\">Подешавање диска</span></p></body></html>"
 
 #. i18n: file: ui/pages/partition.ui:58
 #. i18n: ectx: property (text), widget (QLabel, descriptionLabel)
 #: rc.cpp:338
-#, fuzzy
 msgid ""
 "Please select a mountpoint for your partitions. No permanent changes to your "
 "hard drive will be made when you will press \"Next\". Note: selected "
 "partitions are not explicitly formatted."
 msgstr ""
-"Molim odaberite tačku kačenja za vaše particije. Najmanje '/' bi trebala da "
-"bude montirana. Ni jedna trajna promena neće biti napravljena ako odaberete "
-"dugme \"Sledeće\""
+"Молим одаберите тачку качења за ваше партиције. No permanent changes to your "
+"hard drive will be made when you will press \"Next\". Note: selected "
+"partitions are not explicitly formatted."
 
 #. i18n: file: ui/pages/partition.ui:100
 #. i18n: ectx: property (text), widget (QLabel, typeLabel)
 #: rc.cpp:342
 msgid "Type: "
-msgstr "Tip:"
+msgstr "Тип:"
 
 #. i18n: file: ui/pages/partition.ui:127
 #. i18n: ectx: property (text), widget (QLabel, filesystemLabel)
 #: rc.cpp:351
 msgid "Filesystem: "
-msgstr "Fajlsistem:"
+msgstr "Фајл систем:"
 
 #. i18n: file: ui/pages/partition.ui:173
 #. i18n: ectx: property (text), widget (KPushButton, editPartitionOkButton)
@@ -1417,31 +1417,31 @@ msgstr "Fajlsistem:"
 #. i18n: ectx: property (text), widget (QPushButton, okButton)
 #: rc.cpp:354 rc.cpp:450
 msgid "Ok"
-msgstr "Ok"
+msgstr "Ок"
 
 #. i18n: file: ui/pages/partition.ui:234
 #. i18n: ectx: property (suffix), widget (KIntSpinBox, sizeSpinBox)
 #: rc.cpp:360
 msgid " MiB"
-msgstr "MiB"
+msgstr " MiB"
 
 #. i18n: file: ui/pages/partition.ui:341
 #. i18n: ectx: property (toolTip), widget (QPushButton, newPartTableButton)
 #: rc.cpp:369
 msgid "Create a new partition table on the selected device"
-msgstr "Napravi novu particionu tabelu na odabranom uređaju"
+msgstr "Направи нову партициону табелу на одабраном уређају"
 
 #. i18n: file: ui/pages/partition.ui:382
 #. i18n: ectx: property (text), widget (QPushButton, deleteButton)
 #: rc.cpp:375
 msgid "Delete"
-msgstr "Obriši"
+msgstr "Обриши"
 
 #. i18n: file: ui/pages/partition.ui:401
 #. i18n: ectx: property (text), widget (QPushButton, formatButton)
 #: rc.cpp:378
 msgid "Format"
-msgstr "Formatiraj"
+msgstr "Форматирај"
 
 #. i18n: file: ui/pages/partition.ui:420
 #. i18n: ectx: property (toolTip), widget (QPushButton, undoButton)
@@ -1449,13 +1449,13 @@ msgstr "Formatiraj"
 #. i18n: ectx: property (text), widget (QPushButton, undoButton)
 #: rc.cpp:381 rc.cpp:384
 msgid "Undo"
-msgstr "Povrati"
+msgstr "Поврати"
 
 #. i18n: file: ui/pages/partition.ui:439
 #. i18n: ectx: property (toolTip), widget (QPushButton, unmountButton)
 #: rc.cpp:387
 msgid "Unmount the selected partition"
-msgstr "Otkači odabranu particiju"
+msgstr "Одкачи одабрану партицију"
 
 #. i18n: file: ui/pages/readyinstall.ui:51
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1483,7 +1483,7 @@ msgstr ""
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
 "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Spreman za instalaciju</span></p></body></html>"
+"#ffffff;\">Спреман за инсталацију</span></p></body></html>"
 
 #. i18n: file: ui/pages/readyinstall.ui:77
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -1492,8 +1492,8 @@ msgid ""
 "The system will be installed with the following settings. Before continuing, "
 "please review your selections:\n"
 msgstr ""
-"Sistem će biti instaliran sa sledećim podešavanjima. Pre nego nastavite, "
-"molim proverite podešavanja:\n"
+"Систем ће бити инсталиран са следећим поставкама. Пре него наставите, молим "
+"прегледајте учињено:\n"
 
 #. i18n: file: ui/pages/readyinstall.ui:147
 #. i18n: ectx: property (text), widget (QLabel, label_4)
@@ -1521,7 +1521,7 @@ msgstr ""
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
 "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">Sledeće particije će biti korišćene kao</span></p></body></html>"
+"#eeeeee;\">Следеће партиције ће бити коришћене:</span></p></body></html>"
 
 #. i18n: file: ui/pages/readyinstall.ui:211
 #. i18n: ectx: property (text), widget (QLabel, formatLabel)
@@ -1550,7 +1550,7 @@ msgstr ""
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
 "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">Sledeće particije će biti formatirane:</span></p></body></html>"
+"#eeeeee;\">Следеће партиције ће бити форматиране:</span></p></body></html>"
 
 #. i18n: file: ui/pages/releasenotes.ui:47
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1577,8 +1577,8 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
-"style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Beleške o "
-"Izdanju</span></p></body></html>"
+"style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Белешке о издању</"
+"span></p></body></html>"
 
 #. i18n: file: ui/pages/releasenotes.ui:60
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -1588,9 +1588,9 @@ msgid ""
 "version of Chakra. As always, you are encouraged to tell us what you think, "
 "either by visiting our forums or bug tracker."
 msgstr ""
-"Proverite šta je novo, poznate stvari i opšte informacije o ovoj verziji "
-"Čakre. Kao i uvek, ohrabreni ste da nam kažete šta mislite, bilo da "
-"posećujete forum ili koristite prijavljivač grešaka."
+"Видите шта је ново, позната питања и генералне информације о овој верзији "
+"Chakra.  Као и увек, охрабрени сте да изнесете мишљење, посећивањем форума "
+"или пријављивањем буба."
 
 #. i18n: file: ui/pages/usercreation.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1617,20 +1617,20 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Napravi Korisnike</span></p></"
+"size:22pt; font-weight:600; color:#ffffff;\">Направи кориснике</span></p></"
 "body></html>"
 
 #. i18n: file: ui/pages/usercreation.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:435
 msgid "Enter at least one login name and password."
-msgstr "Unesite najmanje jedno korisničko ime i lozinku."
+msgstr "Унесите барем једно логин име и лозинку."
 
 #. i18n: file: ui/pages/usercreation.ui:178
 #. i18n: ectx: property (toolTip), widget (QPushButton, addUser)
 #: rc.cpp:438
 msgid "Add another user account."
-msgstr "Dodajte još jedan korisnički nalog."
+msgstr "Додај још један кориснички налог."
 
 #. i18n: file: ui/pages/usercreation.ui:286
 #. i18n: ectx: property (text), widget (QLabel, hostname_extra_label)
@@ -1639,62 +1639,62 @@ msgid ""
 "<small>This name will be used if you make the computer visible to others on "
 "a network.</small>"
 msgstr ""
-"<small>Ovo ime će biti korišćeno ako odaberete da vaš računar bude vidljiv "
-"na mreži.</small>"
+"<small>Ово име ће бити коришћено ако означите ваш рачунар видљивим на мрежи."
+"</small>"
 
 #. i18n: file: ui/pages/usercreation.ui:299
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:444
 msgid "...and, what is the name of this computer?"
-msgstr "...i, koje je me ovog računara?"
+msgstr "...и, које је име овог рачунара?"
 
 #. i18n: file: ui/widgets/avatardialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, AvatarDialog)
 #: rc.cpp:447
 msgid "Select an Avatar..."
-msgstr "Odaberite Avatara..."
+msgstr "Одаберите Аватар..."
 
 #. i18n: file: ui/widgets/userwidget.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:456
 msgid "Login: "
-msgstr "Prijava:"
+msgstr "Логин име:"
 
 #. i18n: file: ui/widgets/userwidget.ui:56
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:459
 msgid "Password: "
-msgstr "Lozinka:"
+msgstr "Лозинка:"
 
 #. i18n: file: ui/widgets/userwidget.ui:94
 #. i18n: ectx: property (toolTip), widget (QPushButton, userDetails)
 #: rc.cpp:462
 msgid "Include more information about this user."
-msgstr "Dodajte još informacija o ovom korisniku."
+msgstr "Додајте још информација о овом кориснику."
 
 #. i18n: file: ui/widgets/userwidget.ui:124
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:465
 msgid "Confirm Password:"
-msgstr "Potvrdite Lozinku:"
+msgstr "Потврдите лозинку:"
 
 #. i18n: file: ui/widgets/userwidget.ui:146
 #. i18n: ectx: property (toolTip), widget (QPushButton, removeUser)
 #: rc.cpp:468
 msgid "Remove this user."
-msgstr "Uklonite ovog korisnika."
+msgstr "Уклоните овог корисника."
 
 #. i18n: file: ui/widgets/userwidget.ui:264
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: rc.cpp:471
 msgid "Name: "
-msgstr "Ime:"
+msgstr "Име:"
 
 #. i18n: file: ui/widgets/userwidget.ui:307
 #. i18n: ectx: property (text), widget (QCheckBox, autoLoginCheckBox)
 #: rc.cpp:474
 msgid "Login Automatically"
-msgstr "Automatska Prijava"
+msgstr "Аутоматско логовање"
 
 #. i18n: file: ui/widgets/userwidget.ui:344
 #. i18n: ectx: property (text), widget (QCheckBox, rootUsesUserPwCheckBox)
@@ -1703,25 +1703,25 @@ msgid ""
 "Use this password as \n"
 "the Administrator password"
 msgstr ""
-"Koristi ovu lozinku kao \n"
-"Administratorsku lozinku"
+"Користи ову лозинку као \n"
+"администраторску"
 
 #. i18n: file: ui/widgets/userwidget.ui:396
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: rc.cpp:481
 msgid "Root Password:  "
-msgstr "Korena Lozinka:"
+msgstr "Корена лозинка:"
 
 #. i18n: file: ui/widgets/userwidget.ui:406
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: rc.cpp:484
 msgid "Confirm Root Password:  "
-msgstr "Potvrdite Korenu Lozinku:"
+msgstr "Потврдите корену лозинку:"
 
 #: rc.cpp:485
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Ivan Blagojević"
+msgstr "Иван Благојевић Жељана Благојевић"
 
 #: rc.cpp:486
 msgctxt "EMAIL OF TRANSLATORS"

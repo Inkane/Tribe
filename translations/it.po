@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2011-01-23 19:11+0100\n"
+"POT-Creation-Date: 2011-01-29 13:58+0100\n"
 "PO-Revision-Date: 2011-01-24 11:07+0100\n"
 "Last-Translator: Giuseppe Calà <gcala@chakra-project.org>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -149,7 +149,7 @@ msgstr ""
 msgid "Could not mount %1"
 msgstr "Impossibile montare %1"
 
-#: src/installationhandler.h:167
+#: src/installationhandler.h:171
 msgid "No Further details given"
 msgstr "Nessun ulteriore dettaglio"
 
@@ -332,7 +332,7 @@ msgstr "Driver proprietario NVidia"
 msgid "Accept license for: "
 msgstr "Accetta licenza per: "
 
-#: src/pages/localepage.cpp:280
+#: src/pages/localepage.cpp:300
 msgid "You need to select a timezone"
 msgstr "Devi selezionare un fuso orario."
 
@@ -395,7 +395,7 @@ msgstr "Estesa"
 msgid "Primary"
 msgstr "Primaria"
 
-#: src/pages/partitionpage.cpp:957
+#: src/pages/partitionpage.cpp:956
 msgid ""
 "The partition you have chosen to mount as '/' is too small. It should have a "
 "capacity of at least %1 for a successful installation."
@@ -403,21 +403,21 @@ msgstr ""
 "La partizione che si è scelto di montare come '/' è troppo piccola. Dovrebbe "
 "avere una capacità di almeno %1 per riuscire nell'installazione."
 
-#: src/pages/partitionpage.cpp:960 src/pages/partitionpage.cpp:990
+#: src/pages/partitionpage.cpp:959 src/pages/partitionpage.cpp:994
 msgid "Target's capacity not sufficient"
 msgstr "Capacità del dispositivo di destinazione non sufficiente"
 
-#: src/pages/partitionpage.cpp:971
+#: src/pages/partitionpage.cpp:976
 msgid ""
 "The partition you have chosen to mount as '/' is not marked for formatation. "
 "This might create problems. Do you still want to continue without formating "
 "it?"
 msgstr ""
-"La partizione che si è scelto di montare come '/' non è stata selezionata per "
-"la formattazione. Ciò potrebbe causare problemi. Si vuole procedere senza "
-"formattare?"
+"La partizione che si è scelto di montare come '/' non è stata selezionata "
+"per la formattazione. Ciò potrebbe causare problemi. Si vuole procedere "
+"senza formattare?"
 
-#: src/pages/partitionpage.cpp:988
+#: src/pages/partitionpage.cpp:992
 msgid ""
 "You have selected '%1' as a mountpoint, which is not valid. A valid "
 "mountpoint always starts with '/' and represents a directory on disk"
@@ -446,24 +446,24 @@ msgstr ""
 "Le seguenti partizioni appaiono montate: %1. Affinché l'installazione "
 "proceda correttamente, Tribe le smonterà."
 
-#: src/pages/usercreationpage.cpp:121
+#: src/pages/usercreationpage.cpp:148
 msgid "You must give at least one login name."
 msgstr "Devi indicare almeno un nome utente e una password."
 
-#: src/pages/usercreationpage.cpp:125
+#: src/pages/usercreationpage.cpp:152
 msgid "Root Passwords do not match..."
 msgstr "Le password di Root non corrispondono"
 
-#: src/pages/usercreationpage.cpp:139
+#: src/pages/usercreationpage.cpp:166
 #, fuzzy
 msgid "Passwords cannot be empty."
 msgstr "La password è vuota"
 
-#: src/pages/usercreationpage.cpp:143
+#: src/pages/usercreationpage.cpp:170
 msgid "Passwords do not match..."
 msgstr "Le password non corrispondono..."
 
-#: src/pages/usercreationpage.cpp:147
+#: src/pages/usercreationpage.cpp:174
 msgid "Login names cannot be empty."
 msgstr "Nome per l'accesso vuoto."
 
@@ -956,8 +956,7 @@ msgstr ""
 "sistema installato.\n"
 "\n"
 "Grazie per aver scelto di usare Chakra e contattaci sul forum, condividi le "
-"tue "
-"opinioni o consigli;\n"
+"tue opinioni o consigli;\n"
 "Per farla breve: Collabora! (http://chakra-project.org)\n"
 "\n"
 "Divertiti!\n"
@@ -1423,9 +1422,8 @@ msgid ""
 "partitions are not explicitly formatted."
 msgstr ""
 "Si prega di selezionare un punto di montaggio per le partizioni esistenti. "
-"Nessuna modifica permanente verrà fatta  sull'hard disk premendo "
-"\"Successivo\". "
-"Nota: le partizioni selezionate non verranno formattate automaticamente"
+"Nessuna modifica permanente verrà fatta  sull'hard disk premendo \"Successivo"
+"\". Nota: le partizioni selezionate non verranno formattate automaticamente"
 
 #. i18n: file: ui/pages/partition.ui:100
 #. i18n: ectx: property (text), widget (QLabel, typeLabel)
@@ -1669,8 +1667,8 @@ msgid ""
 "<small>This name will be used if you make the computer visible to others on "
 "a network.</small>"
 msgstr ""
-"<small>Questo nome verrà usato se il computer è visibile ad altri nella "
-"rete.</small>"
+"<small>Questo nome verrà usato se il computer è visibile ad altri nella rete."
+"</small>"
 
 #. i18n: file: ui/pages/usercreation.ui:299
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -1755,14 +1753,9 @@ msgstr "Conferma password di Root:"
 #: rc.cpp:485
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
-"Vincenzo Reale "
-"Giuseppe Calà"
+msgstr "Vincenzo Reale Giuseppe Calà"
 
 #: rc.cpp:486
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
-"smart2128@baslug.org "
-"jiveaxe@gmail.com"
-
+msgstr "smart2128@baslug.org jiveaxe@gmail.com"

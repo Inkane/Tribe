@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: chakra tribe\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2011-01-23 19:11+0100\n"
+"POT-Creation-Date: 2011-01-29 13:58+0100\n"
 "PO-Revision-Date: 2011-01-24 18:13+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
@@ -129,21 +129,23 @@ msgid "Installation complete!"
 msgstr "Installationen är färdig!"
 
 #: src/installationhandler.cpp:585
-msgid "Tribe was not able to initialize needed directories. Something is very wrong..."
-msgstr "Tribe kunde inte initiera nödvändiga kataloger. Någonting är mycket fel..."
+msgid ""
+"Tribe was not able to initialize needed directories. Something is very "
+"wrong..."
+msgstr ""
+"Tribe kunde inte initiera nödvändiga kataloger. Någonting är mycket fel..."
 
 #: src/installationhandler.cpp:609
 msgid "Could not mount %1"
 msgstr "Kunde inte montera %1"
 
-#: src/installationhandler.h:167
+#: src/installationhandler.h:171
 msgid "No Further details given"
 msgstr "Ingen ytterligare information finns"
 
 #. i18n: file: ui/pages/base.ui:20
 #. i18n: ectx: property (windowTitle), widget (QWidget, Base)
-#: src/main.cpp:42
-#: rc.cpp:3
+#: src/main.cpp:42 rc.cpp:3
 msgid "Tribe"
 msgstr "Tribe"
 
@@ -171,8 +173,7 @@ msgstr "Ansvarig"
 msgid "Lukas Appelhans"
 msgstr "Lukas Appelhans"
 
-#: src/main.cpp:47
-#: src/main.cpp:51
+#: src/main.cpp:47 src/main.cpp:51
 msgid "Developer"
 msgstr "Utvecklare"
 
@@ -188,8 +189,7 @@ msgstr "PostInstall backend och grafik"
 msgid "Phil Miller"
 msgstr "Phil Miller"
 
-#: src/main.cpp:49
-#: src/main.cpp:50
+#: src/main.cpp:49 src/main.cpp:50
 msgid "PostInstall Backend"
 msgstr "PostInstall backend"
 
@@ -215,18 +215,15 @@ msgstr ""
 "Tribe kommer nu att avslutas. Kontrollera installationsloggarna i /tmp\n"
 "eller fråga efter hjälp i våra forum."
 
-#: src/pages/bootloaderpage.cpp:52
-#: src/pages/configpage.cpp:677
+#: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:677
 msgid "Installing bootloader..."
 msgstr "Installerar starthanterare..."
 
-#: src/pages/bootloaderpage.cpp:82
-#: src/pages/configpage.cpp:647
+#: src/pages/bootloaderpage.cpp:82 src/pages/configpage.cpp:647
 msgid "Creating OS list..."
 msgstr "Skapar operativsystemslista..."
 
-#: src/pages/configpage.cpp:195
-#: src/pages/configpage.cpp:497
+#: src/pages/configpage.cpp:195 src/pages/configpage.cpp:497
 msgid "Downloading"
 msgstr "Hämtar"
 
@@ -296,22 +293,19 @@ msgstr "Total hämtningsstorlek:"
 
 #. i18n: file: ui/pages/config.ui:120
 #. i18n: ectx: property (text), widget (QPushButton, downloadBundlesButton)
-#: src/pages/configpage.cpp:554
-#: rc.cpp:105
+#: src/pages/configpage.cpp:554 rc.cpp:105
 msgid "Download Popular Bundles"
 msgstr "Hämta populära programpaket"
 
 #. i18n: file: ui/pages/config.ui:200
 #. i18n: ectx: property (text), widget (QPushButton, bootloaderSettingsButton)
-#: src/pages/configpage.cpp:572
-#: rc.cpp:114
+#: src/pages/configpage.cpp:572 rc.cpp:114
 msgid "Bootloader Settings"
 msgstr "Inställningar för starthanterare"
 
 #. i18n: file: ui/pages/config.ui:161
 #. i18n: ectx: property (text), widget (QPushButton, initRamDiskButton)
-#: src/pages/configpage.cpp:585
-#: rc.cpp:108
+#: src/pages/configpage.cpp:585 rc.cpp:108
 msgid "Customize Initial Ramdisk"
 msgstr "Anpassa initial ramdisk"
 
@@ -327,7 +321,7 @@ msgstr "Proprietär NVidia-drivrutin"
 msgid "Accept license for: "
 msgstr "Godkänn licens för: "
 
-#: src/pages/localepage.cpp:280
+#: src/pages/localepage.cpp:300
 msgid "You need to select a timezone"
 msgstr "Du måste välja en tidszon"
 
@@ -345,8 +339,7 @@ msgstr "Fel"
 
 #. i18n: file: ui/pages/partition.ui:363
 #. i18n: ectx: property (text), widget (QPushButton, newButton)
-#: src/pages/partitionpage.cpp:196
-#: rc.cpp:372
+#: src/pages/partitionpage.cpp:196 rc.cpp:372
 msgid "New"
 msgstr "Ny"
 
@@ -359,50 +352,68 @@ msgid "Loading partitions..."
 msgstr "Läser in partitioner..."
 
 #: src/pages/partitionpage.cpp:527
-msgid "The selected volume already has a partition table.. Overwrite it? (this will destroy all data on the device)"
-msgstr "Den valda volymen har redan en partitionstabell. Skriv över den? (detta kommer att förstöra allt data på enheten)"
+msgid ""
+"The selected volume already has a partition table.. Overwrite it? (this will "
+"destroy all data on the device)"
+msgstr ""
+"Den valda volymen har redan en partitionstabell. Skriv över den? (detta "
+"kommer att förstöra allt data på enheten)"
 
-#: src/pages/partitionpage.cpp:527
-#: src/pages/partitionpage.cpp:534
+#: src/pages/partitionpage.cpp:527 src/pages/partitionpage.cpp:534
 msgid "Warning"
 msgstr "Varning"
 
 #: src/pages/partitionpage.cpp:534
-msgid "This operation will destroy all data on the selected volume.. Continue anyway?"
-msgstr "Denna åtgärd kommer att förstöra allt data på den valda volymen. Fortsätt ändå?"
+msgid ""
+"This operation will destroy all data on the selected volume.. Continue "
+"anyway?"
+msgstr ""
+"Denna åtgärd kommer att förstöra allt data på den valda volymen. Fortsätt "
+"ändå?"
 
 #. i18n: file: ui/pages/partition.ui:111
 #. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
-#: src/pages/partitionpage.cpp:565
-#: src/pages/partitionpage.cpp:718
-#: src/pages/partitionpage.cpp:801
-#: rc.cpp:345
+#: src/pages/partitionpage.cpp:565 src/pages/partitionpage.cpp:718
+#: src/pages/partitionpage.cpp:801 rc.cpp:345
 msgid "Extended"
 msgstr "Utökad"
 
 #. i18n: file: ui/pages/partition.ui:116
 #. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
-#: src/pages/partitionpage.cpp:802
-#: rc.cpp:348
+#: src/pages/partitionpage.cpp:802 rc.cpp:348
 msgid "Primary"
 msgstr "Primär"
 
-#: src/pages/partitionpage.cpp:957
-msgid "The partition you have chosen to mount as '/' is too small. It should have a capacity of at least %1 for a successful installation."
-msgstr "Partitionen du har valt att montera som \"/\" är för liten. Den måste ha en kapacitet på minst %1 för en lyckad installation."
+#: src/pages/partitionpage.cpp:956
+msgid ""
+"The partition you have chosen to mount as '/' is too small. It should have a "
+"capacity of at least %1 for a successful installation."
+msgstr ""
+"Partitionen du har valt att montera som \"/\" är för liten. Den måste ha en "
+"kapacitet på minst %1 för en lyckad installation."
 
-#: src/pages/partitionpage.cpp:960
-#: src/pages/partitionpage.cpp:990
+#: src/pages/partitionpage.cpp:959 src/pages/partitionpage.cpp:994
 msgid "Target's capacity not sufficient"
 msgstr "Målets kapacitet räcker inte till"
 
-#: src/pages/partitionpage.cpp:971
-msgid "The partition you have chosen to mount as '/' is not marked for formatation. This might create problems. Do you still want to continue without formating it?"
-msgstr "Partitionen som du har valt att montera som \"/\" är inte markerad för formatering. Detta kan orsaka problem. Vill du fortsätta ändå utan att formatera den?"
+#: src/pages/partitionpage.cpp:976
+msgid ""
+"The partition you have chosen to mount as '/' is not marked for formatation. "
+"This might create problems. Do you still want to continue without formating "
+"it?"
+msgstr ""
+"Partitionen som du har valt att montera som \"/\" är inte markerad för "
+"formatering. Detta kan orsaka problem. Vill du fortsätta ändå utan att "
+"formatera den?"
 
-#: src/pages/partitionpage.cpp:988
-msgid "You have selected '%1' as a mountpoint, which is not valid. A valid mountpoint always starts with '/' and represents a directory on disk"
-msgstr "Du har valt \"%1\" som en monteringspunkt, vilket inte är giltigt. En giltig monteringspunkt börjar alltid med \"/\" och representerar en katalog på disken"
+#: src/pages/partitionpage.cpp:992
+msgid ""
+"You have selected '%1' as a mountpoint, which is not valid. A valid "
+"mountpoint always starts with '/' and represents a directory on disk"
+msgstr ""
+"Du har valt \"%1\" som en monteringspunkt, vilket inte är giltigt. En giltig "
+"monteringspunkt börjar alltid med \"/\" och representerar en katalog på "
+"disken"
 
 #: src/pages/readyinstallpage.cpp:77
 msgid "New partition (%1) on %2"
@@ -417,26 +428,30 @@ msgid "Continue"
 msgstr "Fortsätt"
 
 #: src/pages/readyinstallpage.cpp:104
-msgid "The following partitions appear to be mounted: %1. To let the installation happen correctly, Tribe will now unmount them."
-msgstr "Följande partitioner verkar vara monterade: %1. Tribe kommer nu att avmontera dem för att installationen ska fungera korrekt."
+msgid ""
+"The following partitions appear to be mounted: %1. To let the installation "
+"happen correctly, Tribe will now unmount them."
+msgstr ""
+"Följande partitioner verkar vara monterade: %1. Tribe kommer nu att "
+"avmontera dem för att installationen ska fungera korrekt."
 
-#: src/pages/usercreationpage.cpp:121
+#: src/pages/usercreationpage.cpp:148
 msgid "You must give at least one login name."
 msgstr "Du måste ange minst ett inloggningsnamn."
 
-#: src/pages/usercreationpage.cpp:125
+#: src/pages/usercreationpage.cpp:152
 msgid "Root Passwords do not match..."
 msgstr "Root-lösenorden stämmer inte överens..."
 
-#: src/pages/usercreationpage.cpp:139
+#: src/pages/usercreationpage.cpp:166
 msgid "Passwords cannot be empty."
 msgstr "Lösenordet får inte vara blankt."
 
-#: src/pages/usercreationpage.cpp:143
+#: src/pages/usercreationpage.cpp:170
 msgid "Passwords do not match..."
 msgstr "Lösenorden stämmer inte överens..."
 
-#: src/pages/usercreationpage.cpp:147
+#: src/pages/usercreationpage.cpp:174
 msgid "Login names cannot be empty."
 msgstr "Inloggningsnamn får inte vara tomma."
 
@@ -452,33 +467,43 @@ msgstr "Analyserar disk..."
 msgid "There was an error while formatting partitions"
 msgstr "Det uppstod ett fel vid formatering av partitioner"
 
-#: src/widgets/avatardialog.cpp:52
-#: src/widgets/avatardialog.cpp:71
+#: src/widgets/avatardialog.cpp:52 src/widgets/avatardialog.cpp:71
 msgid "Custom"
 msgstr "Anpassad"
 
 #. i18n: file: ui/pages/base.ui:172
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:6
+#, fuzzy
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span DEFANGED_STYLE=\" font-weight:600; color:#ffffff;\">Welcome</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Welcome</span></p></body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- "
+"<DEFANGED_STYLE type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span DEFANGED_STYLE=\" font-weight:600; color:#ffffff;\">Välkommen</span></p></body></html>"
+" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Sans "
+"Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"DEFANGED_STYLE=\" font-weight:600; color:#ffffff;\">Välkommen</span></p></"
+"body></html>"
 
 #. i18n: file: ui/pages/base.ui:198
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: file: ui/pages/releasenotes.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, ReleaseNotes)
-#: rc.cpp:13
-#: rc.cpp:415
+#: rc.cpp:13 rc.cpp:415
 msgid "Release Notes"
 msgstr "Versionsfakta"
 
@@ -509,18 +534,30 @@ msgstr "Diskkonfiguration"
 #. i18n: file: ui/pages/base.ui:327
 #. i18n: ectx: property (text), widget (QLabel, label_26)
 #: rc.cpp:28
+#, fuzzy
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span DEFANGED_STYLE=\" font-weight:600; color:#ffffff;\">Preparation</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Preparation</span></p></body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- "
+"<DEFANGED_STYLE type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span DEFANGED_STYLE=\" font-weight:600; color:#ffffff;\">Förberedelse</span></p></body></html>"
+" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Sans "
+"Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"DEFANGED_STYLE=\" font-weight:600; color:#ffffff;\">Förberedelse</span></p></"
+"body></html>"
 
 #. i18n: file: ui/pages/base.ui:334
 #. i18n: ectx: property (text), widget (QLabel, label_15)
@@ -531,18 +568,30 @@ msgstr "Skapa användare"
 #. i18n: file: ui/pages/base.ui:390
 #. i18n: ectx: property (text), widget (QLabel, label_11)
 #: rc.cpp:38
+#, fuzzy
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span DEFANGED_STYLE=\" font-weight:600; color:#ffffff;\">Installation</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Installation</span></p></body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- "
+"<DEFANGED_STYLE type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span DEFANGED_STYLE=\" font-weight:600; color:#ffffff;\">Installation</span></p></body></html>"
+" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Sans "
+"Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"DEFANGED_STYLE=\" font-weight:600; color:#ffffff;\">Installation</span></p></"
+"body></html>"
 
 #. i18n: file: ui/pages/base.ui:416
 #. i18n: ectx: property (text), widget (QLabel, label_13)
@@ -553,18 +602,30 @@ msgstr "Installera system"
 #. i18n: file: ui/pages/base.ui:453
 #. i18n: ectx: property (text), widget (QLabel, label_14)
 #: rc.cpp:48
+#, fuzzy
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span DEFANGED_STYLE=\" font-weight:600; color:#ffffff;\">Configuration</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600; color:#ffffff;\">Configuration</span></p></body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- "
+"<DEFANGED_STYLE type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span DEFANGED_STYLE=\" font-weight:600; color:#ffffff;\">Konfiguration</span></p></body></html>"
+" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Sans "
+"Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"DEFANGED_STYLE=\" font-weight:600; color:#ffffff;\">Konfiguration</span></"
+"p></body></html>"
 
 #. i18n: file: ui/pages/base.ui:460
 #. i18n: ectx: property (text), widget (QLabel, label_16)
@@ -595,18 +656,32 @@ msgstr "Nästa"
 #. i18n: file: ui/pages/bootloader.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:67
+#, fuzzy
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span DEFANGED_STYLE=\" font-size:22pt; font-weight:600; color:#ffffff;\">Bootloader Installation</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Bootloader Installation</span></p></body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- "
+"<DEFANGED_STYLE type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span DEFANGED_STYLE=\" font-size:22pt; font-weight:600; color:#ffffff;\">Installation av starthanterare</span></p></body></html>"
+" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Bitstream "
+"Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans "
+"Serif'; font-size:10pt;\"><span DEFANGED_STYLE=\" font-size:22pt; font-"
+"weight:600; color:#ffffff;\">Installation av starthanterare</span></p></"
+"body></html>"
 
 #. i18n: file: ui/pages/bootloader.ui:58
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -635,9 +710,7 @@ msgstr "Installera starthanterare"
 #. i18n: ectx: property (toolTip), widget (QPushButton, advancedButton)
 #. i18n: file: ui/pages/partition.ui:328
 #. i18n: ectx: property (text), widget (QPushButton, advancedButton)
-#: rc.cpp:83
-#: rc.cpp:363
-#: rc.cpp:366
+#: rc.cpp:83 rc.cpp:363 rc.cpp:366
 msgid "Advanced..."
 msgstr "Avancerat..."
 
@@ -656,24 +729,39 @@ msgstr "hd0"
 #. i18n: file: ui/pages/config.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:92
+#, fuzzy
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Sans Serif'; font-size:14pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span DEFANGED_STYLE=\" font-size:22pt; font-weight:600; color:#ffffff;\">Configuration</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:14pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:22pt; font-weight:600; color:#ffffff;\">Configuration</span></p></"
+"body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- "
+"<DEFANGED_STYLE type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Sans Serif'; font-size:14pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span DEFANGED_STYLE=\" font-size:22pt; font-weight:600; color:#ffffff;\">Konfiguration</span></p></body></html>"
+" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Sans "
+"Serif'; font-size:14pt; font-weight:400; font-style:normal;\">\n"
+"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"DEFANGED_STYLE=\" font-size:22pt; font-weight:600; color:#ffffff;"
+"\">Konfiguration</span></p></body></html>"
 
 #. i18n: file: ui/pages/config.ui:55
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:99
-msgid "Now that you have a Chakra install, you can now configure it to your liking."
-msgstr "Nu när du har Chakra installerat, kan du konfigurera det som det passar dig."
+msgid ""
+"Now that you have a Chakra install, you can now configure it to your liking."
+msgstr ""
+"Nu när du har Chakra installerat, kan du konfigurera det som det passar dig."
 
 #. i18n: file: ui/pages/config.ui:95
 #. i18n: ectx: property (text), widget (QPushButton, installPkgzButton)
@@ -801,27 +889,39 @@ msgstr "Installera GRUB"
 #. i18n: ectx: property (text), widget (KPushButton, editPartitionCancelButton)
 #. i18n: file: ui/widgets/avatardialog.ui:114
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
-#: rc.cpp:171
-#: rc.cpp:357
-#: rc.cpp:453
+#: rc.cpp:171 rc.cpp:357 rc.cpp:453
 msgid "Cancel"
 msgstr "Avbryt"
 
 #. i18n: file: ui/pages/finish.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:174
+#, fuzzy
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span DEFANGED_STYLE=\" font-size:22pt; font-weight:600; color:#ffffff;\">Installation Completed!</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Installation Completed!</span></p></body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- "
+"<DEFANGED_STYLE type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span DEFANGED_STYLE=\" font-size:22pt; font-weight:600; color:#ffffff;\">Installationen är färdig!</span></p></body></html>"
+" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Bitstream "
+"Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans "
+"Serif'; font-size:10pt;\"><span DEFANGED_STYLE=\" font-size:22pt; font-"
+"weight:600; color:#ffffff;\">Installationen är färdig!</span></p></body></"
+"html>"
 
 #. i18n: file: ui/pages/finish.ui:68
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -833,9 +933,11 @@ msgid ""
 "You can now reboot into the installed system or keep using the LiveCD.\n"
 "\n"
 "In case you want to check the installation logs,\n"
-"take a look into /tmp on the live system or into /var/log on the installed system.\n"
+"take a look into /tmp on the live system or into /var/log on the installed "
+"system.\n"
 "\n"
-"Thanks for using Chakra, and get in touch with us in the forums, share opinions, give advices;\n"
+"Thanks for using Chakra, and get in touch with us in the forums, share "
+"opinions, give advices;\n"
 "To put it simple: Get involved! (http://chakra-project.org)\n"
 "\n"
 "Have Fun!\n"
@@ -844,14 +946,19 @@ msgid ""
 msgstr ""
 "Gratulerar! Installationen är nu färdig!\n"
 "\n"
-"Vi hoppas att du är lika nöjd med din installation som vi är över att ha skapat den.\n"
-"Du kan nu starta om till det installerade systemet eller fortsätta att använda denna LiveCD.\n"
+"Vi hoppas att du är lika nöjd med din installation som vi är över att ha "
+"skapat den.\n"
+"Du kan nu starta om till det installerade systemet eller fortsätta att "
+"använda denna LiveCD.\n"
 "\n"
-"Om du vill kontrollera installationsloggarna så ta en titt i /tmp på live-systemet eller i\n"
+"Om du vill kontrollera installationsloggarna så ta en titt i /tmp på live-"
+"systemet eller i\n"
 "/var/log på det installerade systemet.\n"
 "\n"
-"Tack för att du använder Chakra och kontakta oss i våra forum, dela med dig av erfarenheter\n"
-"eller ge oss råd. För att säga det enkelt: Hjälp oss genom att bidra! (http://chakra-project.org)\n"
+"Tack för att du använder Chakra och kontakta oss i våra forum, dela med dig "
+"av erfarenheter\n"
+"eller ge oss råd. För att säga det enkelt: Hjälp oss genom att bidra! "
+"(http://chakra-project.org)\n"
 "\n"
 "Lycka till!\n"
 "\n"
@@ -878,24 +985,50 @@ msgstr "Ramdisk"
 #. i18n: file: ui/pages/init.ui:49
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:206
+#, fuzzy
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span DEFANGED_STYLE=\" font-size:22pt; font-weight:600; color:#ffffff;\">Ramdisk Setup</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Ramdisk Setup</span></p></body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- "
+"<DEFANGED_STYLE type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span DEFANGED_STYLE=\" font-size:22pt; font-weight:600; color:#ffffff;\">Konfigurera ramdisk</span></p></body></html>"
+" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Bitstream "
+"Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans "
+"Serif'; font-size:10pt;\"><span DEFANGED_STYLE=\" font-size:22pt; font-"
+"weight:600; color:#ffffff;\">Konfigurera ramdisk</span></p></body></html>"
 
 #. i18n: file: ui/pages/init.ui:58
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:213
-msgid "Your hardware will be configured automatically during the installation and a initial ramdisk environment for booting the linux kernel will be built. Everything should happen without intervention, but you might need some options for special boot methods. If you are unsure on what this means, simply press the \"Next\" button. Otherwise check out the ramdisk options below and select the items you need for your system."
-msgstr "Din maskinvara kommer automatiskt att konfigureras under installationen och en initial ramdiskmiljö för uppstart av Linux-kärnan kommer att byggas. Allting ska ske utan manuell inverkan men du kanske behöver ange vissa inställningar för speciella uppstartsmetoder. Om du är osäker på vad det här betyder så tryck helt enkelt på \"Nästa\"-knappen. Om inte så kontrolleras ramdisk-inställningarna nedan och välj de objekt som du behöver för ditt system."
+msgid ""
+"Your hardware will be configured automatically during the installation and a "
+"initial ramdisk environment for booting the linux kernel will be built. "
+"Everything should happen without intervention, but you might need some "
+"options for special boot methods. If you are unsure on what this means, "
+"simply press the \"Next\" button. Otherwise check out the ramdisk options "
+"below and select the items you need for your system."
+msgstr ""
+"Din maskinvara kommer automatiskt att konfigureras under installationen och "
+"en initial ramdiskmiljö för uppstart av Linux-kärnan kommer att byggas. "
+"Allting ska ske utan manuell inverkan men du kanske behöver ange vissa "
+"inställningar för speciella uppstartsmetoder. Om du är osäker på vad det här "
+"betyder så tryck helt enkelt på \"Nästa\"-knappen. Om inte så kontrolleras "
+"ramdisk-inställningarna nedan och välj de objekt som du behöver för ditt "
+"system."
 
 #. i18n: file: ui/pages/init.ui:81
 #. i18n: ectx: property (text), widget (QPushButton, pushButton)
@@ -984,60 +1117,168 @@ msgstr "Tribe-introduktion"
 #. i18n: file: ui/pages/intro.ui:105
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:258
+#, fuzzy
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Sans Serif'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; color:#eeeeee;\">Welcome to the Chakra Installation!</span></p>\n"
-"<p align=\"center\" DEFANGED_STYLE=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\">This installer will guide you through the process of installing</span></p>\n"
-"<p align=\"center\" DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\">the Chakra live system on your computer. After the installation you will</span></p>\n"
-"<p align=\"center\" DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\">have a ready-to-use Chakra Linux system.</span></p>\n"
-"<p align=\"center\" DEFANGED_STYLE=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\"> Please carefully read all of the instructions.</span></p>\n"
-"<p align=\"center\" DEFANGED_STYLE=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\"> Remember:</span><span DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536;\"> </span><span DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#ff0000;\">THIS IS ALPHA SOFTWARE, IT COULD EAT YOUR HAMSTER</span></p>\n"
-"<p align=\"center\" DEFANGED_STYLE=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#ff0000;\"></p>\n"
-"<p align=\"center\" DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\">Have fun! - The Chakra Developers</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:12pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; color:#eeeeee;\">Welcome to the "
+"Chakra Installation!</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;"
+"\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">This installer will guide you through the process of "
+"installing</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">the Chakra live system on your computer. After the "
+"installation you will</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">have a ready-to-use Chakra Linux system.</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
+"weight:536; color:#eeeeee;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\"> Please carefully read all of the instructions.</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;"
+"\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\"> Remember:</span><span style=\" font-family:'Bitstream Vera "
+"Sans'; font-size:8pt; font-weight:536;\"> </span><span style=\" font-"
+"family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#ff0000;"
+"\">THIS IS ALPHA SOFTWARE, IT COULD EAT YOUR HAMSTER</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
+"weight:536; color:#ff0000;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
+"color:#eeeeee;\">Have fun! - The Chakra Developers</span></p></body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- "
+"<DEFANGED_STYLE type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Sans Serif'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; color:#eeeeee;\">Välkommen till Chakra-installationen!</span></p>\n"
-"<p align=\"center\" DEFANGED_STYLE=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\">Detta installationsprogram hjälper dig genom hela installationen av</span></p>\n"
-"<p align=\"center\" DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\"> Chakras live-system på din dator. Efter installationen kommer du</span></p>\n"
-"<p align=\"center\" DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\">att ha ett användbart Chakra Linux-system.</span></p>\n"
-"<p align=\"center\" DEFANGED_STYLE=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\"> Läs noga alla instruktioner.</span></p>\n"
-"<p align=\"center\" DEFANGED_STYLE=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\"> Remember:</span><span DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536;\"> </span><span DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#ff0000;\">DETTA ÄR INSTABIL PROGRAMVARA - DEN KAN ÄTA UPP DIN HAMSTER</span></p>\n"
-"<p align=\"center\" DEFANGED_STYLE=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#ff0000;\"></p>\n"
-"<p align=\"center\" DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\">Mycket nöje! - The Chakra Developers</span></p></body></html>"
+" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Sans "
+"Serif'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+"\"><span DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; color:#eeeeee;"
+"\">Välkommen till Chakra-installationen!</span></p>\n"
+"<p align=\"center\" DEFANGED_STYLE=\"-qt-paragraph-type:empty; margin-"
+"top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-"
+"indent:0; text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; "
+"color:#eeeeee;\"></p>\n"
+"<p align=\"center\" DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+"\"><span DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:8pt; "
+"font-weight:536; color:#eeeeee;\">Detta installationsprogram hjälper dig "
+"genom hela installationen av</span></p>\n"
+"<p align=\"center\" DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+"\"><span DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:8pt; "
+"font-weight:536; color:#eeeeee;\"> Chakras live-system på din dator. Efter "
+"installationen kommer du</span></p>\n"
+"<p align=\"center\" DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+"\"><span DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:8pt; "
+"font-weight:536; color:#eeeeee;\">att ha ett användbart Chakra Linux-system."
+"</span></p>\n"
+"<p align=\"center\" DEFANGED_STYLE=\"-qt-paragraph-type:empty; margin-"
+"top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-"
+"indent:0; text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; "
+"font-weight:536; color:#eeeeee;\"></p>\n"
+"<p align=\"center\" DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+"\"><span DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:8pt; "
+"font-weight:536; color:#eeeeee;\"> Läs noga alla instruktioner.</span></p>\n"
+"<p align=\"center\" DEFANGED_STYLE=\"-qt-paragraph-type:empty; margin-"
+"top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-"
+"indent:0; text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; "
+"color:#eeeeee;\"></p>\n"
+"<p align=\"center\" DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+"\"><span DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:8pt; "
+"font-weight:536; color:#eeeeee;\"> Remember:</span><span DEFANGED_STYLE=\" "
+"font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536;\"> </"
+"span><span DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-"
+"size:8pt; font-weight:536; color:#ff0000;\">DETTA ÄR INSTABIL PROGRAMVARA - "
+"DEN KAN ÄTA UPP DIN HAMSTER</span></p>\n"
+"<p align=\"center\" DEFANGED_STYLE=\"-qt-paragraph-type:empty; margin-"
+"top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-"
+"indent:0; text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; "
+"font-weight:536; color:#ff0000;\"></p>\n"
+"<p align=\"center\" DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+"\"><span DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:8pt; "
+"font-weight:536; color:#eeeeee;\">Mycket nöje! - The Chakra Developers</"
+"span></p></body></html>"
 
 #. i18n: file: ui/pages/license.ui:49
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:275
+#, fuzzy
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span DEFANGED_STYLE=\" font-size:22pt; font-weight:600; color:#ffffff;\">License Approval</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:22pt; font-weight:600; color:#ffffff;\">License Approval</span></p></"
+"body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- "
+"<DEFANGED_STYLE type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span DEFANGED_STYLE=\" font-size:22pt; font-weight:600; color:#ffffff;\">Licensgodkännande</span></p></body></html>"
+" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Sans "
+"Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"DEFANGED_STYLE=\" font-size:22pt; font-weight:600; color:#ffffff;"
+"\">Licensgodkännande</span></p></body></html>"
 
 #. i18n: file: ui/pages/license.ui:61
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:282
-msgid "Chakra includes some proprietary software like hardware drivers, media plugins and fonts. To install them, you have to read and accept their licenses. If you choose against a license, the installer will try to use a free solution (if one is available)."
-msgstr "Chakra inkluderar ett antal proprietära programvaror såsom maskinvarudrivrutiner, mediainsticksmoduler och typsnitt. För att installera dem så behöver du läsa igenom och godkänna deras licenser. Om du väljer att inte godkänna licensen så kommer installeraren att försöka att använda en fri lösning (om det finns någon tillgänglig)."
+msgid ""
+"Chakra includes some proprietary software like hardware drivers, media "
+"plugins and fonts. To install them, you have to read and accept their "
+"licenses. If you choose against a license, the installer will try to use a "
+"free solution (if one is available)."
+msgstr ""
+"Chakra inkluderar ett antal proprietära programvaror såsom "
+"maskinvarudrivrutiner, mediainsticksmoduler och typsnitt. För att installera "
+"dem så behöver du läsa igenom och godkänna deras licenser. Om du väljer att "
+"inte godkänna licensen så kommer installeraren att försöka att använda en "
+"fri lösning (om det finns någon tillgänglig)."
 
 #. i18n: file: ui/pages/license.ui:74
 #. i18n: ectx: property (text), widget (QLabel, licenseLabel)
@@ -1066,24 +1307,46 @@ msgstr "Formulär"
 #. i18n: file: ui/pages/locale.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: rc.cpp:297
+#, fuzzy
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span DEFANGED_STYLE=\" font-size:22pt; font-weight:600; color:#ffffff;\">Language &amp; Time</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Language &amp; Time</span></p></body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- "
+"<DEFANGED_STYLE type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span DEFANGED_STYLE=\" font-size:22pt; font-weight:600; color:#ffffff;\">Språk och tid</span></p></body></html>"
+" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Bitstream "
+"Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans "
+"Serif'; font-size:10pt;\"><span DEFANGED_STYLE=\" font-size:22pt; font-"
+"weight:600; color:#ffffff;\">Språk och tid</span></p></body></html>"
 
 #. i18n: file: ui/pages/locale.ui:45
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: rc.cpp:304
-msgid "Please select the nearest city on the globe so the installer can suggest the locale and timezone settings for you. You can fine-tune the suggested settings at the bottom of the page. If you cant find your region or city on the globe, you can zoom in by using the slider on the left."
-msgstr "Välj den närmsta staden på globen så att installeraren kan föreslå inställningar för lokalanpassning och tidszon. Du kan finjustera de föreslagna inställningarna nederst på sidan. Om du inte kan hitta ditt område eller stad på globen så kan du zooma in genom att använda draglisten till vänster."
+msgid ""
+"Please select the nearest city on the globe so the installer can suggest the "
+"locale and timezone settings for you. You can fine-tune the suggested "
+"settings at the bottom of the page. If you cant find your region or city on "
+"the globe, you can zoom in by using the slider on the left."
+msgstr ""
+"Välj den närmsta staden på globen så att installeraren kan föreslå "
+"inställningar för lokalanpassning och tidszon. Du kan finjustera de "
+"föreslagna inställningarna nederst på sidan. Om du inte kan hitta ditt "
+"område eller stad på globen så kan du zooma in genom att använda draglisten "
+"till vänster."
 
 #. i18n: file: ui/pages/locale.ui:69
 #. i18n: ectx: property (clickMessage), widget (KLineEdit, locationsSearch)
@@ -1113,8 +1376,7 @@ msgstr "Lokalanpassning:"
 #. i18n: ectx: property (text), widget (QCheckBox, showLocalesCheck)
 #. i18n: file: ui/pages/locale.ui:270
 #. i18n: ectx: property (text), widget (QCheckBox, showKDELangsCheck)
-#: rc.cpp:319
-#: rc.cpp:322
+#: rc.cpp:319 rc.cpp:322
 msgid "Show all"
 msgstr "Visa alla"
 
@@ -1133,24 +1395,43 @@ msgstr "Partition"
 #. i18n: file: ui/pages/partition.ui:43
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:331
+#, fuzzy
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span DEFANGED_STYLE=\" font-size:22pt; font-weight:600; color:#ffffff;\">Disk setup</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Disk setup</span></p></body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- "
+"<DEFANGED_STYLE type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span DEFANGED_STYLE=\" font-size:22pt; font-weight:600; color:#ffffff;\">Diskkonfiguration</span></p></body></html>"
+" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Bitstream "
+"Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans "
+"Serif'; font-size:10pt;\"><span DEFANGED_STYLE=\" font-size:22pt; font-"
+"weight:600; color:#ffffff;\">Diskkonfiguration</span></p></body></html>"
 
 #. i18n: file: ui/pages/partition.ui:58
 #. i18n: ectx: property (text), widget (QLabel, descriptionLabel)
 #: rc.cpp:338
-msgid "Please select a mountpoint for your partitions. No permanent changes to your hard drive will be made when you will press \"Next\". Note: selected partitions are not explicitly formatted."
-msgstr "Välj en monteringspunkt för dina partitioner. Inga permanenta ändringar på din hårddisk kommer att göras när du trycker på \"Nästa\". Observera: valda partitioner kommer inte uttryckligen att formateras."
+msgid ""
+"Please select a mountpoint for your partitions. No permanent changes to your "
+"hard drive will be made when you will press \"Next\". Note: selected "
+"partitions are not explicitly formatted."
+msgstr ""
+"Välj en monteringspunkt för dina partitioner. Inga permanenta ändringar på "
+"din hårddisk kommer att göras när du trycker på \"Nästa\". Observera: valda "
+"partitioner kommer inte uttryckligen att formateras."
 
 #. i18n: file: ui/pages/partition.ui:100
 #. i18n: ectx: property (text), widget (QLabel, typeLabel)
@@ -1168,8 +1449,7 @@ msgstr "Filsystem: "
 #. i18n: ectx: property (text), widget (KPushButton, editPartitionOkButton)
 #. i18n: file: ui/widgets/avatardialog.ui:85
 #. i18n: ectx: property (text), widget (QPushButton, okButton)
-#: rc.cpp:354
-#: rc.cpp:450
+#: rc.cpp:354 rc.cpp:450
 msgid "Ok"
 msgstr "Ok"
 
@@ -1201,8 +1481,7 @@ msgstr "Formatera"
 #. i18n: ectx: property (toolTip), widget (QPushButton, undoButton)
 #. i18n: file: ui/pages/partition.ui:423
 #. i18n: ectx: property (text), widget (QPushButton, undoButton)
-#: rc.cpp:381
-#: rc.cpp:384
+#: rc.cpp:381 rc.cpp:384
 msgid "Undo"
 msgstr "Ångra"
 
@@ -1215,94 +1494,172 @@ msgstr "Avmontera markerad partition"
 #. i18n: file: ui/pages/readyinstall.ui:51
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:390
+#, fuzzy
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span DEFANGED_STYLE=\" font-size:22pt; font-weight:600; color:#ffffff;\">Ready to Install</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
+"#ffffff;\">Ready to Install</span></p></body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- "
+"<DEFANGED_STYLE type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span DEFANGED_STYLE=\" font-size:22pt; font-weight:600; color:#ffffff;\">Redo för installation</span></p></body></html>"
+" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Bitstream "
+"Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans "
+"Serif'; font-size:10pt;\"><span DEFANGED_STYLE=\" font-size:22pt; font-"
+"weight:600; color:#ffffff;\">Redo för installation</span></p></body></html>"
 
 #. i18n: file: ui/pages/readyinstall.ui:77
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:397
-msgid "The system will be installed with the following settings. Before continuing, please review your selections:\n"
-msgstr "Systemet kommer att installeras med följande inställningar. Granska dina val innan du fortsätter:\n"
+msgid ""
+"The system will be installed with the following settings. Before continuing, "
+"please review your selections:\n"
+msgstr ""
+"Systemet kommer att installeras med följande inställningar. Granska dina val "
+"innan du fortsätter:\n"
 
 #. i18n: file: ui/pages/readyinstall.ui:147
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: rc.cpp:401
+#, fuzzy
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span DEFANGED_STYLE=\" font-size:12pt; font-weight:600; color:#eeeeee;\">The following partitions will be used:</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+"#eeeeee;\">The following partitions will be used:</span></p></body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- "
+"<DEFANGED_STYLE type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span DEFANGED_STYLE=\" font-size:12pt; font-weight:600; color:#eeeeee;\">Följande partitioner kommer att användas:</span></p></body></html>"
+" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Bitstream "
+"Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans "
+"Serif'; font-size:10pt;\"><span DEFANGED_STYLE=\" font-size:12pt; font-"
+"weight:600; color:#eeeeee;\">Följande partitioner kommer att användas:</"
+"span></p></body></html>"
 
 #. i18n: file: ui/pages/readyinstall.ui:211
 #. i18n: ectx: property (text), widget (QLabel, formatLabel)
 #: rc.cpp:408
+#, fuzzy
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span DEFANGED_STYLE=\" font-size:12pt; font-weight:600; color:#eeeeee;\">The following partitions will be formatted:</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+"size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
+"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
+"#eeeeee;\">The following partitions will be formatted:</span></p></body></"
+"html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- "
+"<DEFANGED_STYLE type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span DEFANGED_STYLE=\" font-size:12pt; font-weight:600; color:#eeeeee;\">Följande partitioner kommer att formateras:</span></p></body></html>"
+" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Bitstream "
+"Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans "
+"Serif'; font-size:10pt;\"><span DEFANGED_STYLE=\" font-size:12pt; font-"
+"weight:600; color:#eeeeee;\">Följande partitioner kommer att formateras:</"
+"span></p></body></html>"
 
 #. i18n: file: ui/pages/releasenotes.ui:47
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:418
+#, fuzzy
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span DEFANGED_STYLE=\" font-size:22pt; font-weight:600; color:#ffffff;\">Release Notes</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
+"style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Release Notes</"
+"span></p></body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- "
+"<DEFANGED_STYLE type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span DEFANGED_STYLE=\" font-size:22pt; font-weight:600; color:#ffffff;\">Versionsfakta</span></p></body></html>"
+" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Sans "
+"Serif'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;"
+"\"><span DEFANGED_STYLE=\" font-size:22pt; font-weight:600; color:#ffffff;"
+"\">Versionsfakta</span></p></body></html>"
 
 #. i18n: file: ui/pages/releasenotes.ui:60
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:425
-msgid "Check out what's new, the known issues and general information about this version of Chakra. As always, you are encouraged to tell us what you think, either by visiting our forums or bug tracker."
-msgstr "Se vad som är nytt, kända problem och allmän information om denna version av Chakra. Som alltid så uppskattar vi att du informerar oss vad du tycker, antingen genom att besöka våra forum eller felrapporteringssystem."
+msgid ""
+"Check out what's new, the known issues and general information about this "
+"version of Chakra. As always, you are encouraged to tell us what you think, "
+"either by visiting our forums or bug tracker."
+msgstr ""
+"Se vad som är nytt, kända problem och allmän information om denna version av "
+"Chakra. Som alltid så uppskattar vi att du informerar oss vad du tycker, "
+"antingen genom att besöka våra forum eller felrapporteringssystem."
 
 #. i18n: file: ui/pages/usercreation.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:428
+#, fuzzy
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Sans Serif'; font-size:14pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span DEFANGED_STYLE=\" font-size:22pt; font-weight:600; color:#ffffff;\">Create Users</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:14pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:22pt; font-weight:600; color:#ffffff;\">Create Users</span></p></body></"
+"html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- <DEFANGED_STYLE type=\"text/css\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><DEFANGED_meta name=\"qrichtext\" content=\"1\" /> <!-- "
+"<DEFANGED_STYLE type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Sans Serif'; font-size:14pt; font-weight:400; font-style:normal;\">\n"
-"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span DEFANGED_STYLE=\" font-size:22pt; font-weight:600; color:#ffffff;\">Skapa användare</span></p></body></html>"
+" --> </DEFANGED_STYLE></head><body DEFANGED_STYLE=\" font-family:'Sans "
+"Serif'; font-size:14pt; font-weight:400; font-style:normal;\">\n"
+"<p DEFANGED_STYLE=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"DEFANGED_STYLE=\" font-size:22pt; font-weight:600; color:#ffffff;\">Skapa "
+"användare</span></p></body></html>"
 
 #. i18n: file: ui/pages/usercreation.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -1319,8 +1676,12 @@ msgstr "Lägg till ytterligare användarekonto."
 #. i18n: file: ui/pages/usercreation.ui:286
 #. i18n: ectx: property (text), widget (QLabel, hostname_extra_label)
 #: rc.cpp:441
-msgid "<small>This name will be used if you make the computer visible to others on a network.</small>"
-msgstr "<small>Detta namn kommer att användas om du gör datorn synlig för andra på ett nätverk.</small>"
+msgid ""
+"<small>This name will be used if you make the computer visible to others on "
+"a network.</small>"
+msgstr ""
+"<small>Detta namn kommer att användas om du gör datorn synlig för andra på "
+"ett nätverk.</small>"
 
 #. i18n: file: ui/pages/usercreation.ui:299
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -1407,4 +1768,3 @@ msgstr "Daniel Nylander"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "po@danielnylander.se"
-

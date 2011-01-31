@@ -22,6 +22,7 @@
 #include <KLocalizedString>
 #include <KIO/CopyJob>
 
+
 class Partition;
 
 class InstallationHandler : public QObject
@@ -97,6 +98,12 @@ class InstallationHandler : public QObject
         void setHostname(const QString &name) { m_hostname = name; }
         QString hostname() { return m_hostname; }
 
+        void setContinent(const QString &continent) { m_continent = continent; }
+        QString continent() { return m_continent; }
+
+        void setRegion(const QString &region) { m_region = region; }
+        QString region() { return m_region; }
+
         void setTimezone(const QString &time) { m_timezone = time; }
         QString timezone() { return m_timezone; }
 
@@ -124,15 +131,12 @@ class InstallationHandler : public QObject
         void setUserAutoLoginList(QStringList s) { m_userAutoLoginList = s; }
         QStringList userAutoLoginList() { return m_userAutoLoginList; }
 
-        void setUserAdminList(QStringList s) { m_userAdminList = s; }
-        QStringList userAdminList() { return m_userAdminList; }
-
         void setConfigurePacman(bool pac) { m_configurePacman = pac; }
         bool configurePacman() { return m_configurePacman; }
 
         void setRootDevice(const QString& s) { m_rootDevice = s; }
         QString rootDevice() { return m_rootDevice; }
-        
+
         QString m_postcommand;
 
     public slots:
@@ -214,6 +218,8 @@ class InstallationHandler : public QObject
         QStringList m_userAutoLoginList;
 
         QString m_hostname;
+        QString m_continent;
+        QString m_region;
         QString m_timezone;
         QString m_locale;
         QString m_KDELangPack;

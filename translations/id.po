@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2011-01-23 19:11+0100\n"
+"POT-Creation-Date: 2011-01-29 13:58+0100\n"
 "PO-Revision-Date: 2010-12-19 20:18+0700\n"
 "Last-Translator: Martin Lee\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
@@ -143,7 +143,7 @@ msgstr ""
 msgid "Could not mount %1"
 msgstr "Tidak dapat memuat %1"
 
-#: src/installationhandler.h:167
+#: src/installationhandler.h:171
 msgid "No Further details given"
 msgstr "Tidak ada penjelasan lebih lanjut diberikan"
 
@@ -324,7 +324,7 @@ msgstr "Driver Hak Milik NVIDIA"
 msgid "Accept license for: "
 msgstr "Menerima lisensi untuk:"
 
-#: src/pages/localepage.cpp:280
+#: src/pages/localepage.cpp:300
 msgid "You need to select a timezone"
 msgstr "Anda harus memilih lokasi zona waktu"
 
@@ -387,7 +387,7 @@ msgstr "Perluasan"
 msgid "Primary"
 msgstr "Utama"
 
-#: src/pages/partitionpage.cpp:957
+#: src/pages/partitionpage.cpp:956
 msgid ""
 "The partition you have chosen to mount as '/' is too small. It should have a "
 "capacity of at least %1 for a successful installation."
@@ -395,18 +395,18 @@ msgstr ""
 "Partisi yang anda pilih akan di muat sebagai \"/\" terlalu kecil. Partisi "
 "harus memiliki kapasitas setidaknya 1% dari total keberhasilan instalasi"
 
-#: src/pages/partitionpage.cpp:960 src/pages/partitionpage.cpp:990
+#: src/pages/partitionpage.cpp:959 src/pages/partitionpage.cpp:994
 msgid "Target's capacity not sufficient"
 msgstr "Kapasitas target tidak mencukupi"
 
-#: src/pages/partitionpage.cpp:971
+#: src/pages/partitionpage.cpp:976
 msgid ""
 "The partition you have chosen to mount as '/' is not marked for formatation. "
 "This might create problems. Do you still want to continue without formating "
 "it?"
 msgstr ""
 
-#: src/pages/partitionpage.cpp:988
+#: src/pages/partitionpage.cpp:992
 msgid ""
 "You have selected '%1' as a mountpoint, which is not valid. A valid "
 "mountpoint always starts with '/' and represents a directory on disk"
@@ -435,23 +435,23 @@ msgstr ""
 "Partisi yang dimaksud terlihat di muat pada: %1. Untuk melanjutkan "
 "instalasi, Tribe akan melepas kaitan."
 
-#: src/pages/usercreationpage.cpp:121
+#: src/pages/usercreationpage.cpp:148
 msgid "You must give at least one login name."
 msgstr "Anda harus memberikan setidaknya satu login."
 
-#: src/pages/usercreationpage.cpp:125
+#: src/pages/usercreationpage.cpp:152
 msgid "Root Passwords do not match..."
 msgstr "Kata Sandi Root tidak cocok..."
 
-#: src/pages/usercreationpage.cpp:139
+#: src/pages/usercreationpage.cpp:166
 msgid "Passwords cannot be empty."
 msgstr "Kata sandi tidak boleh kosong."
 
-#: src/pages/usercreationpage.cpp:143
+#: src/pages/usercreationpage.cpp:170
 msgid "Passwords do not match..."
 msgstr "Kata sandi tidak cocok..."
 
-#: src/pages/usercreationpage.cpp:147
+#: src/pages/usercreationpage.cpp:174
 msgid "Login names cannot be empty."
 msgstr "Nama login tidak boleh kosong."
 

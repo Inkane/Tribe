@@ -134,6 +134,26 @@ void LocalePage::createWidget()
     connect(showLocalesCheck, SIGNAL(stateChanged(int)), SLOT(updateLocales()));
     connect(showKDELangsCheck, SIGNAL(stateChanged(int)), SLOT(updateLocales()));
 
+    if (!m_install->continent().isEmpty()) {
+        continentCombo->addItem(m_install->continent());
+        continentCombo->setCurrentIndex(continentCombo->count() - 1);
+    }
+
+    if (!m_install->region().isEmpty()) {
+        regionCombo->addItem(m_install->region());
+        regionCombo->setCurrentIndex(regionCombo->count() - 1);
+    }
+
+    if (!m_install->KDELangPack().isEmpty()) {
+        kdeLanguageCombo->addItem(m_allKDELangs.value(m_install->KDELangPack()));
+        kdeLanguageCombo->setCurrentIndex(kdeLanguageCombo->count() - 1);
+    }
+
+    if (!m_install->locale().isEmpty()) {
+        localeCombo->addItem(m_install->locale());
+        localeCombo->setCurrentIndex(localeCombo->count() - 1);
+    }
+
     zoom(55);
 }
 
@@ -170,7 +190,7 @@ bool LocalePage::eventFilter(QObject * object, QEvent * event)
 void LocalePage::continentChanged(int index)
 {
     regionCombo->clear();
-    
+
     QStringList timezones = m_allTimezones.value(continentCombo->itemText(index));
 
     QStringList::const_iterator it;
@@ -268,7 +288,7 @@ void LocalePage::zoomChanged(int)
     connect(zoomSlider, SIGNAL(valueChanged(int)), this, SLOT(zoom(int)));
 }
 
-void LocalePage::aboutToGoToNext()
+bool LocalePage::validate()
 {
     if (regionCombo->currentText().isEmpty()) {
         bool retbool;
@@ -279,9 +299,11 @@ void LocalePage::aboutToGoToNext()
         KMessageBox::createKMessageBox(dialog, QMessageBox::Warning,
                                         i18n("You need to select a timezone"),
                                         QStringList(), QString(), &retbool, KMessageBox::Notify);
-        return;
+        return false;
     }
 
+    m_install->setContinent(continentCombo->currentText());
+    m_install->setRegion(regionCombo->currentText());
     m_install->setTimezone(continentCombo->currentText()+"/"+regionCombo->currentText());
     m_install->setKDELangPack(m_allKDELangs.key(kdeLanguageCombo->currentText()));
 
@@ -294,12 +316,19 @@ void LocalePage::aboutToGoToNext()
         m_install->setLocale(localeCombo->currentText());
     }
 
-    emit goToNextStep();
+    return true;
+}
+
+void LocalePage::aboutToGoToNext()
+{
+    if (validate())
+        emit goToNextStep();
 }
 
 void LocalePage::aboutToGoToPrevious()
 {
-    emit goToPreviousStep();
+    if (validate())
+        emit goToPreviousStep();
 }
 
 #include "localepage.moc"

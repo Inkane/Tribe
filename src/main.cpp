@@ -1,8 +1,7 @@
 /***************************************************************************
- *   Copyright (C) 2008 - 2009 by Dario Freddi                             *
- *   drf@chakra-project.org                                                *
- *   Copyright (C) 2008 by Lukas Appelhans              *
- *   l.appelhans@gmx.de                   *
+ *   Copyright (C) 2008 - 2009 Dario Freddi <drf@chakra-project.org>       *
+ *   Copyright (C) 2008        Lukas Appelhans <l.appelhans@gmx.de>        *
+ *   Copyright (C) 2010 - 2011 Drake Justice <djustice@chakra-project.org> *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -41,7 +40,7 @@ int main(int argc, char *argv[])
 {
     KAboutData aboutData("tribe", 0, ki18n("Tribe"),
                          TRIBE_VERSION, ki18n("Graphical Installer for Chakra"), KAboutData::License_GPL,
-                         ki18n("(c) 2008 - 2010 the Chakra Development Team"), ki18n("chakra@chakra-project.org"), "http://chakra-project.org");
+                         ki18n("(c) 2008 - 2011 the Chakra Development Team"), ki18n("chakra@chakra-project.org"), "http://chakra-project.org");
 
     aboutData.addAuthor(ki18n("Dario Freddi"), ki18n("Maintainer"), "drf@chakra-project.org", "http://drfav.wordpress.com");
     aboutData.addAuthor(ki18n("Lukas Appelhans"), ki18n("Developer"), "boom1992@chakra-project.org", "http://boom1992.wordpress.com");

@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2008, 2009  Dario Freddi <drf@chakra-project.org>
- *               2010        Drake Justice <djustice.kde@gmail.com>
+ *               2010, 2011  Drake Justice <djustice@chakra-project.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

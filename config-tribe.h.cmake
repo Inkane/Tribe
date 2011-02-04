@@ -1,6 +1,6 @@
 /***************************************************************************
  *
- *   Copyright (C) 2010 The Chakra Project
+ *   Copyright (C) 2011 The Chakra Project
  *
  *   GPL3
  *

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2011-01-23 19:11+0100\n"
+"POT-Creation-Date: 2011-01-29 13:58+0100\n"
 "PO-Revision-Date: 2011-01-24 12:21+0000\n"
 "Last-Translator: \n"
 "Language-Team: French <kde-i18n-doc@kde.org>\n"
@@ -143,7 +143,7 @@ msgstr ""
 msgid "Could not mount %1"
 msgstr "Impossible de monter %1"
 
-#: src/installationhandler.h:167
+#: src/installationhandler.h:171
 msgid "No Further details given"
 msgstr "Aucun autre détail n'a été donné"
 
@@ -325,7 +325,7 @@ msgstr "Driver propriétaire NVidia"
 msgid "Accept license for: "
 msgstr "Accepter la licence pour : "
 
-#: src/pages/localepage.cpp:280
+#: src/pages/localepage.cpp:300
 msgid "You need to select a timezone"
 msgstr "Vous devez sélectionner un fuseau horaire."
 
@@ -388,7 +388,7 @@ msgstr "Étendue"
 msgid "Primary"
 msgstr "Primaire"
 
-#: src/pages/partitionpage.cpp:957
+#: src/pages/partitionpage.cpp:956
 msgid ""
 "The partition you have chosen to mount as '/' is too small. It should have a "
 "capacity of at least %1 for a successful installation."
@@ -396,21 +396,21 @@ msgstr ""
 "La partition choisie comme '/' est trop petite. Elle doit avoir une taille "
 "minimal de %1 pour réussir l'installation."
 
-#: src/pages/partitionpage.cpp:960 src/pages/partitionpage.cpp:990
+#: src/pages/partitionpage.cpp:959 src/pages/partitionpage.cpp:994
 msgid "Target's capacity not sufficient"
 msgstr "La capacité de la cible n'est pas suffisante"
 
-#: src/pages/partitionpage.cpp:971
+#: src/pages/partitionpage.cpp:976
 msgid ""
 "The partition you have chosen to mount as '/' is not marked for formatation. "
 "This might create problems. Do you still want to continue without formating "
 "it?"
 msgstr ""
 "La partition choisie pour être montée comme '/' n'a pas été marquée pour "
-"être formatée. "
-" Ceci peut être source de problèmes. Voulez vous continuer sans la formater?"
+"être formatée.  Ceci peut être source de problèmes. Voulez vous continuer "
+"sans la formater?"
 
-#: src/pages/partitionpage.cpp:988
+#: src/pages/partitionpage.cpp:992
 msgid ""
 "You have selected '%1' as a mountpoint, which is not valid. A valid "
 "mountpoint always starts with '/' and represents a directory on disk"
@@ -439,23 +439,23 @@ msgstr ""
 "Les partitions suivantes semblent être montées : %1. Pour continuer "
 "l'installation correctement, Tribe va les démonter maintenant."
 
-#: src/pages/usercreationpage.cpp:121
+#: src/pages/usercreationpage.cpp:148
 msgid "You must give at least one login name."
 msgstr "Au moins un identifiant doit être fourni."
 
-#: src/pages/usercreationpage.cpp:125
+#: src/pages/usercreationpage.cpp:152
 msgid "Root Passwords do not match..."
 msgstr "Les mots de passe administrateur ne correspondent pas..."
 
-#: src/pages/usercreationpage.cpp:139
+#: src/pages/usercreationpage.cpp:166
 msgid "Passwords cannot be empty."
 msgstr "Le mot de passe est vide."
 
-#: src/pages/usercreationpage.cpp:143
+#: src/pages/usercreationpage.cpp:170
 msgid "Passwords do not match..."
 msgstr "Les mots de passe ne correspondent pas..."
 
-#: src/pages/usercreationpage.cpp:147
+#: src/pages/usercreationpage.cpp:174
 msgid "Login names cannot be empty."
 msgstr "Les identifiants ne peuent pas être vides."
 
@@ -1416,11 +1416,9 @@ msgid ""
 "partitions are not explicitly formatted."
 msgstr ""
 "Veuillez sélectionner un point de montage pour vos partitions. Aucune "
-"modification "
-"définitive ne sera apportée à votre disque dur lors du click sur le bouton "
-"\"Suivant\" "
-"Note : les partitions sélectionnées ne seront pas formatées si non "
-"explicitement indiqué."
+"modification définitive ne sera apportée à votre disque dur lors du click "
+"sur le bouton \"Suivant\" Note : les partitions sélectionnées ne seront pas "
+"formatées si non explicitement indiqué."
 
 #. i18n: file: ui/pages/partition.ui:100
 #. i18n: ectx: property (text), widget (QLabel, typeLabel)
@@ -1753,5 +1751,3 @@ msgstr "Glad Deschrijver/Fabien Valthier"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "glad.deschrijver@gmail.com/hcoohb@gmail.com"
-
-

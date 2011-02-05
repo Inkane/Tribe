@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2011-01-23 19:11+0100\n"
+"POT-Creation-Date: 2011-01-29 13:58+0100\n"
 "PO-Revision-Date: 2010-02-22 16:21+0200\n"
 "Last-Translator: \n"
 "Language-Team: Ukrainian <kde-i18n-doc@kde.org>\n"
@@ -175,7 +175,7 @@ msgstr ""
 msgid "Could not mount %1"
 msgstr "Неможливо змонтувати %1"
 
-#: src/installationhandler.h:167
+#: src/installationhandler.h:171
 #, fuzzy
 msgid "No Further details given"
 msgstr "Інших подробиць не дано"
@@ -379,7 +379,7 @@ msgstr "Закритий драйвер  NVidia"
 msgid "Accept license for: "
 msgstr "Погодитись з ліцензіями для:"
 
-#: src/pages/localepage.cpp:280
+#: src/pages/localepage.cpp:300
 #, fuzzy
 msgid "You need to select a timezone"
 msgstr "Вам потрібно вибрати часовий пояс."
@@ -440,24 +440,24 @@ msgstr ""
 msgid "Primary"
 msgstr ""
 
-#: src/pages/partitionpage.cpp:957
+#: src/pages/partitionpage.cpp:956
 msgid ""
 "The partition you have chosen to mount as '/' is too small. It should have a "
 "capacity of at least %1 for a successful installation."
 msgstr ""
 
-#: src/pages/partitionpage.cpp:960 src/pages/partitionpage.cpp:990
+#: src/pages/partitionpage.cpp:959 src/pages/partitionpage.cpp:994
 msgid "Target's capacity not sufficient"
 msgstr ""
 
-#: src/pages/partitionpage.cpp:971
+#: src/pages/partitionpage.cpp:976
 msgid ""
 "The partition you have chosen to mount as '/' is not marked for formatation. "
 "This might create problems. Do you still want to continue without formating "
 "it?"
 msgstr ""
 
-#: src/pages/partitionpage.cpp:988
+#: src/pages/partitionpage.cpp:992
 msgid ""
 "You have selected '%1' as a mountpoint, which is not valid. A valid "
 "mountpoint always starts with '/' and represents a directory on disk"
@@ -485,26 +485,26 @@ msgstr ""
 "Змонтовано такі розділи: %1. Щоб встановлення пройшло коректно, Tribe їх "
 "розмонтує."
 
-#: src/pages/usercreationpage.cpp:121
+#: src/pages/usercreationpage.cpp:148
 msgid "You must give at least one login name."
 msgstr ""
 
-#: src/pages/usercreationpage.cpp:125
+#: src/pages/usercreationpage.cpp:152
 #, fuzzy
 msgid "Root Passwords do not match..."
 msgstr "Паролі не збігаються"
 
-#: src/pages/usercreationpage.cpp:139
+#: src/pages/usercreationpage.cpp:166
 #, fuzzy
 msgid "Passwords cannot be empty."
 msgstr "Порожній пароль"
 
-#: src/pages/usercreationpage.cpp:143
+#: src/pages/usercreationpage.cpp:170
 #, fuzzy
 msgid "Passwords do not match..."
 msgstr "Паролі не збігаються"
 
-#: src/pages/usercreationpage.cpp:147
+#: src/pages/usercreationpage.cpp:174
 msgid "Login names cannot be empty."
 msgstr ""
 

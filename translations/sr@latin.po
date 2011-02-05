@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2011-01-23 19:11+0100\n"
+"POT-Creation-Date: 2011-01-29 13:58+0100\n"
 "PO-Revision-Date: 2010-12-31 16:35+0000\n"
 "Last-Translator: ivan <ivanblago1@gmail.com>\n"
 "Language-Team: Serbian Latin <kde-i18n-sr@kde.org>\n"
@@ -143,7 +143,7 @@ msgstr ""
 msgid "Could not mount %1"
 msgstr "Ne mogu da montiram %1"
 
-#: src/installationhandler.h:167
+#: src/installationhandler.h:171
 msgid "No Further details given"
 msgstr "Nije dato više detalja"
 
@@ -324,7 +324,7 @@ msgstr "Vlasnički NVidia drajver"
 msgid "Accept license for: "
 msgstr "Prihvatam licencu za: "
 
-#: src/pages/localepage.cpp:280
+#: src/pages/localepage.cpp:300
 msgid "You need to select a timezone"
 msgstr "Trebate odabrati vremensku zonu"
 
@@ -387,7 +387,7 @@ msgstr "Extended"
 msgid "Primary"
 msgstr "Primarno"
 
-#: src/pages/partitionpage.cpp:957
+#: src/pages/partitionpage.cpp:956
 msgid ""
 "The partition you have chosen to mount as '/' is too small. It should have a "
 "capacity of at least %1 for a successful installation."
@@ -395,18 +395,18 @@ msgstr ""
 "Particiju koju ste odabrali za montiranje kao '/' je previše mala. Potrebno "
 "je da poseduje kapacitet najmanje %1 za uspešnu instalaciju."
 
-#: src/pages/partitionpage.cpp:960 src/pages/partitionpage.cpp:990
+#: src/pages/partitionpage.cpp:959 src/pages/partitionpage.cpp:994
 msgid "Target's capacity not sufficient"
 msgstr "Ciljani kapacitet nije dovoljan"
 
-#: src/pages/partitionpage.cpp:971
+#: src/pages/partitionpage.cpp:976
 msgid ""
 "The partition you have chosen to mount as '/' is not marked for formatation. "
 "This might create problems. Do you still want to continue without formating "
 "it?"
 msgstr ""
 
-#: src/pages/partitionpage.cpp:988
+#: src/pages/partitionpage.cpp:992
 msgid ""
 "You have selected '%1' as a mountpoint, which is not valid. A valid "
 "mountpoint always starts with '/' and represents a directory on disk"
@@ -434,23 +434,23 @@ msgstr ""
 "Sledeće particije su montirane: %1. Da bi se instalacija mogla izvršiti "
 "ispravno, Tribe će ih sada demontirati."
 
-#: src/pages/usercreationpage.cpp:121
+#: src/pages/usercreationpage.cpp:148
 msgid "You must give at least one login name."
 msgstr "Morate uključiti najmanje jedno korisničko ime."
 
-#: src/pages/usercreationpage.cpp:125
+#: src/pages/usercreationpage.cpp:152
 msgid "Root Passwords do not match..."
 msgstr "Korene lozinke se ne poklapaju..."
 
-#: src/pages/usercreationpage.cpp:139
+#: src/pages/usercreationpage.cpp:166
 msgid "Passwords cannot be empty."
 msgstr "Lozinka ne može biti prazna."
 
-#: src/pages/usercreationpage.cpp:143
+#: src/pages/usercreationpage.cpp:170
 msgid "Passwords do not match..."
 msgstr "Lozinke se ne poklapaju..."
 
-#: src/pages/usercreationpage.cpp:147
+#: src/pages/usercreationpage.cpp:174
 msgid "Login names cannot be empty."
 msgstr "Korisničko ime ne može biti prazno."
 

@@ -102,20 +102,34 @@ void ConfigPage::createWidget()
              this, SLOT(handleNetworkData(QNetworkReply*)));
     networkManager.get(QNetworkRequest(QString("http://chakra-project.org")));
     
-    // check installed & remote kde versions
-    QProcess *check_kdever_process = new QProcess(this);
-    QString kdever_cmd = "pacman -Qi kde-common --noconfirm | sed -n 2p | cut -d':' -f 2 | cut -d' ' -f 2 | cut -d'-' -f 1";
-    check_kdever_process->start(kdever_cmd);
-    check_kdever_process->waitForFinished();
-    QString local_kdever(check_kdever_process->readAll());
-    kdever_cmd = "pacman -Ss kde-common --noconfirm | sed -n 1p | cut -d' ' -f 2 | cut -d'-' -f 1";
-    check_kdever_process->start(kdever_cmd);
-    check_kdever_process->waitForFinished();
-    QString remote_kdever(check_kdever_process->readAll());
+    // check installed kde version
+    QProcess proc;
+    proc.start("pacman -Qi kde-common --noconfirm");
+    proc.waitForFinished();
+
+    QList<QByteArray> pacmanLines = proc.readAllStandardOutput().split('\n');
+    QList<QByteArray> versionLine(pacmanLines[1].split(':'));
+    QList<QByteArray> versionString(versionLine[1].split('-'));
+
+    QString pkgver(versionString[0].trimmed());
+    QString pkgrel(versionString[1].trimmed());
+    qDebug() << "KDE pkgver:" << pkgver << "pkgrel:" << pkgrel;
+
+    // check remote kde version
+    proc.start("pacman -Si kde-common --noconfirm");
+    proc.waitForFinished();
+
+    pacmanLines = proc.readAllStandardOutput().split('\n');
+    versionLine = pacmanLines[2].split(':');
+    versionString = versionLine[1].split('-');
+
+    QString remote_pkgver(versionString[0].trimmed());
+    QString remote_pkgrel(versionString[1].trimmed());
+    qDebug() << "KDE remote_pkgver:" << remote_pkgver << "remote_pkgrel:" << remote_pkgrel;
+    
     // disable pkg installation if no match
-    if (local_kdever != remote_kdever)
+    if (pkgver != remote_pkgver)
       ui.installPkgzButton->setEnabled(false);
-    qDebug() << "Local KDE Version: " << local_kdever << " - Remote KDE Version: " << remote_kdever;
     
     populatePkgzList();
     populateBundlesList();

@@ -104,11 +104,11 @@ void ConfigPage::createWidget()
     
     // check installed & remote kde versions
     QProcess *check_kdever_process = new QProcess(this);
-    QString kdever_cmd = "pacman -Qi kde-common | sed -n 2p | cut -d':' -f 2 | cut -d' ' -f 2 | cut -d'-' -f 1";
+    QString kdever_cmd = "pacman -Qi kde-common --noconfirm | sed -n 2p | cut -d':' -f 2 | cut -d' ' -f 2 | cut -d'-' -f 1";
     check_kdever_process->start(kdever_cmd);
     check_kdever_process->waitForFinished();
     QString local_kdever = check_kdever_process->readAllStandardOutput();
-    kdever_cmd = "pacman -Ss kde-common | sed -n 1p | cut -d' ' -f 2 | cut -d'-' -f 1";
+    kdever_cmd = "pacman -Ss kde-common --noconfirm | sed -n 1p | cut -d' ' -f 2 | cut -d'-' -f 1";
     check_kdever_process->start(kdever_cmd);
     check_kdever_process->waitForFinished();
     QString remote_kdever = check_kdever_process->readAllStandardOutput();

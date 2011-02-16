@@ -115,7 +115,7 @@ void ConfigPage::createWidget()
     // disable pkg installation if no match
     if (local_kdever != remote_kdever)
       ui.installPkgzButton->setEnabled(false);
-    qDebug() << "Local KDE Version: " + local_kdever + " - Remote KDE Version: " + remote_kdever;
+    qDebug() << "Local KDE Version: " << local_kdever << " - Remote KDE Version: " << remote_kdever;
     
     populatePkgzList();
     populateBundlesList();

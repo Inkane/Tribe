@@ -95,7 +95,7 @@ void ConfigPage::createWidget()
     ui.generateInitRamDiskButton->setIcon(KIcon("debug-run"));
 
     // remove the initrd tmp files
-    QProcess::execute("bash -c \"rm " + tmpInitRd.join(" ") + " > /dev/null 2>&1\"");
+    QProcess::execute("bash -c \"rm " + tmpInitRd.join(" ") + " > /dev/null 2&>1\"");
 
     // first call to check internet connection
     connect(&networkManager, SIGNAL(finished(QNetworkReply*)),
@@ -104,11 +104,11 @@ void ConfigPage::createWidget()
     
     // check installed & remote kde versions
     QProcess *check_kdever_process = new QProcess(this);
-    QString kdever_cmd = "pacman -Ss kde-common | sed -n 1p | cut -d' ' -f 2 | cut -d'-' -f 1";
+    QString kdever_cmd = "pacman -Qi kde-common | sed -n 2p | cut -d':' -f 2 | cut -d' ' -f 2 | cut -d'-' -f 1";
     check_kdever_process->start(kdever_cmd);
     check_kdever_process->waitForFinished();
     QString local_kdever = check_kdever_process->readAllStandardOutput();
-    kdever_cmd = "pacman -Qi kde-common | sed -n 2p | cut -d':' -f 2 | cut -d' ' -f 2 | cut -d'-' -f 1";
+    kdever_cmd = "pacman -Ss kde-common | sed -n 1p | cut -d' ' -f 2 | cut -d'-' -f 1";
     check_kdever_process->start(kdever_cmd);
     check_kdever_process->waitForFinished();
     QString remote_kdever = check_kdever_process->readAllStandardOutput();

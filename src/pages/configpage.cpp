@@ -107,11 +107,11 @@ void ConfigPage::createWidget()
     QString kdever_cmd = "pacman -Qi kde-common --noconfirm | sed -n 2p | cut -d':' -f 2 | cut -d' ' -f 2 | cut -d'-' -f 1";
     check_kdever_process->start(kdever_cmd);
     check_kdever_process->waitForFinished();
-    QString local_kdever = check_kdever_process->readAllStandardOutput();
+    QString local_kdever(check_kdever_process->readAll());
     kdever_cmd = "pacman -Ss kde-common --noconfirm | sed -n 1p | cut -d' ' -f 2 | cut -d'-' -f 1";
     check_kdever_process->start(kdever_cmd);
     check_kdever_process->waitForFinished();
-    QString remote_kdever = check_kdever_process->readAllStandardOutput();
+    QString remote_kdever(check_kdever_process->readAll());
     // disable pkg installation if no match
     if (local_kdever != remote_kdever)
       ui.installPkgzButton->setEnabled(false);

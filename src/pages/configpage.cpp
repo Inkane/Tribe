@@ -95,13 +95,28 @@ void ConfigPage::createWidget()
     ui.generateInitRamDiskButton->setIcon(KIcon("debug-run"));
 
     // remove the initrd tmp files
-    QProcess::execute("bash -c \"rm " + tmpInitRd.join(" ") + " > /dev/null 2&>1\"");
+    QProcess::execute("bash -c \"rm " + tmpInitRd.join(" ") + " > /dev/null 2>&1\"");
 
     // first call to check internet connection
     connect(&networkManager, SIGNAL(finished(QNetworkReply*)),
              this, SLOT(handleNetworkData(QNetworkReply*)));
     networkManager.get(QNetworkRequest(QString("http://chakra-project.org")));
-
+    
+    // check installed & remote kde versions
+    QProcess *check_kdever_process = new QProcess(this);
+    QString kdever_cmd = "pacman -Ss kde-common | sed -n 1p | cut -d' ' -f 2 | cut -d'-' -f 1";
+    check_kdever_process->start(kdever_cmd);
+    check_kdever_process->waitForFinished();
+    QString local_kdever = check_kdever_process->readAllStandardOutput();
+    kdever_cmd = "pacman -Qi kde-common | sed -n 2p | cut -d':' -f 2 | cut -d' ' -f 2 | cut -d'-' -f 1";
+    check_kdever_process->start(kdever_cmd);
+    check_kdever_process->waitForFinished();
+    QString remote_kdever = check_kdever_process->readAllStandardOutput();
+    // disable pkg installation if no match
+    if (local_kdever != remote_kdever)
+      ui.installPkgzButton->setEnabled(false);
+    qDebug() << "Local KDE Version: " + local_kdever + " - Remote KDE Version: " + remote_kdever;
+    
     populatePkgzList();
     populateBundlesList();
 }
@@ -630,7 +645,7 @@ void ConfigPage::initRdGenerationComplete()
     ui.initRdBusyLabel->setVisible(false);
 
     // remove tmp files
-    QProcess::execute("bash -c \"rm " + tmpInitRd.join(" ") + " > /dev/null 2&>1\"");
+    QProcess::execute("bash -c \"rm " + tmpInitRd.join(" ") + " > /dev/null 2>&1\"");
 }
 
 void ConfigPage::bootloaderInstalled(int exitCode, QProcess::ExitStatus exitStatus)

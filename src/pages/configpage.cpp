@@ -95,7 +95,7 @@ void ConfigPage::createWidget()
     ui.generateInitRamDiskButton->setIcon(KIcon("debug-run"));
 
     // remove the initrd tmp files
-    QProcess::execute("bash -c \"rm " + tmpInitRd.join(" ") + " > /dev/null 2&>1\"");
+    QProcess::execute("bash -c \"rm " + tmpInitRd.join(" ") + " > /dev/null 2>&1\"");
 
     // first call to check internet connection
     connect(&networkManager, SIGNAL(finished(QNetworkReply*)),

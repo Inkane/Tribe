@@ -118,9 +118,9 @@ void ConfigPage::createWidget()
     QString remote_pkgrel(versionString[1].trimmed());
     qDebug() << "KDE remote_pkgver:" << remote_pkgver << "remote_pkgrel:" << remote_pkgrel;
     
-    // disable bundle download if no match
-    if (pkgver != remote_pkgver)
-      ui.bundlesDownloadButton->setEnabled(false);
+    // disable download if no match
+    //if (pkgver != remote_pkgver)
+    //  ui.bundlesDownloadButton->setEnabled(false);
 
     // populate BundlesList
     populateBundlesList();

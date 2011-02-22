@@ -106,6 +106,7 @@ private slots:
     virtual void aboutToGoToPrevious();
 
     void formatToggled(bool);
+    void refreshClicked();
     void undoClicked();
     void unmountClicked();
     void advancedClicked();

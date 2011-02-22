@@ -460,10 +460,15 @@ void PartitionPage::createWidget()
     m_ui->formatButton->setEnabled(false);
     m_ui->formatButton->setCheckable(true);
     connect(m_ui->formatButton, SIGNAL(toggled(bool)), this, SLOT(formatToggled(bool)));
+    
+    m_ui->refreshButton->setIcon(KIcon("view-refresh"));
+    m_ui->refreshButton->setEnabled(true);
+    connect(m_ui->refreshButton, SIGNAL(clicked(bool)), this, SLOT(refreshClicked()));
 
     m_ui->undoButton->setIcon(KIcon("edit-undo"));
     m_ui->undoButton->setEnabled(PMHandler::instance()->operationStack().operations().size() > 0);
     connect(m_ui->undoButton, SIGNAL(clicked(bool)), this, SLOT(undoClicked()));
+    m_ui->undoButton->setVisible(false);
 
     m_ui->unmountButton->setIcon(KIcon("object-unlocked"));
     m_ui->unmountButton->setVisible(false);
@@ -713,6 +718,12 @@ void PartitionPage::cancelFormat()
 
     connect(m_ui->formatButton, SIGNAL(toggled(bool)), this, SLOT(formatToggled(bool)));
     m_ui->advancedButton->setEnabled(true);
+}
+
+void PartitionPage::refreshClicked()
+{
+    connect(PMHandler::instance(), SIGNAL(devicesReady()), this, SLOT(populateTreeWidget()));
+    PMHandler::instance()->reload();
 }
 
 void PartitionPage::undoClicked()

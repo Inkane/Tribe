@@ -105,10 +105,7 @@ private slots:
     virtual void aboutToGoToNext();
     virtual void aboutToGoToPrevious();
 
-    void newClicked();
-    void deleteClicked();
     void formatToggled(bool);
-    void newPartTableClicked();
     void undoClicked();
     void unmountClicked();
     void advancedClicked();
@@ -121,8 +118,6 @@ private slots:
 
     void cancelFormat();
     void applyFormat();
-    void cancelNew();
-    void applyNew();
 
 private:
     Ui::Partition *m_ui;

@@ -509,9 +509,7 @@ void PartitionPage::createWidget()
 
 void PartitionPage::advancedClicked()
 {
-    QProcess p;
-    p.start("partitionmanager");
-    p.waitForFinished();
+    QProcess::execute("partitionmanager");
     PMHandler::instance()->reload();
 }
 

@@ -507,7 +507,8 @@ void PartitionPage::advancedClicked()
     QProcess p;
     p.start("partitionmanager");
     p.waitForFinished();
-    populateTreeWidget();
+    connect(PMHandler::instance(), SIGNAL(devicesReady()), this, SLOT(populateTreeWidget()));
+    PMHandler::instance()->reload();
 }
 
 void PartitionPage::setVisibleParts(bool b)
@@ -649,7 +650,8 @@ void PartitionPage::unmountClicked()
     p->unmount(*rep);
     rep->deleteLater();
 
-    populateTreeWidget();
+    connect(PMHandler::instance(), SIGNAL(devicesReady()), this, SLOT(populateTreeWidget()));
+    PMHandler::instance()->reload();
 }
 
 void PartitionPage::slotTypeChanged(QString s)
@@ -718,7 +720,8 @@ void PartitionPage::cancelFormat()
 void PartitionPage::undoClicked()
 {
     PMHandler::instance()->operationStack().pop();
-    populateTreeWidget();
+    connect(PMHandler::instance(), SIGNAL(devicesReady()), this, SLOT(populateTreeWidget()));
+    PMHandler::instance()->reload();
 }
 
 QTreeWidgetItem* PartitionPage::createItem(const Partition* p, Device *dev)

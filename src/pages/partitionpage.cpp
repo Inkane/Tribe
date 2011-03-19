@@ -791,7 +791,7 @@ void PartitionPage::aboutToGoToNext()
 
         if (text.startsWith('/')) {
             const Partition *partition = (*it)->data(0, PARTITION_ROLE).value<const Partition*>();
-            Device *device = m_ui->treeWidget->selectedItems().first()->data(0, DEVICE_ROLE).value<Device*>();
+            Device *device = (*it)->data(0, DEVICE_ROLE).value<Device*>();
 
             // If '/' is being considered, check target capacity.
             if (text == "/") {

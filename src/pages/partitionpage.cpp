@@ -808,7 +808,7 @@ void PartitionPage::aboutToGoToNext()
                     unmount = true;
                 }
             }
-            if (unmount) {
+            if (partition->isMounted() && unmount == true) {
                 Partition *p = device->partitionTable()->findPartitionBySector(partition->firstSector(), PartitionRole(PartitionRole::Any));
 
                 Report *rep = new Report(0);

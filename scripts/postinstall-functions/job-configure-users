@@ -55,8 +55,6 @@ job_configure_users()
         cp -v /etc/skel/kickoffrc ${mountpoint}/home/${user_name}/.kde4/share/config/kickoffrc
 	cp -v /etc/skel/networkmanagementrc ${mountpoint}/home/${user_name}/.kde4/share/config/networkmanagementrc
 	chroot ${mountpoint} ln -sf /usr/bin/bluedevil-monolithic /home/${user_name}/.kde4/Autostart/bluedevil-monolithic
-	cp -vf /etc/skel/yapan.sh ${mountpoint}/home/${user_name}/.kde4/Autostart/yapan.sh
-	cp -vf /etc/skel/.yapan ${mountpoint}/home/${user_name}/.yapan
 	cp -vf /etc/skel/.bashrc ${mountpoint}/home/${user_name}/.bashrc
 
 	msg "adjust default cursor: white-cursor"

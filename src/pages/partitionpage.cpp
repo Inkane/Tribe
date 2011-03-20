@@ -785,6 +785,8 @@ QTreeWidgetItem* PartitionPage::createItem(const Partition* p, Device *dev)
 void PartitionPage::aboutToGoToNext()
 {
     bool foundRoot = false;
+    bool unmount = false;
+
     QTreeWidgetItemIterator it(m_ui->treeWidget);
     while (*it) {
         QString text = (*it)->data(0, MOUNTPOINT_ROLE).toString();
@@ -792,6 +794,36 @@ void PartitionPage::aboutToGoToNext()
         if (text.startsWith('/')) {
             const Partition *partition = (*it)->data(0, PARTITION_ROLE).value<const Partition*>();
             Device *device = (*it)->data(0, DEVICE_ROLE).value<Device*>();
+
+            if (partition->isMounted() && unmount == false) {
+                KDialog *dialog = new KDialog(this, Qt::FramelessWindowHint);
+                bool retbool = true;
+                dialog->setButtons(KDialog::Yes | KDialog::No);
+
+                if (KMessageBox::createKMessageBox(dialog, KIcon("dialog-warning"), i18n("Tribe detected target partitions which are mounted. Do you want Tribe to unmount them?"), QStringList(),
+                                   QString(), &retbool, KMessageBox::Notify) == KDialog::No) {
+                    PMHandler::instance()->clearMountList();
+                    return;
+                } else {
+                    unmount = true;
+                }
+            }
+            if (unmount) {
+                Partition *p = device->partitionTable()->findPartitionBySector(partition->firstSector(), PartitionRole(PartitionRole::Any));
+
+                Report *rep = new Report(0);
+                p->unmount(*rep);
+                rep->deleteLater();
+
+                if (partition->isMounted()) {
+                    KMessageBox::error(this, i18n("Tribe failed to unmount a partition which is target for the installation. "
+                                                  "You need to unmount the partitions manually before you can proceed."),
+                                        i18n("Target partitions mounted"));
+
+                    PMHandler::instance()->clearMountList();
+                    return;
+                }
+            }
 
             // If '/' is being considered, check target capacity.
             if (text == "/") {

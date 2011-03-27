@@ -38,6 +38,7 @@ job_rcconf_network()
 		echo "[keyfile]" >> ${mountpoint}/etc/NetworkManager/nm-system-settings.conf
 		echo "hostname=${hostname}" >> ${mountpoint}/etc/NetworkManager/nm-system-settings.conf
 	else
+		msg "adding wicd daemons"
 		sed -i -e 's/^.*DAEMONS=.*/DAEMONS=(syslog-ng dbus !network wicd avahi-daemon avahi-dnsconfd alsa cdemud kdm)/' ${mountpoint}/etc/rc.conf
 	fi
 	msg_job_done

@@ -34,6 +34,10 @@ job_rcconf_network()
 		msg "adding networkmanager daemons"
 		if [[ "`cat ${mountpoint}/etc/chakra-release`" > "0.3.49" ]] ; then
 		    sed -i -e 's/^.*DAEMONS=.*/DAEMONS=(syslog-ng dbus !network networkmanager avahi-daemon avahi-dnsconfd alsa cdemud kdm)/' ${mountpoint}/etc/rc.conf
+		    # fix /etc/NetworkManager/nm-system-settings.conf
+		    echo " " >> ${mountpoint}/etc/NetworkManager/nm-system-settings.conf
+		    echo "[keyfile]" >> ${mountpoint}/etc/NetworkManager/nm-system-settings.conf
+		    echo "hostname=${hostname}" >> ${mountpoint}/etc/NetworkManager/nm-system-settings.conf
 		else
 		    sed -i -e 's/^.*DAEMONS=.*/DAEMONS=(syslog-ng dbus hal !network networkmanager avahi-daemon avahi-dnsconfd alsa cdemud kdm)/' ${mountpoint}/etc/rc.conf
 		fi

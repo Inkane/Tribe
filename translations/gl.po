@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
 "POT-Creation-Date: 2011-03-22 22:24+0100\n"
-"PO-Revision-Date: 2011-01-24 15:47+0100\n"
+"PO-Revision-Date: 2011-03-31 21:59+0200\n"
 "Last-Translator: Adrián Chaves Fernández (Gallaecio) <adriyetichaves@gmail."
 "com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
@@ -20,9 +20,10 @@ msgstr ""
 "X-Generator: Lokalize 1.2\n"
 "Language: gl\n"
 
+# Entendo que por «initialize» refírese a obter a ruta (durante o inicio do programa).
 #: src/installationhandler.cpp:86
 msgid "Tribe was not able to initialize needed path: "
-msgstr "Tribe non puido inicializar a ruta necesaria: "
+msgstr "Tribe non puido obter a ruta necesaria: "
 
 #: src/installationhandler.cpp:86
 msgid " , please resolve the issue, and try again."
@@ -50,7 +51,7 @@ msgstr "Borrando os paquetes dos que se rexeitou a licenza..."
 
 #: src/installationhandler.cpp:245
 msgid "Initializing target ..."
-msgstr "Inicializando o obxectivo..."
+msgstr "Preparando o obxectivo..."
 
 # Para palabras que comezan por vogal, é «post», non «pos».
 #: src/installationhandler.cpp:336
@@ -60,7 +61,8 @@ msgstr "Configurando o novo sistema..."
 #: src/installationhandler.cpp:415
 msgid "Error in Postinstall script. See log for more details"
 msgstr ""
-"Hai un erro no guión pos-instalación. Vexa o rexistro para máis información."
+"Hai un erro no guión que se executa tras a instalación. Vexa o rexistro para "
+"máis información."
 
 #: src/installationhandler.cpp:424
 msgid "Creating user accounts ..."
@@ -76,7 +78,7 @@ msgstr "Borrando os paquetes innecesarios..."
 
 #: src/installationhandler.cpp:435
 msgid "Installing additional packages..."
-msgstr "Instalando paquetes adicionais..."
+msgstr "Instalando os paquetes adicionais..."
 
 #: src/installationhandler.cpp:439
 msgid "Configuring the display..."
@@ -88,7 +90,7 @@ msgstr "Descargando e instalando os paquetes das configuracións rexionais..."
 
 #: src/installationhandler.cpp:447
 msgid "Downloading and installing documentation packages..."
-msgstr "Descargando e instalando os paquetes de documentación..."
+msgstr "Descargando e instalando os paquetes da documentación..."
 
 #: src/installationhandler.cpp:451
 msgid "Setting up localization..."
@@ -104,7 +106,7 @@ msgstr "Configurando a rede..."
 
 #: src/installationhandler.cpp:463
 msgid "Creating fstab..."
-msgstr "Creando o fstab..."
+msgstr "Creando o ficheiro «fstab»..."
 
 #: src/installationhandler.cpp:470
 msgid "Configuring hardware..."
@@ -132,14 +134,13 @@ msgstr "Rematando..."
 
 #: src/installationhandler.cpp:494
 msgid "Installation complete!"
-msgstr "Completouse a instalación!"
+msgstr "Completouse a instalación."
 
 #: src/installationhandler.cpp:585
 msgid ""
 "Tribe was not able to initialize needed directories. Something is very "
 "wrong..."
-msgstr ""
-"Tribe non deu inicializado os directorios necesarios. Isto non pinta ben..."
+msgstr "Tribe non puido obter os directorios necesarios. Isto non pinta ben..."
 
 #: src/installationhandler.cpp:609
 msgid "Could not mount %1"
@@ -160,7 +161,6 @@ msgid "Graphical Installer for Chakra"
 msgstr "Instalador gráfico de Chakra"
 
 #: src/main.cpp:43
-#, fuzzy
 msgid "(c) 2008 - 2011 the Chakra Development Team"
 msgstr "© 2008 - 2010, Equipo de desenvolvemento de Chakra."
 
@@ -190,7 +190,7 @@ msgstr "Jan Mette"
 
 #: src/main.cpp:47
 msgid "PostInstall Backend and Artwork"
-msgstr "Infraestrutura de pos-instalación e material gráfico"
+msgstr "Infraestrutura para despois da instalación e material gráfico"
 
 #: src/main.cpp:48
 msgid "Phil Miller"
@@ -198,7 +198,7 @@ msgstr "Phil Miller"
 
 #: src/main.cpp:48 src/main.cpp:49
 msgid "PostInstall Backend"
-msgstr "Infraestrutura de pos-instalación"
+msgstr "Infraestrutura para despois da instalación"
 
 #: src/main.cpp:49
 msgid "Manuel Tortosa"
@@ -218,9 +218,9 @@ msgid ""
 "Tribe will now quit, please check the installation logs in /tmp\n"
 "or ask for help in our forums."
 msgstr ""
-"Fallou a instalación! Informouse do seguinte erro: %1.\n"
-"Agora pecharase Tribe, consulte os rexistros da instalación\n"
-"no directorio /tmp ou pida axuda nos foros."
+"Non se puido realizar a instalación! Informouse do seguinte erro: %1.\n"
+"Agora Tribe procederá a pecharse, consulte os rexistros da instalación\n"
+"no directorio «/tmp» ou pida axuda nos foros de Chakra."
 
 #: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:536
 msgid "Installing bootloader..."
@@ -282,7 +282,7 @@ msgstr "Volume total descargado:"
 #. i18n: ectx: property (text), widget (QPushButton, downloadBundlesButton)
 #: src/pages/configpage.cpp:413 rc.cpp:165
 msgid "Download Popular Bundles"
-msgstr "Descargar bundles populares"
+msgstr "Descarga de bundles populares"
 
 #. i18n: file: ui/pages/config.ui:908
 #. i18n: ectx: property (text), widget (QPushButton, bootloaderSettingsButton)
@@ -345,16 +345,21 @@ msgid ""
 "Tribe detected target partitions which are mounted. Do you want Tribe to "
 "unmount them?"
 msgstr ""
+"Tribe notou que algunhas das particións seleccionadas están xa montadas. "
+"Quere que Tribe as desmonte por vostede?"
 
 #: src/pages/partitionpage.cpp:819
 msgid ""
 "Tribe failed to unmount a partition which is target for the installation. "
 "You need to unmount the partitions manually before you can proceed."
 msgstr ""
+"Tribe non conseguir desmontar unha das particións que se van empregar para a "
+"instalación. Desmóntea manualmente para poder continuar o proceso de "
+"instalación."
 
 #: src/pages/partitionpage.cpp:821
 msgid "Target partitions mounted"
-msgstr ""
+msgstr "Montáronse as particións obxectivo."
 
 #: src/pages/partitionpage.cpp:832
 msgid ""
@@ -384,7 +389,7 @@ msgid ""
 "You have selected '%1' as a mountpoint, which is not valid. A valid "
 "mountpoint always starts with '/' and represents a directory on disk"
 msgstr ""
-"O punto de mensaxe escollido, «%1», non ñe correcto. Os puntos de montaxe "
+"O punto de mensaxe escollido, «%1», non é correcto. Os puntos de montaxe "
 "deben comezar sempre por unha barra inclinada, «/», e representan un "
 "directorio no disco."
 
@@ -894,15 +899,15 @@ msgstr ""
 "Parabéns, completouse a instalación!\n"
 "\n"
 "Esperamos que gozase desta experiencia tanto coma nós ao preparala.\n"
-"Agora pode reiniciar para comezar a usar o seu novo sistema, ou continuar "
+"Agora pode reiniciar para comezar a usar o seu novo sistema, ou continuar\n "
 "empregando o sistema en vivo.\n"
 "\n"
 "Se quere revisar os rexistros da instalación,\n"
-"bótelle unha ollada ao directorio /tmp do sistema en vivo ou ao directorio /"
-"var/log do seu novo sistema.\n"
+"bótelle unha ollada ao directorio «/tmp» do sistema en vivo ou ao directorio\n"
+"«/var/log» do seu novo sistema.\n"
 "\n"
-"Grazas por empregar Chakra, e non dubide en pórse en contacto connosco nos "
-"foros, compartir a súa opinión, achegar ideas, etc.\n"
+"Grazas por empregar Chakra, e non dubide en pórse en contacto connosco\n"
+"nos foros, compartir a súa opinión, achegar ideas, etc.\n"
 "En resumo: involúcrese! (http://chakra-project.org)\n"
 "\n"
 "Páseo ben!\n"
@@ -1293,7 +1298,7 @@ msgstr ""
 #. i18n: ectx: property (clickMessage), widget (KLineEdit, locationsSearch)
 #: rc.cpp:301
 msgid "Search..."
-msgstr "Busca..."
+msgstr "Buscar..."
 
 #. i18n: file: ui/pages/locale.ui:162
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1575,7 +1580,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:408
 msgid "Enter at least one login name and password."
-msgstr "Introduza polo menos un nome de usuario e contrasinal."
+msgstr "Escriba polo menos un nome de usuario e contrasinal."
 
 #. i18n: file: ui/pages/usercreation.ui:178
 #. i18n: ectx: property (toolTip), widget (QPushButton, addUser)
@@ -1590,7 +1595,7 @@ msgid ""
 "<small>This name will be used if you make the computer visible to others on "
 "a network.</small>"
 msgstr ""
-"<small>Este nome empregarase se permite que outros podan ver o seu "
+"<small>Este nome empregarase se permite que outros poidan ver o seu "
 "computador nunha rede.</small>"
 
 #. i18n: file: ui/pages/usercreation.ui:299
@@ -1633,7 +1638,7 @@ msgstr "Confirmar o contrasinal:"
 #. i18n: ectx: property (toolTip), widget (QPushButton, removeUser)
 #: rc.cpp:441
 msgid "Remove this user."
-msgstr "Borrar este usuario."
+msgstr "Eliminar este usuario."
 
 #. i18n: file: ui/widgets/userwidget.ui:264
 #. i18n: ectx: property (text), widget (QLabel, label_4)
@@ -1655,7 +1660,7 @@ msgid ""
 "the Administrator password"
 msgstr ""
 "Empregar este contrasinal\n"
-"para o administrador"
+"para o administrador."
 
 #. i18n: file: ui/widgets/userwidget.ui:396
 #. i18n: ectx: property (text), widget (QLabel, label_5)
@@ -1672,7 +1677,7 @@ msgstr "Confirmar o contrasinal:  "
 #: rc.cpp:458
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Adrián Chaves Fernández (Gallaecio)."
+msgstr "Adrián Chaves Fernández (Gallaecio)"
 
 #: rc.cpp:459
 msgctxt "EMAIL OF TRANSLATORS"

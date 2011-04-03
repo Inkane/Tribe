@@ -11,7 +11,7 @@
  */
 
 #include <QDebug>
-#include <Qfile>
+#include <QFile>
 
 #include <unistd.h>
 

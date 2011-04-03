@@ -262,7 +262,7 @@ void InstallationHandler::populateCommandParameters()
         m_postcommand.append(QString("--use-boot yes --target-boot %1 --target-boot-fs %2 ")
                              .arg(trimDevice(m_mount["/boot"])).arg(m_mount["/boot"]->fileSystem().name()));
     } else {
-        m_postcommand.append("--use-boot no ");
+        m_postcommand.append(QString("--use-boot no --target-boot %1").arg(trimDevice(m_mount["/"])));
     }
 
     if (m_mount.contains("/home")) {

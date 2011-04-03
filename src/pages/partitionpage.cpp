@@ -536,6 +536,8 @@ void PartitionPage::populateTreeWidget()
     m_ui->treeWidget->clear();
 
     foreach(Device* dev, PMHandler::instance()->operationStack().previewDevices()) {
+        if (dev->deviceNode().startsWith("/dev/loop"))
+            continue;
         QTreeWidgetItem* deviceItem = new PartitionTreeWidgetItem(dev);
         deviceItem->setText(0, dev->name());
         deviceItem->setData(0, 50, KIO::convertSize(dev->capacity()).replace("i", ""));
@@ -903,7 +905,7 @@ void PartitionPage::aboutToGoToNext()
         }
 
         if (!bootPartition) {
-            KMessageBox::error(this, i18n("When using a GPT Partition Table you need to have a partition with the bios_boot flag!"));
+            KMessageBox::error(this, i18n("When using a GPT Partition Table you need to have a partition with the bios_grub flag!"));
             return;
         }
     }

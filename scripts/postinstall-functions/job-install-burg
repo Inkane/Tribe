@@ -29,19 +29,6 @@ job_install_burg()
        sed -i -e "s~root=/dev~resume=/dev/disk/by-uuid/${_suuid} root=/dev~g" ${mountpoint}/boot/burg/burg.cfg
     fi
 
-    msg "copying installation logs to target /var/log"
-    if [ -e "/tmp/installation.log" ] ; then
-        cp -v -f /tmp/installation.log ${mountpoint}/var/log/installation.log
-    fi
-
-    if [ -e "/tmp/initramfs.log" ] ; then
-        cp -v -f /tmp/initramfs.log ${mountpoint}/var/log/installation-initramdisk.log
-    fi
-
-    if [ -e "/tmp/burg.log" ] ; then
-        cp -v -f /tmp/burg.log ${mountpoint}/var/log/installation-burg.log
-    fi
-
     msg "umounting /proc, /sys, /dev/pts and /dev"
     umount -v ${mountpoint}/proc ${mountpoint}/sys ${mountpoint}/dev/pts ${mountpoint}/dev  
 

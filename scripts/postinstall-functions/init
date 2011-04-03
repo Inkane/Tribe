@@ -227,51 +227,15 @@ job_init()
 		fi
 	fi
 
-	if [ "$job" = "install-grub" ] ; then
+	if [ "$job" = "install-burg" ] ; then
 		if [ -z "${mountpoint}" ] ; then
 			msg "ERROR: You need to give me a mountpoint for the root partition with --mountpoint "
 			msg "Error detected. Stopping. "
 			echo " "
 			exit 0
 		fi
-		if [ -z "${grub_device}" ] ; then
-			msg "ERROR: You need to give me device number for grub --grub-device "
-			msg "Error detected. Stopping. "
-			echo " "
-			exit 0
-		fi
-
-		if [ -z "${grub_partition}" ] ; then
-			msg "ERROR: You need to give me the partition number for grub --grub-partition "
-			msg "Error detected. Stopping. "
-			echo " "
-			exit 0
-		fi
-	fi
-
-	if [ "$job" = "create-menulst" ] ; then
-		if [ -z "${mountpoint}" ] ; then
-			msg "ERROR: You need to give me a mountpoint for the root partition with --mountpoint "
-			msg "Error detected. Stopping. "
-			echo " "
-			exit 0
-		fi
-		if [ -z "${grub_device}" ] ; then
-			msg "ERROR: You need to give me device number for grub --grub-device "
-			msg "Error detected. Stopping. "
-			echo " "
-			exit 0
-		fi
-
-		if [ -z "${grub_partition}" ] ; then
-			msg "ERROR: You need to give me the partition number for grub --grub-partition "
-			msg "Error detected. Stopping. "
-			echo " "
-			exit 0
-		fi
-
-		if [ -z "${target_root}" ] ; then
-			msg "ERROR: You need to give me a partition for root with --target-root "
+		if [ -z "${target_boot}" ] ; then
+			msg "ERROR: You need to give me a mountpoint for the boot partition with --target-boot "
 			msg "Error detected. Stopping. "
 			echo " "
 			exit 0
@@ -327,8 +291,8 @@ case "$job" in
 		regenerate-locales)
 			job_regenerate_locales
 		;;
-		install-grub)
-			job_install_grub
+                install-burg)
+                        job_install_burg
 		;;
 		create-menulst)
 			job_create_menulst

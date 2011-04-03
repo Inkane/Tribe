@@ -786,6 +786,8 @@ void PartitionPage::aboutToGoToNext()
 {
     bool foundRoot = false;
     bool unmount = false;
+    bool bootPartition = false;
+    Device *bootDevice = NULL;
 
     QTreeWidgetItemIterator it(m_ui->treeWidget);
     while (*it) {
@@ -836,6 +838,9 @@ void PartitionPage::aboutToGoToNext()
                 PMHandler::instance()->clearMountList();
                 return;
                 }
+
+                if (!bootDevice)
+                    bootDevice = device;
             }
 
             if (m_toFormat.contains(partition)) {
@@ -864,6 +869,8 @@ void PartitionPage::aboutToGoToNext()
                 }
                 PMHandler::instance()->addSectorToMountList(device, partition->firstSector(), text);
             }
+        } else if (text == "/boot") {
+            bootDevice = (*it)->data(0, DEVICE_ROLE).value<Device*>();
         } else if (!text.isEmpty() && text != "None") {
             KMessageBox::error(this, i18n("You have selected '%1' as a mountpoint, which is not valid. A valid mountpoint "
                                "always starts with '/' and represents a directory on disk", text),
@@ -875,8 +882,31 @@ void PartitionPage::aboutToGoToNext()
         ++it;
     }
 
-    if (!foundRoot)
-        return;   /// todo: give a msgbox
+    if (!foundRoot) {
+        KMessageBox::error(this, i18n("You need to select a root partition ('/') to proceed with the installation. "));
+        return;
+    }
+
+    if (bootDevice && bootDevice->partitionTable()->type() == PartitionTable::gpt) {
+        int f = 1;
+
+        foreach(const Partition* p, bootDevice->partitionTable()->children()) {
+            while(!(PartitionTable::flagName(static_cast<PartitionTable::Flag>(f))).isEmpty())
+            {
+                    if (p->availableFlags() & f && p->activeFlags() & f)
+                    {
+                        bootPartition = true;
+                        break;
+                    }
+                    f <<= 1;
+            }
+        }
+
+        if (!bootPartition) {
+            KMessageBox::error(this, i18n("When using a GPT Partition Table you need to have a partition with the bios_boot flag!"));
+            return;
+        }
+    }
 
     s_partitionToMountPoint.clear();
 

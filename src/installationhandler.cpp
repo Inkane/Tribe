@@ -621,52 +621,27 @@ void InstallationHandler::partitionMounted(KJob *job)
     }
 }
 
-void InstallationHandler::installBootloader(int action)
+void InstallationHandler::installBootloader(int action, const QString &device)
 {
-    qDebug() << "GRUB_DEBUG__  >>>>";
+    Q_UNUSED(action);
+
     if (m_process)
         m_process->deleteLater();
 
-    QString command;
+    QString command = QString("sh " + QString(SCRIPTS_INSTALL_PATH) +
+                              "/postinstall.sh --job install-burg " + m_postcommand);
 
-    if (action == 0) {
-        command = QString("sh " + QString(SCRIPTS_INSTALL_PATH) + "/postinstall.sh --job install-grub %1")
-                  .arg(m_postcommand);
-    } else {
-        command = QString("sh " + QString(SCRIPTS_INSTALL_PATH) + "/postinstall.sh --job create-menulst %1")
-                  .arg(m_postcommand);
-    }
+    QString partition = trimDevice(m_mount["/"]);
+    partition.remove(0, 3);
 
-    if (m_mount.contains("/boot")) {
-        qDebug() << "GRUB_DEBUG__  >>>> command: " << command;
-        QString partition = trimDevice(m_mount["/boot"]);
-        qDebug() << "GRUB_DEBUG__  >>>> grub-device: " << partition;
-        QString device = partition;
-        partition.remove(0, 3);
-        qDebug() << "GRUB_DEBUG__  >>>> grub-partition: " << partition;
-        int grubpart = partition.toInt() - 1;
-        command.append(QString("--grub-device %1 --grub-partition %2 ").arg(device).arg(grubpart));
-        qDebug() << "GRUB_DEBUG__  >>>> command (appended): " << command;
-    } else {
-        qDebug() << "GRUB_DEBUG__  >>>> command: " << command;
-        QString partition = trimDevice(m_mount["/"]);
-        qDebug() << "GRUB_DEBUG__  >>>> grub-device: " << partition;
-        QString device = partition;
-        partition.remove(0, 3);
-        qDebug() << "GRUB_DEBUG__  >>>> grub-partition: " << partition;
-        int grubpart = partition.toInt() - 1;
-        command.append(QString("--grub-device %1 --grub-partition %2 ").arg(device).arg(grubpart));
-        qDebug() << "GRUB_DEBUG__  >>>> command (appended): " << command;
-    }
+    int part = partition.toInt() - 1;
 
+    command.append(QString("--burg-device %1 --burg-partition %2 ").arg(device).arg(part));
 
     m_process = new QProcess(this);
-
     connect(m_process, SIGNAL(finished(int, QProcess::ExitStatus)), SIGNAL(bootloaderInstalled(int, QProcess::ExitStatus)));
-
+qDebug() << " :: running bootloader install command: " << command;
     m_process->start(command);
-
-    qDebug() << " :: bootloader installation command: " << command;
 }
 
 void InstallationHandler::setUpUsers(QStringList users)

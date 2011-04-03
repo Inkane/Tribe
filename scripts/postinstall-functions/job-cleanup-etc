@@ -13,10 +13,6 @@ job_cleanup_etc()
 		rm -v -rf ${mountpoint}/etc/inittab.larchsave
 	fi
 
-	if [ -e "${mountpoint}/boot/grub/menu.lst.pacsave" ] ; then
-		rm -v -rf ${mountpoint}/boot/grub/menu.lst.pacsave
-	fi
-
 	if [ -e "${mountpoint}/usr/share/applications/avahi-discover.desktop" ] ; then
 		echo "OnlyShowIn=GNOME;" >> ${mountpoint}/usr/share/applications/avahi-discover.desktop
 	fi

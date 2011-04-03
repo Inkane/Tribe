@@ -494,31 +494,13 @@ void ConfigPage::initRdGenerationComplete()
 
 void ConfigPage::bootloaderInstalled(int exitCode, QProcess::ExitStatus exitStatus)
 {
-    disconnect(m_install, SIGNAL(bootloaderInstalled(int, QProcess::ExitStatus)), 0, 0);
-
     Q_UNUSED(exitStatus)
 
-    if (exitCode != 0) {
-
-    } else {
-        connect(m_install, SIGNAL(bootloaderInstalled(int, QProcess::ExitStatus)), SLOT(menulstInstalled(int, QProcess::ExitStatus)));
-
-        emit setProgressWidgetText(i18n("Creating OS list..."));
-        emit updateProgressWidget(50);
-
-        m_install->installBootloader(1);  /// Start second step of grub install
-    }
-}
-
-void ConfigPage::menulstInstalled(int exitCode, QProcess::ExitStatus exitStatus)
-{
-    Q_UNUSED(exitStatus)
-
-    if (exitCode != 0) {
-
-    } else {
+    if (exitCode == 0) {
         emit deleteProgressWidget();
         emit goToNextStep();
+    } else {
+        qDebug() << " !! bootloader failed to install";
     }
 }
 
@@ -538,7 +520,7 @@ void ConfigPage::aboutToGoToNext()
 
     connect(m_install, SIGNAL(bootloaderInstalled(int, QProcess::ExitStatus)), SLOT(bootloaderInstalled(int, QProcess::ExitStatus)));
 
-    m_install->installBootloader(0); /// Start first step of grub install
+    m_install->installBootloader(0, "0"); /// burg install
 }
 
 void ConfigPage::aboutToGoToPrevious()

@@ -80,7 +80,7 @@ class InstallationHandler : public QObject
         void installSystem();
         void copyFiles();
 
-        void installBootloader(int);
+        void installBootloader(int, const QString&);
 
         void populateCommandParameters();
 

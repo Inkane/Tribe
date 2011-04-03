@@ -58,7 +58,7 @@ void BootloaderPage::aboutToGoToNext()
 
     device.remove(0, 2);
 
-    m_handler->installBootloader(0);
+    m_handler->installBootloader(0, device);
 }
 
 void BootloaderPage::aboutToGoToPrevious()
@@ -70,7 +70,7 @@ void BootloaderPage::bootloaderInstalled(int exitCode, QProcess::ExitStatus exit
 {
     disconnect(m_handler, SIGNAL(bootloaderInstalled(int, QProcess::ExitStatus)), 0, 0);
 
-    qDebug() << " :: grub install";
+    qDebug() << " :: burg install";
 
     Q_UNUSED(exitStatus)
 
@@ -86,7 +86,7 @@ void BootloaderPage::bootloaderInstalled(int exitCode, QProcess::ExitStatus exit
 
         device.remove(0, 2);
 
-        m_handler->installBootloader(1);
+        m_handler->installBootloader(1, device);
     }
 }
 

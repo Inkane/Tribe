@@ -198,16 +198,6 @@ while [ $# -gt 0 ]
                         shift 2
                         ;;
 
-                        --grub-device)
-                        grub_device=$2
-                        shift 2
-                        ;;
-                        
-                        --grub-partition)
-                        grub_partition=$2
-                        shift 2
-                        ;;
-
                         --user-name)
                         user_name=$2
                         shift 2
@@ -276,10 +266,6 @@ while [ $# -gt 0 ]
                         echo "                   EXAMPLE: --mountpoint /mnt/target"
                         echo "   --hostname       : defines the hostname of the target system"
                         echo "                   EXAMPLE: --hostname foobar"
-                        echo "   --grub-device    : the device to use in grub, e.g. hd(${_r}0,0) "
-                        echo "                   EXAMPLE: --grub-device 0"
-                        echo "   --grub-partition : the partition to use in grub, e.g. hd(0,${_r}0) "
-                        echo "                   EXAMPLE: --grub-partition 0"
                         echo "   --user-name      : username, used when we create a user"
                         echo "                   EXAMPLE: --user-name foo"
                         echo "   --user-passwd    : user password, used when we create a user"
@@ -306,7 +292,7 @@ while [ $# -gt 0 ]
                         echo "   15. create-initrd (create initrd for the installed system)"
                         echo "   16. regenerate-locales (apply locales and regenerate them)"    
                         echo "   17. create-menulst (create menu-lst for the installed system)"
-                        echo "   18. install-grub (install grub on the installed system)"
+                        echo "   18. install-burg (install burg on the installed system)"
                         echo "   19. configure-users (setup sudoers and groups for the target user)"
                         echo "   20. cleanup-l10n (cleanup drivers and stuff)"
                         echo "   21. cleanup-drivers (cleanup drivers and stuff)"

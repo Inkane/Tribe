@@ -64,7 +64,6 @@ private slots:
     
     // bootloader page
     void bootloaderInstalled(int, QProcess::ExitStatus);
-    void menulstInstalled(int, QProcess::ExitStatus);
     
     void cancelButtonClicked();
 

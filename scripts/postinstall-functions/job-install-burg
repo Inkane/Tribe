@@ -22,6 +22,13 @@ job_install_burg()
     msg "generating []/boot/burg/burg.cfg"
     chroot ${mountpoint} burg-mkconfig -o /boot/burg/burg.cfg
 
+    if [ "${use_swap}" = "yes" ] ; then
+       msg "we are using swap partition"
+       _sdevice=`echo /dev/${target_swap}`
+       _suuid=`blkid "${_sdevice}" -s UUID -o value`
+       sed -i -e "s~root=/dev~resume=/dev/disk/by-uuid/${_suuid} root=/dev~g" ${mountpoint}/boot/burg/burg.cfg
+    fi
+
     msg "copying installation logs to target /var/log"
     if [ -e "/tmp/installation.log" ] ; then
         cp -v -f /tmp/installation.log ${mountpoint}/var/log/installation.log

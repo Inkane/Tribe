@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2011-04-03 12:06+0200\n"
+"POT-Creation-Date: 2011-04-03 19:32+0200\n"
 "PO-Revision-Date: 2010-03-05 18:19+0100\n"
 "Last-Translator: Manuel Tortosa Moreno <manutortosa@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -357,58 +357,58 @@ msgstr ""
 msgid "Loading partitions..."
 msgstr ""
 
-#: src/pages/partitionpage.cpp:660
+#: src/pages/partitionpage.cpp:662
 msgid "Extended"
 msgstr ""
 
-#: src/pages/partitionpage.cpp:805
+#: src/pages/partitionpage.cpp:807
 msgid ""
 "Tribe detected target partitions which are mounted. Do you want Tribe to "
 "unmount them?"
 msgstr ""
 
-#: src/pages/partitionpage.cpp:821
+#: src/pages/partitionpage.cpp:823
 msgid ""
 "Tribe failed to unmount a partition which is target for the installation. "
 "You need to unmount the partitions manually before you can proceed."
 msgstr ""
 
-#: src/pages/partitionpage.cpp:823
+#: src/pages/partitionpage.cpp:825
 msgid "Target partitions mounted"
 msgstr ""
 
-#: src/pages/partitionpage.cpp:834
+#: src/pages/partitionpage.cpp:836
 msgid ""
 "The partition you have chosen to mount as '/' is too small. It should have a "
 "capacity of at least %1 for a successful installation."
 msgstr ""
 
-#: src/pages/partitionpage.cpp:837 src/pages/partitionpage.cpp:877
+#: src/pages/partitionpage.cpp:839 src/pages/partitionpage.cpp:879
 msgid "Target's capacity not sufficient"
 msgstr ""
 
-#: src/pages/partitionpage.cpp:857
+#: src/pages/partitionpage.cpp:859
 msgid ""
 "The partition you have chosen to mount as '/' is not marked for formatation. "
 "This might create problems. Do you still want to continue without formating "
 "it?"
 msgstr ""
 
-#: src/pages/partitionpage.cpp:875
+#: src/pages/partitionpage.cpp:877
 msgid ""
 "You have selected '%1' as a mountpoint, which is not valid. A valid "
 "mountpoint always starts with '/' and represents a directory on disk"
 msgstr ""
 
-#: src/pages/partitionpage.cpp:886
+#: src/pages/partitionpage.cpp:888
 msgid ""
 "You need to select a root partition ('/') to proceed with the installation. "
 msgstr ""
 
-#: src/pages/partitionpage.cpp:906
+#: src/pages/partitionpage.cpp:908
 msgid ""
 "When using a GPT Partition Table you need to have a partition with the "
-"bios_boot flag!"
+"bios_grub flag!"
 msgstr ""
 
 #: src/pages/readyinstallpage.cpp:77

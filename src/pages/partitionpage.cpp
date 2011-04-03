@@ -905,7 +905,7 @@ void PartitionPage::aboutToGoToNext()
         }
 
         if (!bootPartition) {
-            KMessageBox::error(this, i18n("When using a GPT Partition Table you need to have a partition with the bios_boot flag!"));
+            KMessageBox::error(this, i18n("When using a GPT Partition Table you need to have a partition with the bios_grub flag!"));
             return;
         }
     }

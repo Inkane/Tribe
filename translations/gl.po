@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2011-03-22 22:24+0100\n"
+"POT-Creation-Date: 2011-04-03 12:06+0200\n"
 "PO-Revision-Date: 2011-03-31 21:59+0200\n"
 "Last-Translator: Adrián Chaves Fernández (Gallaecio) <adriyetichaves@gmail."
 "com>\n"
@@ -222,11 +222,11 @@ msgstr ""
 "Agora Tribe procederá a pecharse, consulte os rexistros da instalación\n"
 "no directorio «/tmp» ou pida axuda nos foros de Chakra."
 
-#: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:536
+#: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:518
 msgid "Installing bootloader..."
 msgstr "Instalando o xestor de inicio..."
 
-#: src/pages/bootloaderpage.cpp:82 src/pages/configpage.cpp:506
+#: src/pages/bootloaderpage.cpp:82
 msgid "Creating OS list..."
 msgstr "Xerando a lista de sistemas operativos..."
 
@@ -340,7 +340,7 @@ msgstr "Cargando as particións..."
 msgid "Extended"
 msgstr "Estendida"
 
-#: src/pages/partitionpage.cpp:803
+#: src/pages/partitionpage.cpp:805
 msgid ""
 "Tribe detected target partitions which are mounted. Do you want Tribe to "
 "unmount them?"
@@ -348,7 +348,7 @@ msgstr ""
 "Tribe notou que algunhas das particións seleccionadas están xa montadas. "
 "Quere que Tribe as desmonte por vostede?"
 
-#: src/pages/partitionpage.cpp:819
+#: src/pages/partitionpage.cpp:821
 msgid ""
 "Tribe failed to unmount a partition which is target for the installation. "
 "You need to unmount the partitions manually before you can proceed."
@@ -357,11 +357,11 @@ msgstr ""
 "instalación. Desmóntea manualmente para poder continuar o proceso de "
 "instalación."
 
-#: src/pages/partitionpage.cpp:821
+#: src/pages/partitionpage.cpp:823
 msgid "Target partitions mounted"
 msgstr "Montáronse as particións obxectivo."
 
-#: src/pages/partitionpage.cpp:832
+#: src/pages/partitionpage.cpp:834
 msgid ""
 "The partition you have chosen to mount as '/' is too small. It should have a "
 "capacity of at least %1 for a successful installation."
@@ -370,11 +370,11 @@ msgstr ""
 "polo menos unha capacidade de %1 para que a instalación poda efectuarse "
 "correctamente."
 
-#: src/pages/partitionpage.cpp:835 src/pages/partitionpage.cpp:870
+#: src/pages/partitionpage.cpp:837 src/pages/partitionpage.cpp:877
 msgid "Target's capacity not sufficient"
 msgstr "A capacidade do dispositivo escollido non abonda."
 
-#: src/pages/partitionpage.cpp:852
+#: src/pages/partitionpage.cpp:857
 msgid ""
 "The partition you have chosen to mount as '/' is not marked for formatation. "
 "This might create problems. Do you still want to continue without formating "
@@ -384,7 +384,7 @@ msgstr ""
 "formatarse, o cal pode dar problemas. Está seguro de que quere continuar sen "
 "formatala?"
 
-#: src/pages/partitionpage.cpp:868
+#: src/pages/partitionpage.cpp:875
 msgid ""
 "You have selected '%1' as a mountpoint, which is not valid. A valid "
 "mountpoint always starts with '/' and represents a directory on disk"
@@ -392,6 +392,17 @@ msgstr ""
 "O punto de mensaxe escollido, «%1», non é correcto. Os puntos de montaxe "
 "deben comezar sempre por unha barra inclinada, «/», e representan un "
 "directorio no disco."
+
+#: src/pages/partitionpage.cpp:886
+msgid ""
+"You need to select a root partition ('/') to proceed with the installation. "
+msgstr ""
+
+#: src/pages/partitionpage.cpp:906
+msgid ""
+"When using a GPT Partition Table you need to have a partition with the "
+"bios_boot flag!"
+msgstr ""
 
 #: src/pages/readyinstallpage.cpp:77
 msgid "New partition (%1) on %2"
@@ -899,8 +910,8 @@ msgstr ""
 "Parabéns, completouse a instalación!\n"
 "\n"
 "Esperamos que gozase desta experiencia tanto coma nós ao preparala.\n"
-"Agora pode reiniciar para comezar a usar o seu novo sistema, ou continuar\n "
-"empregando o sistema en vivo.\n"
+"Agora pode reiniciar para comezar a usar o seu novo sistema, ou continuar\n"
+" empregando o sistema en vivo.\n"
 "\n"
 "Se quere revisar os rexistros da instalación,\n"
 "bótelle unha ollada ao directorio «/tmp» do sistema en vivo ou ao directorio\n"

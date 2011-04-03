@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2011-03-22 22:24+0100\n"
+"POT-Creation-Date: 2011-04-03 12:06+0200\n"
 "PO-Revision-Date: 2011-01-25 15:31+0000\n"
 "Last-Translator: ivan <ivanblago1@gmail.com>\n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
@@ -215,11 +215,11 @@ msgstr ""
 "Трибе ће се угасити, молим проверите записе инсталације у /tmp\n"
 "или затражите помоћ на нашем форуму."
 
-#: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:536
+#: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:518
 msgid "Installing bootloader..."
 msgstr "Инсталирање покретача..."
 
-#: src/pages/bootloaderpage.cpp:82 src/pages/configpage.cpp:506
+#: src/pages/bootloaderpage.cpp:82
 msgid "Creating OS list..."
 msgstr "Прављење ОС листе..."
 
@@ -333,23 +333,23 @@ msgstr "Прикупљање партиција..."
 msgid "Extended"
 msgstr "Продужена"
 
-#: src/pages/partitionpage.cpp:803
+#: src/pages/partitionpage.cpp:805
 msgid ""
 "Tribe detected target partitions which are mounted. Do you want Tribe to "
 "unmount them?"
 msgstr ""
 
-#: src/pages/partitionpage.cpp:819
+#: src/pages/partitionpage.cpp:821
 msgid ""
 "Tribe failed to unmount a partition which is target for the installation. "
 "You need to unmount the partitions manually before you can proceed."
 msgstr ""
 
-#: src/pages/partitionpage.cpp:821
+#: src/pages/partitionpage.cpp:823
 msgid "Target partitions mounted"
 msgstr ""
 
-#: src/pages/partitionpage.cpp:832
+#: src/pages/partitionpage.cpp:834
 msgid ""
 "The partition you have chosen to mount as '/' is too small. It should have a "
 "capacity of at least %1 for a successful installation."
@@ -357,11 +357,11 @@ msgstr ""
 "Партиција коју желите да накачите као '/' је премала. Треба да буде "
 "капацитета најмање %1 за успешну инсталацију."
 
-#: src/pages/partitionpage.cpp:835 src/pages/partitionpage.cpp:870
+#: src/pages/partitionpage.cpp:837 src/pages/partitionpage.cpp:877
 msgid "Target's capacity not sufficient"
 msgstr "Циљани капацитет није довољан"
 
-#: src/pages/partitionpage.cpp:852
+#: src/pages/partitionpage.cpp:857
 msgid ""
 "The partition you have chosen to mount as '/' is not marked for formatation. "
 "This might create problems. Do you still want to continue without formating "
@@ -371,13 +371,24 @@ msgstr ""
 "форматирање. Ово може створити проблеме. Да ли и даље желите да наставите "
 "без форматирања?"
 
-#: src/pages/partitionpage.cpp:868
+#: src/pages/partitionpage.cpp:875
 msgid ""
 "You have selected '%1' as a mountpoint, which is not valid. A valid "
 "mountpoint always starts with '/' and represents a directory on disk"
 msgstr ""
 "Одабрали сте '%1' као тачку качења, што није валидно. Валидна тачка качења "
 "увек почиње са '/'  и представља директоријум на диску"
+
+#: src/pages/partitionpage.cpp:886
+msgid ""
+"You need to select a root partition ('/') to proceed with the installation. "
+msgstr ""
+
+#: src/pages/partitionpage.cpp:906
+msgid ""
+"When using a GPT Partition Table you need to have a partition with the "
+"bios_boot flag!"
+msgstr ""
 
 #: src/pages/readyinstallpage.cpp:77
 msgid "New partition (%1) on %2"

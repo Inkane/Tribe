@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2011-03-22 22:24+0100\n"
+"POT-Creation-Date: 2011-04-03 12:06+0200\n"
 "PO-Revision-Date: 2010-02-19 13:09+0100\n"
 "Last-Translator: Jon Nordby <jononor@gmail.com>\n"
 "Language-Team: Norwegian Bokmål\n"
@@ -237,11 +237,11 @@ msgstr ""
 "Tribe nå avsluttes, vennligst sjekk innstalasjonsloggene i /tmp\n"
 "eller spør om hjelp i vårt forum."
 
-#: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:536
+#: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:518
 msgid "Installing bootloader..."
 msgstr "Innstalerer oppstartslaster..."
 
-#: src/pages/bootloaderpage.cpp:82 src/pages/configpage.cpp:506
+#: src/pages/bootloaderpage.cpp:82
 #, fuzzy
 msgid "Creating OS list..."
 msgstr "Oppretter fstab..."
@@ -360,43 +360,54 @@ msgstr ""
 msgid "Extended"
 msgstr ""
 
-#: src/pages/partitionpage.cpp:803
+#: src/pages/partitionpage.cpp:805
 msgid ""
 "Tribe detected target partitions which are mounted. Do you want Tribe to "
 "unmount them?"
 msgstr ""
 
-#: src/pages/partitionpage.cpp:819
+#: src/pages/partitionpage.cpp:821
 msgid ""
 "Tribe failed to unmount a partition which is target for the installation. "
 "You need to unmount the partitions manually before you can proceed."
 msgstr ""
 
-#: src/pages/partitionpage.cpp:821
+#: src/pages/partitionpage.cpp:823
 msgid "Target partitions mounted"
 msgstr ""
 
-#: src/pages/partitionpage.cpp:832
+#: src/pages/partitionpage.cpp:834
 msgid ""
 "The partition you have chosen to mount as '/' is too small. It should have a "
 "capacity of at least %1 for a successful installation."
 msgstr ""
 
-#: src/pages/partitionpage.cpp:835 src/pages/partitionpage.cpp:870
+#: src/pages/partitionpage.cpp:837 src/pages/partitionpage.cpp:877
 msgid "Target's capacity not sufficient"
 msgstr ""
 
-#: src/pages/partitionpage.cpp:852
+#: src/pages/partitionpage.cpp:857
 msgid ""
 "The partition you have chosen to mount as '/' is not marked for formatation. "
 "This might create problems. Do you still want to continue without formating "
 "it?"
 msgstr ""
 
-#: src/pages/partitionpage.cpp:868
+#: src/pages/partitionpage.cpp:875
 msgid ""
 "You have selected '%1' as a mountpoint, which is not valid. A valid "
 "mountpoint always starts with '/' and represents a directory on disk"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:886
+msgid ""
+"You need to select a root partition ('/') to proceed with the installation. "
+msgstr ""
+
+#: src/pages/partitionpage.cpp:906
+msgid ""
+"When using a GPT Partition Table you need to have a partition with the "
+"bios_boot flag!"
 msgstr ""
 
 #: src/pages/readyinstallpage.cpp:77

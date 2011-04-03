@@ -826,15 +826,15 @@ void InstallationHandler::cleanup()
 qDebug() << " :: copying installation logs to target /var/log";
 
     if (QFile::exists("/tmp/installation.log")) {        
-        QProcess::execute("cp -v -f /tmp/installation.log " + QString(INSTALLATION_TARGET) + "/var/log/installation.log");
+        QFile::copy("/tmp/installation.log", QString(INSTALLATION_TARGET) + "/var/log/installation.log")
     }
 
     if (QFile::exists("/tmp/initramfs.log")) {
-        QProcess::execute("cp -v -f /tmp/initramfs.log " + QString(INSTALLATION_TARGET) + "/var/log/installation-initramdisk.log");
+        QFile::copy("/tmp/initramfs.log", QString(INSTALLATION_TARGET) + "/var/log/installation-initramdisk.log");
     }
 
     if (QFile::exists("/tmp/burg.log")) {
-        QProcess::execute("cp -v -f /tmp/burg.log " + QString(INSTALLATION_TARGET) + "/var/log/installation-burg.log");
+        QFile::copy("/tmp/burg.log", QString(INSTALLATION_TARGET) + "/var/log/installation-burg.log");
     }
   
     unmountAll();

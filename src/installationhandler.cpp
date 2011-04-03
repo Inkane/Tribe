@@ -182,6 +182,10 @@ void InstallationHandler::copyFiles()
     currAction = InstallationHandler::SystemInstallation;
 
     emit streamLabel(i18n("Preparing installation..."));
+    
+    QProcess::execute("killall appset-qt");
+    QProcess::execute("killall appset-helper");
+    QProcess::execute("killall appsettray-qt");
 
     QString unsquashfsCommand = "unsquashfs -f -d " + QString(INSTALLATION_TARGET) + " /.livesys/medium/larch/system.sqf";
 

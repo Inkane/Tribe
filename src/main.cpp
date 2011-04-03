@@ -48,6 +48,8 @@ int main(int argc, char *argv[])
     aboutData.addAuthor(ki18n("Phil Miller"), ki18n("PostInstall Backend"), "philm@chakra-project.org", "http://chakra-project.org");
     aboutData.addAuthor(ki18n("Manuel Tortosa"), ki18n("PostInstall Backend"), "manutortosa@chakra-project.org", "http://chakra-project.org");
     aboutData.addAuthor(ki18n("Drake Justice"), ki18n("Developer"), "djustice@chakra-project.org", "");
+    aboutData.addAuthor(ki18n("Georg Grabler"), ki18n("Developer"), "ggrabler@gmail.com", "");
+    aboutData.addAuthor(ki18n("Daniele Cocca"), ki18n("Developer"), "jmc@chakra-project.org", "");
 
     KCmdLineArgs::init(argc, argv, &aboutData);
 

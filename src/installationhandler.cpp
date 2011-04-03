@@ -826,7 +826,7 @@ void InstallationHandler::cleanup()
 qDebug() << " :: copying installation logs to target /var/log";
 
     if (QFile::exists("/tmp/installation.log")) {        
-        QFile::copy("/tmp/installation.log", QString(INSTALLATION_TARGET) + "/var/log/installation.log")
+        QFile::copy("/tmp/installation.log", QString(INSTALLATION_TARGET) + "/var/log/installation.log");
     }
 
     if (QFile::exists("/tmp/initramfs.log")) {

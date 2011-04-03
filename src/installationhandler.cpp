@@ -625,17 +625,12 @@ void InstallationHandler::installBootloader(int action, const QString &device)
 {
     Q_UNUSED(action);
     Q_UNUSED(device);
-    QString part;
 
     if (m_process)
         m_process->deleteLater();
 
     QString command = QString("sh " + QString(SCRIPTS_INSTALL_PATH) +
                               "/postinstall.sh --job install-burg " + m_postcommand);
-
-    m_mount.contains("/boot") ? part = m_mount["/boot"]->devicePath() : part = m_mount["/"]->devicePath();
-
-    command.append(QString("--burg-device %1 ").arg(device));
 
     m_process = new QProcess(this);
     connect(m_process, SIGNAL(finished(int, QProcess::ExitStatus)), SIGNAL(bootloaderInstalled(int, QProcess::ExitStatus)));

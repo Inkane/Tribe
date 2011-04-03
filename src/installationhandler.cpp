@@ -624,6 +624,8 @@ void InstallationHandler::partitionMounted(KJob *job)
 void InstallationHandler::installBootloader(int action, const QString &device)
 {
     Q_UNUSED(action);
+    Q_UNUSED(device);
+    QString part;
 
     if (m_process)
         m_process->deleteLater();
@@ -631,16 +633,15 @@ void InstallationHandler::installBootloader(int action, const QString &device)
     QString command = QString("sh " + QString(SCRIPTS_INSTALL_PATH) +
                               "/postinstall.sh --job install-burg " + m_postcommand);
 
-    QString partition = trimDevice(m_mount["/"]);
-    partition.remove(0, 3);
+    m_mount.contains("/boot") ? part = m_mount["/boot"]->devicePath() : part = m_mount["/"]->devicePath();
 
-    int part = partition.toInt() - 1;
-
-    command.append(QString("--burg-device %1 --burg-partition %2 ").arg(device).arg(part));
+    command.append(QString("--burg-device %1 ").arg(device));
 
     m_process = new QProcess(this);
     connect(m_process, SIGNAL(finished(int, QProcess::ExitStatus)), SIGNAL(bootloaderInstalled(int, QProcess::ExitStatus)));
-qDebug() << " :: running bootloader install command: " << command;
+
+    qDebug() << " :: running bootloader install command: " << command;
+
     m_process->start(command);
 }
 

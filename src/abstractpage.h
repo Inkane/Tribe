@@ -51,6 +51,7 @@ signals:
     void showProgressWidget();
     void updateProgressWidget(int percentage);
     void setProgressWidgetText(const QString &);
+    void setProgressWidgetBusy();
     void deleteProgressWidget();
     void enableNextButton(bool enable);
     void enablePreviousButton(bool enable);

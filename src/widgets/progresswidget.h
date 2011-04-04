@@ -36,6 +36,7 @@ public:
 private slots:
     void updateProgressWidget(int percentage);
     void setProgressWidgetText(const QString &);
+    void setProgressWidgetBusy();
 
     void createWidget();
     void aboutToGoToNext() {};
@@ -43,6 +44,7 @@ private slots:
 
 private:
     Ui::ProgressWidget ui;
+    QMovie *m_busyAnim;
 };
 
 #endif /*PROGRESSWIDGET_H*/

@@ -50,7 +50,7 @@ void BootloaderPage::aboutToGoToNext()
 
     emit showProgressWidget();
     emit setProgressWidgetText(i18n("Installing bootloader..."));
-    emit updateProgressWidget(0);
+    emit setProgressWidgetBusy();
 
     connect(m_handler, SIGNAL(bootloaderInstalled(int, QProcess::ExitStatus)), SLOT(bootloaderInstalled(int, QProcess::ExitStatus)));
 
@@ -80,7 +80,6 @@ void BootloaderPage::bootloaderInstalled(int exitCode, QProcess::ExitStatus exit
         connect(m_handler, SIGNAL(bootloaderInstalled(int, QProcess::ExitStatus)), SLOT(menulstInstalled(int, QProcess::ExitStatus)));
 
         emit setProgressWidgetText(i18n("Creating OS list..."));
-        emit updateProgressWidget(50);
 
         QString device = ui.lineEdit->text();
 

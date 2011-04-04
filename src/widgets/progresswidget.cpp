@@ -19,6 +19,7 @@
  ***************************************************************************/
 
 #include "progresswidget.h"
+#include <QMovie>
 
 
 ProgressWidget::ProgressWidget(QWidget *parent)
@@ -36,6 +37,15 @@ void ProgressWidget::setProgressWidgetText(const QString &text)
     ui.label->setText(text);
 }
 
+void ProgressWidget::setProgressWidgetBusy()
+{
+    ui.progressBar->setVisible(false);
+    m_busyAnim = new QMovie(":Images/images/busywidget.gif");
+    m_busyAnim->start();
+    ui.busyLabel->setMovie(m_busyAnim);
+    ui.busyLabel->setVisible(true);
+}
+
 void ProgressWidget::updateProgressWidget(int percentage)
 {
     ui.progressBar->setValue(percentage);
@@ -43,7 +53,7 @@ void ProgressWidget::updateProgressWidget(int percentage)
 
 void ProgressWidget::createWidget()
 {
-
+    ui.busyLabel->setVisible(false);
 }
 
 #include "progresswidget.moc"

@@ -78,6 +78,7 @@ private slots:
 signals:
     void updateProgressWidget(int percentage);
     void setProgressWidgetText(const QString &);
+    void setProgressWidgetBusy();
     void readyToCreate();
 
 private:

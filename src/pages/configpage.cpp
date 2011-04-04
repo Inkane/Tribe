@@ -516,7 +516,7 @@ void ConfigPage::aboutToGoToNext()
 
     emit showProgressWidget();
     emit setProgressWidgetText(i18n("Installing bootloader..."));
-    emit updateProgressWidget(0);
+    emit setProgressWidgetBusy();
 
     connect(m_install, SIGNAL(bootloaderInstalled(int, QProcess::ExitStatus)), SLOT(bootloaderInstalled(int, QProcess::ExitStatus)));
 

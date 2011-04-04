@@ -192,6 +192,7 @@ void MainWindow::loadPage(InstallationStep page)
         connect(abstractPage, SIGNAL(showProgressWidget()), this, SLOT(showProgressWidget()));
         connect(abstractPage, SIGNAL(deleteProgressWidget()), this, SLOT(deleteProgressWidget()));
         connect(abstractPage, SIGNAL(updateProgressWidget(int)), this, SIGNAL(updateProgressWidget(int)));
+        connect(abstractPage, SIGNAL(setProgressWidgetBusy()), this, SIGNAL(setProgressWidgetBusy()));
         connect(abstractPage, SIGNAL(setProgressWidgetText(const QString&)), this, SIGNAL(setProgressWidgetText(const QString&)));
         connect(abstractPage, SIGNAL(enableNextButton(bool)), this, SLOT(enableNextButton(bool)));
         connect(abstractPage, SIGNAL(enablePreviousButton(bool)), this, SLOT(enablePreviousButton(bool)));
@@ -448,6 +449,7 @@ void MainWindow::showProgressWidget()
 
     connect(this, SIGNAL(updateProgressWidget(int)), page, SLOT(updateProgressWidget(int)));
     connect(this, SIGNAL(setProgressWidgetText(const QString&)), page, SLOT(setProgressWidgetText(const QString&)));
+    connect(this, SIGNAL(setProgressWidgetBusy()), page, SLOT(setProgressWidgetBusy()));
     
     m_ui.stackedWidget->addWidget(page);
     m_ui.stackedWidget->setCurrentIndex(1);

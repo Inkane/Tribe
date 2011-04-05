@@ -64,7 +64,7 @@ job_create_initrd()
     echo ":: copying kernel(s) to target ..." > /tmp/initramfs.log; echo >> /tmp/initramfs.log
     cp -v /.livesys/medium/boot/vmlinuz26 ${mountpoint}/boot/vmlinuz26 > /tmp/initramfs.log; echo >> /tmp/initramfs.log
     if [ -e "/.livesys/medium/boot/vmlinuz26-lts" ] ; then
-    cp -v /.livesys/medium/boot/vmlinuz26 ${mountpoint}/boot/vmlinuz26 > /tmp/initramfs.log; echo >> /tmp/initramfs.log
+    cp -v /.livesys/medium/boot/vmlinuz26-lts ${mountpoint}/boot/vmlinuz26 > /tmp/initramfs.log; echo >> /tmp/initramfs.log
     fi
 
     echo ":: starting initramfs creation..." > /tmp/initramfs.log; echo >> /tmp/initramfs.log

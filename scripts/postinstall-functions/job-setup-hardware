@@ -69,7 +69,7 @@ job_setup_hardware()
 		chroot ${mountpoint} /usr/bin/pacman -Rd libgl --noconfirm
 		msg "installing driver"
 		pacman -r ${mountpoint} -Udf ${PKG_OVERLAY}/nvidia-utils-${NVIDIA_DRV_VER}* --noconfirm
-		pacman -r ${mountpoint} -Udf ${PKG_OVERLAY}/nvidia-${NVIDIA_DRV_VER}* --noconfirm
+		pacman -r ${mountpoint} -Udf ${PKG_OVERLAY}/nvidia*${NVIDIA_DRV_VER}* --noconfirm
 
 		# load the modules array from rc.conf
 		msg "loading current modules from rc.conf"

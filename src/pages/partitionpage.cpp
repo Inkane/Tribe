@@ -897,15 +897,17 @@ void PartitionPage::aboutToGoToNext()
             {
                     if (p->availableFlags() & f && p->activeFlags() & f)
                     {
-                        bootPartition = true;
-                        break;
+                        if (p->fileSystem().type() == FileSystem::Unformatted) {
+                            bootPartition = true;
+                            break;
+                        }
                     }
                     f <<= 1;
             }
         }
 
         if (!bootPartition) {
-            KMessageBox::error(this, i18n("When using a GPT Partition Table you need to have a partition with the bios_grub flag!"));
+            KMessageBox::error(this, i18n("When using a GPT Partition Table you need to have a unformatted partition with the bios_grub flag!"));
             return;
         }
     }

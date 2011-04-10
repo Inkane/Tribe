@@ -29,6 +29,11 @@ job_install_burg()
        sed -i -e "s~root=/dev~resume=/dev/disk/by-uuid/${_suuid} root=/dev~g" ${mountpoint}/boot/burg/burg.cfg
     fi
 
+    if [ -e "/tmp/catalyst" ] ; then
+       msg "Adding nomodeset for catalyst to kernel line"
+       sed -i -e "s~root=/dev~nomodeset root=/dev~g" ${mountpoint}/boot/burg/burg.cfg
+    fi
+
     msg "umounting /proc, /sys, /dev/pts and /dev"
     umount -v ${mountpoint}/proc ${mountpoint}/sys ${mountpoint}/dev/pts ${mountpoint}/dev  
 

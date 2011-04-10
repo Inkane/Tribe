@@ -25,6 +25,13 @@ job_rcconf_l10n()
 		sed -i -e 's/^.*KEYMAP=.*/KEYMAP="es"/' ${mountpoint}/etc/rc.conf
 		;;
 
+		at)
+		# Austrian 
+		msg "austrian setup"
+		sed -i -e 's/^.*HARDWARECLOCK=.*/HARDWARECLOCK="localtime"/' ${mountpoint}/etc/rc.conf
+		sed -i -e 's/^.*KEYMAP=.*/KEYMAP="de"/' ${mountpoint}/etc/rc.conf
+		;;
+
 		be)
 		# Belarussian 
 		msg "belarussian setup"
@@ -166,8 +173,8 @@ job_rcconf_l10n()
 		;;
 
 		ptbr)
-		# Brazilian Portugese 
-		msg "brazilian portugese setup"
+		# Brazilian Portuguese
+		msg "Brazilian Portuguese setup"
 		sed -i -e 's/^.*HARDWARECLOCK=.*/HARDWARECLOCK="localtime"/' ${mountpoint}/etc/rc.conf
 		sed -i -e 's/^.*KEYMAP=.*/KEYMAP="br-abnt2"/' ${mountpoint}/etc/rc.conf
 		;;

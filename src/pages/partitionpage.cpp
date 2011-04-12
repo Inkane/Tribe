@@ -511,6 +511,8 @@ void PartitionPage::advancedClicked()
 {
     QProcess::execute("partitionmanager");
     PMHandler::instance()->reload();
+
+    s_partitionToMountPoint.clear();
 }
 
 void PartitionPage::setVisibleParts(bool b)

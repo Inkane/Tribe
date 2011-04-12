@@ -79,7 +79,11 @@ job_initialize_target()
 	cp -v /home/live/.config/Trolltech.conf ${mountpoint}/root/.config/Trolltech.conf
 
 	msg "set Chakra Version"
-	echo "git-checkout" > ${mountpoint}/etc/chakra-release
+	echo "DISTRIB_ID=\"Chakra\"" > "${mountpoint}/etc/lsb-release"
+	echo "DISTRIB_RELEASE=\"git-checkout\"" >> "${mountpoint}/etc/lsb-release"
+	echo "DISTRIB_CODENAME=\"code-name\"" >> "${mountpoint}/etc/lsb-release"
+	echo "DISTRIB_DESCRIPTION=\"Chakra Linux\"" >> "${mountpoint}/etc/lsb-release"
+	echo "Chakra Linux release git-checkout (code-name)" > "${mountpoint}/etc/chakra-release"
 
 	msg "fix hwclock"
 	mkdir -pv ${mountpoint}/var/lib/hwclock

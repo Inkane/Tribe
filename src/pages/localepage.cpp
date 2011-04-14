@@ -52,6 +52,10 @@ LocalePage::~LocalePage()
 void LocalePage::createWidget()
 {
     setupUi(this);
+    continentCombo->addItem("");
+    regionCombo->addItem("");
+    kdeLanguageCombo->addItem("");
+    localeCombo->addItem("");
 
     zoomInButton->setIcon(KIcon("zoom-in"));
     zoomOutButton->setIcon(KIcon("zoom-out"));
@@ -154,7 +158,7 @@ void LocalePage::createWidget()
         localeCombo->setCurrentIndex(localeCombo->count() - 1);
     }
 
-    zoom(55);
+    zoom(55);    
 }
 
 void LocalePage::zoom(int value)
@@ -203,6 +207,10 @@ void LocalePage::continentChanged(int index)
 
 void LocalePage::regionChanged(int index)
 {
+    if (regionCombo->itemText(regionCombo->currentIndex()) == "") {
+        localeCombo->clear();
+        kdeLanguageCombo->clear();
+    }
     if (!showLocalesCheck->isChecked() || !showKDELangsCheck->isChecked()) {
         QString time = continentCombo->itemText(continentCombo->currentIndex()) + "/" + regionCombo->itemText(index);
 

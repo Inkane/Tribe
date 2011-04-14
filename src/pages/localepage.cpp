@@ -158,7 +158,7 @@ void LocalePage::createWidget()
         localeCombo->setCurrentIndex(localeCombo->count() - 1);
     }
 
-    zoom(55);    
+    zoom(55);
 }
 
 void LocalePage::zoom(int value)

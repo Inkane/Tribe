@@ -13,30 +13,29 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.0\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Language: pl_PL\n"
+"X-Source-Language: C\n"
 
 #: src/installationhandler.cpp:86
 msgid "Tribe was not able to initialize needed path: "
-msgstr ""
+msgstr "Tribe nie był w stanie zainicjować potrzebnej ścieżki:"
 
 #: src/installationhandler.cpp:86
 msgid " , please resolve the issue, and try again."
-msgstr ""
+msgstr " , proszę rozwiązać ten problem i spróbować ponownie."
 
 #: src/installationhandler.cpp:148
 msgid "Installing the system ..."
 msgstr "Instalowanie systemu..."
 
 #: src/installationhandler.cpp:176
-#, fuzzy
 msgid "Mounting partitions..."
-msgstr "Montowanie %1 na %2..."
+msgstr "Montowanie partycji..."
 
 #: src/installationhandler.cpp:184
-#, fuzzy
 msgid "Preparing installation..."
-msgstr "Kończenie instalacji..."
+msgstr "Przygotowywanie instalacji..."
 
 #: src/installationhandler.cpp:204
 msgid "Error copying files"
@@ -52,9 +51,8 @@ msgid "Initializing target ..."
 msgstr "Inicjalizacja celu..."
 
 #: src/installationhandler.cpp:336
-#, fuzzy
 msgid "Please wait, configuring the new system ..."
-msgstr "Proszę czekać, konfigurowanie i uruchamianie PostInstall..."
+msgstr "Proszę czekać, trwa konfigurowanie nowego systemu..."
 
 # logi czy dziennik?
 #: src/installationhandler.cpp:415
@@ -63,17 +61,14 @@ msgstr ""
 "Błąd w skrypcie Postinstall. Aby uzyskać więcej informacji sprawdź dziennik"
 
 #: src/installationhandler.cpp:424
-#, fuzzy
 msgid "Creating user accounts ..."
-msgstr "Tworzenie konfiguracji..."
+msgstr "Tworzenie kont użytkownika..."
 
 #: src/installationhandler.cpp:427
-#, fuzzy
 msgid "Configuring software management..."
-msgstr "Konfigurowanie sprzętu..."
+msgstr "Konfigurowanie zarządzania oprogramowaniem..."
 
 #: src/installationhandler.cpp:431
-#, fuzzy
 msgid "Removing unused packages..."
 msgstr "Usuwanie zbędnych pakietów..."
 
@@ -82,20 +77,16 @@ msgid "Installing additional packages..."
 msgstr "Instalowanie dodatkowych pakietów..."
 
 #: src/installationhandler.cpp:439
-#, fuzzy
 msgid "Configuring the display..."
-msgstr "Konfigurowanie sprzętu..."
+msgstr "Konfigurowanie wyświetlacza..."
 
 #: src/installationhandler.cpp:443
-#, fuzzy
 msgid "Downloading and installing localization packages..."
-msgstr ""
-"Pobieranie i instalowanie pakietów językowych, to może trochę potrwać..."
+msgstr "Pobieranie i instalowanie pakietów językowych..."
 
 #: src/installationhandler.cpp:447
-#, fuzzy
 msgid "Downloading and installing documentation packages..."
-msgstr "Pobieranie i instalacja pakietów z dokumentacją"
+msgstr "Pobieranie i instalacja pakietów z dokumentacją..."
 
 # Ustawianie lokalizacji?
 #: src/installationhandler.cpp:451
@@ -120,30 +111,23 @@ msgid "Configuring hardware..."
 msgstr "Konfigurowanie sprzętu..."
 
 #: src/installationhandler.cpp:474
-#, fuzzy
 msgid "Creating initial ramdisk images..."
-msgstr ""
-"Tworzenie obrazu ramdysku. To może zając dużo czasu, proszę o cierpliwość..."
+msgstr "Tworzenie obrazu ramdysku..."
 
-# ustawień regionalnych?
 #: src/installationhandler.cpp:478
-#, fuzzy
 msgid "Generating locales..."
-msgstr "Ponowne generowanie ustawień regionalnych..."
+msgstr "Generowanie ustawień regionalnych..."
 
 # lokalizacji?
 #: src/installationhandler.cpp:482
-#, fuzzy
 msgid "Removing unused localizations..."
 msgstr "Usuwanie zbędnych ustawień regionalnych..."
 
 #: src/installationhandler.cpp:486
-#, fuzzy
 msgid "Removing unused drivers..."
 msgstr "Usuwanie zbędnych sterowników..."
 
 #: src/installationhandler.cpp:490
-#, fuzzy
 msgid "Finishing up..."
 msgstr "Kończenie instalacji..."
 
@@ -151,17 +135,15 @@ msgstr "Kończenie instalacji..."
 msgid "Installation complete!"
 msgstr "Instalacja zakończona!"
 
-# root czy administrator? z uprawnieniami administratora?
 #: src/installationhandler.cpp:585
-#, fuzzy
 msgid ""
 "Tribe was not able to initialize needed directories. Something is very "
 "wrong..."
 msgstr ""
-"Tribe nie był w stanie zainicjować potrzebnych katalogów. Prawdopodobnie nie "
-"posiadasz wystarczających praw, proszę zrestartować Tribe jako root."
+"Tribe nie był w stanie zainicjować potrzebnych katalogów. Coś jest nie tak..."
 
 #: src/installationhandler.cpp:609
+#, qt-format
 msgid "Could not mount %1"
 msgstr "Nie można zamontować %1"
 
@@ -176,14 +158,12 @@ msgid "Tribe"
 msgstr "Tribe"
 
 #: src/main.cpp:42
-#, fuzzy
 msgid "Graphical Installer for Chakra"
-msgstr "Instalator LiveCD dla Chakry"
+msgstr "Graficzny instalator Chakry"
 
 #: src/main.cpp:43
-#, fuzzy
 msgid "(c) 2008 - 2011 the Chakra Development Team"
-msgstr "(c) 2008 the Chakra Development Team"
+msgstr "(c) 2008 - 2011 the Chakra Development Team"
 
 #: src/main.cpp:43
 msgid "chakra@chakra-project.org"
@@ -223,7 +203,7 @@ msgstr ""
 #: src/main.cpp:48 src/main.cpp:49
 #, fuzzy
 msgid "PostInstall Backend"
-msgstr "Mechanizm poinstalacyjny i oprawa graficzna"
+msgstr "Mechanizm poinstalacyjny"
 
 #: src/main.cpp:49
 msgid "Manuel Tortosa"
@@ -238,6 +218,7 @@ msgid "Do you really want to abort the installation?"
 msgstr "Czy na pewno chcesz przerwać instalację?"
 
 #: src/mainwindow.cpp:507
+#, qt-format
 msgid ""
 "Installation failed! The following error has been reported: %1.\n"
 "Tribe will now quit, please check the installation logs in /tmp\n"
@@ -252,78 +233,74 @@ msgid "Installing bootloader..."
 msgstr "Instalowanie programu rozruchowego..."
 
 #: src/pages/bootloaderpage.cpp:82
-#, fuzzy
 msgid "Creating OS list..."
-msgstr "Tworzenie fstab..."
+msgstr "Tworzenie listy systemów..."
 
 #: src/pages/configpage.cpp:151 src/pages/configpage.cpp:359
-#, fuzzy
 msgid "Downloading"
-msgstr "Ustawienia pobierania"
+msgstr "Pobieranie"
 
 #: src/pages/configpage.cpp:259
 msgid ""
 "Sorry, you have no internet connection at the moment \n"
 "Will stop bundle(s) installation now"
 msgstr ""
+"Przepraszamy, ale nie masz obecnie połączenia z internetem\n"
+"Instalacja pakietów Bundle zostanie wstrzymana"
 
 #: src/pages/configpage.cpp:345
-#, fuzzy
 msgid "loading package data..."
-msgstr "Usuwanie zbędnych pakietów..."
+msgstr "ładowanie danych pakietów..."
 
 #: src/pages/configpage.cpp:346
-#, fuzzy
 msgid "Loading package data..."
-msgstr "Usuwanie zbędnych pakietów..."
+msgstr "Ładowanie danych pakietów..."
 
 #: src/pages/configpage.cpp:347
 msgid "checking dependencies..."
-msgstr ""
+msgstr "sprawdzanie zależności..."
 
 #: src/pages/configpage.cpp:348
 msgid "Checking dependencies..."
-msgstr ""
+msgstr "Sprawdzanie zalezności..."
 
 #: src/pages/configpage.cpp:349
 msgid "resolving dependencies..."
-msgstr ""
+msgstr "rozwiązywanie zależności..."
 
 #: src/pages/configpage.cpp:350
-#, fuzzy
 msgid "Resolving dependencies..."
-msgstr "Usuwanie zbędnych sterowników..."
+msgstr "Rozwiązywanie zależności..."
 
 #: src/pages/configpage.cpp:351
 msgid "checking package integrity..."
-msgstr ""
+msgstr "sprawdzanie integralności pakietów..."
 
 #: src/pages/configpage.cpp:352
 msgid "Checking package integrity..."
-msgstr ""
+msgstr "Sprawdzanie integralności pakietów..."
 
 #: src/pages/configpage.cpp:353
 msgid "Total Download Size:"
-msgstr ""
+msgstr "Całkowity rozmiar do pobrania:"
 
 #. i18n: file: ui/pages/config.ui:930
 #. i18n: ectx: property (text), widget (QPushButton, downloadBundlesButton)
 #: src/pages/configpage.cpp:413 rc.cpp:165
 msgid "Download Popular Bundles"
-msgstr ""
+msgstr "Pobieranie popularnych pakietów Bundle"
 
 #. i18n: file: ui/pages/config.ui:908
 #. i18n: ectx: property (text), widget (QPushButton, bootloaderSettingsButton)
 #: src/pages/configpage.cpp:431 rc.cpp:162
-#, fuzzy
 msgid "Bootloader Settings"
-msgstr "Program rozruchowy"
+msgstr "Ustawienia programu rozruchowego"
 
 #. i18n: file: ui/pages/config.ui:869
 #. i18n: ectx: property (text), widget (QPushButton, initRamDiskButton)
 #: src/pages/configpage.cpp:444 rc.cpp:156
 msgid "Customize Initial Ramdisk"
-msgstr ""
+msgstr "Dostosuj Ramdysk"
 
 #: src/pages/licensepage.cpp:53
 msgid "Proprietary ATI Driver"
@@ -338,17 +315,16 @@ msgid "Accept license for: "
 msgstr "Akceptuj licencję dla: "
 
 #: src/pages/localepage.cpp:300
-#, fuzzy
 msgid "You need to select a timezone"
-msgstr "Musisz wybrać strefę czasową."
+msgstr "Musisz wybrać strefę czasową"
 
 #: src/pages/partitionpage.cpp:89
 msgid "Please enter a custom mountpoint"
-msgstr ""
+msgstr "Proszę podać wybrany punkt montowania"
 
 #: src/pages/partitionpage.cpp:101
 msgid "The mount point must start with /"
-msgstr ""
+msgstr "Punkt montowania musi zaczynać sie od /"
 
 #: src/pages/partitionpage.cpp:102
 msgid "Error"
@@ -356,45 +332,52 @@ msgstr "Błąd"
 
 #: src/pages/partitionpage.cpp:196
 msgid "New"
-msgstr ""
+msgstr "Nowe"
 
 #: src/pages/partitionpage.cpp:196
 msgid "Unsupported"
-msgstr ""
+msgstr "Niewspierane"
 
 #: src/pages/partitionpage.cpp:416
 msgid "Loading partitions..."
-msgstr ""
+msgstr "Wczytywanie partycji..."
 
 #: src/pages/partitionpage.cpp:662
 msgid "Extended"
-msgstr ""
+msgstr "Rozszerzona"
 
 #: src/pages/partitionpage.cpp:807
 msgid ""
 "Tribe detected target partitions which are mounted. Do you want Tribe to "
 "unmount them?"
 msgstr ""
+"Instalator wykrył że docelowe partycje są zamontowane. Czy Tribe ma je "
+"odmontować?"
 
 #: src/pages/partitionpage.cpp:823
 msgid ""
 "Tribe failed to unmount a partition which is target for the installation. "
 "You need to unmount the partitions manually before you can proceed."
 msgstr ""
+"Odmontowanie partycji, które są celem dla instalacji, nie powiodło się. "
+"Musisz je odmontować ręcznie zanim będzie możliwa kontynuacja."
 
 #: src/pages/partitionpage.cpp:825
 msgid "Target partitions mounted"
-msgstr ""
+msgstr "Docelowe partycje zostały zamontowane"
 
 #: src/pages/partitionpage.cpp:836
+#, qt-format
 msgid ""
 "The partition you have chosen to mount as '/' is too small. It should have a "
 "capacity of at least %1 for a successful installation."
 msgstr ""
+"Partycja którą wybrałeś do zamontowania jako '/' jest zbyt mala. Aby "
+"instalacja zakończyła się sukcesem, partycja powinna być nie mniejsza niż %1."
 
 #: src/pages/partitionpage.cpp:839 src/pages/partitionpage.cpp:879
 msgid "Target's capacity not sufficient"
-msgstr ""
+msgstr "Docelowa pojemność jest niewystarczająca"
 
 #: src/pages/partitionpage.cpp:859
 msgid ""
@@ -402,38 +385,48 @@ msgid ""
 "This might create problems. Do you still want to continue without formating "
 "it?"
 msgstr ""
+"Partycja którą wybrałeś do zamontowania '/' nie jest oznaczona do "
+"sformatowania. To może stwarzać problemy. Czy na pewno chcesz kontynuować "
+"bez jej sformatowania?"
 
 #: src/pages/partitionpage.cpp:877
+#, qt-format
 msgid ""
 "You have selected '%1' as a mountpoint, which is not valid. A valid "
 "mountpoint always starts with '/' and represents a directory on disk"
 msgstr ""
+"Wybrany punkt montowania, '%1', jest nieprawidłowy. Prawidłowy punkt "
+"montowania zawsze rozpoczyna się od '/' i reprezentuje katalog na dysku"
 
 #: src/pages/partitionpage.cpp:888
 msgid ""
 "You need to select a root partition ('/') to proceed with the installation. "
-msgstr ""
+msgstr "Musisz wybrać partycję systemową ('/') aby kontynuować instalację. "
 
 #: src/pages/partitionpage.cpp:908
 msgid ""
 "When using a GPT Partition Table you need to have a partition with the "
 "bios_grub flag!"
 msgstr ""
+"Jeśli używasz tablicy partycji GPT musisz ustawić flagę bios_grub na "
+"partycji!"
 
 #: src/pages/readyinstallpage.cpp:77
+#, qt-format
 msgid "New partition (%1) on %2"
-msgstr ""
+msgstr "Nowa partycja (%1) na %2"
 
 #: src/pages/readyinstallpage.cpp:80
+#, qt-format
 msgid "%1 will be used as %2"
 msgstr "%1 zostanie użyta jako %2"
 
 #: src/pages/readyinstallpage.cpp:100
 msgid "Continue"
-msgstr ""
+msgstr "Kontynuuj"
 
 #: src/pages/readyinstallpage.cpp:104
-#, fuzzy
+#, qt-format
 msgid ""
 "The following partitions appear to be mounted: %1. To let the installation "
 "happen correctly, Tribe will now unmount them."
@@ -443,70 +436,67 @@ msgstr ""
 
 #: src/pages/usercreationpage.cpp:148
 msgid "You must give at least one login name."
-msgstr ""
+msgstr "Musisz podać co najmniej jedną nazwę użytkownika."
 
 #: src/pages/usercreationpage.cpp:152
-#, fuzzy
 msgid "Root Passwords do not match..."
-msgstr "Hasła nie zgadzają się"
+msgstr "Hasła nie zgadzają się..."
 
 #: src/pages/usercreationpage.cpp:166
-#, fuzzy
 msgid "Passwords cannot be empty."
-msgstr "Hasło jest puste"
+msgstr "Hasło nie może być puste."
 
 #: src/pages/usercreationpage.cpp:170
-#, fuzzy
 msgid "Passwords do not match..."
-msgstr "Hasła nie zgadzają się"
+msgstr "Hasła nie zgadzają się..."
 
 #: src/pages/usercreationpage.cpp:174
 msgid "Login names cannot be empty."
-msgstr ""
+msgstr "Nazwa użytkownika nie może być pusta."
 
 #: src/pmhandler.cpp:360
-#, fuzzy
 msgid "Preparing hard drive for installation..."
-msgstr "Kończenie instalacji..."
+msgstr "Przygotowanie dysku twardego do instalacji..."
 
 #: src/pmhandler.cpp:381
-#, fuzzy
 msgid "Analyzing disk..."
-msgstr "Instalacja..."
+msgstr "Analizowanie dysku..."
 
 #: src/pmhandler.cpp:445
 msgid "There was an error while formatting partitions"
-msgstr ""
+msgstr "Wystąpił błąd podczas formatowania partycji"
 
+# Ustawienia indywidualne/własne? Zmień? 
 #: src/widgets/avatardialog.cpp:52 src/widgets/avatardialog.cpp:71
+#, fuzzy
 msgid "Custom"
-msgstr ""
+msgstr "Dostosuj"
 
 #. i18n: file: ui/pages/base.ui:172
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:6
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Welcome</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+"font-weight:600; color:#ffffff;\">Welcome</span></p></body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Witamy</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+"font-weight:600; color:#ffffff;\">Witamy</span></p></body></html>"
 
 #. i18n: file: ui/pages/base.ui:198
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -544,60 +534,59 @@ msgstr "Konfiguracja dysku"
 #. i18n: ectx: property (text), widget (QLabel, label_26)
 #: rc.cpp:28
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Preparation</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+"font-weight:600; color:#ffffff;\">Preparation</span></p></body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Przygotowanie</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+"font-weight:600; color:#ffffff;\">Przygotowanie</span></p></body></html>"
 
 #. i18n: file: ui/pages/base.ui:334
 #. i18n: ectx: property (text), widget (QLabel, label_15)
 #: rc.cpp:35
-#, fuzzy
 msgid "Create Users"
-msgstr "Tworzenie użytkownika"
+msgstr "Tworzenie użytkowników"
 
 #. i18n: file: ui/pages/base.ui:390
 #. i18n: ectx: property (text), widget (QLabel, label_11)
 #: rc.cpp:38
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Installation</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+"font-weight:600; color:#ffffff;\">Installation</span></p></body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Instalacja</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+"font-weight:600; color:#ffffff;\">Instalacja</span></p></body></html>"
 
 #. i18n: file: ui/pages/base.ui:416
 #. i18n: ectx: property (text), widget (QLabel, label_13)
@@ -609,33 +598,33 @@ msgstr "Instalowanie systemu"
 #. i18n: ectx: property (text), widget (QLabel, label_14)
 #: rc.cpp:48
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Configuration</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+"font-weight:600; color:#ffffff;\">Configuration</span></p></body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Konfiguracja</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+"font-weight:600; color:#ffffff;\">Konfiguracja</span></p></body></html>"
 
 #. i18n: file: ui/pages/base.ui:460
 #. i18n: ectx: property (text), widget (QLabel, label_16)
 #: rc.cpp:55
 msgid "Reboot / Enjoy"
-msgstr ""
+msgstr "Restart"
 
 #. i18n: file: ui/pages/base.ui:583
 #. i18n: ectx: property (text), widget (QPushButton, abortButton)
@@ -661,34 +650,33 @@ msgstr "Dalej"
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:67
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Bootloader Installation</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; "
+"font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans "
+"Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; "
+"color:#ffffff;\">Bootloader Installation</span></p></body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Instalacja programu rozruchowego</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; "
+"font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans "
+"Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; "
+"color:#ffffff;\">Instalacja programu rozruchowego</span></p></body></html>"
 
 #. i18n: file: ui/pages/bootloader.ui:58
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:74
-#, fuzzy
 msgid ""
 "You can now install GRUB as your main bootloader.\n"
 "\n"
@@ -697,8 +685,8 @@ msgid ""
 msgstr ""
 "Możesz teraz zainstalować program rozruchowy GRUB\n"
 "\n"
-"Jeśli nie jesteś pewny, gdzie powinien zostać zainstalowany to pozostaw "
-"wartość domyślną (hd0)."
+"Jeśli nie jesteś pewny, gdzie powinieneś zainstalować program rozruchowy, \n"
+"to pozostaw wartość domyślną (hd0)."
 
 #. i18n: file: ui/pages/bootloader.ui:71
 #. i18n: ectx: property (text), widget (QCheckBox, checkBox)
@@ -732,31 +720,30 @@ msgstr "hd0"
 #. i18n: file: ui/pages/config.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:92
-#, fuzzy
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:14pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Configuration</span></p></"
-"body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:14pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+"font-size:22pt; font-weight:600; "
+"color:#ffffff;\">Configuration</span></p></body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Ustawienia roota</span></p></"
-"body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+"font-size:22pt; font-weight:600; "
+"color:#ffffff;\">Konfiguracja</span></p></body></html>"
 
 #. i18n: file: ui/pages/config.ui:55
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -764,63 +751,66 @@ msgstr ""
 msgid ""
 "Now that you have a Chakra install, you can now configure it to your liking."
 msgstr ""
+"Teraz gdy Chakra została zainstalowana, może ją skonfigurować według "
+"własnego upodobania."
 
 #. i18n: file: ui/pages/config.ui:129
 #. i18n: ectx: property (text), widget (QCheckBox, usb)
 #: rc.cpp:102
 msgid "USB"
-msgstr ""
+msgstr "USB"
 
 #. i18n: file: ui/pages/config.ui:136
 #. i18n: ectx: property (text), widget (QCheckBox, nfs)
 #: rc.cpp:105
 msgid "NFS Shares"
-msgstr ""
+msgstr "Udziały NFS"
 
 # ?
 #. i18n: file: ui/pages/config.ui:143
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: rc.cpp:108
-#, fuzzy
 msgid "Activate support for booting from:"
-msgstr "Aktywacja wsparcia dla uruchamiania z udziałów NFS"
+msgstr "Aktywacja wsparcia dla uruchamiania z:"
 
 #. i18n: file: ui/pages/config.ui:150
 #. i18n: ectx: property (text), widget (QCheckBox, firewire)
 #: rc.cpp:111
 msgid "FireWire"
-msgstr ""
+msgstr "FireWire"
 
+# ?
 #. i18n: file: ui/pages/config.ui:157
 #. i18n: ectx: property (text), widget (QCheckBox, raid)
 #: rc.cpp:114
+#, fuzzy
 msgid "Software Raid Arrays"
-msgstr ""
+msgstr "Tablice oprogramowania RAID"
 
 #. i18n: file: ui/pages/config.ui:164
 #. i18n: ectx: property (text), widget (QCheckBox, lvm2)
 #: rc.cpp:117
 msgid "LVM2 Volumes"
-msgstr ""
+msgstr "Woluminy LVM2"
 
 #. i18n: file: ui/pages/config.ui:171
 #. i18n: ectx: property (text), widget (QCheckBox, encrypted)
 #: rc.cpp:120
 msgid "Encrypted Volumes"
-msgstr ""
+msgstr "Woluminy szyfrowane"
 
 #. i18n: file: ui/pages/config.ui:190
 #. i18n: ectx: property (text), widget (QPushButton, generateInitRamDiskButton)
 #: rc.cpp:123
 msgid "Generate Initial Ramdisk"
-msgstr ""
+msgstr "Generowanie Ramdysku"
 
 #. i18n: file: ui/pages/config.ui:226
 #. i18n: ectx: property (text), widget (QCheckBox, mdp)
 #: rc.cpp:126
 #, fuzzy
 msgid "MDP Partition Arrays"
-msgstr "Przygotowanie partycji"
+msgstr "Tablice partycji MDP"
 
 #. i18n: file: ui/pages/config.ui:233
 #. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
@@ -831,15 +821,14 @@ msgstr ""
 #. i18n: file: ui/pages/config.ui:324
 #. i18n: ectx: property (text), widget (QPushButton, bundlesDownloadButton)
 #: rc.cpp:132
-#, fuzzy
 msgid "Download"
-msgstr "Ustawienia pobierania"
+msgstr "Pobieranie"
 
 #. i18n: file: ui/pages/config.ui:418
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: rc.cpp:135
 msgid "Chakra"
-msgstr ""
+msgstr "Chakra"
 
 #. i18n: file: ui/pages/config.ui:466
 #. i18n: ectx: property (text), widget (QLabel, label_6)
@@ -856,16 +845,16 @@ msgstr ""
 #. i18n: file: ui/pages/config.ui:574
 #. i18n: ectx: property (text), widget (QPushButton, colorizeButton)
 #: rc.cpp:144
+#, fuzzy
 msgid "Colorize"
-msgstr ""
+msgstr "Koloryzuj"
 
 # na?
 #. i18n: file: ui/pages/config.ui:676
 #. i18n: ectx: property (text), widget (QCheckBox, bootloaderCheckBox)
 #: rc.cpp:147
-#, fuzzy
 msgid "Install GRUB"
-msgstr "Zainstaluj w:"
+msgstr "Zainstaluj GRUB"
 
 #. i18n: file: ui/pages/config.ui:761
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
@@ -875,54 +864,52 @@ msgstr "Zainstaluj w:"
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
 #: rc.cpp:150 rc.cpp:339 rc.cpp:426
 msgid "Cancel"
-msgstr ""
+msgstr "Anuluj"
 
 #. i18n: file: ui/pages/config.ui:841
 #. i18n: ectx: property (text), widget (QPushButton, changeAppearanceButton)
 #: rc.cpp:153
+#, fuzzy
 msgid "Change System Appearance"
-msgstr ""
+msgstr "Zmień wygląd systemu"
 
 #. i18n: file: ui/pages/config.ui:879
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:159
-#, fuzzy
 msgid "Advanced Options"
-msgstr "Opcje ramdysku"
+msgstr "Opcje zaawansowane"
 
 #. i18n: file: ui/pages/finish.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:168
-#, fuzzy
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Installation Completed!</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; "
+"font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans "
+"Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; "
+"color:#ffffff;\">Installation Completed!</span></p></body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Instalacja zakończona !</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; "
+"font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans "
+"Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; "
+"color:#ffffff;\">Instalacja zakończona !</span></p></body></html>"
 
 #. i18n: file: ui/pages/finish.ui:68
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:175
-#, fuzzy
 msgid ""
 "Congratulations, the installation has been completed!\n"
 "\n"
@@ -941,14 +928,15 @@ msgid ""
 "\n"
 "The Chakra Team"
 msgstr ""
-"Gratulacje, proces instalacji dobiegł końca! Mamy nadzieję że to co "
-"zobaczyłeś sprawiło ci tyle radości ile nam stworzenie tego.\n"
+"Gratulacje, proces instalacji dobiegł końca!\n"
 "\n"
-"Możesz teraz ponownie uruchomić komputer, aby zacząć używać zainstalowany "
-"system lub nadal korzystać LiveCD.\n"
+"Mamy nadzieję że to co zobaczyłeś sprawiło ci tyle radości ile nam "
+"stworzenie tego.\n"
+"Możesz teraz ponownie uruchomić komputer, aby zacząć go używać lub nadal "
+"korzystać z LiveCD.\n"
 "\n"
-"W razie chęci przejrzenia dziennika instalacji, sprawdź w katalogu /tmp "
-"systemu live lub /var/log zainstalowanego systemu.\n"
+"W razie chęci przejrzenia dziennika instalacji,\n"
+"sprawdź w katalogu /tmp systemu live lub /var/log zainstalowanego systemu.\n"
 "\n"
 "Dzięki za używanie Chakry, i zapraszamy na nasze forum gdzie możesz "
 "skontaktować się z nami, podzielić swoimi opiniami, a także udzielać rad;\n"
@@ -980,29 +968,29 @@ msgstr "Ramdysk"
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:200
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Ramdisk Setup</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; "
+"font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans "
+"Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; "
+"color:#ffffff;\">Ramdisk Setup</span></p></body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Ustawienia ramdysku</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; "
+"font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans "
+"Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; "
+"color:#ffffff;\">Ustawienia ramdysku</span></p></body></html>"
 
 #. i18n: file: ui/pages/init.ui:58
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -1114,142 +1102,156 @@ msgstr "Intro Tribe"
 #. i18n: file: ui/pages/intro.ui:105
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:252
-#, fuzzy
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:12pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-family:'Bitstream Vera Sans'; color:#eeeeee;\">Welcome to the "
-"Chakra Installation!</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;"
-"\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\">This installer will guide you through the process of "
-"installing</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\">the Chakra live system on your computer. After the "
-"installation you will</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\">have a ready-to-use Chakra Linux system.</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
-"weight:536; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\"> Please carefully read all of the instructions.</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;"
-"\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\"> Remember:</span><span style=\" font-family:'Bitstream Vera "
-"Sans'; font-size:8pt; font-weight:536;\"> </span><span style=\" font-"
-"family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#ff0000;"
-"\">THIS IS ALPHA SOFTWARE, IT COULD EAT YOUR HAMSTER</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
-"weight:536; color:#ff0000;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\">Have fun! - The Chakra Developers</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:12pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; "
+"color:#eeeeee;\">Welcome to the Chakra Installation!</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
+"margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; "
+"color:#eeeeee;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; "
+"font-size:8pt; font-weight:536; color:#eeeeee;\">This installer will guide "
+"you through the process of installing</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; "
+"font-size:8pt; font-weight:536; color:#eeeeee;\">the Chakra live system on "
+"your computer. After the installation you will</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; "
+"font-size:8pt; font-weight:536; color:#eeeeee;\">have a ready-to-use Chakra "
+"Linux system.</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
+"margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; "
+"font-weight:536; color:#eeeeee;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; "
+"font-size:8pt; font-weight:536; color:#eeeeee;\"> Please carefully read all "
+"of the instructions.</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
+"margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; "
+"color:#eeeeee;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; "
+"font-size:8pt; font-weight:536; color:#eeeeee;\"> Remember:</span><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; "
+"font-weight:536;\"> </span><span style=\" font-family:'Bitstream Vera Sans'; "
+"font-size:8pt; font-weight:536; color:#ff0000;\">THIS IS ALPHA SOFTWARE, IT "
+"COULD EAT YOUR HAMSTER</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
+"margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; "
+"font-weight:536; color:#ff0000;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; "
+"font-size:8pt; font-weight:536; color:#eeeeee;\">Have fun! - The Chakra "
+"Developers</span></p></body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-size:14pt; color:#eeeeee;\">Witamy w instalatorze systemu "
-"Chakra!</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:"
-"#eeeeee;\"><span style=\" font-weight:600;\">Tribe, nasz instalator, "
-"przeprowadzi cię przez proces instalacji systemu Chakra na twoim komputerze."
-"</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\"> Po zakończeniu instalacji otrzymasz gotowy do "
-"użycia system Arch Linux</p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\">z naszymi modularnymi pakietami dla KDE .</p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-weight:600; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\"> Poświęć swój czas na dokładne przeczytanie "
-"wszystkich tekstów i objaśnień.</p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-weight:600; color:#eeeeee;\"> Pamiętaj:</span><span style=\" "
-"font-weight:600;\"> </span><span style=\" font-weight:600; color:#ff0000;"
-"\">TO JEST WERSJA ALPHA OPROGRAMOWANIA, I MOŻE ZJEŚĆ TWOJEGO CHOMIKA</span></"
-"p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-weight:600; color:#ff0000;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#ff0000;\"><span style=\" color:#eeeeee;\">Dobrej zabawy! "
-"- Deweloperzy Chakry</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:12pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; "
+"color:#eeeeee;\">Witamy w instalatorze Chakry!</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
+"margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; "
+"color:#eeeeee;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; "
+"font-size:8pt; font-weight:536; color:#eeeeee;\">Instalator przeprowadzi cię "
+"przez cały proces instalacji</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; "
+"font-size:8pt; font-weight:536; color:#eeeeee;\">systemu Chakra na twoim "
+"komputerze. Po zakończeniu instalacji otrzymasz</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; "
+"font-size:8pt; font-weight:536; color:#eeeeee;\">gotowy do użytku "
+"system.</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
+"margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; "
+"font-weight:536; color:#eeeeee;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; "
+"font-size:8pt; font-weight:536; color:#eeeeee;\"> Prosimy o uważne "
+"przeczytanie wszelkich instrukcji</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
+"margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; "
+"color:#eeeeee;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; "
+"font-size:8pt; font-weight:536; color:#eeeeee;\"> Pamiętaj:</span><span "
+"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; "
+"font-weight:536;\"> </span><span style=\" font-family:'Bitstream Vera Sans'; "
+"font-size:8pt; font-weight:536; color:#ff0000;\">TO JEST OPROGRAMOWANIE W "
+"WERSJI ALPHA WIĘC MOŻE MIEĆ DZIWNE POMYSŁY</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
+"margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; "
+"font-weight:536; color:#ff0000;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; "
+"font-size:8pt; font-weight:536; color:#eeeeee;\">! - Dobrej zabawy - "
+"Deweloperzy Chakry </span></p></body></html>"
 
 #. i18n: file: ui/pages/license.ui:49
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:269
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">License Approval</span></p></"
-"body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+"font-size:22pt; font-weight:600; color:#ffffff;\">License "
+"Approval</span></p></body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Zatwierdzenie licencji</span></"
-"p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+"font-size:22pt; font-weight:600; color:#ffffff;\">Zatwierdzenie "
+"licencji</span></p></body></html>"
 
 #. i18n: file: ui/pages/license.ui:61
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -1260,10 +1262,10 @@ msgid ""
 "licenses. If you choose against a license, the installer will try to use a "
 "free solution (if one is available)."
 msgstr ""
-"Chakra zawiera oprogramowanie własnościowe takie jak sterowniki sprzętu,"
-"wtyczki multimedialne czy czcionki. Aby je zainstalować musisz przeczytać i "
-"zaakceptować ich licencje. Jeśli nie zaakceptujesz licencji instalator "
-"spróbuje użyć wolnego odpowiednika (jeśli taki istnieje)."
+"Chakra zawiera oprogramowanie własnościowe takie jak sterowniki "
+"sprzętu,wtyczki multimedialne czy czcionki. Aby je zainstalować musisz "
+"przeczytać i zaakceptować ich licencje. Jeśli nie zaakceptujesz licencji "
+"instalator spróbuje użyć wolnego odpowiednika (jeśli taki istnieje)."
 
 #. i18n: file: ui/pages/license.ui:74
 #. i18n: ectx: property (text), widget (QLabel, licenseLabel)
@@ -1294,29 +1296,29 @@ msgstr "Formularz"
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: rc.cpp:291
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Language &amp; Time</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; "
+"font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans "
+"Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; "
+"color:#ffffff;\">Language &amp; Time</span></p></body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Język i czas</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; "
+"font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans "
+"Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; "
+"color:#ffffff;\">Język i czas</span></p></body></html>"
 
 #. i18n: file: ui/pages/locale.ui:45
 #. i18n: ectx: property (text), widget (QLabel, label_5)
@@ -1341,9 +1343,8 @@ msgstr "Szukanie..."
 #. i18n: file: ui/pages/locale.ui:162
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:304
-#, fuzzy
 msgid "Continent:"
-msgstr "Punkt montowania:"
+msgstr "Kontynent:"
 
 #. i18n: file: ui/pages/locale.ui:185
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -1368,59 +1369,60 @@ msgstr "Pokaż wszystko"
 #. i18n: file: ui/pages/locale.ui:277
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: rc.cpp:319
-#, fuzzy
 msgid "Region: "
-msgstr "Login:"
+msgstr "Region: "
 
 #. i18n: file: ui/pages/partition.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Partition)
 #: rc.cpp:322
-#, fuzzy
 msgid "Partition"
-msgstr "Partycja:"
+msgstr "Partycja"
 
 #. i18n: file: ui/pages/partition.ui:43
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:325
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Disk setup</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; "
+"font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans "
+"Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; "
+"color:#ffffff;\">Disk setup</span></p></body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Konfiguracja dysku</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; "
+"font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans "
+"Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; "
+"color:#ffffff;\">Konfiguracja dysku</span></p></body></html>"
 
 #. i18n: file: ui/pages/partition.ui:58
 #. i18n: ectx: property (text), widget (QLabel, descriptionLabel)
 #: rc.cpp:332
+#, fuzzy
 msgid ""
 "Please select a mountpoint for your partitions. No permanent changes to your "
 "hard drive will be made when you will press \"Next\". Note: selected "
 "partitions are not explicitly formatted."
 msgstr ""
+"Proszę wybrać punkty montowania partycji. Żadne nieodwracalne zmiany nie "
+"zostaną dokonane po naciśnięciu \"Dalej\". "
 
 #. i18n: file: ui/pages/partition.ui:103
 #. i18n: ectx: property (text), widget (QLabel, filesystemLabel)
 #: rc.cpp:336
 msgid "Filesystem: "
-msgstr ""
+msgstr "System plików:"
 
 #. i18n: file: ui/pages/partition.ui:201
 #. i18n: ectx: property (text), widget (KPushButton, editPartitionOkButton)
@@ -1428,14 +1430,14 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, okButton)
 #: rc.cpp:342 rc.cpp:423
 msgid "Ok"
-msgstr ""
+msgstr "Ok"
 
 #. i18n: file: ui/pages/partition.ui:298
 #. i18n: ectx: property (text), widget (QPushButton, formatButton)
 #: rc.cpp:351
 #, fuzzy
 msgid "Format"
-msgstr "Formularz"
+msgstr "Formatuj"
 
 #. i18n: file: ui/pages/partition.ui:317
 #. i18n: ectx: property (toolTip), widget (QPushButton, undoButton)
@@ -1443,42 +1445,41 @@ msgstr "Formularz"
 #. i18n: ectx: property (text), widget (QPushButton, undoButton)
 #: rc.cpp:354 rc.cpp:357
 msgid "Undo"
-msgstr ""
+msgstr "Cofnij"
 
 #. i18n: file: ui/pages/partition.ui:336
 #. i18n: ectx: property (toolTip), widget (QPushButton, unmountButton)
 #: rc.cpp:360
-#, fuzzy
 msgid "Unmount the selected partition"
-msgstr "Musisz wybrać strefę czasową."
+msgstr "Odmontuj wybraną partycję"
 
 #. i18n: file: ui/pages/readyinstall.ui:51
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:363
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Ready to Install</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; "
+"font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans "
+"Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; "
+"color:#ffffff;\">Ready to Install</span></p></body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Gotowy do instalacji</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; "
+"font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans "
+"Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; "
+"color:#ffffff;\">Gotowy do instalacji</span></p></body></html>"
 
 #. i18n: file: ui/pages/readyinstall.ui:77
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -1494,87 +1495,88 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: rc.cpp:374
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">The following partitions will be used:</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; "
+"font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans "
+"Serif'; font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; "
+"color:#eeeeee;\">The following partitions will be "
+"used:</span></p></body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">Następujące partycje zostaną użyte:</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; "
+"font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans "
+"Serif'; font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; "
+"color:#eeeeee;\">Następujące partycje zostaną użyte:</span></p></body></html>"
 
 #. i18n: file: ui/pages/readyinstall.ui:211
 #. i18n: ectx: property (text), widget (QLabel, formatLabel)
 #: rc.cpp:381
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">The following partitions will be formatted:</span></p></body></"
-"html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; "
+"font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans "
+"Serif'; font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; "
+"color:#eeeeee;\">The following partitions will be "
+"formatted:</span></p></body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">Następujące partycje zostaną sformatowane:</span></p></body></"
-"html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; "
+"font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans "
+"Serif'; font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; "
+"color:#eeeeee;\">Następujące partycje zostaną "
+"sformatowane:</span></p></body></html>"
 
 #. i18n: file: ui/pages/releasenotes.ui:47
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:391
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
-"style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Release Notes</"
-"span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; "
+"color:#ffffff;\">Release Notes</span></p></body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
-"style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Informacje o "
-"wydaniu</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; "
+"color:#ffffff;\">Informacje o wydaniu</span></p></body></html>"
 
 #. i18n: file: ui/pages/releasenotes.ui:60
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -1593,42 +1595,42 @@ msgstr ""
 #: rc.cpp:401
 #, fuzzy
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:14pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Create Users</span></p></body></"
-"html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:14pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+"font-size:22pt; font-weight:600; color:#ffffff;\">Create "
+"Users</span></p></body></html>"
 msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
+"\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style "
+"type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Ustawienia roota</span></p></"
-"body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+"font-size:22pt; font-weight:600; color:#ffffff;\">Tworzenie "
+"użytkowników</span></p></body></html>"
 
 #. i18n: file: ui/pages/usercreation.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:408
 msgid "Enter at least one login name and password."
-msgstr ""
+msgstr "Podaj przynajmniej jedną nazwę użytkownika i hasło."
 
 #. i18n: file: ui/pages/usercreation.ui:178
 #. i18n: ectx: property (toolTip), widget (QPushButton, addUser)
 #: rc.cpp:411
 #, fuzzy
 msgid "Add another user account."
-msgstr "Dodanie kolejnego użytkownika.."
+msgstr "Dodaj kolejnego użytkownika."
 
 #. i18n: file: ui/pages/usercreation.ui:286
 #. i18n: ectx: property (text), widget (QLabel, hostname_extra_label)
@@ -1637,39 +1639,38 @@ msgid ""
 "<small>This name will be used if you make the computer visible to others on "
 "a network.</small>"
 msgstr ""
+"<small>Ta nazwa będzie widoczna dla innych jeśli uczynisz ten komputer "
+"widocznym w sieci.<small>"
 
 #. i18n: file: ui/pages/usercreation.ui:299
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:417
-#, fuzzy
 msgid "...and, what is the name of this computer?"
-msgstr "Nazwa tego komputera:"
+msgstr "...i, jaką nazwę nadasz temu komputerowi?"
 
 #. i18n: file: ui/widgets/avatardialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, AvatarDialog)
-#: rc.cpp:420
+#: rc.cpp:447
 msgid "Select an Avatar..."
-msgstr ""
+msgstr "Wybierz Avatar..."
 
 #. i18n: file: ui/widgets/userwidget.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:429
-#, fuzzy
+#: rc.cpp:456
 msgid "Login: "
 msgstr "Login:"
 
 #. i18n: file: ui/widgets/userwidget.ui:56
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:432
-#, fuzzy
+#: rc.cpp:459
 msgid "Password: "
-msgstr "Hasło:"
+msgstr "Hasło: "
 
 #. i18n: file: ui/widgets/userwidget.ui:94
 #. i18n: ectx: property (toolTip), widget (QPushButton, userDetails)
-#: rc.cpp:435
+#: rc.cpp:462
 msgid "Include more information about this user."
-msgstr ""
+msgstr "Dodaj więcej informacji o tym użytkowniku."
 
 #. i18n: file: ui/widgets/userwidget.ui:124
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -1681,7 +1682,7 @@ msgstr "Potwierdź hasło:"
 #. i18n: ectx: property (toolTip), widget (QPushButton, removeUser)
 #: rc.cpp:441
 msgid "Remove this user."
-msgstr ""
+msgstr "Usuń tego użytkownika."
 
 #. i18n: file: ui/widgets/userwidget.ui:264
 #. i18n: ectx: property (text), widget (QLabel, label_4)
@@ -1694,7 +1695,7 @@ msgstr "Imię:"
 #. i18n: ectx: property (text), widget (QCheckBox, autoLoginCheckBox)
 #: rc.cpp:447
 msgid "Login Automatically"
-msgstr ""
+msgstr "Logowanie automatyczne"
 
 #. i18n: file: ui/widgets/userwidget.ui:344
 #. i18n: ectx: property (text), widget (QCheckBox, rootUsesUserPwCheckBox)
@@ -1703,20 +1704,20 @@ msgid ""
 "Use this password as \n"
 "the Administrator password"
 msgstr ""
+"Użyj tego hasła jako \n"
+"hasła administratora"
 
 #. i18n: file: ui/widgets/userwidget.ui:396
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: rc.cpp:454
-#, fuzzy
 msgid "Root Password:  "
-msgstr "Hasło roota"
+msgstr "Hasło administratora:  "
 
 #. i18n: file: ui/widgets/userwidget.ui:406
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: rc.cpp:457
-#, fuzzy
 msgid "Confirm Root Password:  "
-msgstr "Potwierdź hasło:"
+msgstr "Potwierdź hasło administratora:  "
 
 #: rc.cpp:458
 msgctxt "NAME OF TRANSLATORS"
@@ -1729,22 +1730,18 @@ msgid "Your emails"
 msgstr "wiezyr@gmail.com,hash87@gmail.com"
 
 # na?
-#, fuzzy
 #~ msgid "installed"
 #~ msgstr "Zainstaluj w:"
 
 # ?
-#, fuzzy
 #~ msgid "Install Packaged Software"
 #~ msgstr "Mechanizm poinstalacyjny i oprawa graficzna"
 
 # ?
-#, fuzzy
 #~ msgid "Install Packages"
 #~ msgstr "Mechanizm poinstalacyjny i oprawa graficzna"
 
 # na?
-#, fuzzy
 #~ msgid "Install"
 #~ msgstr "Zainstaluj w:"
 

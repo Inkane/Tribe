@@ -48,7 +48,7 @@ void AvatarDialog::populateList()
     }
 
     QListWidgetItem *itemC = new QListWidgetItem(ui.avatarList);
-    itemC->setIcon(KIcon("view-user-offline-kopete"));
+    itemC->setIcon(QPixmap(":/Images/images/own.png"));
     itemC->setText(i18n("Custom"));
     ui.avatarList->addItem(itemC);
 }

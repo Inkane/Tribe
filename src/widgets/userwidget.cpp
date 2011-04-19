@@ -35,7 +35,7 @@ UserWidget::UserWidget(int a_userNumber, QWidget* parent): QWidget(parent)
     ui.userDetails->setIcon(KIcon("view-list-details"));
 
     ui.avatar->setIconSize(QSize(48, 48));
-    ui.avatar->setIcon(KIcon("view-user-offline-kopete"));
+    ui.avatar->setIcon(QPixmap(":/Images/images/own.png"));
 
     m_avatarDialog = new AvatarDialog(0);
 

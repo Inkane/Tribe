@@ -897,12 +897,11 @@ void PartitionPage::aboutToGoToNext()
         foreach(const Partition* p, bootDevice->partitionTable()->children()) {
             while(!(PartitionTable::flagName(static_cast<PartitionTable::Flag>(f))).isEmpty())
             {
-                    if (p->availableFlags() & f && p->activeFlags() & f)
-                    {
-                        if (p->fileSystem().type() == FileSystem::Unformatted) {
+                    if (p->availableFlags() & f &&
+                        p->activeFlags() & f &&
+                        p->fileSystem().type() == FileSystem::Unformatted & f) {
                             bootPartition = true;
                             break;
-                        }
                     }
                     f <<= 1;
             }

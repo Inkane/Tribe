@@ -899,7 +899,7 @@ void PartitionPage::aboutToGoToNext()
             {
                     if (p->availableFlags() & f &&
                         p->activeFlags() & f &&
-                        p->fileSystem().type() == FileSystem::Unformatted & f) {
+                        p->fileSystem().type() == FileSystem::Unformatted) {
                             bootPartition = true;
                             break;
                     }

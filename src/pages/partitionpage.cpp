@@ -898,7 +898,7 @@ void PartitionPage::aboutToGoToNext()
             while(!(PartitionTable::flagName(static_cast<PartitionTable::Flag>(f))).isEmpty())
             {
                     if (p->availableFlags() & f &&
-                        p->activeFlags() & f {
+                        p->activeFlags() & f) {
                             bootPartition = true;
                             break;
                     }

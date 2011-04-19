@@ -335,8 +335,7 @@ void LocalePage::aboutToGoToNext()
 
 void LocalePage::aboutToGoToPrevious()
 {
-    if (validate())
-        emit goToPreviousStep();
+    emit goToPreviousStep();
 }
 
 #include "localepage.moc"

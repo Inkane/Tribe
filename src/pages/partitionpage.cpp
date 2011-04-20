@@ -754,7 +754,7 @@ QTreeWidgetItem* PartitionPage::createItem(const Partition* p, Device *dev)
 
     if (p->fileSystem().type() == FileSystem::Unknown) {
         item->setData(0, 50, pCapacity);
-        item->setData(0, 51, "Unallocated space");
+        item->setData(0, 51, "Unallocated space or Unformatted");
         item->setData(0, 60, m_colorList.at(m_currentPart).name());
     } else if (!p->children().isEmpty()) {
         item->setData(0, 50, pCapacity);
@@ -898,7 +898,7 @@ void PartitionPage::aboutToGoToNext()
             while(!(PartitionTable::flagName(static_cast<PartitionTable::Flag>(f))).isEmpty())
             {
                     if (p->availableFlags() & f &&
-                        p->activeFlags() & f
+                        p->activeFlags() & f &&
                         p->fileSystem().type() == FileSystem::Unknown) {
                             bootPartition = true;
                             break;

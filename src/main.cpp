@@ -50,6 +50,7 @@ int main(int argc, char *argv[])
     aboutData.addAuthor(ki18n("Drake Justice"), ki18n("Developer"), "djustice@chakra-project.org", "");
     aboutData.addAuthor(ki18n("Georg Grabler"), ki18n("Developer"), "ggrabler@gmail.com", "");
     aboutData.addAuthor(ki18n("Daniele Cocca"), ki18n("Developer"), "jmc@chakra-project.org", "");
+    aboutData.setBugAddress("http://chakra-project.org/bugs/");
 
     KCmdLineArgs::init(argc, argv, &aboutData);
 

@@ -5,13 +5,14 @@
 # Glad Deschrijver <glad.deschrijver@gmail.com>, 2010.
 # Fabien Valthier, 2010, 2011.
 # Julien Humbert <julroy67@gmail.com>, 2011.
+# Fabien <hcoohb@gmail.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
 "POT-Creation-Date: 2011-04-03 19:32+0200\n"
-"PO-Revision-Date: 2011-03-13 14:27+0100\n"
-"Last-Translator: Julien Humbert <julroy67@gmail.com>\n"
+"PO-Revision-Date: 2011-04-22 01:43+0200\n"
+"Last-Translator: Fabien <hcoohb@gmail.com>\n"
 "Language-Team: French <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -161,9 +162,8 @@ msgid "Graphical Installer for Chakra"
 msgstr "Logiciel d'installation de Chakra"
 
 #: src/main.cpp:43
-#, fuzzy
 msgid "(c) 2008 - 2011 the Chakra Development Team"
-msgstr "(c) 2008 – 2010, L'équipe de développement de Chakra"
+msgstr "(c) 2008 – 2011, L'équipe de développement de Chakra"
 
 #: src/main.cpp:43
 msgid "chakra@chakra-project.org"
@@ -346,16 +346,21 @@ msgid ""
 "Tribe detected target partitions which are mounted. Do you want Tribe to "
 "unmount them?"
 msgstr ""
+"Tribe a détecté qu'au moins une partition cible est montée. Voulez-vous "
+"que Tribe la ou les démonte ?"
 
 #: src/pages/partitionpage.cpp:823
 msgid ""
 "Tribe failed to unmount a partition which is target for the installation. "
 "You need to unmount the partitions manually before you can proceed."
 msgstr ""
+"Tribe n'a pas pu démonter une partition qui est sélectionnée comme "
+"destination pour l'installation. "
+"Vous devez démontez les partitions manuellement avant de continuer."
 
 #: src/pages/partitionpage.cpp:825
 msgid "Target partitions mounted"
-msgstr ""
+msgstr "Partitions cible montées"
 
 #: src/pages/partitionpage.cpp:836
 msgid ""
@@ -392,12 +397,15 @@ msgstr ""
 msgid ""
 "You need to select a root partition ('/') to proceed with the installation. "
 msgstr ""
+"Vous devez sélectionner une partition ('/') pour continuer l'installation."
 
 #: src/pages/partitionpage.cpp:908
 msgid ""
 "When using a GPT Partition Table you need to have a partition with the "
 "bios_grub flag!"
 msgstr ""
+"L'utilisation d'une table de partition GPT nécessite d'avoir une partition "
+"avec le drapeau bios_grub !"
 
 #: src/pages/readyinstallpage.cpp:77
 msgid "New partition (%1) on %2"

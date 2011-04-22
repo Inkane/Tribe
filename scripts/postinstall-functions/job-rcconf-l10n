@@ -74,11 +74,11 @@ job_rcconf_l10n()
 		sed -i -e 's/^.*KEYMAP=.*/KEYMAP="dk"/' ${mountpoint}/etc/rc.conf
 		;;
 
-		enus)
-		# English 
-		msg "american english setup"
+		el)
+		# Greek
+		msg "greek setup"
 		sed -i -e 's/^.*HARDWARECLOCK=.*/HARDWARECLOCK="localtime"/' ${mountpoint}/etc/rc.conf
-		sed -i -e 's/^.*KEYMAP=.*/KEYMAP="us"/' ${mountpoint}/etc/rc.conf
+		sed -i -e 's/^.*KEYMAP=.*/KEYMAP="el"/' ${mountpoint}/etc/rc.conf
 		;;
 
 		engb)
@@ -88,9 +88,29 @@ job_rcconf_l10n()
 		sed -i -e 's/^.*KEYMAP=.*/KEYMAP="gb"/' ${mountpoint}/etc/rc.conf
 		;;
 
+		ennz)
+		msg "New Zealand english setup"
+		sed -i -e 's/^.*HARDWARECLOCK=.*/HARDWARECLOCK="localtime"/' ${mountpoint}/etc/rc.conf
+		sed -i -e 's/^.*KEYMAP=.*/KEYMAP="us"/' ${mountpoint}/etc/rc.conf
+		;;
+
+		enus)
+		# English 
+		msg "american english setup"
+		sed -i -e 's/^.*HARDWARECLOCK=.*/HARDWARECLOCK="localtime"/' ${mountpoint}/etc/rc.conf
+		sed -i -e 's/^.*KEYMAP=.*/KEYMAP="us"/' ${mountpoint}/etc/rc.conf
+		;;
+
 		es)
 		# Spain 
 		msg "spanish setup"
+		sed -i -e 's/^.*HARDWARECLOCK=.*/HARDWARECLOCK="localtime"/' ${mountpoint}/etc/rc.conf
+		sed -i -e 's/^.*KEYMAP=.*/KEYMAP="es"/' ${mountpoint}/etc/rc.conf
+		;;
+
+		esar)
+		# Argetina
+		msg "Argentina spanish setup"
 		sed -i -e 's/^.*HARDWARECLOCK=.*/HARDWARECLOCK="localtime"/' ${mountpoint}/etc/rc.conf
 		sed -i -e 's/^.*KEYMAP=.*/KEYMAP="es"/' ${mountpoint}/etc/rc.conf
 		;;
@@ -156,6 +176,13 @@ job_rcconf_l10n()
 		msg "dutch setup"
 		sed -i -e 's/^.*HARDWARECLOCK=.*/HARDWARECLOCK="localtime"/' ${mountpoint}/etc/rc.conf
 		sed -i -e 's/^.*KEYMAP=.*/KEYMAP="us"/' ${mountpoint}/etc/rc.conf
+		;;
+
+		nlbe)
+		# Dutch 
+		msg "belgian setup"
+		sed -i -e 's/^.*HARDWARECLOCK=.*/HARDWARECLOCK="localtime"/' ${mountpoint}/etc/rc.conf
+		sed -i -e 's/^.*KEYMAP=.*/KEYMAP="be"/' ${mountpoint}/etc/rc.conf
 		;;
 
 		no)
@@ -230,7 +257,21 @@ job_rcconf_l10n()
 
 		zhcn)
 		# Simplified Chinese 
-		msg "chinese setup"
+		msg "chinese setup (simplified)"
+		sed -i -e 's/^.*HARDWARECLOCK=.*/HARDWARECLOCK="localtime"/' ${mountpoint}/etc/rc.conf
+		sed -i -e 's/^.*KEYMAP=.*/KEYMAP="us"/' ${mountpoint}/etc/rc.conf
+		;;
+
+		zhhk)
+		# Simplified Chinese 
+		msg "chinese setup (Hong Kong)"
+		sed -i -e 's/^.*HARDWARECLOCK=.*/HARDWARECLOCK="localtime"/' ${mountpoint}/etc/rc.conf
+		sed -i -e 's/^.*KEYMAP=.*/KEYMAP="us"/' ${mountpoint}/etc/rc.conf
+		;;
+
+		zhtw)
+		# Simplified Chinese 
+		msg "chinese setup (Taiwan)"
 		sed -i -e 's/^.*HARDWARECLOCK=.*/HARDWARECLOCK="localtime"/' ${mountpoint}/etc/rc.conf
 		sed -i -e 's/^.*KEYMAP=.*/KEYMAP="us"/' ${mountpoint}/etc/rc.conf
 		;;

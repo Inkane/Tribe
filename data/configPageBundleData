@@ -1,10 +1,12 @@
-firefox-bin::Firefox::The Mozilla Web-Browser
-chromium::Chromium::The Open-Source Google Chrome Web-Browser
-filezilla::FileZilla::Fast and reliable FTP, FTPS and SFTP client
 aMule::aMule::An eMule-like client for ed2k p2p network
+audacity::Audacity::A program that lets you manipulate digital audio waveforms
+bluefish::Bluefish::A powerful HTML editor for experienced web designers and programmers
+chromium::Chromium::The Open-Source Google Chrome Web-Browser
+codeblocks::Codeblocks::An open source and cross-platform C/C++ IDE
+filezilla::FileZilla::Fast and reliable FTP, FTPS and SFTP client
+firefox-bin::Firefox::The Mozilla Web-Browser
 gimp::GIMP::The GNU Image Manipulation Program
 inkscape::Inkscape::Vector graphics editor using the SVG file format
-kompozer::Kompozer::A Dreamweaver style WYSIWYG web editor; Nvu unofficial bug-fix release
-libreoffice::Libre Office::A productivity suite that is compatible with other major office suites
-scummvm::Scummvm::A 'virtual machine' for several classic graphical point-and-click adventure games
+kompozer::Kompozer::A Dreamweaver style WYSIWYG web editor
+linphone::LinPhone::A Voice-over-IP phone
 truecrypt::Truecrypt::Free open-source cross-platform disk encryption software

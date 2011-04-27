@@ -858,7 +858,7 @@ void PartitionPage::aboutToGoToNext()
                 if (text == "/") {
                     QString msg;
 
-                    msg.append(i18n("The partition you have chosen to mount as '/' is not marked for formatation. "
+                    msg.append(i18n("The partition you have chosen to mount as '/' is not marked for formatting. "
                                     "This might create problems. Do you still want to continue without formating it?"));
 
                     KDialog *dialog = new KDialog(this, Qt::FramelessWindowHint);

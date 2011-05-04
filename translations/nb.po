@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
 "POT-Creation-Date: 2011-04-03 19:32+0200\n"
-"PO-Revision-Date: 2011-04-27 23:30+0200\n"
+"PO-Revision-Date: 2011-05-04 15:10+0200\n"
 "Last-Translator: Yngve Inntjore Levinsen <yngve.levinsen@gmail.com>\n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -29,7 +29,7 @@ msgstr " , vennligst løs problemet, og prøv igjen."
 
 #: src/installationhandler.cpp:148
 msgid "Installing the system ..."
-msgstr "Innstalerer systemet ..."
+msgstr "Installerer systemet ..."
 
 #: src/installationhandler.cpp:176
 #, fuzzy
@@ -39,7 +39,7 @@ msgstr "Monterer %1 på %2..."
 #: src/installationhandler.cpp:184
 #, fuzzy
 msgid "Preparing installation..."
-msgstr "Fullfører innstalasjon..."
+msgstr "Fullfører installasjon..."
 
 #: src/installationhandler.cpp:204
 msgid "Error copying files"
@@ -80,7 +80,7 @@ msgstr "Fjerner overflødige pakker..."
 
 #: src/installationhandler.cpp:435
 msgid "Installing additional packages..."
-msgstr "Innstalerer ekstra pakker..."
+msgstr "Installerer ekstra pakker..."
 
 #: src/installationhandler.cpp:439
 #, fuzzy
@@ -88,16 +88,15 @@ msgid "Configuring the display..."
 msgstr "Konfigurerer maskinvare..."
 
 #: src/installationhandler.cpp:443
-#, fuzzy
 msgid "Downloading and installing localization packages..."
 msgstr ""
-"Laster ned og innstalerer pakker for språktilpassning, dette kan ta litt "
+"Laster ned og installerer pakker for språktilpassning, dette kan ta litt "
 "tid..."
 
 #: src/installationhandler.cpp:447
 #, fuzzy
 msgid "Downloading and installing documentation packages..."
-msgstr "Last ned og innstaler dokumentasjonspakker"
+msgstr "Last ned og installer dokumentasjonspakker"
 
 #: src/installationhandler.cpp:451
 msgid "Setting up localization..."
@@ -142,7 +141,7 @@ msgstr "Fjerner overflødige drivere..."
 #: src/installationhandler.cpp:490
 #, fuzzy
 msgid "Finishing up..."
-msgstr "Fullfører innstalasjon..."
+msgstr "Fullfører installasjon..."
 
 #: src/installationhandler.cpp:494
 msgid "Installation complete!"
@@ -174,7 +173,7 @@ msgstr "Tribe"
 #: src/main.cpp:42
 #, fuzzy
 msgid "Graphical Installer for Chakra"
-msgstr "LiveCD innstalasjonsprogramm for Chakra"
+msgstr "LiveCD installasjonsprogramm for Chakra"
 
 #: src/main.cpp:43
 msgid "(c) 2008 - 2011 the Chakra Development Team"
@@ -227,7 +226,7 @@ msgstr "Drake Justice"
 
 #: src/mainwindow.cpp:99
 msgid "Do you really want to abort the installation?"
-msgstr "Er du sikker på at du vil avbryte innstalasjonen?"
+msgstr "Er du sikker på at du vil avbryte installasjonen?"
 
 #: src/mainwindow.cpp:507
 msgid ""
@@ -235,13 +234,13 @@ msgid ""
 "Tribe will now quit, please check the installation logs in /tmp\n"
 "or ask for help in our forums."
 msgstr ""
-"Innstalasjonen feilet! Følgende feilmelding har blitt rapportert: %1.\n"
-"Tribe avsluttes, vennligst sjekk innstalasjonsloggene i /tmp\n"
+"Installasjonen feilet! Følgende feilmelding har blitt rapportert: %1.\n"
+"Tribe avsluttes, vennligst sjekk installasjonsloggene i /tmp\n"
 "eller spør om hjelp på vårt forum."
 
 #: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:518
 msgid "Installing bootloader..."
-msgstr "Innstalerer oppstartslaster..."
+msgstr "installerer oppstartslaster..."
 
 #: src/pages/bootloaderpage.cpp:82
 #, fuzzy
@@ -446,7 +445,7 @@ msgid ""
 "The following partitions appear to be mounted: %1. To let the installation "
 "happen correctly, Tribe will now unmount them."
 msgstr ""
-"Følgende partisjoner later til å være montert %1. For at innstalasjonen skal "
+"Følgende partisjoner later til å være montert %1. For at installasjonen skal "
 "bli korrekt vil Tribe avmontere de nå."
 
 #: src/pages/usercreationpage.cpp:148
@@ -475,12 +474,12 @@ msgstr "Innloggingsnavn kan ikke være tomt."
 #: src/pmhandler.cpp:360
 #, fuzzy
 msgid "Preparing hard drive for installation..."
-msgstr "Fullfører innstalasjon..."
+msgstr "Fullfører installasjon..."
 
 #: src/pmhandler.cpp:381
 #, fuzzy
 msgid "Analyzing disk..."
-msgstr "Innstalerer..."
+msgstr "installerer..."
 
 #: src/pmhandler.cpp:445
 msgid "There was an error while formatting partitions"
@@ -534,7 +533,7 @@ msgstr "Lisensgodtak"
 #. i18n: ectx: property (text), widget (QLabel, label_21)
 #: rc.cpp:19
 msgid "Ready to Install"
-msgstr "Klar for å innstalere"
+msgstr "Klar for å installere"
 
 #. i18n: file: ui/pages/base.ui:283
 #. i18n: ectx: property (text), widget (QLabel, label_24)
@@ -605,13 +604,13 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Innstalasjon</span></p></body></html>"
+"weight:600; color:#ffffff;\">Installasjon</span></p></body></html>"
 
 #. i18n: file: ui/pages/base.ui:416
 #. i18n: ectx: property (text), widget (QLabel, label_13)
 #: rc.cpp:45
 msgid "Install System"
-msgstr "Innstaler system"
+msgstr "installer system"
 
 #. i18n: file: ui/pages/base.ui:453
 #. i18n: ectx: property (text), widget (QLabel, label_14)
@@ -649,7 +648,7 @@ msgstr "Omstart / Nyt"
 #. i18n: ectx: property (text), widget (QPushButton, abortButton)
 #: rc.cpp:58
 msgid "Abort installation"
-msgstr "Avbryt innstalasjon"
+msgstr "Avbryt installasjon"
 
 #. i18n: file: ui/pages/base.ui:615
 #. i18n: ectx: property (text), widget (QPushButton, previousButton)
@@ -704,16 +703,16 @@ msgid ""
 "If you are unsure where you should install the bootloader to, \n"
 "just leave the default value (hd0)."
 msgstr ""
-"Du kan nå innstalere GRUB som din hovedoppstartslaster.\n"
+"Du kan nå installere GRUB som din hovedoppstartslaster.\n"
 "\n"
-"Hvis du er usikker på hvor du bør innstalere oppstartslasteren, la "
+"Hvis du er usikker på hvor du bør installere oppstartslasteren, la "
 "standardverdien (hd0) være."
 
 #. i18n: file: ui/pages/bootloader.ui:71
 #. i18n: ectx: property (text), widget (QCheckBox, checkBox)
 #: rc.cpp:80
 msgid "Install Bootloader"
-msgstr "Innstaler oppstartslaster"
+msgstr "installer oppstartslaster"
 
 #. i18n: file: ui/pages/bootloader.ui:89
 #. i18n: ectx: property (text), widget (QPushButton, pushButton)
@@ -729,7 +728,7 @@ msgstr "Avansert..."
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:86
 msgid "Install to:"
-msgstr "Innstaler til:"
+msgstr "installer til:"
 
 #. i18n: file: ui/pages/bootloader.ui:142
 #. i18n: ectx: property (text), widget (QLineEdit, lineEdit)
@@ -871,7 +870,7 @@ msgstr "Fargelegge"
 #: rc.cpp:147
 #, fuzzy
 msgid "Install GRUB"
-msgstr "Innstaler til:"
+msgstr "installer til:"
 
 #. i18n: file: ui/pages/config.ui:761
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
@@ -923,7 +922,7 @@ msgstr ""
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
 "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Innstalasjon fullført !</span></p></body></html>"
+"#ffffff;\">installasjon fullført !</span></p></body></html>"
 
 #. i18n: file: ui/pages/finish.ui:68
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -947,13 +946,13 @@ msgid ""
 "\n"
 "The Chakra Team"
 msgstr ""
-"Gratulerer, innstalasjonen er fullført! Vi håper at du nøt det du har sett "
+"Gratulerer, installasjonen er fullført! Vi håper at du nøt det du har sett "
 "like mye som vi har nytt å lage det.\n"
 "\n"
 "Du kan nå starte om og bruke det nye systemet, eller fortsette å bruke "
 "LiveCD'en.\n"
 "\n"
-"I tilfelle du vil sjekke innstalasjonsloggene, ta en titt i /tmp på live-"
+"I tilfelle du vil sjekke installasjonsloggene, ta en titt i /tmp på live-"
 "systemet eller i /var/log på det installerte systemet.\n"
 "\n"
 "Takk for at du brukte Chakra, og ta gjerne kontakt med oss i forumet, del "
@@ -1021,7 +1020,7 @@ msgid ""
 "simply press the \"Next\" button. Otherwise check out the ramdisk options "
 "below and select the items you need for your system."
 msgstr ""
-"Maskinvaren din vil bli automatisk konfigurert i løpet av innstalasjonen og "
+"Maskinvaren din vil bli automatisk konfigurert i løpet av installasjonen og "
 "etinitielt ramdiskmiljø for å starte Linux kjernen vil bli bygget.Alt bør "
 "skje uten manuell inngripen, men det kan være du trenger noen "
 "spesielleopsjoner for spesielle oppstartsmetoder. Hvis du er usikker på hva "
@@ -1183,7 +1182,7 @@ msgstr ""
 "size:9pt; font-weight:400; font-style:normal;\">\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-size:14pt; color:#eeeeee;\">Velkommen til innstaleringen av "
+"style=\" font-size:14pt; color:#eeeeee;\">Velkommen til installeringen av "
 "Chakra!</span></p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
 "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
@@ -1191,11 +1190,11 @@ msgstr ""
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:"
 "#eeeeee;\"><span style=\" font-weight:600;\">Tribe, installeringsprogrammet "
-"vårt, vil guide deg igjennom innstalasjonen av Chakra live-systemet</span></"
+"vårt, vil guide deg igjennom installasjonen av Chakra live-systemet</span></"
 "p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\">på din datamaskin. Etter innstalasjonen vil du "
+"weight:600; color:#eeeeee;\">på din datamaskin. Etter installasjonen vil du "
 "ha et Arch Linux skrivebords-system </p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
@@ -1263,7 +1262,7 @@ msgid ""
 "free solution (if one is available)."
 msgstr ""
 "Chakra inneholder noe propritær programvare som maskinvaredrivere, media "
-"innstikk og fonter. For å innstalere dette må du lese og godta lisensene "
+"innstikk og fonter. For å installere dette må du lese og godta lisensene "
 "deres Hvis du velger å ikke akseptere en lisens vil installasjonsprogrammet "
 "forsøke å bruke en fri løsning, hvis det er tilgjengelig."
 
@@ -1329,7 +1328,7 @@ msgid ""
 "settings at the bottom of the page. If you cant find your region or city on "
 "the globe, you can zoom in by using the slider on the left."
 msgstr ""
-"Vennligst velg den nærmeste byen slik at innstalasjonprogrammet kan foreslå "
+"Vennligst velg den nærmeste byen slik at installasjonprogrammet kan foreslå "
 "språkinstillinger og tidssone for deg. Du kan finstille instillingene "
 "nederst på siden. Hvis du ikke kan finne regionen eller byen på globusen kan "
 "du zoome inn ved å bruke slideren til venstre."
@@ -1494,7 +1493,7 @@ msgid ""
 "The system will be installed with the following settings. Before continuing, "
 "please review your selections:\n"
 msgstr ""
-"Systemet vil innstaleres med følgede innstillinger. Før du forsetter, "
+"Systemet vil installeres med følgede innstillinger. Før du forsetter, "
 "vennligst se igjennom dine valg:\n"
 
 #. i18n: file: ui/pages/readyinstall.ui:147

@@ -218,7 +218,7 @@ Europe/Amsterdam:nl_NL.UTF-8,nl_NL,nl_NL@euro:nl,en_gb
 Europe/Athens:el_GR.UTF-8,el_GR,el_CY.UTF-8,el_CY:el,en_gb
 Europe/Berlin:de_DE.UTF-8,de_DE,de_DE@euro:de,en_gb
 Europe/Bratislava:sk_SK.UTF-8,sk_SK:en_gb
-Europe/Brussels:nl_BE.UTF-8,nl_BE,nl_BE@euro,fr_BE.UTF-8,fr_BE,fr_BE@euro:nl,en_gb
+Europe/Brussels:nl_BE.UTF-8,nl_BE,nl_BE@euro,fr_BE.UTF-8,fr_BE,fr_BE@euro,de_BE,de_BE.UTF-8,de_BE@euro:nl,fr,de,en_gb
 Europe/Bucharest:ro_RO.UTF-8,ro_RO:ro,en_gb
 Europe/Budapest:hu_HU.UTF-8,hu_HU:hu,en_gb
 Europe/Copenhagen:da_DK.UTF-8,da_DK:da,en_gb

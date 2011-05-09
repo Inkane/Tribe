@@ -1766,5 +1766,19 @@
     <coordinates>-114.3692,62.4552</coordinates>
   </Point>
 </Placemark>
+<Placemark>
+  <name>Vienna</name>
+  <description>Europe/Vienna</description>
+  <Point>
+    <coordinates>16.2219,48.1230</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Auckland</name>
+  <description>Pacific/Auckland</description>
+  <Point>
+    <coordinates>175.8316,-36.3352</coordinates>
+  </Point>  
+</Placemark>
 </Document>
 </kml>

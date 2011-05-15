@@ -60,7 +60,6 @@ job_configure_users()
 	msg "adjust default cursor: white-cursor"
 	cp -v /etc/skel/kcminputrc ${mountpoint}/home/${user_name}/.kde4/share/config/kcminputrc
 	cp -v /etc/skel/kdeglobals ${mountpoint}/home/${user_name}/.kde4/share/config/kdeglobals
-	cp -v /etc/skel/startupconfigkeys ${mountpoint}/home/${user_name}/.kde4/share/config/startupconfigkeys
 
 	# fix quirks
 	if [ -e "${mountpoint}/home/${user_name}/10-keyboard.conf" ] ; then

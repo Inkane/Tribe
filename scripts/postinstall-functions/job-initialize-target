@@ -89,6 +89,7 @@ job_initialize_target()
 	mkdir -pv ${mountpoint}/var/lib/hwclock
 
 	if [ -d "${mountpoint}/opt/chakra/restore/burg" ];
+	then
 	  msg "restoring found burg folder"
 	  cp -vR "${mountpoint}/opt/chakra/restore/burg" "${mountpoint}/boot"
 	  rm -R "${mountpoint}/opt/chakra/restore/burg"

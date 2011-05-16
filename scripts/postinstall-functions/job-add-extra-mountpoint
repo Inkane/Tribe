@@ -25,6 +25,11 @@ job_add_extra_mountpoint()
 		  extra_mountpoint_fs="reiserfs"
 		fi
 
+		# Proper name for fat32 mountpoints
+		if [ "${extra_mountpoint_fs}" = "fat32" ] ; then
+		  extra_mountpoint_fs="vfat"
+		fi
+
 		echo "UUID=${_uuid} ${extra_mountpoint} ${extra_mountpoint_fs} defaults 0 0" >>${mountpoint}/etc/fstab
 		unset _uuid
 		unset _device

@@ -37,6 +37,9 @@ job_initialize_target()
 	msg "install /etc/resolv.conf"
 	cp -vf /etc/resolv.conf ${mountpoint}/etc/resolv.conf
 
+	msg "install /etc/inittab"
+	cp -vf /etc/inittab ${mountpoint}/etc/inittab
+
 	msg "install configs for root"
 	cp -vf /etc/skel/.bashrc ${mountpoint}/root/.bashrc
 	cp -vf /etc/skel/.bash_profile ${mountpoint}/root/.bash_profile

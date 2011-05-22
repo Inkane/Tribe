@@ -37,9 +37,6 @@ job_initialize_target()
 	msg "install /etc/resolv.conf"
 	cp -vf /etc/resolv.conf ${mountpoint}/etc/resolv.conf
 
-	msg "install /etc/inittab"
-	cp -vf /etc/inittab ${mountpoint}/etc/inittab
-
 	msg "install configs for root"
 	cp -vf /etc/skel/.bashrc ${mountpoint}/root/.bashrc
 	cp -vf /etc/skel/.bash_profile ${mountpoint}/root/.bash_profile
@@ -83,10 +80,10 @@ job_initialize_target()
 
 	msg "set Chakra Version"
 	echo "DISTRIB_ID=\"Chakra\"" > "${mountpoint}/etc/lsb-release"
-	echo "DISTRIB_RELEASE=\"git-checkout\"" >> "${mountpoint}/etc/lsb-release"
+	echo "DISTRIB_RELEASE=\"2011.04_20110521-1\"" >> "${mountpoint}/etc/lsb-release"
 	echo "DISTRIB_CODENAME=\"code-name\"" >> "${mountpoint}/etc/lsb-release"
 	echo "DISTRIB_DESCRIPTION=\"Chakra Linux\"" >> "${mountpoint}/etc/lsb-release"
-	echo "Chakra Linux release git-checkout (code-name)" > "${mountpoint}/etc/chakra-release"
+	echo "Chakra Linux release 2011.04_20110521-1 (code-name)" > "${mountpoint}/etc/chakra-release"
 
 	msg "fix hwclock"
 	mkdir -pv ${mountpoint}/var/lib/hwclock

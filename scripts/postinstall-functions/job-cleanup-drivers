@@ -17,95 +17,60 @@ job_cleanup_drivers()
 	###########################################################################
 	msg "cleaning up video drivers"
 
-	USED_DRIVER=`cat /etc/X11/xorg.conf | sed -n '/Section.*."Device"/,/EndSection/p' | grep -v "#" | grep Driver | cut -d '"' -f 2`
-	ALL_DRIVERS=`pacman -r ${mountpoint} -Q | grep xf86-video | cut -d "-" -f 3 | cut -d " " -f 1 | grep -v vesa`
-	ALL_INSTALLEDDRI=`pacman -r ${mountpoint} -Q | grep dri | cut -d " " -f 1 | grep -v dri2proto`
+	USED_DRIVERS=`cat /etc/X11/xorg.conf | sed -n '/Section.*."Device"/,/EndSection/p' | grep -v "#" | grep Driver | cut -d '"' -f 2`
+	ALL_DRIVERS=`pacman -r ${mountpoint} -Q | grep xf86-video | cut -d "-" -f 3 | cut -d " " -f 1`
 
-	msg "configured driver: ${USED_DRIVER}"
+	# replace found ati-drivers with ati and echo used drivers
+	touch /tmp/used_drivers
+	for driver in ${USED_DRIVERS}
+	do
+		if [ "${driver}" = "radeon" ] ; then
+			echo "ati" >> /tmp/used_drivers
+		elif [ "${driver}" = "mach64" ] ; then
+			echo "ati" >> /tmp/used_drivers
+		elif [ "${driver}" = "r128" ] ; then
+			echo "ati" >> /tmp/used_drivers
+		else
+			echo "${driver}" >> /tmp/used_drivers
+		fi
+	done
+
+	# reload real used drivers
+	unset ${USED_DRIVERS}
+	USED_DRIVERS=`cat /tmp/used_drivers`
+
+	# display found drivers
+	msg "configured driver: ${USED_DRIVERS}"
 	msg "installed drivers: ${ALL_DRIVERS}"
 
-	#workarounds for drivers where xf86-video-$driver != ${USED_DRIVER}
-	if [ "${USED_DRIVER}" = "radeon" ] ; then
-		unset ${USED_DRIVER}
-		USED_DRIVER="ati"
-	fi
+	msg "remove used drivers and vesa from remove_drivers list"
+	echo "${ALL_DRIVERS}" > /tmp/remove_drivers
+	for udriver in ${USED_DRIVERS}
+	do
+		for driver in ${ALL_DRIVERS}
+		do
+		if [ "${driver}" = "${udriver}" ] ; then
+			sed -i "/${driver}/d" /tmp/remove_drivers
+		fi
+		done
+	done
+	sed -i "/vesa/d" /tmp/remove_drivers
 
-	if [ "${USED_DRIVER}" = "mach64" ] ; then
-		unset ${USED_DRIVER}
-		USED_DRIVER="ati"
-	fi
+	msg "cleanup drivers"
+	REMOVE_DRIVERS=`cat /tmp/remove_drivers`
+	for rdriver in ${REMOVE_DRIVERS}
+	do
+		chroot ${mountpoint} /usr/bin/pacman -Rn xf86-video-${rdriver} --noconfirm
+	done
 
-	if [ "${USED_DRIVER}" = "r128" ] ; then
-		unset ${USED_DRIVER}
-		USED_DRIVER="ati"
-	fi
+	msg "remove any unneeded dri pkgs"
+	REMOVE_DRI=`pacman -r ${mountpoint} -Qdtq | grep dri`
+	for rdri in ${REMOVE_DRI}
+	do
+		chroot ${mountpoint} /usr/bin/pacman -Rn ${rdri} --noconfirm
+	done
 
-	# proprietary driver handling
-	if [ -e "/tmp/nvidia" ] ; then
-					for driver in ${ALL_DRIVERS}
-					do
-							chroot ${mountpoint} /usr/bin/pacman -Rn xf86-video-${driver} --noconfirm
-					done
-
-					for dri in ${ALL_INSTALLEDDRI}
-					do
-							chroot ${mountpoint} /usr/bin/pacman -Rn ${dri} --noconfirm
-					done
-
-	elif [ -e "/tmp/nvidia-71xx" ] ; then
-					for driver in ${ALL_DRIVERS}
-					do
-							chroot ${mountpoint} /usr/bin/pacman -Rn xf86-video-${driver} --noconfirm
-					done
-
-					for dri in ${ALL_INSTALLEDDRI}
-					do
-							chroot ${mountpoint} /usr/bin/pacman -Rn ${dri} --noconfirm
-					done
-
-	elif [ -e "/tmp/nvidia-96xx" ] ; then
-					for driver in ${ALL_DRIVERS}
-					do
-							chroot ${mountpoint} /usr/bin/pacman -Rn xf86-video-${driver} --noconfirm
-					done
-
-					for dri in ${ALL_INSTALLEDDRI}
-					do
-							chroot ${mountpoint} /usr/bin/pacman -Rn ${dri} --noconfirm
-					done
-
-	elif [ -e "/tmp/nvidia-173xx" ] ; then
-					for driver in ${ALL_DRIVERS}
-					do
-							chroot ${mountpoint} /usr/bin/pacman -Rn xf86-video-${driver} --noconfirm
-					done
-
-					for dri in ${ALL_INSTALLEDDRI}
-					do
-							chroot ${mountpoint} /usr/bin/pacman -Rn ${dri} --noconfirm
-					done
-
-	elif [ -e "/tmp/catalyst" ] ; then
-					for driver in ${ALL_DRIVERS}
-					do
-							chroot ${mountpoint} /usr/bin/pacman -Rn xf86-video-${driver} --noconfirm
-					done
-
-					for dri in ${ALL_INSTALLEDDRI}
-					do
-							chroot ${mountpoint} /usr/bin/pacman -Rn ${dri} --noconfirm
-					done
-
-	else
-					for driver in ${ALL_DRIVERS}
-					do
-						if [ "${driver}" != "${USED_DRIVER}" ] ; then
-							chroot ${mountpoint} /usr/bin/pacman -Rn xf86-video-${driver} --noconfirm
-						fi
-					done
-	fi
 	msg "video driver removal complete"
-
 
 
 	###########################################################################

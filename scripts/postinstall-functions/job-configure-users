@@ -35,7 +35,7 @@ job_configure_users()
 	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/.kde4/env
 	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/.kde4/share/config
 	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/.kde4/share/apps/konqueror
-	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/.local/share
+	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/.local/share/applications
 
 	msg "setup gtk config"
 	cp -v /etc/skel/.gtkrc-2.0-kde4 ${mountpoint}/home/${user_name}/.gtkrc-2.0-kde4
@@ -56,6 +56,7 @@ job_configure_users()
 	cp -v /etc/skel/networkmanagementrc ${mountpoint}/home/${user_name}/.kde4/share/config/networkmanagementrc
 	chroot ${mountpoint} ln -sf /usr/bin/bluedevil-monolithic /home/${user_name}/.kde4/Autostart/bluedevil-monolithic
 	cp -vf /etc/skel/.bashrc ${mountpoint}/home/${user_name}/.bashrc
+	cp -v /etc/skel/mimeapps.list ${mountpoint}/home/${user_name}/.local/share/applications/mimeapps.list
 
 	msg "adjust default cursor: white-cursor"
 	cp -v /etc/skel/kcminputrc ${mountpoint}/home/${user_name}/.kde4/share/config/kcminputrc

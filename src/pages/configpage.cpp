@@ -506,7 +506,7 @@ void ConfigPage::bootloaderInstalled(int exitCode, QProcess::ExitStatus exitStat
         qDebug() << ">> BURG: Setup might got wrong...";
         QString completeMessage = i18n("Bootloader-Setup finsished with Exitcode: " + exitCode + "\n"
                                        "Some might went wrong. Before reboot it is recommended \n"
-                                       "to check "+ QString(INSTALLATION_TARGET) + "/boot/burg/burg.cfg. \n"
+                                       "to check " + QString(INSTALLATION_TARGET) + "/boot/burg/burg.cfg. \n"
                                        );
 
         KDialog *dialog = new KDialog(this, Qt::FramelessWindowHint);

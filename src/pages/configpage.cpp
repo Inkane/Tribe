@@ -504,7 +504,7 @@ void ConfigPage::bootloaderInstalled(int exitCode, QProcess::ExitStatus exitStat
     } else {
         qDebug() << ">> BURG: Exitcode " + exitCode;
         qDebug() << ">> BURG: Setup might got wrong...";
-        QString completeMessage = i18n("Bootloader-Setup finsished with Exitcode: %1\n"
+        QString completeMessage = i18n("Bootloader-Setup finished with Exitcode: %1\n"
                                        "Some might went wrong. Before reboot it is recommended \n"
                                        "to check %2/boot/burg/burg.cfg. \n"
                                        ).arg(exitCode).arg(INSTALLATION_TARGET);

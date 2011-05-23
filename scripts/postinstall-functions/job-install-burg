@@ -17,7 +17,7 @@ job_install_burg()
     echo "BURG____ >>>> mountpoint: ${mountpoint}"
     echo "BURG____ >>>> target_boot: ${target_boot}"
     echo "BURG____ >>>> device: ${_device}"
-    chroot ${mountpoint} burg-install /dev/${_device} > /tmp/burg.log 2>&1
+    chroot ${mountpoint} burg-install /dev/${_device} --no-floppy > /tmp/burg.log 2>&1
 
     msg "generating []/boot/burg/burg.cfg"
     chroot ${mountpoint} burg-mkconfig -o /boot/burg/burg.cfg

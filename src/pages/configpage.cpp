@@ -497,10 +497,27 @@ void ConfigPage::bootloaderInstalled(int exitCode, QProcess::ExitStatus exitStat
     Q_UNUSED(exitStatus)
 
     if (exitCode == 0) {
+        qDebug() << ">> BURG: Exitcode " + exitCode;
+        qDebug() << ">> BURG: Setup finished without any errors...";
         emit deleteProgressWidget();
         emit goToNextStep();
     } else {
-        qDebug() << " !! bootloader failed to install";
+        qDebug() << ">> BURG: Exitcode " + exitCode;
+        qDebug() << ">> BURG: Setup might got wrong...";
+        QString completeMessage = i18n("Bootloader-Setup finsished with Exitcode: " + exitCode + "\n"
+                                       "Some might went wrong. Before reboot it is recommended \n"
+                                       "to check "+ INSTALLATION_TARGET + "/boot/burg/burg.cfg. \n"
+                                       );
+
+        KDialog *dialog = new KDialog(this, Qt::FramelessWindowHint);
+        dialog->setButtons(KDialog::Ok);
+        dialog->setModal(true);
+        bool retbool;
+
+        KMessageBox::createKMessageBox(dialog, QMessageBox::Warning, completeMessage,
+                                       QStringList(), QString(), &retbool, KMessageBox::Notify);
+        emit deleteProgressWidget();
+        emit goToNextStep();
     }
 }
 

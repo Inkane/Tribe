@@ -89,7 +89,7 @@ void InstallationHandler::init()
     }
 
     // compute minimum size for target for partitionpage root part size check
-    QFile squash("/.livesys/medium/larch/system.sqf");
+    QFile squash(QString(BOOTMNT_POINT) + "/root-image.sqfs");
     m_minSize = squash.size();
     if (m_minSize <= 0) {
         // Set it to ~700MB
@@ -188,7 +188,7 @@ void InstallationHandler::copyFiles()
     QProcess::execute("killall appset-helper");
     QProcess::execute("killall appsettray-qt");
 
-    QString unsquashfsCommand = "unsquashfs -f -d " + QString(INSTALLATION_TARGET) + " /.livesys/medium/larch/system.sqf";
+    QString unsquashfsCommand = "unsquashfs -f -d " + QString(INSTALLATION_TARGET) + " " + QString(BOOTMNT_POINT) + "/root-image.sqfs";
 
     m_process = new QProcess(this);
     m_process->setProcessChannelMode(QProcess::MergedChannels);

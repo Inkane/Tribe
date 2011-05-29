@@ -23,6 +23,9 @@
 /* Defines Target Mount Point */
 #define INSTALLATION_TARGET "/mnt/install.root"
 
+/* Defines Boot Mount Point */
+#define BOOTMNT_POINT "/bootmnt/chakra/@ARCH@"
+
 /* Defines the version */
 #define TRIBE_VERSION "2011.04"
 

@@ -59,6 +59,7 @@ ConfigPage::~ConfigPage()
 
 void ConfigPage::createWidget()
 {
+    qDebug() << "Load configpage;
     ui.setupUi(this);
 
     ui.changeAppearanceButton->setVisible(false);
@@ -88,13 +89,14 @@ void ConfigPage::createWidget()
     // remove the initrd tmp files
     QProcess::execute("bash -c \"rm " + tmpInitRd.join(" ") + " > /dev/null 2>&1\"");
 
+    qDebug() << "Check for internet connection";
     // first call to check internet connection
     connect(&networkManager, SIGNAL(finished(QNetworkReply*)),
              this, SLOT(handleNetworkData(QNetworkReply*)));
     networkManager.get(QNetworkRequest(QString("http://chakra-project.org")));
     
     // check installed kde version
-    QProcess proc;
+    /* QProcess proc;
     proc.start("pacman -Qi kde-common --noconfirm");
     proc.waitForFinished();
 
@@ -122,7 +124,7 @@ void ConfigPage::createWidget()
     //if (pkgver != remote_pkgver)
     //  ui.bundlesDownloadButton->setEnabled(false);
 
-    // populate BundlesList
+    // populate BundlesList */
     populateBundlesList();
 }
 
@@ -199,6 +201,7 @@ void ConfigPage::result(KJob* job)
 
 void ConfigPage::populateBundlesList()
 {
+    qDebug() << "BundlesList start;
     ui.bundlesList->clear();
 
     QStringList bundleDataList;
@@ -223,6 +226,7 @@ void ConfigPage::populateBundlesList()
         item->setIcon(QIcon(QString(CONFIG_INSTALL_PATH) + "/" + item->data(60).toString() + ".png"));
         ui.bundlesList->addItem(item);
     }
+    qDebug() << "BundlesList populated;
 }
 
 void ConfigPage::cancelButtonClicked()

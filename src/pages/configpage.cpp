@@ -59,7 +59,7 @@ ConfigPage::~ConfigPage()
 
 void ConfigPage::createWidget()
 {
-    qDebug() << "Load configpage;
+    qDebug() << "Load configpage";
     ui.setupUi(this);
 
     ui.changeAppearanceButton->setVisible(false);
@@ -201,7 +201,7 @@ void ConfigPage::result(KJob* job)
 
 void ConfigPage::populateBundlesList()
 {
-    qDebug() << "BundlesList start;
+    qDebug() << "BundlesList start";
     ui.bundlesList->clear();
 
     QStringList bundleDataList;
@@ -226,7 +226,7 @@ void ConfigPage::populateBundlesList()
         item->setIcon(QIcon(QString(CONFIG_INSTALL_PATH) + "/" + item->data(60).toString() + ".png"));
         ui.bundlesList->addItem(item);
     }
-    qDebug() << "BundlesList populated;
+    qDebug() << "BundlesList populated";
 }
 
 void ConfigPage::cancelButtonClicked()

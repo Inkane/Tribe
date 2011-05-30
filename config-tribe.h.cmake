@@ -27,6 +27,6 @@
 #define BOOTMNT_POINT "/bootmnt/chakra/@ARCH@"
 
 /* Defines the version */
-#define TRIBE_VERSION "2011.04"
+#define TRIBE_VERSION "source build/from git"
 
 #endif /*CONFIG_H*/

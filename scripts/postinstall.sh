@@ -46,7 +46,7 @@ fi
 
 # source functions we need & check if we are running the live system
 # (functions.d/cmdline) is needed to parse kernel command line parameters
-if [ -d "/.livesys" ] ; then
+if [ -d "/bootmnt" ] ; then
         source /etc/rc.d/functions
         source /etc/rc.d/functions.d/cmdline
 else

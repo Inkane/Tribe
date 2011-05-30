@@ -62,9 +62,9 @@ job_create_initrd()
     touch /tmp/tribe-mkinitcpio-running
 
     echo ":: copying kernel(s) to target ..." > /tmp/initramfs.log; echo >> /tmp/initramfs.log
-    cp -vf /.livesys/medium/boot/vmlinuz26 ${mountpoint}/boot/vmlinuz26 > /tmp/initramfs.log; echo >> /tmp/initramfs.log
-    if [ -e "/.livesys/medium/boot/vmlinuz26-lts" ] ; then
-    cp -vf /.livesys/medium/boot/vmlinuz26-lts ${mountpoint}/boot/vmlinuz26-lts > /tmp/initramfs.log; echo >> /tmp/initramfs.log
+    cp -vf /boot/vmlinuz26 ${mountpoint}/boot/vmlinuz26 > /tmp/initramfs.log; echo >> /tmp/initramfs.log
+    if [ -e "/boot/vmlinuz26-lts" ] ; then
+    cp -vf /boot/vmlinuz26-lts ${mountpoint}/boot/vmlinuz26-lts > /tmp/initramfs.log; echo >> /tmp/initramfs.log
     fi
 
     echo ":: starting initramfs creation..." > /tmp/initramfs.log; echo >> /tmp/initramfs.log
@@ -72,7 +72,7 @@ job_create_initrd()
     msg "creating initrd images"
     chroot ${mountpoint} /sbin/mkinitcpio -p kernel26 >>/tmp/initramfs.log 2>&1
     echo >> /tmp/initramfs.log
-    if [ -e "/.livesys/medium/boot/vmlinuz26-lts" ] ; then
+    if [ -e "/boot/vmlinuz26-lts" ] ; then
     chroot ${mountpoint} /sbin/mkinitcpio -p kernel26-lts >>/tmp/initramfs.log 2>&1
     echo >> /tmp/initramfs.log
     fi

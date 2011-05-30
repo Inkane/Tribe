@@ -11,18 +11,18 @@ job_setup_hardware()
 	
 	# setup alsa volume levels
 	msg "setup alsa config"
-	if [ -e "/.livesys/write/etc/asound.state" ] ; then
-		cp -v -a -f /.livesys/write/etc/asound.state ${mountpoint}/etc/asound.state
+	if [ -e "/etc/asound.state" ] ; then
+		cp -v -a -f /etc/asound.state ${mountpoint}/etc/asound.state
 	fi
 
 	# alsa blacklist for the pc speaker
-	if [ -e "/.livesys/system/etc/modprobe.d/alsa_blacklist.conf" ] ; then
-		cp -v -a -f /.livesys/system/etc/modprobe.d/alsa_blacklist.conf ${mountpoint}/etc/modprobe.d/alsa_blacklist.conf
+	if [ -e "/etc/modprobe.d/alsa_blacklist.conf" ] ; then
+		cp -v -a -f /etc/modprobe.d/alsa_blacklist.conf ${mountpoint}/etc/modprobe.d/alsa_blacklist.conf
 	fi
 
 	# blacklist for broken realtek nics
-	if [ -e "/.livesys/write/etc/modprobe.d/realtek_blacklist.conf" ] ; then
-		cp -v -a -f /.livesys/write/etc/modprobe.d/realtek_blacklist.conf ${mountpoint}/etc/modprobe.d/realtek_blacklist.conf
+	if [ -e "/etc/modprobe.d/realtek_blacklist.conf" ] ; then
+		cp -v -a -f /etc/modprobe.d/realtek_blacklist.conf ${mountpoint}/etc/modprobe.d/realtek_blacklist.conf
 	fi
 
 # arg! this don't work yet

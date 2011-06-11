@@ -576,6 +576,13 @@
   </Point>
 </Placemark>
 <Placemark>
+  <name>Samarkand</name>
+  <description>Asia/Samarkand</description>
+  <Point>
+    <coordinates>67.9666667,40.4333333</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>Seoul</name>
   <description>Asia/Seoul</description>
   <Point>

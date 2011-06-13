@@ -37,6 +37,9 @@ public:
         m_screenshots.append(QPixmap(":/Images/images/screenshot05.png"));
         m_screenshots.append(QPixmap(":/Images/images/screenshot06.png"));
         m_screenshots.append(QPixmap(":/Images/images/screenshot07.png"));
+        m_screenshots.append(QPixmap(":/Images/images/screenshot08.png"));
+        m_screenshots.append(QPixmap(":/Images/images/screenshot09.png"));
+        m_screenshots.append(QPixmap(":/Images/images/screenshot10.png"));
     }
     ~Screenshots() {}
 

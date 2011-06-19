@@ -30,6 +30,7 @@
 
 #include <marble/MarbleWidget.h>
 #include <marble/MarbleModel.h>
+#include <marble/GeoDataPlacemark.h>
 
 #include <config-tribe.h>
 
@@ -71,7 +72,7 @@ void LocalePage::createWidget()
     marble->setShowCompass(false);
     marble->setShowCrosshairs(false);
     marble->setShowGrid(false);
-    marble->addGeoDataFile(QString(DATA_INSTALL_DIR) + "/marble/data/placemarks/cities.kml");
+    marble->model()->addGeoDataFile(QString(DATA_INSTALL_DIR) + "/marble/data/placemarks/cities.kml");
 
     // parse timezone data
     QFile f(QString(CONFIG_INSTALL_PATH) + "/timezones");
@@ -173,14 +174,14 @@ bool LocalePage::eventFilter(QObject * object, QEvent * event)
     // if mouse was pressed on the marble widget
     if (object == marble && event->type() == QEvent::MouseButtonPress) {
         // if an actual place was clicked
-        QVector<QModelIndex> indexes = marble->whichFeatureAt(marble->mapFromGlobal(QCursor::pos()));
+        QVector<const GeoDataPlacemark*> indexes = marble->whichFeatureAt(marble->mapFromGlobal(QCursor::pos()));
         if (!indexes.isEmpty()) {
             // check the place against the data, and set the combo box accordingly
             QHash<QString, QStringList>::const_iterator it;
             for (it = m_allTimezones.constBegin(); it != m_allTimezones.constEnd(); it++) {
-                if ((*it).contains(indexes.first().data(Qt::DisplayRole).toString().replace(' ', '_'))) {
+                if ((*it).contains(indexes.first()->name().replace(' ', '_'))) {
                     continentCombo->setCurrentIndex(continentCombo->findText(it.key()));
-                    regionCombo->setCurrentIndex(regionCombo->findText(indexes.first().data(Qt::DisplayRole).toString().replace(' ', '_')));
+                    regionCombo->setCurrentIndex(regionCombo->findText(indexes.first()->name().replace(' ', '_')));
                 }
             }
 

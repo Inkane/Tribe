@@ -25,8 +25,12 @@ job_rcconf_network()
 		sed -i -e 's/^[ \t]*127.0.0.1.*/127.0.0.1\tlocalhost.localdomain\tlocalhost\tchakra/' ${mountpoint}/etc/hosts
 	fi
 
-	msg "add interfaces"
-	sed -i -e 's/^.*INTERFACES=.*/INTERFACES=(!eth0 !eth1 !wlan0)/' ${mountpoint}/etc/rc.conf
+	if [ -e "/usr/share/zsh/site-functions/_rc.d" ] ; then
+		msg "initscripts: 2011.09: network interfaces will be configured by networkmanager/wicd"
+	else
+		msg "initscripts: 2011.04: add network interfaces"
+		sed -i -e 's/^.*INTERFACES=.*/INTERFACES=(!eth0 !eth1 !wlan0)/' ${mountpoint}/etc/rc.conf
+	fi
 
 	# add networkmanagement or wicd to DAEMONS=
 	if [ -f "${mountpoint}/usr/share/kde4/services/kcm_networkmanagement.desktop" ];

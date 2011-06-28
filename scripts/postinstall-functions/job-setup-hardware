@@ -179,8 +179,8 @@ job_setup_hardware()
 	msg "adding powersave modules to MODULES array in rc.conf"
 	msg "collecting data"
 	KERNEL=$(cat /proc/version | cut -d " " -f 3)
-	AVAILABLE_CPU_DRIVERS=`pushd /lib/modules/"$KERNEL"/kernel/arch/x86/kernel/cpu/cpufreq/ >/dev/null 2>&1; ls -1 *.ko | cut -d "." -f 1 | sed 's/-/_/g'; popd >/dev/null 2>&1`
-	AVAILABLE_GOVERNORS=`pushd /lib/modules/"$KERNEL"/kernel/drivers/cpufreq/ >/dev/null 2>&1; ls -1 *.ko | cut -d "." -f 1 | sed 's/-/_/g'; popd >/dev/null 2>&1`
+	AVAILABLE_CPU_DRIVERS=`pushd /lib/modules/"$KERNEL"/kernel/arch/x86/kernel/cpu/cpufreq/ >/dev/null 2>&1; ls -1 *.ko* | cut -d "." -f 1 | sed 's/-/_/g'; popd >/dev/null 2>&1`
+	AVAILABLE_GOVERNORS=`pushd /lib/modules/"$KERNEL"/kernel/drivers/cpufreq/ >/dev/null 2>&1; ls -1 *.ko* | cut -d "." -f 1 | sed 's/-/_/g'; popd >/dev/null 2>&1`
 
 	# put all available drivers/governors and loaded modules into some variables
 	LOADED_MODULES=`lsmod | awk '{print $1}'`

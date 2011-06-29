@@ -6,208 +6,215 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2010-12-19 14:44+0100\n"
+"POT-Creation-Date: 2011-06-29 21:20+0200\n"
 "PO-Revision-Date: 2011-01-19 21:05+0000\n"
 "Last-Translator: \n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
+"Language: fiX-Generator: Lokalize 1.2\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fiX-Generator: Lokalize 1.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 1.2\n"
 
-#: src/installationhandler.cpp:86
+#: src/installationhandler.cpp:87
 msgid "Tribe was not able to initialize needed path: "
 msgstr "Tribe ei voinut avata vaadittua polkua: "
 
-#: src/installationhandler.cpp:86
+#: src/installationhandler.cpp:87
 msgid " , please resolve the issue, and try again."
 msgstr " , selvitä ongelma ja yritä uudestaan."
 
-#: src/installationhandler.cpp:148
+#: src/installationhandler.cpp:149
 msgid "Installing the system ..."
 msgstr "Asennetaan järjestelmää..."
 
-#: src/installationhandler.cpp:176
+#: src/installationhandler.cpp:177
 msgid "Mounting partitions..."
 msgstr "Liitetään osioita... "
 
-#: src/installationhandler.cpp:184
+#: src/installationhandler.cpp:185
 msgid "Preparing installation..."
 msgstr "Valmistellaan asennusta..."
 
-#: src/installationhandler.cpp:204
+#: src/installationhandler.cpp:209
 msgid "Error copying files"
 msgstr "Virhe kopioitaessa tiedostoja"
 
-#: src/installationhandler.cpp:207
+#: src/installationhandler.cpp:212
 msgid "Removing packages whose license has been declined ..."
 msgstr "Poistetaan paketit joiden lisenssi on vanhentunut..."
 
-#: src/installationhandler.cpp:245
+#: src/installationhandler.cpp:250
 msgid "Initializing target ..."
 msgstr "Alustetaan kohdetta... "
 
-#: src/installationhandler.cpp:336
+#: src/installationhandler.cpp:341
 msgid "Please wait, configuring the new system ..."
 msgstr "Säädetään järjestelmää..."
 
-#: src/installationhandler.cpp:415
+#: src/installationhandler.cpp:420
 msgid "Error in Postinstall script. See log for more details"
 msgstr "Virhe jälkiasennusskriptissä. Yksityiskohdat kirjattu lokiin."
 
-#: src/installationhandler.cpp:424
+#: src/installationhandler.cpp:429
 msgid "Creating user accounts ..."
 msgstr "Luodaan käyttäjätilejä..."
 
-#: src/installationhandler.cpp:427
+#: src/installationhandler.cpp:432
 msgid "Configuring software management..."
 msgstr "Säädetään sovellusten hallintaa..."
 
-#: src/installationhandler.cpp:431
+#: src/installationhandler.cpp:436
 msgid "Removing unused packages..."
 msgstr "Poistetaan käyttämättömät paketit..."
 
-#: src/installationhandler.cpp:435
+#: src/installationhandler.cpp:440
 msgid "Installing additional packages..."
 msgstr "Asennetaan paketteja..."
 
-#: src/installationhandler.cpp:439
+#: src/installationhandler.cpp:444
 msgid "Configuring the display..."
 msgstr "Säädetään näyttöjä..."
 
-#: src/installationhandler.cpp:443
+#: src/installationhandler.cpp:448
 msgid "Downloading and installing localization packages..."
 msgstr "Ladataan ja asennetaan käännökset..."
 
-#: src/installationhandler.cpp:447
+#: src/installationhandler.cpp:452
 msgid "Downloading and installing documentation packages..."
 msgstr "Ladataan ja asennetaan ohjeet..."
 
-#: src/installationhandler.cpp:451
+#: src/installationhandler.cpp:456
 msgid "Setting up localization..."
 msgstr "Asetetaan lokalisointi..."
 
-#: src/installationhandler.cpp:455
+#: src/installationhandler.cpp:460
 msgid "Creating daemon configuration..."
 msgstr "Luodaan taustaprosessien asetukset..."
 
-#: src/installationhandler.cpp:459
+#: src/installationhandler.cpp:464
 msgid "Creating network configuration..."
 msgstr "Luodaan verkon asetukset..."
 
-#: src/installationhandler.cpp:463
+#: src/installationhandler.cpp:468
 msgid "Creating fstab..."
 msgstr "Luodaan fstab..."
 
-#: src/installationhandler.cpp:470
+#: src/installationhandler.cpp:475
 msgid "Configuring hardware..."
 msgstr "Säädetään laitteisto..."
 
-#: src/installationhandler.cpp:474
+#: src/installationhandler.cpp:479
 msgid "Creating initial ramdisk images..."
 msgstr "Luodaan alustavat levykuvat..."
 
-#: src/installationhandler.cpp:478
+#: src/installationhandler.cpp:483
 msgid "Generating locales..."
 msgstr "Luodaan maakohtaiset asetukset... "
 
-#: src/installationhandler.cpp:482
+#: src/installationhandler.cpp:487
 msgid "Removing unused localizations..."
 msgstr "Poistetaan käyttämättömät käännökset..."
 
-#: src/installationhandler.cpp:486
+#: src/installationhandler.cpp:491
 msgid "Removing unused drivers..."
 msgstr "Poistetaan käyttämättömät ajurit..."
 
-#: src/installationhandler.cpp:490
+#: src/installationhandler.cpp:495
 msgid "Finishing up..."
 msgstr "Viimeistellään..."
 
-#: src/installationhandler.cpp:494
+#: src/installationhandler.cpp:499
 msgid "Installation complete!"
 msgstr "Asennus valmis!"
 
-#: src/installationhandler.cpp:585
+#: src/installationhandler.cpp:590
 msgid ""
 "Tribe was not able to initialize needed directories. Something is very "
 "wrong..."
-msgstr ""
-"Tribe ei voinut alustaa hakemistoja. "
-"Jotain on vialla..."
+msgstr "Tribe ei voinut alustaa hakemistoja. Jotain on vialla..."
 
-#: src/installationhandler.cpp:609
+#: src/installationhandler.cpp:614
 msgid "Could not mount %1"
 msgstr "Ei voitu liittää %1"
 
-#: src/installationhandler.h:167
+#: src/installationhandler.h:171
 msgid "No Further details given"
 msgstr "Ei enempää tietoja"
 
 #. i18n: file: ui/pages/base.ui:20
 #. i18n: ectx: property (windowTitle), widget (QWidget, Base)
-#: src/main.cpp:42 rc.cpp:3
+#: src/main.cpp:41 rc.cpp:3
 msgid "Tribe"
 msgstr "Tribe"
 
-#: src/main.cpp:43
+#: src/main.cpp:42
 msgid "Graphical Installer for Chakra"
 msgstr "Chakran asennusohjelma"
 
-#: src/main.cpp:44
-msgid "(c) 2008 - 2010 the Chakra Development Team"
+#: src/main.cpp:43
+#, fuzzy
+msgid "(c) 2008 - 2011 the Chakra Development Team"
 msgstr "(c) 2008-2011 Chakran kehitystiimi"
 
-#: src/main.cpp:44
+#: src/main.cpp:43
 msgid "chakra@chakra-project.org"
 msgstr "chakra@chakra-project.org"
 
-#: src/main.cpp:46
+#: src/main.cpp:45
 msgid "Dario Freddi"
 msgstr "Dario Freddi"
 
-#: src/main.cpp:46
+#: src/main.cpp:45
 msgid "Maintainer"
 msgstr "Ylläpitäjä"
 
-#: src/main.cpp:47
+#: src/main.cpp:46
 msgid "Lukas Appelhans"
 msgstr "Lukas Appelhans"
 
-#: src/main.cpp:47 src/main.cpp:51
+#: src/main.cpp:46 src/main.cpp:50 src/main.cpp:51 src/main.cpp:52
 msgid "Developer"
 msgstr "Kehittäjä"
 
-#: src/main.cpp:48
+#: src/main.cpp:47
 msgid "Jan Mette"
 msgstr "Jan Mette"
 
-#: src/main.cpp:48
+#: src/main.cpp:47
 msgid "PostInstall Backend and Artwork"
 msgstr "Jälkiasennuksen runko ja grafiikka"
 
-#: src/main.cpp:49
+#: src/main.cpp:48
 msgid "Phil Miller"
 msgstr "Phil Miller"
 
-#: src/main.cpp:49 src/main.cpp:50
+#: src/main.cpp:48 src/main.cpp:49
 msgid "PostInstall Backend"
 msgstr "Jälkiasennuksen runko"
 
-#: src/main.cpp:50
+#: src/main.cpp:49
 msgid "Manuel Tortosa"
 msgstr "Manuel Tortosa"
 
-#: src/main.cpp:51
+#: src/main.cpp:50
 msgid "Drake Justice"
 msgstr "Drake Justice"
+
+#: src/main.cpp:51
+msgid "Georg Grabler"
+msgstr ""
+
+#: src/main.cpp:52
+msgid "Daniele Cocca"
+msgstr ""
 
 #: src/mainwindow.cpp:99
 msgid "Do you really want to abort the installation?"
 msgstr "Haluatko varmasti keskeyttää asennuksen?"
 
-#: src/mainwindow.cpp:507
+#: src/mainwindow.cpp:509
 msgid ""
 "Installation failed! The following error has been reported: %1.\n"
 "Tribe will now quit, please check the installation logs in /tmp\n"
@@ -217,43 +224,87 @@ msgstr ""
 "Lopetetaan Tribe, tarkista asennuslokit kansiosta /tmp\n"
 "tai kysy apua keskustelupalstallamme. "
 
-#: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:494
+#: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:539
 msgid "Installing bootloader..."
 msgstr "Asennetaan järjestelmän lataajaa..."
 
-#: src/pages/bootloaderpage.cpp:82 src/pages/configpage.cpp:465
+#: src/pages/bootloaderpage.cpp:82
 msgid "Creating OS list..."
 msgstr "Luodaan listaa käyttöjärjestelmistä..."
 
-#: src/pages/configpage.cpp:170
+#: src/pages/configpage.cpp:153 src/pages/configpage.cpp:363
 msgid "Downloading"
 msgstr "Ladataan"
 
-#: src/pages/configpage.cpp:317
-msgid "installed"
-msgstr "Asennettu"
+#: src/pages/configpage.cpp:263
+msgid ""
+"Sorry, you have no internet connection at the moment \n"
+"Will stop bundle(s) installation now"
+msgstr ""
 
-#: src/pages/configpage.cpp:332
-msgid "Install Packaged Software"
-msgstr "Asenna sovelluksia"
+#: src/pages/configpage.cpp:349
+#, fuzzy
+msgid "loading package data..."
+msgstr "Poistetaan käyttämättömät paketit..."
 
-#. i18n: file: ui/pages/config.ui:122
+#: src/pages/configpage.cpp:350
+#, fuzzy
+msgid "Loading package data..."
+msgstr "Ladataan osioita..."
+
+#: src/pages/configpage.cpp:351
+msgid "checking dependencies..."
+msgstr ""
+
+#: src/pages/configpage.cpp:352
+msgid "Checking dependencies..."
+msgstr ""
+
+#: src/pages/configpage.cpp:353
+msgid "resolving dependencies..."
+msgstr ""
+
+#: src/pages/configpage.cpp:354
+#, fuzzy
+msgid "Resolving dependencies..."
+msgstr "Poistetaan käyttämättömät ajurit..."
+
+#: src/pages/configpage.cpp:355
+msgid "checking package integrity..."
+msgstr ""
+
+#: src/pages/configpage.cpp:356
+msgid "Checking package integrity..."
+msgstr ""
+
+#: src/pages/configpage.cpp:357
+msgid "Total Download Size:"
+msgstr ""
+
+#. i18n: file: ui/pages/config.ui:930
 #. i18n: ectx: property (text), widget (QPushButton, downloadBundlesButton)
-#: src/pages/configpage.cpp:373 rc.cpp:102
+#: src/pages/configpage.cpp:417 rc.cpp:165
 msgid "Download Popular Bundles"
 msgstr "Lataa sovelluskimppuja"
 
-#. i18n: file: ui/pages/config.ui:202
+#. i18n: file: ui/pages/config.ui:908
 #. i18n: ectx: property (text), widget (QPushButton, bootloaderSettingsButton)
-#: src/pages/configpage.cpp:391 rc.cpp:111
+#: src/pages/configpage.cpp:435 rc.cpp:162
 msgid "Bootloader Settings"
 msgstr "Järjestelmän lataaja"
 
-#. i18n: file: ui/pages/config.ui:163
+#. i18n: file: ui/pages/config.ui:869
 #. i18n: ectx: property (text), widget (QPushButton, initRamDiskButton)
-#: src/pages/configpage.cpp:403 rc.cpp:105
+#: src/pages/configpage.cpp:448 rc.cpp:156
 msgid "Customize Initial Ramdisk"
 msgstr "Muokkaa alustavaa levykuvaa"
+
+#: src/pages/configpage.cpp:511
+msgid ""
+"Bootloader-Setup finished with Exitcode: %1\n"
+"Some might went wrong. Before reboot it is recommended \n"
+"to check %2/boot/burg/burg.cfg. \n"
+msgstr ""
 
 #: src/pages/licensepage.cpp:53
 msgid "Proprietary ATI Driver"
@@ -267,69 +318,55 @@ msgstr "Suljettu nVidia ajuri"
 msgid "Accept license for: "
 msgstr "Hyväksy lisenssi: "
 
-#: src/pages/localepage.cpp:280
+#: src/pages/localepage.cpp:309
 msgid "You need to select a timezone"
 msgstr "Valitse aikavyöhyke."
 
-#: src/pages/partitionpage.cpp:88
+#: src/pages/partitionpage.cpp:89
 msgid "Please enter a custom mountpoint"
 msgstr "Aseta omat liitoskohdat"
 
-#: src/pages/partitionpage.cpp:100
+#: src/pages/partitionpage.cpp:101
 msgid "The mount point must start with /"
 msgstr "Liitoskohdan pitää alkaa merkillä /"
 
-#: src/pages/partitionpage.cpp:101
+#: src/pages/partitionpage.cpp:102
 msgid "Error"
 msgstr "Virhe"
 
-#. i18n: file: ui/pages/partition.ui:354
-#. i18n: ectx: property (text), widget (QPushButton, newButton)
-#: src/pages/partitionpage.cpp:195 rc.cpp:369
+#: src/pages/partitionpage.cpp:196
 msgid "New"
 msgstr "Uusi"
 
-#: src/pages/partitionpage.cpp:195
+#: src/pages/partitionpage.cpp:196
 msgid "Unsupported"
 msgstr "Ei tueta"
 
-#: src/pages/partitionpage.cpp:415
+#: src/pages/partitionpage.cpp:416
 msgid "Loading partitions..."
 msgstr "Ladataan osioita..."
 
-#: src/pages/partitionpage.cpp:526
-msgid ""
-"The selected volume already has a partition table.. Overwrite it? (this will "
-"destroy all data on the device)"
-msgstr ""
-"Valitulla levyllä on jo osiotaulukko. Ylikirjoitetaanko se?\n"
-"Toiminto tuhoaa kaikki tiedostot levyltä."
-
-#: src/pages/partitionpage.cpp:526 src/pages/partitionpage.cpp:533
-msgid "Warning"
-msgstr "Varoitus"
-
-#: src/pages/partitionpage.cpp:533
-msgid ""
-"This operation will destroy all data on the selected volume.. Continue "
-"anyway?"
-msgstr ""
-"Tämä toiminto tuhoaa kaikki tiedostot valitulta levyltä. Haluatko jatkaa?"
-
-#. i18n: file: ui/pages/partition.ui:111
-#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
-#: src/pages/partitionpage.cpp:564 src/pages/partitionpage.cpp:717
-#: src/pages/partitionpage.cpp:797 rc.cpp:342
+#: src/pages/partitionpage.cpp:664
 msgid "Extended"
 msgstr "Laajennettu"
 
-#. i18n: file: ui/pages/partition.ui:116
-#. i18n: ectx: property (text), item, widget (KComboBox, typeBox)
-#: src/pages/partitionpage.cpp:798 rc.cpp:345
-msgid "Primary"
-msgstr "Ensisijainen"
+#: src/pages/partitionpage.cpp:809
+msgid ""
+"Tribe detected target partitions which are mounted. Do you want Tribe to "
+"unmount them?"
+msgstr ""
 
-#: src/pages/partitionpage.cpp:953
+#: src/pages/partitionpage.cpp:825
+msgid ""
+"Tribe failed to unmount a partition which is target for the installation. "
+"You need to unmount the partitions manually before you can proceed."
+msgstr ""
+
+#: src/pages/partitionpage.cpp:827
+msgid "Target partitions mounted"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:838
 msgid ""
 "The partition you have chosen to mount as '/' is too small. It should have a "
 "capacity of at least %1 for a successful installation."
@@ -337,17 +374,35 @@ msgstr ""
 "Juuriosioksi \"/\" valitsemasi osio on liian pieni. Sen pitäisi olla "
 "vähintään %1 asennuksen onnistumiseksi."
 
-#: src/pages/partitionpage.cpp:956 src/pages/partitionpage.cpp:971
+#: src/pages/partitionpage.cpp:841 src/pages/partitionpage.cpp:881
 msgid "Target's capacity not sufficient"
 msgstr "Kohteen tilavuus ei ole riittävä."
 
-#: src/pages/partitionpage.cpp:969
+#: src/pages/partitionpage.cpp:861
+msgid ""
+"The partition you have chosen to mount as '/' is not marked for formatting. "
+"This might create problems. Do you still want to continue without formating "
+"it?"
+msgstr ""
+
+#: src/pages/partitionpage.cpp:879
 msgid ""
 "You have selected '%1' as a mountpoint, which is not valid. A valid "
 "mountpoint always starts with '/' and represents a directory on disk"
 msgstr ""
-"Valitsit \"%1\" liitoskohdaksi, joka ei ole pätevä. Pätevä "
-"liitoskohta alkaa aina merkillä \"/\" ja kuvaa kansiota levyllä."
+"Valitsit \"%1\" liitoskohdaksi, joka ei ole pätevä. Pätevä liitoskohta alkaa "
+"aina merkillä \"/\" ja kuvaa kansiota levyllä."
+
+#: src/pages/partitionpage.cpp:890
+msgid ""
+"You need to select a root partition ('/') to proceed with the installation. "
+msgstr ""
+
+#: src/pages/partitionpage.cpp:911
+msgid ""
+"When using a GPT Partition Table you need to have a unformatted partition "
+"with the bios_grub flag!"
+msgstr ""
 
 #: src/pages/readyinstallpage.cpp:77
 msgid "New partition (%1) on %2"
@@ -366,26 +421,26 @@ msgid ""
 "The following partitions appear to be mounted: %1. To let the installation "
 "happen correctly, Tribe will now unmount them."
 msgstr ""
-"Seuraavat osiot ovat liitettynä: %1. Jotta asennus voisi tapahtua "
-"oikein, Tribe irroittaa osiot nyt."
+"Seuraavat osiot ovat liitettynä: %1. Jotta asennus voisi tapahtua oikein, "
+"Tribe irroittaa osiot nyt."
 
-#: src/pages/usercreationpage.cpp:121
+#: src/pages/usercreationpage.cpp:148
 msgid "You must give at least one login name."
 msgstr "Sinun pitää antaa käyttäjätunnus."
 
-#: src/pages/usercreationpage.cpp:125
+#: src/pages/usercreationpage.cpp:152
 msgid "Root Passwords do not match..."
 msgstr "Järjestelmänvalvojan salasanat eivät täsmää."
 
-#: src/pages/usercreationpage.cpp:139
+#: src/pages/usercreationpage.cpp:166
 msgid "Passwords cannot be empty."
 msgstr "Salasana ei voi olla tyhjä."
 
-#: src/pages/usercreationpage.cpp:143
+#: src/pages/usercreationpage.cpp:170
 msgid "Passwords do not match..."
 msgstr "Antamasi salasanat eivät täsmää."
 
-#: src/pages/usercreationpage.cpp:147
+#: src/pages/usercreationpage.cpp:174
 msgid "Login names cannot be empty."
 msgstr "Käyttäjätunnus ei voi olla tyhjä."
 
@@ -435,7 +490,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: file: ui/pages/releasenotes.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, ReleaseNotes)
-#: rc.cpp:13 rc.cpp:412
+#: rc.cpp:13 rc.cpp:387
 msgid "Release Notes"
 msgstr "Julkaisutiedot"
 
@@ -616,7 +671,8 @@ msgid ""
 "If you are unsure where you should install the bootloader to, \n"
 "just leave the default value (hd0)."
 msgstr ""
-"Voit nyt asentaa GRUB:in järjestelmälataajaksi.\n\n"
+"Voit nyt asentaa GRUB:in järjestelmälataajaksi.\n"
+"\n"
 "Jos olet epävarma minne se pitäisi asentaa,\n"
 "jätä asetus oletusarvoon (hd0)."
 
@@ -628,11 +684,11 @@ msgstr "Asenna järjestelmälataaja"
 
 #. i18n: file: ui/pages/bootloader.ui:89
 #. i18n: ectx: property (text), widget (QPushButton, pushButton)
-#. i18n: file: ui/pages/partition.ui:316
+#. i18n: file: ui/pages/partition.ui:260
 #. i18n: ectx: property (toolTip), widget (QPushButton, advancedButton)
-#. i18n: file: ui/pages/partition.ui:319
+#. i18n: file: ui/pages/partition.ui:263
 #. i18n: ectx: property (text), widget (QPushButton, advancedButton)
-#: rc.cpp:83 rc.cpp:360 rc.cpp:363
+#: rc.cpp:83 rc.cpp:344 rc.cpp:347
 msgid "Advanced..."
 msgstr "Vaativat..."
 
@@ -673,139 +729,137 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Asetukset</span></p></"
-"body></html>"
+"size:22pt; font-weight:600; color:#ffffff;\">Asetukset</span></p></body></"
+"html>"
 
-#. i18n: file: ui/pages/config.ui:97
-#. i18n: ectx: property (text), widget (QPushButton, installPkgzButton)
-#: rc.cpp:99
-msgid "Install Packages"
-msgstr "Asenna paketit"
-
-#. i18n: file: ui/pages/config.ui:173
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:108
-msgid "Advanced Options"
-msgstr "Vaativat asetukset"
-
-#. i18n: file: ui/pages/config.ui:227
-#. i18n: ectx: property (text), widget (QPushButton, changeAppearanceButton)
-#: rc.cpp:114
-msgid "Change System Appearance"
-msgstr "Muuta järjestelmän ulkonäköä"
-
-#. i18n: file: ui/pages/config.ui:268
-#. i18n: ectx: property (text), widget (QCheckBox, usb)
-#: rc.cpp:117
-msgid "USB"
-msgstr "USB"
-
-#. i18n: file: ui/pages/config.ui:275
-#. i18n: ectx: property (text), widget (QCheckBox, nfs)
-#: rc.cpp:120
-msgid "NFS Shares"
-msgstr "NFS-jaot"
-
-#. i18n: file: ui/pages/config.ui:282
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:123
-msgid "Activate support for booting from:"
-msgstr "Ota käyttöön käynnistys täältä: "
-
-#. i18n: file: ui/pages/config.ui:289
-#. i18n: ectx: property (text), widget (QCheckBox, firewire)
-#: rc.cpp:126
-msgid "FireWire"
-msgstr "FireWire"
-
-#. i18n: file: ui/pages/config.ui:296
-#. i18n: ectx: property (text), widget (QCheckBox, raid)
-#: rc.cpp:129
-msgid "Software Raid Arrays"
-msgstr "Software Raid Arrays"
-
-#. i18n: file: ui/pages/config.ui:303
-#. i18n: ectx: property (text), widget (QCheckBox, lvm2)
-#: rc.cpp:132
-msgid "LVM2 Volumes"
-msgstr "LVM2 taltiot"
-
-#. i18n: file: ui/pages/config.ui:310
-#. i18n: ectx: property (text), widget (QCheckBox, encrypted)
-#: rc.cpp:135
-msgid "Encrypted Volumes"
-msgstr "Salatut taltiot"
-
-#. i18n: file: ui/pages/config.ui:329
-#. i18n: ectx: property (text), widget (QPushButton, generateInitRamDiskButton)
-#: rc.cpp:138
-msgid "Generate Initial Ramdisk"
-msgstr "Luo alustava levykuva"
-
-#. i18n: file: ui/pages/config.ui:365
-#. i18n: ectx: property (text), widget (QCheckBox, mdp)
-#: rc.cpp:141
-msgid "MDP Partition Arrays"
-msgstr "MDP Partition Arrays"
-
-#. i18n: file: ui/pages/config.ui:372
-#. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
-#: rc.cpp:144
-msgid "PCMCIA"
-msgstr "PCMCIA"
-
-#. i18n: file: ui/pages/config.ui:756
-#. i18n: ectx: property (text), widget (QPushButton, pkgInstallButton)
-#: rc.cpp:147
-msgid "Install"
-msgstr "Asenna"
-
-#. i18n: file: ui/pages/config.ui:773
-#. i18n: ectx: property (text), widget (QPushButton, bundlesDownloadButton)
-#: rc.cpp:150
-msgid "Download"
-msgstr "Lataa"
-
-#. i18n: file: ui/pages/config.ui:845
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:153
-msgid "Chakra"
-msgstr "Chakra"
-
-#. i18n: file: ui/pages/config.ui:893
-#. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:156
-msgid "Mac"
-msgstr "Mac"
-
-#. i18n: file: ui/pages/config.ui:922
-#. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:159
-msgid "Windows"
-msgstr "Windows"
-
-#. i18n: file: ui/pages/config.ui:1001
-#. i18n: ectx: property (text), widget (QPushButton, colorizeButton)
-#: rc.cpp:162
-msgid "Colorize"
-msgstr "Väritä"
-
-#. i18n: file: ui/pages/config.ui:1161
-#. i18n: ectx: property (text), widget (QCheckBox, bootloaderCheckBox)
-#: rc.cpp:165
-msgid "Install GRUB"
-msgstr "Asenna GRUB"
-
-#. i18n: file: ui/pages/config.ui:1251
+#. i18n: file: ui/pages/config.ui:55
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:168
+#: rc.cpp:99
 msgid ""
 "Now that you have a Chakra install, you can now configure it to your liking."
 msgstr "Nyt kun olet asentanut Chakran, voit muokata sen mieleiseksesi."
 
+#. i18n: file: ui/pages/config.ui:129
+#. i18n: ectx: property (text), widget (QCheckBox, usb)
+#: rc.cpp:102
+msgid "USB"
+msgstr "USB"
+
+#. i18n: file: ui/pages/config.ui:136
+#. i18n: ectx: property (text), widget (QCheckBox, nfs)
+#: rc.cpp:105
+msgid "NFS Shares"
+msgstr "NFS-jaot"
+
+#. i18n: file: ui/pages/config.ui:143
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:108
+msgid "Activate support for booting from:"
+msgstr "Ota käyttöön käynnistys täältä: "
+
+#. i18n: file: ui/pages/config.ui:150
+#. i18n: ectx: property (text), widget (QCheckBox, firewire)
+#: rc.cpp:111
+msgid "FireWire"
+msgstr "FireWire"
+
+#. i18n: file: ui/pages/config.ui:157
+#. i18n: ectx: property (text), widget (QCheckBox, raid)
+#: rc.cpp:114
+msgid "Software Raid Arrays"
+msgstr "Software Raid Arrays"
+
+#. i18n: file: ui/pages/config.ui:164
+#. i18n: ectx: property (text), widget (QCheckBox, lvm2)
+#: rc.cpp:117
+msgid "LVM2 Volumes"
+msgstr "LVM2 taltiot"
+
+#. i18n: file: ui/pages/config.ui:171
+#. i18n: ectx: property (text), widget (QCheckBox, encrypted)
+#: rc.cpp:120
+msgid "Encrypted Volumes"
+msgstr "Salatut taltiot"
+
+#. i18n: file: ui/pages/config.ui:190
+#. i18n: ectx: property (text), widget (QPushButton, generateInitRamDiskButton)
+#: rc.cpp:123
+msgid "Generate Initial Ramdisk"
+msgstr "Luo alustava levykuva"
+
+#. i18n: file: ui/pages/config.ui:226
+#. i18n: ectx: property (text), widget (QCheckBox, mdp)
+#: rc.cpp:126
+msgid "MDP Partition Arrays"
+msgstr "MDP Partition Arrays"
+
+#. i18n: file: ui/pages/config.ui:233
+#. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
+#: rc.cpp:129
+msgid "PCMCIA"
+msgstr "PCMCIA"
+
+#. i18n: file: ui/pages/config.ui:324
+#. i18n: ectx: property (text), widget (QPushButton, bundlesDownloadButton)
+#: rc.cpp:132
+msgid "Download"
+msgstr "Lataa"
+
+#. i18n: file: ui/pages/config.ui:418
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:135
+msgid "Chakra"
+msgstr "Chakra"
+
+#. i18n: file: ui/pages/config.ui:466
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: rc.cpp:138
+msgid "Mac"
+msgstr "Mac"
+
+#. i18n: file: ui/pages/config.ui:495
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: rc.cpp:141
+msgid "Windows"
+msgstr "Windows"
+
+#. i18n: file: ui/pages/config.ui:574
+#. i18n: ectx: property (text), widget (QPushButton, colorizeButton)
+#: rc.cpp:144
+msgid "Colorize"
+msgstr "Väritä"
+
+#. i18n: file: ui/pages/config.ui:676
+#. i18n: ectx: property (text), widget (QCheckBox, bootloaderCheckBox)
+#: rc.cpp:147
+msgid "Install GRUB"
+msgstr "Asenna GRUB"
+
+#. i18n: file: ui/pages/config.ui:761
+#. i18n: ectx: property (text), widget (QPushButton, cancelButton)
+#. i18n: file: ui/pages/partition.ui:149
+#. i18n: ectx: property (text), widget (KPushButton, editPartitionCancelButton)
+#. i18n: file: ui/widgets/avatardialog.ui:114
+#. i18n: ectx: property (text), widget (QPushButton, cancelButton)
+#: rc.cpp:150 rc.cpp:338 rc.cpp:425
+msgid "Cancel"
+msgstr "Peruuta"
+
+#. i18n: file: ui/pages/config.ui:841
+#. i18n: ectx: property (text), widget (QPushButton, changeAppearanceButton)
+#: rc.cpp:153
+msgid "Change System Appearance"
+msgstr "Muuta järjestelmän ulkonäköä"
+
+#. i18n: file: ui/pages/config.ui:879
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:159
+msgid "Advanced Options"
+msgstr "Vaativat asetukset"
+
 #. i18n: file: ui/pages/finish.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:171
+#: rc.cpp:168
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -833,7 +887,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/finish.ui:68
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:178
+#: rc.cpp:175
 msgid ""
 "Congratulations, the installation has been completed!\n"
 "\n"
@@ -852,38 +906,43 @@ msgid ""
 "\n"
 "The Chakra Team"
 msgstr ""
-"Onnittelut, asennus on valmis!\n\n"
+"Onnittelut, asennus on valmis!\n"
+"\n"
 "Toivottavasti pidät Chakrasta yhtä paljon kuin me pidämme sen tekemisestä.\n"
-"Käyttääksesi asennettua järjestelmää, käynnistä tietokone uudestaan.\n\n"
+"Käyttääksesi asennettua järjestelmää, käynnistä tietokone uudestaan.\n"
+"\n"
 "Löydät asennuslokit live-CD:n kansiosta /tmp tai /var/log asennetusta "
-"järjestelmästä.\n\n"
-"Kysy, ehdota parannuksia ja neuvo muita osoitteessa http://www.chakra-project."
-"org\n\n"
-"Pidä hauskaa!\n\n"
+"järjestelmästä.\n"
+"\n"
+"Kysy, ehdota parannuksia ja neuvo muita osoitteessa http://www.chakra-"
+"project.org\n"
+"\n"
+"Pidä hauskaa!\n"
+"\n"
 "Terveisin,\n"
 "Chakra kehittäjät"
 
 #. i18n: file: ui/pages/finish.ui:105
 #. i18n: ectx: property (text), widget (QPushButton, rebootButton)
-#: rc.cpp:194
+#: rc.cpp:191
 msgid "Restart Computer"
 msgstr "Käynnistä tietokone uudelleen"
 
 #. i18n: file: ui/pages/finish.ui:118
 #. i18n: ectx: property (text), widget (QPushButton, chakraButton)
-#: rc.cpp:197
+#: rc.cpp:194
 msgid "Keep using the LiveCD"
 msgstr "Jatka live-CD:n käyttöä"
 
 #. i18n: file: ui/pages/init.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, tribeInit)
-#: rc.cpp:200
+#: rc.cpp:197
 msgid "Ramdisk"
 msgstr "Levykuva"
 
 #. i18n: file: ui/pages/init.ui:49
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:203
+#: rc.cpp:200
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -911,7 +970,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/init.ui:58
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:210
+#: rc.cpp:207
 msgid ""
 "Your hardware will be configured automatically during the installation and a "
 "initial ramdisk environment for booting the linux kernel will be built. "
@@ -921,101 +980,98 @@ msgid ""
 "below and select the items you need for your system."
 msgstr ""
 "Laitteistosi säädetään automaattisesti asennuksen aikana ja ytimen "
-"käynnistämiseen "
-"vaadittava alustava levykuva luodaan. "
-"Kaiken pitäisi tapahtua ilman säätämistä, mutta jotkin järjestelmät vaativat "
-"erityisten "
+"käynnistämiseen vaadittava alustava levykuva luodaan. Kaiken pitäisi "
+"tapahtua ilman säätämistä, mutta jotkin järjestelmät vaativat erityisten "
 "käynnistysasetusten määrittämistä. Jos olet epävarma, paina \"Seuraava\". "
-"Muussa "
-"tapauksessa valitse alta järjestelmäsi vaatimat levykuvan asetukset."
+"Muussa tapauksessa valitse alta järjestelmäsi vaatimat levykuvan asetukset."
 
 #. i18n: file: ui/pages/init.ui:81
 #. i18n: ectx: property (text), widget (QPushButton, pushButton)
-#: rc.cpp:213
+#: rc.cpp:210
 msgid "Ramdisk Options"
 msgstr "Levykuvan säädöt"
 
 #. i18n: file: ui/pages/init.ui:111
 #. i18n: ectx: property (text), widget (QCheckBox, usb)
-#: rc.cpp:216
+#: rc.cpp:213
 msgid "Activate support for booting from USB devices"
 msgstr "Mahdollista käynnistys USB-laitteilta"
 
 #. i18n: file: ui/pages/init.ui:118
 #. i18n: ectx: property (text), widget (QCheckBox, firewire)
-#: rc.cpp:219
+#: rc.cpp:216
 msgid "Activate support for booting from FireWire devices"
 msgstr "Mahdollista käynnistys FireWire-laitteilta"
 
 #. i18n: file: ui/pages/init.ui:125
 #. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
-#: rc.cpp:222
+#: rc.cpp:219
 msgid "Activate support for booting from PCMCIA devices"
 msgstr "Mahdollista käynnistys PCMCIA-laitteilta"
 
 #. i18n: file: ui/pages/init.ui:132
 #. i18n: ectx: property (text), widget (QCheckBox, nfs)
-#: rc.cpp:225
+#: rc.cpp:222
 msgid "Activate support for booting from NFS shares"
 msgstr "Mahdollista käynnistys NFS-jaoista"
 
 #. i18n: file: ui/pages/init.ui:139
 #. i18n: ectx: property (text), widget (QCheckBox, raid)
-#: rc.cpp:228
+#: rc.cpp:225
 msgid "Activate support for booting from Software Raid arrays"
 msgstr "Mahdollista käynnistys software RAID-pakasta"
 
 #. i18n: file: ui/pages/init.ui:146
 #. i18n: ectx: property (text), widget (QCheckBox, mdp)
-#: rc.cpp:231
+#: rc.cpp:228
 msgid "Activate support for booting from Software Raid/MDP Partition arrays"
 msgstr "Mahdollista käynnistys software RAID/MDP-pakasta"
 
 #. i18n: file: ui/pages/init.ui:153
 #. i18n: ectx: property (text), widget (QCheckBox, lvm2)
-#: rc.cpp:234
+#: rc.cpp:231
 msgid "Activate support for booting from LVM2 volumes"
 msgstr "Mahdollista käynnistys LVM2 tietueilta"
 
 #. i18n: file: ui/pages/init.ui:160
 #. i18n: ectx: property (text), widget (QCheckBox, encrypted)
-#: rc.cpp:237
+#: rc.cpp:234
 msgid "Activate support for booting from Encrypted volumes"
 msgstr "Mahdollista käynnistys salatuilta tietueilta"
 
 #. i18n: file: ui/pages/installation.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Installation)
-#: rc.cpp:240
+#: rc.cpp:237
 msgid "Tribe Installation"
 msgstr "Tribe asennus"
 
 #. i18n: file: ui/pages/installation.ui:88
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:243
+#: rc.cpp:240
 msgid "Nine Inch Nails - Discipline"
 msgstr "Nine Inch Nails - Discipline"
 
 #. i18n: file: ui/pages/installation.ui:93
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:246
+#: rc.cpp:243
 msgid "Severed Fifth - War"
 msgstr "Severed Fifth - War"
 
 #. i18n: file: ui/pages/installation.ui:98
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:249
+#: rc.cpp:246
 msgid "Dunkelstern - Out of the box"
 msgstr "Dunkelstern - Out of the box"
 
 #. i18n: file: ui/pages/intro.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Intro)
-#: rc.cpp:252
+#: rc.cpp:249
 msgid "Tribe Intro"
 msgstr "Tribe intro"
 
 #. i18n: file: ui/pages/intro.ui:105
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:255
+#: rc.cpp:252
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1092,8 +1148,8 @@ msgstr ""
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
 "style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\">Asennusohjelma opastaa sinut Chakran asennusvaiheiden läpi.<"
-"/span></p>\n"
+"color:#eeeeee;\">Asennusohjelma opastaa sinut Chakran asennusvaiheiden läpi."
+"</span></p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
 "style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
@@ -1132,7 +1188,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/license.ui:49
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:272
+#: rc.cpp:269
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1155,52 +1211,50 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Lisenssin hyväksyminen</span></p>"
-"</"
-"body></html>"
+"size:22pt; font-weight:600; color:#ffffff;\">Lisenssin hyväksyminen</span></"
+"p></body></html>"
 
 #. i18n: file: ui/pages/license.ui:61
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:279
+#: rc.cpp:276
 msgid ""
 "Chakra includes some proprietary software like hardware drivers, media "
 "plugins and fonts. To install them, you have to read and accept their "
 "licenses. If you choose against a license, the installer will try to use a "
 "free solution (if one is available)."
 msgstr ""
-"Chakra sisältää joitakin suljettuja ohjelmia kuten ajureita, median "
-"toistoon vaadittavia kodekeita sekä fontteja. Asentaaksesi ne, "
-"sinun on luettava ja hyväksyttävä niiden lisenssisopimukset. "
-"Jos et hyväksy lisenssiä, asentaja pyrkii käyttämään vapaata "
-"ratkaisua mikäli sellainen on olemassa."
+"Chakra sisältää joitakin suljettuja ohjelmia kuten ajureita, median toistoon "
+"vaadittavia kodekeita sekä fontteja. Asentaaksesi ne, sinun on luettava ja "
+"hyväksyttävä niiden lisenssisopimukset. Jos et hyväksy lisenssiä, asentaja "
+"pyrkii käyttämään vapaata ratkaisua mikäli sellainen on olemassa."
 
 #. i18n: file: ui/pages/license.ui:74
 #. i18n: ectx: property (text), widget (QLabel, licenseLabel)
-#: rc.cpp:282
+#: rc.cpp:279
 msgid "Approve license for:"
 msgstr "Hyväksy lisenssi:"
 
 #. i18n: file: ui/pages/license.ui:103
 #. i18n: ectx: property (text), widget (QRadioButton, declineButton)
-#: rc.cpp:285
+#: rc.cpp:282
 msgid "Decline License"
 msgstr "Kieltäydy lisenssistä"
 
 #. i18n: file: ui/pages/license.ui:110
 #. i18n: ectx: property (text), widget (QRadioButton, acceptButton)
-#: rc.cpp:288
+#: rc.cpp:285
 msgid "Accept License"
 msgstr "Hyväksy lisenssi"
 
 #. i18n: file: ui/pages/locale.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Locale)
-#: rc.cpp:291
+#: rc.cpp:288
 msgid "Form"
 msgstr "Lomake"
 
 #. i18n: file: ui/pages/locale.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:294
+#: rc.cpp:291
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1228,39 +1282,39 @@ msgstr ""
 
 #. i18n: file: ui/pages/locale.ui:45
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:301
+#: rc.cpp:298
 msgid ""
 "Please select the nearest city on the globe so the installer can suggest the "
 "locale and timezone settings for you. You can fine-tune the suggested "
 "settings at the bottom of the page. If you cant find your region or city on "
 "the globe, you can zoom in by using the slider on the left."
 msgstr ""
-"Valitse lähin kaupunki karttapallolta, jotta asentaja osaa ehdottaa "
-"oikeita aika- ja kieliasetuksia. Voit säätää ehdotettuja asetuksia sivun "
+"Valitse lähin kaupunki karttapallolta, jotta asentaja osaa ehdottaa oikeita "
+"aika- ja kieliasetuksia. Voit säätää ehdotettuja asetuksia sivun "
 "alareunasta. Jos et löydä aluettasi, voit tarkentaa vasemmalla olevalla "
 "liukusäätimellä."
 
 #. i18n: file: ui/pages/locale.ui:69
 #. i18n: ectx: property (clickMessage), widget (KLineEdit, locationsSearch)
-#: rc.cpp:304
+#: rc.cpp:301
 msgid "Search..."
 msgstr "Hae..."
 
 #. i18n: file: ui/pages/locale.ui:162
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:307
+#: rc.cpp:304
 msgid "Continent:"
 msgstr "Mantere:"
 
 #. i18n: file: ui/pages/locale.ui:185
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:310
+#: rc.cpp:307
 msgid "Language:"
 msgstr "Kieli:"
 
 #. i18n: file: ui/pages/locale.ui:208
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:313
+#: rc.cpp:310
 msgid "Locale:"
 msgstr "Lokalisaatio:"
 
@@ -1268,25 +1322,25 @@ msgstr "Lokalisaatio:"
 #. i18n: ectx: property (text), widget (QCheckBox, showLocalesCheck)
 #. i18n: file: ui/pages/locale.ui:270
 #. i18n: ectx: property (text), widget (QCheckBox, showKDELangsCheck)
-#: rc.cpp:316 rc.cpp:319
+#: rc.cpp:313 rc.cpp:316
 msgid "Show all"
 msgstr "Näytä kaikki"
 
 #. i18n: file: ui/pages/locale.ui:277
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:322
+#: rc.cpp:319
 msgid "Region: "
 msgstr "Alue: "
 
 #. i18n: file: ui/pages/partition.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Partition)
-#: rc.cpp:325
+#: rc.cpp:322
 msgid "Partition"
 msgstr "Osio"
 
 #. i18n: file: ui/pages/partition.ui:43
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:328
+#: rc.cpp:325
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1314,85 +1368,54 @@ msgstr ""
 
 #. i18n: file: ui/pages/partition.ui:58
 #. i18n: ectx: property (text), widget (QLabel, descriptionLabel)
-#: rc.cpp:335
+#: rc.cpp:332
+#, fuzzy
 msgid ""
-"Please select a mountpoint for your partitions. At least '/' should be "
-"mounted. No permanent changes to your hard drive will be made when you will "
-"press \"Next\""
+"Please select a mountpoint for your partitions. No permanent changes to your "
+"hard drive will be made when you will press \"Next\". Note: selected "
+"partitions are not explicitly formatted."
 msgstr ""
-"Valitse liitoskohdat osioillesi. Vähintään juurihakemisto \"/\" "
-"pitää muodostaa. Kovalevyille ei vielä tehdä pysyviä muutoksia "
-"painaessasi \"Seuraava\". Asentaja varmistaa valintasi."
+"Valitse liitoskohdat osioillesi. Vähintään juurihakemisto \"/\" pitää "
+"muodostaa. Kovalevyille ei vielä tehdä pysyviä muutoksia painaessasi "
+"\"Seuraava\". Asentaja varmistaa valintasi."
 
-#. i18n: file: ui/pages/partition.ui:100
-#. i18n: ectx: property (text), widget (QLabel, typeLabel)
-#: rc.cpp:339
-msgid "Type: "
-msgstr "Tyyppi: "
-
-#. i18n: file: ui/pages/partition.ui:127
+#. i18n: file: ui/pages/partition.ui:103
 #. i18n: ectx: property (text), widget (QLabel, filesystemLabel)
-#: rc.cpp:348
+#: rc.cpp:335
 msgid "Filesystem: "
 msgstr "Tiedostojärjestelmä: "
 
-#. i18n: file: ui/pages/partition.ui:173
+#. i18n: file: ui/pages/partition.ui:201
 #. i18n: ectx: property (text), widget (KPushButton, editPartitionOkButton)
 #. i18n: file: ui/widgets/avatardialog.ui:85
 #. i18n: ectx: property (text), widget (QPushButton, okButton)
-#: rc.cpp:351 rc.cpp:447
+#: rc.cpp:341 rc.cpp:422
 msgid "Ok"
 msgstr "OK"
 
-#. i18n: file: ui/pages/partition.ui:186
-#. i18n: ectx: property (text), widget (KPushButton, editPartitionCancelButton)
-#. i18n: file: ui/widgets/avatardialog.ui:114
-#. i18n: ectx: property (text), widget (QPushButton, cancelButton)
-#: rc.cpp:354 rc.cpp:450
-msgid "Cancel"
-msgstr "Peruuta"
-
-#. i18n: file: ui/pages/partition.ui:231
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, sizeSpinBox)
-#: rc.cpp:357
-msgid " MiB"
-msgstr "MB"
-
-#. i18n: file: ui/pages/partition.ui:332
-#. i18n: ectx: property (toolTip), widget (QPushButton, newPartTableButton)
-#: rc.cpp:366
-msgid "Create a new partition table on the selected device"
-msgstr "Luo uusi osiotaulukko valitulle levylle"
-
-#. i18n: file: ui/pages/partition.ui:373
-#. i18n: ectx: property (text), widget (QPushButton, deleteButton)
-#: rc.cpp:372
-msgid "Delete"
-msgstr "Poista"
-
-#. i18n: file: ui/pages/partition.ui:392
+#. i18n: file: ui/pages/partition.ui:298
 #. i18n: ectx: property (text), widget (QPushButton, formatButton)
-#: rc.cpp:375
+#: rc.cpp:350
 msgid "Format"
 msgstr "Pyyhi"
 
-#. i18n: file: ui/pages/partition.ui:411
+#. i18n: file: ui/pages/partition.ui:317
 #. i18n: ectx: property (toolTip), widget (QPushButton, undoButton)
-#. i18n: file: ui/pages/partition.ui:414
+#. i18n: file: ui/pages/partition.ui:320
 #. i18n: ectx: property (text), widget (QPushButton, undoButton)
-#: rc.cpp:378 rc.cpp:381
+#: rc.cpp:353 rc.cpp:356
 msgid "Undo"
 msgstr "Peru"
 
-#. i18n: file: ui/pages/partition.ui:430
+#. i18n: file: ui/pages/partition.ui:336
 #. i18n: ectx: property (toolTip), widget (QPushButton, unmountButton)
-#: rc.cpp:384
+#: rc.cpp:359
 msgid "Unmount the selected partition"
 msgstr "Irroita valitut osiot"
 
 #. i18n: file: ui/pages/readyinstall.ui:51
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:387
+#: rc.cpp:362
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1420,7 +1443,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/readyinstall.ui:77
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:394
+#: rc.cpp:369
 msgid ""
 "The system will be installed with the following settings. Before continuing, "
 "please review your selections:\n"
@@ -1430,7 +1453,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/readyinstall.ui:147
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:398
+#: rc.cpp:373
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1458,7 +1481,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/readyinstall.ui:211
 #. i18n: ectx: property (text), widget (QLabel, formatLabel)
-#: rc.cpp:405
+#: rc.cpp:380
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1483,12 +1506,11 @@ msgstr ""
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
 "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">Pyyhitään seuraavat osiot:</span></p></body></"
-"html>"
+"#eeeeee;\">Pyyhitään seuraavat osiot:</span></p></body></html>"
 
 #. i18n: file: ui/pages/releasenotes.ui:47
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:415
+#: rc.cpp:390
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1516,19 +1538,19 @@ msgstr ""
 
 #. i18n: file: ui/pages/releasenotes.ui:60
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:422
+#: rc.cpp:397
 msgid ""
 "Check out what's new, the known issues and general information about this "
 "version of Chakra. As always, you are encouraged to tell us what you think, "
 "either by visiting our forums or bug tracker."
 msgstr ""
 "Tarkastele yleistä tietoa tästä versiosta, uudistuksia sekä tunnettuja "
-"ongelmia."
-"Toivomme mielipidettäsi, jonka voit antaa helposti keskustelupalstallamme. "
+"ongelmia.Toivomme mielipidettäsi, jonka voit antaa helposti "
+"keskustelupalstallamme. "
 
 #. i18n: file: ui/pages/usercreation.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:425
+#: rc.cpp:400
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1551,24 +1573,24 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Luo käyttäjiä</span></p></body></"
-"html>"
+"size:22pt; font-weight:600; color:#ffffff;\">Luo käyttäjiä</span></p></"
+"body></html>"
 
 #. i18n: file: ui/pages/usercreation.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:432
+#: rc.cpp:407
 msgid "Enter at least one login name and password."
 msgstr "Anna vähintään yksi käyttäjätunnus ja salasana."
 
 #. i18n: file: ui/pages/usercreation.ui:178
 #. i18n: ectx: property (toolTip), widget (QPushButton, addUser)
-#: rc.cpp:435
+#: rc.cpp:410
 msgid "Add another user account."
 msgstr "Lisää toinen käyttäjätili."
 
 #. i18n: file: ui/pages/usercreation.ui:286
 #. i18n: ectx: property (text), widget (QLabel, hostname_extra_label)
-#: rc.cpp:438
+#: rc.cpp:413
 msgid ""
 "<small>This name will be used if you make the computer visible to others on "
 "a network.</small>"
@@ -1578,61 +1600,61 @@ msgstr ""
 
 #. i18n: file: ui/pages/usercreation.ui:299
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:441
+#: rc.cpp:416
 msgid "...and, what is the name of this computer?"
 msgstr "Mikä on tietokoneen nimi?"
 
 #. i18n: file: ui/widgets/avatardialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, AvatarDialog)
-#: rc.cpp:444
+#: rc.cpp:419
 msgid "Select an Avatar..."
 msgstr "Valitse kuvasi."
 
 #. i18n: file: ui/widgets/userwidget.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:453
+#: rc.cpp:428
 msgid "Login: "
 msgstr "Kirjautumistunnus: "
 
 #. i18n: file: ui/widgets/userwidget.ui:56
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:456
+#: rc.cpp:431
 msgid "Password: "
 msgstr "Salasana: "
 
 #. i18n: file: ui/widgets/userwidget.ui:94
 #. i18n: ectx: property (toolTip), widget (QPushButton, userDetails)
-#: rc.cpp:459
+#: rc.cpp:434
 msgid "Include more information about this user."
 msgstr "Sisällytä lisätietoja käyttäjästä."
 
 #. i18n: file: ui/widgets/userwidget.ui:124
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:462
+#: rc.cpp:437
 msgid "Confirm Password:"
 msgstr "Vahvista salasana:"
 
 #. i18n: file: ui/widgets/userwidget.ui:146
 #. i18n: ectx: property (toolTip), widget (QPushButton, removeUser)
-#: rc.cpp:465
+#: rc.cpp:440
 msgid "Remove this user."
 msgstr "Poista käyttäjä."
 
 #. i18n: file: ui/widgets/userwidget.ui:264
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:468
+#: rc.cpp:443
 msgid "Name: "
 msgstr "Nimi: "
 
 #. i18n: file: ui/widgets/userwidget.ui:307
 #. i18n: ectx: property (text), widget (QCheckBox, autoLoginCheckBox)
-#: rc.cpp:471
+#: rc.cpp:446
 msgid "Login Automatically"
 msgstr "Kirjaudu automaattisesti"
 
 #. i18n: file: ui/widgets/userwidget.ui:344
 #. i18n: ectx: property (text), widget (QCheckBox, rootUsesUserPwCheckBox)
-#: rc.cpp:474
+#: rc.cpp:449
 msgid ""
 "Use this password as \n"
 "the Administrator password"
@@ -1642,24 +1664,65 @@ msgstr ""
 
 #. i18n: file: ui/widgets/userwidget.ui:396
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:478
+#: rc.cpp:453
 msgid "Root Password:  "
 msgstr "Järjestelmänvalvojan salasana:"
 
 #. i18n: file: ui/widgets/userwidget.ui:406
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:481
+#: rc.cpp:456
 msgid "Confirm Root Password:  "
 msgstr "Vahvista järjestelmänvalvojan salasana: "
 
-#: rc.cpp:482
+#: rc.cpp:457
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Otso Rajala"
 
-#: rc.cpp:483
+#: rc.cpp:458
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "ojrajala@gmail.com"
 
+#~ msgid "installed"
+#~ msgstr "Asennettu"
 
+#~ msgid "Install Packaged Software"
+#~ msgstr "Asenna sovelluksia"
+
+#~ msgid ""
+#~ "The selected volume already has a partition table.. Overwrite it? (this "
+#~ "will destroy all data on the device)"
+#~ msgstr ""
+#~ "Valitulla levyllä on jo osiotaulukko. Ylikirjoitetaanko se?\n"
+#~ "Toiminto tuhoaa kaikki tiedostot levyltä."
+
+#~ msgid "Warning"
+#~ msgstr "Varoitus"
+
+#~ msgid ""
+#~ "This operation will destroy all data on the selected volume.. Continue "
+#~ "anyway?"
+#~ msgstr ""
+#~ "Tämä toiminto tuhoaa kaikki tiedostot valitulta levyltä. Haluatko jatkaa?"
+
+#~ msgid "Primary"
+#~ msgstr "Ensisijainen"
+
+#~ msgid "Install Packages"
+#~ msgstr "Asenna paketit"
+
+#~ msgid "Install"
+#~ msgstr "Asenna"
+
+#~ msgid "Type: "
+#~ msgstr "Tyyppi: "
+
+#~ msgid " MiB"
+#~ msgstr "MB"
+
+#~ msgid "Create a new partition table on the selected device"
+#~ msgstr "Luo uusi osiotaulukko valitulle levylle"
+
+#~ msgid "Delete"
+#~ msgstr "Poista"

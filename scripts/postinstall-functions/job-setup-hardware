@@ -25,48 +25,15 @@ job_setup_hardware()
 		cp -v -a -f /etc/modprobe.d/realtek_blacklist.conf ${mountpoint}/etc/modprobe.d/realtek_blacklist.conf
 	fi
 
-# arg! this don't work yet
-#	# setup nouveau
-#	USED_DRIVER=`cat /etc/X11/xorg.conf | sed -n '/Section.*."Device"/,/EndSection/p' | grep -v "#" | grep Driver | cut -d '"' -f 2`
-#	if [ "${USED_DRIVER}" = "nouveau" ] ; then
-#		msg "setup nouveau drivers"
-#
-#		msg "removing unneeded packages"
-#		chroot ${mountpoint} /usr/bin/pacman -Rd libdrm --noconfirm
-#		chroot ${mountpoint} /usr/bin/pacman -Rd ati-dri --noconfirm
-#		chroot ${mountpoint} /usr/bin/pacman -Rd intel-dri --noconfirm
-#
-#		msg "installing driver"
-#		pacman -r ${mountpoint} -Udf ${PKG_OVERLAY}/xf86-video-nouveau* --noconfirm
-#		pacman -r ${mountpoint} -Udf ${PKG_OVERLAY}/nouveau-drm* --noconfirm
-#		pacman -r ${mountpoint} -Udf ${PKG_OVERLAY}/nouveau-libdrm* --noconfirm
-#
-#		# load the modules array from rc.conf
-#		msg "loading current modules from rc.conf"
-#		RCCONF_MODULES=`cat ${mountpoint}/etc/rc.conf | grep "MODULES=" | cut -d "(" -f 2 | cut -d ")" -f 1`
-#
-#		# add the detected modules to the original modules array
-#		msg "adding nouveau module to modules array"
-#		NEW_RCCONF_MODULES=`echo "MODULES=($RCCONF_MODULES nouveau)" | sed 's/  / /g'`
-#
-#		# and put that into rc.conf
-#		msg "writing new rc.conf"
-#		sed -i -e "s,MODULES=.*,$NEW_RCCONF_MODULES,g" ${mountpoint}/etc/rc.conf
-#		sleep 1
-#
-#		unset RCCONF_MODULES
-#		unset NEW_RCCONF_MODULES
-#	fi
-
 	# setup proprietary drivers, if detected
 	msg "setup proprietary drivers"
 	if [ -e "/tmp/nvidia" ] ; then
 		msg "nvidia detected"
 
 		msg "removing unneeded packages"
-		chroot ${mountpoint} /usr/bin/pacman -Rd ati-dri --noconfirm
-		chroot ${mountpoint} /usr/bin/pacman -Rd intel-dri --noconfirm
-		chroot ${mountpoint} /usr/bin/pacman -Rd libgl --noconfirm
+		chroot ${mountpoint} /usr/bin/pacman -Rd nouveau-dri --noconfirm
+		chroot ${mountpoint} /usr/bin/pacman -Rd xf86-nv --noconfirm
+		chroot ${mountpoint} /usr/bin/pacman -Rd xf86-nouveau --noconfirm
 		msg "installing driver"
 		pacman -r ${mountpoint} -Udf ${PKG_OVERLAY}/nvidia-utils-${NVIDIA_DRV_VER}* --noconfirm
 		pacman -r ${mountpoint} -Udf ${PKG_OVERLAY}/nvidia*${NVIDIA_DRV_VER}* --noconfirm
@@ -90,9 +57,9 @@ job_setup_hardware()
 		msg "nvidia-173xx detected"
 
 		msg "removing unneeded packages"
-		chroot ${mountpoint} /usr/bin/pacman -Rd ati-dri --noconfirm
-		chroot ${mountpoint} /usr/bin/pacman -Rd intel-dri --noconfirm
-		chroot ${mountpoint} /usr/bin/pacman -Rd libgl --noconfirm
+		chroot ${mountpoint} /usr/bin/pacman -Rd nouveau-dri --noconfirm
+		chroot ${mountpoint} /usr/bin/pacman -Rd xf86-nv --noconfirm
+		chroot ${mountpoint} /usr/bin/pacman -Rd xf86-nouveau --noconfirm
 		msg "installing driver"
 		pacman -r ${mountpoint} -Udf ${PKG_OVERLAY}/nvidia-173xx* --noconfirm
 
@@ -115,9 +82,9 @@ job_setup_hardware()
 		msg "nvidia-96xx detected"
 
 		msg "removing unneeded packages"
-		chroot ${mountpoint} /usr/bin/pacman -Rd ati-dri --noconfirm
-		chroot ${mountpoint} /usr/bin/pacman -Rd intel-dri --noconfirm
-		chroot ${mountpoint} /usr/bin/pacman -Rd libgl --noconfirm
+		chroot ${mountpoint} /usr/bin/pacman -Rd nouveau-dri --noconfirm
+		chroot ${mountpoint} /usr/bin/pacman -Rd xf86-nv --noconfirm
+		chroot ${mountpoint} /usr/bin/pacman -Rd xf86-nouveau --noconfirm
 		msg "installing driver" 
 		pacman -r ${mountpoint} -Udf ${PKG_OVERLAY}/nvidia-96xx* --noconfirm
 
@@ -142,8 +109,6 @@ job_setup_hardware()
 		msg "removing unneeded packages"
 		# remove conflicting packages
 		chroot ${mountpoint} /usr/bin/pacman -Rd ati-dri --noconfirm
-		chroot ${mountpoint} /usr/bin/pacman -Rd intel-dri --noconfirm
-		chroot ${mountpoint} /usr/bin/pacman -Rd libgl --noconfirm
 		chroot ${mountpoint} /usr/bin/pacman -Rd xf86-video-ati --noconfirm
 		chroot ${mountpoint} /usr/bin/pacman -Rd xf86-video-radeonhd --noconfirm
 

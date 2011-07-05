@@ -8,131 +8,131 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2011-04-03 19:32+0200\n"
+"POT-Creation-Date: 2011-06-29 21:20+0200\n"
 "PO-Revision-Date: 2011-01-23 19:20+0100\n"
 "Last-Translator: Manue Tortosa <manutortosa@chakra-project.org>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: none\n"
 "X-Language: ca_ES@valencia\n"
 "X-Generator: Lokalize 1.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"Language: ca\n"
 
-#: src/installationhandler.cpp:86
+#: src/installationhandler.cpp:87
 msgid "Tribe was not able to initialize needed path: "
 msgstr "Tribe no ha pogut inicialitzar el camí necessari: "
 
-#: src/installationhandler.cpp:86
+#: src/installationhandler.cpp:87
 msgid " , please resolve the issue, and try again."
 msgstr " , arregleu el problema i torneu-ho a provar."
 
-#: src/installationhandler.cpp:148
+#: src/installationhandler.cpp:149
 msgid "Installing the system ..."
 msgstr "S'està instal·lant el sistema..."
 
-#: src/installationhandler.cpp:176
+#: src/installationhandler.cpp:177
 msgid "Mounting partitions..."
 msgstr "S'estan muntant les particions..."
 
-#: src/installationhandler.cpp:184
+#: src/installationhandler.cpp:185
 msgid "Preparing installation..."
 msgstr "S'està preparant la instal·lació..."
 
-#: src/installationhandler.cpp:204
+#: src/installationhandler.cpp:209
 msgid "Error copying files"
 msgstr "Error en copiar fitxers"
 
-#: src/installationhandler.cpp:207
+#: src/installationhandler.cpp:212
 msgid "Removing packages whose license has been declined ..."
 msgstr "S'estan esborrant els paquets dels quals heu refusat la llicència..."
 
-#: src/installationhandler.cpp:245
+#: src/installationhandler.cpp:250
 msgid "Initializing target ..."
 msgstr "S'està preparant el destí..."
 
-#: src/installationhandler.cpp:336
+#: src/installationhandler.cpp:341
 msgid "Please wait, configuring the new system ..."
 msgstr "Espereu, s'està configurant el nou sistema..."
 
-#: src/installationhandler.cpp:415
+#: src/installationhandler.cpp:420
 msgid "Error in Postinstall script. See log for more details"
 msgstr "Error a l'script Postinstall. Per més detalls, mireu el registre"
 
-#: src/installationhandler.cpp:424
+#: src/installationhandler.cpp:429
 msgid "Creating user accounts ..."
 msgstr "S'estan creant els comptes d'usuari..."
 
-#: src/installationhandler.cpp:427
+#: src/installationhandler.cpp:432
 msgid "Configuring software management..."
 msgstr "S'està configurant el programari..."
 
-#: src/installationhandler.cpp:431
+#: src/installationhandler.cpp:436
 msgid "Removing unused packages..."
 msgstr "S'estan esborrant els paquets innecessaris..."
 
-#: src/installationhandler.cpp:435
+#: src/installationhandler.cpp:440
 msgid "Installing additional packages..."
 msgstr "S'estan instal·lant paquets addicionals..."
 
-#: src/installationhandler.cpp:439
+#: src/installationhandler.cpp:444
 msgid "Configuring the display..."
 msgstr "S'està configurant la pantalla..."
 
-#: src/installationhandler.cpp:443
+#: src/installationhandler.cpp:448
 msgid "Downloading and installing localization packages..."
 msgstr "S'estan baixant i instal·lant els paquets de localització..."
 
-#: src/installationhandler.cpp:447
+#: src/installationhandler.cpp:452
 msgid "Downloading and installing documentation packages..."
 msgstr "S'estan baixant i instal·la paquets de documentació..."
 
-#: src/installationhandler.cpp:451
+#: src/installationhandler.cpp:456
 msgid "Setting up localization..."
 msgstr "S'està establint la localització..."
 
-#: src/installationhandler.cpp:455
+#: src/installationhandler.cpp:460
 msgid "Creating daemon configuration..."
 msgstr "S'està creant la configuració dels dimonis..."
 
-#: src/installationhandler.cpp:459
+#: src/installationhandler.cpp:464
 msgid "Creating network configuration..."
 msgstr "S'està creant la configuració de la xarxa..."
 
-#: src/installationhandler.cpp:463
+#: src/installationhandler.cpp:468
 msgid "Creating fstab..."
 msgstr "S'està creant fstab..."
 
-#: src/installationhandler.cpp:470
+#: src/installationhandler.cpp:475
 msgid "Configuring hardware..."
 msgstr "S'està configurant el maquinari..."
 
-#: src/installationhandler.cpp:474
+#: src/installationhandler.cpp:479
 msgid "Creating initial ramdisk images..."
 msgstr "S'estan creant les imatges inicials ramdisk.."
 
-#: src/installationhandler.cpp:478
+#: src/installationhandler.cpp:483
 msgid "Generating locales..."
 msgstr "S'estan generant l'arranjament local..."
 
-#: src/installationhandler.cpp:482
+#: src/installationhandler.cpp:487
 msgid "Removing unused localizations..."
 msgstr "S'estan suprimint les localitzacions innecessàries..."
 
-#: src/installationhandler.cpp:486
+#: src/installationhandler.cpp:491
 msgid "Removing unused drivers..."
 msgstr "S'estan suprimint els controladors innecessaris..."
 
-#: src/installationhandler.cpp:490
+#: src/installationhandler.cpp:495
 msgid "Finishing up..."
 msgstr "S'està finalitzant..."
 
-#: src/installationhandler.cpp:494
+#: src/installationhandler.cpp:499
 msgid "Installation complete!"
 msgstr "Instal·lació completa!"
 
-#: src/installationhandler.cpp:585
+#: src/installationhandler.cpp:590
 msgid ""
 "Tribe was not able to initialize needed directories. Something is very "
 "wrong..."
@@ -140,7 +140,7 @@ msgstr ""
 "Tribe no ha pogut crear els directoris necessaris. Alguna cosa ha anat molt "
 "malament..."
 
-#: src/installationhandler.cpp:609
+#: src/installationhandler.cpp:614
 msgid "Could not mount %1"
 msgstr "No es pot muntar %1"
 
@@ -179,7 +179,7 @@ msgstr "Mantenidor"
 msgid "Lukas Appelhans"
 msgstr "Lukas Appelhans"
 
-#: src/main.cpp:46 src/main.cpp:50
+#: src/main.cpp:46 src/main.cpp:50 src/main.cpp:51 src/main.cpp:52
 msgid "Developer"
 msgstr "Desenvolupador"
 
@@ -207,11 +207,19 @@ msgstr "Manuel Tortosa"
 msgid "Drake Justice"
 msgstr "Drake Justice"
 
+#: src/main.cpp:51
+msgid "Georg Grabler"
+msgstr ""
+
+#: src/main.cpp:52
+msgid "Daniele Cocca"
+msgstr ""
+
 #: src/mainwindow.cpp:99
 msgid "Do you really want to abort the installation?"
 msgstr "Esteu realment segur que voleu cancel·lar la instal·lació?"
 
-#: src/mainwindow.cpp:507
+#: src/mainwindow.cpp:509
 msgid ""
 "Installation failed! The following error has been reported: %1.\n"
 "Tribe will now quit, please check the installation logs in /tmp\n"
@@ -221,7 +229,7 @@ msgstr ""
 "Tribe es tancarà ara, per favor comproveu el registre d'instal·lació a /tmp\n"
 "o demaneu ajuda als nostres fòrums."
 
-#: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:518
+#: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:539
 msgid "Installing bootloader..."
 msgstr "S'està instal·lant el gestor d'arrencada..."
 
@@ -229,11 +237,11 @@ msgstr "S'està instal·lant el gestor d'arrencada..."
 msgid "Creating OS list..."
 msgstr "S'està creant la llista de sistemes operatius..."
 
-#: src/pages/configpage.cpp:151 src/pages/configpage.cpp:359
+#: src/pages/configpage.cpp:153 src/pages/configpage.cpp:363
 msgid "Downloading"
 msgstr "S'està baixant"
 
-#: src/pages/configpage.cpp:259
+#: src/pages/configpage.cpp:263
 msgid ""
 "Sorry, you have no internet connection at the moment \n"
 "Will stop bundle(s) installation now"
@@ -241,59 +249,66 @@ msgstr ""
 "Actualment no teniu connexió a internet \n"
 "S'aturarà la baixada dels «bundles»"
 
-#: src/pages/configpage.cpp:345
+#: src/pages/configpage.cpp:349
 msgid "loading package data..."
 msgstr "s'està carregant la informació dels paquets..."
 
-#: src/pages/configpage.cpp:346
+#: src/pages/configpage.cpp:350
 msgid "Loading package data..."
 msgstr "S'està carregant la informació dels paquets..."
 
-#: src/pages/configpage.cpp:347
+#: src/pages/configpage.cpp:351
 msgid "checking dependencies..."
 msgstr "s'estan comprovant les dependències..."
 
-#: src/pages/configpage.cpp:348
+#: src/pages/configpage.cpp:352
 msgid "Checking dependencies..."
 msgstr "S'estan comprovant les dependències..."
 
-#: src/pages/configpage.cpp:349
+#: src/pages/configpage.cpp:353
 msgid "resolving dependencies..."
 msgstr "s'estan resolent les dependències..."
 
-#: src/pages/configpage.cpp:350
+#: src/pages/configpage.cpp:354
 msgid "Resolving dependencies..."
 msgstr "S'estan resolent les dependències..."
 
-#: src/pages/configpage.cpp:351
+#: src/pages/configpage.cpp:355
 msgid "checking package integrity..."
 msgstr "s'està comprovant la integritat dels paquets..."
 
-#: src/pages/configpage.cpp:352
+#: src/pages/configpage.cpp:356
 msgid "Checking package integrity..."
 msgstr "S'està comprovant la integritat del paquet..."
 
-#: src/pages/configpage.cpp:353
+#: src/pages/configpage.cpp:357
 msgid "Total Download Size:"
 msgstr "Mida total baixada:"
 
 #. i18n: file: ui/pages/config.ui:930
 #. i18n: ectx: property (text), widget (QPushButton, downloadBundlesButton)
-#: src/pages/configpage.cpp:413 rc.cpp:165
+#: src/pages/configpage.cpp:417 rc.cpp:165
 msgid "Download Popular Bundles"
 msgstr "Baixa «bundles» populars"
 
 #. i18n: file: ui/pages/config.ui:908
 #. i18n: ectx: property (text), widget (QPushButton, bootloaderSettingsButton)
-#: src/pages/configpage.cpp:431 rc.cpp:162
+#: src/pages/configpage.cpp:435 rc.cpp:162
 msgid "Bootloader Settings"
 msgstr "Arranjament del gestor d'arrencada"
 
 #. i18n: file: ui/pages/config.ui:869
 #. i18n: ectx: property (text), widget (QPushButton, initRamDiskButton)
-#: src/pages/configpage.cpp:444 rc.cpp:156
+#: src/pages/configpage.cpp:448 rc.cpp:156
 msgid "Customize Initial Ramdisk"
 msgstr "Personalitza la imatge Ramdisk inicial"
+
+#: src/pages/configpage.cpp:511
+msgid ""
+"Bootloader-Setup finished with Exitcode: %1\n"
+"Some might went wrong. Before reboot it is recommended \n"
+"to check %2/boot/burg/burg.cfg. \n"
+msgstr ""
 
 #: src/pages/licensepage.cpp:53
 msgid "Proprietary ATI Driver"
@@ -307,7 +322,7 @@ msgstr "Controlador propietari de NVidia"
 msgid "Accept license for: "
 msgstr "Accepta la llicència per a: "
 
-#: src/pages/localepage.cpp:300
+#: src/pages/localepage.cpp:309
 msgid "You need to select a timezone"
 msgstr "Heu de seleccionar una zona horària"
 
@@ -335,48 +350,49 @@ msgstr "No implementat"
 msgid "Loading partitions..."
 msgstr "S'estan carregant les particions..."
 
-#: src/pages/partitionpage.cpp:662
+#: src/pages/partitionpage.cpp:664
 msgid "Extended"
 msgstr "Ampliada"
 
-#: src/pages/partitionpage.cpp:807
+#: src/pages/partitionpage.cpp:809
 msgid ""
 "Tribe detected target partitions which are mounted. Do you want Tribe to "
 "unmount them?"
 msgstr ""
 
-#: src/pages/partitionpage.cpp:823
+#: src/pages/partitionpage.cpp:825
 msgid ""
 "Tribe failed to unmount a partition which is target for the installation. "
 "You need to unmount the partitions manually before you can proceed."
 msgstr ""
 
-#: src/pages/partitionpage.cpp:825
+#: src/pages/partitionpage.cpp:827
 msgid "Target partitions mounted"
 msgstr ""
 
-#: src/pages/partitionpage.cpp:836
+#: src/pages/partitionpage.cpp:838
 msgid ""
 "The partition you have chosen to mount as '/' is too small. It should have a "
 "capacity of at least %1 for a successful installation."
 msgstr ""
-"La partició que heu decidit muntar com a «/» és massa petita, ha de tenir una "
-"capacitat d'almenys %1 per a una instal·lació correcta."
+"La partició que heu decidit muntar com a «/» és massa petita, ha de tenir "
+"una capacitat d'almenys %1 per a una instal·lació correcta."
 
-#: src/pages/partitionpage.cpp:839 src/pages/partitionpage.cpp:879
+#: src/pages/partitionpage.cpp:841 src/pages/partitionpage.cpp:881
 msgid "Target's capacity not sufficient"
 msgstr "La capacitat de l'objectiu no és sufficient"
 
-#: src/pages/partitionpage.cpp:859
+#: src/pages/partitionpage.cpp:861
+#, fuzzy
 msgid ""
-"The partition you have chosen to mount as '/' is not marked for formatation. "
+"The partition you have chosen to mount as '/' is not marked for formatting. "
 "This might create problems. Do you still want to continue without formating "
 "it?"
 msgstr ""
 "La partició que heu seleccionat per a muntar-la com a «/» no està formatada. "
 "Això pot crear problemes. Tot i així voleu continuar sense formatar-la?"
 
-#: src/pages/partitionpage.cpp:877
+#: src/pages/partitionpage.cpp:879
 msgid ""
 "You have selected '%1' as a mountpoint, which is not valid. A valid "
 "mountpoint always starts with '/' and represents a directory on disk"
@@ -384,15 +400,15 @@ msgstr ""
 "Heu seleccionat «%1» com a punt de muntatge, cosa que no és vàlida. Un punt "
 "de muntatge vàlid, sempre comença amb «/» i representa un directori al disc"
 
-#: src/pages/partitionpage.cpp:888
+#: src/pages/partitionpage.cpp:890
 msgid ""
 "You need to select a root partition ('/') to proceed with the installation. "
 msgstr ""
 
-#: src/pages/partitionpage.cpp:908
+#: src/pages/partitionpage.cpp:911
 msgid ""
-"When using a GPT Partition Table you need to have a partition with the "
-"bios_grub flag!"
+"When using a GPT Partition Table you need to have a unformatted partition "
+"with the bios_grub flag!"
 msgstr ""
 
 #: src/pages/readyinstallpage.cpp:77
@@ -481,7 +497,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: file: ui/pages/releasenotes.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, ReleaseNotes)
-#: rc.cpp:13 rc.cpp:388
+#: rc.cpp:13 rc.cpp:387
 msgid "Release Notes"
 msgstr "Notes de la versió"
 
@@ -679,7 +695,7 @@ msgstr "Instal·la el gestor d'arrencada"
 #. i18n: ectx: property (toolTip), widget (QPushButton, advancedButton)
 #. i18n: file: ui/pages/partition.ui:263
 #. i18n: ectx: property (text), widget (QPushButton, advancedButton)
-#: rc.cpp:83 rc.cpp:345 rc.cpp:348
+#: rc.cpp:83 rc.cpp:344 rc.cpp:347
 msgid "Advanced..."
 msgstr "Avançat..."
 
@@ -832,7 +848,7 @@ msgstr "Instal·la el GRUB"
 #. i18n: ectx: property (text), widget (KPushButton, editPartitionCancelButton)
 #. i18n: file: ui/widgets/avatardialog.ui:114
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
-#: rc.cpp:150 rc.cpp:339 rc.cpp:426
+#: rc.cpp:150 rc.cpp:338 rc.cpp:425
 msgid "Cancel"
 msgstr "Cancel·la"
 
@@ -1377,7 +1393,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/partition.ui:103
 #. i18n: ectx: property (text), widget (QLabel, filesystemLabel)
-#: rc.cpp:336
+#: rc.cpp:335
 msgid "Filesystem: "
 msgstr "Sistema de fitxers: "
 
@@ -1385,13 +1401,13 @@ msgstr "Sistema de fitxers: "
 #. i18n: ectx: property (text), widget (KPushButton, editPartitionOkButton)
 #. i18n: file: ui/widgets/avatardialog.ui:85
 #. i18n: ectx: property (text), widget (QPushButton, okButton)
-#: rc.cpp:342 rc.cpp:423
+#: rc.cpp:341 rc.cpp:422
 msgid "Ok"
 msgstr "Bé"
 
 #. i18n: file: ui/pages/partition.ui:298
 #. i18n: ectx: property (text), widget (QPushButton, formatButton)
-#: rc.cpp:351
+#: rc.cpp:350
 msgid "Format"
 msgstr "Formata"
 
@@ -1399,19 +1415,19 @@ msgstr "Formata"
 #. i18n: ectx: property (toolTip), widget (QPushButton, undoButton)
 #. i18n: file: ui/pages/partition.ui:320
 #. i18n: ectx: property (text), widget (QPushButton, undoButton)
-#: rc.cpp:354 rc.cpp:357
+#: rc.cpp:353 rc.cpp:356
 msgid "Undo"
 msgstr "Desfés"
 
 #. i18n: file: ui/pages/partition.ui:336
 #. i18n: ectx: property (toolTip), widget (QPushButton, unmountButton)
-#: rc.cpp:360
+#: rc.cpp:359
 msgid "Unmount the selected partition"
 msgstr "Desmunta la partició seleccionada"
 
 #. i18n: file: ui/pages/readyinstall.ui:51
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:363
+#: rc.cpp:362
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1439,7 +1455,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/readyinstall.ui:77
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:370
+#: rc.cpp:369
 msgid ""
 "The system will be installed with the following settings. Before continuing, "
 "please review your selections:\n"
@@ -1449,7 +1465,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/readyinstall.ui:147
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:374
+#: rc.cpp:373
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1477,7 +1493,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/readyinstall.ui:211
 #. i18n: ectx: property (text), widget (QLabel, formatLabel)
-#: rc.cpp:381
+#: rc.cpp:380
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1506,7 +1522,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/releasenotes.ui:47
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:391
+#: rc.cpp:390
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1534,7 +1550,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/releasenotes.ui:60
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:398
+#: rc.cpp:397
 msgid ""
 "Check out what's new, the known issues and general information about this "
 "version of Chakra. As always, you are encouraged to tell us what you think, "
@@ -1546,7 +1562,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/usercreation.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:401
+#: rc.cpp:400
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1574,20 +1590,20 @@ msgstr ""
 
 #. i18n: file: ui/pages/usercreation.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:408
+#: rc.cpp:407
 msgid "Enter at least one login name and password."
 msgstr ""
 "Heu de proporcionar almenys un nom d'inici de sessió i una contrasenya."
 
 #. i18n: file: ui/pages/usercreation.ui:178
 #. i18n: ectx: property (toolTip), widget (QPushButton, addUser)
-#: rc.cpp:411
+#: rc.cpp:410
 msgid "Add another user account."
 msgstr "Afegeix un altre compte d'usuari."
 
 #. i18n: file: ui/pages/usercreation.ui:286
 #. i18n: ectx: property (text), widget (QLabel, hostname_extra_label)
-#: rc.cpp:414
+#: rc.cpp:413
 msgid ""
 "<small>This name will be used if you make the computer visible to others on "
 "a network.</small>"
@@ -1597,61 +1613,61 @@ msgstr ""
 
 #. i18n: file: ui/pages/usercreation.ui:299
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:417
+#: rc.cpp:416
 msgid "...and, what is the name of this computer?"
 msgstr "...i, quin és el nom d'aquest ordinador?"
 
 #. i18n: file: ui/widgets/avatardialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, AvatarDialog)
-#: rc.cpp:420
+#: rc.cpp:419
 msgid "Select an Avatar..."
 msgstr "Seleccioneu un Avatar..."
 
 #. i18n: file: ui/widgets/userwidget.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:429
+#: rc.cpp:428
 msgid "Login: "
 msgstr "Inici: "
 
 #. i18n: file: ui/widgets/userwidget.ui:56
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:432
+#: rc.cpp:431
 msgid "Password: "
 msgstr "Contrasenya: "
 
 #. i18n: file: ui/widgets/userwidget.ui:94
 #. i18n: ectx: property (toolTip), widget (QPushButton, userDetails)
-#: rc.cpp:435
+#: rc.cpp:434
 msgid "Include more information about this user."
 msgstr "Inclou més informació d'aquest usuari."
 
 #. i18n: file: ui/widgets/userwidget.ui:124
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:438
+#: rc.cpp:437
 msgid "Confirm Password:"
 msgstr "Confirmeu la contrasenya:"
 
 #. i18n: file: ui/widgets/userwidget.ui:146
 #. i18n: ectx: property (toolTip), widget (QPushButton, removeUser)
-#: rc.cpp:441
+#: rc.cpp:440
 msgid "Remove this user."
 msgstr "Elimina aquest usuari."
 
 #. i18n: file: ui/widgets/userwidget.ui:264
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:444
+#: rc.cpp:443
 msgid "Name: "
 msgstr "Nom: "
 
 #. i18n: file: ui/widgets/userwidget.ui:307
 #. i18n: ectx: property (text), widget (QCheckBox, autoLoginCheckBox)
-#: rc.cpp:447
+#: rc.cpp:446
 msgid "Login Automatically"
 msgstr "Connecta automàticament"
 
 #. i18n: file: ui/widgets/userwidget.ui:344
 #. i18n: ectx: property (text), widget (QCheckBox, rootUsesUserPwCheckBox)
-#: rc.cpp:450
+#: rc.cpp:449
 msgid ""
 "Use this password as \n"
 "the Administrator password"
@@ -1661,22 +1677,22 @@ msgstr ""
 
 #. i18n: file: ui/widgets/userwidget.ui:396
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:454
+#: rc.cpp:453
 msgid "Root Password:  "
 msgstr "Contrasenya de Root:  "
 
 #. i18n: file: ui/widgets/userwidget.ui:406
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:457
+#: rc.cpp:456
 msgid "Confirm Root Password:  "
 msgstr "Confirmeu la contrasenya de Root: "
 
-#: rc.cpp:458
+#: rc.cpp:457
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Manuel Tortosa Moreno"
 
-#: rc.cpp:459
+#: rc.cpp:458
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "manutortosa@gmail.com"

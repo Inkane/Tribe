@@ -7,131 +7,132 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2011-04-03 19:32+0200\n"
+"POT-Creation-Date: 2011-06-29 21:20+0200\n"
 "PO-Revision-Date: 2011-01-31 16:23+0100\n"
 "Last-Translator: Phil Miller <philm@chakra-project.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 1.1\n"
 
-#: src/installationhandler.cpp:86
+#: src/installationhandler.cpp:87
 msgid "Tribe was not able to initialize needed path: "
 msgstr "Tribe konnte den benötigten Pfad nicht einlesen: "
 
-#: src/installationhandler.cpp:86
+#: src/installationhandler.cpp:87
 msgid " , please resolve the issue, and try again."
 msgstr " , versuchen Sie das Problem zu lösen, und probieren Sie es wieder."
 
-#: src/installationhandler.cpp:148
+#: src/installationhandler.cpp:149
 msgid "Installing the system ..."
 msgstr "Das System wird installiert …"
 
-#: src/installationhandler.cpp:176
+#: src/installationhandler.cpp:177
 msgid "Mounting partitions..."
 msgstr "Partitionen werden eingebunden …"
 
-#: src/installationhandler.cpp:184
+#: src/installationhandler.cpp:185
 msgid "Preparing installation..."
 msgstr "Installation wird abgeschlossen … "
 
-#: src/installationhandler.cpp:204
+#: src/installationhandler.cpp:209
 msgid "Error copying files"
 msgstr "Fehler beim Kopieren von Dateien"
 
-#: src/installationhandler.cpp:207
+#: src/installationhandler.cpp:212
 msgid "Removing packages whose license has been declined ..."
 msgstr "Pakete, deren Lizenz abgelehnt wurde, werden entfernt …"
 
-#: src/installationhandler.cpp:245
+#: src/installationhandler.cpp:250
 msgid "Initializing target ..."
 msgstr "Initialisierung des Installationsziels ..."
 
-#: src/installationhandler.cpp:336
+#: src/installationhandler.cpp:341
 msgid "Please wait, configuring the new system ..."
 msgstr "Bitte warten. Das neue System wird eingestellt ..."
 
-#: src/installationhandler.cpp:415
+#: src/installationhandler.cpp:420
 msgid "Error in Postinstall script. See log for more details"
 msgstr ""
 "Fehler im Postinstall-Skript. Lesen Sie das Protokoll für weitere "
 "Informationen."
 
-#: src/installationhandler.cpp:424
+#: src/installationhandler.cpp:429
 msgid "Creating user accounts ..."
 msgstr "Konten für neue Benutzer werden erstellt … "
 
-#: src/installationhandler.cpp:427
+#: src/installationhandler.cpp:432
 msgid "Configuring software management..."
 msgstr "Software-Management wird eingerichtet …"
 
-#: src/installationhandler.cpp:431
+#: src/installationhandler.cpp:436
 msgid "Removing unused packages..."
 msgstr "Nicht benötigte Pakete werden entfernt …"
 
-#: src/installationhandler.cpp:435
+#: src/installationhandler.cpp:440
 msgid "Installing additional packages..."
 msgstr "Zusätzliche Pakete werden installiert …"
 
-#: src/installationhandler.cpp:439
+#: src/installationhandler.cpp:444
 msgid "Configuring the display..."
 msgstr "Hardware wird eingerichtet … "
 
-#: src/installationhandler.cpp:443
+#: src/installationhandler.cpp:448
 msgid "Downloading and installing localization packages..."
 msgstr "Lokalisierungspakete werden heruntergeladen und installiert ..."
 
-#: src/installationhandler.cpp:447
+#: src/installationhandler.cpp:452
 msgid "Downloading and installing documentation packages..."
 msgstr "Dokumentationspakete werden heruntergeladen und installiert ..."
 
-#: src/installationhandler.cpp:451
+#: src/installationhandler.cpp:456
 msgid "Setting up localization..."
 msgstr "Lokalisierung wird eingerichtet …"
 
-#: src/installationhandler.cpp:455
+#: src/installationhandler.cpp:460
 msgid "Creating daemon configuration..."
 msgstr "Daemon-Einstellungen werden erstellt ..."
 
-#: src/installationhandler.cpp:459
+#: src/installationhandler.cpp:464
 msgid "Creating network configuration..."
 msgstr "Netzwerkeinrichtung wird erstellt …"
 
-#: src/installationhandler.cpp:463
+#: src/installationhandler.cpp:468
 msgid "Creating fstab..."
 msgstr "fstab wird erstellt …"
 
-#: src/installationhandler.cpp:470
+#: src/installationhandler.cpp:475
 msgid "Configuring hardware..."
 msgstr "Hardware wird eingerichtet …"
 
-#: src/installationhandler.cpp:474
+#: src/installationhandler.cpp:479
 msgid "Creating initial ramdisk images..."
 msgstr "Ramdisk-Images werden erstellt ..."
 
-#: src/installationhandler.cpp:478
+#: src/installationhandler.cpp:483
 msgid "Generating locales..."
 msgstr "Lokalizierungen werden erstellt ..."
 
-#: src/installationhandler.cpp:482
+#: src/installationhandler.cpp:487
 msgid "Removing unused localizations..."
 msgstr "Nicht benötigte Übersetzungen werden entfernt … "
 
-#: src/installationhandler.cpp:486
+#: src/installationhandler.cpp:491
 msgid "Removing unused drivers..."
 msgstr "Nicht benötigte Treiber werden entfernt … "
 
-#: src/installationhandler.cpp:490
+#: src/installationhandler.cpp:495
 msgid "Finishing up..."
 msgstr "Installation wird abgeschlossen … "
 
-#: src/installationhandler.cpp:494
+#: src/installationhandler.cpp:499
 msgid "Installation complete!"
 msgstr "Installation abgeschlossen!"
 
-#: src/installationhandler.cpp:585
+#: src/installationhandler.cpp:590
 msgid ""
 "Tribe was not able to initialize needed directories. Something is very "
 "wrong..."
@@ -139,7 +140,7 @@ msgstr ""
 "Tribe konnte die benötigten Verzeichnisse nicht laden. Es scheint was falsch "
 "gelaufen zu sein ..."
 
-#: src/installationhandler.cpp:609
+#: src/installationhandler.cpp:614
 msgid "Could not mount %1"
 msgstr "%1 konnte nicht eingebunden werden"
 
@@ -178,7 +179,7 @@ msgstr "Betreuer"
 msgid "Lukas Appelhans"
 msgstr "Lukas Appelhans"
 
-#: src/main.cpp:46 src/main.cpp:50
+#: src/main.cpp:46 src/main.cpp:50 src/main.cpp:51 src/main.cpp:52
 msgid "Developer"
 msgstr "Entwickler"
 
@@ -206,11 +207,19 @@ msgstr "Manuel Tortosa"
 msgid "Drake Justice"
 msgstr "Drake Justice"
 
+#: src/main.cpp:51
+msgid "Georg Grabler"
+msgstr ""
+
+#: src/main.cpp:52
+msgid "Daniele Cocca"
+msgstr ""
+
 #: src/mainwindow.cpp:99
 msgid "Do you really want to abort the installation?"
 msgstr "Möchten Sie die Installation wirklich abbrechen?"
 
-#: src/mainwindow.cpp:507
+#: src/mainwindow.cpp:509
 msgid ""
 "Installation failed! The following error has been reported: %1.\n"
 "Tribe will now quit, please check the installation logs in /tmp\n"
@@ -220,7 +229,7 @@ msgstr ""
 "Tribe wird nun beendet. Lesen Sie die Installationsaufzeichnungen (Logs)\n"
 "in /tmp oder holen Sie sich Hilfe in unseren Foren."
 
-#: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:518
+#: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:539
 msgid "Installing bootloader..."
 msgstr "Bootloader wird installiert ..."
 
@@ -228,11 +237,11 @@ msgstr "Bootloader wird installiert ..."
 msgid "Creating OS list..."
 msgstr "Bootmenu wird erstellt …"
 
-#: src/pages/configpage.cpp:151 src/pages/configpage.cpp:359
+#: src/pages/configpage.cpp:153 src/pages/configpage.cpp:363
 msgid "Downloading"
 msgstr "Herunterladen"
 
-#: src/pages/configpage.cpp:259
+#: src/pages/configpage.cpp:263
 msgid ""
 "Sorry, you have no internet connection at the moment \n"
 "Will stop bundle(s) installation now"
@@ -240,59 +249,66 @@ msgstr ""
 "Sorry, Sie haben zur Zeit keine Internetverbindung \n"
 "Die Bunde(s)-Installation wird nun beendet."
 
-#: src/pages/configpage.cpp:345
+#: src/pages/configpage.cpp:349
 msgid "loading package data..."
 msgstr "lade Paket-Daten ..."
 
-#: src/pages/configpage.cpp:346
+#: src/pages/configpage.cpp:350
 msgid "Loading package data..."
 msgstr "Lade Paket-Daten ..."
 
-#: src/pages/configpage.cpp:347
+#: src/pages/configpage.cpp:351
 msgid "checking dependencies..."
 msgstr "überprüfe Abhängigkeiten"
 
-#: src/pages/configpage.cpp:348
+#: src/pages/configpage.cpp:352
 msgid "Checking dependencies..."
 msgstr "Prüfe Abhängigkeiten"
 
-#: src/pages/configpage.cpp:349
+#: src/pages/configpage.cpp:353
 msgid "resolving dependencies..."
 msgstr "Abhängigkeiten auflösen ..."
 
-#: src/pages/configpage.cpp:350
+#: src/pages/configpage.cpp:354
 msgid "Resolving dependencies..."
 msgstr "Abhängigkeiten auflösen ..."
 
-#: src/pages/configpage.cpp:351
+#: src/pages/configpage.cpp:355
 msgid "checking package integrity..."
 msgstr "prüfe Paketvollständigkeit"
 
-#: src/pages/configpage.cpp:352
+#: src/pages/configpage.cpp:356
 msgid "Checking package integrity..."
 msgstr "Prüfe Paketvollständigkeit ..."
 
-#: src/pages/configpage.cpp:353
+#: src/pages/configpage.cpp:357
 msgid "Total Download Size:"
 msgstr "Gesammte Downloadgröße"
 
 #. i18n: file: ui/pages/config.ui:930
 #. i18n: ectx: property (text), widget (QPushButton, downloadBundlesButton)
-#: src/pages/configpage.cpp:413 rc.cpp:165
+#: src/pages/configpage.cpp:417 rc.cpp:165
 msgid "Download Popular Bundles"
 msgstr "Lade populäre Bundles"
 
 #. i18n: file: ui/pages/config.ui:908
 #. i18n: ectx: property (text), widget (QPushButton, bootloaderSettingsButton)
-#: src/pages/configpage.cpp:431 rc.cpp:162
+#: src/pages/configpage.cpp:435 rc.cpp:162
 msgid "Bootloader Settings"
 msgstr "Bootloader Einstellungen"
 
 #. i18n: file: ui/pages/config.ui:869
 #. i18n: ectx: property (text), widget (QPushButton, initRamDiskButton)
-#: src/pages/configpage.cpp:444 rc.cpp:156
+#: src/pages/configpage.cpp:448 rc.cpp:156
 msgid "Customize Initial Ramdisk"
 msgstr "Initial Ramdisk bearbeiten"
+
+#: src/pages/configpage.cpp:511
+msgid ""
+"Bootloader-Setup finished with Exitcode: %1\n"
+"Some might went wrong. Before reboot it is recommended \n"
+"to check %2/boot/burg/burg.cfg. \n"
+msgstr ""
 
 #: src/pages/licensepage.cpp:53
 msgid "Proprietary ATI Driver"
@@ -306,7 +322,7 @@ msgstr "Proprietärer NVidia-Treiber"
 msgid "Accept license for: "
 msgstr "Lizenz akzeptieren für: "
 
-#: src/pages/localepage.cpp:300
+#: src/pages/localepage.cpp:309
 msgid "You need to select a timezone"
 msgstr "Sie müssen eine Zeitzone auswählen. "
 
@@ -334,27 +350,27 @@ msgstr "nicht unterstützt"
 msgid "Loading partitions..."
 msgstr "Lade Partitionen ..."
 
-#: src/pages/partitionpage.cpp:662
+#: src/pages/partitionpage.cpp:664
 msgid "Extended"
 msgstr "Erweitert"
 
-#: src/pages/partitionpage.cpp:807
+#: src/pages/partitionpage.cpp:809
 msgid ""
 "Tribe detected target partitions which are mounted. Do you want Tribe to "
 "unmount them?"
 msgstr ""
 
-#: src/pages/partitionpage.cpp:823
+#: src/pages/partitionpage.cpp:825
 msgid ""
 "Tribe failed to unmount a partition which is target for the installation. "
 "You need to unmount the partitions manually before you can proceed."
 msgstr ""
 
-#: src/pages/partitionpage.cpp:825
+#: src/pages/partitionpage.cpp:827
 msgid "Target partitions mounted"
 msgstr ""
 
-#: src/pages/partitionpage.cpp:836
+#: src/pages/partitionpage.cpp:838
 msgid ""
 "The partition you have chosen to mount as '/' is too small. It should have a "
 "capacity of at least %1 for a successful installation."
@@ -363,13 +379,14 @@ msgstr ""
 "zumindest %1 freien Speicher enthalten um eine Installation durchführen zu "
 "können."
 
-#: src/pages/partitionpage.cpp:839 src/pages/partitionpage.cpp:879
+#: src/pages/partitionpage.cpp:841 src/pages/partitionpage.cpp:881
 msgid "Target's capacity not sufficient"
 msgstr "Zielgröße nicht ausreichend"
 
-#: src/pages/partitionpage.cpp:859
+#: src/pages/partitionpage.cpp:861
+#, fuzzy
 msgid ""
-"The partition you have chosen to mount as '/' is not marked for formatation. "
+"The partition you have chosen to mount as '/' is not marked for formatting. "
 "This might create problems. Do you still want to continue without formating "
 "it?"
 msgstr ""
@@ -377,7 +394,7 @@ msgstr ""
 "Formatierung vorgesehen. Dies könnte Probleme verursachen. Wollen Sie denoch "
 "fortfahren ohne diese zu formatieren?"
 
-#: src/pages/partitionpage.cpp:877
+#: src/pages/partitionpage.cpp:879
 msgid ""
 "You have selected '%1' as a mountpoint, which is not valid. A valid "
 "mountpoint always starts with '/' and represents a directory on disk"
@@ -386,15 +403,15 @@ msgstr ""
 "zulässiger Einbindungspunkt startet immer mit \"/\" und representiert ein "
 "Verzeichnis auf der Festplatte."
 
-#: src/pages/partitionpage.cpp:888
+#: src/pages/partitionpage.cpp:890
 msgid ""
 "You need to select a root partition ('/') to proceed with the installation. "
 msgstr ""
 
-#: src/pages/partitionpage.cpp:908
+#: src/pages/partitionpage.cpp:911
 msgid ""
-"When using a GPT Partition Table you need to have a partition with the "
-"bios_grub flag!"
+"When using a GPT Partition Table you need to have a unformatted partition "
+"with the bios_grub flag!"
 msgstr ""
 
 #: src/pages/readyinstallpage.cpp:77
@@ -483,7 +500,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: file: ui/pages/releasenotes.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, ReleaseNotes)
-#: rc.cpp:13 rc.cpp:388
+#: rc.cpp:13 rc.cpp:387
 msgid "Release Notes"
 msgstr "Veröffentlichungsinformationen"
 
@@ -681,7 +698,7 @@ msgstr "Bootloader installieren"
 #. i18n: ectx: property (toolTip), widget (QPushButton, advancedButton)
 #. i18n: file: ui/pages/partition.ui:263
 #. i18n: ectx: property (text), widget (QPushButton, advancedButton)
-#: rc.cpp:83 rc.cpp:345 rc.cpp:348
+#: rc.cpp:83 rc.cpp:344 rc.cpp:347
 msgid "Advanced..."
 msgstr "Erweitert …"
 
@@ -834,7 +851,7 @@ msgstr "GRUB installieren"
 #. i18n: ectx: property (text), widget (KPushButton, editPartitionCancelButton)
 #. i18n: file: ui/widgets/avatardialog.ui:114
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
-#: rc.cpp:150 rc.cpp:339 rc.cpp:426
+#: rc.cpp:150 rc.cpp:338 rc.cpp:425
 msgid "Cancel"
 msgstr "Abbrechen"
 
@@ -1390,7 +1407,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/partition.ui:103
 #. i18n: ectx: property (text), widget (QLabel, filesystemLabel)
-#: rc.cpp:336
+#: rc.cpp:335
 msgid "Filesystem: "
 msgstr "Dateisystem: "
 
@@ -1398,13 +1415,13 @@ msgstr "Dateisystem: "
 #. i18n: ectx: property (text), widget (KPushButton, editPartitionOkButton)
 #. i18n: file: ui/widgets/avatardialog.ui:85
 #. i18n: ectx: property (text), widget (QPushButton, okButton)
-#: rc.cpp:342 rc.cpp:423
+#: rc.cpp:341 rc.cpp:422
 msgid "Ok"
 msgstr "OK"
 
 #. i18n: file: ui/pages/partition.ui:298
 #. i18n: ectx: property (text), widget (QPushButton, formatButton)
-#: rc.cpp:351
+#: rc.cpp:350
 msgid "Format"
 msgstr "Formatieren"
 
@@ -1412,19 +1429,19 @@ msgstr "Formatieren"
 #. i18n: ectx: property (toolTip), widget (QPushButton, undoButton)
 #. i18n: file: ui/pages/partition.ui:320
 #. i18n: ectx: property (text), widget (QPushButton, undoButton)
-#: rc.cpp:354 rc.cpp:357
+#: rc.cpp:353 rc.cpp:356
 msgid "Undo"
 msgstr "Zurück"
 
 #. i18n: file: ui/pages/partition.ui:336
 #. i18n: ectx: property (toolTip), widget (QPushButton, unmountButton)
-#: rc.cpp:360
+#: rc.cpp:359
 msgid "Unmount the selected partition"
 msgstr "Einbindung für ausgewählte Partition lösen"
 
 #. i18n: file: ui/pages/readyinstall.ui:51
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:363
+#: rc.cpp:362
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1452,7 +1469,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/readyinstall.ui:77
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:370
+#: rc.cpp:369
 msgid ""
 "The system will be installed with the following settings. Before continuing, "
 "please review your selections:\n"
@@ -1462,7 +1479,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/readyinstall.ui:147
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:374
+#: rc.cpp:373
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1490,7 +1507,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/readyinstall.ui:211
 #. i18n: ectx: property (text), widget (QLabel, formatLabel)
-#: rc.cpp:381
+#: rc.cpp:380
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1519,7 +1536,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/releasenotes.ui:47
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:391
+#: rc.cpp:390
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1547,7 +1564,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/releasenotes.ui:60
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:398
+#: rc.cpp:397
 msgid ""
 "Check out what's new, the known issues and general information about this "
 "version of Chakra. As always, you are encouraged to tell us what you think, "
@@ -1560,7 +1577,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/usercreation.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:401
+#: rc.cpp:400
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1588,19 +1605,19 @@ msgstr ""
 
 #. i18n: file: ui/pages/usercreation.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:408
+#: rc.cpp:407
 msgid "Enter at least one login name and password."
 msgstr "Sie müssen zumindest einen Benutzernamen und Passwort eingeben. "
 
 #. i18n: file: ui/pages/usercreation.ui:178
 #. i18n: ectx: property (toolTip), widget (QPushButton, addUser)
-#: rc.cpp:411
+#: rc.cpp:410
 msgid "Add another user account."
 msgstr "Weiteren Benutzer hinzufügen "
 
 #. i18n: file: ui/pages/usercreation.ui:286
 #. i18n: ectx: property (text), widget (QLabel, hostname_extra_label)
-#: rc.cpp:414
+#: rc.cpp:413
 msgid ""
 "<small>This name will be used if you make the computer visible to others on "
 "a network.</small>"
@@ -1610,61 +1627,61 @@ msgstr ""
 
 #. i18n: file: ui/pages/usercreation.ui:299
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:417
+#: rc.cpp:416
 msgid "...and, what is the name of this computer?"
 msgstr "... und, wie lautet der Name dieses Computers?"
 
 #. i18n: file: ui/widgets/avatardialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, AvatarDialog)
-#: rc.cpp:420
+#: rc.cpp:419
 msgid "Select an Avatar..."
 msgstr "Einen Avatar auswählen ..."
 
 #. i18n: file: ui/widgets/userwidget.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:429
+#: rc.cpp:428
 msgid "Login: "
 msgstr "Benutzername: "
 
 #. i18n: file: ui/widgets/userwidget.ui:56
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:432
+#: rc.cpp:431
 msgid "Password: "
 msgstr "Passwort: "
 
 #. i18n: file: ui/widgets/userwidget.ui:94
 #. i18n: ectx: property (toolTip), widget (QPushButton, userDetails)
-#: rc.cpp:435
+#: rc.cpp:434
 msgid "Include more information about this user."
 msgstr "Mehr Information über diesen Benutzer hinzufügen."
 
 #. i18n: file: ui/widgets/userwidget.ui:124
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:438
+#: rc.cpp:437
 msgid "Confirm Password:"
 msgstr "Passwort bestätigen: "
 
 #. i18n: file: ui/widgets/userwidget.ui:146
 #. i18n: ectx: property (toolTip), widget (QPushButton, removeUser)
-#: rc.cpp:441
+#: rc.cpp:440
 msgid "Remove this user."
 msgstr "Entferne diesen Benutzer."
 
 #. i18n: file: ui/widgets/userwidget.ui:264
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:444
+#: rc.cpp:443
 msgid "Name: "
 msgstr "Name: "
 
 #. i18n: file: ui/widgets/userwidget.ui:307
 #. i18n: ectx: property (text), widget (QCheckBox, autoLoginCheckBox)
-#: rc.cpp:447
+#: rc.cpp:446
 msgid "Login Automatically"
 msgstr "Automatischer Login"
 
 #. i18n: file: ui/widgets/userwidget.ui:344
 #. i18n: ectx: property (text), widget (QCheckBox, rootUsesUserPwCheckBox)
-#: rc.cpp:450
+#: rc.cpp:449
 msgid ""
 "Use this password as \n"
 "the Administrator password"
@@ -1674,22 +1691,22 @@ msgstr ""
 
 #. i18n: file: ui/widgets/userwidget.ui:396
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:454
+#: rc.cpp:453
 msgid "Root Password:  "
 msgstr "Root-Passwort: "
 
 #. i18n: file: ui/widgets/userwidget.ui:406
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:457
+#: rc.cpp:456
 msgid "Confirm Root Password:  "
 msgstr "Passwort bestätigen: "
 
-#: rc.cpp:458
+#: rc.cpp:457
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Phil Miller"
 
-#: rc.cpp:459
+#: rc.cpp:458
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "philm@chakra-project.org"

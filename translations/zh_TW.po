@@ -8,135 +8,135 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tribe HEAD\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2011-04-03 19:32+0200\n"
+"POT-Creation-Date: 2011-06-29 21:20+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.linux.org.tw>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/installationhandler.cpp:86
+#: src/installationhandler.cpp:87
 msgid "Tribe was not able to initialize needed path: "
 msgstr "Tribe 無法初始化所需的路徑："
 
-#: src/installationhandler.cpp:86
+#: src/installationhandler.cpp:87
 msgid " , please resolve the issue, and try again."
 msgstr "，請試著解除該問題，然後再試一次。"
 
-#: src/installationhandler.cpp:148
+#: src/installationhandler.cpp:149
 msgid "Installing the system ..."
 msgstr "正在安裝系統 ..."
 
-#: src/installationhandler.cpp:176
+#: src/installationhandler.cpp:177
 msgid "Mounting partitions..."
 msgstr "正在掛載分割區..."
 
-#: src/installationhandler.cpp:184
+#: src/installationhandler.cpp:185
 msgid "Preparing installation..."
 msgstr "正在準備安裝..."
 
-#: src/installationhandler.cpp:204
+#: src/installationhandler.cpp:209
 msgid "Error copying files"
 msgstr "複製檔案時發生錯誤"
 
-#: src/installationhandler.cpp:207
+#: src/installationhandler.cpp:212
 msgid "Removing packages whose license has been declined ..."
 msgstr "正在移除拒絕授權許可的套件 ..."
 
-#: src/installationhandler.cpp:245
+#: src/installationhandler.cpp:250
 msgid "Initializing target ..."
 msgstr "正在初始化目標 ..."
 
-#: src/installationhandler.cpp:336
+#: src/installationhandler.cpp:341
 msgid "Please wait, configuring the new system ..."
 msgstr "請稍候，正在設定新系統..."
 
-#: src/installationhandler.cpp:415
+#: src/installationhandler.cpp:420
 msgid "Error in Postinstall script. See log for more details"
 msgstr "安裝後指令稿發生錯誤。查看日誌獲得更多細節訊息"
 
-#: src/installationhandler.cpp:424
+#: src/installationhandler.cpp:429
 msgid "Creating user accounts ..."
 msgstr "正在建立使用者帳號 ..."
 
-#: src/installationhandler.cpp:427
+#: src/installationhandler.cpp:432
 msgid "Configuring software management..."
 msgstr "正在設定軟體管理..."
 
-#: src/installationhandler.cpp:431
+#: src/installationhandler.cpp:436
 msgid "Removing unused packages..."
 msgstr "正在移除未使用的套件..."
 
-#: src/installationhandler.cpp:435
+#: src/installationhandler.cpp:440
 msgid "Installing additional packages..."
 msgstr "正在安裝額外的套件..."
 
-#: src/installationhandler.cpp:439
+#: src/installationhandler.cpp:444
 msgid "Configuring the display..."
 msgstr "正在設定顯示..."
 
-#: src/installationhandler.cpp:443
+#: src/installationhandler.cpp:448
 msgid "Downloading and installing localization packages..."
 msgstr "正在下載並安裝本地化套件..."
 
-#: src/installationhandler.cpp:447
+#: src/installationhandler.cpp:452
 msgid "Downloading and installing documentation packages..."
 msgstr "下載和安裝文件套件..."
 
-#: src/installationhandler.cpp:451
+#: src/installationhandler.cpp:456
 msgid "Setting up localization..."
 msgstr "正在建立本地化..."
 
-#: src/installationhandler.cpp:455
+#: src/installationhandler.cpp:460
 msgid "Creating daemon configuration..."
 msgstr "建立服務設定檔..."
 
-#: src/installationhandler.cpp:459
+#: src/installationhandler.cpp:464
 msgid "Creating network configuration..."
 msgstr "建立網路設定檔..."
 
-#: src/installationhandler.cpp:463
+#: src/installationhandler.cpp:468
 msgid "Creating fstab..."
 msgstr "正在建立 fstab..."
 
-#: src/installationhandler.cpp:470
+#: src/installationhandler.cpp:475
 msgid "Configuring hardware..."
 msgstr "正在設定硬體..."
 
-#: src/installationhandler.cpp:474
+#: src/installationhandler.cpp:479
 msgid "Creating initial ramdisk images..."
 msgstr "正在建立初始 ramdisk 映像檔..."
 
-#: src/installationhandler.cpp:478
+#: src/installationhandler.cpp:483
 msgid "Generating locales..."
 msgstr "正在生成語言地區碼..."
 
-#: src/installationhandler.cpp:482
+#: src/installationhandler.cpp:487
 msgid "Removing unused localizations..."
 msgstr "正在移除未使用的本地化..."
 
-#: src/installationhandler.cpp:486
+#: src/installationhandler.cpp:491
 msgid "Removing unused drivers..."
 msgstr "正在移除未使用的驅動程式..."
 
-#: src/installationhandler.cpp:490
+#: src/installationhandler.cpp:495
 msgid "Finishing up..."
 msgstr "正在完成..."
 
-#: src/installationhandler.cpp:494
+#: src/installationhandler.cpp:499
 msgid "Installation complete!"
 msgstr "安裝完成 !"
 
-#: src/installationhandler.cpp:585
+#: src/installationhandler.cpp:590
 msgid ""
 "Tribe was not able to initialize needed directories. Something is very "
 "wrong..."
 msgstr "Tribe 無法初始化所需的目錄。有錯誤發生..."
 
-#: src/installationhandler.cpp:609
+#: src/installationhandler.cpp:614
 msgid "Could not mount %1"
 msgstr "無法掛載 %1"
 
@@ -175,7 +175,7 @@ msgstr "維護者"
 msgid "Lukas Appelhans"
 msgstr "Lukas Appelhans"
 
-#: src/main.cpp:46 src/main.cpp:50
+#: src/main.cpp:46 src/main.cpp:50 src/main.cpp:51 src/main.cpp:52
 msgid "Developer"
 msgstr "開發者"
 
@@ -203,11 +203,19 @@ msgstr "Manuel Tortosa"
 msgid "Drake Justice"
 msgstr "Drake Justice"
 
+#: src/main.cpp:51
+msgid "Georg Grabler"
+msgstr ""
+
+#: src/main.cpp:52
+msgid "Daniele Cocca"
+msgstr ""
+
 #: src/mainwindow.cpp:99
 msgid "Do you really want to abort the installation?"
 msgstr "您真的要中止此安裝程式?"
 
-#: src/mainwindow.cpp:507
+#: src/mainwindow.cpp:509
 msgid ""
 "Installation failed! The following error has been reported: %1.\n"
 "Tribe will now quit, please check the installation logs in /tmp\n"
@@ -217,7 +225,7 @@ msgstr ""
 "Tribe 即將停止，請檢查 /tmp 中的安裝日誌\n"
 "或者到我們的論壇詢問以獲得幫助。"
 
-#: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:518
+#: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:539
 msgid "Installing bootloader..."
 msgstr "正在安裝開機載入程式..."
 
@@ -225,11 +233,11 @@ msgstr "正在安裝開機載入程式..."
 msgid "Creating OS list..."
 msgstr "正在建立作業系統清單..."
 
-#: src/pages/configpage.cpp:151 src/pages/configpage.cpp:359
+#: src/pages/configpage.cpp:153 src/pages/configpage.cpp:363
 msgid "Downloading"
 msgstr "正在下載"
 
-#: src/pages/configpage.cpp:259
+#: src/pages/configpage.cpp:263
 msgid ""
 "Sorry, you have no internet connection at the moment \n"
 "Will stop bundle(s) installation now"
@@ -237,59 +245,66 @@ msgstr ""
 "很抱歉，您目前沒有網際網路連線\n"
 "現在將停止 bundle 安裝"
 
-#: src/pages/configpage.cpp:345
+#: src/pages/configpage.cpp:349
 msgid "loading package data..."
 msgstr "正在載入套件資料..."
 
-#: src/pages/configpage.cpp:346
+#: src/pages/configpage.cpp:350
 msgid "Loading package data..."
 msgstr "正在載入套件資料..."
 
-#: src/pages/configpage.cpp:347
+#: src/pages/configpage.cpp:351
 msgid "checking dependencies..."
 msgstr "正在檢查相依性..."
 
-#: src/pages/configpage.cpp:348
+#: src/pages/configpage.cpp:352
 msgid "Checking dependencies..."
 msgstr "正在檢查相依性..."
 
-#: src/pages/configpage.cpp:349
+#: src/pages/configpage.cpp:353
 msgid "resolving dependencies..."
 msgstr "正在解析相依性..."
 
-#: src/pages/configpage.cpp:350
+#: src/pages/configpage.cpp:354
 msgid "Resolving dependencies..."
 msgstr "正在解析相依性..."
 
-#: src/pages/configpage.cpp:351
+#: src/pages/configpage.cpp:355
 msgid "checking package integrity..."
 msgstr "正在檢查套件完整性..."
 
-#: src/pages/configpage.cpp:352
+#: src/pages/configpage.cpp:356
 msgid "Checking package integrity..."
 msgstr "正在檢查套件完整性..."
 
-#: src/pages/configpage.cpp:353
+#: src/pages/configpage.cpp:357
 msgid "Total Download Size:"
 msgstr "總共下載大小："
 
 #. i18n: file: ui/pages/config.ui:930
 #. i18n: ectx: property (text), widget (QPushButton, downloadBundlesButton)
-#: src/pages/configpage.cpp:413 rc.cpp:165
+#: src/pages/configpage.cpp:417 rc.cpp:165
 msgid "Download Popular Bundles"
 msgstr "下載受歡迎的 Bundles "
 
 #. i18n: file: ui/pages/config.ui:908
 #. i18n: ectx: property (text), widget (QPushButton, bootloaderSettingsButton)
-#: src/pages/configpage.cpp:431 rc.cpp:162
+#: src/pages/configpage.cpp:435 rc.cpp:162
 msgid "Bootloader Settings"
 msgstr "開機載入程式設定值"
 
 #. i18n: file: ui/pages/config.ui:869
 #. i18n: ectx: property (text), widget (QPushButton, initRamDiskButton)
-#: src/pages/configpage.cpp:444 rc.cpp:156
+#: src/pages/configpage.cpp:448 rc.cpp:156
 msgid "Customize Initial Ramdisk"
 msgstr "自訂初始 Ramdisk"
+
+#: src/pages/configpage.cpp:511
+msgid ""
+"Bootloader-Setup finished with Exitcode: %1\n"
+"Some might went wrong. Before reboot it is recommended \n"
+"to check %2/boot/burg/burg.cfg. \n"
+msgstr ""
 
 #: src/pages/licensepage.cpp:53
 msgid "Proprietary ATI Driver"
@@ -303,7 +318,7 @@ msgstr "專利 NVidia 驅動程式"
 msgid "Accept license for: "
 msgstr "同意授權："
 
-#: src/pages/localepage.cpp:300
+#: src/pages/localepage.cpp:309
 msgid "You need to select a timezone"
 msgstr "您需要選取時區"
 
@@ -331,47 +346,48 @@ msgstr "未支援"
 msgid "Loading partitions..."
 msgstr "正在載入分割區..."
 
-#: src/pages/partitionpage.cpp:662
+#: src/pages/partitionpage.cpp:664
 msgid "Extended"
 msgstr "延伸分割"
 
-#: src/pages/partitionpage.cpp:807
+#: src/pages/partitionpage.cpp:809
 msgid ""
 "Tribe detected target partitions which are mounted. Do you want Tribe to "
 "unmount them?"
 msgstr ""
 
-#: src/pages/partitionpage.cpp:823
+#: src/pages/partitionpage.cpp:825
 msgid ""
 "Tribe failed to unmount a partition which is target for the installation. "
 "You need to unmount the partitions manually before you can proceed."
 msgstr ""
 
-#: src/pages/partitionpage.cpp:825
+#: src/pages/partitionpage.cpp:827
 msgid "Target partitions mounted"
 msgstr ""
 
-#: src/pages/partitionpage.cpp:836
+#: src/pages/partitionpage.cpp:838
 msgid ""
 "The partition you have chosen to mount as '/' is too small. It should have a "
 "capacity of at least %1 for a successful installation."
 msgstr ""
 "您選擇要掛載 '/' 的分割區太小。它應該至少要有 %1 的容量以確保安裝成功。"
 
-#: src/pages/partitionpage.cpp:839 src/pages/partitionpage.cpp:879
+#: src/pages/partitionpage.cpp:841 src/pages/partitionpage.cpp:881
 msgid "Target's capacity not sufficient"
 msgstr "目標的容量不足"
 
-#: src/pages/partitionpage.cpp:859
+#: src/pages/partitionpage.cpp:861
+#, fuzzy
 msgid ""
-"The partition you have chosen to mount as '/' is not marked for formatation. "
+"The partition you have chosen to mount as '/' is not marked for formatting. "
 "This might create problems. Do you still want to continue without formating "
 "it?"
 msgstr ""
 "您選擇要掛載 '/' 的分割區未被標記為需要格式化，這可能會產生問題。您仍然想要繼"
 "續而不將它格式化嗎？"
 
-#: src/pages/partitionpage.cpp:877
+#: src/pages/partitionpage.cpp:879
 msgid ""
 "You have selected '%1' as a mountpoint, which is not valid. A valid "
 "mountpoint always starts with '/' and represents a directory on disk"
@@ -379,15 +395,15 @@ msgstr ""
 "您已經選取「%1」為掛載點，但那是無效的。有效的掛載點是以 '/' 開頭，並代表磁碟"
 "上的一個目錄"
 
-#: src/pages/partitionpage.cpp:888
+#: src/pages/partitionpage.cpp:890
 msgid ""
 "You need to select a root partition ('/') to proceed with the installation. "
 msgstr ""
 
-#: src/pages/partitionpage.cpp:908
+#: src/pages/partitionpage.cpp:911
 msgid ""
-"When using a GPT Partition Table you need to have a partition with the "
-"bios_grub flag!"
+"When using a GPT Partition Table you need to have a unformatted partition "
+"with the bios_grub flag!"
 msgstr ""
 
 #: src/pages/readyinstallpage.cpp:77
@@ -474,7 +490,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: file: ui/pages/releasenotes.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, ReleaseNotes)
-#: rc.cpp:13 rc.cpp:388
+#: rc.cpp:13 rc.cpp:387
 msgid "Release Notes"
 msgstr "發行說明"
 
@@ -672,7 +688,7 @@ msgstr "安裝開機載入程式"
 #. i18n: ectx: property (toolTip), widget (QPushButton, advancedButton)
 #. i18n: file: ui/pages/partition.ui:263
 #. i18n: ectx: property (text), widget (QPushButton, advancedButton)
-#: rc.cpp:83 rc.cpp:345 rc.cpp:348
+#: rc.cpp:83 rc.cpp:344 rc.cpp:347
 msgid "Advanced..."
 msgstr "進階..."
 
@@ -825,7 +841,7 @@ msgstr "安裝 GRUB"
 #. i18n: ectx: property (text), widget (KPushButton, editPartitionCancelButton)
 #. i18n: file: ui/widgets/avatardialog.ui:114
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
-#: rc.cpp:150 rc.cpp:339 rc.cpp:426
+#: rc.cpp:150 rc.cpp:338 rc.cpp:425
 msgid "Cancel"
 msgstr "取消"
 
@@ -1358,7 +1374,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/partition.ui:103
 #. i18n: ectx: property (text), widget (QLabel, filesystemLabel)
-#: rc.cpp:336
+#: rc.cpp:335
 msgid "Filesystem: "
 msgstr "檔案系統："
 
@@ -1366,13 +1382,13 @@ msgstr "檔案系統："
 #. i18n: ectx: property (text), widget (KPushButton, editPartitionOkButton)
 #. i18n: file: ui/widgets/avatardialog.ui:85
 #. i18n: ectx: property (text), widget (QPushButton, okButton)
-#: rc.cpp:342 rc.cpp:423
+#: rc.cpp:341 rc.cpp:422
 msgid "Ok"
 msgstr "確定"
 
 #. i18n: file: ui/pages/partition.ui:298
 #. i18n: ectx: property (text), widget (QPushButton, formatButton)
-#: rc.cpp:351
+#: rc.cpp:350
 msgid "Format"
 msgstr "格式化"
 
@@ -1380,19 +1396,19 @@ msgstr "格式化"
 #. i18n: ectx: property (toolTip), widget (QPushButton, undoButton)
 #. i18n: file: ui/pages/partition.ui:320
 #. i18n: ectx: property (text), widget (QPushButton, undoButton)
-#: rc.cpp:354 rc.cpp:357
+#: rc.cpp:353 rc.cpp:356
 msgid "Undo"
 msgstr "取消"
 
 #. i18n: file: ui/pages/partition.ui:336
 #. i18n: ectx: property (toolTip), widget (QPushButton, unmountButton)
-#: rc.cpp:360
+#: rc.cpp:359
 msgid "Unmount the selected partition"
 msgstr "卸載所選的分割區"
 
 #. i18n: file: ui/pages/readyinstall.ui:51
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:363
+#: rc.cpp:362
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1420,7 +1436,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/readyinstall.ui:77
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:370
+#: rc.cpp:369
 msgid ""
 "The system will be installed with the following settings. Before continuing, "
 "please review your selections:\n"
@@ -1428,7 +1444,7 @@ msgstr "將以下列的設定進行系統安裝。繼續下一步前請再次檢
 
 #. i18n: file: ui/pages/readyinstall.ui:147
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:374
+#: rc.cpp:373
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1456,7 +1472,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/readyinstall.ui:211
 #. i18n: ectx: property (text), widget (QLabel, formatLabel)
-#: rc.cpp:381
+#: rc.cpp:380
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1485,7 +1501,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/releasenotes.ui:47
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:391
+#: rc.cpp:390
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1513,7 +1529,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/releasenotes.ui:60
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:398
+#: rc.cpp:397
 msgid ""
 "Check out what's new, the known issues and general information about this "
 "version of Chakra. As always, you are encouraged to tell us what you think, "
@@ -1524,7 +1540,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/usercreation.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:401
+#: rc.cpp:400
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1552,19 +1568,19 @@ msgstr ""
 
 #. i18n: file: ui/pages/usercreation.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:408
+#: rc.cpp:407
 msgid "Enter at least one login name and password."
 msgstr "輸入至少一個登入名稱與密碼。"
 
 #. i18n: file: ui/pages/usercreation.ui:178
 #. i18n: ectx: property (toolTip), widget (QPushButton, addUser)
-#: rc.cpp:411
+#: rc.cpp:410
 msgid "Add another user account."
 msgstr "新增其他使用者帳號。"
 
 #. i18n: file: ui/pages/usercreation.ui:286
 #. i18n: ectx: property (text), widget (QLabel, hostname_extra_label)
-#: rc.cpp:414
+#: rc.cpp:413
 msgid ""
 "<small>This name will be used if you make the computer visible to others on "
 "a network.</small>"
@@ -1573,61 +1589,61 @@ msgstr ""
 
 #. i18n: file: ui/pages/usercreation.ui:299
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:417
+#: rc.cpp:416
 msgid "...and, what is the name of this computer?"
 msgstr "...那麼，這臺電腦的名稱是什麼呢？"
 
 #. i18n: file: ui/widgets/avatardialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, AvatarDialog)
-#: rc.cpp:420
+#: rc.cpp:419
 msgid "Select an Avatar..."
 msgstr "選取個人圖示..."
 
 #. i18n: file: ui/widgets/userwidget.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:429
+#: rc.cpp:428
 msgid "Login: "
 msgstr "登入名稱："
 
 #. i18n: file: ui/widgets/userwidget.ui:56
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:432
+#: rc.cpp:431
 msgid "Password: "
 msgstr "密碼："
 
 #. i18n: file: ui/widgets/userwidget.ui:94
 #. i18n: ectx: property (toolTip), widget (QPushButton, userDetails)
-#: rc.cpp:435
+#: rc.cpp:434
 msgid "Include more information about this user."
 msgstr "包含更多關於此使用者的資訊。"
 
 #. i18n: file: ui/widgets/userwidget.ui:124
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:438
+#: rc.cpp:437
 msgid "Confirm Password:"
 msgstr "確認密碼："
 
 #. i18n: file: ui/widgets/userwidget.ui:146
 #. i18n: ectx: property (toolTip), widget (QPushButton, removeUser)
-#: rc.cpp:441
+#: rc.cpp:440
 msgid "Remove this user."
 msgstr "移除此使用者。"
 
 #. i18n: file: ui/widgets/userwidget.ui:264
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:444
+#: rc.cpp:443
 msgid "Name: "
 msgstr "名稱："
 
 #. i18n: file: ui/widgets/userwidget.ui:307
 #. i18n: ectx: property (text), widget (QCheckBox, autoLoginCheckBox)
-#: rc.cpp:447
+#: rc.cpp:446
 msgid "Login Automatically"
 msgstr "自動登入"
 
 #. i18n: file: ui/widgets/userwidget.ui:344
 #. i18n: ectx: property (text), widget (QCheckBox, rootUsesUserPwCheckBox)
-#: rc.cpp:450
+#: rc.cpp:449
 msgid ""
 "Use this password as \n"
 "the Administrator password"
@@ -1637,22 +1653,22 @@ msgstr ""
 
 #. i18n: file: ui/widgets/userwidget.ui:396
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:454
+#: rc.cpp:453
 msgid "Root Password:  "
 msgstr "Root 密碼："
 
 #. i18n: file: ui/widgets/userwidget.ui:406
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:457
+#: rc.cpp:456
 msgid "Confirm Root Password:  "
 msgstr "確認 Root 密碼："
 
-#: rc.cpp:458
+#: rc.cpp:457
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Cheng-Chia Tseng"
 
-#: rc.cpp:459
+#: rc.cpp:458
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "pswo10680@gmail.com"

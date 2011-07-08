@@ -132,10 +132,43 @@ job_setup_hardware()
 		unset NEW_RCCONF_MODULES
 	fi
 
-	# add modules to rc.conf
-	msg "setup MODULES array in rc.conf"
-	MODULES_ARRAY=$(hwdetect --modules)
-	sed -i -e "s,MODULES=.*,$MODULES_ARRAY,g" ${mountpoint}/etc/rc.conf
+	# load the modules array from rc.conf
+	msg "loading current modules from rc.conf"
+	RCCONF_MODULES=`cat ${mountpoint}/etc/rc.conf | grep "MODULES=" | cut -d "(" -f 2 | cut -d ")" -f 1`
+
+	# Check for detected modules:
+	msg "Check for detected modules"
+	DETECTED_MODULES=`hwdetect --modules | cut -d "(" -f 2 | cut -d ")" -f 1`
+
+	# Check for not loaded modules:
+	msg "Check for not loaded modules"
+	NOT_LOADED_MODULES=`hwdetect --modules-not-loaded | cut -d "(" -f 2 | cut -d ")" -f 1`
+
+	# put the not loaded modules into a temporary file
+	if [ -e "/tmp/not_loaded_modules" ] ; then
+		rm -rf /tmp/not_loaded_modules >/dev/null 2>&1
+	fi
+	echo $NOT_LOADED_MODULES > /tmp/not_loaded_modules
+
+	msg "detected modules = $DETECTED_MODULES"
+	msg "not loaded modules = $NOT_LOADED_DRIVERS"
+
+	# now compare the detected stuff with the not loaded stuff and put all mismatches into $NEW_RCCONF_MODULES
+	echo "detecting loaded modules"
+	for module in ${DETECTED_MODULES}; do
+	if [ "$(grep -v ${module} /tmp/not_loaded_modules)" ]; then
+		NEW_RCCONF_MODULES="$NEW_RCCONF_MODULES $module"
+	fi
+	done
+
+	# and put that into rc.conf
+	msg "writing new rc.conf"
+	sed -i -e "s,MODULES=.*,`echo "MODULES=($RCCONF_MODULES $NEW_RCCONF_MODULES)" | sed 's/  / /g'`,g" ${mountpoint}/etc/rc.conf
+
+	unset DETECTED_MODULES
+	unset NOT_LOADED_MODULES
+	unset RCCONF_MODULES
+	unset NEW_RCCONF_MODULES
 
 	# check if /opt/chakra/hooks has detected powersaving capabilities and loaded some modules.
 	# if thats the case, we add them to rc.conf too
@@ -148,11 +181,11 @@ job_setup_hardware()
 	AVAILABLE_GOVERNORS=`pushd /lib/modules/"$KERNEL"/kernel/drivers/cpufreq/ >/dev/null 2>&1; ls -1 *.ko* | cut -d "." -f 1 | sed 's/-/_/g'; popd >/dev/null 2>&1`
 
 	# put all available drivers/governors and loaded modules into some variables
-	LOADED_MODULES=`lsmod | awk '{print $1}'`
+	DETECTED_MODULES=`lsmod | awk '{print $1}' | grep -v Module`
 	AVAILABLE_DRIVERS="$AVAILABLE_CPU_DRIVERS $AVAILABLE_GOVERNORS"
 
 	msg "kernel = $KERNEL"
-	msg "loaded powersave modules = $LOADED_MODULES"
+	msg "loaded powersave modules = $DETECTED_MODULES"
 	msg "available powersave modules = $AVAILABLE_DRIVERS"
 
 	# put the available drivers/governors into a temporary file
@@ -166,7 +199,7 @@ job_setup_hardware()
 
 	# now compare the available stuff with the loaded stuff and put all matches into $DETECTED DRIVERS
 	msg "detecting loaded modules"
-	for module in ${LOADED_MODULES}; do
+	for module in ${DETECTED_MODULES}; do
 		if [ "$(grep ${module} /tmp/cpu_drivers)" ]; then
 			DETECTED_DRIVERS="$DETECTED_DRIVERS $module"
 		fi
@@ -177,7 +210,7 @@ job_setup_hardware()
 	RCCONF_MODULES=`cat ${mountpoint}/etc/rc.conf | grep "MODULES=" | cut -d "(" -f 2 | cut -d ")" -f 1`
 
 	# add the detected modules to the original modules array
-	msg "adding detected powersave modules to modules array"
+	msg "adding detected powersave modules to modules array: $DETECTED_DRIVERS"
 	NEW_RCCONF_MODULES=`echo "MODULES=($RCCONF_MODULES $DETECTED_DRIVERS)" | sed 's/  / /g'`
 
 	# and put that into rc.conf

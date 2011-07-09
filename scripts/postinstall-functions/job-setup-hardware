@@ -31,6 +31,7 @@ job_setup_hardware()
 		msg "nvidia detected"
 
 		msg "removing unneeded packages"
+		chroot ${mountpoint} /usr/bin/pacman -Rd libgl --noconfirm
 		chroot ${mountpoint} /usr/bin/pacman -Rd nouveau-dri --noconfirm
 		chroot ${mountpoint} /usr/bin/pacman -Rd xf86-nv --noconfirm
 		chroot ${mountpoint} /usr/bin/pacman -Rd xf86-nouveau --noconfirm
@@ -57,6 +58,7 @@ job_setup_hardware()
 		msg "nvidia-173xx detected"
 
 		msg "removing unneeded packages"
+		chroot ${mountpoint} /usr/bin/pacman -Rd libgl --noconfirm
 		chroot ${mountpoint} /usr/bin/pacman -Rd nouveau-dri --noconfirm
 		chroot ${mountpoint} /usr/bin/pacman -Rd xf86-nv --noconfirm
 		chroot ${mountpoint} /usr/bin/pacman -Rd xf86-nouveau --noconfirm
@@ -82,6 +84,7 @@ job_setup_hardware()
 		msg "nvidia-96xx detected"
 
 		msg "removing unneeded packages"
+		chroot ${mountpoint} /usr/bin/pacman -Rd libgl --noconfirm
 		chroot ${mountpoint} /usr/bin/pacman -Rd nouveau-dri --noconfirm
 		chroot ${mountpoint} /usr/bin/pacman -Rd xf86-nv --noconfirm
 		chroot ${mountpoint} /usr/bin/pacman -Rd xf86-nouveau --noconfirm

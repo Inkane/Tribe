@@ -15,7 +15,7 @@ job_pre_remove()
 	msg "running pacman"
 	for p in ${REMOVE_LIVE_PACKAGES}
 	do
-		chroot ${mountpoint} /usr/bin/pacman -Rdn ${p} --noconfirm
+		chroot ${mountpoint} /usr/bin/pacman -Rddn ${p} --noconfirm
 	done
 	
 	msg "umounting /proc, /sys and /dev"

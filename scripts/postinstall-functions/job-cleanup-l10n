@@ -23,7 +23,7 @@ job_cleanup_l10n()
 	for l10npkg in ${ALL_L10N}
 	do
 		if [ "${l10npkg}" != "$USED_L10N" ] ; then
-			chroot ${mountpoint} /usr/bin/pacman  -Rn kde-l10n-${l10npkg} --noconfirm
+			chroot ${mountpoint} /usr/bin/pacman  -Rddn kde-l10n-${l10npkg} --noconfirm
 		fi
 	done
 	

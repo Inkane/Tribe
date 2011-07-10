@@ -31,10 +31,10 @@ job_setup_hardware()
 		msg "nvidia detected"
 
 		msg "removing unneeded packages"
-		chroot ${mountpoint} /usr/bin/pacman -Rd libgl --noconfirm
-		chroot ${mountpoint} /usr/bin/pacman -Rd nouveau-dri --noconfirm
-		chroot ${mountpoint} /usr/bin/pacman -Rd xf86-nv --noconfirm
-		chroot ${mountpoint} /usr/bin/pacman -Rd xf86-nouveau --noconfirm
+		chroot ${mountpoint} /usr/bin/pacman -Rdd libgl --noconfirm
+		chroot ${mountpoint} /usr/bin/pacman -Rdd nouveau-dri --noconfirm
+		chroot ${mountpoint} /usr/bin/pacman -Rdd xf86-nv --noconfirm
+		chroot ${mountpoint} /usr/bin/pacman -Rdd xf86-nouveau --noconfirm
 		msg "installing driver"
 		pacman -r ${mountpoint} -Udf ${PKG_OVERLAY}/nvidia-utils-${NVIDIA_DRV_VER}* --noconfirm
 		pacman -r ${mountpoint} -Udf ${PKG_OVERLAY}/nvidia*${NVIDIA_DRV_VER}* --noconfirm
@@ -58,10 +58,10 @@ job_setup_hardware()
 		msg "nvidia-173xx detected"
 
 		msg "removing unneeded packages"
-		chroot ${mountpoint} /usr/bin/pacman -Rd libgl --noconfirm
-		chroot ${mountpoint} /usr/bin/pacman -Rd nouveau-dri --noconfirm
-		chroot ${mountpoint} /usr/bin/pacman -Rd xf86-nv --noconfirm
-		chroot ${mountpoint} /usr/bin/pacman -Rd xf86-nouveau --noconfirm
+		chroot ${mountpoint} /usr/bin/pacman -Rdd libgl --noconfirm
+		chroot ${mountpoint} /usr/bin/pacman -Rdd nouveau-dri --noconfirm
+		chroot ${mountpoint} /usr/bin/pacman -Rdd xf86-nv --noconfirm
+		chroot ${mountpoint} /usr/bin/pacman -Rdd xf86-nouveau --noconfirm
 		msg "installing driver"
 		pacman -r ${mountpoint} -Udf ${PKG_OVERLAY}/nvidia-173xx* --noconfirm
 
@@ -84,10 +84,10 @@ job_setup_hardware()
 		msg "nvidia-96xx detected"
 
 		msg "removing unneeded packages"
-		chroot ${mountpoint} /usr/bin/pacman -Rd libgl --noconfirm
-		chroot ${mountpoint} /usr/bin/pacman -Rd nouveau-dri --noconfirm
-		chroot ${mountpoint} /usr/bin/pacman -Rd xf86-nv --noconfirm
-		chroot ${mountpoint} /usr/bin/pacman -Rd xf86-nouveau --noconfirm
+		chroot ${mountpoint} /usr/bin/pacman -Rdd libgl --noconfirm
+		chroot ${mountpoint} /usr/bin/pacman -Rdd nouveau-dri --noconfirm
+		chroot ${mountpoint} /usr/bin/pacman -Rdd xf86-nv --noconfirm
+		chroot ${mountpoint} /usr/bin/pacman -Rdd xf86-nouveau --noconfirm
 		msg "installing driver" 
 		pacman -r ${mountpoint} -Udf ${PKG_OVERLAY}/nvidia-96xx* --noconfirm
 
@@ -111,9 +111,9 @@ job_setup_hardware()
 
 		msg "removing unneeded packages"
 		# remove conflicting packages
-		chroot ${mountpoint} /usr/bin/pacman -Rd ati-dri --noconfirm
-		chroot ${mountpoint} /usr/bin/pacman -Rd xf86-video-ati --noconfirm
-		chroot ${mountpoint} /usr/bin/pacman -Rd xf86-video-radeonhd --noconfirm
+		chroot ${mountpoint} /usr/bin/pacman -Rdd ati-dri --noconfirm
+		chroot ${mountpoint} /usr/bin/pacman -Rdd xf86-video-ati --noconfirm
+		chroot ${mountpoint} /usr/bin/pacman -Rdd xf86-video-radeonhd --noconfirm
 
 		msg "installing driver"
 		# install driver

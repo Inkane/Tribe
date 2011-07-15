@@ -187,6 +187,9 @@ void InstallationHandler::copyFiles()
     QProcess::execute("killall appset-qt");
     QProcess::execute("killall appset-helper");
     QProcess::execute("killall appsettray-qt");
+    
+    QProcess::execute("killall pacman");
+    QProcess::execute("/bin/rm -f /var/lib/pacman/db.lck");
 
     QString unsquashfsCommand = "unsquashfs -f -d " + QString(INSTALLATION_TARGET) + " " + QString(BOOTMNT_POINT) + "/root-image.sqfs";
 

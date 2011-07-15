@@ -8,6 +8,9 @@ job_setup_hardware()
 	mount -v -t proc none ${mountpoint}/proc 
 	mount -v -t sysfs none ${mountpoint}/sys 
 	mount -v -o bind /dev ${mountpoint}/dev 
+
+	# remove any db.lck
+	chroot ${mountpoint} /bin/rm -f /var/lib/pacman/db.lck
 	
 	# setup alsa volume levels
 	msg "setup alsa config"

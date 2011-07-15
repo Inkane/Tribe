@@ -8,6 +8,9 @@ job_download_doc()
 	mount -v -t sysfs none ${mountpoint}/sys 
 	mount -v -o bind /dev ${mountpoint}/dev 
 
+	# remove any db.lck
+	chroot ${mountpoint} /bin/rm -f /var/lib/pacman/db.lck
+
 	kdever_local=`pacman -Qi kde-common --noconfirm | sed -n 2p | cut -d':' -f 2 | cut -d' ' -f 2 | cut -d'-' -f 1`
 	kdever_remote=`pacman -Ss kde-common --noconfirm | sed -n 1p | cut -d' ' -f 2 | cut -d'-' -f 1`
 	

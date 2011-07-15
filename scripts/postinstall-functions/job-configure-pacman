@@ -13,6 +13,9 @@ job_configure_pacman()
 
 	# copy standard pacman.conf
 	cp -v /etc/skel/pacman.conf ${mountpoint}/etc/pacman.conf
+
+	# remove any db.lck
+	chroot ${mountpoint} /bin/rm -f /var/lib/pacman/db.lck
 	
 	if [ "$config_pacman" = "yes" ] ; then
 

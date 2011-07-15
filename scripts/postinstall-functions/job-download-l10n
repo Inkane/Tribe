@@ -7,6 +7,9 @@ job_download_l10n()
 	mount -v -t proc none ${mountpoint}/proc 
 	mount -v -t sysfs none ${mountpoint}/sys 
 	mount -v -o bind /dev ${mountpoint}/dev 
+
+	# remove any db.lck
+	chroot ${mountpoint} /bin/rm -f /var/lib/pacman/db.lck
 	
 	if [ "${kdelang}" != "" ] ; then
 

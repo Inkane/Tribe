@@ -17,6 +17,9 @@ job_cleanup_drivers()
 	###########################################################################
 	msg "cleaning up video drivers"
 
+	# remove any db.lck
+	chroot ${mountpoint} /bin/rm -f /var/lib/pacman/db.lck
+
 	USED_DRIVERS=`cat /etc/X11/xorg.conf | sed -n '/Section.*."Device"/,/EndSection/p' | grep -v "#" | grep Driver | cut -d '"' -f 2`
 	ALL_DRIVERS=`pacman -r ${mountpoint} -Q | grep xf86-video | cut -d "-" -f 3 | cut -d " " -f 1`
 

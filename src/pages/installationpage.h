@@ -56,7 +56,6 @@ private:
     int m_index;
     QPointer<QTimer> m_timer;
     Screenshots *m_screenshots;
-    QMovie *m_busyAnim;
 };
 
 #endif /*INSTALLATIONPAGE_H*/

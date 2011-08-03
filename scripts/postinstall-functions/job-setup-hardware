@@ -114,6 +114,7 @@ job_setup_hardware()
 
 		msg "removing unneeded packages"
 		# remove conflicting packages
+		chroot ${mountpoint} /usr/bin/pacman -Rdd libgl --noconfirm
 		chroot ${mountpoint} /usr/bin/pacman -Rdd ati-dri --noconfirm
 		chroot ${mountpoint} /usr/bin/pacman -Rdd xf86-video-ati --noconfirm
 		chroot ${mountpoint} /usr/bin/pacman -Rdd xf86-video-radeonhd --noconfirm

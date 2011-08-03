@@ -20,6 +20,7 @@
 
 #include "../screenshots.h"
 #include "installationpage.h"
+#include <QMovie>
 
 
 InstallationPage::InstallationPage(QWidget *parent)
@@ -54,6 +55,10 @@ void InstallationPage::createWidget()
     changeScreenShot();
 
     m_timer->start();
+    
+    m_busyAnim = new QMovie(":Images/images/busywidget.gif");
+    m_busyAnim->start();
+    ui.busyLabel->setMovie(m_busyAnim);
 
     // Start the madness!!
 

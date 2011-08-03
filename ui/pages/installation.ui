@@ -57,6 +57,19 @@
     </spacer>
    </item>
    <item>
+    <widget class="QLabel" name="busyLabel">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
     <widget class="QLabel" name="statusLabel">
      <property name="text">
       <string/>

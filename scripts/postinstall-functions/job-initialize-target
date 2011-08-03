@@ -80,10 +80,10 @@ job_initialize_target()
 
 	msg "set Chakra Version"
 	echo "DISTRIB_ID=\"Chakra\"" > "${mountpoint}/etc/lsb-release"
-	echo "DISTRIB_RELEASE=\"2011.04_20110521-1\"" >> "${mountpoint}/etc/lsb-release"
+	echo "DISTRIB_RELEASE=\"chakra-version\"" >> "${mountpoint}/etc/lsb-release"
 	echo "DISTRIB_CODENAME=\"code-name\"" >> "${mountpoint}/etc/lsb-release"
 	echo "DISTRIB_DESCRIPTION=\"Chakra Linux\"" >> "${mountpoint}/etc/lsb-release"
-	echo "Chakra Linux release 2011.04_20110521-1 (code-name)" > "${mountpoint}/etc/chakra-release"
+	echo "Chakra Linux release chakra-version (code-name)" > "${mountpoint}/etc/chakra-release"
 
 	msg "fix hwclock"
 	mkdir -pv ${mountpoint}/var/lib/hwclock

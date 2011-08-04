@@ -19,6 +19,12 @@ job_install_burg()
     echo "BURG____ >>>> device: ${_device}"
     chroot ${mountpoint} burg-install /dev/${_device} --no-floppy > /tmp/burg.log 2>&1
 
+    if [ -e "/tmp/catalyst" ] ; then
+       msg "Adding nomodeset for catalyst to kernel line"
+       sed -i -e "s,GRUB_CMDLINE_LINUX_DEFAULT=.*,GRUB_CMDLINE_LINUX_DEFAULT=\"quiet splash radeon.modeset=0\",g" ${mountpoint}/default/burg
+       sed -i -e "s,GRUB_CMDLINE_LINUX=.*,GRUB_CMDLINE_LINUX_DEFAULT=\"quiet splash radeon.modeset=0\",g" ${mountpoint}/default/burg
+    fi
+
     msg "generating []/boot/burg/burg.cfg"
     chroot ${mountpoint} burg-mkconfig -o /boot/burg/burg.cfg --skip-resume
 
@@ -27,11 +33,6 @@ job_install_burg()
        _sdevice=`echo /dev/${target_swap}`
        _suuid=`blkid "${_sdevice}" -s UUID -o value`
        sed -i -e "s~root=/dev~resume=/dev/disk/by-uuid/${_suuid} root=/dev~g" ${mountpoint}/boot/burg/burg.cfg
-    fi
-
-    if [ -e "/tmp/catalyst" ] ; then
-       msg "Adding nomodeset for catalyst to kernel line"
-       sed -i -e "s~root=/dev~radeon.modeset=0 root=/dev~g" ${mountpoint}/boot/burg/burg.cfg
     fi
 
     msg "umounting /proc, /sys, /dev/pts and /dev"

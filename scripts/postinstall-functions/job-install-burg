@@ -21,8 +21,8 @@ job_install_burg()
 
     if [ -e "/tmp/catalyst" ] ; then
        msg "Adding nomodeset for catalyst to kernel line"
-       sed -i -e "s,GRUB_CMDLINE_LINUX_DEFAULT=.*,GRUB_CMDLINE_LINUX_DEFAULT=\"quiet splash radeon.modeset=0\",g" ${mountpoint}/default/burg
-       sed -i -e "s,GRUB_CMDLINE_LINUX=.*,GRUB_CMDLINE_LINUX_DEFAULT=\"quiet splash radeon.modeset=0\",g" ${mountpoint}/default/burg
+       sed -i -e "s,GRUB_CMDLINE_LINUX_DEFAULT=.*,GRUB_CMDLINE_LINUX_DEFAULT=\"quiet splash radeon.modeset=0\",g" ${mountpoint}/etc/default/burg
+       sed -i -e "s,GRUB_CMDLINE_LINUX=.*,GRUB_CMDLINE_LINUX_DEFAULT=\"quiet splash radeon.modeset=0\",g" ${mountpoint}/etc/default/burg
     fi
 
     msg "generating []/boot/burg/burg.cfg"

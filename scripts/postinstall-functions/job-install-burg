@@ -26,7 +26,7 @@ job_install_burg()
     fi
 
     msg "generating []/boot/burg/burg.cfg"
-    chroot ${mountpoint} burg-mkconfig -o /boot/burg/burg.cfg --skip-resume
+    chroot ${mountpoint} burg-mkconfig -o /boot/burg/burg.cfg --skip-resume >> /tmp/burg.log 2>&1
 
     if [ "${use_swap}" = "yes" ] ; then
        msg "we are using swap partition"

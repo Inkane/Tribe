@@ -7,6 +7,10 @@ job_regenerate_locales()
 
 	msg_job_start "job_regenerate_locales"
 
+	mount -v -t proc none ${mountpoint}/proc 
+	mount -v -t sysfs none ${mountpoint}/sys 
+	mount -v -o bind /dev ${mountpoint}/dev 
+
 	#
 	# cleanup and regenerate locales
 	#
@@ -26,6 +30,9 @@ job_regenerate_locales()
 
 	# finally, regenerate the locales
 	chroot ${mountpoint} /usr/sbin/locale-gen
+
+	msg "umounting /proc, /sys and /dev"
+	umount -v ${mountpoint}/proc ${mountpoint}/sys ${mountpoint}/dev 
 
 	msg_job_done
 }

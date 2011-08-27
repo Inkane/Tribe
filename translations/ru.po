@@ -3,43 +3,42 @@
 #
 # Andrew Grigorev <andrew@ei-grad.ru>, 2010.
 # Максим Щановский <newmindcore@gmail.com>, 2010.
-# Michael Mayorov <greyman1@ya.ru>, 2010.
+# Michael Mayorov <greyman1@ya.ru>, 2010, 2011.
+# Умиджон Алмасов <u.almasov@mail.ru>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
 "POT-Creation-Date: 2011-06-29 21:20+0200\n"
-"PO-Revision-Date: 2010-03-05 18:19+0100\n"
-"Last-Translator: Manuel Tortosa Moreno <manutortosa@gmail.com>\n"
-"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
-"Language: ca\n"
+"PO-Revision-Date: 2011-08-28 00:01+0500\n"
+"Last-Translator: \n"
+"Language-Team: Russian <u.almasov@mail.ru>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 1.0\n"
+"X-Generator: Lokalize 1.2\n"
 
 #: src/installationhandler.cpp:87
 msgid "Tribe was not able to initialize needed path: "
-msgstr ""
+msgstr "Tribe не может инициализировать требуемый путь:"
 
 #: src/installationhandler.cpp:87
 msgid " , please resolve the issue, and try again."
-msgstr ""
+msgstr ", пожалуйста устраните проблему и попробуйте снова."
 
 #: src/installationhandler.cpp:149
 msgid "Installing the system ..."
 msgstr "Установка системы..."
 
 #: src/installationhandler.cpp:177
-#, fuzzy
 msgid "Mounting partitions..."
-msgstr "Монтирование %1 на %2"
+msgstr "Монтирование разделов..."
 
 #: src/installationhandler.cpp:185
-#, fuzzy
 msgid "Preparing installation..."
-msgstr "Окончание установки..."
+msgstr "Подготовка к установке..."
 
 #: src/installationhandler.cpp:209
 msgid "Error copying files"
@@ -54,26 +53,22 @@ msgid "Initializing target ..."
 msgstr "Инициализация цели ..."
 
 #: src/installationhandler.cpp:341
-#, fuzzy
 msgid "Please wait, configuring the new system ..."
-msgstr "Пожалуйста подождите, настраивается и запускается PostInstall ..."
+msgstr "Пожалуйста подождите, настраивается новая система ..."
 
 #: src/installationhandler.cpp:420
 msgid "Error in Postinstall script. See log for more details"
 msgstr "Ошибка в скрипте PostInstall. Смотрите лог для большей информации"
 
 #: src/installationhandler.cpp:429
-#, fuzzy
 msgid "Creating user accounts ..."
-msgstr "Создаем настройки ..."
+msgstr "Создание пользователей ..."
 
 #: src/installationhandler.cpp:432
-#, fuzzy
 msgid "Configuring software management..."
-msgstr "Настройка оборудования..."
+msgstr "Настройка управления ПО..."
 
 #: src/installationhandler.cpp:436
-#, fuzzy
 msgid "Removing unused packages..."
 msgstr "Удаление лишних пакетов..."
 
@@ -82,20 +77,16 @@ msgid "Installing additional packages..."
 msgstr "Установка дополнительных пакетов..."
 
 #: src/installationhandler.cpp:444
-#, fuzzy
 msgid "Configuring the display..."
-msgstr "Настройка оборудования..."
+msgstr "Настройка экрана..."
 
 #: src/installationhandler.cpp:448
-#, fuzzy
 msgid "Downloading and installing localization packages..."
-msgstr ""
-"Загрузка и установка пакетов локализации, это может занять некоторое время..."
+msgstr "Загрузка и установка пакетов локализации..."
 
 #: src/installationhandler.cpp:452
-#, fuzzy
 msgid "Downloading and installing documentation packages..."
-msgstr "Загрузить и установить пакеты с документацией"
+msgstr "Загрузка и установка пакетов с документацией..."
 
 #: src/installationhandler.cpp:456
 msgid "Setting up localization..."
@@ -103,7 +94,7 @@ msgstr "Настройка локализации..."
 
 #: src/installationhandler.cpp:460
 msgid "Creating daemon configuration..."
-msgstr "Создание конфигурации демонов..."
+msgstr "Создание конфигурации служб..."
 
 #: src/installationhandler.cpp:464
 msgid "Creating network configuration..."
@@ -118,29 +109,22 @@ msgid "Configuring hardware..."
 msgstr "Настройка оборудования..."
 
 #: src/installationhandler.cpp:479
-#, fuzzy
 msgid "Creating initial ramdisk images..."
-msgstr ""
-"Создание начального образа ramdisk. Это может занять много времени, "
-"расслабтесь..."
+msgstr "Создание начального образа ramdisk..."
 
 #: src/installationhandler.cpp:483
-#, fuzzy
 msgid "Generating locales..."
-msgstr "Повторная генерация локалей..."
+msgstr "Генерация локалей..."
 
 #: src/installationhandler.cpp:487
-#, fuzzy
 msgid "Removing unused localizations..."
 msgstr "Удаление лишних локализаций..."
 
 #: src/installationhandler.cpp:491
-#, fuzzy
 msgid "Removing unused drivers..."
 msgstr "Удаление лишних драйверов..."
 
 #: src/installationhandler.cpp:495
-#, fuzzy
 msgid "Finishing up..."
 msgstr "Окончание установки..."
 
@@ -149,13 +133,12 @@ msgid "Installation complete!"
 msgstr "Установка завершена!"
 
 #: src/installationhandler.cpp:590
-#, fuzzy
 msgid ""
 "Tribe was not able to initialize needed directories. Something is very "
 "wrong..."
 msgstr ""
-"Tribe не смог инициализировать необходимые директории. Возможно, у вас "
-"недостаточно прав, пожалуйста, запустите Tribe как root"
+"Tribe не смог инициализировать необходимые директории. Возможно, "
+"допущена ошибка..."
 
 #: src/installationhandler.cpp:614
 msgid "Could not mount %1"
@@ -172,14 +155,12 @@ msgid "Tribe"
 msgstr "Tribe"
 
 #: src/main.cpp:42
-#, fuzzy
 msgid "Graphical Installer for Chakra"
-msgstr "LiveCD установщик для Chakra"
+msgstr "Графический установщик для Chakra"
 
 #: src/main.cpp:43
-#, fuzzy
 msgid "(c) 2008 - 2011 the Chakra Development Team"
-msgstr "(c) 2008 команда разработчиков Chakra"
+msgstr "(c) 2008 - 2011 Команда разработчиков Chakra"
 
 #: src/main.cpp:43
 msgid "chakra@chakra-project.org"
@@ -207,31 +188,31 @@ msgstr "Jan Mette"
 
 #: src/main.cpp:47
 msgid "PostInstall Backend and Artwork"
-msgstr ""
+msgstr "Бэкэнд PostInstall и оформление"
 
 #: src/main.cpp:48
 msgid "Phil Miller"
-msgstr ""
+msgstr "Phil Miller"
 
 #: src/main.cpp:48 src/main.cpp:49
 msgid "PostInstall Backend"
-msgstr ""
+msgstr "Бэкэнд PostInstall"
 
 #: src/main.cpp:49
 msgid "Manuel Tortosa"
-msgstr ""
+msgstr "Manuel Tortosa"
 
 #: src/main.cpp:50
 msgid "Drake Justice"
-msgstr ""
+msgstr "Drake Justice"
 
 #: src/main.cpp:51
 msgid "Georg Grabler"
-msgstr ""
+msgstr "Georg Grabler"
 
 #: src/main.cpp:52
 msgid "Daniele Cocca"
-msgstr ""
+msgstr "Daniele Cocca"
 
 #: src/mainwindow.cpp:99
 msgid "Do you really want to abort the installation?"
@@ -243,87 +224,83 @@ msgid ""
 "Tribe will now quit, please check the installation logs in /tmp\n"
 "or ask for help in our forums."
 msgstr ""
-"Установка оборвалась! Была обнаружена следующая ошибка: %1.\n"
-"Программа Tribe закрыта, пожалуйста, проверьте логи в /tmp\n"
-"или спросите помощи на наших форумах"
+"Установка прервалась! Была обнаружена следующая ошибка: %1.\n"
+"Tribe будет закрыт, пожалуйста, проверьте логи в /tmp\n"
+"или спросите помощи на наших форумах."
 
 #: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:539
 msgid "Installing bootloader..."
 msgstr "Установка загрузчика..."
 
 #: src/pages/bootloaderpage.cpp:82
-#, fuzzy
 msgid "Creating OS list..."
-msgstr "Создание fstab..."
+msgstr "Создание списка ОС..."
 
 #: src/pages/configpage.cpp:153 src/pages/configpage.cpp:363
-#, fuzzy
 msgid "Downloading"
-msgstr "Опции загрузки"
+msgstr "Загрузка"
 
 #: src/pages/configpage.cpp:263
 msgid ""
 "Sorry, you have no internet connection at the moment \n"
 "Will stop bundle(s) installation now"
 msgstr ""
+"Извините, отсутствует подключение к интернету \n"
+"Установка бандлов будет прекращена"
 
 #: src/pages/configpage.cpp:349
-#, fuzzy
 msgid "loading package data..."
-msgstr "Удаление лишних пакетов..."
+msgstr "загрузка данных пакетов..."
 
 #: src/pages/configpage.cpp:350
-#, fuzzy
 msgid "Loading package data..."
-msgstr "Удаление лишних пакетов..."
+msgstr "Загрузка данных пакетов..."
 
 #: src/pages/configpage.cpp:351
 msgid "checking dependencies..."
-msgstr ""
+msgstr "проверка зависимостей..."
 
 #: src/pages/configpage.cpp:352
 msgid "Checking dependencies..."
-msgstr ""
+msgstr "Проверка зависимостей..."
 
 #: src/pages/configpage.cpp:353
 msgid "resolving dependencies..."
-msgstr ""
+msgstr "разрешение зависимостей..."
 
 #: src/pages/configpage.cpp:354
-#, fuzzy
 msgid "Resolving dependencies..."
-msgstr "Удаление лишних драйверов..."
+msgstr "Разрешение зависимостей..."
 
 #: src/pages/configpage.cpp:355
 msgid "checking package integrity..."
-msgstr ""
+msgstr "проверка целостности пакета..."
 
 #: src/pages/configpage.cpp:356
 msgid "Checking package integrity..."
-msgstr ""
+msgstr "Проверка целостности пакета..."
 
 #: src/pages/configpage.cpp:357
 msgid "Total Download Size:"
-msgstr ""
+msgstr "Общий размер загружаемых файлов:"
 
 #. i18n: file: ui/pages/config.ui:930
 #. i18n: ectx: property (text), widget (QPushButton, downloadBundlesButton)
 #: src/pages/configpage.cpp:417 rc.cpp:165
 msgid "Download Popular Bundles"
-msgstr ""
+msgstr "Загрузите популярные бандлы"
 
 #. i18n: file: ui/pages/config.ui:908
 #. i18n: ectx: property (text), widget (QPushButton, bootloaderSettingsButton)
 #: src/pages/configpage.cpp:435 rc.cpp:162
-#, fuzzy
 msgid "Bootloader Settings"
-msgstr "Загрузчик "
+msgstr "Настройка загрузчика "
 
 #. i18n: file: ui/pages/config.ui:869
 #. i18n: ectx: property (text), widget (QPushButton, initRamDiskButton)
 #: src/pages/configpage.cpp:448 rc.cpp:156
 msgid "Customize Initial Ramdisk"
-msgstr ""
+msgstr "Настройка начального Ramdisk"
 
 #: src/pages/configpage.cpp:511
 msgid ""
@@ -331,6 +308,9 @@ msgid ""
 "Some might went wrong. Before reboot it is recommended \n"
 "to check %2/boot/burg/burg.cfg. \n"
 msgstr ""
+"Настройка загрузчика завершилась с кодом: %1\n"
+"Возможно допущена ошибка. Перед перезагрузкой рекомендуется \n"
+"проверить %2/boot/burg/burg.cfg. \n"
 
 #: src/pages/licensepage.cpp:53
 msgid "Proprietary ATI Driver"
@@ -342,20 +322,19 @@ msgstr "Проприетарный драйвер NVidia"
 
 #: src/pages/licensepage.cpp:117
 msgid "Accept license for: "
-msgstr "Принять лицензионное соглашение:"
+msgstr "Принять лицензионное соглашение для:"
 
 #: src/pages/localepage.cpp:309
-#, fuzzy
 msgid "You need to select a timezone"
-msgstr "Выберите часовой пояс."
+msgstr "Выберите часовой пояс"
 
 #: src/pages/partitionpage.cpp:89
 msgid "Please enter a custom mountpoint"
-msgstr ""
+msgstr "Пожалуйста, укажите точку монтирования"
 
 #: src/pages/partitionpage.cpp:101
 msgid "The mount point must start with /"
-msgstr ""
+msgstr "Точка монтирования должна начинаться с /"
 
 #: src/pages/partitionpage.cpp:102
 msgid "Error"
@@ -363,45 +342,51 @@ msgstr "Ошибка"
 
 #: src/pages/partitionpage.cpp:196
 msgid "New"
-msgstr ""
+msgstr "Новый"
 
 #: src/pages/partitionpage.cpp:196
 msgid "Unsupported"
-msgstr ""
+msgstr "Не поддерживается"
 
 #: src/pages/partitionpage.cpp:416
 msgid "Loading partitions..."
-msgstr ""
+msgstr "Загрузка разделов..."
 
 #: src/pages/partitionpage.cpp:664
 msgid "Extended"
-msgstr ""
+msgstr "Расширенный"
 
 #: src/pages/partitionpage.cpp:809
 msgid ""
 "Tribe detected target partitions which are mounted. Do you want Tribe to "
 "unmount them?"
 msgstr ""
+"Tribe определил, что указанные разделы смонтированы. Вы хотите чтобы "
+"Tribe размонтировал их?"
 
 #: src/pages/partitionpage.cpp:825
 msgid ""
 "Tribe failed to unmount a partition which is target for the installation. "
 "You need to unmount the partitions manually before you can proceed."
 msgstr ""
+"Tribe не удалось размонтировать раздел, указанный для установки. "
+"Перед тем как продолжить Вы должны вручную размонтировать разделы."
 
 #: src/pages/partitionpage.cpp:827
 msgid "Target partitions mounted"
-msgstr ""
+msgstr "Указанные разделы смонтированы"
 
 #: src/pages/partitionpage.cpp:838
 msgid ""
 "The partition you have chosen to mount as '/' is too small. It should have a "
 "capacity of at least %1 for a successful installation."
 msgstr ""
+"Раздел, выбранный Вами для монтирования как '/', слишком мал. Для успешной "
+"установки размер должен быть не менее %1."
 
 #: src/pages/partitionpage.cpp:841 src/pages/partitionpage.cpp:881
 msgid "Target's capacity not sufficient"
-msgstr ""
+msgstr "Указанный размер недостаточен"
 
 #: src/pages/partitionpage.cpp:861
 msgid ""
@@ -409,27 +394,34 @@ msgid ""
 "This might create problems. Do you still want to continue without formating "
 "it?"
 msgstr ""
+"Раздел, выбранный Вами для монтирования как '/', не отмечен для "
+"форматирования. "
+"Это может вызвать проблемы. Вы хотите продолжить без форматирования?"
 
 #: src/pages/partitionpage.cpp:879
 msgid ""
 "You have selected '%1' as a mountpoint, which is not valid. A valid "
 "mountpoint always starts with '/' and represents a directory on disk"
 msgstr ""
+"Вы выбрали '%1' как точку монтирования, что неверно. Точка монтирования "
+"всегда должна начинаться с '/' и представлять директорию на диске"
 
 #: src/pages/partitionpage.cpp:890
 msgid ""
 "You need to select a root partition ('/') to proceed with the installation. "
-msgstr ""
+msgstr "Для продолжения установки Вы должны выбрать корневой раздел ('/')."
 
 #: src/pages/partitionpage.cpp:911
 msgid ""
 "When using a GPT Partition Table you need to have a unformatted partition "
 "with the bios_grub flag!"
 msgstr ""
+"При использовании таблицы разделов GPT нужен неотформатированный "
+"раздел с флагом bios_grub!"
 
 #: src/pages/readyinstallpage.cpp:77
 msgid "New partition (%1) on %2"
-msgstr ""
+msgstr "Новый раздел (%1) на %2"
 
 #: src/pages/readyinstallpage.cpp:80
 msgid "%1 will be used as %2"
@@ -437,57 +429,51 @@ msgstr "%1 будет использован как %2"
 
 #: src/pages/readyinstallpage.cpp:100
 msgid "Continue"
-msgstr ""
+msgstr "Продолжить"
 
 #: src/pages/readyinstallpage.cpp:104
-#, fuzzy
 msgid ""
 "The following partitions appear to be mounted: %1. To let the installation "
 "happen correctly, Tribe will now unmount them."
 msgstr ""
-"Следующий раздел уже смонтирован %1. Чтобы установка прошла корректно, Tribe "
-"демонтирует его сейчас."
+"Следующий раздел уже смонтирован %1. Чтобы установка прошла "
+"корректно, Tribe его размонтирует."
 
 #: src/pages/usercreationpage.cpp:148
 msgid "You must give at least one login name."
-msgstr ""
+msgstr "Вы должны указать хотя бы одно имя пользователя."
 
 #: src/pages/usercreationpage.cpp:152
-#, fuzzy
 msgid "Root Passwords do not match..."
-msgstr "Пароли не совпадают"
+msgstr "Пароли суперпользователя не совпадают..."
 
 #: src/pages/usercreationpage.cpp:166
-#, fuzzy
 msgid "Passwords cannot be empty."
-msgstr "Пароль не может быть пустым"
+msgstr "Пароли не могут быть пустыми."
 
 #: src/pages/usercreationpage.cpp:170
-#, fuzzy
 msgid "Passwords do not match..."
-msgstr "Пароли не совпадают"
+msgstr "Пароли не совпадают..."
 
 #: src/pages/usercreationpage.cpp:174
 msgid "Login names cannot be empty."
-msgstr ""
+msgstr "Имя пользователя не может быть пустым."
 
 #: src/pmhandler.cpp:360
-#, fuzzy
 msgid "Preparing hard drive for installation..."
-msgstr "Окончание установки..."
+msgstr "Подготовка диска к установке..."
 
 #: src/pmhandler.cpp:381
-#, fuzzy
 msgid "Analyzing disk..."
-msgstr "Установка..."
+msgstr "Проверка диска..."
 
 #: src/pmhandler.cpp:445
 msgid "There was an error while formatting partitions"
-msgstr ""
+msgstr "Во время форматирования разделов произошла ошибка"
 
 #: src/widgets/avatardialog.cpp:52 src/widgets/avatardialog.cpp:71
 msgid "Custom"
-msgstr ""
+msgstr "Дополнительно"
 
 #. i18n: file: ui/pages/base.ui:172
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -521,7 +507,7 @@ msgstr ""
 #. i18n: ectx: property (windowTitle), widget (QWidget, ReleaseNotes)
 #: rc.cpp:13 rc.cpp:387
 msgid "Release Notes"
-msgstr "Замечания:"
+msgstr "Заметки к выпуску"
 
 #. i18n: file: ui/pages/base.ui:224
 #. i18n: ectx: property (text), widget (QLabel, licenseLabel)
@@ -533,7 +519,7 @@ msgstr "Лицензионное соглашение"
 #. i18n: ectx: property (text), widget (QLabel, label_21)
 #: rc.cpp:19
 msgid "Ready to Install"
-msgstr "Готов к установке"
+msgstr "Готово к установке"
 
 #. i18n: file: ui/pages/base.ui:283
 #. i18n: ectx: property (text), widget (QLabel, label_24)
@@ -576,9 +562,8 @@ msgstr ""
 #. i18n: file: ui/pages/base.ui:334
 #. i18n: ectx: property (text), widget (QLabel, label_15)
 #: rc.cpp:35
-#, fuzzy
 msgid "Create Users"
-msgstr "Создать пользователя"
+msgstr "Создание пользователей"
 
 #. i18n: file: ui/pages/base.ui:390
 #. i18n: ectx: property (text), widget (QLabel, label_11)
@@ -642,7 +627,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_16)
 #: rc.cpp:55
 msgid "Reboot / Enjoy"
-msgstr ""
+msgstr "Перезагрузка / Удовольствие"
 
 #. i18n: file: ui/pages/base.ui:583
 #. i18n: ectx: property (text), widget (QPushButton, abortButton)
@@ -695,7 +680,6 @@ msgstr ""
 #. i18n: file: ui/pages/bootloader.ui:58
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:74
-#, fuzzy
 msgid ""
 "You can now install GRUB as your main bootloader.\n"
 "\n"
@@ -733,12 +717,11 @@ msgstr "Установить в:"
 #. i18n: ectx: property (text), widget (QLineEdit, lineEdit)
 #: rc.cpp:89
 msgid "hd0"
-msgstr "(hd0)"
+msgstr "hd0"
 
 #. i18n: file: ui/pages/config.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:92
-#, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -761,7 +744,7 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Супер-пользователь</span></p></"
+"size:22pt; font-weight:600; color:#ffffff;\">Конфигурация</span></p></"
 "body></html>"
 
 #. i18n: file: ui/pages/config.ui:55
@@ -770,106 +753,103 @@ msgstr ""
 msgid ""
 "Now that you have a Chakra install, you can now configure it to your liking."
 msgstr ""
+"Теперь, после установки Chakra, Вы можете настроить ее так как Вам нравится."
 
 #. i18n: file: ui/pages/config.ui:129
 #. i18n: ectx: property (text), widget (QCheckBox, usb)
 #: rc.cpp:102
 msgid "USB"
-msgstr ""
+msgstr "USB"
 
 #. i18n: file: ui/pages/config.ui:136
 #. i18n: ectx: property (text), widget (QCheckBox, nfs)
 #: rc.cpp:105
 msgid "NFS Shares"
-msgstr ""
+msgstr "Общие разделы NFS"
 
 #. i18n: file: ui/pages/config.ui:143
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: rc.cpp:108
-#, fuzzy
 msgid "Activate support for booting from:"
-msgstr "Активировать поддержку для загрузки с NFS разделов"
+msgstr "Активировать поддержку для загрузки с:"
 
 #. i18n: file: ui/pages/config.ui:150
 #. i18n: ectx: property (text), widget (QCheckBox, firewire)
 #: rc.cpp:111
 msgid "FireWire"
-msgstr ""
+msgstr "FireWire"
 
 #. i18n: file: ui/pages/config.ui:157
 #. i18n: ectx: property (text), widget (QCheckBox, raid)
 #: rc.cpp:114
 msgid "Software Raid Arrays"
-msgstr ""
+msgstr "Программные Raid-массивы"
 
 #. i18n: file: ui/pages/config.ui:164
 #. i18n: ectx: property (text), widget (QCheckBox, lvm2)
 #: rc.cpp:117
 msgid "LVM2 Volumes"
-msgstr ""
+msgstr "Разделы LVM2"
 
 #. i18n: file: ui/pages/config.ui:171
 #. i18n: ectx: property (text), widget (QCheckBox, encrypted)
 #: rc.cpp:120
 msgid "Encrypted Volumes"
-msgstr ""
+msgstr "Шифрованные разделы"
 
 #. i18n: file: ui/pages/config.ui:190
 #. i18n: ectx: property (text), widget (QPushButton, generateInitRamDiskButton)
 #: rc.cpp:123
 msgid "Generate Initial Ramdisk"
-msgstr ""
+msgstr "Генерировать начальный Ramdisk"
 
 #. i18n: file: ui/pages/config.ui:226
 #. i18n: ectx: property (text), widget (QCheckBox, mdp)
 #: rc.cpp:126
-#, fuzzy
 msgid "MDP Partition Arrays"
-msgstr "Подготовка разделов"
+msgstr "Массивы MDP-разделов"
 
 #. i18n: file: ui/pages/config.ui:233
 #. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
 #: rc.cpp:129
 msgid "PCMCIA"
-msgstr ""
+msgstr "PCMCIA"
 
 #. i18n: file: ui/pages/config.ui:324
 #. i18n: ectx: property (text), widget (QPushButton, bundlesDownloadButton)
 #: rc.cpp:132
-#, fuzzy
 msgid "Download"
-msgstr "Опции загрузки"
+msgstr "Загрузка"
 
 #. i18n: file: ui/pages/config.ui:418
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: rc.cpp:135
 msgid "Chakra"
-msgstr ""
+msgstr "Chakra"
 
 #. i18n: file: ui/pages/config.ui:466
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: rc.cpp:138
 msgid "Mac"
-msgstr ""
+msgstr "Mac"
 
 #. i18n: file: ui/pages/config.ui:495
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #: rc.cpp:141
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #. i18n: file: ui/pages/config.ui:574
 #. i18n: ectx: property (text), widget (QPushButton, colorizeButton)
 #: rc.cpp:144
 msgid "Colorize"
-msgstr ""
+msgstr "Разукрасить"
 
 #. i18n: file: ui/pages/config.ui:676
 #. i18n: ectx: property (text), widget (QCheckBox, bootloaderCheckBox)
 #: rc.cpp:147
-#, fuzzy
 msgid "Install GRUB"
-msgstr "Установить в:"
+msgstr "Установить GRUB"
 
 #. i18n: file: ui/pages/config.ui:761
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
@@ -879,25 +859,23 @@ msgstr "Установить в:"
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
 #: rc.cpp:150 rc.cpp:338 rc.cpp:425
 msgid "Cancel"
-msgstr ""
+msgstr "Отмена"
 
 #. i18n: file: ui/pages/config.ui:841
 #. i18n: ectx: property (text), widget (QPushButton, changeAppearanceButton)
 #: rc.cpp:153
 msgid "Change System Appearance"
-msgstr ""
+msgstr "Изменить вид системы"
 
 #. i18n: file: ui/pages/config.ui:879
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:159
-#, fuzzy
 msgid "Advanced Options"
-msgstr "Опции ramdisk"
+msgstr "Дополнительные варианты"
 
 #. i18n: file: ui/pages/finish.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:168
-#, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -926,7 +904,6 @@ msgstr ""
 #. i18n: file: ui/pages/finish.ui:68
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:175
-#, fuzzy
 msgid ""
 "Congratulations, the installation has been completed!\n"
 "\n"
@@ -945,9 +922,9 @@ msgid ""
 "\n"
 "The Chakra Team"
 msgstr ""
-"Поздравляем, установка завершилась успешно! Мы надеемся, что вы получили "
-"удовольствие от увиденного так же, как и мы наслаждались создавая это.\n"
+"Поздравляем, установка успешно завершена!\n"
 "\n"
+"Мы надеемся, что Вам понравилось увиденное так же, как нам создавать это.\n"
 "Вы можете перезагрузиться в установленную систему или продолжать "
 "использовать LiveCD.\n"
 "\n"
@@ -1029,7 +1006,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, pushButton)
 #: rc.cpp:210
 msgid "Ramdisk Options"
-msgstr "Опции ramdisk"
+msgstr "Опции Ramdisk"
 
 #. i18n: file: ui/pages/init.ui:111
 #. i18n: ectx: property (text), widget (QCheckBox, usb)
@@ -1059,13 +1036,13 @@ msgstr "Активировать поддержку для загрузки с N
 #. i18n: ectx: property (text), widget (QCheckBox, raid)
 #: rc.cpp:225
 msgid "Activate support for booting from Software Raid arrays"
-msgstr "Активировать поддержку для загрузки программных RAID массивов"
+msgstr "Активировать поддержку для загрузки программных RAID-массивов"
 
 #. i18n: file: ui/pages/init.ui:146
 #. i18n: ectx: property (text), widget (QCheckBox, mdp)
 #: rc.cpp:228
 msgid "Activate support for booting from Software Raid/MDP Partition arrays"
-msgstr "Активировать поддержку для загрузки с программных Raid/MDP массивов"
+msgstr "Активировать поддержку для загрузки с программных Raid/MDP-массивов"
 
 #. i18n: file: ui/pages/init.ui:153
 #. i18n: ectx: property (text), widget (QCheckBox, lvm2)
@@ -1112,7 +1089,6 @@ msgstr "Стартовая страница Tribe"
 #. i18n: file: ui/pages/intro.ui:105
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:252
-#, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1187,7 +1163,7 @@ msgstr ""
 "indent:0px; color:#eeeeee;\"></p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:"
-"#eeeeee;\"><span style=\" font-weight:600;\">Tribe, наш установщик, проведет "
+"#eeeeee;\"><span style=\" font-weight:600;\">Установщик проведет "
 "вас через процесс установки Live-системы Chakra</span></p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
@@ -1195,15 +1171,14 @@ msgstr ""
 "готовая к использованию система</p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\">Arch Linux для рабочего компьютера с пакетами "
-"KDEmod.</p>\n"
+"weight:600; color:#eeeeee;\">Chakra Linux для рабочего компьютера.</p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
 "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
 "indent:0px; font-weight:600; color:#eeeeee;\"></p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\">Пожалуйста, выделите время чтобы внимательно "
-"прочитать все тексты и объяснения.</p>\n"
+"weight:600; color:#eeeeee;\">Пожалуйста внимательно "
+"прочтите все инструкции.</p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
 "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
 "indent:0px; color:#eeeeee;\"></p>\n"
@@ -1212,7 +1187,7 @@ msgstr ""
 "style=\" font-weight:600; color:#eeeeee;\">Помните:</span><span style=\" "
 "font-weight:600;\"> </span><span style=\" font-weight:600; color:#ff0000;"
 "\">ЭТО ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ НАХОДИТСЯ В СТАДИИ ALPHA, ОНО МОЖЕТ СЪЕСТЬ "
-"ВАШУ КОШКУ</span></p>\n"
+"ВАШЕГО ХОМЯЧКА</span></p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
 "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
 "indent:0px; font-weight:600; color:#ff0000;\"></p>\n"
@@ -1246,7 +1221,7 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Лицензионное Соглашение</span></"
+"size:22pt; font-weight:600; color:#ffffff;\">Лицензионное соглашение</span></"
 "p></body></html>"
 
 #. i18n: file: ui/pages/license.ui:61
@@ -1314,7 +1289,7 @@ msgstr ""
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
 "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Язык &amp; Время</span></p></body></html>"
+"#ffffff;\">Язык и время</span></p></body></html>"
 
 #. i18n: file: ui/pages/locale.ui:45
 #. i18n: ectx: property (text), widget (QLabel, label_5)
@@ -1325,10 +1300,10 @@ msgid ""
 "settings at the bottom of the page. If you cant find your region or city on "
 "the globe, you can zoom in by using the slider on the left."
 msgstr ""
-"Пожалуйста, выберите ближайший город на земном шаре, чтобы программа "
-"установки могла предложить региональные параметры и часовой пояс для вас. Вы "
+"Пожалуйста, выберите ближайший город на глобусе, чтобы программа "
+"установки могла предложить региональные параметры и часовой пояс для Вас. Вы "
 "можете исправить предлагаемые параметры в нижней части страницы. Если вы не "
-"можете найти свой регион или город на планете, можно увеличить масштаб с "
+"можете найти свой регион или город на глобусе, можно увеличить масштаб с "
 "помощью ползунка слева."
 
 #. i18n: file: ui/pages/locale.ui:69
@@ -1340,9 +1315,8 @@ msgstr "Поиск..."
 #. i18n: file: ui/pages/locale.ui:162
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:304
-#, fuzzy
 msgid "Continent:"
-msgstr "Точка монтирования:"
+msgstr "Континент:"
 
 #. i18n: file: ui/pages/locale.ui:185
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -1367,16 +1341,14 @@ msgstr "Показать все"
 #. i18n: file: ui/pages/locale.ui:277
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: rc.cpp:319
-#, fuzzy
 msgid "Region: "
-msgstr "Имя пользователя:"
+msgstr "Регион:"
 
 #. i18n: file: ui/pages/partition.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Partition)
 #: rc.cpp:322
-#, fuzzy
 msgid "Partition"
-msgstr "Раздел:"
+msgstr "Раздел"
 
 #. i18n: file: ui/pages/partition.ui:43
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1414,12 +1386,15 @@ msgid ""
 "hard drive will be made when you will press \"Next\". Note: selected "
 "partitions are not explicitly formatted."
 msgstr ""
+"Пожалуйста, выберите точки монтирования для Ваших разделов. Изменения "
+"на диске обратимы, пока Вы не нажали \"Вперед\". Примечание: форматирование "
+"выбранных разделов происходит незаметно."
 
 #. i18n: file: ui/pages/partition.ui:103
 #. i18n: ectx: property (text), widget (QLabel, filesystemLabel)
 #: rc.cpp:335
 msgid "Filesystem: "
-msgstr ""
+msgstr "Файловая система:"
 
 #. i18n: file: ui/pages/partition.ui:201
 #. i18n: ectx: property (text), widget (KPushButton, editPartitionOkButton)
@@ -1427,14 +1402,13 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, okButton)
 #: rc.cpp:341 rc.cpp:422
 msgid "Ok"
-msgstr ""
+msgstr "OK"
 
 #. i18n: file: ui/pages/partition.ui:298
 #. i18n: ectx: property (text), widget (QPushButton, formatButton)
 #: rc.cpp:350
-#, fuzzy
 msgid "Format"
-msgstr "Форма"
+msgstr "Форматировать"
 
 #. i18n: file: ui/pages/partition.ui:317
 #. i18n: ectx: property (toolTip), widget (QPushButton, undoButton)
@@ -1442,14 +1416,13 @@ msgstr "Форма"
 #. i18n: ectx: property (text), widget (QPushButton, undoButton)
 #: rc.cpp:353 rc.cpp:356
 msgid "Undo"
-msgstr ""
+msgstr "Вернуть"
 
 #. i18n: file: ui/pages/partition.ui:336
 #. i18n: ectx: property (toolTip), widget (QPushButton, unmountButton)
 #: rc.cpp:359
-#, fuzzy
 msgid "Unmount the selected partition"
-msgstr "Выберите часовой пояс."
+msgstr "Размонтировать выбранный раздел"
 
 #. i18n: file: ui/pages/readyinstall.ui:51
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1486,8 +1459,8 @@ msgid ""
 "The system will be installed with the following settings. Before continuing, "
 "please review your selections:\n"
 msgstr ""
-"Система будет установлена со следующими настройками. Перед тем как "
-"продолжить, проверьте ваши установки:\n"
+"Система будет установлена со следующими параметрами. Перед тем как "
+"продолжить, еще раз проверьте Ваши параметры:\n"
 
 #. i18n: file: ui/pages/readyinstall.ui:147
 #. i18n: ectx: property (text), widget (QLabel, label_4)
@@ -1582,14 +1555,13 @@ msgid ""
 "version of Chakra. As always, you are encouraged to tell us what you think, "
 "either by visiting our forums or bug tracker."
 msgstr ""
-"Проверьте что нового, узнайте об известных проблемы и посмотрите общую "
-"информацию об этой версии Chakra. Как обычно, вы можете обратиться к нам, "
-"посетив наши форумы или баг-трекер."
+"Проверьте что нового, узнайте об известных проблемах и посмотрите общую "
+"информацию об этой версии Chakra. Как обычно, вы можете поделиться с нами "
+"своим мнением, посетив наши форумы или баг-трекер."
 
 #. i18n: file: ui/pages/usercreation.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:400
-#, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1612,21 +1584,21 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Супер-пользователь</span></p></"
+"size:22pt; font-weight:600; color:#ffffff;\">Создание пользователей</span></p>"
+"</"
 "body></html>"
 
 #. i18n: file: ui/pages/usercreation.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:407
 msgid "Enter at least one login name and password."
-msgstr ""
+msgstr "Введите хотя бы одно имя пользователя и пароль."
 
 #. i18n: file: ui/pages/usercreation.ui:178
 #. i18n: ectx: property (toolTip), widget (QPushButton, addUser)
 #: rc.cpp:410
-#, fuzzy
 msgid "Add another user account."
-msgstr "Добавить другого пользователя.."
+msgstr "Добавить еще одного пользователя."
 
 #. i18n: file: ui/pages/usercreation.ui:286
 #. i18n: ectx: property (text), widget (QLabel, hostname_extra_label)
@@ -1635,31 +1607,30 @@ msgid ""
 "<small>This name will be used if you make the computer visible to others on "
 "a network.</small>"
 msgstr ""
+"<small>Это имя будет использовано, если Вы сделаете компьютер "
+"видимым в сети.</small>"
 
 #. i18n: file: ui/pages/usercreation.ui:299
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:416
-#, fuzzy
 msgid "...and, what is the name of this computer?"
-msgstr "Имя этого компьютера:"
+msgstr "... а имя этого компьютера?"
 
 #. i18n: file: ui/widgets/avatardialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, AvatarDialog)
 #: rc.cpp:419
 msgid "Select an Avatar..."
-msgstr ""
+msgstr "Выберите аватар..."
 
 #. i18n: file: ui/widgets/userwidget.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:428
-#, fuzzy
 msgid "Login: "
 msgstr "Имя пользователя:"
 
 #. i18n: file: ui/widgets/userwidget.ui:56
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:431
-#, fuzzy
 msgid "Password: "
 msgstr "Пароль:"
 
@@ -1667,7 +1638,7 @@ msgstr "Пароль:"
 #. i18n: ectx: property (toolTip), widget (QPushButton, userDetails)
 #: rc.cpp:434
 msgid "Include more information about this user."
-msgstr ""
+msgstr "Добавьте больше информации об этом пользователе."
 
 #. i18n: file: ui/widgets/userwidget.ui:124
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -1679,12 +1650,11 @@ msgstr "Подтверждение пароля:"
 #. i18n: ectx: property (toolTip), widget (QPushButton, removeUser)
 #: rc.cpp:440
 msgid "Remove this user."
-msgstr ""
+msgstr "Удалить этого пользователя."
 
 #. i18n: file: ui/widgets/userwidget.ui:264
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: rc.cpp:443
-#, fuzzy
 msgid "Name: "
 msgstr "Имя:"
 
@@ -1692,7 +1662,7 @@ msgstr "Имя:"
 #. i18n: ectx: property (text), widget (QCheckBox, autoLoginCheckBox)
 #: rc.cpp:446
 msgid "Login Automatically"
-msgstr ""
+msgstr "Автомматически входить в систему"
 
 #. i18n: file: ui/widgets/userwidget.ui:344
 #. i18n: ectx: property (text), widget (QCheckBox, rootUsesUserPwCheckBox)
@@ -1701,42 +1671,43 @@ msgid ""
 "Use this password as \n"
 "the Administrator password"
 msgstr ""
+"Использовать этот пароль как \n"
+"пароль администратора"
 
 #. i18n: file: ui/widgets/userwidget.ui:396
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: rc.cpp:453
-#, fuzzy
 msgid "Root Password:  "
-msgstr "Пароль суперпользователя"
+msgstr "Пароль суперпользователя:"
 
 #. i18n: file: ui/widgets/userwidget.ui:406
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: rc.cpp:456
-#, fuzzy
 msgid "Confirm Root Password:  "
-msgstr "Подтверждение пароля:"
+msgstr "Подтверждение пароля суперпользователя:"
 
 #: rc.cpp:457
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Андрей Григорьев,Максим Щановский,Михаил Майоров"
+msgstr "Андрей Григорьев, Максим Щановский, Михаил Майоров, Умиджон Алмасов"
 
 #: rc.cpp:458
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "andrew@ei-grad.ru,newmindcore@gmail.com,greyman1@ya.ru"
+msgstr ""
+"andrew@ei-grad.ru, newmindcore@gmail.com, greyman1@ya.ru, u.almasov@mail.ru"
 
 #, fuzzy
 #~ msgid "installed"
-#~ msgstr "Установить в:"
+#~ msgstr "установлено"
 
 #, fuzzy
 #~ msgid "Install Packages"
-#~ msgstr "Пожалуйста ждите. Установка пакетов..."
+#~ msgstr "Установка пакетов"
 
 #, fuzzy
 #~ msgid "Install"
-#~ msgstr "Установить в:"
+#~ msgstr "Установить"
 
 #~ msgid "Delete"
 #~ msgstr "Удалить"

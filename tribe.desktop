@@ -2,6 +2,7 @@
 Categories=Qt;System;
 Comment[de]=
 Comment=
+Comment[ru]=Установить систему
 Exec=sudo tribe > /tmp/installation.log 2>&1
 GenericName[de]=Installation
 GenericName=Installation
@@ -10,6 +11,7 @@ GenericName[es]=Instalación
 GenericName[fr]=Installation
 GenericName[gl]=Instalación
 GenericName[nb]=Installering
+GenericName[nb]=Установка
 Icon=tribe
 MimeType=
 Name[de]=Tribe

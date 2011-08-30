@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
-"POT-Creation-Date: 2011-06-29 21:20+0200\n"
+"POT-Creation-Date: 2011-08-30 20:57+0200\n"
 "PO-Revision-Date: 2010-12-20 20:16-0200\n"
 "Last-Translator: \n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
@@ -39,104 +39,104 @@ msgstr "Montando partições..."
 msgid "Preparing installation..."
 msgstr "Preparando a instalação..."
 
-#: src/installationhandler.cpp:209
+#: src/installationhandler.cpp:212
 msgid "Error copying files"
 msgstr "Erro ao copiar os arquivos"
 
-#: src/installationhandler.cpp:212
+#: src/installationhandler.cpp:215
 msgid "Removing packages whose license has been declined ..."
 msgstr "Removendo pacotes cujas licenças foram recusadas..."
 
-#: src/installationhandler.cpp:250
+#: src/installationhandler.cpp:253
 msgid "Initializing target ..."
 msgstr "Inicializando o alvo..."
 
-#: src/installationhandler.cpp:341
+#: src/installationhandler.cpp:344
 msgid "Please wait, configuring the new system ..."
 msgstr "Por favor, aguarde. Configurando o novo sistema ..."
 
-#: src/installationhandler.cpp:420
+#: src/installationhandler.cpp:423
 msgid "Error in Postinstall script. See log for more details"
 msgstr "Erro no script Postinstall. Confira o log para mais detalhes"
 
-#: src/installationhandler.cpp:429
+#: src/installationhandler.cpp:432
 msgid "Creating user accounts ..."
 msgstr "Criando contas de usuários ..."
 
-#: src/installationhandler.cpp:432
+#: src/installationhandler.cpp:435
 msgid "Configuring software management..."
 msgstr "Configurando o gerenciamento de software..."
 
-#: src/installationhandler.cpp:436
+#: src/installationhandler.cpp:439
 msgid "Removing unused packages..."
 msgstr "Removendo pacotes desnecessários..."
 
-#: src/installationhandler.cpp:440
+#: src/installationhandler.cpp:443
 msgid "Installing additional packages..."
 msgstr "Instalando pacotes adicionais..."
 
-#: src/installationhandler.cpp:444
+#: src/installationhandler.cpp:447
 msgid "Configuring the display..."
 msgstr "Configurando o monitor..."
 
-#: src/installationhandler.cpp:448
+#: src/installationhandler.cpp:451
 msgid "Downloading and installing localization packages..."
 msgstr "Baixando e instalando pacotes de localização..."
 
-#: src/installationhandler.cpp:452
+#: src/installationhandler.cpp:455
 msgid "Downloading and installing documentation packages..."
 msgstr "Baixando e instalando pacotes de documentação..."
 
-#: src/installationhandler.cpp:456
+#: src/installationhandler.cpp:459
 #, fuzzy
 msgid "Setting up localization..."
 msgstr "Configurando a localização..."
 
-#: src/installationhandler.cpp:460
+#: src/installationhandler.cpp:463
 #, fuzzy
 msgid "Creating daemon configuration..."
 msgstr "Criando a configuração dos daemons..."
 
-#: src/installationhandler.cpp:464
+#: src/installationhandler.cpp:467
 msgid "Creating network configuration..."
 msgstr "Criando a configuração de rede..."
 
-#: src/installationhandler.cpp:468
+#: src/installationhandler.cpp:471
 msgid "Creating fstab..."
 msgstr "Criando o fstab..."
 
-#: src/installationhandler.cpp:475
+#: src/installationhandler.cpp:478
 msgid "Configuring hardware..."
 msgstr "Configurando o hardware..."
 
-#: src/installationhandler.cpp:479
+#: src/installationhandler.cpp:482
 #, fuzzy
 msgid "Creating initial ramdisk images..."
 msgstr ""
 "Criando as imagens iniciais de ramdisk. Isto pode demorar muito tempo, fique "
 "ligado... "
 
-#: src/installationhandler.cpp:483
+#: src/installationhandler.cpp:486
 msgid "Generating locales..."
 msgstr "Gerando as configurações regionais..."
 
-#: src/installationhandler.cpp:487
+#: src/installationhandler.cpp:490
 msgid "Removing unused localizations..."
 msgstr "Removendo configurações regionais não utilizadas..."
 
-#: src/installationhandler.cpp:491
+#: src/installationhandler.cpp:494
 msgid "Removing unused drivers..."
 msgstr "Removendo drivers não utilizados..."
 
-#: src/installationhandler.cpp:495
+#: src/installationhandler.cpp:498
 msgid "Finishing up..."
 msgstr "Finalizando..."
 
-#: src/installationhandler.cpp:499
+#: src/installationhandler.cpp:502
 msgid "Installation complete!"
 msgstr "Instalação completa!"
 
-#: src/installationhandler.cpp:590
+#: src/installationhandler.cpp:593
 msgid ""
 "Tribe was not able to initialize needed directories. Something is very "
 "wrong..."
@@ -144,7 +144,7 @@ msgstr ""
 "O Tribe não pôde inicializar diretórios necessários . Algo está muito "
 "errado..."
 
-#: src/installationhandler.cpp:614
+#: src/installationhandler.cpp:617
 msgid "Could not mount %1"
 msgstr "Não foi possível montar %1 ."
 
@@ -291,22 +291,22 @@ msgstr ""
 msgid "Total Download Size:"
 msgstr ""
 
-#. i18n: file: ui/pages/config.ui:930
+#. i18n: file: ui/pages/config.ui:928
 #. i18n: ectx: property (text), widget (QPushButton, downloadBundlesButton)
-#: src/pages/configpage.cpp:417 rc.cpp:165
+#: src/pages/configpage.cpp:417 rc.cpp:166
 msgid "Download Popular Bundles"
 msgstr ""
 
-#. i18n: file: ui/pages/config.ui:908
+#. i18n: file: ui/pages/config.ui:906
 #. i18n: ectx: property (text), widget (QPushButton, bootloaderSettingsButton)
-#: src/pages/configpage.cpp:435 rc.cpp:162
+#: src/pages/configpage.cpp:435 rc.cpp:163
 #, fuzzy
 msgid "Bootloader Settings"
 msgstr "Carregador de Boot"
 
-#. i18n: file: ui/pages/config.ui:869
+#. i18n: file: ui/pages/config.ui:867
 #. i18n: ectx: property (text), widget (QPushButton, initRamDiskButton)
-#: src/pages/configpage.cpp:448 rc.cpp:156
+#: src/pages/configpage.cpp:448 rc.cpp:157
 msgid "Customize Initial Ramdisk"
 msgstr ""
 
@@ -507,7 +507,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: file: ui/pages/releasenotes.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, ReleaseNotes)
-#: rc.cpp:13 rc.cpp:387
+#: rc.cpp:13 rc.cpp:391
 msgid "Release Notes"
 msgstr "Notas de Lançamento"
 
@@ -706,7 +706,7 @@ msgstr "Instalar o Carregador de Boot"
 #. i18n: ectx: property (toolTip), widget (QPushButton, advancedButton)
 #. i18n: file: ui/pages/partition.ui:263
 #. i18n: ectx: property (text), widget (QPushButton, advancedButton)
-#: rc.cpp:83 rc.cpp:344 rc.cpp:347
+#: rc.cpp:83 rc.cpp:348 rc.cpp:351
 msgid "Advanced..."
 msgstr "Avançado..."
 
@@ -752,139 +752,148 @@ msgstr ""
 "size:22pt; font-weight:600; color:#ffffff;\">Criar Usuários</span></p></"
 "body></html>"
 
-#. i18n: file: ui/pages/config.ui:55
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:99
-msgid ""
-"Now that you have a Chakra install, you can now configure it to your liking."
-msgstr ""
-
-#. i18n: file: ui/pages/config.ui:129
+#. i18n: file: ui/pages/config.ui:119
 #. i18n: ectx: property (text), widget (QCheckBox, usb)
-#: rc.cpp:102
+#: rc.cpp:99
 msgid "USB"
 msgstr ""
 
-#. i18n: file: ui/pages/config.ui:136
+#. i18n: file: ui/pages/config.ui:126
 #. i18n: ectx: property (text), widget (QCheckBox, nfs)
-#: rc.cpp:105
+#: rc.cpp:102
 msgid "NFS Shares"
 msgstr ""
 
-#. i18n: file: ui/pages/config.ui:143
+#. i18n: file: ui/pages/config.ui:133
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:108
+#: rc.cpp:105
 #, fuzzy
 msgid "Activate support for booting from:"
 msgstr "Ativar suporte para boot via compartilhamentos NFS"
 
-#. i18n: file: ui/pages/config.ui:150
+#. i18n: file: ui/pages/config.ui:140
 #. i18n: ectx: property (text), widget (QCheckBox, firewire)
-#: rc.cpp:111
+#: rc.cpp:108
 msgid "FireWire"
 msgstr ""
 
-#. i18n: file: ui/pages/config.ui:157
+#. i18n: file: ui/pages/config.ui:147
 #. i18n: ectx: property (text), widget (QCheckBox, raid)
-#: rc.cpp:114
+#: rc.cpp:111
 msgid "Software Raid Arrays"
 msgstr ""
 
-#. i18n: file: ui/pages/config.ui:164
+#. i18n: file: ui/pages/config.ui:154
 #. i18n: ectx: property (text), widget (QCheckBox, lvm2)
-#: rc.cpp:117
+#: rc.cpp:114
 msgid "LVM2 Volumes"
 msgstr ""
 
-#. i18n: file: ui/pages/config.ui:171
+#. i18n: file: ui/pages/config.ui:161
 #. i18n: ectx: property (text), widget (QCheckBox, encrypted)
-#: rc.cpp:120
+#: rc.cpp:117
 msgid "Encrypted Volumes"
 msgstr ""
 
-#. i18n: file: ui/pages/config.ui:190
+#. i18n: file: ui/pages/config.ui:180
 #. i18n: ectx: property (text), widget (QPushButton, generateInitRamDiskButton)
-#: rc.cpp:123
+#: rc.cpp:120
 msgid "Generate Initial Ramdisk"
 msgstr ""
 
-#. i18n: file: ui/pages/config.ui:226
+#. i18n: file: ui/pages/config.ui:216
 #. i18n: ectx: property (text), widget (QCheckBox, mdp)
-#: rc.cpp:126
+#: rc.cpp:123
 #, fuzzy
 msgid "MDP Partition Arrays"
 msgstr "Partição"
 
-#. i18n: file: ui/pages/config.ui:233
+#. i18n: file: ui/pages/config.ui:223
 #. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
-#: rc.cpp:129
+#: rc.cpp:126
 msgid "PCMCIA"
 msgstr ""
 
-#. i18n: file: ui/pages/config.ui:324
+#. i18n: file: ui/pages/config.ui:314
 #. i18n: ectx: property (text), widget (QPushButton, bundlesDownloadButton)
-#: rc.cpp:132
+#: rc.cpp:129
 msgid "Download"
 msgstr ""
 
-#. i18n: file: ui/pages/config.ui:418
+#. i18n: file: ui/pages/config.ui:408
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:135
+#: rc.cpp:132
 msgid "Chakra"
 msgstr ""
 
-#. i18n: file: ui/pages/config.ui:466
+#. i18n: file: ui/pages/config.ui:456
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:138
+#: rc.cpp:135
 msgid "Mac"
 msgstr ""
 
-#. i18n: file: ui/pages/config.ui:495
+#. i18n: file: ui/pages/config.ui:485
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:141
+#: rc.cpp:138
 #, fuzzy
 msgid "Windows"
 msgstr "Windows / %1"
 
-#. i18n: file: ui/pages/config.ui:574
+#. i18n: file: ui/pages/config.ui:564
 #. i18n: ectx: property (text), widget (QPushButton, colorizeButton)
-#: rc.cpp:144
+#: rc.cpp:141
 msgid "Colorize"
 msgstr ""
 
-#. i18n: file: ui/pages/config.ui:676
+#. i18n: file: ui/pages/config.ui:679
 #. i18n: ectx: property (text), widget (QCheckBox, bootloaderCheckBox)
-#: rc.cpp:147
+#: rc.cpp:144
 #, fuzzy
-msgid "Install GRUB"
+msgid "Install BURG"
 msgstr "Instalar em:"
 
-#. i18n: file: ui/pages/config.ui:761
+#. i18n: file: ui/pages/config.ui:690
+#. i18n: ectx: property (text), widget (QLabel, bootloaderLabel)
+#: rc.cpp:147
+msgid ""
+"You can now install BURG as your main bootloader. \n"
+"Tribe will install BURG on the same hard drive where your \"/boot\" folder "
+"is located."
+msgstr ""
+
+#. i18n: file: ui/pages/config.ui:759
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
 #. i18n: file: ui/pages/partition.ui:149
 #. i18n: ectx: property (text), widget (KPushButton, editPartitionCancelButton)
 #. i18n: file: ui/widgets/avatardialog.ui:114
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
-#: rc.cpp:150 rc.cpp:338 rc.cpp:425
+#: rc.cpp:151 rc.cpp:342 rc.cpp:429
 msgid "Cancel"
 msgstr "Cancelar"
 
-#. i18n: file: ui/pages/config.ui:841
+#. i18n: file: ui/pages/config.ui:839
 #. i18n: ectx: property (text), widget (QPushButton, changeAppearanceButton)
-#: rc.cpp:153
+#: rc.cpp:154
 msgid "Change System Appearance"
 msgstr ""
 
-#. i18n: file: ui/pages/config.ui:879
+#. i18n: file: ui/pages/config.ui:877
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:159
+#: rc.cpp:160
 #, fuzzy
 msgid "Advanced Options"
 msgstr "Opções de Ramdisk"
 
+#. i18n: file: ui/pages/config.ui:940
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:169
+msgid ""
+"Now that you have a Chakra install, you can now configure it to your liking."
+msgstr ""
+
 #. i18n: file: ui/pages/finish.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:168
+#: rc.cpp:172
 #, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -913,7 +922,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/finish.ui:68
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:175
+#: rc.cpp:179
 #, fuzzy
 msgid ""
 "Congratulations, the installation has been completed!\n"
@@ -954,25 +963,25 @@ msgstr ""
 
 #. i18n: file: ui/pages/finish.ui:105
 #. i18n: ectx: property (text), widget (QPushButton, rebootButton)
-#: rc.cpp:191
+#: rc.cpp:195
 msgid "Restart Computer"
 msgstr "Reiniciar o Computador"
 
 #. i18n: file: ui/pages/finish.ui:118
 #. i18n: ectx: property (text), widget (QPushButton, chakraButton)
-#: rc.cpp:194
+#: rc.cpp:198
 msgid "Keep using the LiveCD"
 msgstr "Continuar usando o LiveCD"
 
 #. i18n: file: ui/pages/init.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, tribeInit)
-#: rc.cpp:197
+#: rc.cpp:201
 msgid "Ramdisk"
 msgstr "Ramdisk"
 
 #. i18n: file: ui/pages/init.ui:49
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:200
+#: rc.cpp:204
 #, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -1001,7 +1010,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/init.ui:58
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:207
+#: rc.cpp:211
 #, fuzzy
 msgid ""
 "Your hardware will be configured automatically during the installation and a "
@@ -1021,92 +1030,92 @@ msgstr ""
 
 #. i18n: file: ui/pages/init.ui:81
 #. i18n: ectx: property (text), widget (QPushButton, pushButton)
-#: rc.cpp:210
+#: rc.cpp:214
 msgid "Ramdisk Options"
 msgstr "Opções de Ramdisk"
 
 #. i18n: file: ui/pages/init.ui:111
 #. i18n: ectx: property (text), widget (QCheckBox, usb)
-#: rc.cpp:213
+#: rc.cpp:217
 msgid "Activate support for booting from USB devices"
 msgstr "Ativar suporte para boot via dispositivos USB"
 
 #. i18n: file: ui/pages/init.ui:118
 #. i18n: ectx: property (text), widget (QCheckBox, firewire)
-#: rc.cpp:216
+#: rc.cpp:220
 msgid "Activate support for booting from FireWire devices"
 msgstr "Ativar suporte para boot via dispositivos FireWire"
 
 #. i18n: file: ui/pages/init.ui:125
 #. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
-#: rc.cpp:219
+#: rc.cpp:223
 msgid "Activate support for booting from PCMCIA devices"
 msgstr "Ativar suporte para boot via dispositivos PCMCIA"
 
 #. i18n: file: ui/pages/init.ui:132
 #. i18n: ectx: property (text), widget (QCheckBox, nfs)
-#: rc.cpp:222
+#: rc.cpp:226
 msgid "Activate support for booting from NFS shares"
 msgstr "Ativar suporte para boot via compartilhamentos NFS"
 
 #. i18n: file: ui/pages/init.ui:139
 #. i18n: ectx: property (text), widget (QCheckBox, raid)
-#: rc.cpp:225
+#: rc.cpp:229
 msgid "Activate support for booting from Software Raid arrays"
 msgstr "Ativar suporte para boot via Software Raids"
 
 #. i18n: file: ui/pages/init.ui:146
 #. i18n: ectx: property (text), widget (QCheckBox, mdp)
-#: rc.cpp:228
+#: rc.cpp:232
 #, fuzzy
 msgid "Activate support for booting from Software Raid/MDP Partition arrays"
 msgstr "Ativar suporte para boot via Software Raid/MDP Partition"
 
 #. i18n: file: ui/pages/init.ui:153
 #. i18n: ectx: property (text), widget (QCheckBox, lvm2)
-#: rc.cpp:231
+#: rc.cpp:235
 msgid "Activate support for booting from LVM2 volumes"
 msgstr "Ativar suporte para boot via volumes LVM2"
 
 #. i18n: file: ui/pages/init.ui:160
 #. i18n: ectx: property (text), widget (QCheckBox, encrypted)
-#: rc.cpp:234
+#: rc.cpp:238
 msgid "Activate support for booting from Encrypted volumes"
 msgstr "Ativar suporte para boot via volumes encriptados"
 
 #. i18n: file: ui/pages/installation.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Installation)
-#: rc.cpp:237
+#: rc.cpp:241
 msgid "Tribe Installation"
 msgstr "Instalação do Tribe"
 
-#. i18n: file: ui/pages/installation.ui:88
+#. i18n: file: ui/pages/installation.ui:101
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:240
+#: rc.cpp:244
 msgid "Nine Inch Nails - Discipline"
 msgstr "Nine Inch Nails - Discipline"
 
-#. i18n: file: ui/pages/installation.ui:93
+#. i18n: file: ui/pages/installation.ui:106
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:243
+#: rc.cpp:247
 msgid "Severed Fifth - War"
 msgstr "Severed Fifth - War"
 
-#. i18n: file: ui/pages/installation.ui:98
+#. i18n: file: ui/pages/installation.ui:111
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:246
+#: rc.cpp:250
 msgid "Dunkelstern - Out of the box"
 msgstr "Dunkelstern - Out of the box"
 
 #. i18n: file: ui/pages/intro.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Intro)
-#: rc.cpp:249
+#: rc.cpp:253
 msgid "Tribe Intro"
 msgstr "Introdução do Tribe"
 
 #. i18n: file: ui/pages/intro.ui:105
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:252
+#: rc.cpp:256
 #, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -1229,7 +1238,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/license.ui:49
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:269
+#: rc.cpp:273
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1257,7 +1266,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/license.ui:61
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:276
+#: rc.cpp:280
 #, fuzzy
 msgid ""
 "Chakra includes some proprietary software like hardware drivers, media "
@@ -1272,31 +1281,31 @@ msgstr ""
 
 #. i18n: file: ui/pages/license.ui:74
 #. i18n: ectx: property (text), widget (QLabel, licenseLabel)
-#: rc.cpp:279
+#: rc.cpp:283
 msgid "Approve license for:"
 msgstr "Aprove a licença para:"
 
 #. i18n: file: ui/pages/license.ui:103
 #. i18n: ectx: property (text), widget (QRadioButton, declineButton)
-#: rc.cpp:282
+#: rc.cpp:286
 msgid "Decline License"
 msgstr "Recusar Licença"
 
 #. i18n: file: ui/pages/license.ui:110
 #. i18n: ectx: property (text), widget (QRadioButton, acceptButton)
-#: rc.cpp:285
+#: rc.cpp:289
 msgid "Accept License"
 msgstr "Aceitar Licença"
 
 #. i18n: file: ui/pages/locale.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Locale)
-#: rc.cpp:288
+#: rc.cpp:292
 msgid "Form"
 msgstr "Formulário"
 
 #. i18n: file: ui/pages/locale.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:291
+#: rc.cpp:295
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1324,7 +1333,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/locale.ui:45
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:298
+#: rc.cpp:302
 msgid ""
 "Please select the nearest city on the globe so the installer can suggest the "
 "locale and timezone settings for you. You can fine-tune the suggested "
@@ -1339,26 +1348,26 @@ msgstr ""
 
 #. i18n: file: ui/pages/locale.ui:69
 #. i18n: ectx: property (clickMessage), widget (KLineEdit, locationsSearch)
-#: rc.cpp:301
+#: rc.cpp:305
 msgid "Search..."
 msgstr "Procurar"
 
 #. i18n: file: ui/pages/locale.ui:162
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:304
+#: rc.cpp:308
 #, fuzzy
 msgid "Continent:"
 msgstr "Ponto de Montagem:"
 
 #. i18n: file: ui/pages/locale.ui:185
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:307
+#: rc.cpp:311
 msgid "Language:"
 msgstr "Idioma:"
 
 #. i18n: file: ui/pages/locale.ui:208
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:310
+#: rc.cpp:314
 msgid "Locale:"
 msgstr "Localização:"
 
@@ -1366,25 +1375,25 @@ msgstr "Localização:"
 #. i18n: ectx: property (text), widget (QCheckBox, showLocalesCheck)
 #. i18n: file: ui/pages/locale.ui:270
 #. i18n: ectx: property (text), widget (QCheckBox, showKDELangsCheck)
-#: rc.cpp:313 rc.cpp:316
+#: rc.cpp:317 rc.cpp:320
 msgid "Show all"
 msgstr "Mostrar tudo"
 
 #. i18n: file: ui/pages/locale.ui:277
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:319
+#: rc.cpp:323
 msgid "Region: "
 msgstr "Região:"
 
 #. i18n: file: ui/pages/partition.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Partition)
-#: rc.cpp:322
+#: rc.cpp:326
 msgid "Partition"
 msgstr "Partição"
 
 #. i18n: file: ui/pages/partition.ui:43
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:325
+#: rc.cpp:329
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1412,7 +1421,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/partition.ui:58
 #. i18n: ectx: property (text), widget (QLabel, descriptionLabel)
-#: rc.cpp:332
+#: rc.cpp:336
 #, fuzzy
 msgid ""
 "Please select a mountpoint for your partitions. No permanent changes to your "
@@ -1425,7 +1434,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/partition.ui:103
 #. i18n: ectx: property (text), widget (QLabel, filesystemLabel)
-#: rc.cpp:335
+#: rc.cpp:339
 #, fuzzy
 msgid "Filesystem: "
 msgstr "Sistema de Arquivos"
@@ -1434,13 +1443,13 @@ msgstr "Sistema de Arquivos"
 #. i18n: ectx: property (text), widget (KPushButton, editPartitionOkButton)
 #. i18n: file: ui/widgets/avatardialog.ui:85
 #. i18n: ectx: property (text), widget (QPushButton, okButton)
-#: rc.cpp:341 rc.cpp:422
+#: rc.cpp:345 rc.cpp:426
 msgid "Ok"
 msgstr "Ok"
 
 #. i18n: file: ui/pages/partition.ui:298
 #. i18n: ectx: property (text), widget (QPushButton, formatButton)
-#: rc.cpp:350
+#: rc.cpp:354
 msgid "Format"
 msgstr "Formatar"
 
@@ -1448,19 +1457,19 @@ msgstr "Formatar"
 #. i18n: ectx: property (toolTip), widget (QPushButton, undoButton)
 #. i18n: file: ui/pages/partition.ui:320
 #. i18n: ectx: property (text), widget (QPushButton, undoButton)
-#: rc.cpp:353 rc.cpp:356
+#: rc.cpp:357 rc.cpp:360
 msgid "Undo"
 msgstr "Desfazer"
 
 #. i18n: file: ui/pages/partition.ui:336
 #. i18n: ectx: property (toolTip), widget (QPushButton, unmountButton)
-#: rc.cpp:359
+#: rc.cpp:363
 msgid "Unmount the selected partition"
 msgstr "Desmontar a partição selecionada"
 
 #. i18n: file: ui/pages/readyinstall.ui:51
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:362
+#: rc.cpp:366
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1488,7 +1497,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/readyinstall.ui:77
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:369
+#: rc.cpp:373
 #, fuzzy
 msgid ""
 "The system will be installed with the following settings. Before continuing, "
@@ -1499,7 +1508,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/readyinstall.ui:147
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:373
+#: rc.cpp:377
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1527,7 +1536,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/readyinstall.ui:211
 #. i18n: ectx: property (text), widget (QLabel, formatLabel)
-#: rc.cpp:380
+#: rc.cpp:384
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1556,7 +1565,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/releasenotes.ui:47
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:390
+#: rc.cpp:394
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1584,7 +1593,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/releasenotes.ui:60
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:397
+#: rc.cpp:401
 #, fuzzy
 msgid ""
 "Check out what's new, the known issues and general information about this "
@@ -1597,7 +1606,7 @@ msgstr ""
 
 #. i18n: file: ui/pages/usercreation.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:400
+#: rc.cpp:404
 #, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -1626,20 +1635,20 @@ msgstr ""
 
 #. i18n: file: ui/pages/usercreation.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:407
+#: rc.cpp:411
 #, fuzzy
 msgid "Enter at least one login name and password."
 msgstr "Indique ao menos um nome de usuário e uma senha. "
 
 #. i18n: file: ui/pages/usercreation.ui:178
 #. i18n: ectx: property (toolTip), widget (QPushButton, addUser)
-#: rc.cpp:410
+#: rc.cpp:414
 msgid "Add another user account."
 msgstr "Adicionar outra conta de usuário."
 
 #. i18n: file: ui/pages/usercreation.ui:286
 #. i18n: ectx: property (text), widget (QLabel, hostname_extra_label)
-#: rc.cpp:413
+#: rc.cpp:417
 #, fuzzy
 msgid ""
 "<small>This name will be used if you make the computer visible to others on "
@@ -1650,63 +1659,63 @@ msgstr ""
 
 #. i18n: file: ui/pages/usercreation.ui:299
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:416
+#: rc.cpp:420
 msgid "...and, what is the name of this computer?"
 msgstr "...e, como você quer denominar este computador?"
 
 #. i18n: file: ui/widgets/avatardialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, AvatarDialog)
-#: rc.cpp:419
+#: rc.cpp:423
 msgid "Select an Avatar..."
 msgstr "Selecione um avatar..."
 
 #. i18n: file: ui/widgets/userwidget.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:428
+#: rc.cpp:432
 msgid "Login: "
 msgstr "Usuário:"
 
 #. i18n: file: ui/widgets/userwidget.ui:56
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:431
+#: rc.cpp:435
 #, fuzzy
 msgid "Password: "
 msgstr "Senha:"
 
 #. i18n: file: ui/widgets/userwidget.ui:94
 #. i18n: ectx: property (toolTip), widget (QPushButton, userDetails)
-#: rc.cpp:434
+#: rc.cpp:438
 msgid "Include more information about this user."
 msgstr "Incluir mais informações sobre este usuário."
 
 #. i18n: file: ui/widgets/userwidget.ui:124
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:437
+#: rc.cpp:441
 msgid "Confirm Password:"
 msgstr "Confirmar senha:"
 
 #. i18n: file: ui/widgets/userwidget.ui:146
 #. i18n: ectx: property (toolTip), widget (QPushButton, removeUser)
-#: rc.cpp:440
+#: rc.cpp:444
 msgid "Remove this user."
 msgstr "Remover este usuário."
 
 #. i18n: file: ui/widgets/userwidget.ui:264
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:443
+#: rc.cpp:447
 #, fuzzy
 msgid "Name: "
 msgstr "Nome:"
 
 #. i18n: file: ui/widgets/userwidget.ui:307
 #. i18n: ectx: property (text), widget (QCheckBox, autoLoginCheckBox)
-#: rc.cpp:446
+#: rc.cpp:450
 msgid "Login Automatically"
 msgstr "Login Automático"
 
 #. i18n: file: ui/widgets/userwidget.ui:344
 #. i18n: ectx: property (text), widget (QCheckBox, rootUsesUserPwCheckBox)
-#: rc.cpp:449
+#: rc.cpp:453
 #, fuzzy
 msgid ""
 "Use this password as \n"
@@ -1717,23 +1726,23 @@ msgstr ""
 
 #. i18n: file: ui/widgets/userwidget.ui:396
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:453
+#: rc.cpp:457
 #, fuzzy
 msgid "Root Password:  "
 msgstr "Senha do Administrador:"
 
 #. i18n: file: ui/widgets/userwidget.ui:406
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:456
+#: rc.cpp:460
 msgid "Confirm Root Password:  "
 msgstr "Confirmar senha do Administrador:"
 
-#: rc.cpp:457
+#: rc.cpp:461
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Francisco Fernandes (Chicao), Leonardo Meira (serraemeira)"
 
-#: rc.cpp:458
+#: rc.cpp:462
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "xykaumjunior@gmail.com,serra.meira@gmail.com"

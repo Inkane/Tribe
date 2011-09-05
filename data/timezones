@@ -187,10 +187,11 @@ Asia/Novosibirsk:ru_RU.UTF-8,ru_RU,ru_RU.KOI8-R,en_US.UTF-8,en_US:ru,en_gb
 Asia/Phnom_Penh:th_TH.UTF-8,th_TH:en_gb
 Asia/Qatar:ar_QA.UTF-8,ar_QA,en_US.UTF-8,en_US:ar,en_gb
 Asia/Riyadh:ar_SA.UTF-8,ar_SA,ar_AE.UTF-8,ar_AE,ar_BH.UTF-8,ar_BH,ar_DZ.UTF-8,ar_DZ,ar_EG.UTF-8,ar_EG,ar_IN,ar_IQ.UTF-8,ar_IQ,ar_JO.UTF-8,ar_JO,ar_KW.UTF-8,ar_KW,ar_,B.UTF-8,ar_LB,ar_LY.UTF-8,ar_LY,ar_MA.UTF-8,ar_MA,ar_OM.UTF-8,ar_OM,ar_QA.UTF-8,ar_QA,ar_SD.UTF-8,ar_SD,ar_SY.UTF-8,ar_SY,ar_TN.UTF-8,ar_TN,ar_YE.UTF-8,ar_YE,en_GB.UTF-8,en_GB,en_US.UTF-8,en_US,fr_FR.UTF-8,fr_FR,fr_FR@euro:ar,en_gb
-Asia/Samarkand:ru_RU.UTF-8,ru_RU,ru_RU.KOI8-R,en_US.UTF-8,en_US:ru,en_gb
+Asia/Samarkand:uz_UZ,uz_UZ@cyrillic,ru_RU.UTF-8,ru_RU,ru_RU.KOI8-R,en_US.UTF-8,en_US:ru,en_gb
 Asia/Seoul:ko_KR.UTF-8:ko,en_gb
 Asia/Shanghai:zh_CN.UTF-8,zh_CN,zh_CN.GB18030,zh_CN.GBK:zh_cn,en_gb
 Asia/Singapore:zh_CN.UTF-8,zh_CN,zh_CN.GB18030,zh_CN.GBK,zh_TW.UTF-8,zh_TW.EUC-TW,en_US.UTF-8,en_US:zh_cn,zh_tw,en_gb
+Asia/Tashkent:uz_UZ,uz_UZ@cyrillic,ru_RU.UTF-8,ru_RU,ru_RU.KOI8-R,en_US.UTF-8,en_US:ru,en_gb
 Asia/Taipei:zh_TW.UTF-8,zh_TW.EUC-TW,zh_CN.UTF-8,zh_CN,zh_CN.GB18030,zh_CN.GBK,en_US.UTF-8,en_US:zh_tw,zh_cn,en_gb
 Asia/Tehran:en_GB.UTF-8,en_GB:en_gb
 Asia/Tel_Aviv:he_IL.UTF-8,he_IL,ar_AE.UTF-8,ar_AE,ar_BH.UTF-8,ar_BH,ar_DZ.UTF-8,ar_DZ,ar_EG.UTF-8,ar_EG,ar_IN,ar_IQ.UTF-8,ar_IQ,ar_JO.UTF-8,ar_JO,ar_KW.UTF-8,ar_KW,ar_LB.UTF-8,ar_LB,ar_LY.UTF-8,ar_LY,ar_MA.UTF-8,ar_MA,ar_OM.UTF-8,ar_OM,ar_QA.UTF-8,ar_QA,ar_SA.UTF-8,ar_SA,ar_SD.UTF-8,ar_SD,ar_SY.UTF-8,ar_SY,ar_TN.UTF-8,ar_TN,ar_YE.UTF-8,ar_YE,en_GB.UTF-8,en_GB,en_US.UTF-8,en_US,fr_FR.UTF-8,fr_FR,fr_FR@euro:ar,he,en_gb

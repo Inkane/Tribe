@@ -579,7 +579,7 @@
   <name>Samarkand</name>
   <description>Asia/Samarkand</description>
   <Point>
-    <coordinates>67.9666667,40.4333333</coordinates>
+    <coordinates>66.959722,39.654167</coordinates>
   </Point>
 </Placemark>
 <Placemark>
@@ -594,6 +594,13 @@
   <description>Asia/Shanghai</description>
   <Point>
     <coordinates>121.4759,31.2244</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Tashkent</name>
+  <description>Asia/Tashkent</description>
+  <Point>
+    <coordinates>69.25,41.333333</coordinates>
   </Point>
 </Placemark>
 <Placemark>

@@ -37,30 +37,85 @@ job_configure_users()
 	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/.kde4/share/apps/konqueror
 	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/.local/share/applications
 
+	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/.backup/$(date +%m%d%y)
+
+
+
 	msg "setup gtk config"
-	cp -v /etc/skel/.gtkrc-2.0-kde4 ${mountpoint}/home/${user_name}/.gtkrc-2.0-kde4
+	if [ -e /etc/skel/.gtrk-2.0.kde4 ] ; then
+	    mv -v ${mountpoint}/home/${user_name}/.gtkrc-2.0-kde4 ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	fi
+	cp -vf /etc/skel/.gtkrc-2.0-kde4 ${mountpoint}/home/${user_name}/.gtkrc-2.0-kde4
 	echo "export GTK2_RC_FILES=/home/${user_name}/.gtkrc-2.0-kde4" > ${mountpoint}/home/${user_name}/.kde4/env/gtk-qt-engine.rc.sh
 	chmod a+x ${mountpoint}/home/${user_name}/.kde4/env/gtk-qt-engine.rc.sh
 
+	msg "backup user files"
+	if [ -e ${mountpoint}/home/${user_name}/.kde4/share/config/ksplashrc ] ; then
+	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/ksplashrc ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	fi
+	if [ -e ${mountpoint}/home/${user_name}/.kde4/share/config/plasma-desktop-appletsrc ] ; then
+	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/plasma-desktop-appletsrc ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	fi
+	if [ -e ${mountpoint}/home/${user_name}/.kde4/share/config/plasmarc ] ; then
+	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/plasmarc ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	fi
+	if [ -e ${mountpoint}/home/${user_name}/.kde4/share/config/kcmfonts ] ; then
+	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/kcmfonts ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	fi
+	if [ -e ${mountpoint}/home/${user_name}/.kde4/share/apps/konqueror/bookmarks.xml ] ; then
+	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/apps/konqueror/bookmarks.xml ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	fi
+	if [ -e ${mountpoint}/home/${user_name}/.kde4/share/config/rekonqrc ] ; then
+	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/rekonqrc ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	fi
+	if [ -e ${mountpoint}/home/${user_name}/.kde4/share/config/khotkeysrc ] ; then
+	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/khotkeysrc ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	fi
+	if [ -e ${mountpoint}/home/${user_name}/.kde4/share/config/kglobalshortcutsrc ] ; then
+	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/kglobalshortcutsrc ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	fi
+	if [ -e ${mountpoint}/home/${user_name}/.kde4/share/config/yakuakerc ] ; then
+	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/yakuakerc ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	fi
+	if [ -e ${mountpoint}/home/${user_name}/.kde4/share/config/kickoffrc ] ; then
+	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/kickoffrc ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	fi
+	if [ -e ${mountpoint}/home/${user_name}/.kde4/share/config/networkmanagementrc ] ; then
+	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/networkmanagementrc ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	fi
+	if [ -e ${mountpoint}/home/${user_name}/.bashrc ] ; then
+	    mv -v ${mountpoint}/home/${user_name}/.bashrc ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	fi
+	if [ -e ${mountpoint}/home/${user_name}/.local/share/applications/mimeapps.list ] ; then
+	    mv -v ${mountpoint}/home/${user_name}/.local/share/applications/mimeapps.list ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	fi
+	if [ -e ${mountpoint}/home/${user_name}/.kde4/share/config/kcminputrc ] ; then
+	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/kcminputrc ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	fi
+	if [ -e ${mountpoint}/home/${user_name}/.kde4/share/config/kdeglobals ] ; then
+	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/kdeglobals ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	fi
+
 	msg "setup chakra settings"
-	cp -v /etc/skel/ksplashrc ${mountpoint}/home/${user_name}/.kde4/share/config/ksplashrc
-	cp -v /etc/skel/plasma-desktop-appletsrc ${mountpoint}/home/${user_name}/.kde4/share/config/plasma-desktop-appletsrc
-	cp -v /etc/skel/plasmarc ${mountpoint}/home/${user_name}/.kde4/share/config/plasmarc
-	cp -v /etc/skel/kcmfonts ${mountpoint}/home/${user_name}/.kde4/share/config/kcmfonts
-	cp -v /etc/skel/bookmarks.xml ${mountpoint}/home/${user_name}/.kde4/share/apps/konqueror/bookmarks.xml
-	cp -v /etc/skel/rekonqrc ${mountpoint}/home/${user_name}/.kde4/share/config/rekonqrc
-	cp -v /etc/skel/khotkeysrc ${mountpoint}/home/${user_name}/.kde4/share/config/khotkeysrc
-	cp -v /etc/skel/kglobalshortcutsrc ${mountpoint}/home/${user_name}/.kde4/share/config/kglobalshortcutsrc
-        cp -v /etc/skel/yakuakerc ${mountpoint}/home/${user_name}/.kde4/share/config/yakuakerc
-        cp -v /etc/skel/kickoffrc ${mountpoint}/home/${user_name}/.kde4/share/config/kickoffrc
-	cp -v /etc/skel/networkmanagementrc ${mountpoint}/home/${user_name}/.kde4/share/config/networkmanagementrc
-	chroot ${mountpoint} ln -sf /usr/bin/bluedevil-monolithic /home/${user_name}/.kde4/Autostart/bluedevil-monolithic
+	cp -vf /etc/skel/ksplashrc ${mountpoint}/home/${user_name}/.kde4/share/config/ksplashrc
+	cp -vf /etc/skel/plasma-desktop-appletsrc ${mountpoint}/home/${user_name}/.kde4/share/config/plasma-desktop-appletsrc
+	cp -vf /etc/skel/plasmarc ${mountpoint}/home/${user_name}/.kde4/share/config/plasmarc
+	cp -vf /etc/skel/kcmfonts ${mountpoint}/home/${user_name}/.kde4/share/config/kcmfonts
+	cp -vf /etc/skel/bookmarks.xml ${mountpoint}/home/${user_name}/.kde4/share/apps/konqueror/bookmarks.xml
+	cp -vf /etc/skel/rekonqrc ${mountpoint}/home/${user_name}/.kde4/share/config/rekonqrc
+	cp -vf /etc/skel/khotkeysrc ${mountpoint}/home/${user_name}/.kde4/share/config/khotkeysrc
+	cp -vf /etc/skel/kglobalshortcutsrc ${mountpoint}/home/${user_name}/.kde4/share/config/kglobalshortcutsrc
+        cp -vf /etc/skel/yakuakerc ${mountpoint}/home/${user_name}/.kde4/share/config/yakuakerc
+        cp -vf /etc/skel/kickoffrc ${mountpoint}/home/${user_name}/.kde4/share/config/kickoffrc
+	cp -vf /etc/skel/networkmanagementrc ${mountpoint}/home/${user_name}/.kde4/share/config/networkmanagementrc
 	cp -vf /etc/skel/.bashrc ${mountpoint}/home/${user_name}/.bashrc
-	cp -v /etc/skel/mimeapps.list ${mountpoint}/home/${user_name}/.local/share/applications/mimeapps.list
+	cp -vf /etc/skel/mimeapps.list ${mountpoint}/home/${user_name}/.local/share/applications/mimeapps.list
+
+	chroot ${mountpoint} ln -sf /usr/bin/bluedevil-monolithic /home/${user_name}/.kde4/Autostart/bluedevil-monolithic
 
 	msg "adjust default cursor: white-cursor"
-	cp -v /etc/skel/kcminputrc ${mountpoint}/home/${user_name}/.kde4/share/config/kcminputrc
-	cp -v /etc/skel/kdeglobals ${mountpoint}/home/${user_name}/.kde4/share/config/kdeglobals
+	cp -vf /etc/skel/kcminputrc ${mountpoint}/home/${user_name}/.kde4/share/config/kcminputrc
+	cp -vf /etc/skel/kdeglobals ${mountpoint}/home/${user_name}/.kde4/share/config/kdeglobals
 
 	# fix quirks
 	if [ -e "${mountpoint}/home/${user_name}/10-keyboard.conf" ] ; then

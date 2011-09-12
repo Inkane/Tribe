@@ -307,7 +307,7 @@ msgid ""
 msgstr ""
 "Yuklatuvchining sozlanishi chiqish kodi bilan tugadi: %1\n"
 "Xato ro'y berdi. Qayta yukanishdan oldin %2/boot/burg/burg.cfg\n"
-"tekshirish tavsiya etiladi."
+"tekshirish tavsiya etiladi. \n"
 
 #: src/pages/licensepage.cpp:53
 msgid "Proprietary ATI Driver"

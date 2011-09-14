@@ -37,7 +37,7 @@ job_configure_users()
 	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/.kde4/share/apps/konqueror
 	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/.local/share/applications
 
-	timestamp=`date +%F-%H%M`
+	timestamp=`date +%F-%H%M%S`
 	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/.backup/${timestamp}
 
 	msg "setup gtk config"

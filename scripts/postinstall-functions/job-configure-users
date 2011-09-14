@@ -37,13 +37,12 @@ job_configure_users()
 	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/.kde4/share/apps/konqueror
 	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/.local/share/applications
 
-	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/.backup/$(date +%m%d%y)
-
-
+	timestamp=`date +%F-%H%M`
+	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/.backup/${timestamp}
 
 	msg "setup gtk config"
 	if [ -e /etc/skel/.gtrk-2.0.kde4 ] ; then
-	    mv -v ${mountpoint}/home/${user_name}/.gtkrc-2.0-kde4 ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	    mv -v ${mountpoint}/home/${user_name}/.gtkrc-2.0-kde4 ${mountpoint}/home/${user_name}/.backup/${timestamp}/
 	fi
 	cp -vf /etc/skel/.gtkrc-2.0-kde4 ${mountpoint}/home/${user_name}/.gtkrc-2.0-kde4
 	echo "export GTK2_RC_FILES=/home/${user_name}/.gtkrc-2.0-kde4" > ${mountpoint}/home/${user_name}/.kde4/env/gtk-qt-engine.rc.sh
@@ -51,49 +50,49 @@ job_configure_users()
 
 	msg "backup user files"
 	if [ -e ${mountpoint}/home/${user_name}/.kde4/share/config/ksplashrc ] ; then
-	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/ksplashrc ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/ksplashrc ${mountpoint}/home/${user_name}/.backup/${timestamp}/
 	fi
 	if [ -e ${mountpoint}/home/${user_name}/.kde4/share/config/plasma-desktop-appletsrc ] ; then
-	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/plasma-desktop-appletsrc ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/plasma-desktop-appletsrc ${mountpoint}/home/${user_name}/.backup/${timestamp}/
 	fi
 	if [ -e ${mountpoint}/home/${user_name}/.kde4/share/config/plasmarc ] ; then
-	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/plasmarc ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/plasmarc ${mountpoint}/home/${user_name}/.backup/${timestamp}/
 	fi
 	if [ -e ${mountpoint}/home/${user_name}/.kde4/share/config/kcmfonts ] ; then
-	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/kcmfonts ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/kcmfonts ${mountpoint}/home/${user_name}/.backup/${timestamp}/
 	fi
 	if [ -e ${mountpoint}/home/${user_name}/.kde4/share/apps/konqueror/bookmarks.xml ] ; then
-	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/apps/konqueror/bookmarks.xml ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/apps/konqueror/bookmarks.xml ${mountpoint}/home/${user_name}/.backup/${timestamp}/
 	fi
 	if [ -e ${mountpoint}/home/${user_name}/.kde4/share/config/rekonqrc ] ; then
-	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/rekonqrc ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/rekonqrc ${mountpoint}/home/${user_name}/.backup/${timestamp}/
 	fi
 	if [ -e ${mountpoint}/home/${user_name}/.kde4/share/config/khotkeysrc ] ; then
-	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/khotkeysrc ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/khotkeysrc ${mountpoint}/home/${user_name}/.backup/${timestamp}/
 	fi
 	if [ -e ${mountpoint}/home/${user_name}/.kde4/share/config/kglobalshortcutsrc ] ; then
-	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/kglobalshortcutsrc ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/kglobalshortcutsrc ${mountpoint}/home/${user_name}/.backup/${timestamp}/
 	fi
 	if [ -e ${mountpoint}/home/${user_name}/.kde4/share/config/yakuakerc ] ; then
-	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/yakuakerc ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/yakuakerc ${mountpoint}/home/${user_name}/.backup/${timestamp}/
 	fi
 	if [ -e ${mountpoint}/home/${user_name}/.kde4/share/config/kickoffrc ] ; then
-	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/kickoffrc ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/kickoffrc ${mountpoint}/home/${user_name}/.backup/${timestamp}/
 	fi
 	if [ -e ${mountpoint}/home/${user_name}/.kde4/share/config/networkmanagementrc ] ; then
-	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/networkmanagementrc ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/networkmanagementrc ${mountpoint}/home/${user_name}/.backup/${timestamp}/
 	fi
 	if [ -e ${mountpoint}/home/${user_name}/.bashrc ] ; then
-	    mv -v ${mountpoint}/home/${user_name}/.bashrc ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	    mv -v ${mountpoint}/home/${user_name}/.bashrc ${mountpoint}/home/${user_name}/.backup/${timestamp}/
 	fi
 	if [ -e ${mountpoint}/home/${user_name}/.local/share/applications/mimeapps.list ] ; then
-	    mv -v ${mountpoint}/home/${user_name}/.local/share/applications/mimeapps.list ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	    mv -v ${mountpoint}/home/${user_name}/.local/share/applications/mimeapps.list ${mountpoint}/home/${user_name}/.backup/${timestamp}/
 	fi
 	if [ -e ${mountpoint}/home/${user_name}/.kde4/share/config/kcminputrc ] ; then
-	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/kcminputrc ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/kcminputrc ${mountpoint}/home/${user_name}/.backup/${timestamp}/
 	fi
 	if [ -e ${mountpoint}/home/${user_name}/.kde4/share/config/kdeglobals ] ; then
-	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/kdeglobals ${mountpoint}/home/${user_name}/.backup/$(date +%m%d%y)/
+	    mv -v ${mountpoint}/home/${user_name}/.kde4/share/config/kdeglobals ${mountpoint}/home/${user_name}/.backup/${timestamp}/
 	fi
 
 	msg "setup chakra settings"

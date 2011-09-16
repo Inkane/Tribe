@@ -327,7 +327,7 @@ msgstr ""
 #: src/pages/configpage.cpp:511
 msgid ""
 "Bootloader-Setup finished with Exitcode: %1\n"
-"Some might went wrong. Before reboot it is recommended \n"
+"Something went wrong. Before reboot it is recommended \n"
 "to check %2/boot/burg/burg.cfg. \n"
 msgstr ""
 

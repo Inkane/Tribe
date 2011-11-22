@@ -292,6 +292,10 @@ job_rcconf_l10n()
 	sed -i -e "s#LOCALE=\"$current_locale\"#LOCALE=\"$locale\"#" ${mountpoint}/etc/rc.conf
 	sed -i -e "s#^.*TIMEZONE=.*#TIMEZONE=\"$timezone_real\"#" ${mountpoint}/etc/rc.conf
 
+	msg "create /etc/locale.conf"
+	echo "LANG=${locale}" > ${mountpoint}/etc/locale.conf
+	echo "LC_MESSAGES=${locale}" >> ${mountpoint}/etc/locale.conf
+
 	msg "activate selected locale"
 	sed -i -e "s/^[ |\t]*#"$locale"/"$locale"/" ${mountpoint}/etc/locale.gen
 

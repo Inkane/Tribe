@@ -20,7 +20,7 @@ job_create_fstab()
 	_device=`echo /dev/${target_root}`
 	_uuid=`blkid "${_device}" -s UUID -o value`
 
-	echo "UUID=${_uuid} / ${target_root_fs} defaults 0 0" >>${mountpoint}/etc/fstab
+	echo "UUID=${_uuid} / ${target_root_fs} defaults 0 1" >>${mountpoint}/etc/fstab
 	unset _uuid
 	unset _device
 

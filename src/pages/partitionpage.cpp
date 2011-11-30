@@ -485,7 +485,8 @@ void PartitionPage::createWidget()
         if (fs->supportCreate() != FileSystem::cmdSupportNone && 
             fs->type() != FileSystem::Extended &&
             fs->type() != FileSystem::Unformatted) {
-            fsNames.append(fs->name());
+	    if(fs->name()!="ext2")
+	      fsNames.append(fs->name());
         }
     }
 

@@ -8,13 +8,11 @@ job_add_extra_mountpoint()
 	msg_job_start "job_add_extra_mountpoint"
 
 	# add other filesystems (if any)
-	if [ -d "${mountpoint}${extra_mountpoint}" ] ; then
-		echo -n ""
-	else
-		mkdir -v -p ${mountpoint}${extra_mountpoint}
+	if [ ! -d "${mountpoint}${extra_mountpoint}" ] ; then
+		mkdir -v -p "${mountpoint}${extra_mountpoint}"
 	fi
 
-	if [ "${extra_mountpoint}" != "" ] ; then
+	if [ -n "${extra_mountpoint}" ] ; then
 		msg "Creating fstab entry for ${extra_mountpoint}"
 
 		_device=`echo /dev/${extra_mountpoint_target}`

@@ -501,16 +501,16 @@ void ConfigPage::bootloaderInstalled(int exitCode, QProcess::ExitStatus exitStat
     Q_UNUSED(exitStatus)
 
     if (exitCode == 0) {
-        qDebug() << ">> BURG: Exitcode " + exitCode;
-        qDebug() << ">> BURG: Setup finished without any errors...";
+        qDebug() << ">> GRUB2: Exitcode " + exitCode;
+        qDebug() << ">> GRUB2: Setup finished without any errors...";
         emit deleteProgressWidget();
         emit goToNextStep();
     } else {
-        qDebug() << ">> BURG: Exitcode " + exitCode;
-        qDebug() << ">> BURG: Setup might got wrong...";
+        qDebug() << ">> GRUB2: Exitcode " + exitCode;
+        qDebug() << ">> GRUB2: Setup might got wrong...";
         QString completeMessage = i18n("Bootloader-Setup finished with Exitcode: %1\n"
                                        "Some might went wrong. Before reboot it is recommended \n"
-                                       "to check %2/boot/burg/burg.cfg. \n"
+                                       "to check %2/boot/grub/grub.cfg. \n"
                                        ).arg(exitCode).arg(INSTALLATION_TARGET);
 
         KDialog *dialog = new KDialog(this, Qt::FramelessWindowHint);
@@ -541,7 +541,7 @@ void ConfigPage::aboutToGoToNext()
 
     connect(m_install, SIGNAL(bootloaderInstalled(int, QProcess::ExitStatus)), SLOT(bootloaderInstalled(int, QProcess::ExitStatus)));
 
-    m_install->installBootloader(0, "0"); /// burg install
+    m_install->installBootloader(0, "0"); /// grub2 install
 }
 
 void ConfigPage::aboutToGoToPrevious()

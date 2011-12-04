@@ -8,7 +8,7 @@ job_rcconf_l10n()
 	msg_job_start "job_rcconf_l10n"
 
 	#
-	# this checks for the lang=XX burg parameter. When it is set,
+	# this checks for the lang=XX grub2 parameter. When it is set,
 	# the currently used language will be applied to the installation
 	#
 

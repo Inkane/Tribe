@@ -70,7 +70,7 @@ void BootloaderPage::bootloaderInstalled(int exitCode, QProcess::ExitStatus exit
 {
     disconnect(m_handler, SIGNAL(bootloaderInstalled(int, QProcess::ExitStatus)), 0, 0);
 
-    qDebug() << " :: burg install";
+    qDebug() << " :: grub2 install";
 
     Q_UNUSED(exitStatus)
 

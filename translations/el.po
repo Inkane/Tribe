@@ -311,7 +311,7 @@ msgstr "Προσαρμογή Αρχικού Ramdisk"
 msgid ""
 "Bootloader-Setup finished with Exitcode: %1\n"
 "Something went wrong. Before reboot it is recommended \n"
-"to check %2/boot/burg/burg.cfg. \n"
+"to check %2/boot/grub/grub.cfg. \n"
 msgstr ""
 
 #: src/pages/licensepage.cpp:53
@@ -839,15 +839,15 @@ msgstr "Χρωματισμός"
 #. i18n: ectx: property (text), widget (QCheckBox, bootloaderCheckBox)
 #: rc.cpp:144
 #, fuzzy
-msgid "Install BURG"
+msgid "Install GRUB2"
 msgstr "Εγκατάσταση GRUB"
 
 #. i18n: file: ui/pages/config.ui:690
 #. i18n: ectx: property (text), widget (QLabel, bootloaderLabel)
 #: rc.cpp:147
 msgid ""
-"You can now install BURG as your main bootloader. \n"
-"Tribe will install BURG on the same hard drive where your \"/boot\" folder "
+"You can now install GRUB2 as your main bootloader. \n"
+"Tribe will install GRUB2 on the same hard drive where your \"/boot\" folder "
 "is located."
 msgstr ""
 

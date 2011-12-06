@@ -292,7 +292,7 @@ while [ $# -gt 0 ]
                         echo "   15. create-initrd (create initrd for the installed system)"
                         echo "   16. regenerate-locales (apply locales and regenerate them)"    
                         echo "   17. create-menulst (create menu-lst for the installed system)"
-                        echo "   18. install-grub2 (install grub2 on the installed system)"
+                        echo "   18. install-burg (install burg on the installed system)"
                         echo "   19. configure-users (setup sudoers and groups for the target user)"
                         echo "   20. cleanup-l10n (cleanup drivers and stuff)"
                         echo "   21. cleanup-drivers (cleanup drivers and stuff)"

@@ -227,7 +227,7 @@ job_init()
 		fi
 	fi
 
-	if [ "$job" = "install-grub2" ] ; then
+	if [ "$job" = "install-burg" ] ; then
 		if [ -z "${mountpoint}" ] ; then
 			msg "ERROR: You need to give me a mountpoint for the root partition with --mountpoint "
 			msg "Error detected. Stopping. "
@@ -291,8 +291,8 @@ case "$job" in
 		regenerate-locales)
 			job_regenerate_locales
 		;;
-                install-grub2)
-                        job_install_grub2
+                install-burg)
+                        job_install_burg
 		;;
 		create-menulst)
 			job_create_menulst

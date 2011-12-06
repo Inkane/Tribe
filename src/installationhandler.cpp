@@ -638,7 +638,7 @@ void InstallationHandler::installBootloader(int action, const QString &device)
         m_process->deleteLater();
 
     QString command = QString("sh " + QString(SCRIPTS_INSTALL_PATH) +
-                              "/postinstall.sh --job install-grub2 " + m_postcommand);
+                              "/postinstall.sh --job install-burg " + m_postcommand);
 
     m_process = new QProcess(this);
     connect(m_process, SIGNAL(finished(int, QProcess::ExitStatus)), SIGNAL(bootloaderInstalled(int, QProcess::ExitStatus)));
@@ -828,7 +828,7 @@ void InstallationHandler::cleanup()
 {
 qDebug() << " :: copying installation logs to target /var/log";
 
-    if (QFile::exists("/tmp/installation.log")) {
+    if (QFile::exists("/tmp/installation.log")) {        
         QFile::copy("/tmp/installation.log", QString(INSTALLATION_TARGET) + "/var/log/installation.log");
     }
 
@@ -836,10 +836,10 @@ qDebug() << " :: copying installation logs to target /var/log";
         QFile::copy("/tmp/initramfs.log", QString(INSTALLATION_TARGET) + "/var/log/installation-initramdisk.log");
     }
 
-    if (QFile::exists("/tmp/grub2.log")) {
-        QFile::copy("/tmp/grub2.log", QString(INSTALLATION_TARGET) + "/var/log/installation-grub2.log");
+    if (QFile::exists("/tmp/burg.log")) {
+        QFile::copy("/tmp/burg.log", QString(INSTALLATION_TARGET) + "/var/log/installation-burg.log");
     }
-
+  
     unmountAll();
     killProcesses();
 }

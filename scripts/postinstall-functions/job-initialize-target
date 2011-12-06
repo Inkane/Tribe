@@ -14,7 +14,7 @@ job_initialize_target()
 	mkdir -p -v ${mountpoint}/var/log/old
 	mkdir -p -v ${mountpoint}/var/lock/sane
 	mkdir -p -v ${mountpoint}/var/cache/pacman/pkg
-	mkdir -p -v ${mountpoint}/boot/grub
+	mkdir -p -v ${mountpoint}/boot/burg
 	mkdir -p -v ${mountpoint}/usr/lib/locale
 	mkdir -p -v ${mountpoint}/usr/share/icons/default
 	mkdir -p -v ${mountpoint}/media
@@ -88,11 +88,11 @@ job_initialize_target()
 	msg "fix hwclock"
 	mkdir -pv ${mountpoint}/var/lib/hwclock
 
-	if [ -d "${mountpoint}/opt/chakra/restore/grub" ];
+	if [ -d "${mountpoint}/opt/chakra/restore/burg" ];
 	then
-	  msg "restoring found grub folder"
-	  cp -vR "${mountpoint}/opt/chakra/restore/grub" "${mountpoint}/boot"
-	  rm -R "${mountpoint}/opt/chakra/restore/grub"
+	  msg "restoring found burg folder"
+	  cp -vR "${mountpoint}/opt/chakra/restore/burg" "${mountpoint}/boot"
+	  rm -R "${mountpoint}/opt/chakra/restore/burg"
 	fi
 	
 	msg_job_done

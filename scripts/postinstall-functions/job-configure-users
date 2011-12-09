@@ -102,6 +102,7 @@ job_configure_users()
 	cp -vf /etc/skel/kcmfonts ${mountpoint}/home/${user_name}/.kde4/share/config/kcmfonts
 	cp -vf /etc/skel/bookmarks.xml ${mountpoint}/home/${user_name}/.kde4/share/apps/konqueror/bookmarks.xml
 	cp -vf /etc/skel/rekonqrc ${mountpoint}/home/${user_name}/.kde4/share/config/rekonqrc
+	cp -vf /etc/skel/kuriikwsfilterrc ${mountpoint}/home/${user_name}/.kde4/share/config/kuriikwsfilterrc
 	cp -vf /etc/skel/khotkeysrc ${mountpoint}/home/${user_name}/.kde4/share/config/khotkeysrc
 	cp -vf /etc/skel/kglobalshortcutsrc ${mountpoint}/home/${user_name}/.kde4/share/config/kglobalshortcutsrc
         cp -vf /etc/skel/yakuakerc ${mountpoint}/home/${user_name}/.kde4/share/config/yakuakerc

@@ -84,6 +84,7 @@ job_initialize_target()
 	echo "DISTRIB_CODENAME=\"code-name\"" >> "${mountpoint}/etc/lsb-release"
 	echo "DISTRIB_DESCRIPTION=\"Chakra Linux\"" >> "${mountpoint}/etc/lsb-release"
 	echo "Chakra Linux release chakra-version (code-name)" > "${mountpoint}/etc/chakra-release"
+	sed -i -e "s~Chakra Linux~Chakra Linux (chakra-version - code-name)~g" "${mountpoint}/etc/issue"
 
 	msg "fix hwclock"
 	mkdir -pv ${mountpoint}/var/lib/hwclock

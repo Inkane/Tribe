@@ -4,7 +4,7 @@ bluefish::Bluefish::A powerful HTML editor for experienced web designers and pro
 chromium::Chromium::The Open-Source Google Chrome Web-Browser
 codeblocks::Codeblocks::An open source and cross-platform C/C++ IDE
 filezilla::FileZilla::Fast and reliable FTP, FTPS and SFTP client
-firefox-bin::Firefox::The Mozilla Web-Browser
+firefox::Firefox::The Mozilla Web-Browser
 gimp::GIMP::The GNU Image Manipulation Program
 inkscape::Inkscape::Vector graphics editor using the SVG file format
 kompozer::Kompozer::A Dreamweaver style WYSIWYG web editor

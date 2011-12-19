@@ -46,8 +46,8 @@ private slots:
     void zoom(int value);
     void zoomChanged(int value);
 
-    void continentChanged(int index);
-    void regionChanged(int index);
+    void continentChanged();
+    void regionChanged();
     void updateLocales();
 
     bool validate();

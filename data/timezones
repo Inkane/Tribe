@@ -167,7 +167,6 @@ America/Yellowknife:en_US.UTF-8,en_US,fr_FR.UTF-8,fr_FR:en_gb,fr
 Asia/Aqtobe:kk_KZ.UTF-8,kk_KZ:kk,en_gb
 Asia/Bangkok:th_TH.UTF-8,th_TH:en_gb
 Asia/Brunei:bn_IN,en_US.UTF-8,en_US:en_gb
-Asia/Calcutta:en_US.UTF-8,en_US:en_gb
 Asia/Colombo:en_US.UTF-8,en_US:en_gb
 Asia/Damascus:ar_SY.UTF-8,ar_SY,en_US.UTF-8,en_US:ar,en_gb
 Asia/Dubai:ar_AE.UTF-8,ar_AE,en_US.UTF-8,en_US:ar,en_gb
@@ -179,6 +178,7 @@ Asia/Jerusalem:he_IL.UTF-8,he_IL,ar_AE.UTF-8,ar_AE,ar_BH.UTF-8,ar_BH,ar_DZ.UTF-8
 Asia/Kamchatka:ru_RU.UTF-8,ru_RU,ru_RU.KOI8-R,en_US.UTF-8,en_US:ru,en_gb
 Asia/Karachi:en_US.UTF-8,en_US,pa_PK,:en_gb
 Asia/Kathmandu:en_US.UTF-8,en_US,ne_NP:en_gb
+Asia/Kolkata:en_US.UTF-8,en_US:en_gb
 Asia/Kuwait:ar_KW.UTF-8,ar_KW,en_US.UTF-8,en_US:ar,en_gb
 Asia/Macao:zh_CN.UTF-8,zh_CN,zh_CN.GB18030,zh_CN.GBK,zh_TW.UTF-8,zh_TW.EUC-TW,pt_PT.UTF-8,pt_PT,pt_PT@euro,en_US.UTF-8,en_US:zh_cn,zh_tw,pt,en_gb
 Asia/Makassar:en_US.UTF-8,en_US,id_ID.UTF-8,id_ID:en_gb

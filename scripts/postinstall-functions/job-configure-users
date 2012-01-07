@@ -41,7 +41,7 @@ job_configure_users()
 	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/.backup/${timestamp}
 
 	msg "setup gtk config"
-	if [ -e /etc/skel/.gtrk-2.0.kde4 ] ; then
+	if [ -e ${mountpoint}/home/${user_name}/.gtkrc-2.0-kde4 ] ; then
 	    mv -v ${mountpoint}/home/${user_name}/.gtkrc-2.0-kde4 ${mountpoint}/home/${user_name}/.backup/${timestamp}/
 	fi
 	cp -vf /etc/skel/.gtkrc-2.0-kde4 ${mountpoint}/home/${user_name}/.gtkrc-2.0-kde4

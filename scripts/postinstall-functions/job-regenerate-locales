@@ -20,15 +20,27 @@ job_regenerate_locales()
 	rm -rf ${mountpoint}/etc/locale.gen
 	mv ${mountpoint}/etc/locale.gen.new ${mountpoint}/etc/locale.gen
 
-	# enable glibc locales from rc.conf
-	for i in $(grep "^LOCALE" ${mountpoint}/etc/rc.conf | sed -e 's/.*="//g' -e's/\..*//g'); do
+	current_locale=`cat ${mountpoint}/etc/rc.conf | grep LOCALE |  grep -v "#" | grep -v "DAEMON_LOCALE" | cut -d '"' -f 2`
+	sed -i -e "s#LOCALE=\"$current_locale\"#LOCALE=\"$locale\"#" ${mountpoint}/etc/rc.conf
+
+
+	msg "create /etc/locale.conf"
+	echo "LANG=${locale}" > ${mountpoint}/etc/locale.conf
+	echo "LC_MESSAGES=${locale}" >> ${mountpoint}/etc/locale.conf
+
+	msg "check if /etc/profile.d/locale.sh.new exists and move it"
+	if [ -f ${mountpoint}/etc/profile.d/locale,sh.new ] ; then
+	    mv ${mountpoint}/etc/profile.d/locale.sh.new ${mountpoint}/etc/profile.d/locale.sh
+	fi
+
+	msg "enable glibc locales from locale.conf"
+	for i in $(grep "^LANG" ${mountpoint}/etc/locale.conf | sed -e 's/.*=//g' -e's/\..*//g'); do
 		sed -i -e "s/^#$i/$i/g" ${mountpoint}/etc/locale.gen
 	done
-
 	# always enable en_US
 	sed -i 's/^#\(en_US.*\)/\1/' ${mountpoint}/etc/locale.gen
 
-	# finally, regenerate the locales
+	msg "regenerate the locales"
 	chroot ${mountpoint} /usr/sbin/locale-gen
 
 	msg "umounting /proc, /sys and /dev"

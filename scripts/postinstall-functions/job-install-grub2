@@ -17,7 +17,7 @@ job_install_grub2()
     echo "GRUB2___ >>>> mountpoint: ${mountpoint}"
     echo "GRUB2___ >>>> target_boot: ${target_boot}"
     echo "GRUB2___ >>>> device: ${_device}"
-    chroot ${mountpoint} grub2-install /dev/${_device} --no-floppy > /tmp/grub2.log 2>&1
+    chroot ${mountpoint} grub-install /dev/${_device} --no-floppy > /tmp/grub2.log 2>&1
 
     if [ -e "/tmp/catalyst" ] ; then
        msg "Adding nomodeset for catalyst to kernel line"

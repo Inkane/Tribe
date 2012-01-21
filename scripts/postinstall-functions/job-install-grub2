@@ -26,7 +26,7 @@ job_install_grub2()
     fi
 
     msg "generating []/boot/grub/grub.cfg"
-    chroot ${mountpoint} grub2-mkconfig -o /boot/grub/grub.cfg --skip-resume >> /tmp/grub2.log 2>&1
+    chroot ${mountpoint} grub-mkconfig -o /boot/grub/grub.cfg --skip-resume >> /tmp/grub2.log 2>&1
 
     if [ "${use_swap}" = "yes" ] ; then
        msg "we are using swap partition"

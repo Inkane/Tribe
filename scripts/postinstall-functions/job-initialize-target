@@ -89,12 +89,5 @@ job_initialize_target()
 	msg "fix hwclock"
 	mkdir -pv ${mountpoint}/var/lib/hwclock
 
-	if [ -d "${mountpoint}/opt/chakra/restore/grub" ];
-	then
-	  msg "restoring found grub folder"
-	  cp -vR "${mountpoint}/opt/chakra/restore/grub" "${mountpoint}/boot"
-	  rm -R "${mountpoint}/opt/chakra/restore/grub"
-	fi
-	
 	msg_job_done
 }

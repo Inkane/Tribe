@@ -62,6 +62,7 @@ void LocalePage::createWidget()
     zoomOutButton->setIcon(KIcon("zoom-out"));
 
     // setup marble widget
+    marble->setShowAtmosphere(true);
     marble->installEventFilter(this);
     marble->setCenterLatitude(35.0);
     marble->setCenterLongitude(-28.0);

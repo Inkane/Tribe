@@ -67,6 +67,9 @@ fi
 # source the config
 . /usr/share/tribe/config/postinstall.conf
 
+# source nvidia-drv.conf
+. /etc/nvidia-drv.conf
+
 # load helper functions
 . /usr/share/tribe/scripts/helpers
 

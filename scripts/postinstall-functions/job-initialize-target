@@ -42,8 +42,7 @@ job_initialize_target()
 	cp -vf /etc/skel/.bash_profile ${mountpoint}/root/.bash_profile
 	cp -vf /etc/skel/.xinitrc ${mountpoint}/root/.xinitrc
 	cp -vf /etc/skel/.xsession ${mountpoint}/root/.xsession
-	cp -vf /etc/skel/local.conf ${mountpoint}/etc/fonts/local.conf
-
+	
 	msg "set mouse theme for root"
 	cp -vf /usr/share/icons/default/index.theme ${mountpoint}/usr/share/icons/default/index.theme
 

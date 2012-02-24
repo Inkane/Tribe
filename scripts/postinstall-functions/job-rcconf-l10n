@@ -241,13 +241,6 @@ job_rcconf_l10n()
 		sed -i -e 's/^.*KEYMAP=.*/KEYMAP="trq"/' ${mountpoint}/etc/rc.conf
 		;;
 
-		uk)
-		# British 
-		msg "british english setup"
-		sed -i -e 's/^.*HARDWARECLOCK=.*/HARDWARECLOCK="UTC"/' ${mountpoint}/etc/rc.conf
-		sed -i -e 's/^.*KEYMAP=.*/KEYMAP="uk"/' ${mountpoint}/etc/rc.conf
-		;;
-
 		vcia)
 		# Valencian 
 		msg "Valencian setup"

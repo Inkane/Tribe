@@ -140,44 +140,6 @@ job_setup_hardware()
 		unset NEW_RCCONF_MODULES
 	fi
 
-	# load the modules array from rc.conf
-	msg "loading current modules from rc.conf"
-	RCCONF_MODULES=`cat ${mountpoint}/etc/rc.conf | grep "MODULES=" | cut -d "(" -f 2 | cut -d ")" -f 1`
-
-	# Check for detected modules:
-	msg "Check for detected modules"
-	DETECTED_MODULES=`hwdetect --modules | cut -d "(" -f 2 | cut -d ")" -f 1`
-
-	# Check for not loaded modules:
-	msg "Check for not loaded modules"
-	NOT_LOADED_MODULES=`hwdetect --modules-not-loaded | cut -d "(" -f 2 | cut -d ")" -f 1`
-
-	# put the not loaded modules into a temporary file
-	if [ -e "/tmp/not_loaded_modules" ] ; then
-		rm -rf /tmp/not_loaded_modules >/dev/null 2>&1
-	fi
-	echo $NOT_LOADED_MODULES > /tmp/not_loaded_modules
-
-	msg "detected modules = $DETECTED_MODULES"
-	msg "not loaded modules = $NOT_LOADED_DRIVERS"
-
-	# now compare the detected stuff with the not loaded stuff and put all mismatches into $NEW_RCCONF_MODULES
-	echo "detecting loaded modules"
-	for module in ${DETECTED_MODULES}; do
-	if [ "$(grep -v ${module} /tmp/not_loaded_modules)" ]; then
-		NEW_RCCONF_MODULES="$NEW_RCCONF_MODULES $module"
-	fi
-	done
-
-	# and put that into rc.conf
-	msg "writing new rc.conf"
-	sed -i -e "s,MODULES=.*,`echo "MODULES=($RCCONF_MODULES $NEW_RCCONF_MODULES)" | sed 's/  / /g'`,g" ${mountpoint}/etc/rc.conf
-
-	unset DETECTED_MODULES
-	unset NOT_LOADED_MODULES
-	unset RCCONF_MODULES
-	unset NEW_RCCONF_MODULES
-
 	# check if /opt/chakra/hooks has detected powersaving capabilities and loaded some modules.
 	# if thats the case, we add them to rc.conf too
 	#
@@ -225,6 +187,7 @@ job_setup_hardware()
 	msg "writing new rc.conf"
 	sed -i -e "s,MODULES=.*,$NEW_RCCONF_MODULES,g" ${mountpoint}/etc/rc.conf
 
+	unset DETECTED_MODULES
 	unset RCCONF_MODULES
 	unset NEW_RCCONF_MODULES
 

@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2008, 2009  Dario Freddi <drf@chakra-project.org>
- *               2010, 2011  Drake Justice <djustice@chakra-project.com>
+ * Copyright (c) 2008, 2009        Dario Freddi <drf@chakra-project.org>
+ *               2010, 2011, 2012  Drake Justice <djustice@chakra-project.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,9 +23,6 @@ UserWidget::UserWidget(int a_userNumber, QWidget* parent): QWidget(parent)
 
     ui.setupUi(this);
 
-    ui.extWidget->hide();
-    ui.rootPwWidget->hide();
-
     ui.passLine->setEchoMode(QLineEdit::Password);
     ui.confirmPassLine->setEchoMode(QLineEdit::Password);
     ui.rootPassLine->setEchoMode(QLineEdit::Password);
@@ -47,6 +44,8 @@ UserWidget::UserWidget(int a_userNumber, QWidget* parent): QWidget(parent)
         ui.removeUser->setVisible(false);
     } else {
         autoLogin = false;
+        ui.extWidget->hide();
+        ui.rootPwWidget->hide();
         ui.rootUsesUserPwCheckBox->setVisible(false);
     }
 

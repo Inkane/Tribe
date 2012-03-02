@@ -148,31 +148,35 @@ void LocalePage::createWidget()
 
     //If the user has previously selected a continent, region, language or locale, select those for the user again
     if (!m_install->continent().isEmpty()) {
-	int index = continentCombo->findText(m_install->continent(), Qt::MatchFixedString);
+        int index = continentCombo->findText(m_install->continent(), Qt::MatchFixedString);
 
-	if(index >= 0)
-	  continentCombo->setCurrentIndex(index);
+        if(index >= 0) {
+            continentCombo->setCurrentIndex(index);
+        }
     }
 
     if (!m_install->region().isEmpty()) {
         int index = regionCombo->findText(m_install->region(), Qt::MatchFixedString);
 
-	if(index >= 0)
-	  regionCombo->setCurrentIndex(index);
+        if(index >= 0) {
+            regionCombo->setCurrentIndex(index);
+        }
     }
 
     if (!m_install->KDELangPack().isEmpty()) {
         int index = kdeLanguageCombo->findText(m_allKDELangs.value(m_install->KDELangPack()), Qt::MatchFixedString);
 
-	if(index >= 0)
-	  kdeLanguageCombo->setCurrentIndex(index);
+        if(index >= 0) {
+            kdeLanguageCombo->setCurrentIndex(index);
+        }
     }
 
     if (!m_install->locale().isEmpty()) {
         int index = localeCombo->findText(m_install->locale(), Qt::MatchFixedString);
 
-	if(index >= 0)
-	  localeCombo->setCurrentIndex(index);
+        if(index >= 0) {
+            localeCombo->setCurrentIndex(index);
+        }
     }
 
     zoom(55);
@@ -197,7 +201,7 @@ bool LocalePage::eventFilter(QObject * object, QEvent * event)
             for (it = m_allTimezones.constBegin(); it != m_allTimezones.constEnd(); it++) {
                 if ((*it).contains(indexes.first()->name().replace(' ', '_'))) {
                     continentCombo->setCurrentIndex(continentCombo->findText(it.key()));
-                    regionCombo->setCurrentIndex(regionCombo->findText(indexes.first()->name().replace(' ', '_')));
+                    regionCombo->setCurrentIndex(regionCombo->findText(indexes.first()->name()));
                 }
             }
 
@@ -216,7 +220,7 @@ void LocalePage::continentChanged()
 
     QStringList::const_iterator it;
     for (it = timezones.constBegin(); it != timezones.constEnd(); ++it) {
-        regionCombo->addItem((*it));
+        regionCombo->addItem(QString(*it).replace('_', ' '));
     }
 
     regionChanged();
@@ -230,16 +234,16 @@ void LocalePage::regionChanged()
     }
 
     if (!showLocalesCheck->isChecked() || !showKDELangsCheck->isChecked()) {
-        QString time = continentCombo->currentText() + "/" + regionCombo->currentText();
+        QString time = continentCombo->currentText() + "/" + regionCombo->currentText().replace(' ', '_');
 
-	//Find the locales that exist for the currently selected continent and region
+        //Find the locales that exist for the currently selected continent and region
         QList<QStringList>::const_iterator it;
-		for (it = locales.constBegin(); it != locales.constEnd(); ++it) {
-			if ((*it).first() == time) {
+        for (it = locales.constBegin(); it != locales.constEnd(); ++it) {
+            if ((*it).first() == time) {
                 if (!showLocalesCheck->isChecked()) {
                     localeCombo->clear();
 
-		    //Populate the locale combobox
+                    //Populate the locale combobox
                     foreach(const QString &str, (*it).at(1).split(',')) {
                         localeCombo->addItem(str);
                     }
@@ -248,7 +252,7 @@ void LocalePage::regionChanged()
                 if (!showKDELangsCheck->isChecked()) {
                     kdeLanguageCombo->clear();
 
-		    //Populate the language combobox
+                    //Populate the language combobox
                     foreach(const QString &str, (*it).at(2).split(',')) {
                         kdeLanguageCombo->addItem(m_allKDELangs.value(str));
                     }
@@ -332,8 +336,8 @@ bool LocalePage::validate()
     }
 
     m_install->setContinent(continentCombo->currentText());
-    m_install->setRegion(regionCombo->currentText());
-    m_install->setTimezone(continentCombo->currentText() + "/" + regionCombo->currentText());
+    m_install->setRegion(regionCombo->currentText().replace(' ', '_'));
+    m_install->setTimezone(continentCombo->currentText() + "/" + regionCombo->currentText().replace(' ', '_'));
     m_install->setKDELangPack(m_allKDELangs.key(kdeLanguageCombo->currentText()));
     m_install->setLocale(localeCombo->currentText());
 

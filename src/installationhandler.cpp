@@ -1,7 +1,7 @@
 
 /*
- * Copyright (c) 2010         Dario Freddi <drf@chakra-project.org>
- *               2010 - 2011  Drake Justice <djustice@chakra-project.com>
+ * Copyright (c) 2010              Dario Freddi <drf@chakra-project.org>
+ *               2010, 2011, 2012  Drake Justice <djustice@chakra-project.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -183,11 +183,11 @@ void InstallationHandler::copyFiles()
     currAction = InstallationHandler::SystemInstallation;
 
     emit streamLabel(i18n("Preparing installation..."));
-    
+
     QProcess::execute("killall appset-qt");
     QProcess::execute("killall appset-helper");
     QProcess::execute("killall appsettray-qt");
-    
+
     QProcess::execute("killall pacman");
     QProcess::execute("/bin/rm -f /var/lib/pacman/db.lck");
 

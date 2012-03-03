@@ -49,7 +49,7 @@ const int DEVICE_ROLE = Qt::UserRole + 50;
 
 QStringList s_mountPoints = QStringList() << "None" <<
                                              "/" <<
-                                             "/usr" <<
+// remove separate /usr for now              "/usr" <<
                                              "/home" <<
                                              "/var" <<
                                              "/tmp" <<

@@ -111,6 +111,7 @@ job_configure_users()
 	cp -vf /etc/skel/.bashrc ${mountpoint}/home/${user_name}/.bashrc
 	cp -vf /etc/skel/mimeapps.list ${mountpoint}/home/${user_name}/.local/share/applications/mimeapps.list
 	cp -vf /etc/skel/duckduckgo.desktop ${mountpoint}/home/${user_name}/.kde4/share/kde4/services/searchproviders/duckduckgo.desktop
+	cp -vf /etc/skel/katerc ${mountpoint}/home/${user_name}/.kde4/share/config/katerc
 
 	chroot ${mountpoint} ln -sf /usr/bin/bluedevil-monolithic /home/${user_name}/.kde4/Autostart/bluedevil-monolithic
 

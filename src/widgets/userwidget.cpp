@@ -22,9 +22,6 @@ UserWidget::UserWidget(int a_userNumber, QWidget* parent): QWidget(parent)
     number = a_userNumber;
 
     ui.setupUi(this);
-    
-    ui.extWidget->hide();
-    ui.rootPwWidget->hide();
 
     ui.passLine->setEchoMode(QLineEdit::Password);
     ui.confirmPassLine->setEchoMode(QLineEdit::Password);
@@ -43,10 +40,12 @@ UserWidget::UserWidget(int a_userNumber, QWidget* parent): QWidget(parent)
         autoLogin = true;
         useRootPw = false;
         ui.autoLoginCheckBox->setChecked(true);
-        ui.rootUsesUserPwCheckBox->setChecked(true);
+        ui.rootUsesUserPwCheckBox->setChecked(false);
         ui.removeUser->setVisible(false);
     } else {
         autoLogin = false;
+        ui.extWidget->hide();
+        ui.rootPwWidget->hide();
         ui.rootUsesUserPwCheckBox->setVisible(false);
     }
 

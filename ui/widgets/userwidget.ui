@@ -340,7 +340,7 @@
          <item row="3" column="5" colspan="2">
           <widget class="QCheckBox" name="rootUsesUserPwCheckBox">
            <property name="text">
-            <string>Use this password as 
+            <string>Select to use the above password as 
 the Administrator password</string>
            </property>
           </widget>

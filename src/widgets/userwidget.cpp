@@ -161,9 +161,9 @@ void UserWidget::useUserPwToggled()
     useUserPw = ui.rootUsesUserPwCheckBox->isChecked();
     rootPasswordsMatch = ui.rootUsesUserPwCheckBox->isChecked();
     if (!useUserPw) {
-        useRootPw = false;
-    } else {
         useRootPw = true;
+    } else {
+        useRootPw = false;
     }
 }
 
@@ -196,9 +196,9 @@ void UserWidget::setRootPassword(const QString& pass_)
 void UserWidget::setUseRootPassword(const QString& useRootPw_)
 {
     if (useRootPw_.toInt() > 0) {
-        ui.rootUsesUserPwCheckBox->setCheckState(Qt::Unchecked);
-    } else {
         ui.rootUsesUserPwCheckBox->setCheckState(Qt::Checked);
+    } else {
+        ui.rootUsesUserPwCheckBox->setCheckState(Qt::Unchecked);
     }
 
     useUserPwToggled();

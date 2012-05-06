@@ -758,6 +758,13 @@
   </Point>
 </Placemark>
 <Placemark>
+  <name>Bern</name>
+  <description>Europe/Bern</description>
+  <Point>
+    <coordinates>7.4397,46.9525</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>Bratislava</name>
   <description>Europe/Bratislava</description>
   <Point>

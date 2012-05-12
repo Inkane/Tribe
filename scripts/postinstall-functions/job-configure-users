@@ -36,6 +36,7 @@ job_configure_users()
 	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/.kde4/share/config
 	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/.kde4/share/apps/konqueror
 	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/.local/share/applications
+	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/.kde4/share//kde4/services/searchproviders
 
 	timestamp=`date +%F-%H%M%S`
 	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/.backup/${timestamp}

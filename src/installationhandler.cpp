@@ -184,10 +184,6 @@ void InstallationHandler::copyFiles()
 
     emit streamLabel(i18n("Preparing installation..."));
 
-    QProcess::execute("killall appset-qt");
-    QProcess::execute("killall appset-helper");
-    QProcess::execute("killall appsettray-qt");
-
     QProcess::execute("killall pacman");
     QProcess::execute("/bin/rm -f /var/lib/pacman/db.lck");
 

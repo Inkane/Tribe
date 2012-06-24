@@ -46,7 +46,7 @@ job_create_initrd()
     HWDETECTHOSTCONTROLLER=""
     HWDETECTHOOKS=""
     HWDETECTHOSTCONTROLLER="$(hwdetect --hostcontroller $HWPARAMETER)"
-    HWDETECTHOOKS="$(hwdetect --hooks-dir=${mountpoint}/lib/initcpio/install --hooks $HWPARAMETER)"
+    HWDETECTHOOKS="$(hwdetect --hooks-dir=${mountpoint}/usr/lib/initcpio/install --hooks $HWPARAMETER)"
     [ -n "$HWDETECTHOSTCONTROLLER" ] && sed -i -e "s/^MODULES=.*/$HWDETECTHOSTCONTROLLER/g" ${mountpoint}/etc/mkinitcpio.conf
     [ -n "$HWDETECTHOOKS" ] && sed -i -e "s/^HOOKS=.*/$HWDETECTHOOKS/g" ${mountpoint}/etc/mkinitcpio.conf
     sed -i -e "s~filesystems~resume filesystems~g" ${mountpoint}/etc/mkinitcpio.conf

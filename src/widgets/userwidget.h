@@ -15,6 +15,7 @@
 #include "avatardialog.h"
 #include "ui_userwidget.h"
 
+#include <QLineEdit>
 
 class UserWidget : public QWidget
 {
@@ -24,11 +25,13 @@ public:
     UserWidget(int, QWidget *parent = 0);
     virtual ~UserWidget();
 
+    QLineEdit *loginLine;
     QString login;
     QString password;
     QString rootPassword;
     QString avatar;
     QString name;
+
     bool autoLogin;
     bool useRootPw;
     bool useUserPw;
@@ -54,13 +57,13 @@ signals:
 
 private slots:
     void showDetails();
-    void showRootPw();
+    void showRootPw(bool);
 
     void emitRemove();
 
     void avatarClicked();
     void autoLoginToggled();
-    void useUserPwToggled();
+    void useUserPwToggled(bool);
 
     void testFields();
 

@@ -64,7 +64,7 @@ void ConfigPage::createWidget()
 
     ui.changeAppearanceButton->setVisible(false);
 
-    // page connections    
+    // page connections
     connect(ui.downloadBundlesButton, SIGNAL(clicked()), this, SLOT(setDownloadBundlesPage()));
     connect(ui.changeAppearanceButton, SIGNAL(clicked()), this, SLOT(setChangeAppearancePage()));
     connect(ui.initRamDiskButton, SIGNAL(clicked()), this, SLOT(setInitRamdiskPage()));
@@ -94,7 +94,7 @@ void ConfigPage::createWidget()
     connect(&networkManager, SIGNAL(finished(QNetworkReply*)),
              this, SLOT(handleNetworkData(QNetworkReply*)));
     networkManager.get(QNetworkRequest(QString("http://chakra-project.org")));
-    
+
     // check installed kde version
     /* QProcess proc;
     proc.start("pacman -Qi kde-common --noconfirm");
@@ -119,7 +119,7 @@ void ConfigPage::createWidget()
     QString remote_pkgver(versionString[0].trimmed());
     QString remote_pkgrel(versionString[1].trimmed());
     qDebug() << "KDE remote_pkgver:" << remote_pkgver << "remote_pkgrel:" << remote_pkgrel;
-    
+
     // disable download if no match
     //if (pkgver != remote_pkgver)
     //  ui.bundlesDownloadButton->setEnabled(false);
@@ -130,6 +130,10 @@ void ConfigPage::createWidget()
 
 void ConfigPage::incomingData(KIO::Job* job, QByteArray data)
 {
+    /*
+     * A harmless warning from GCC is generated here due to the signed/unsigned integer comparison.
+     * The warning is harmless because the integer comparison is an inequality check.
+     */
     if (ui.progressBar->maximum() != job->totalAmount(KJob::Bytes))
         ui.progressBar->setMaximum(job->totalAmount(KJob::Bytes));
 
@@ -185,7 +189,7 @@ void ConfigPage::result(KJob* job)
     }
 
     if (m_incomingExtension == ".jpeg") {
-        KUrl r(QUrl("http://chakra-project.org/packages/screenshots/" + 
+        KUrl r(QUrl("http://chakra-project.org/packages/screenshots/" +
                     m_incomingList.at(m_incomingIncr) + m_incomingExtension));
         m_job = KIO::get(r, KIO::Reload, KIO::Overwrite | KIO::HideProgressInfo);
         connect(m_job, SIGNAL(data(KIO::Job*,QByteArray)), this, SLOT(incomingData(KIO::Job*, QByteArray)));
@@ -257,7 +261,7 @@ void ConfigPage::bundlesDownloadButtonClicked()
     connect(&networkManager, SIGNAL(finished(QNetworkReply*)),
              this, SLOT(handleNetworkData(QNetworkReply*)));
 
-    //use the url of the preferred mirror 
+    //use the url of the preferred mirror
     networkManager.get(QNetworkRequest(QString("http://chakra-project.org")));
     if (m_currentOnlineStatus == "Offline") {
         QString completeMessage = i18n("Sorry, you have no internet connection at the moment \n"
@@ -399,9 +403,9 @@ void ConfigPage::updatePacmanProgress()
 void ConfigPage::processComplete()
 {
     // clean-up
-    QProcess::execute("umount -v " + QString(INSTALLATION_TARGET) + "/proc " + 
-                                     QString(INSTALLATION_TARGET) + "/sys "  + 
-                                     QString(INSTALLATION_TARGET) + "/dev/pts " + 
+    QProcess::execute("umount -v " + QString(INSTALLATION_TARGET) + "/proc " +
+                                     QString(INSTALLATION_TARGET) + "/sys "  +
+                                     QString(INSTALLATION_TARGET) + "/dev/pts " +
                                      QString(INSTALLATION_TARGET) + "/dev");
     // re-enable buttons
     enableNextButton(true);

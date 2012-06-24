@@ -10,7 +10,6 @@
  */
 
 #include <QDebug>
-
 #include <QDesktopWidget>
 
 #include "avatardialog.h"
@@ -22,7 +21,7 @@ UserWidget::UserWidget(int a_userNumber, QWidget* parent): QWidget(parent)
     number = a_userNumber;
 
     ui.setupUi(this);
-    
+
     ui.extWidget->hide();
     ui.rootPwWidget->hide();
 
@@ -51,6 +50,7 @@ UserWidget::UserWidget(int a_userNumber, QWidget* parent): QWidget(parent)
     }
 
     passwordsMatch = true;
+    loginLine = ui.loginLine;
 
     connect(ui.loginLine, SIGNAL(textChanged(QString)), this, SLOT(testFields()));
     connect(ui.passLine, SIGNAL(textChanged(QString)), this, SLOT(testFields()));
@@ -64,8 +64,8 @@ UserWidget::UserWidget(int a_userNumber, QWidget* parent): QWidget(parent)
     connect(ui.avatar, SIGNAL(clicked(bool)), this, SLOT(avatarClicked()));
     connect(ui.autoLoginCheckBox, SIGNAL(toggled(bool)), this, SLOT(autoLoginToggled()));
 
-    connect(ui.rootUsesUserPwCheckBox, SIGNAL(toggled(bool)), this, SLOT(showRootPw()));
-    connect(ui.rootUsesUserPwCheckBox, SIGNAL(toggled(bool)), this, SLOT(useUserPwToggled()));
+    connect(ui.rootUsesUserPwCheckBox, SIGNAL(toggled(bool)), this, SLOT(showRootPw(bool)));
+    connect(ui.rootUsesUserPwCheckBox, SIGNAL(toggled(bool)), this, SLOT(useUserPwToggled(bool)));
 
     connect(ui.rootPassLine, SIGNAL(textChanged(QString)), this, SLOT(testFields()));
     connect(ui.confirmRootPassLine, SIGNAL(textChanged(QString)), this, SLOT(testFields()));
@@ -88,9 +88,9 @@ void UserWidget::setAvatar(const QString& avatar_)
     }
 }
 
-void UserWidget::showRootPw()
+void UserWidget::showRootPw(bool checked_)
 {
-    ui.rootPwWidget->setVisible(!ui.rootPwWidget->isVisible());
+    ui.rootPwWidget->setVisible(!checked_);
 }
 
 void UserWidget::showDetails()
@@ -157,15 +157,12 @@ void UserWidget::autoLoginToggled()
         emit autoLoginToggled(number);
 }
 
-void UserWidget::useUserPwToggled()
+void UserWidget::useUserPwToggled(bool checked_)
 {
-    useUserPw = ui.rootUsesUserPwCheckBox->isChecked();
+    useUserPw = checked_;
     rootPasswordsMatch = ui.rootUsesUserPwCheckBox->isChecked();
-    if (!useUserPw) {
-        useRootPw = true;
-    } else {
-        useRootPw = false;
-    }
+
+    useRootPw = !useUserPw;
 }
 
 void UserWidget::setLogin(const QString& login_)
@@ -202,7 +199,7 @@ void UserWidget::setUseRootPassword(const QString& useRootPw_)
         ui.rootUsesUserPwCheckBox->setCheckState(Qt::Unchecked);
     }
 
-    useUserPwToggled();
+    useUserPwToggled(true);
 }
 
 void UserWidget::setAutoLogin(const QString& autologin_) {

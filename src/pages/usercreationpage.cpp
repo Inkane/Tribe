@@ -79,6 +79,18 @@ void UserCreationPage::createWidget()
 
         ui.hostname->setText(m_handler->hostname());
     }
+
+    /*
+     * The loginLine widget needs to have its focus set here instead of in UserWidget() (which is where the widget resides)
+     * because widgets get focus when they are placed on screen. Therefore if you want to manually set a widget's focus,
+     * you must set it after all the widgets are placed on screen.
+     *
+     * There *might* be a race condition here and in UserWidget() where UserWidget()->loginLine might not get set in time,
+     * so check if the pointer is valid (ie. not NULL) before setting the widget's focus!
+     */
+    if(f->loginLine) {
+        f->loginLine->setFocus();
+    }
 }
 
 void UserCreationPage::addUserClicked()

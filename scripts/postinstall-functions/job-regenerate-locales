@@ -27,11 +27,6 @@ job_regenerate_locales()
 	msg "correct LOCALE in /etc/rc.conf"
 	sed -i -e "s/^LOCALE=.*/LOCALE=\"$locale\"/" ${mountpoint}/etc/rc.conf
 
-	msg "check if /etc/profile.d/locale.sh.new exists and move it"
-	if [ -f ${mountpoint}/etc/profile.d/locale,sh.new ] ; then
-	    mv ${mountpoint}/etc/profile.d/locale.sh.new ${mountpoint}/etc/profile.d/locale.sh
-	fi
-
 	msg "enable glibc locales from locale.conf"
 	for i in $(grep "^LANG" ${mountpoint}/etc/locale.conf | sed -e 's/.*=//g' -e's/\..*//g'); do
 		sed -i -e "s/^#$i/$i/g" ${mountpoint}/etc/locale.gen

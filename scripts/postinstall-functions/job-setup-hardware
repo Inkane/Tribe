@@ -83,32 +83,6 @@ job_setup_hardware()
 		unset RCCONF_MODULES
 		unset NEW_RCCONF_MODULES
 
-	elif [ -e "/tmp/nvidia-96xx" ] ; then
-		msg "nvidia-96xx detected"
-
-		msg "removing unneeded packages"
-		chroot ${mountpoint} /usr/bin/pacman -Rdd libgl --noconfirm
-		chroot ${mountpoint} /usr/bin/pacman -Rdd nouveau-dri --noconfirm
-		chroot ${mountpoint} /usr/bin/pacman -Rdd xf86-nv --noconfirm
-		chroot ${mountpoint} /usr/bin/pacman -Rdd xf86-nouveau --noconfirm
-		msg "installing driver" 
-		pacman -r ${mountpoint} -Udf ${PKG_OVERLAY}/nvidia-96xx* --noconfirm
-
-		# load the modules array from rc.conf
-		msg "loading current modules from rc.conf"
-		RCCONF_MODULES=`cat ${mountpoint}/etc/rc.conf | grep "MODULES=" | cut -d "(" -f 2 | cut -d ")" -f 1`
-
-		# add the detected modules to the original modules array
-		msg "adding nvidia module to modules array"
-		NEW_RCCONF_MODULES=`echo "MODULES=($RCCONF_MODULES nvidia)" | sed 's/  / /g'`
-
-		# and put that into rc.conf
-		msg "writing new rc.conf"
-		sed -i -e "s,MODULES=.*,$NEW_RCCONF_MODULES,g" ${mountpoint}/etc/rc.conf
-
-		unset RCCONF_MODULES
-		unset NEW_RCCONF_MODULES
-
 	elif [ -e "/tmp/catalyst" ] ; then
 		msg "catalyst detected" 
 
@@ -118,12 +92,42 @@ job_setup_hardware()
 		chroot ${mountpoint} /usr/bin/pacman -Rdd ati-dri --noconfirm
 		chroot ${mountpoint} /usr/bin/pacman -Rdd nouveau-dri --noconfirm
 		chroot ${mountpoint} /usr/bin/pacman -Rdd xf86-video-ati --noconfirm
-		chroot ${mountpoint} /usr/bin/pacman -Rdd xf86-video-radeonhd --noconfirm
 
 		msg "installing driver"
 		# install driver
-		pacman -r ${mountpoint} -Udf ${PKG_OVERLAY}/catalyst* --noconfirm
+		pacman -r ${mountpoint} -Udf ${PKG_OVERLAY}/catalyst-1* --noconfirm
+		pacman -r ${mountpoint} -Udf ${PKG_OVERLAY}/catalyst-utils* --noconfirm
 
+		# load the modules array from rc.conf
+		msg "loading current modules from rc.conf"
+		RCCONF_MODULES=`cat ${mountpoint}/etc/rc.conf | grep "MODULES=" | cut -d "(" -f 2 | cut -d ")" -f 1`
+
+		# add the detected modules to the original modules array
+		msg "adding catalyst fglrx module to modules array"
+		NEW_RCCONF_MODULES=`echo "MODULES=($RCCONF_MODULES fglrx)" | sed 's/  / /g'`
+
+		# and put that into rc.conf
+		msg "writing new rc.conf"
+		sed -i -e "s,MODULES=.*,$NEW_RCCONF_MODULES,g" ${mountpoint}/etc/rc.conf
+
+		unset RCCONF_MODULES
+		unset NEW_RCCONF_MODULES
+		
+	elif [ -e "/tmp/catalyst-legacy" ] ; then
+		msg "catalyst-legacy detected" 
+
+		msg "removing unneeded packages"
+		# remove conflicting packages
+		chroot ${mountpoint} /usr/bin/pacman -Rdd libgl --noconfirm
+		chroot ${mountpoint} /usr/bin/pacman -Rdd ati-dri --noconfirm
+		chroot ${mountpoint} /usr/bin/pacman -Rdd nouveau-dri --noconfirm
+		chroot ${mountpoint} /usr/bin/pacman -Rdd xf86-video-ati --noconfirm
+
+		msg "installing driver"
+		# install driver
+		pacman -r ${mountpoint} -Udf ${PKG_OVERLAY}/catalyst-legacy-1* --noconfirm
+		pacman -r ${mountpoint} -Udf ${PKG_OVERLAY}/catalyst-legacy-utils* --noconfirm
+		
 		# load the modules array from rc.conf
 		msg "loading current modules from rc.conf"
 		RCCONF_MODULES=`cat ${mountpoint}/etc/rc.conf | grep "MODULES=" | cut -d "(" -f 2 | cut -d ")" -f 1`

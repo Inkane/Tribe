@@ -47,15 +47,15 @@ job_setup_hardware()
 		RCCONF_MODULES=`cat ${mountpoint}/etc/rc.conf | grep "MODULES=" | cut -d "(" -f 2 | cut -d ")" -f 1`
 
 		# add the detected modules to the original modules array
-		msg "adding nvidia module to modules array"
-		NEW_RCCONF_MODULES=`echo "MODULES=($RCCONF_MODULES nvidia)" | sed 's/  / /g'`
+		#msg "adding nvidia module to modules array"
+		#NEW_RCCONF_MODULES=`echo "MODULES=($RCCONF_MODULES nvidia)" | sed 's/  / /g'`
 
 		# and put that into rc.conf
-		msg "writing new rc.conf"
-		sed -i -e "s,MODULES=.*,$NEW_RCCONF_MODULES,g" ${mountpoint}/etc/rc.conf
+		#msg "writing new rc.conf"
+		#sed -i -e "s,MODULES=.*,$NEW_RCCONF_MODULES,g" ${mountpoint}/etc/rc.conf
 
-		unset RCCONF_MODULES
-		unset NEW_RCCONF_MODULES
+		#unset RCCONF_MODULES
+		#unset NEW_RCCONF_MODULES
 
 	elif [ -e "/tmp/nvidia-173xx" ] ; then
 		msg "nvidia-173xx detected"
@@ -69,19 +69,19 @@ job_setup_hardware()
 		pacman -r ${mountpoint} -Udf ${PKG_OVERLAY}/nvidia-173xx* --noconfirm
 
 		# load the modules array from rc.conf
-		msg "loading current modules from rc.conf"
-		RCCONF_MODULES=`cat ${mountpoint}/etc/rc.conf | grep "MODULES=" | cut -d "(" -f 2 | cut -d ")" -f 1`
+		#msg "loading current modules from rc.conf"
+		#RCCONF_MODULES=`cat ${mountpoint}/etc/rc.conf | grep "MODULES=" | cut -d "(" -f 2 | cut -d ")" -f 1`
 
 		# add the detected modules to the original modules array
-		msg "adding nvidia module to modules array"
-		NEW_RCCONF_MODULES=`echo "MODULES=($RCCONF_MODULES nvidia)" | sed 's/  / /g'`
+		#msg "adding nvidia module to modules array"
+		#NEW_RCCONF_MODULES=`echo "MODULES=($RCCONF_MODULES nvidia)" | sed 's/  / /g'`
 
 		# and put that into rc.conf
-		msg "writing new rc.conf"
-		sed -i -e "s,MODULES=.*,$NEW_RCCONF_MODULES,g" ${mountpoint}/etc/rc.conf
+		#msg "writing new rc.conf"
+		#sed -i -e "s,MODULES=.*,$NEW_RCCONF_MODULES,g" ${mountpoint}/etc/rc.conf
 
-		unset RCCONF_MODULES
-		unset NEW_RCCONF_MODULES
+		#unset RCCONF_MODULES
+		#unset NEW_RCCONF_MODULES
 
 	elif [ -e "/tmp/catalyst" ] ; then
 		msg "catalyst detected" 
@@ -99,19 +99,19 @@ job_setup_hardware()
 		pacman -r ${mountpoint} -Udf ${PKG_OVERLAY}/catalyst-1* --noconfirm
 
 		# load the modules array from rc.conf
-		msg "loading current modules from rc.conf"
-		RCCONF_MODULES=`cat ${mountpoint}/etc/rc.conf | grep "MODULES=" | cut -d "(" -f 2 | cut -d ")" -f 1`
+		#msg "loading current modules from rc.conf"
+		#RCCONF_MODULES=`cat ${mountpoint}/etc/rc.conf | grep "MODULES=" | cut -d "(" -f 2 | cut -d ")" -f 1`
 
 		# add the detected modules to the original modules array
-		msg "adding catalyst fglrx module to modules array"
-		NEW_RCCONF_MODULES=`echo "MODULES=($RCCONF_MODULES fglrx)" | sed 's/  / /g'`
+		#msg "adding catalyst fglrx module to modules array"
+		#NEW_RCCONF_MODULES=`echo "MODULES=($RCCONF_MODULES fglrx)" | sed 's/  / /g'`
 
 		# and put that into rc.conf
-		msg "writing new rc.conf"
-		sed -i -e "s,MODULES=.*,$NEW_RCCONF_MODULES,g" ${mountpoint}/etc/rc.conf
+		#msg "writing new rc.conf"
+		#sed -i -e "s,MODULES=.*,$NEW_RCCONF_MODULES,g" ${mountpoint}/etc/rc.conf
 
-		unset RCCONF_MODULES
-		unset NEW_RCCONF_MODULES
+		#unset RCCONF_MODULES
+		#unset NEW_RCCONF_MODULES
 		
 	elif [ -e "/tmp/catalyst-legacy" ] ; then
 		msg "catalyst-legacy detected" 
@@ -129,67 +129,67 @@ job_setup_hardware()
 		pacman -r ${mountpoint} -Udf ${PKG_OVERLAY}/catalyst-legacy-1* --noconfirm
 		
 		# load the modules array from rc.conf
-		msg "loading current modules from rc.conf"
-		RCCONF_MODULES=`cat ${mountpoint}/etc/rc.conf | grep "MODULES=" | cut -d "(" -f 2 | cut -d ")" -f 1`
+		#msg "loading current modules from rc.conf"
+		#RCCONF_MODULES=`cat ${mountpoint}/etc/rc.conf | grep "MODULES=" | cut -d "(" -f 2 | cut -d ")" -f 1`
 
 		# add the detected modules to the original modules array
-		msg "adding catalyst fglrx module to modules array"
-		NEW_RCCONF_MODULES=`echo "MODULES=($RCCONF_MODULES fglrx)" | sed 's/  / /g'`
+		#msg "adding catalyst fglrx module to modules array"
+		#NEW_RCCONF_MODULES=`echo "MODULES=($RCCONF_MODULES fglrx)" | sed 's/  / /g'`
 
 		# and put that into rc.conf
-		msg "writing new rc.conf"
-		sed -i -e "s,MODULES=.*,$NEW_RCCONF_MODULES,g" ${mountpoint}/etc/rc.conf
+		#msg "writing new rc.conf"
+		#sed -i -e "s,MODULES=.*,$NEW_RCCONF_MODULES,g" ${mountpoint}/etc/rc.conf
 
-		unset RCCONF_MODULES
-		unset NEW_RCCONF_MODULES
+		#unset RCCONF_MODULES
+		#unset NEW_RCCONF_MODULES
 	fi
 
 	# check if /opt/chakra/hooks has detected powersaving capabilities and loaded some modules.
 	# if thats the case, we add them to rc.conf too
 	#
 	# at first, collect some data
-	msg "adding powersave modules to MODULES array in rc.conf"
-	msg "collecting data"
-	KERNEL=$(cat /proc/version | cut -d " " -f 3)
-	AVAILABLE_DRIVERS=`pushd /lib/modules/"$KERNEL"/kernel/drivers/cpufreq/ >/dev/null 2>&1; ls -1 *.ko* | cut -d "." -f 1 | sed 's/-/_/g'; popd >/dev/null 2>&1`
-	DETECTED_MODULES=`lsmod | awk '{print $1}' | grep -v Module`
+	#msg "adding powersave modules to MODULES array in rc.conf"
+	#msg "collecting data"
+	#KERNEL=$(cat /proc/version | cut -d " " -f 3)
+	#AVAILABLE_DRIVERS=`pushd /lib/modules/"$KERNEL"/kernel/drivers/cpufreq/ >/dev/null 2>&1; ls -1 *.ko* | cut -d "." -f 1 | sed 's/-/_/g'; popd >/dev/null 2>&1`
+	#DETECTED_MODULES=`lsmod | awk '{print $1}' | grep -v Module`
 
-	msg "kernel = $KERNEL"
-	msg "loaded powersave modules = $DETECTED_MODULES"
-	msg "available powersave modules = $AVAILABLE_DRIVERS"
+	#msg "kernel = $KERNEL"
+	#msg "loaded powersave modules = $DETECTED_MODULES"
+	#msg "available powersave modules = $AVAILABLE_DRIVERS"
 
 	# put the available drivers/governors into a temporary file
-	if [ -e "/tmp/cpu_drivers" ] ; then
-		rm -rf /tmp/cpu_drivers >/dev/null 2>&1
-	fi
-	echo $AVAILABLE_DRIVERS > /tmp/cpu_drivers
+	#if [ -e "/tmp/cpu_drivers" ] ; then
+	#	rm -rf /tmp/cpu_drivers >/dev/null 2>&1
+	#fi
+	#echo $AVAILABLE_DRIVERS > /tmp/cpu_drivers
 
 	# initialize var for detected drivers
-	DETECTED_DRIVERS=''
+	#DETECTED_DRIVERS=''
 
 	# now compare the available stuff with the loaded stuff and put all matches into $DETECTED DRIVERS
-	msg "detecting loaded modules"
-	for module in ${DETECTED_MODULES}; do
-		if [ "$(grep ${module} /tmp/cpu_drivers)" ]; then
-			DETECTED_DRIVERS="$DETECTED_DRIVERS $module"
-		fi
-	done
+	#msg "detecting loaded modules"
+	#for module in ${DETECTED_MODULES}; do
+	#	if [ "$(grep ${module} /tmp/cpu_drivers)" ]; then
+	#		DETECTED_DRIVERS="$DETECTED_DRIVERS $module"
+	#	fi
+	#done
 
 	# load the modules array from rc.conf
-	msg "loading current modules from rc.conf"
-	RCCONF_MODULES=`cat ${mountpoint}/etc/rc.conf | grep "MODULES=" | cut -d "(" -f 2 | cut -d ")" -f 1`
+	#msg "loading current modules from rc.conf"
+	#RCCONF_MODULES=`cat ${mountpoint}/etc/rc.conf | grep "MODULES=" | cut -d "(" -f 2 | cut -d ")" -f 1`
 
 	# add the detected modules to the original modules array
-	msg "adding detected powersave modules to modules array: $DETECTED_DRIVERS"
-	NEW_RCCONF_MODULES=`echo "MODULES=($RCCONF_MODULES $DETECTED_DRIVERS)" | sed 's/  / /g'`
+	#msg "adding detected powersave modules to modules array: $DETECTED_DRIVERS"
+	#NEW_RCCONF_MODULES=`echo "MODULES=($RCCONF_MODULES $DETECTED_DRIVERS)" | sed 's/  / /g'`
 
 	# and put that into rc.conf
-	msg "writing new rc.conf"
-	sed -i -e "s,MODULES=.*,$NEW_RCCONF_MODULES,g" ${mountpoint}/etc/rc.conf
+	#msg "writing new rc.conf"
+	#sed -i -e "s,MODULES=.*,$NEW_RCCONF_MODULES,g" ${mountpoint}/etc/rc.conf
 
-	unset DETECTED_MODULES
-	unset RCCONF_MODULES
-	unset NEW_RCCONF_MODULES
+	#unset DETECTED_MODULES
+	#unset RCCONF_MODULES
+	#unset NEW_RCCONF_MODULES
 
 	# fixing alsa
 	alsactl -f ${mountpoint}/var/lib/alsa/asound.state store

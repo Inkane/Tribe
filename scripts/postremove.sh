@@ -185,13 +185,28 @@ job_remove_catalyst() {
 				# reinstall free ati-drivers from overlay
 				pacman -r ${mountpoint} -Udf --noconfirm ${PKG_OVERLAY}/ati-dri*
 				pacman -r ${mountpoint} -Udf --noconfirm ${PKG_OVERLAY}/xf86-video-ati*
-				pacman -r ${mountpoint} -Udf --noconfirm ${PKG_OVERLAY}/xf86-video-radeonhd*
 			
 				# remove driver from xorg.conf
 				DRIVER_ATI="Driver\t\"ati\""
 				sed -i -e /'Section "Device"'/,/'EndSection'/s/'Driver.*'/$DRIVER_ATI/g ${mountpoint}/etc/X11/xorg.conf
 			fi
 
+			if [ -e "/tmp/catalyst-legacy" ] ; then
+			
+				# uninstall driver from target
+				pacman -r ${mountpoint} -Rf --noconfirm catalyst-legacy
+
+				# reinstall libgl from overlay
+				pacman -r ${mountpoint} -Udf --noconfirm ${PKG_OVERLAY}/libgl*
+
+				# reinstall free ati-drivers from overlay
+				pacman -r ${mountpoint} -Udf --noconfirm ${PKG_OVERLAY}/ati-dri*
+				pacman -r ${mountpoint} -Udf --noconfirm ${PKG_OVERLAY}/xf86-video-ati*
+			
+				# remove driver from xorg.conf
+				DRIVER_ATI="Driver\t\"ati\""
+				sed -i -e /'Section "Device"'/,/'EndSection'/s/'Driver.*'/$DRIVER_ATI/g ${mountpoint}/etc/X11/xorg.conf
+			fi
 			echo -e "$_g DONE$_n"
 }
 

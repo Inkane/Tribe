@@ -255,72 +255,77 @@ void InstallationHandler::populateCommandParameters()
 {
     qDebug() << " :: System root partition: " << trimDevice(m_mount["/"]);
 
-    m_postcommand = QString("--target-root %1 --target-root-fs %2 --mountpoint %3 ")
-                    .arg(trimDevice(m_mount["/"])).arg(m_mount["/"]->fileSystem().name()).arg(INSTALLATION_TARGET);
+    m_postcommand = QStringList()
+            << "--target-root"    << trimDevice(m_mount["/"])
+            << "--target-root-fs" << m_mount["/"]->fileSystem().name()
+            << "--mountpoint"     << INSTALLATION_TARGET;
 
     if (m_mount.contains("swap")) {
-        m_postcommand.append(QString("--use-swap yes --target-swap %1 ").arg(trimDevice(m_mount["swap"])));
+        m_postcommand << "--use-swap"    << "yes"
+                      << "--target-swap" << trimDevice(m_mount["swap"]);
     }
 
     if (m_mount.contains("/boot")) {
-        m_postcommand.append(QString("--use-boot yes --target-boot %1 --target-boot-fs %2 ")
-                             .arg(trimDevice(m_mount["/boot"])).arg(m_mount["/boot"]->fileSystem().name()));
+        m_postcommand << "--use-boot"       << "yes"
+                      << "--target-boot"    << trimDevice(m_mount["/boot"])
+                      << "--target-boot-fs" << m_mount["/boot"]->fileSystem().name();
     } else {
-        m_postcommand.append(QString("--use-boot no --target-boot %1 ").arg(trimDevice(m_mount["/"])));
+        m_postcommand << "--use-boot"       << "no"
+                      << "--target-boot"    << trimDevice(m_mount["/"]);
     }
 
     if (m_mount.contains("/home")) {
-        m_postcommand.append("--use-home yes ");
+        m_postcommand << "--use-home" << "yes";
     } else {
-        m_postcommand.append("--use-home no ");
+        m_postcommand << "--use-home" << "no";
     }
 
     if (m_mount.contains("/opt")) {
-        m_postcommand.append("--use-opt yes ");
+        m_postcommand << "--use-opt" << "yes";
     } else {
-        m_postcommand.append("--use-opt no ");
+        m_postcommand << "--use-opt" << "no";
     }
 
     if (m_mount.contains("/tmp")) {
-        m_postcommand.append("--use-tmp yes ");
+        m_postcommand << "--use-tmp" << "yes";
     } else {
-        m_postcommand.append("--use-tmp no ");
+        m_postcommand << "--use-tmp" << "no";
     }
 
     if (m_mount.contains("/usr")) {
-        m_postcommand.append("--use-usr yes ");
+        m_postcommand << "--use-usr" << "yes";
     } else {
-        m_postcommand.append("--use-usr no ");
+        m_postcommand << "--use-usr" << "no";
     }
 
     if (m_mount.contains("/var")) {
-        m_postcommand.append("--use-var yes ");
+        m_postcommand << "--use-var" << "yes";
     } else {
-        m_postcommand.append("--use-var no ");
+        m_postcommand << "--use-var" << "no";
     }
 
     if (!m_hostname.isEmpty()) {
-        m_postcommand.append(QString("--hostname %1 ").arg(m_hostname));
+        m_postcommand << "--hostname" << m_hostname;
     }
 
     if (!m_timezone.isEmpty()) {
-        m_postcommand.append(QString("--timezone %1 ").arg(m_timezone.replace('/', '-')));
+        m_postcommand << "--timezone" << m_timezone.replace('/', '-');
     }
 
     if (!m_locale.isEmpty()) {
-        m_postcommand.append(QString("--locale %1 ").arg(m_locale));
+        m_postcommand << "--locale" << m_locale;
     }
 
     if (!m_KDELangPack.isEmpty() && m_KDELangPack != "en_us") {
-        m_postcommand.append(QString("--kdelang %1 ").arg(m_KDELangPack));
+        m_postcommand << "--kdelang" << m_KDELangPack;
     }
 
     if (m_doc) {
-        m_postcommand.append("--download-doc yes ");
+        m_postcommand << "--download-doc" << "yes";
     }
 
     if (m_configurePacman) {
-        m_postcommand.append("--configure-pacman yes ");
+        m_postcommand << "--configure-pacman" << "yes";
     }
 }
 
@@ -369,42 +374,39 @@ void InstallationHandler::postInstall()
         for (i = m_mount.constBegin(); i != m_mount.constEnd(); ++i) {
             if (i.key() != "/" && i.key() != "swap") {
                 qDebug() << " :: add mountpoint for: " << i.key();
-                QString command = QString("sh " + QString(SCRIPTS_INSTALL_PATH) +
-                                          "/postinstall.sh --job add-extra-mountpoint --extra-mountpoint %1 "
-                                          "--extra-mountpoint-target %2 --extra-mountpoint-fs %3 %4")
-                                          .arg(i.key())
-                                          .arg(trimDevice(i.value()))
-                                          .arg(i.value()->fileSystem().name())
-                                          .arg(m_postcommand);
+                QStringList command = QStringList()
+                        << "sh" << QString("%1/postinstall.sh").arg(SCRIPTS_INSTALL_PATH)
+                        << "--job add-extra-mountpoint"
+                        << "--extra-mountpoint" << i.key()
+                        << "--extra-mountpoint-target" << trimDevice(i.value())
+                        << "--extra-mountpoint-fs" << i.value()->fileSystem().name()
+                        << m_postcommand;
 
-                QProcess *process = new QProcess(this);
-                QEventLoop e;
-                connect(process, SIGNAL(finished(int,QProcess::ExitStatus)), &e, SLOT(quit()));
-                process->start(command);
-                e.exec();
+                qDebug() << " :: postinstall command: " << command.join(" ");
 
-                qDebug() << " :: postinstall command: " << command;
+                QProcess process(this);
+                process.start(command.takeFirst(), command);
+                process.waitForFinished();
 
-                if (process->exitCode() != 0) {
-                    postInstallDone(process->exitCode(), QProcess::NormalExit);
+                if (process.exitCode() != 0) {
+                    postInstallDone(process.exitCode(), QProcess::NormalExit);
                     return;
                 }
-                process->deleteLater();
             }
         }
 
         postInstallDone(0, QProcess::NormalExit);
     } else {
-        QString command  = QString("sh " + QString(SCRIPTS_INSTALL_PATH) +
-                                   "/postinstall.sh --job %1 %2")
-                                   .arg(m_postjob)
-                                   .arg(m_postcommand);
+        QStringList command  = QStringList()
+                << "sh" << QString("%1/postinstall.sh").arg(SCRIPTS_INSTALL_PATH)
+                << "--job" << m_postjob
+                << m_postcommand;
 
         m_process = new QProcess(this);
         connect(m_process, SIGNAL(finished(int, QProcess::ExitStatus)), SLOT(postInstallDone(int, QProcess::ExitStatus)));
-        m_process->start(command);
 
-        qDebug() << " :: postinstall command: " << command;
+        qDebug() << " :: postinstall command: " << command.join(" ");
+        m_process->start(command.takeFirst(), command);
     }
 }
 

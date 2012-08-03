@@ -159,9 +159,6 @@ class InstallationHandler : public QObject
 
         void killProcesses();
 
-        void streamPassword();
-        void streamRootPassword();
-
     signals:
         void streamProgress(int);
         void streamLabel(const QString&);

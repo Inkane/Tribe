@@ -37,7 +37,6 @@ SET(tribe_SRCS
     src/mainwindow.cpp
     src/installationhandler.cpp
     src/abstractpage.cpp
-    src/screenshots.h
     src/pmhandler.cpp
 )
 

@@ -30,9 +30,6 @@
 
 #include "ui_installation.h"
 
-
-class Screenshots;
-
 class InstallationPage : public AbstractPage
 {
     Q_OBJECT
@@ -55,7 +52,6 @@ private:
     Ui::Installation ui;
     int m_index;
     QPointer<QTimer> m_timer;
-    Screenshots *m_screenshots;
 };
 
 #endif /*INSTALLATIONPAGE_H*/

@@ -52,7 +52,7 @@ InstallationPage::InstallationPage(QWidget *parent)
         << QPixmap(":/Images/images/screenshot10.png");
 
     m_timer = new QTimer();
-    m_timer->setInterval(45000);
+    m_timer->setInterval(5000);
 }
 
 InstallationPage::~InstallationPage()

@@ -137,7 +137,7 @@ class InstallationHandler : public QObject
         void setRootDevice(const QString& s) { m_rootDevice = s; }
         QString rootDevice() { return m_rootDevice; }
 
-        QStringList m_postcommand;
+        QString m_postcommand;
 
     public slots:
         void cleanup();

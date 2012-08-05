@@ -483,12 +483,11 @@ void ConfigPage::generateInitRamDisk()
     if (ui.encrypted->isChecked())
         QProcess::execute("touch " + tmpInitRd.at(7));
 
-    QStringList command = QStringList()
-            << "sh " << QString("%1/postinstall.sh").arg(SCRIPTS_INSTALL_PATH)
-            << "--job create-initrd"
-            << m_install->m_postcommand;
+    QString command  = QString("sh " + QString(SCRIPTS_INSTALL_PATH) +
+                               "/postinstall.sh --job create-initrd %1")
+                               .arg(m_install->m_postcommand);
     connect(m_process, SIGNAL(finished(int)), this, SLOT(initRdGenerationComplete()));
-    m_process->start(command.takeFirst(), command);
+    m_process->start(command);
 }
 
 void ConfigPage::initRdGenerationComplete()

@@ -18,44 +18,37 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
  ***************************************************************************/
 
-#ifndef INSTALLATIONPAGE_H
-#define INSTALLATIONPAGE_H
+#ifndef SCREENSHOTS_H
+#define SCREENSHOTS_H
 
-#include <QPointer>
-#include <QThread>
-#include <QTimer>
-
-#include "../abstractpage.h"
-#include "../installationhandler.h"
-
-#include "ui_installation.h"
+#include <QObject>
+#include <QPixmap>
 
 
-class Screenshots;
-
-class InstallationPage : public AbstractPage
+class Screenshots : public QObject
 {
-    Q_OBJECT
-
+/// Q_OBJECT
 public:
-    InstallationPage(QWidget *parent = 0);
-    virtual ~InstallationPage();
+    explicit Screenshots(QObject *parent = 0) : QObject(parent) {
+        m_screenshots.append(QPixmap(":/Images/images/screenshot01.png"));
+        m_screenshots.append(QPixmap(":/Images/images/screenshot02.png"));
+        m_screenshots.append(QPixmap(":/Images/images/screenshot03.png"));
+        m_screenshots.append(QPixmap(":/Images/images/screenshot04.png"));
+        m_screenshots.append(QPixmap(":/Images/images/screenshot05.png"));
+        m_screenshots.append(QPixmap(":/Images/images/screenshot06.png"));
+        m_screenshots.append(QPixmap(":/Images/images/screenshot07.png"));
+        m_screenshots.append(QPixmap(":/Images/images/screenshot08.png"));
+        m_screenshots.append(QPixmap(":/Images/images/screenshot09.png"));
+        m_screenshots.append(QPixmap(":/Images/images/screenshot10.png"));
+    }
+    ~Screenshots() {}
 
-private slots:
-    virtual void createWidget();
-    virtual void aboutToGoToNext();
-    virtual void aboutToGoToPrevious();
-    void setPercentage(int percentage);
-    void setLabel(const QString &label);
-    void changeScreenShot();
-    void error();
+    QList<QPixmap> getScreenshots() {
+        return m_screenshots;
+    }
 
 private:
-    InstallationHandler *m_install;
-    Ui::Installation ui;
-    int m_index;
-    QPointer<QTimer> m_timer;
-    Screenshots *m_screenshots;
+    QList<QPixmap> m_screenshots;
 };
 
-#endif /*INSTALLATIONPAGE_H*/
+#endif /*SCREENSHOTS_H*/

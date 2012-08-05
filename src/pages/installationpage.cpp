@@ -18,38 +18,21 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
  ***************************************************************************/
 
-#include <QList>
-#include <QPixmap>
+#include "../screenshots.h"
 #include "installationpage.h"
 
-namespace {
-
-QList<QPixmap> g_screenshots;
-
-} // namespace
 
 InstallationPage::InstallationPage(QWidget *parent)
-        : AbstractPage(parent)
-        , m_install(InstallationHandler::instance())
-        , m_index( 0 )
-        , m_timer( 0 )
+        : AbstractPage(parent),
+        m_install(InstallationHandler::instance()),
+        m_screenshots(new Screenshots(this))
 {
     connect(m_install, SIGNAL(streamProgress(int)), SLOT(setPercentage(int)));
     connect(m_install, SIGNAL(streamLabel(const QString&)), SLOT(setLabel(const QString&)));
     connect(m_install, SIGNAL(installationDone()), SLOT(aboutToGoToNext()));
     connect(m_install, SIGNAL(errorInstalling()), SLOT(error()));
 
-    g_screenshots = QList<QPixmap>()
-        << QPixmap(":/Images/images/screenshot01.png")
-        << QPixmap(":/Images/images/screenshot02.png")
-        << QPixmap(":/Images/images/screenshot03.png")
-        << QPixmap(":/Images/images/screenshot04.png")
-        << QPixmap(":/Images/images/screenshot05.png")
-        << QPixmap(":/Images/images/screenshot06.png")
-        << QPixmap(":/Images/images/screenshot07.png")
-        << QPixmap(":/Images/images/screenshot08.png")
-        << QPixmap(":/Images/images/screenshot09.png")
-        << QPixmap(":/Images/images/screenshot10.png");
+    m_index = 0;
 
     m_timer = new QTimer();
     m_timer->setInterval(5000);
@@ -106,12 +89,17 @@ void InstallationPage::changeScreenShot()
     /* Screenshot rotation!! Let's define how it will happen
      */
 
-    if (g_screenshots.isEmpty()) {
-        return;
-    }
+    QList<QPixmap> list = m_screenshots->getScreenshots();
 
-    ui.imageHolder->setPixmap(g_screenshots.at(m_index));
-    m_index = (m_index + 1) % g_screenshots.count();
+    if (list.isEmpty())
+        return;
+
+    ui.imageHolder->setPixmap(list.at(m_index));
+
+    m_index++;
+
+    if (m_index >= list.count())
+        m_index = 0;
 }
 
 #include "installationpage.moc"

@@ -39,16 +39,11 @@
 class InstallationHandlerHelper
 {
 public:
-    InstallationHandlerHelper()
-        : q(0)
-    {
-    }
-
+    InstallationHandlerHelper() : q(0) {}
     ~InstallationHandlerHelper() {
         delete q;
     }
-
-    InstallationHandler* q;
+    InstallationHandler *q;
 };
 
 K_GLOBAL_STATIC(InstallationHandlerHelper, s_globalInstallationHandler)
@@ -117,8 +112,14 @@ void InstallationHandler::setFileHandlingBehaviour(FileHandling fhnd)
 
 QStringList InstallationHandler::checkExistingHomeDirs()
 {
-    QDir dir(QString("%1/home/").arg(INSTALLATION_TARGET));
-    return dir.entryList(QDir::NoDotAndDotDot | QDir::Dirs | QDir::NoSymLinks);
+    QDir dir(QString(QString(INSTALLATION_TARGET) + QString("/home/")));
+
+    if (dir.entryList(QDir::NoDotAndDotDot | QDir::Dirs | QDir::NoSymLinks).isEmpty())
+        return QStringList();
+    else
+        return dir.entryList(QDir::NoDotAndDotDot | QDir::Dirs | QDir::NoSymLinks);
+
+    return QStringList();
 }
 
 int InstallationHandler::antiFlicker()
@@ -183,16 +184,10 @@ void InstallationHandler::copyFiles()
 
     emit streamLabel(i18n("Preparing installation..."));
 
-    // FIXME: why explicitly kill pacman?
-    // this should fail instead, and let the user take action
     QProcess::execute("killall pacman");
-    QFile::remove("/var/lib/pacman/db.lck");
+    QProcess::execute("/bin/rm -f /var/lib/pacman/db.lck");
 
-    QStringList command = QStringList()
-            << "unsquashfs"
-            << "-f"
-            << "-d" << INSTALLATION_TARGET
-            << QString("%1/root-image.sqfs").arg(BOOTMNT_POINT);
+    QString unsquashfsCommand = "unsquashfs -f -d " + QString(INSTALLATION_TARGET) + " " + QString(BOOTMNT_POINT) + "/root-image.sqfs";
 
     m_process = new QProcess(this);
     m_process->setProcessChannelMode(QProcess::MergedChannels);
@@ -202,7 +197,7 @@ void InstallationHandler::copyFiles()
 
     qDebug() << "Installing (sqfs decompression) started...";
 
-    m_process->start(command.takeFirst(), command);
+    m_process->start(unsquashfsCommand);
 }
 
 void InstallationHandler::jobDone(int result)
@@ -356,10 +351,9 @@ void InstallationHandler::postRemove()
         return;
     }
 
-    QStringList command = QStringList()
-            << "sh" << QString("%1/postremove.sh").arg(SCRIPTS_INSTALL_PATH)
-            << "--job" << (*m_stringlistIterator)
-            << "--mountpoint" << INSTALLATION_TARGET;
+    QString command  = QString("sh " + QString(SCRIPTS_INSTALL_PATH) + "/postremove.sh --job %1 --mountpoint %2")
+                       .arg(*m_stringlistIterator)
+                       .arg(INSTALLATION_TARGET);
 
     m_process = new QProcess(this);
 
@@ -367,24 +361,25 @@ void InstallationHandler::postRemove()
 
     ++m_stringlistIterator;
 
-    qDebug() << " :: package removal command: " << command.join(" ");
-    m_process->start(command.takeFirst(), command);
+    m_process->start(command);
+
+    qDebug() << " :: package removal command: " << command;
 }
 
 void InstallationHandler::postInstall()
 {
     if (m_postjob == "add-extra-mountpoint") {
         qDebug() << " :: mountpoints to configure: " << m_mount.keys().count();
-        QMap<QString, const Partition*>::const_iterator it;
-        for (it = m_mount.constBegin(); it != m_mount.constEnd(); ++it) {
-            if (it.key() != "/" && it.key() != "swap") {
-                qDebug() << " :: add mountpoint for: " << it.key();
+        QMap<QString, const Partition*>::const_iterator i;
+        for (i = m_mount.constBegin(); i != m_mount.constEnd(); ++i) {
+            if (i.key() != "/" && i.key() != "swap") {
+                qDebug() << " :: add mountpoint for: " << i.key();
                 QStringList command = QStringList()
                         << "sh" << QString("%1/postinstall.sh").arg(SCRIPTS_INSTALL_PATH)
                         << "--job add-extra-mountpoint"
-                        << "--extra-mountpoint" << it.key()
-                        << "--extra-mountpoint-target" << trimDevice(it.value())
-                        << "--extra-mountpoint-fs" << it.value()->fileSystem().name()
+                        << "--extra-mountpoint" << i.key()
+                        << "--extra-mountpoint-target" << trimDevice(i.value())
+                        << "--extra-mountpoint-fs" << i.value()->fileSystem().name()
                         << m_postcommand;
 
                 qDebug() << " :: postinstall command: " << command.join(" ");
@@ -514,10 +509,11 @@ void InstallationHandler::postInstallDone(int eC, QProcess::ExitStatus eS)
 
         if (m_postjob != "jobcomplete") {
             postInstall();
-            return;
-        }
 
-        emit installationDone();
+            return;
+        } else {
+            emit installationDone();
+        }
     }
 }
 
@@ -533,11 +529,10 @@ void InstallationHandler::clearMounts()
 
 QString InstallationHandler::getMountPointFor(const QString &device)
 {
-    QMap<QString, const Partition*>::const_iterator it;
-
-    for (it = m_mount.constBegin(); it != m_mount.constEnd(); ++it) {
-        if (QString("%1%2").arg(it.value()->devicePath()).arg(it.value()->number()) == device) {
-            return it.key();
+    QMap<QString, const Partition*>::const_iterator i;
+    for (i = m_mount.constBegin(); i != m_mount.constEnd(); ++i) {
+        if (QString("%1%2").arg(i.value()->devicePath()).arg(i.value()->number()) == device) {
+            return i.key();
         }
     }
 
@@ -546,11 +541,10 @@ QString InstallationHandler::getMountPointFor(const QString &device)
 
 bool InstallationHandler::isMounted(const QString &partition)
 {
-    QMap<QString, const Partition*>::const_iterator it;
-
-    for (it = m_mount.constBegin(); it != m_mount.constEnd(); ++it) {
-        if (QString("%1%2").arg(it.value()->devicePath()).arg(it.value()->number()) == partition) {
-            return it.value()->isMounted();
+    QMap<QString, const Partition*>::const_iterator i;
+    for (i = m_mount.constBegin(); i != m_mount.constEnd(); ++i) {
+        if (QString("%1%2").arg(i.value()->devicePath()).arg(i.value()->number()) == partition) {
+            return i.value()->isMounted();
         }
     }
 
@@ -561,10 +555,10 @@ QStringList InstallationHandler::getMountedPartitions()
 {
     QStringList retlist;
 
-    QMap<QString, const Partition*>::const_iterator it;
-    for (it = m_mount.constBegin(); it != m_mount.constEnd(); ++it) {
-        if (it.value()->isMounted()) {
-            retlist.append(QString("%1%2").arg(it.value()->devicePath()).arg(it.value()->number()));
+    QMap<QString, const Partition*>::const_iterator i;
+    for (i = m_mount.constBegin(); i != m_mount.constEnd(); ++i) {
+        if (i.value()->isMounted()) {
+            retlist.append(QString("%1%2").arg(i.value()->devicePath()).arg(i.value()->number()));
         }
     }
 
@@ -590,12 +584,13 @@ void InstallationHandler::mountNextPartition()
         return;
     }
 
-    QString mntpath = QString("%1%2").arg(INSTALLATION_TARGET).arg(m_mapIterator.key());
-    QDir dir(mntpath);
+    QDir dir(QString(INSTALLATION_TARGET + m_mapIterator.key()));
 
-    if (!dir.exists() && !dir.mkpath(mntpath)) {
-        emit errorInstalling(i18n("Tribe was not able to initialize needed directories. Something is very wrong..."));
-        return;
+    if (!dir.exists()) {
+        if (!dir.mkpath(QString(INSTALLATION_TARGET + m_mapIterator.key()))) {
+            emit errorInstalling(i18n("Tribe was not able to initialize needed directories. Something is very wrong..."));
+            return;
+        }
     }
 
     QString partitionname = QString("%1%2").arg(m_mapIterator.value()->devicePath()).arg(m_mapIterator.value()->number());

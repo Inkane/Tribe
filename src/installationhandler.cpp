@@ -630,122 +630,102 @@ void InstallationHandler::installBootloader(int action, const QString &device)
     Q_UNUSED(action);
     Q_UNUSED(device);
 
-    if (m_process) {
+    if (m_process)
         m_process->deleteLater();
-    }
+
+    QString command = QString("sh " + QString(SCRIPTS_INSTALL_PATH) +
+                              "/postinstall.sh --job install-grub2 " + m_postcommand);
 
     m_process = new QProcess(this);
     connect(m_process, SIGNAL(finished(int, QProcess::ExitStatus)), SIGNAL(bootloaderInstalled(int, QProcess::ExitStatus)));
 
-    QStringList command = QStringList()
-            << "sh"
-            << QString("%1/postinstall.sh").arg(SCRIPTS_INSTALL_PATH)
-            << "--job-install-grub2"
-            << m_postcommand;
+    qDebug() << " :: running bootloader install command: " << command;
 
-    qDebug() << " :: running bootloader install command:"
-             << command.join(" ");
-
-    m_process->start(command.takeFirst(), command);
+    m_process->start(command);
 }
 
 void InstallationHandler::setUpUsers(QStringList users)
 {
 qDebug() << "::::::: setUpUsers() \n" << users << "\n\n";
-    QStringList command;
+    QString command;
 
     int current = 0;
 
     foreach(QString user, users) {
         if (checkExistingHomeDirs().contains(user)) {
-            if (m_userNameList.at(current).isEmpty()) {
-                command = QStringList()
-                        << "chroot" << INSTALLATION_TARGET
-                        << "useradd"
-                        << "-d" << QString("/home/%1").arg(user)
-                        << "-s" << "/bin/bash"
-                        << user;
+            if (m_userNameList.at(current) == "") {
+               command = QString("chroot %1 useradd -d /home/%2 -s /bin/bash %2")
+               .arg(INSTALLATION_TARGET)
+               .arg(user);
             } else {
-                command = QStringList()
-                        << "chroot" << INSTALLATION_TARGET
-                        << "useradd"
-                        << "-c" << m_userNameList.at(current)
-                        << "-d" << QString("/home/%1").arg(user)
-                        << "-s" << "/bin/bash"
-                        << user;
+               command = QString("chroot %1 useradd -c \"%2\" -d /home/%3 -s /bin/bash %3")
+               .arg(INSTALLATION_TARGET)
+               .arg(m_userNameList.at(current))
+               .arg(user);
             }
 qDebug() << " :: running useradd command: " << command;
-            QProcess::execute(command.takeFirst(), command);
+            QProcess::execute(command);
         } else {
-            if (m_userNameList.at(current).isEmpty()) {
-                command = QStringList()
-                        << "chroot" << INSTALLATION_TARGET
-                        << "useradd"
-                        << "-g" << "users"
-                        << "-m"
-                        << "-s" << "/bin/bash"
-                        << user;
+            if (m_userNameList.at(current) == "") {
+               command = QString("chroot %1 useradd -g users -m -s /bin/bash %2")
+               .arg(INSTALLATION_TARGET)
+               .arg(user);
             } else {
-                command = QStringList()
-                        << "chroot" << INSTALLATION_TARGET
-                        << "useradd"
-                        << "-g" << "users"
-                        << "-c" << m_userNameList.at(current)
-                        << "-m"
-                        << "-s" << "/bin/bash"
-                        << user;
+               command = QString("chroot %1 useradd -g users -c \"%2\" -m -s /bin/bash %3")
+               .arg(INSTALLATION_TARGET)
+               .arg(m_userNameList.at(current))
+               .arg(user);
             }
 qDebug() << " :: running useradd command: " << command;
-            QProcess::execute(command.takeFirst(), command);
-
+            QProcess::execute(command);
             //clean conflict files
-            QFile::remove(QString("%1/home/%2/.bash_profile")
-                          .arg(INSTALLATION_TARGET)
-                          .arg(user));
-            QFile::remove(QString("%1/home/%2/.bashrc")
-                          .arg(INSTALLATION_TARGET)
-                          .arg(user));
-            QFile::remove(QString("%1/home/%2/.xinitrc")
-                          .arg(INSTALLATION_TARGET)
-                          .arg(user));
+            command = QString("chroot %1 rm -v /home/%2/.bash_profile")
+                .arg(INSTALLATION_TARGET).arg(user);
+            QProcess::execute(command);
+            command = QString("chroot %1 rm -v /home/%2/.bashrc")
+                .arg(INSTALLATION_TARGET).arg(user);
+            QProcess::execute(command);
+            command = QString("chroot %1 rm -v /home/%2/.xinitrc")
+                .arg(INSTALLATION_TARGET).arg(user);
+            QProcess::execute(command);
         }
 
 qDebug() << " :: user \'" + user + "\' created";
 
         // set kdm/user avatar
-        QDir(INSTALLATION_TARGET).mkpath("usr/share/apps/kdm/faces");
-        QFile::copy(userAvatarList().at(current),
-                    QString("%1/usr/share/apps/kdm/faces/%2.face.icon")
-                    .arg(INSTALLATION_TARGET)
-                    .arg(user));
-        QFile::copy(userAvatarList().at(current),
-                    QString("%1/home/%2.face.icon")
-                    .arg(INSTALLATION_TARGET)
-                    .arg(user));
+        command = QString("bash -c \"mkdir -p " + 
+                          QString(INSTALLATION_TARGET) + 
+                          "/usr/share/apps/kdm/faces > /dev/null 2>&1\"");
+        QProcess::execute(command);
+        command = QString("bash -c \"cp " + userAvatarList().at(current) + " " + 
+                          QString(INSTALLATION_TARGET) + "/usr/share/apps/kdm/faces/" +
+                          user + ".face.icon > /dev/null 2>&1\"");
+        QProcess::execute(command);
+        command = QString("bash -c \"cp " + userAvatarList().at(current) + " " + 
+                          QString(INSTALLATION_TARGET) + "/home/" +
+                          user + "/.face.icon > /dev/null 2>&1\"");
+        QProcess::execute(command);
 
         // set autologin
         if (m_userAutoLoginList.at(current) == "1") {
-            command = QStringList()
-                    << "sed"
-                    << "-e" << "s,#AutoLoginEnable=true,AutoLoginEnable=true,"
-                    << "-e" << QString("s,#AutoLoginUser=fred,AutoLoginUser=%1,").arg(user)
-                    << "-i" << QString("%1/usr/share/config/kdm/kdmrc").arg(INSTALLATION_TARGET);
-            QProcess::execute(command.takeFirst(), command);
+            command = QString("bash -c \"sed -i -e \'s/#AutoLoginEnable=true/AutoLoginEnable=true/\' " + 
+                              QString(INSTALLATION_TARGET) + "/usr/share/config/kdm/kdmrc\"");
+            QProcess::execute(command);
+            command = QString("bash -c \"sed -i -e \'s/#AutoLoginUser=fred/AutoLoginUser=" + user + "/\' " + 
+                              QString(INSTALLATION_TARGET) + "/usr/share/config/kdm/kdmrc\"");
+            QProcess::execute(command);
         }
 
 qDebug() << " :: setting user password... : " << m_userLoginList.at(current);
         // set user passwd
-
-        m_passwdCount = current;
-
-        command = QStringList()
-                << "chroot" << INSTALLATION_TARGET
-                << "/usr/bin/passwd" << user;
-
         m_userProcess = new QProcess(this);
-        m_userProcess->start(command.takeFirst(), command);
-        m_userProcess->write(userPasswordList().at(m_passwdCount).toUtf8().constData());
-        m_userProcess->write("\n");
+        m_passwdCount = current;
+        command = QString("chroot %1 /usr/bin/passwd %2")
+                          .arg(INSTALLATION_TARGET)
+                          .arg(user);
+        connect(m_userProcess, SIGNAL(readyReadStandardError()), SLOT(streamPassword()));
+        m_userProcess->start(command);
+        sleep(3);
         m_userProcess->waitForFinished();
 
         // copy in live user settings
@@ -762,19 +742,21 @@ qDebug() << " :: setting user password... : " << m_userLoginList.at(current);
 
 qDebug() << " :: live configuration copied to the user's home";
 
-        command = QStringList()
-                << "sh" << QString("%1/postinstall.sh").arg(SCRIPTS_INSTALL_PATH)
-                << "--job-configure-users" << m_postcommand
-                << "--user-name" << user;
-        QProcess::execute(command.takeFirst(), command);
+        QProcess::execute("sh " +
+                          QString(SCRIPTS_INSTALL_PATH) +
+                          "/postinstall.sh --job configure-users " +
+                          m_postcommand +
+                          " --user-name " +
+                          user);
 
 qDebug() << ":: user configuration complete";
 
-        command = QStringList()
-                << "sh" << QString("%1/postinstall.sh").arg(SCRIPTS_INSTALL_PATH)
-                << "--job-configure-sudoers" << m_postcommand
-                << "--user-name" << user;
-        QProcess::execute(command.takeFirst(), command);
+        QProcess::execute("sh " +
+                          QString(SCRIPTS_INSTALL_PATH) +
+                          "/postinstall.sh --job configure-sudoers " +
+                          m_postcommand +
+                          " --user-name " +
+                          user);
 
 qDebug() << " :: sudoers configuration complete";
 
@@ -784,18 +766,29 @@ qDebug() << " :: sudoers configuration complete";
 qDebug() << " :: setting root password...";
 
     // set root passwd
-
-    m_passwdCount = current;
-
-    command = QStringList()
-            << "chroot" << INSTALLATION_TARGET
-            << "/usr/bin/passwd";
-
     m_rootUserProcess = new QProcess(this);
-    m_rootUserProcess->start(command.takeFirst(), command);
-    m_rootUserProcess->write(userPasswordList().last().toAscii().constData());
-    m_rootUserProcess->write("\n");
+    m_passwdCount = current;
+    command = QString("chroot %1 /usr/bin/passwd").arg(INSTALLATION_TARGET);
+    connect(m_rootUserProcess, SIGNAL(readyReadStandardError()), SLOT(streamRootPassword()));
+    m_rootUserProcess->start(command);
+    sleep(3);
     m_rootUserProcess->waitForFinished();
+}
+
+void InstallationHandler::streamPassword()
+{
+    m_userProcess->write(QString(userPasswordList().at(m_passwdCount)).toUtf8().data());
+    m_userProcess->write("\n");
+    
+    sleep(3);
+}
+
+void InstallationHandler::streamRootPassword()
+{
+    m_rootUserProcess->write(QString(userPasswordList().last()).toUtf8().data());
+    m_rootUserProcess->write("\n");
+    
+    sleep(3);
 }
 
 void InstallationHandler::unmountAll()

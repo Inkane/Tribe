@@ -647,7 +647,7 @@ void InstallationHandler::installBootloader(int action, const QString &device)
     QStringList command = QStringList()
             << "sh"
             << QString("%1/postinstall.sh").arg(SCRIPTS_INSTALL_PATH)
-            << "--job-install-grub2"
+            << "--job install-grub2"
             << m_postcommand;
 
     qDebug() << " :: running bootloader install command:"
@@ -771,7 +771,7 @@ qDebug() << " :: live configuration copied to the user's home";
 
         command = QStringList()
                 << "sh" << QString("%1/postinstall.sh").arg(SCRIPTS_INSTALL_PATH)
-                << "--job-configure-users" << m_postcommand
+                << "--job configure-users" << m_postcommand
                 << "--user-name" << user;
         QProcess::execute(command.takeFirst(), command);
 
@@ -779,7 +779,7 @@ qDebug() << ":: user configuration complete";
 
         command = QStringList()
                 << "sh" << QString("%1/postinstall.sh").arg(SCRIPTS_INSTALL_PATH)
-                << "--job-configure-sudoers" << m_postcommand
+                << "--job configure-sudoers" << m_postcommand
                 << "--user-name" << user;
         QProcess::execute(command.takeFirst(), command);
 

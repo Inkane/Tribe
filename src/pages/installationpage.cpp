@@ -35,7 +35,7 @@ InstallationPage::InstallationPage(QWidget *parent)
     m_index = 0;
 
     m_timer = new QTimer();
-    m_timer->setInterval(5000);
+    m_timer->setInterval(15000);
 }
 
 InstallationPage::~InstallationPage()

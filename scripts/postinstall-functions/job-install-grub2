@@ -25,6 +25,9 @@ job_install_grub2()
        sed -i -e "s,GRUB_CMDLINE_LINUX=.*,GRUB_CMDLINE_LINUX_DEFAULT=\"quiet splash radeon.modeset=0\",g" ${mountpoint}/etc/default/grub
     fi
 
+    # set grub theme
+    sed -i -e 's,.*GRUB_THEME=.*,GRUB_THEME="/usr/share/grub/themes/Dharma/theme.txt",' ${mountpoint}/etc/default/grub
+
     msg "generating []/boot/grub/grub.cfg"
     chroot ${mountpoint} grub-mkconfig -o /boot/grub/grub.cfg --skip-resume >> /tmp/grub2.log 2>&1
 

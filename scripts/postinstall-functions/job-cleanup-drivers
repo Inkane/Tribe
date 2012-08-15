@@ -60,7 +60,9 @@ job_cleanup_drivers()
 			chroot ${mountpoint} /usr/bin/pacman -Rn xf86-video-${rdriver} --noconfirm
 		done
 		msg "remove any unneeded dri pkgs"
-		REMOVE_DRI=`pacman -r ${mountpoint} -Qdtq | grep dri`
+                # tmp fix, use pacman -Rnscu $(pacman -Qdtq) somewhere at the end later
+                # grep errors out if it can't find anything > using sed instead of grep, 
+                REMOVE_DRI=$(pacman -r ${mountpoint} -Qdtq | sed -n '/dri/ p')
 		for rdri in ${REMOVE_DRI}
 		do
 			chroot ${mountpoint} /usr/bin/pacman -Rn ${rdri} --noconfirm

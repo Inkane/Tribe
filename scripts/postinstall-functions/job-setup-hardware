@@ -39,8 +39,8 @@ job_setup_hardware()
 		chroot ${mountpoint} /usr/bin/pacman -Rdd xf86-nv --noconfirm
 		chroot ${mountpoint} /usr/bin/pacman -Rdd xf86-nouveau --noconfirm
 		msg "installing driver"
-		pacman -r ${mountpoint} -Udf ${PKG_OVERLAY}/nvidia-utils-${NVIDIA_DRV_VER}* --noconfirm
-		pacman -r ${mountpoint} -Udf ${PKG_OVERLAY}/nvidia*${NVIDIA_DRV_VER}* --noconfirm
+		pacman -r ${mountpoint} -Udf ${PKG_OVERLAY}/nvidia-utils-3* --noconfirm
+		pacman -r ${mountpoint} -Udf ${PKG_OVERLAY}/nvidia-3* --noconfirm
 
 		# load the modules array from rc.conf
 		msg "loading current modules from rc.conf"

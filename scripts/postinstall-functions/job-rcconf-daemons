@@ -9,6 +9,8 @@ job_rcconf_daemons()
 
 	msg "add basic daemon configuration"
 	sed -i -e 's/^.*DAEMONS=.*/DAEMONS=(hwclock syslog-ng dbus network netfs crond alsa cdemud)/' ${mountpoint}/etc/rc.conf
+	msg "add basic module configuration"
+	sed -i -e 's/^.*MODULES=.*/MODULES=(vhba acpi_call)/' ${mountpoint}/etc/rc.conf
 
 	msg_job_done
 }

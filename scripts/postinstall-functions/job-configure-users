@@ -150,9 +150,7 @@ job_configure_users()
 	chroot ${mountpoint} /bin/chown -v ${user_name}:users /home/${user_name}
 	chroot ${mountpoint} /bin/chown -vR ${user_name}:users /home/${user_name}/Desktop
 	msg "chown ${user_name} /home/${user_name}/.*"
-	chroot ${mountpoint} /bin/chown -v ${user_name}:users /home/${user_name}/.bashrc
-	find ${mountpoint}/home/${user_name}/ -maxdepth 1 -type d -name '.*' | sed "s+${mountpoint}++g" > /tmp/chown.files
-	for i in $(cat /tmp/chown.files); do chroot ${mountpoint} /bin/chown -vR ${user_name}:users $i; done
+	chroot ${mountpoint} /usr/bin/find /home/${user_name}/ -maxdepth 1 -name '.*' -exec /bin/chown -vR ${user_name}:users '{}' \;
 
 	msg "umount {proc,sys,dev}"
 	umount -v ${mountpoint}/proc ${mountpoint}/sys ${mountpoint}/dev 

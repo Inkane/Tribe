@@ -143,34 +143,7 @@ job_init()
 		fi
 	fi
 
-	if [ "$job" = "rcconf-localization" ] ; then
-		if [ -z "${mountpoint}" ] ; then
-			msg "ERROR: You need to give me a mountpoint for the root partition with --mountpoint "
-			msg "Error detected. Stopping. "
-			echo " "
-			exit 0
-		fi
-	fi
-
 	if [ "$job" = "copy-xorgconf" ] ; then
-		if [ -z "${mountpoint}" ] ; then
-			msg "ERROR: You need to give me a mountpoint for the root partition with --mountpoint "
-			msg "Error detected. Stopping. "
-			echo " "
-			exit 0
-		fi
-	fi
-
-	if [ "$job" = "rcconf-daemons" ] ; then
-		if [ -z "${mountpoint}" ] ; then
-			msg "ERROR: You need to give me a mountpoint for the root partition with --mountpoint "
-			msg "Error detected. Stopping. "
-			echo " "
-			exit 0
-		fi
-	fi
-
-	if [ "$job" = "rcconf-network" ] ; then
 		if [ -z "${mountpoint}" ] ; then
 			msg "ERROR: You need to give me a mountpoint for the root partition with --mountpoint "
 			msg "Error detected. Stopping. "
@@ -270,15 +243,6 @@ case "$job" in
 		download-doc)
 			job_download_doc
 		;;
-		rcconf-l10n)
-			job_rcconf_l10n
-		;;
-		rcconf-daemons)
-			job_rcconf_daemons
-		;;
-		rcconf-network)
-			job_rcconf_network
-		;;
 		create-fstab)
 			job_create_fstab
 		;;
@@ -293,9 +257,6 @@ case "$job" in
 		;;
                 install-grub2)
                         job_install_grub2
-		;;
-		create-menulst)
-			job_create_menulst
 		;;
 		configure-sudoers)
 			job_configure_sudoers

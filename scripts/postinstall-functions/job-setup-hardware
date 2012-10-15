@@ -43,8 +43,8 @@ job_setup_hardware()
 		pacman -r ${mountpoint} -Udf ${PKG_OVERLAY}/nvidia-3* --noconfirm
 
 		# load the modules array from rc.conf
-		msg "loading current modules from rc.conf"
-		RCCONF_MODULES=`cat ${mountpoint}/etc/rc.conf | grep "MODULES=" | cut -d "(" -f 2 | cut -d ")" -f 1`
+		#msg "loading current modules from rc.conf"
+		#RCCONF_MODULES=`cat ${mountpoint}/etc/rc.conf | grep "MODULES=" | cut -d "(" -f 2 | cut -d ")" -f 1`
 
 		# add the detected modules to the original modules array
 		#msg "adding nvidia module to modules array"

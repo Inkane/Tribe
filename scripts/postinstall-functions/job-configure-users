@@ -141,11 +141,6 @@ job_configure_users()
 	echo "%bundle ALL=NOPASSWD: /usr/bin/yaourt -Sy" >> ${mountpoint}/etc/sudoers
 	chmod -v 0440 ${mountpoint}/etc/sudoers
 
-	msg "disable compositing"
-
-	echo "[Compositing]" >> ${mountpoint}/home/${user_name}/.kde4/share/config/kwinrc 
-	echo "Enabled=false" >> ${mountpoint}/home/${user_name}/.kde4/share/config/kwinrc 
-
 	msg "chown ${user_name} /home/${user_name}"
 	chroot ${mountpoint} /bin/chown -v ${user_name}:users /home/${user_name}
 	chroot ${mountpoint} /bin/chown -vR ${user_name}:users /home/${user_name}/Desktop

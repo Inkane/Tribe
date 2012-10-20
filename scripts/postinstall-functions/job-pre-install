@@ -21,8 +21,8 @@ job_pre_install()
 		pacman -r ${mountpoint} -Udf ${PKG_OVERLAY}/${p}-* --noconfirm
 	done
 
-	msg "install /etc/inittab"
-	cp -vf /etc/inittab ${mountpoint}/etc/inittab
+	#msg "install /etc/inittab"
+	#cp -vf /etc/inittab ${mountpoint}/etc/inittab
 	
 	msg "umounting /proc, /sys and /dev"
 	umount -v ${mountpoint}/proc ${mountpoint}/sys ${mountpoint}/dev 

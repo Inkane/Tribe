@@ -9,11 +9,9 @@ job_initialize_target()
 
 	msg "initialize special directories"
 	rm -v -rf ${mountpoint}/sys ${mountpoint}/proc ${mountpoint}/dev
+	msg $(ls ${mountpoint})
 	mkdir -p -v -m 1777 ${mountpoint}/tmp
 	mkdir -p -v -m 1777 ${mountpoint}/var/tmp
-	mkdir -p -v ${mountpoint}/var/log/old
-	mkdir -p -v ${mountpoint}/var/lock/sane
-	mkdir -p -v ${mountpoint}/var/cache/pacman/pkg
 	mkdir -p -v ${mountpoint}/boot/grub
 	mkdir -p -v ${mountpoint}/usr/lib/locale
 	mkdir -p -v ${mountpoint}/usr/share/icons/default
@@ -50,7 +48,7 @@ job_initialize_target()
 	sed -i -e "s~^.*Theme=/.*~Theme=/usr/share/apps/kdm/themes/${THEME}~" ${mountpoint}/usr/share/config/kdm/kdmrc
 	sed -i -e 's~^.*#AntiAliasing=.*~AntiAliasing=true~' ${mountpoint}/usr/share/config/kdm/kdmrc
 	sed -i -e 's~^.*#TerminateServer=.*~TerminateServer=true~' ${mountpoint}/usr/share/config/kdm/kdmrc
-	sed -i -e 's~^.*#HaltCmd=.*~HaltCmd=/sbin/halt~' ${mountpoint}/usr/share/config/kdm/kdmrc
+	sed -i -e 's~^.*#HaltCmd=.*~HaltCmd=/sbin/poweroff~' ${mountpoint}/usr/share/config/kdm/kdmrc
 	sed -i -e 's~^.*#RebootCmd=.*~RebootCmd=/sbin/reboot~' ${mountpoint}/usr/share/config/kdm/kdmrc
 
 	msg "copy theme settings"

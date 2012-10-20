@@ -70,11 +70,11 @@ job_create_initrd()
 
     msg "creating initrd images"
     if [ -e "/boot/vmlinuz-linux" ] ; then
-    chroot ${mountpoint} /sbin/mkinitcpio -p linux >>/tmp/initramfs.log 2>&1
+    chroot ${mountpoint} /usr/bin/mkinitcpio -p linux >>/tmp/initramfs.log 2>&1
     echo >> /tmp/initramfs.log
     fi
     if [ -e "/boot/vmlinuz-linux-lts" ] ; then
-    chroot ${mountpoint} /sbin/mkinitcpio -p linux-lts >>/tmp/initramfs.log 2>&1
+    chroot ${mountpoint} /usr/bin/mkinitcpio -p linux-lts >>/tmp/initramfs.log 2>&1
     echo >> /tmp/initramfs.log
     fi
 

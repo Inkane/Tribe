@@ -46,8 +46,19 @@ fi
 # 
 # check if we are running our live system
 if [ -d "/.livesys" ] ; then
-	source /etc/rc.d/functions
-	source /etc/rc.d/functions.d/cmdline
+kernel_cmdline ()
+{
+    for param in $(/bin/cat /proc/cmdline); do
+        case "${param}" in
+            $1=*) echo "${param##*=}"; return 0 ;;
+            $1) return 0 ;;
+            *) continue ;;
+        esac
+    done
+    [ -n "${2}" ] && echo "${2}"
+    return 1
+}
+
 else
 	clear
         echo " "

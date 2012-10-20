@@ -316,7 +316,7 @@ void InstallationHandler::populateCommandParameters()
     }
 
     if (m_doc) {
-        m_postcommand.append("--download-doc yes ");
+        m_postcommand.append("--download-doc no ");
     }
 
     if (m_configurePacman) {
@@ -447,56 +447,45 @@ void InstallationHandler::postInstallDone(int eC, QProcess::ExitStatus eS)
             m_postlabel = i18n("Downloading and installing localization packages...");
             percentage = 5;
         } else if (m_postjob == "download-l10n") {
-            m_postjob = "download-doc";
-            m_postlabel = i18n("Downloading and installing documentation packages...");
-            percentage = 6;
-        } else if (m_postjob == "download-doc") {
-            m_postjob = "rcconf-l10n";
-            m_postlabel = i18n("Setting up localization...");
-            percentage = 7;
-        } else if (m_postjob == "rcconf-l10n") {
-            m_postjob = "rcconf-daemons";
-            m_postlabel = i18n("Creating daemon configuration...");
-            percentage = 8;
-        } else if (m_postjob == "rcconf-daemons") {
-            m_postjob = "rcconf-network";
-            m_postlabel = i18n("Creating network configuration...");
-            percentage = 9;
-        } else if (m_postjob == "rcconf-network") {
-            m_postjob = "create-fstab";
-            m_postlabel = i18n("Creating fstab...");
-            percentage = 10;
+            m_postjob = "create-fstab"; 
+            m_postlabel = i18n("Creating fstab..."); 
+            percentage = 6; 
         } else if (m_postjob == "create-fstab") {
             m_postjob = "add-extra-mountpoint";
-            percentage = 11;
+            m_postlabel = i18n("Adding extra mountpoints..."); 
+            percentage = 7;
         } else if (m_postjob == "add-extra-mountpoint") {
             m_postjob = "setup-hardware";
             m_postlabel = i18n("Configuring hardware...");
-            percentage = 12;
+            percentage = 8;
         } else if (m_postjob == "setup-hardware") {
             m_postjob = "create-initrd";
             m_postlabel = i18n("Creating initial ramdisk images...");
-            percentage = 13;
+            percentage = 9;
         } else if (m_postjob == "create-initrd") {
             m_postjob = "regenerate-locales";
             m_postlabel = i18n("Generating locales...");
-            percentage = 16;
+            percentage = 10;
         } else if (m_postjob == "regenerate-locales") {
-            m_postjob = "cleanup-l10n";
+            m_postjob = "create-localtime";
             m_postlabel = i18n("Removing unused localizations...");
-            percentage = 17;
+            percentage = 11;
+        } else if (m_postjob == "create-localtime") {
+            m_postjob = "cleanup-l10n";
+            m_postlabel = i18n("Symlinking localtime...");
+            percentage = 12;
         } else if (m_postjob == "cleanup-l10n") {
             m_postjob = "cleanup-drivers";
             m_postlabel = i18n("Removing unused drivers...");
-            percentage = 18;
+            percentage = 13;
         } else if (m_postjob == "cleanup-drivers") {
             m_postjob = "cleanup-etc";
             m_postlabel = i18n("Finishing up...");
-            percentage = 19;
+            percentage = 14;
         } else if (m_postjob == "cleanup-etc") {
             m_postjob = "jobcomplete";
             m_postlabel = i18n("Installation complete!");
-            percentage = 20;
+            percentage = 15;
         }
 
 

@@ -47,8 +47,28 @@ fi
 # source functions we need & check if we are running the live system
 # (functions.d/cmdline) is needed to parse kernel command line parameters
 if [ -d "/bootmnt" ] ; then
-        source /etc/rc.d/functions
-        source /etc/rc.d/functions.d/cmdline
+kernel_cmdline ()
+{
+    for param in $(/bin/cat /proc/cmdline); do
+        case "${param}" in
+            $1=*) echo "${param##*=}"; return 0 ;;
+            $1) return 0 ;;
+            *) continue ;;
+        esac
+    done
+    [ -n "${2}" ] && echo "${2}"
+    return 1
+}
+# force to use english
+       export LANG=en_US.UTF-8
+       export LC_MESSAGES=en_US.UTF-8
+LOCALE="$(kernel_cmdline locale.LANG en_US.utf8)"
+TIMEZONE="$(kernel_cmdline timezone UTC)"
+KEYMAP="$(kernel_cmdline vconsole.keymap us)"
+CONSOLEFONT="$(kernel_cmdline vconsole.font)"
+CONSOLEMAP="$(kernel_cmdline vconsole.font.map)"
+USENONFREE="$(kernel_cmdline nonfree no)"
+        
 else
         clear
         echo " "
@@ -183,11 +203,6 @@ while [ $# -gt 0 ]
                         shift 2
                         ;;
 
-                        --download-doc)
-                        download_doc=$2
-                        shift 2
-                        ;;
-
                         --kdelang)
                         kdelang=$2
                         shift 2
@@ -283,9 +298,9 @@ while [ $# -gt 0 ]
                         echo "   06. download-l10n (downloads l10n packages, if we have network)"
                         echo "   07. download-doc (downloads doc  packages, if we have network)"
                         echo "   08. download-dev (downloads devel packages, if we have network)"
-                        echo "   09. rcconf-l10n (use the currently used localization on the target)"
-                        echo "   10. rcconf-daemons (add a minimum set of daemons to /etc/rc.conf on the target)"
-                        echo "   11. rcconf-network (add a minimal dhcp based network configuration to the target)"
+                        echo "   09. create-localtime (symlink the correct timezone file to to /etc/localtime)"
+                        #echo "   10. rcconf-daemons (add a minimum set of daemons to /etc/rc.conf on the target)"
+                        #echo "   11. rcconf-network (add a minimal dhcp based network configuration to the target)"
                         echo "   12. create-fstab (create fstab for the installed system)"
                         echo "   13. add-extra-mountpoint (create a additional mount, this can be run more than once)"
                         echo "   14. setup-hardware (add detected modules to rc.conf and mkinitcpio.conf on the target)"
@@ -331,5 +346,4 @@ fi
 #
 ###########################################################################
 job_init
-
 

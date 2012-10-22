@@ -50,6 +50,7 @@ job_initialize_target()
 	sed -i -e 's~^.*#TerminateServer=.*~TerminateServer=true~' ${mountpoint}/usr/share/config/kdm/kdmrc
 	sed -i -e 's~^.*#HaltCmd=.*~HaltCmd=/sbin/poweroff~' ${mountpoint}/usr/share/config/kdm/kdmrc
 	sed -i -e 's~^.*#RebootCmd=.*~RebootCmd=/sbin/reboot~' ${mountpoint}/usr/share/config/kdm/kdmrc
+	sed -i -e 's/GreeterUID=kdm/GreeterUID=' ${mountpoint}/usr/share/config/kdm/kdmrc
 
 	msg "copy theme settings"
 	mkdir -p ${mountpoint}/root/.config

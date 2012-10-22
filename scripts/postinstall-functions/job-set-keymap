@@ -1,0 +1,246 @@
+#!/bin/bash
+
+job_set_keymap()
+{
+	# initialize error handling
+	trap error_handler ERR
+
+	msg_job_start "job_set_keymap"
+
+	#
+	# this checks for the lang=XX grub2 parameter. When it is set,
+	# the currently used language will be applied to the installation
+	#
+
+	msg "detect current language"
+	COUNTRY="$(kernel_cmdline lang)"
+	[ -n "$COUNTRY" ] || COUNTRY="enus"
+	msg "detected $COUNTRY"
+
+	case "$COUNTRY" in
+
+		ast)
+		# Asturian 
+		msg "asturian setup"
+		echo 'KEYMAP="es"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		at)
+		# Austrian 
+		msg "austrian setup"
+		echo 'KEYMAP="de"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		be)
+		# Belarussian 
+		msg "belarussian setup"
+		echo 'KEYMAP="be"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		bg)
+		# Bulgarian 
+		msg "bulgarian setup"
+		echo 'KEYMAP="bg"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		ca)
+		# Catalan 
+		msg "catalan setup"
+		echo 'KEYMAP="es"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		cs)
+		# Czech
+		msg "czech setup"
+		echo 'KEYMAP="cz-lat2"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		de)
+		# German 
+		msg "german setup"
+		echo 'KEYMAP="de"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		dk)
+		# Danish 
+		msg "danish setup"
+		echo 'KEYMAP="dk"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		el)
+		# Greek
+		msg "greek setup"
+		echo 'KEYMAP="el"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		engb)
+		# English 
+		msg "British english setup"
+		echo 'KEYMAP="uk"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		ennz)
+		msg "New Zealand english setup"
+		echo 'KEYMAP="us"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		enus)
+		# English 
+		msg "american english setup"
+		echo 'KEYMAP="us"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		es)
+		# Spain 
+		msg "spanish setup"
+		echo 'KEYMAP="es"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		esar)
+		# Argetina
+		msg "Argentina spanish setup"
+		echo 'KEYMAP="es"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		eu)
+		# Euskara (basque) 
+		msg "Euskara setup"
+		echo 'KEYMAP="es"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		fi)
+		# Finland 
+		msg "finnish setup"
+		echo 'KEYMAP="fi"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		fr)
+		# France 
+		msg "francais setup"
+		echo 'KEYMAP="fr"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		gl)
+		# Galician 
+		msg "Galician setup"
+		echo 'KEYMAP="es"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		hr)
+		# Croatian 
+		msg "Croatian setup"
+		echo 'KEYMAP="hr"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		hu)
+		# Hungary 
+		msg "hungarian setup"
+		echo 'KEYMAP="hu"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		it)
+		# Italy 
+		msg "italian setup"
+		echo 'KEYMAP="it"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		ja)
+		# Japan 
+		msg "japanese setup"
+		echo 'KEYMAP="us"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		nl)
+		# Dutch 
+		msg "dutch setup"
+		echo 'KEYMAP="us"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		nlbe)
+		# Dutch 
+		msg "belgian setup"
+		echo 'KEYMAP="be"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		no)
+		# Norway 
+		msg "norwegian setup"
+		echo 'KEYMAP="nb"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		pl)
+		# Poland 
+		msg "polish setup"
+		echo 'KEYMAP="pl"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		ptbr)
+		# Brazilian Portuguese
+		msg "Brazilian Portuguese setup"
+		echo 'KEYMAP="br-abnt2"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		ru)
+		# Russia 
+		msg "russian setup"
+		echo 'KEYMAP="ru"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		sk)
+		# Slovak 
+		msg "slovakian setup"
+		echo 'KEYMAP="sk"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		sl)
+		# Slovenian 
+		msg "slovenian setup"
+		echo 'KEYMAP="slovene"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		sr)
+		# Servian 
+		msg "servian setup"
+		echo 'KEYMAP="sr"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		tr)
+		# Turkish 
+		msg "turkish setup"
+		echo 'KEYMAP="trq"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		vcia)
+		# Valencian 
+		msg "Valencian setup"
+		echo 'KEYMAP="es"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		zhcn)
+		# Simplified Chinese 
+		msg "chinese setup (simplified)"
+		echo 'KEYMAP="us"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		zhhk)
+		# Simplified Chinese 
+		msg "chinese setup (Hong Kong)"
+		echo 'KEYMAP="us"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		zhtw)
+		# Simplified Chinese 
+		msg "chinese setup (Taiwan)"
+		echo 'KEYMAP="us"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+		*)
+		# American 
+		msg "no language setting detected, using american english"
+		echo 'KEYMAP="us"' >> ${mountpoint}/etc/vconsole.conf
+		;;
+
+	esac
+	
+	msg_job_done
+}

@@ -68,7 +68,7 @@ KEYMAP="$(kernel_cmdline vconsole.keymap us)"
 CONSOLEFONT="$(kernel_cmdline vconsole.font)"
 CONSOLEMAP="$(kernel_cmdline vconsole.font.map)"
 USENONFREE="$(kernel_cmdline nonfree no)"
-        
+
 else
         clear
         echo " "
@@ -300,7 +300,7 @@ while [ $# -gt 0 ]
                         echo "   08. download-dev (downloads devel packages, if we have network)"
                         echo "   09. create-localtime (symlink the correct timezone file to to /etc/localtime)"
                         echo "   10. set-hostname (set hostname in /etc/hostname and /etc/hosts)"
-                        #echo "   10. rcconf-daemons (add a minimum set of daemons to /etc/rc.conf on the target)"
+                        echo "   11. set-keymap (change the keymap in /etc/vconsole.conf)"
                         echo "   12. create-fstab (create fstab for the installed system)"
                         echo "   13. add-extra-mountpoint (create a additional mount, this can be run more than once)"
                         echo "   14. setup-hardware (add detected modules to rc.conf and mkinitcpio.conf on the target)"

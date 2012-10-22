@@ -246,6 +246,9 @@ case "$job" in
 		set-hostname)
 			job_set_hostname
 		;;
+		set-keymap)
+			job_set_keymap
+		;;
 		create-fstab)
 			job_create_fstab
 		;;

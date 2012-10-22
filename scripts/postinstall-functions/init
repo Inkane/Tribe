@@ -243,6 +243,9 @@ case "$job" in
 		create-localtime)
 			job_create_localtime
 		;;
+		set-hostname)
+			job_set_hostname
+		;;
 		create-fstab)
 			job_create_fstab
 		;;

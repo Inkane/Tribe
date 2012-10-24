@@ -217,6 +217,7 @@ Australia/Tasmania:en_AU.UTF-8,en_AU,en_GB.UTF-8,en_GB,en_US.UTF-8,en_US:en_gb
 Australia/Victoria:en_AU.UTF-8,en_AU,en_GB.UTF-8,en_GB,en_US.UTF-8,en_US:en_gb
 Europe/Amsterdam:nl_NL.UTF-8,nl_NL,nl_NL@euro:nl,en_gb
 Europe/Athens:el_GR.UTF-8,el_GR,el_CY.UTF-8,el_CY:el,en_gb
+Europe/Belgrade:bs_BA.UTF-8,bs_BA,sr_RS.UTF-8,sr_RS:sr,en_gb
 Europe/Berlin:de_DE.UTF-8,de_DE,de_DE@euro:de,en_gb
 Europe/Bern:de_CH.UTF-8,de_CH,de_CH@euro,fr_CH.UTF-8,fr_CH,fr_CH@euro:de,fr,it,en_gb
 Europe/Bratislava:sk_SK.UTF-8,sk_SK:en_gb
@@ -240,12 +241,15 @@ Europe/Prague:cs_CZ.UTF-8,cs_CZ:cs,csb,en_gb
 Europe/Riga:lv_LV.UTF-8,lv_LV:lv,en_gb
 Europe/Rome:it_IT.UTF-8,it_IT,it_IT@euro:it,en_gb
 Europe/Skopje:mk_MK.UTF-8,mk_MK:mk,en_gb
+Europe/Sarajevo:bs_BA.UTF-8,bs_BA:bs,en_gb
 Europe/Sofia:bg_BG.UTF-8,bg_BG:bg,en_gb
 Europe/Stockholm:sv_SE.UTF-8,sv_SE,sv_FI.UTF-8,sv_FI,sv_FI@euro:sv,en_gb
 Europe/Santa_Cruz_de_Tenerife:es_ES.UTF-8,es_ES,es_ES@euro:es,en_gb
+Europe/Tirana:sq_AL.UTF-8,sq_AL:sq,en_gb
 Europe/Vienna:de_AT.UTF-8,de_AT,de_AT.UTF-8,de_AT,de_AT@euro:de,de_at
 Europe/Vilnius:lt_LT.UTF-8,lt_LT:lt,en_gb
 Europe/Warsaw:pl_PL.UTF-8,pl_PL:pl,en_gb
+Europe/Zagreb:hr_HR.UTF-8,hr_HR:hr,en_gb
 Indian/Antananarivo:fr_FR.UTF-8,fr_FR,fr_FR@euro,en_GB.UTF-8,en_GB,en_US.UTF-8,en_US:fr,en_gb
 Indian/Chagos:en_GB.UTF-8,en_GB,en_US.UTF-8,en_US:en_gb
 Indian/Christmas:en_GB.UTF-8,en_GB,en_US.UTF-8,en_US,zh_CN.UTF-8,zh_CN,zh_CN.GB18030,zh_CN.GBK:en_gb

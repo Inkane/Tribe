@@ -751,6 +751,13 @@
   </Point>
 </Placemark>
 <Placemark>
+  <name>Belgrade</name>
+  <description>Europe/Belgrade</description>
+  <Point>
+    <coordinates>20.4622,44.8205</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>Berlin</name>
   <description>Europe/Berlin</description>
   <Point>
@@ -797,6 +804,13 @@
   <description>Europe/Copenhagen</description>
   <Point>
     <coordinates>12.5681,55.6763</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Dublin</name>
+  <description>Europe/Dublin</description>
+  <Point>
+    <coordinates>-6.26,53.3494</coordinates>
   </Point>
 </Placemark>
 <Placemark>
@@ -898,6 +912,13 @@
   </Point>
 </Placemark>
 <Placemark>
+  <name>Sarajevo</name>
+  <description>Europe/Sarajevo</description>
+  <Point>
+    <coordinates>18.2500,43.8500</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>Sofia</name>
   <description>Europe/Sofia</description>
   <Point>
@@ -912,6 +933,13 @@
   </Point>
 </Placemark>
 <Placemark>
+  <name>Tirana</name>
+  <description>Europe/Tirana</description>
+  <Point>
+    <coordinates>19.8318,41.3316</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>Vilnius</name>
   <description>Europe/Vilnius</description>
   <Point>
@@ -923,6 +951,13 @@
   <description>Europe/Warsaw</description>
   <Point>
     <coordinates>21.0122,52.2297</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Zagreb</name>
+  <description>Europe/Zagreb</description>
+  <Point>
+   <coordinates>15.9778,45.8130</coordinates>
   </Point>
 </Placemark>
 <Placemark>

@@ -47,28 +47,27 @@ fi
 # source functions we need & check if we are running the live system
 # (functions.d/cmdline) is needed to parse kernel command line parameters
 if [ -d "/bootmnt" ] ; then
-kernel_cmdline ()
-{
-    for param in $(/bin/cat /proc/cmdline); do
-        case "${param}" in
-            $1=*) echo "${param##*=}"; return 0 ;;
-            $1) return 0 ;;
-            *) continue ;;
-        esac
-    done
-    [ -n "${2}" ] && echo "${2}"
-    return 1
-}
-# force to use english
-       export LANG=en_US.UTF-8
-       export LC_MESSAGES=en_US.UTF-8
-LOCALE="$(kernel_cmdline locale.LANG en_US.utf8)"
-TIMEZONE="$(kernel_cmdline timezone UTC)"
-KEYMAP="$(kernel_cmdline vconsole.keymap us)"
-CONSOLEFONT="$(kernel_cmdline vconsole.font)"
-CONSOLEMAP="$(kernel_cmdline vconsole.font.map)"
-USENONFREE="$(kernel_cmdline nonfree no)"
-
+        kernel_cmdline ()
+        {
+                for param in $(/bin/cat /proc/cmdline); do
+                        case "${param}" in
+                                $1=*) echo "${param##*=}"; return 0 ;;
+                                $1) return 0 ;;
+                                *) continue ;;
+                        esac
+                done
+                [ -n "${2}" ] && echo "${2}"
+                return 1
+        }
+        # force to use english
+        export LANG=en_US.UTF-8
+        export LC_MESSAGES=en_US.UTF-8
+        LOCALE="$(kernel_cmdline locale.LANG en_US.utf8)"
+        TIMEZONE="$(kernel_cmdline timezone UTC)"
+        KEYMAP="$(kernel_cmdline vconsole.keymap us)"
+        CONSOLEFONT="$(kernel_cmdline vconsole.font)"
+        CONSOLEMAP="$(kernel_cmdline vconsole.font.map)"
+        USENONFREE="$(kernel_cmdline nonfree no)"
 else
         clear
         echo " "

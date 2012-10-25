@@ -17,7 +17,21 @@ job_cleanup_l10n()
 	#
 	# CLEANUP UP LOCALIZATION
 	#
-	USED_L10N=$(grep "^LANG" ${mountpoint}/etc/locale.conf | sed -e 's/.*=//g' -e 's/_.*//g')
+	USED_L10N_LONG=$(grep "^LANG" ${mountpoint}/etc/locale.conf | sed -e 's/.*=//g' -e 's/\..*//g')
+	USED_L10N=$(echo ${USED_L10N_LONG} | awk -F "_" '{print $1}')
+	
+	# special long kde-l10n languages
+	LONG_KDE_L10N="pt_BR zh_CN zh_TW"
+	for i in $(echo ${LONG_KDE_L10N}) ; do
+                if [[ "${USED_L10N_LONG}" == "${i}" ]] ; then
+                        USED_L10N=${i}
+                fi
+	done
+	if [[ "${USED_L10N_LONG}" == "en_GB" ]] ; then
+                USED_L10N="en_gb"
+        elif [[ "${USED_L10N_LONG}" == "ca_ES@valencia" ]] ; then
+                USED_L10N="ca@valencia"
+        fi
 	ALL_L10N=$(pacman -Q | grep ${KDE_L10N_PREFIX} | cut -d " " -f 1 | awk -F "l10n-" '{print $2}')
 
 	msg "configured localization: ${USED_L10N}"

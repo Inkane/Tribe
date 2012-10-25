@@ -474,15 +474,15 @@ void InstallationHandler::postInstallDone(int eC, QProcess::ExitStatus eS)
             m_postjob = "set-keymap";
             m_postlabel = i18n("Symlinking localtime...");
             percentage = 12;
-		} else if (m_postjob == "set-keymap") {
-			m_postjob = "set-hostname";
-			m_postlabel = i18n("Setting keymap...");
-			percentage = 13;
-		} else if (m_postjob == "set-hostname") {
-			m_postjob = "cleanup-l10n";
-			m_postlabel = i18n("Setting hostname...");
-			percentage = 14;
-		} else if (m_postjob == "cleanup-l10n") {
+        } else if (m_postjob == "set-keymap") {
+            m_postjob = "set-hostname";
+            m_postlabel = i18n("Setting keymap...");
+            percentage = 13;
+        } else if (m_postjob == "set-hostname") {
+            m_postjob = "cleanup-l10n";
+            m_postlabel = i18n("Setting hostname...");
+            percentage = 14;
+        } else if (m_postjob == "cleanup-l10n") {
             m_postjob = "cleanup-drivers";
             m_postlabel = i18n("Removing unused drivers...");
             percentage = 15;

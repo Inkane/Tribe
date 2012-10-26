@@ -24,6 +24,11 @@ job_install_grub2()
        sed -i -e "s,GRUB_CMDLINE_LINUX_DEFAULT=.*,GRUB_CMDLINE_LINUX_DEFAULT=\"quiet splash radeon.modeset=0\",g" ${mountpoint}/etc/default/grub
        sed -i -e "s,GRUB_CMDLINE_LINUX=.*,GRUB_CMDLINE_LINUX_DEFAULT=\"quiet splash radeon.modeset=0\",g" ${mountpoint}/etc/default/grub
     fi
+    
+    if [ -e "/tmp/nvidia" ] ; then
+       msg "Nvidia has boot issues with quiet settings"
+       sed -i -e "s,GRUB_CMDLINE_LINUX_DEFAULT=.*,GRUB_CMDLINE_LINUX_DEFAULT=\"\",g" ${mountpoint}/etc/default/grub
+    fi
 
     # set grub theme
     sed -i -e 's,.*GRUB_THEME=.*,GRUB_THEME="/usr/share/grub/themes/Dharma/theme.txt",' ${mountpoint}/etc/default/grub

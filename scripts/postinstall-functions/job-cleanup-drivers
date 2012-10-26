@@ -26,6 +26,7 @@ job_cleanup_drivers()
 	touch /tmp/used_drivers
 	[[ $(echo "$USED_MODULES" | grep "^radeon$") ]]  && echo "ati"     >> /tmp/used_drivers
 	[[ $(echo "$USED_MODULES" | grep "^i915$") ]]    && echo "intel"   >> /tmp/used_drivers
+	[[ $(echo "$USED_MODULES" | grep "^nvidia$") ]]    && echo "nvidia"   >> /tmp/used_drivers
 
 	for driver in ${ALL_DRIVERS}
 	do

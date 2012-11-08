@@ -63,6 +63,7 @@ void ConfigPage::createWidget()
     ui.setupUi(this);
 
     ui.changeAppearanceButton->setVisible(false);
+    ui.downloadBundlesButton->setVisible(false);
 
     // page connections
     connect(ui.downloadBundlesButton, SIGNAL(clicked()), this, SLOT(setDownloadBundlesPage()));

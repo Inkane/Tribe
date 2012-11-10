@@ -156,16 +156,20 @@ void UserWidget::avatarClicked()
 
 void UserWidget::updatePasswordStrengthBar(const QString& newpass_)
 {
-  //TODO: This code uses libpwquality to check the passwordstrength and uses a QProgressBar to indicate how strong it is
+  // This code uses libpwquality to check the password's strength each time it changes and uses a QProgressBar to indicate how strong it is
+  // TODO: Maybe abstract libpwquality away, writing a wrapper with a Qtish API?
   QByteArray byteArray = newpass_.toUtf8();
   const char* cPassString = byteArray.constData();
   void* auxerror;
-  int pwstrength = pwquality_check(pwquality_default_settings(), cPassString, NULL, NULL, &auxerror); //FIXME shouldn't use nullptr but rather use the available data and store auxerror
+  int pwstrength = pwquality_check(pwquality_default_settings(), cPassString, NULL, NULL, &auxerror);
   if (pwstrength < 0) {
-    const char* cAuxErrorInfo =  pwquality_strerror(NULL, 0, pwstrength, auxerror); //TODO: display the error message in the GUI
+    const char* cAuxErrorInfo =  pwquality_strerror(NULL, 0, pwstrength, auxerror);
     ui.passStrengthProgBar->reset();
+    ui.pwERRORLabel->setText(QString::fromUtf8(cAuxErrorInfo));
+    ui.pwERRORLabel->show();
   } else {
     ui.passStrengthProgBar->setValue(pwstrength);
+    ui.pwERRORLabel->hide();
   }
 }
 

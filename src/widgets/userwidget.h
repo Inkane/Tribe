@@ -66,6 +66,7 @@ private slots:
     void useUserPwToggled(bool);
 
     void testFields();
+    void updatePasswordStrengthBar(const QString&);
 
 private:
     Ui::UserWidget ui;

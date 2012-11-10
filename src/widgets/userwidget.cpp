@@ -54,6 +54,7 @@ UserWidget::UserWidget(int a_userNumber, QWidget* parent): QWidget(parent)
 
     connect(ui.loginLine, SIGNAL(textChanged(QString)), this, SLOT(testFields()));
     connect(ui.passLine, SIGNAL(textChanged(QString)), this, SLOT(testFields()));
+    connect(ui.passLine, SIGNAL(textChanged(QString)), this, SLOT(updatePasswordStrengthBar(QString)));
     connect(ui.confirmPassLine, SIGNAL(textChanged(QString)), this, SLOT(testFields()));
 
     connect(ui.userDetails, SIGNAL(clicked(bool)), this, SLOT(showDetails()));
@@ -149,6 +150,12 @@ void UserWidget::avatarClicked()
     m_avatarDialog->show();
     m_avatarDialog->setGeometry(QStyle::alignedRect(Qt::LeftToRight, Qt::AlignCenter, m_avatarDialog->size(), qApp->desktop()->availableGeometry()));
 }
+
+void UserWidget::updatePasswordStrengthBar(const QString& )
+{
+  //TODO: This code uses libpwquality to check the passwordstrength and uses a QProgressBar to indicate how strong it is
+}
+
 
 void UserWidget::autoLoginToggled()
 {

@@ -14,6 +14,9 @@
 
 #include "avatardialog.h"
 #include "userwidget.h"
+extern "C" {
+  #include <pwquality.h>
+}
 
 
 UserWidget::UserWidget(int a_userNumber, QWidget* parent): QWidget(parent)
@@ -151,9 +154,19 @@ void UserWidget::avatarClicked()
     m_avatarDialog->setGeometry(QStyle::alignedRect(Qt::LeftToRight, Qt::AlignCenter, m_avatarDialog->size(), qApp->desktop()->availableGeometry()));
 }
 
-void UserWidget::updatePasswordStrengthBar(const QString& )
+void UserWidget::updatePasswordStrengthBar(const QString& newpass_)
 {
   //TODO: This code uses libpwquality to check the passwordstrength and uses a QProgressBar to indicate how strong it is
+  QByteArray byteArray = newpass_.toUtf8();
+  const char* cPassString = byteArray.constData();
+  void* auxerror;
+  int pwstrength = pwquality_check(pwquality_default_settings(), cPassString, NULL, NULL, &auxerror); //FIXME shouldn't use nullptr but rather use the available data and store auxerror
+  if (pwstrength < 0) {
+    const char* cAuxErrorInfo =  pwquality_strerror(NULL, 0, pwstrength, auxerror); //TODO: display the error message in the GUI
+    ui.passStrengthProgBar->reset();
+  } else {
+    ui.passStrengthProgBar->setValue(pwstrength);
+  }
 }
 
 

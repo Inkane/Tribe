@@ -170,6 +170,7 @@ bool UserCreationPage::validate()
                 user->useRootPw) {
                 rootPw = user->rootPassword;
             } else if (!user->useRootPw) {
+		qDebug() << ">>>>>>>>>>>>>>>>>>>>>>>>>>>>Using user password for root<<<<<<<<<<<<<<<<<<<<<<<<<<";
                 rootPw = user->password;
             }
         }

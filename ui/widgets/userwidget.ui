@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>699</width>
-    <height>287</height>
+    <height>296</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -40,8 +40,53 @@
       </property>
       <item>
        <layout class="QGridLayout" name="gridLayout">
-        <item row="0" column="2" rowspan="5" colspan="2">
-         <widget class="QLineEdit" name="loginLine">
+        <item row="0" column="5" rowspan="4">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Password: </string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" rowspan="5">
+         <spacer name="horizontalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="14" rowspan="3">
+         <widget class="QPushButton" name="removeUser">
+          <property name="minimumSize">
+           <size>
+            <width>32</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>32</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Remove this user.</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="7" rowspan="4" colspan="4">
+         <widget class="QLineEdit" name="passLine">
           <property name="minimumSize">
            <size>
             <width>150</width>
@@ -50,23 +95,13 @@
           </property>
          </widget>
         </item>
-        <item row="0" column="1" rowspan="5">
-         <widget class="QLabel" name="label">
-          <property name="text">
-           <string>Login: </string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="5" rowspan="4">
-         <widget class="QLabel" name="label_2">
-          <property name="text">
-           <string>Password: </string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        <item row="4" column="7" colspan="4">
+         <widget class="QLineEdit" name="confirmPassLine">
+          <property name="minimumSize">
+           <size>
+            <width>150</width>
+            <height>0</height>
+           </size>
           </property>
          </widget>
         </item>
@@ -81,6 +116,22 @@
           <property name="sizeHint" stdset="0">
            <size>
             <width>50</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="13" rowspan="5">
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
             <height>20</height>
            </size>
           </property>
@@ -108,8 +159,8 @@
           </property>
          </widget>
         </item>
-        <item row="0" column="7" rowspan="4" colspan="4">
-         <widget class="QLineEdit" name="passLine">
+        <item row="0" column="2" rowspan="5" colspan="2">
+         <widget class="QLineEdit" name="loginLine">
           <property name="minimumSize">
            <size>
             <width>150</width>
@@ -118,45 +169,13 @@
           </property>
          </widget>
         </item>
-        <item row="4" column="5">
-         <widget class="QLabel" name="label_3">
+        <item row="0" column="1" rowspan="5">
+         <widget class="QLabel" name="label">
           <property name="text">
-           <string>Confirm Password:</string>
+           <string>Login: </string>
           </property>
           <property name="alignment">
            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="14" rowspan="3">
-         <widget class="QPushButton" name="removeUser">
-          <property name="minimumSize">
-           <size>
-            <width>32</width>
-            <height>32</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>32</width>
-            <height>32</height>
-           </size>
-          </property>
-          <property name="toolTip">
-           <string>Remove this user.</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-         </widget>
-        </item>
-        <item row="4" column="7" colspan="4">
-         <widget class="QLineEdit" name="confirmPassLine">
-          <property name="minimumSize">
-           <size>
-            <width>150</width>
-            <height>0</height>
-           </size>
           </property>
          </widget>
         </item>
@@ -178,19 +197,6 @@
            <string/>
           </property>
          </widget>
-        </item>
-        <item row="0" column="0" rowspan="5">
-         <spacer name="horizontalSpacer_4">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>40</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
         </item>
         <item row="0" column="15" rowspan="5">
          <spacer name="horizontalSpacer_5">
@@ -221,23 +227,30 @@
           </property>
          </spacer>
         </item>
-        <item row="0" column="13" rowspan="5">
-         <spacer name="horizontalSpacer_3">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
+        <item row="4" column="5">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Confirm Password:</string>
           </property>
-          <property name="sizeType">
-           <enum>QSizePolicy::Fixed</enum>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="7">
+         <spacer name="verticalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
           </property>
           <property name="sizeHint" stdset="0">
            <size>
             <width>20</width>
-            <height>20</height>
+            <height>40</height>
            </size>
           </property>
          </spacer>
         </item>
-        <item row="5" column="7">
+        <item row="6" column="7">
          <widget class="QProgressBar" name="passStrengthProgBar">
           <property name="value">
            <number>0</number>
@@ -248,12 +261,8 @@
           <property name="invertedAppearance">
            <bool>false</bool>
           </property>
-         </widget>
-        </item>
-        <item row="5" column="5">
-         <widget class="QLabel" name="label_7">
-          <property name="text">
-           <string>Password Strength:</string>
+          <property name="format">
+           <string>password strength: %p%</string>
           </property>
          </widget>
         </item>

@@ -14,6 +14,7 @@ include (KDE4Defaults)
 find_package(MarbleWidget REQUIRED)
 find_package(TribePartitionManager REQUIRED)
 find_package(MSGFMT REQUIRED)
+find_package(LibPwquality REQUIRED)
 
 add_subdirectory(icons)
 add_subdirectory(translations)
@@ -111,7 +112,7 @@ target_link_libraries(tribe
                       ${KDE4_KIO_LIBRARY}
                       ${LIBMARBLEWIDGET_LIBRARY}
                       ${TRIBEPARTITIONMANAGER_LIBRARY}
-		      pwquality
+		      ${LIBPWQUALITY_LIBRARY}
 )
 
 file(GLOB POSTINSTALL_FUNCTIONS

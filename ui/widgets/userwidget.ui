@@ -237,6 +237,22 @@
           </property>
          </spacer>
         </item>
+        <item row="5" column="7">
+         <widget class="QProgressBar" name="passStrengthProgBar">
+          <property name="value">
+           <number>0</number>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="invertedAppearance">
+           <bool>false</bool>
+          </property>
+          <property name="format">
+           <string>password strength: %p%</string>
+          </property>
+         </widget>
+        </item>
        </layout>
       </item>
       <item>
@@ -254,6 +270,16 @@
          </size>
         </property>
        </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="pwERRORLabel">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
       </item>
       <item>
        <widget class="QWidget" name="extWidget" native="true">

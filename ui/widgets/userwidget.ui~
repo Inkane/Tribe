@@ -108,8 +108,8 @@
           </property>
          </widget>
         </item>
-        <item row="4" column="7" colspan="4">
-         <widget class="QLineEdit" name="confirmPassLine">
+        <item row="0" column="7" rowspan="4" colspan="4">
+         <widget class="QLineEdit" name="passLine">
           <property name="minimumSize">
            <size>
             <width>150</width>
@@ -118,29 +118,10 @@
           </property>
          </widget>
         </item>
-        <item row="0" column="4" rowspan="5">
-         <spacer name="horizontalSpacer">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeType">
-           <enum>QSizePolicy::Fixed</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>50</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="0" column="13" rowspan="5">
-         <spacer name="horizontalSpacer_3">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeType">
-           <enum>QSizePolicy::Fixed</enum>
+        <item row="4" column="5">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Confirm Password:</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -176,16 +157,6 @@
             <width>150</width>
             <height>0</height>
            </size>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="1" rowspan="5">
-         <widget class="QLabel" name="label">
-          <property name="text">
-           <string>Login: </string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
           </property>
          </widget>
         </item>
@@ -250,18 +221,8 @@
           </property>
          </spacer>
         </item>
-        <item row="4" column="5">
-         <widget class="QLabel" name="label_3">
-          <property name="text">
-           <string>Confirm Password:</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-          </property>
-         </widget>
-        </item>
-        <item row="5" column="7">
-         <spacer name="verticalSpacer_4">
+        <item row="0" column="13" rowspan="5">
+         <spacer name="horizontalSpacer_3">
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
           </property>
@@ -276,33 +237,7 @@
           </property>
          </spacer>
         </item>
-        <item row="6" column="7">
-         <widget class="QProgressBar" name="passStrengthProgBar">
-          <property name="value">
-           <number>0</number>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-          </property>
-          <property name="invertedAppearance">
-           <bool>false</bool>
-          </property>
-          <property name="format">
-           <string>password strength: %p%</string>
-          </property>
-         </widget>
-        </item>
        </layout>
-      </item>
-      <item>
-       <widget class="QLabel" name="pwERRORLabel">
-        <property name="text">
-         <string/>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
       </item>
       <item>
        <spacer name="verticalSpacer_3">
@@ -405,7 +340,7 @@
          <item row="3" column="5" colspan="2">
           <widget class="QCheckBox" name="rootUsesUserPwCheckBox">
            <property name="text">
-            <string>Select to use the above password as 
+            <string>Use the above password as 
 the Administrator password</string>
            </property>
           </widget>

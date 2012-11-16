@@ -63,7 +63,7 @@ void ConfigPage::createWidget()
     ui.setupUi(this);
 
     ui.changeAppearanceButton->setVisible(false);
-    ui.downloadBundlesButton->setVisible(false);
+    ui.downloadBundlesButton->setVisible(true);
 
     // page connections
     connect(ui.downloadBundlesButton, SIGNAL(clicked()), this, SLOT(setDownloadBundlesPage()));
@@ -325,7 +325,7 @@ void ConfigPage::bundlesDownloadButtonClicked()
 
     // call rsync
     foreach (QString bundle, checkedList) {
-        m_process->start("bash -c \"echo $(rsync -avh --list-only cinstall@chakra-project.org::cinstall/bundles" +
+        m_process->start("bash -c \"echo $(rsync -avh --list-only chakra@chakra-project.org::chakra/bundles" +
                         m_currentBranch + "/" + m_currentArch +
                         "/" + bundle + "*  | cut -d\':\' -f3 | cut -d\' \' -f2)\"");
         m_process->waitForFinished();

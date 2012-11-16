@@ -55,7 +55,8 @@ p, li { white-space: pre-wrap; }
       </size>
      </property>
      <property name="text">
-      <string>Please select a mountpoint for your partitions. No permanent changes to your hard drive will be made when you will press &quot;Next&quot;. Note: selected partitions are not explicitly formatted.</string>
+      <string>Please select a mountpoint for your partitions. No permanent changes to your hard drive will be made when you will press &quot;Next&quot;. Note: selected partitions are not explicitly formatted.
+If later during this install you choose to install a bootloader, Tribe will install GRUB2 on the same hard drive where your &quot;/boot&quot; partition is located</string>
      </property>
      <property name="scaledContents">
       <bool>true</bool>

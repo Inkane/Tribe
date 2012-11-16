@@ -937,7 +937,7 @@ Tribe will install GRUB2 on the same hard drive where your &quot;/boot&quot; fol
    <item row="1" column="0">
     <widget class="QLabel" name="label_2">
      <property name="text">
-      <string>Your newly installed Chakra system is ready, here you can choose a few advanced extra options.</string>
+      <string>Your newly installed Chakra system is ready.  Here you can choose advanced extra options like creating initial ramfs for booting from an usb device or using an existing bootloader to add Chakra to (not having Tribe install GRUB2). </string>
      </property>
      <property name="wordWrap">
       <bool>true</bool>

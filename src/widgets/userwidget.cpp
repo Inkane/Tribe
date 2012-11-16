@@ -40,7 +40,7 @@ UserWidget::UserWidget(int a_userNumber, QWidget* parent): QWidget(parent)
 
     if (number == 0) {
         autoLogin = true;
-        useRootPw = false;
+        useRootPw = true; // set this to true for the first user, so that he can manually set a password for root
         ui.autoLoginCheckBox->setChecked(true);
         ui.rootUsesUserPwCheckBox->setChecked(false);
         ui.removeUser->setVisible(false);

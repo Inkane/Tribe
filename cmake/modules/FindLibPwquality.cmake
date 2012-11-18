@@ -1,5 +1,5 @@
 #
-# Try to find libarchive.
+# Try to find libpwquality.
 #
 # Once done, this will define:
 #

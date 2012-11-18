@@ -92,8 +92,6 @@ SET(tribe_STYLESHEET
     ui/tribe.qss
 )
 
-#add_library(pwquality SHARED src/widgets/userwidget.cpp)
-
 qt4_add_resources(tribe_RESOUCES ui/tribe.qrc)
 
 kde4_add_ui_files(tribe_SRCS ${tribe_PAGE_UIS} ${tribe_WIDGET_UIS})

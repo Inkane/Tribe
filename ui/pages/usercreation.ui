@@ -39,7 +39,7 @@ p, li { white-space: pre-wrap; }
    <item>
     <widget class="QLabel" name="label_2">
      <property name="text">
-      <string>Enter at least one login name and password.  Select &quot;more information&quot; button to disable auto login, set a separate root password or add an avatar.</string>
+      <string>Enter at least one login name and password.</string>
      </property>
      <property name="scaledContents">
       <bool>true</bool>

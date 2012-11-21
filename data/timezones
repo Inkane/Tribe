@@ -217,10 +217,10 @@ Australia/Tasmania:en_AU.UTF-8,en_AU,en_GB.UTF-8,en_GB,en_US.UTF-8,en_US:en_gb
 Australia/Victoria:en_AU.UTF-8,en_AU,en_GB.UTF-8,en_GB,en_US.UTF-8,en_US:en_gb
 Europe/Amsterdam:nl_NL.UTF-8,nl_NL,nl_NL@euro:nl,en_gb
 Europe/Athens:el_GR.UTF-8,el_GR,el_CY.UTF-8,el_CY:el,en_gb
-Europe/Belgrade:bs_BA.UTF-8,bs_BA,sr_RS.UTF-8,sr_RS:sr,en_gb
+Europe/Belgrade:sr_RS.UTF-8,sr_RS,bs_BA.UTF-8,bs_BA:sr,en_gb
 Europe/Berlin:de_DE.UTF-8,de_DE,de_DE@euro:de,en_gb
 Europe/Bern:de_CH.UTF-8,de_CH,de_CH@euro,fr_CH.UTF-8,fr_CH,fr_CH@euro:de,fr,it,en_gb
-Europe/Bratislava:sk_SK.UTF-8,sk_SK:en_gb
+Europe/Bratislava:sk_SK.UTF-8,sk_SK:sk,en_gb
 Europe/Brussels:nl_BE.UTF-8,nl_BE,nl_BE@euro,fr_BE.UTF-8,fr_BE,fr_BE@euro,de_BE,de_BE.UTF-8,de_BE@euro:nl,fr,de,en_gb
 Europe/Bucharest:ro_RO.UTF-8,ro_RO:ro,en_gb
 Europe/Budapest:hu_HU.UTF-8,hu_HU:hu,en_gb
@@ -230,7 +230,7 @@ Europe/Helsinki:fi_FI.UTF-8,fi_FI,fi_FI@euro,en_GB.UTF-8,en_GB:fi,en_gb
 Europe/Istanbul:tr_TR.UTF-8,tr_TR,ku_TR.UTF-8,ku_TR,en_GB.UTF-8,en_GB:tr,en_gb
 Europe/Kiev:uk_UA.UTF-8,uk_UA:uk,en_gb
 Europe/Lisbon:pt_PT.UTF-8,pt_PT,pt_PT@euro:pt,en_gb
-Europe/Ljubljana:sl_SI.UTF-8,sl_SI:sl,si,en_gb
+Europe/Ljubljana:sl_SI.UTF-8,sl_SI,en_GB.UTF-8,en_GB:sl,it,hu,en_gb
 Europe/London:en_GB.UTF-8,en_GB:en_gb
 Europe/Madrid:es_ES.UTF-8,es_ES,es_ES@euro,ca_ES.UTF-8,ca_ES,ca_ES@euro,gl_ES.UTF-8,gl_ES,gl_ES@euro,eu_ES.UTF-8,eu_ES,eu_ES@euro:es,ca,ca@valencia,gl,eu
 Europe/Moscow:ru_RU.UTF-8,ru_RU,ru_RU.KOI8-R:ru,en_gb

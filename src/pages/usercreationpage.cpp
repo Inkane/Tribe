@@ -222,7 +222,6 @@ void UserCreationPage::aboutToGoToNext()
 
 void UserCreationPage::aboutToGoToPrevious()
 {
-    if (validate())
         emit goToPreviousStep();
 }
 

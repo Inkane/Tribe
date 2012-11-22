@@ -43,13 +43,13 @@ job_configure_users()
 	timestamp=`date +%F-%H%M%S`
 	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/.backup/${timestamp}
 
-	msg "setup gtk config"
-	if [ -e ${mountpoint}/home/${user_name}/.gtkrc-2.0-kde4 ] ; then
-	    mv -v ${mountpoint}/home/${user_name}/.gtkrc-2.0-kde4 ${mountpoint}/home/${user_name}/.backup/${timestamp}/
-	fi
-	cp -vf /etc/skel/.gtkrc-2.0-kde4 ${mountpoint}/home/${user_name}/.gtkrc-2.0-kde4
-	echo "export GTK2_RC_FILES=/home/${user_name}/.gtkrc-2.0-kde4" > ${mountpoint}/home/${user_name}/.kde4/env/gtk-qt-engine.rc.sh
-	chmod a+x ${mountpoint}/home/${user_name}/.kde4/env/gtk-qt-engine.rc.sh
+	#msg "setup gtk config"
+	#if [ -e ${mountpoint}/home/${user_name}/.gtkrc-2.0-kde4 ] ; then
+	#    mv -v ${mountpoint}/home/${user_name}/.gtkrc-2.0-kde4 ${mountpoint}/home/${user_name}/.backup/${timestamp}/
+	#fi
+	#cp -vf /etc/skel/.gtkrc-2.0-kde4 ${mountpoint}/home/${user_name}/.gtkrc-2.0-kde4
+	#echo "export GTK2_RC_FILES=/home/${user_name}/.gtkrc-2.0-kde4" > ${mountpoint}/home/${user_name}/.kde4/env/gtk-qt-engine.rc.sh
+	#chmod a+x ${mountpoint}/home/${user_name}/.kde4/env/gtk-qt-engine.rc.sh
 
 	msg "backup user files"
 	if [ -e ${mountpoint}/home/${user_name}/.kde4/share/config/ksplashrc ] ; then

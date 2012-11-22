@@ -120,9 +120,9 @@ job_configure_users()
 
 	chroot ${mountpoint} ln -sf /usr/bin/bluedevil-monolithic /home/${user_name}/.kde4/Autostart/bluedevil-monolithic
 
-	msg "adjust default cursor: white-cursor"
-	cp -vf /etc/skel/kcminputrc ${mountpoint}/home/${user_name}/.kde4/share/config/kcminputrc
-	cp -vf /etc/skel/kdeglobals ${mountpoint}/home/${user_name}/.kde4/share/config/kdeglobals
+	#msg "adjust default cursor: white-cursor"
+	#cp -vf /etc/skel/kcminputrc ${mountpoint}/home/${user_name}/.kde4/share/config/kcminputrc
+	#cp -vf /etc/skel/kdeglobals ${mountpoint}/home/${user_name}/.kde4/share/config/kdeglobals
 
 	# fix quirks
 	if [ -e "${mountpoint}/home/${user_name}/10-keyboard.conf" ] ; then

@@ -38,18 +38,9 @@ job_configure_users()
 	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/.local/share/applications
 	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/.kde4/share//kde4/services/searchproviders
 	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/.config/autostart
-	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/.config/vlc
 
 	timestamp=`date +%F-%H%M%S`
 	chroot ${mountpoint} /bin/mkdir -p -v /home/${user_name}/.backup/${timestamp}
-
-	#msg "setup gtk config"
-	#if [ -e ${mountpoint}/home/${user_name}/.gtkrc-2.0-kde4 ] ; then
-	#    mv -v ${mountpoint}/home/${user_name}/.gtkrc-2.0-kde4 ${mountpoint}/home/${user_name}/.backup/${timestamp}/
-	#fi
-	#cp -vf /etc/skel/.gtkrc-2.0-kde4 ${mountpoint}/home/${user_name}/.gtkrc-2.0-kde4
-	#echo "export GTK2_RC_FILES=/home/${user_name}/.gtkrc-2.0-kde4" > ${mountpoint}/home/${user_name}/.kde4/env/gtk-qt-engine.rc.sh
-	#chmod a+x ${mountpoint}/home/${user_name}/.kde4/env/gtk-qt-engine.rc.sh
 
 	msg "backup user files"
 	if [ -e ${mountpoint}/home/${user_name}/.kde4/share/config/ksplashrc ] ; then
@@ -115,14 +106,9 @@ job_configure_users()
 	cp -vf /etc/skel/mimeapps.list ${mountpoint}/home/${user_name}/.local/share/applications/mimeapps.list
 	cp -vf /etc/skel/duckduckgo.desktop ${mountpoint}/home/${user_name}/.kde4/share/kde4/services/searchproviders/duckduckgo.desktop
 	cp -vf /etc/skel/kapudan.desktop ${mountpoint}/home/${user_name}/.config/autostart/kapudan.desktop
-	cp -vf /etc/skel/vlcrc ${mountpoint}/home/${user_name}/.config/vlc/vlcrc
 	cp -vf /etc/skel/katerc ${mountpoint}/home/${user_name}/.kde4/share/config/katerc
 
 	chroot ${mountpoint} ln -sf /usr/bin/bluedevil-monolithic /home/${user_name}/.kde4/Autostart/bluedevil-monolithic
-
-	#msg "adjust default cursor: white-cursor"
-	#cp -vf /etc/skel/kcminputrc ${mountpoint}/home/${user_name}/.kde4/share/config/kcminputrc
-	#cp -vf /etc/skel/kdeglobals ${mountpoint}/home/${user_name}/.kde4/share/config/kdeglobals
 
 	# fix quirks
 	if [ -e "${mountpoint}/home/${user_name}/10-keyboard.conf" ] ; then

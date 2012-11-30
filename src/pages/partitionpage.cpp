@@ -46,7 +46,7 @@ const int SPACING = 3;
 const int MOUNTPOINT_ROLE = Qt::UserRole + 123;
 const int PARTITION_ROLE = Qt::UserRole + 51;
 const int DEVICE_ROLE = Qt::UserRole + 50;
-const int FORMAT_ROLE = Qt::UserRole + 52; //FIXME: what's the logic behind those?
+const int FORMAT_ROLE = Qt::UserRole + 52; 
 
 QStringList s_mountPoints = QStringList() << "None" <<
                                              "/" <<
@@ -314,15 +314,14 @@ QSize PartitionDelegate::sizeHint(const QStyleOptionViewItem & option, const QMo
 
 /////////////// tree widget item
 
-class PartitionTreeWidgetItem : public QTreeWidgetItem //TODO: check how to alter this one in the best way
+class PartitionTreeWidgetItem : public QTreeWidgetItem 
 {
     Q_DISABLE_COPY(PartitionTreeWidgetItem)
 
     public:
         PartitionTreeWidgetItem(const Partition* p, Device *d) : QTreeWidgetItem(),
                                                                  m_Partition(p),
-                                                                 m_Device(d),
-                                                                 m_FormatMarker(false)
+                                                                 m_Device(d)
         {
             setData(0, DEVICE_ROLE, QVariant::fromValue(d));
             setData(0, PARTITION_ROLE, QVariant::fromValue(p));
@@ -331,18 +330,15 @@ class PartitionTreeWidgetItem : public QTreeWidgetItem //TODO: check how to alte
 
         PartitionTreeWidgetItem(Device* d) : QTreeWidgetItem(),
                                              m_Partition(0),
-                                             m_Device(d),
-                                             m_FormatMarker(false)
+                                             m_Device(d)
         { }
 
         const Partition* partition() const { return m_Partition; }
         Device* device() { return m_Device; }
-        bool shallBeFormatted() {return m_FormatMarker;}
 
     private:
         const Partition* m_Partition;
         Device* m_Device;
-	bool m_FormatMarker;
 };
 
 /////////////// partition view widget

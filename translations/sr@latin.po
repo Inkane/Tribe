@@ -1,24 +1,23 @@
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
+# Translators:
 # ivan <ivanblago1@gmail.com>, 2010.
+# Petar Milojević <petar.linog@gmail.com>, 2012.
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
+"Project-Id-Version: The Chakra Project\n"
+"Report-Msgid-Bugs-To: http://chakra-project.org/bugs/\n"
 "POT-Creation-Date: 2011-08-30 20:57+0200\n"
-"PO-Revision-Date: 2010-12-31 16:35+0000\n"
-"Last-Translator: ivan <ivanblago1@gmail.com>\n"
-"Language-Team: Serbian Latin <kde-i18n-sr@kde.org>\n"
-"Language: sr@latin\n"
+"PO-Revision-Date: 2012-07-31 22:48+0000\n"
+"Last-Translator: Petar Milojević <petar.linog@gmail.com>\n"
+"Language-Team: Serbian (Latin) (http://www.transifex.com/projects/p/chakra-project/language/sr@latin/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.1\n"
-"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
-"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Accelerator-Marker: &\n"
-"X-Text-Markup: kde4\n"
+"Language: sr@latin\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: src/installationhandler.cpp:87
 msgid "Tribe was not able to initialize needed path: "
@@ -46,7 +45,7 @@ msgstr "Greška pri kopiranju fajlova"
 
 #: src/installationhandler.cpp:215
 msgid "Removing packages whose license has been declined ..."
-msgstr "Uklanjam pakete čija je licenca odbijena ..."
+msgstr "Uklanjam pakete čija je licenca odbačena ..."
 
 #: src/installationhandler.cpp:253
 msgid "Initializing target ..."
@@ -58,15 +57,15 @@ msgstr "Molim sačekajte, podešavam novi sistem ..."
 
 #: src/installationhandler.cpp:423
 msgid "Error in Postinstall script. See log for more details"
-msgstr "Greška u Postinstall skripti. Vidite log za više detalja"
+msgstr "Greška u Postinstall skripti. Vidite istoriju za više detalja"
 
 #: src/installationhandler.cpp:432
 msgid "Creating user accounts ..."
-msgstr "Pravim korisničke naloge ..."
+msgstr "Kreiram korisničke naloge ..."
 
 #: src/installationhandler.cpp:435
 msgid "Configuring software management..."
-msgstr "Podešavam uređaje ..."
+msgstr "Podešavam softver za upravljanje ..."
 
 #: src/installationhandler.cpp:439
 msgid "Removing unused packages..."
@@ -94,7 +93,7 @@ msgstr "Podešavam lokalizaciju..."
 
 #: src/installationhandler.cpp:463
 msgid "Creating daemon configuration..."
-msgstr "Konfigurišem demone..."
+msgstr "Konfigurišem samostartujuće programe..."
 
 #: src/installationhandler.cpp:467
 msgid "Creating network configuration..."
@@ -102,7 +101,7 @@ msgstr "Podešavam mrežnu konfiguraciju..."
 
 #: src/installationhandler.cpp:471
 msgid "Creating fstab..."
-msgstr "Pravim fstab..."
+msgstr "Kreiram fstab..."
 
 #: src/installationhandler.cpp:478
 msgid "Configuring hardware..."
@@ -114,11 +113,11 @@ msgstr "Pravim početne ramdisk slike..."
 
 #: src/installationhandler.cpp:486
 msgid "Generating locales..."
-msgstr "Generišem lokalitet..."
+msgstr "Generišem lokalitete..."
 
 #: src/installationhandler.cpp:490
 msgid "Removing unused localizations..."
-msgstr "Uklanjam neiskorišćene lokalizacije..."
+msgstr "Uklanjam nepotrebne lokalizacije..."
 
 #: src/installationhandler.cpp:494
 msgid "Removing unused drivers..."
@@ -136,8 +135,7 @@ msgstr "Instalacija završena!"
 msgid ""
 "Tribe was not able to initialize needed directories. Something is very "
 "wrong..."
-msgstr ""
-"Tribe nije sposoban da pokrene potrebne direktorijume. Nešto nije u redu..."
+msgstr "Tribe nije sposoban da pokrene potrebne direktorijume. Nešto nije u redu..."
 
 #: src/installationhandler.cpp:617
 msgid "Could not mount %1"
@@ -155,12 +153,11 @@ msgstr "Tribe"
 
 #: src/main.cpp:42
 msgid "Graphical Installer for Chakra"
-msgstr "Grafički instaler za Chakru"
+msgstr "Grafički instalater za Chakru"
 
 #: src/main.cpp:43
-#, fuzzy
 msgid "(c) 2008 - 2011 the Chakra Development Team"
-msgstr "(c) 2008 - 2010 Chakra Razvojni Tim"
+msgstr "(c)2008 - 2011 Razvojni tim Chakre"
 
 #: src/main.cpp:43
 msgid "chakra@chakra-project.org"
@@ -168,15 +165,15 @@ msgstr "chakra@chakra-project.org"
 
 #: src/main.cpp:45
 msgid "Dario Freddi"
-msgstr "Dario Fredi (Dario Freddi)"
+msgstr "Dario Freddi"
 
 #: src/main.cpp:45
 msgid "Maintainer"
-msgstr "Maintainer"
+msgstr "Održavač"
 
 #: src/main.cpp:46
 msgid "Lukas Appelhans"
-msgstr "Lukas Apelhans (Lukas Appelhans)"
+msgstr "Lukas Appelhans"
 
 #: src/main.cpp:46 src/main.cpp:50 src/main.cpp:51 src/main.cpp:52
 msgid "Developer"
@@ -184,19 +181,19 @@ msgstr "Programer"
 
 #: src/main.cpp:47
 msgid "Jan Mette"
-msgstr "Jan Met (Jan Mette)"
+msgstr "Jan Mette"
 
 #: src/main.cpp:47
 msgid "PostInstall Backend and Artwork"
-msgstr "PostInstall bekend i izgled"
+msgstr "Pozadina i izgled postinstalacionog procesa"
 
 #: src/main.cpp:48
 msgid "Phil Miller"
-msgstr "Fil Miler (Phil Miller)"
+msgstr "Phil Miller"
 
 #: src/main.cpp:48 src/main.cpp:49
 msgid "PostInstall Backend"
-msgstr "PostInstall bekend"
+msgstr "Pozadina postinstalacionog procesa"
 
 #: src/main.cpp:49
 msgid "Manuel Tortosa"
@@ -208,11 +205,11 @@ msgstr "Drake Justice"
 
 #: src/main.cpp:51
 msgid "Georg Grabler"
-msgstr ""
+msgstr "Georg Grabler"
 
 #: src/main.cpp:52
 msgid "Daniele Cocca"
-msgstr ""
+msgstr "Daniele Cocca"
 
 #: src/mainwindow.cpp:99
 msgid "Do you really want to abort the installation?"
@@ -223,10 +220,7 @@ msgid ""
 "Installation failed! The following error has been reported: %1.\n"
 "Tribe will now quit, please check the installation logs in /tmp\n"
 "or ask for help in our forums."
-msgstr ""
-"Instalacija nije uspela! Sledeća greška je prijavljena: %1.\n"
-"Tribe će sada prekinuti instalaciju, proverite zapise instalacije u /tmp\n"
-"ili zatražite pomoć na našim forumima."
+msgstr "Instalacija nije uspela! Sledeća greška je prijavljena: %1.\nTribe će sada prekinuti instalaciju, proverite zapise instalacije u /tmp\nili zatražite pomoć na našim forumima."
 
 #: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:539
 msgid "Installing bootloader..."
@@ -234,7 +228,7 @@ msgstr "Instaliram pokretač..."
 
 #: src/pages/bootloaderpage.cpp:82
 msgid "Creating OS list..."
-msgstr "Pravim OS listu..."
+msgstr "Pravim OS spisak..."
 
 #: src/pages/configpage.cpp:153 src/pages/configpage.cpp:363
 msgid "Downloading"
@@ -244,46 +238,43 @@ msgstr "Preuzimam"
 msgid ""
 "Sorry, you have no internet connection at the moment \n"
 "Will stop bundle(s) installation now"
-msgstr ""
+msgstr "Žao nam je, trenutno nemate internet vezu\nZaustaviću instalaciju paketa (s)"
 
 #: src/pages/configpage.cpp:349
-#, fuzzy
 msgid "loading package data..."
-msgstr "Uklanjam nepotrebne pakete..."
+msgstr "učitavam podatke o paketu..."
 
 #: src/pages/configpage.cpp:350
-#, fuzzy
 msgid "Loading package data..."
-msgstr "Učitavanje particija..."
+msgstr "Učitavam podatke o paketu..."
 
 #: src/pages/configpage.cpp:351
 msgid "checking dependencies..."
-msgstr ""
+msgstr "proveravam zavisnosti..."
 
 #: src/pages/configpage.cpp:352
 msgid "Checking dependencies..."
-msgstr ""
+msgstr "Proveravam zavisnosti..."
 
 #: src/pages/configpage.cpp:353
 msgid "resolving dependencies..."
-msgstr ""
+msgstr "rešavam zavisnosti..."
 
 #: src/pages/configpage.cpp:354
-#, fuzzy
 msgid "Resolving dependencies..."
-msgstr "Uklanjam nepotrebne drajvere..."
+msgstr "Rešavam zavisnosti..."
 
 #: src/pages/configpage.cpp:355
 msgid "checking package integrity..."
-msgstr ""
+msgstr "proveravam ispravnost paketa..."
 
 #: src/pages/configpage.cpp:356
 msgid "Checking package integrity..."
-msgstr ""
+msgstr "Proveravam ispravnost paketa..."
 
 #: src/pages/configpage.cpp:357
 msgid "Total Download Size:"
-msgstr ""
+msgstr "Ukupna veličina preuzimanja:"
 
 #. i18n: file: ui/pages/config.ui:928
 #. i18n: ectx: property (text), widget (QPushButton, downloadBundlesButton)
@@ -308,7 +299,7 @@ msgid ""
 "Bootloader-Setup finished with Exitcode: %1\n"
 "Something went wrong. Before reboot it is recommended \n"
 "to check %2/boot/grub/grub.cfg. \n"
-msgstr ""
+msgstr "Instalacija pokretača okončana sa izlaznim kodom: %1\nNešto nije u redu. Pre ponovnog pokretanja preporučljivo je \nproveriti %2/boot/grub/grub.cfg.\n"
 
 #: src/pages/licensepage.cpp:53
 msgid "Proprietary ATI Driver"
@@ -324,15 +315,15 @@ msgstr "Prihvatam licencu za: "
 
 #: src/pages/localepage.cpp:309
 msgid "You need to select a timezone"
-msgstr "Trebate odabrati vremensku zonu"
+msgstr "Odaberite vremensku zonu"
 
 #: src/pages/partitionpage.cpp:89
 msgid "Please enter a custom mountpoint"
-msgstr "Molim unesite tačku kačenja"
+msgstr "Molim unesite tačku montiranja"
 
 #: src/pages/partitionpage.cpp:101
 msgid "The mount point must start with /"
-msgstr "Tačka kačenja mora početi sa /"
+msgstr "Tačka montiranja mora početi sa /"
 
 #: src/pages/partitionpage.cpp:102
 msgid "Error"
@@ -340,43 +331,41 @@ msgstr "Greška"
 
 #: src/pages/partitionpage.cpp:196
 msgid "New"
-msgstr "Novi"
+msgstr "Novo"
 
 #: src/pages/partitionpage.cpp:196
 msgid "Unsupported"
-msgstr "Ne podržano"
+msgstr "Nepodržano"
 
 #: src/pages/partitionpage.cpp:416
 msgid "Loading partitions..."
-msgstr "Učitavanje particija..."
+msgstr "Učitavam particije..."
 
 #: src/pages/partitionpage.cpp:664
 msgid "Extended"
-msgstr "Extended"
+msgstr "Proširena"
 
 #: src/pages/partitionpage.cpp:809
 msgid ""
 "Tribe detected target partitions which are mounted. Do you want Tribe to "
 "unmount them?"
-msgstr ""
+msgstr "Tribe je pronašao ciljne particije koje su montirane. Želite li da ih Tribe demontira?"
 
 #: src/pages/partitionpage.cpp:825
 msgid ""
 "Tribe failed to unmount a partition which is target for the installation. "
 "You need to unmount the partitions manually before you can proceed."
-msgstr ""
+msgstr "Tribe nije uspeo da demontira particiju koja je određena za instalaciju. Morate da demontirate particije ručno pre nego što nastavite."
 
 #: src/pages/partitionpage.cpp:827
 msgid "Target partitions mounted"
-msgstr ""
+msgstr "Ciljne particije su montirane"
 
 #: src/pages/partitionpage.cpp:838
 msgid ""
-"The partition you have chosen to mount as '/' is too small. It should have a "
-"capacity of at least %1 for a successful installation."
-msgstr ""
-"Particiju koju ste odabrali za montiranje kao '/' je previše mala. Potrebno "
-"je da poseduje kapacitet najmanje %1 za uspešnu instalaciju."
+"The partition you have chosen to mount as '/' is too small. It should have a"
+" capacity of at least %1 for a successful installation."
+msgstr "Particiju koju ste odabrali za montiranje kao '/' je previše mala. Potrebno je da poseduje kapacitet najmanje %1 za uspešnu instalaciju."
 
 #: src/pages/partitionpage.cpp:841 src/pages/partitionpage.cpp:881
 msgid "Target's capacity not sufficient"
@@ -387,26 +376,24 @@ msgid ""
 "The partition you have chosen to mount as '/' is not marked for formatting. "
 "This might create problems. Do you still want to continue without formating "
 "it?"
-msgstr ""
+msgstr "Particija koju ste izabrali da bude montirana kao '/' nije označena za formatiranje. To može da dovede do problema. Da li i dalje želite da nastavite bez formatiranja te particije?"
 
 #: src/pages/partitionpage.cpp:879
 msgid ""
 "You have selected '%1' as a mountpoint, which is not valid. A valid "
 "mountpoint always starts with '/' and represents a directory on disk"
-msgstr ""
-"Odabrali ste '%1' kao tačku kačenja, što nije validno. Validna tačka kačenja "
-"uvek počinje sa '/' i predstavlja particiju diska"
+msgstr "Odabrali ste '%1' kao tačku montiranja, što nije ispravno. Validna tačka montiranja uvek počinje sa '/' i predstavlja particiju diska"
 
 #: src/pages/partitionpage.cpp:890
 msgid ""
 "You need to select a root partition ('/') to proceed with the installation. "
-msgstr ""
+msgstr "Potrebno je da označite korenu particiju ('/') kako biste nastavili instalaciju."
 
 #: src/pages/partitionpage.cpp:911
 msgid ""
 "When using a GPT Partition Table you need to have a unformatted partition "
 "with the bios_grub flag!"
-msgstr ""
+msgstr "Kada koristite GPT particionu tabelu potrebno je da imate neformatiranu particiju obeleženu kao bios_grub!"
 
 #: src/pages/readyinstallpage.cpp:77
 msgid "New partition (%1) on %2"
@@ -414,7 +401,7 @@ msgstr "Nova particija (%1) na %2"
 
 #: src/pages/readyinstallpage.cpp:80
 msgid "%1 will be used as %2"
-msgstr "%1 e biti korišćen kao %2"
+msgstr "%1 će biti korišćena kao %2"
 
 #: src/pages/readyinstallpage.cpp:100
 msgid "Continue"
@@ -424,13 +411,11 @@ msgstr "Nastavi"
 msgid ""
 "The following partitions appear to be mounted: %1. To let the installation "
 "happen correctly, Tribe will now unmount them."
-msgstr ""
-"Sledeće particije su montirane: %1. Da bi se instalacija mogla izvršiti "
-"ispravno, Tribe će ih sada demontirati."
+msgstr "Sledeće particije su montirane: %1. Da bi se instalacija mogla izvršiti ispravno, Tribe će ih sada demontirati."
 
 #: src/pages/usercreationpage.cpp:148
 msgid "You must give at least one login name."
-msgstr "Morate uključiti najmanje jedno korisničko ime."
+msgstr "Morate navesti najmanje jedno korisničko ime."
 
 #: src/pages/usercreationpage.cpp:152
 msgid "Root Passwords do not match..."
@@ -468,27 +453,12 @@ msgstr "Proizvoljno"
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:6
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Welcome</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Dobrodošli</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Welcome</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Dobrodošli</span></p></body></html>"
 
 #. i18n: file: ui/pages/base.ui:198
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -502,7 +472,7 @@ msgstr "Beleške o izdanju"
 #. i18n: ectx: property (text), widget (QLabel, licenseLabel)
 #: rc.cpp:16
 msgid "License Approval"
-msgstr "Dokaz Dozvole"
+msgstr "Potvrda Dozvole"
 
 #. i18n: file: ui/pages/base.ui:257
 #. i18n: ectx: property (text), widget (QLabel, label_21)
@@ -526,59 +496,29 @@ msgstr "Podešavanje diska"
 #. i18n: ectx: property (text), widget (QLabel, label_26)
 #: rc.cpp:28
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Preparation</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Priprema</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Preparation</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Priprema</span></p></body></html>"
 
 #. i18n: file: ui/pages/base.ui:334
 #. i18n: ectx: property (text), widget (QLabel, label_15)
 #: rc.cpp:35
 msgid "Create Users"
-msgstr "Napravi korisnika"
+msgstr "Kreiraj korisnika"
 
 #. i18n: file: ui/pages/base.ui:390
 #. i18n: ectx: property (text), widget (QLabel, label_11)
 #: rc.cpp:38
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Installation</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Instalacija</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Installation</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Instalacija</span></p></body></html>"
 
 #. i18n: file: ui/pages/base.ui:416
 #. i18n: ectx: property (text), widget (QLabel, label_13)
@@ -590,27 +530,12 @@ msgstr "Instaliraj Sistem"
 #. i18n: ectx: property (text), widget (QLabel, label_14)
 #: rc.cpp:48
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Configuration</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Podešavanje</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Configuration</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Podešavanje</span></p></body></html>"
 
 #. i18n: file: ui/pages/base.ui:460
 #. i18n: ectx: property (text), widget (QLabel, label_16)
@@ -642,29 +567,12 @@ msgstr "Sledeće"
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:67
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Bootloader Installation</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Instalacija pokretača sistema</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Bootloader Installation</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Instalacija pokretača sistema</span></p></body></html>"
 
 #. i18n: file: ui/pages/bootloader.ui:58
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -674,11 +582,7 @@ msgid ""
 "\n"
 "If you are unsure where you should install the bootloader to, \n"
 "just leave the default value (hd0)."
-msgstr ""
-"Sada moete instalirati GRUB kao Vaš glavni pokretač.\n"
-"\n"
-"Ako niste sigurni gde treba da instalirate pokretač, samo ostavite "
-"podrazumevano (hd0)."
+msgstr "Sada moete instalirati GRUB kao Vaš glavni pokretač.\n\nAko niste sigurni gde treba da instalirate pokretač, \nsamo ostavite podrazumevano (hd0)."
 
 #. i18n: file: ui/pages/bootloader.ui:71
 #. i18n: ectx: property (text), widget (QCheckBox, checkBox)
@@ -712,29 +616,12 @@ msgstr "hd0"
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:92
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:14pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Configuration</span></p></"
-"body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Konfigurisanje</span></p></"
-"body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:14pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Configuration</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Sans Serif'; font-size:14pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Podešavanje</span></p></body></html>"
 
 #. i18n: file: ui/pages/config.ui:119
 #. i18n: ectx: property (text), widget (QCheckBox, usb)
@@ -746,7 +633,7 @@ msgstr "USB"
 #. i18n: ectx: property (text), widget (QCheckBox, nfs)
 #: rc.cpp:102
 msgid "NFS Shares"
-msgstr "NFS Shares"
+msgstr "NFS deljenja"
 
 #. i18n: file: ui/pages/config.ui:133
 #. i18n: ectx: property (text), widget (QLabel, label_4)
@@ -758,37 +645,38 @@ msgstr "Aktivirajte podršku za pokretanje sa:"
 #. i18n: ectx: property (text), widget (QCheckBox, firewire)
 #: rc.cpp:108
 msgid "FireWire"
-msgstr "FireWire"
+msgstr "Fajervajer"
 
 #. i18n: file: ui/pages/config.ui:147
 #. i18n: ectx: property (text), widget (QCheckBox, raid)
 #: rc.cpp:111
 msgid "Software Raid Arrays"
-msgstr "Software Raid Arrays"
+msgstr "Softverski Raid nizovi"
 
 #. i18n: file: ui/pages/config.ui:154
 #. i18n: ectx: property (text), widget (QCheckBox, lvm2)
 #: rc.cpp:114
 msgid "LVM2 Volumes"
-msgstr "LVM2 Volumes"
+msgstr "LVM2 jedinice"
 
 #. i18n: file: ui/pages/config.ui:161
 #. i18n: ectx: property (text), widget (QCheckBox, encrypted)
 #: rc.cpp:117
 msgid "Encrypted Volumes"
-msgstr "Encrypted Volumes"
+msgstr "Šifrovane jedinice"
 
 #. i18n: file: ui/pages/config.ui:180
-#. i18n: ectx: property (text), widget (QPushButton, generateInitRamDiskButton)
+#. i18n: ectx: property (text), widget (QPushButton,
+#. generateInitRamDiskButton)
 #: rc.cpp:120
 msgid "Generate Initial Ramdisk"
-msgstr "Generate Initial Ramdisk"
+msgstr "Generišem inicijalni Ramdisk"
 
 #. i18n: file: ui/pages/config.ui:216
 #. i18n: ectx: property (text), widget (QCheckBox, mdp)
 #: rc.cpp:123
 msgid "MDP Partition Arrays"
-msgstr "MDP Partition Arrays"
+msgstr "MDP particioni nizovi"
 
 #. i18n: file: ui/pages/config.ui:223
 #. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
@@ -829,34 +717,33 @@ msgstr "Oboji"
 #. i18n: file: ui/pages/config.ui:679
 #. i18n: ectx: property (text), widget (QCheckBox, bootloaderCheckBox)
 #: rc.cpp:144
-#, fuzzy
 msgid "Install GRUB2"
-msgstr "Instaliraj GRUB"
+msgstr "Instalirajte GRUB2"
 
 #. i18n: file: ui/pages/config.ui:690
 #. i18n: ectx: property (text), widget (QLabel, bootloaderLabel)
 #: rc.cpp:147
 msgid ""
 "You can now install GRUB2 as your main bootloader. \n"
-"Tribe will install GRUB2 on the same hard drive where your \"/boot\" folder "
-"is located."
-msgstr ""
+"Tribe will install GRUB2 on the same hard drive where your \"/boot\" folder is located."
+msgstr "Sad možete instalirati GRUB2 kao glavni pokretač.\nTribe će instalirati GRUB2 na onom hard disku na kome se nalazi Vaš \"/boot\" direktorijum."
 
 #. i18n: file: ui/pages/config.ui:759
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
 #. i18n: file: ui/pages/partition.ui:149
-#. i18n: ectx: property (text), widget (KPushButton, editPartitionCancelButton)
+#. i18n: ectx: property (text), widget (KPushButton,
+#. editPartitionCancelButton)
 #. i18n: file: ui/widgets/avatardialog.ui:114
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
 #: rc.cpp:151 rc.cpp:342 rc.cpp:429
 msgid "Cancel"
-msgstr "Odustani"
+msgstr "Otkaži"
 
 #. i18n: file: ui/pages/config.ui:839
 #. i18n: ectx: property (text), widget (QPushButton, changeAppearanceButton)
 #: rc.cpp:154
 msgid "Change System Appearance"
-msgstr "Promena Izgleda Sistema"
+msgstr "Promeni Izgled Sistema"
 
 #. i18n: file: ui/pages/config.ui:877
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -869,36 +756,18 @@ msgstr "Napredne opcije"
 #: rc.cpp:169
 msgid ""
 "Now that you have a Chakra install, you can now configure it to your liking."
-msgstr ""
-"Sada kada je Chakra instalirana, možete je podesiti kako se vama dopada."
+msgstr "Sada kada je Chakra instalirana, možete je podesiti po Vašem ukusu."
 
 #. i18n: file: ui/pages/finish.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:172
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Installation Completed!</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Instalacija završena!</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Installation Completed!</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Instalacija završena!</span></p></body></html>"
 
 #. i18n: file: ui/pages/finish.ui:68
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -910,39 +779,21 @@ msgid ""
 "You can now reboot into the installed system or keep using the LiveCD.\n"
 "\n"
 "In case you want to check the installation logs,\n"
-"take a look into /tmp on the live system or into /var/log on the installed "
-"system.\n"
+"take a look into /tmp on the live system or into /var/log on the installed system.\n"
 "\n"
-"Thanks for using Chakra, and get in touch with us in the forums, share "
-"opinions, give advices;\n"
+"Thanks for using Chakra, and get in touch with us in the forums, share opinions, give advices;\n"
 "To put it simple: Get involved! (http://chakra-project.org)\n"
 "\n"
 "Have Fun!\n"
 "\n"
 "The Chakra Team"
-msgstr ""
-"Čestitamo, instalacija je gotova! Nadamo se da ste uživali u onome što ste "
-"videli isto koliko i mi kreirajući\n"
-"\n"
-"Sada možete restartovati računar sa novim sistemom ili nastaviti da "
-"koristite živi CD.\n"
-"\n"
-"U sluaju da želite proveriti zapise instalacije, pogledajte u /tmp na živom "
-"sistemu ili u /var/log na instaliranom sistemu.\n"
-"\n"
-"Hvala to ste koristili Chakru, stupite u kontakt sa nama na forumima, delite "
-"mišljenja, dobacite savete;\n"
-"Da pojednostavimo: uključite se! (http://chakra-project.org)\n"
-"\n"
-"Zabavite se!\n"
-"\n"
-"Chakra tim"
+msgstr "Čestitamo, instalacija je gotova! \n\nNadamo se da ste uživali u onome što ste videli isto koliko i mi kreirajući.\nSada možete restartovati računar sa novim sistemom ili nastaviti da koristite živi CD.\n\nU sluaju da želite proveriti zapise instalacije, \npogledajte u /tmp na živom sistemu ili u /var/log na instaliranom sistemu.\n\nHvala što ste koristili Chakru, stupite u kontakt sa nama na forumima, delite mišljenja, dobacite savete;\nDa pojednostavimo: uključite se! (http://chakra-project.org)\n\nZabavite se!\n\nChakra tim"
 
 #. i18n: file: ui/pages/finish.ui:105
 #. i18n: ectx: property (text), widget (QPushButton, rebootButton)
 #: rc.cpp:195
 msgid "Restart Computer"
-msgstr "Restartujte Računar"
+msgstr "Pokrenite ponovo računar"
 
 #. i18n: file: ui/pages/finish.ui:118
 #. i18n: ectx: property (text), widget (QPushButton, chakraButton)
@@ -960,47 +811,24 @@ msgstr "Ramdisk"
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:204
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Ramdisk Setup</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Podešavanja ramdiska</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Ramdisk Setup</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Podešavanja ramdiska</span></p></body></html>"
 
 #. i18n: file: ui/pages/init.ui:58
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:211
 msgid ""
-"Your hardware will be configured automatically during the installation and a "
-"initial ramdisk environment for booting the linux kernel will be built. "
+"Your hardware will be configured automatically during the installation and a"
+" initial ramdisk environment for booting the linux kernel will be built. "
 "Everything should happen without intervention, but you might need some "
 "options for special boot methods. If you are unsure on what this means, "
 "simply press the \"Next\" button. Otherwise check out the ramdisk options "
 "below and select the items you need for your system."
-msgstr ""
-"Uređaji na Vašem računaru će bit automatski podešeni tokom instalacije ,biće "
-"napravljeno pokretačko ramdisk okruženje za podizanje linuks kernela. Sve bi "
-"trebalo da teče bez intervencije, ali je moguće da ćete trebati neke opcije "
-"za specijalne metode podizanja. Ako ne znate šta ovo znači, jednostavno "
-"pritisnite dugme Sledeće. U suprotnom razmotrite opcije ramdiska ispod i "
-"odaberite stavke potrebne za Vaš sistem."
+msgstr "Uređaji na Vašem računaru će bit automatski podešeni tokom instalacije i biće napravljeno pokretačko ramdisk okruženje za podizanje linuks kernela. Sve bi trebalo da teče bez intervencije, ali je moguće da ćete trebati neke opcije za specijalne metode podizanja sistema. Ako ne znate šta ovo znači, jednostavno pritisnite dugme \"Sledeće\". U suprotnom razmotrite opcije ramdiska ispod i odaberite stavke potrebne za Vaš sistem."
 
 #. i18n: file: ui/pages/init.ui:81
 #. i18n: ectx: property (text), widget (QPushButton, pushButton)
@@ -1018,13 +846,13 @@ msgstr "Omogući podizanje sistema sa USB uređaja"
 #. i18n: ectx: property (text), widget (QCheckBox, firewire)
 #: rc.cpp:220
 msgid "Activate support for booting from FireWire devices"
-msgstr "Omogući podizanje sistema sa FireWire uređaja"
+msgstr "Omogući podizanje sistema sa Fajervajer uređaja"
 
 #. i18n: file: ui/pages/init.ui:125
 #. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
 #: rc.cpp:223
 msgid "Activate support for booting from PCMCIA devices"
-msgstr "Omogući podizanje sistema sa PCMCIA ureaja"
+msgstr "Omogući podizanje sistema sa PCMCIA uređaja"
 
 #. i18n: file: ui/pages/init.ui:132
 #. i18n: ectx: property (text), widget (QCheckBox, nfs)
@@ -1048,13 +876,13 @@ msgstr "Omogući podizanje sistema sa softverskih Raid/MDP particionih nizova"
 #. i18n: ectx: property (text), widget (QCheckBox, lvm2)
 #: rc.cpp:235
 msgid "Activate support for booting from LVM2 volumes"
-msgstr "Omogući podizanje sistema sa LVM2 volumena"
+msgstr "Omogući podizanje sistema sa LVM2 jedinica"
 
 #. i18n: file: ui/pages/init.ui:160
 #. i18n: ectx: property (text), widget (QCheckBox, encrypted)
 #: rc.cpp:238
 msgid "Activate support for booting from Encrypted volumes"
-msgstr "Omogući podizanje sistema sa šifrovanih volumena"
+msgstr "Omogući podizanje sistema sa Šifrovanih jedinica"
 
 #. i18n: file: ui/pages/installation.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Installation)
@@ -1090,137 +918,33 @@ msgstr "Uvod u Tribe"
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:256
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:12pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-family:'Bitstream Vera Sans'; color:#eeeeee;\">Welcome to the "
-"Chakra Installation!</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;"
-"\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\">This installer will guide you through the process of "
-"installing</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\">the Chakra live system on your computer. After the "
-"installation you will</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\">have a ready-to-use Chakra Linux system.</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
-"weight:536; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\"> Please carefully read all of the instructions.</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;"
-"\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\"> Remember:</span><span style=\" font-family:'Bitstream Vera "
-"Sans'; font-size:8pt; font-weight:536;\"> </span><span style=\" font-"
-"family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#ff0000;"
-"\">THIS IS ALPHA SOFTWARE, IT COULD EAT YOUR HAMSTER</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
-"weight:536; color:#ff0000;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\">Have fun! - The Chakra Developers</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-size:14pt; color:#eeeeee;\">Dobrodošli u Instalaciju Chakre!</"
-"span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:"
-"#eeeeee;\"><span style=\" font-weight:600;\">Ovaj instaler će Vas sprovesti "
-"kroz instaliranje sistema</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\">na vaš raunar. Nakon instalacije imaćete "
-"spreman za korištenje Chakra Linux sistem</p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-weight:600; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#eeeeee;\"> Molim vas da pročitate sva uputstva</p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-weight:600; color:#eeeeee;\"> Upamtite:</span><span style=\" "
-"font-weight:600;\"> </span><span style=\" font-weight:600; color:#ff0000;"
-"\">OVO JE SOFTVER U ALFA FAZI, MOGAO BI DA POJEDE VAŠEG HRČKA</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-weight:600; color:#ff0000;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"weight:600; color:#ff0000;\"><span style=\" color:#eeeeee;\">Dobru zabavu! - "
-"Programeri Chakre</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; color:#eeeeee;\">Welcome to the Chakra Installation!</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\">This installer will guide you through the process of installing</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\">the Chakra live system on your computer. After the installation you will</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\">have a ready-to-use Chakra Linux system.</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\"> Please carefully read all of the instructions.</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\"> Remember:</span><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536;\"> </span><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#ff0000;\">THIS IS ALPHA SOFTWARE, IT COULD EAT YOUR HAMSTER</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#ff0000;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\">Have fun! - The Chakra Developers</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Sans Serif'; font-size:12pt; font-weight:400; font-style:normal;\">\n<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; color:#eeeeee;\">Dobrodošli u instalaciju Chakre!</span></p>\n<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;\"></p>\n<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\">Ovaj instalater će Vas voditi kroz proces instalacije</span></p>\n<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\">Chakrinog živog sistema na Vaš računar. Nakon instalacije</span></p>\n<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\">imaćete Chakra Linux sistem spreman za korišćenje.</span></p>\n<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\"></p>\n<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\"> Molim pažljivo pročitajte sva uputstva.</span></p>\n<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;\"></p>\n<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\"> Upamtite:</span><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536;\"> </span><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#ff0000;\">OVO JE ALFA SOFTVER, MOŽE DA POJEDE VAŠEG HRČKA</span></p>\n<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#ff0000;\"></p>\n<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\">Uživajte! - Programeri Chakre</span></p></body></html>"
 
 #. i18n: file: ui/pages/license.ui:49
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:273
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">License Approval</span></p></"
-"body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Dokaz Dozvole</span></p></"
-"body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">License Approval</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Potvrđivanje licence</span></p></body></html>"
 
 #. i18n: file: ui/pages/license.ui:61
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -1230,31 +954,25 @@ msgid ""
 "plugins and fonts. To install them, you have to read and accept their "
 "licenses. If you choose against a license, the installer will try to use a "
 "free solution (if one is available)."
-msgstr ""
-"Chakra sadrži neke vlasničke programe kao što su drajveri za uređaje, "
-"medijalne priključke i fontove. Da biste ih instalirali, morate da "
-"prihvatite licence. Ako odbijete njihove licence, instalater će pokušati da "
-"nađe slobodnu zamenu (ako je dostupna).\n"
-"\n"
-"Dugme za prihvatanje će biti aktivno samo nakon što pročitate celu licencu."
+msgstr "Chakra sadrži neke vlasničke programe kao što su drajveri za uređaje, medijalne priključke i fontove. Da biste ih instalirali, morate da prihvatite njihove licence. Ako odbijete njihove licence, instalater će pokušati da nađe slobodnu zamenu (ako je dostupna).\n\nDugme za prihvatanje će biti aktivno samo nakon što pročitate celu licencu."
 
 #. i18n: file: ui/pages/license.ui:74
 #. i18n: ectx: property (text), widget (QLabel, licenseLabel)
 #: rc.cpp:283
 msgid "Approve license for:"
-msgstr "Odobri dozvolu za:"
+msgstr "Odobri licencu za:"
 
 #. i18n: file: ui/pages/license.ui:103
 #. i18n: ectx: property (text), widget (QRadioButton, declineButton)
 #: rc.cpp:286
 msgid "Decline License"
-msgstr "Odbij Dozvolu"
+msgstr "Odbij Licencu"
 
 #. i18n: file: ui/pages/license.ui:110
 #. i18n: ectx: property (text), widget (QRadioButton, acceptButton)
 #: rc.cpp:289
 msgid "Accept License"
-msgstr "Prihvati Dozvolu"
+msgstr "Prihvati Licencu"
 
 #. i18n: file: ui/pages/locale.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Locale)
@@ -1266,43 +984,22 @@ msgstr "Oblik"
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: rc.cpp:295
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Language &amp; Time</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Jezik i vreme</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Language &amp; Time</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Jezik &amp; Vreme</span></p></body></html>"
 
 #. i18n: file: ui/pages/locale.ui:45
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: rc.cpp:302
 msgid ""
-"Please select the nearest city on the globe so the installer can suggest the "
-"locale and timezone settings for you. You can fine-tune the suggested "
+"Please select the nearest city on the globe so the installer can suggest the"
+" locale and timezone settings for you. You can fine-tune the suggested "
 "settings at the bottom of the page. If you cant find your region or city on "
 "the globe, you can zoom in by using the slider on the left."
-msgstr ""
-"Izaberite najbliži grad na globusu da bi instalater mogao da vam predloži "
-"postavke lokaliteta i vremenske zone. Predložene postavke možete fino "
-"podesiti pri dnu stranice. Ako ne možete naći vaš region ili grad na na "
-"globusu, možete uvećati mapu koristeći klizač s leva."
+msgstr "Izaberite najbliži grad na globusu da bi instalater mogao da vam predloži postavke lokaliteta i vremenske zone. Predložene postavke možete fino podesiti pri dnu stranice. Ako ne možete naći vaš region ili grad na globusu, možete uvećati mapu koristeći klizač sa leve strane."
 
 #. i18n: file: ui/pages/locale.ui:69
 #. i18n: ectx: property (clickMessage), widget (KLineEdit, locationsSearch)
@@ -1319,9 +1016,8 @@ msgstr "Kontinent:"
 #. i18n: file: ui/pages/locale.ui:185
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:311
-#, fuzzy
 msgid "Language:"
-msgstr "KDE jezik:"
+msgstr "Jezik:"
 
 #. i18n: file: ui/pages/locale.ui:208
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -1340,56 +1036,34 @@ msgstr "Prikai sve"
 #. i18n: file: ui/pages/locale.ui:277
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: rc.cpp:323
-#, fuzzy
 msgid "Region: "
-msgstr "Prijava:"
+msgstr "Region:"
 
 #. i18n: file: ui/pages/partition.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Partition)
 #: rc.cpp:326
-#, fuzzy
 msgid "Partition"
-msgstr "Particija:"
+msgstr "Particija"
 
 #. i18n: file: ui/pages/partition.ui:43
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:329
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Disk setup</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Podešavanje diska</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Disk setup</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Podešavanje diska</span></p></body></html>"
 
 #. i18n: file: ui/pages/partition.ui:58
 #. i18n: ectx: property (text), widget (QLabel, descriptionLabel)
 #: rc.cpp:336
-#, fuzzy
 msgid ""
-"Please select a mountpoint for your partitions. No permanent changes to your "
-"hard drive will be made when you will press \"Next\". Note: selected "
+"Please select a mountpoint for your partitions. No permanent changes to your"
+" hard drive will be made when you will press \"Next\". Note: selected "
 "partitions are not explicitly formatted."
-msgstr ""
-"Molim odaberite tačku kačenja za vaše particije. Najmanje '/ treba biti "
-"montirana' Trajne promene neće biti načinjene kada obaberete \"Next\""
+msgstr "Molim odaberite tačku montiranja vaših particija. Trajne promene na Vašem hard disku neće biti načinjene kada pritisnete \"Sledeće\". Napomena: odabrane particije nisu izričito formatirane."
 
 #. i18n: file: ui/pages/partition.ui:103
 #. i18n: ectx: property (text), widget (QLabel, filesystemLabel)
@@ -1403,13 +1077,13 @@ msgstr "Fajl sistem:"
 #. i18n: ectx: property (text), widget (QPushButton, okButton)
 #: rc.cpp:345 rc.cpp:426
 msgid "Ok"
-msgstr "OK"
+msgstr "Uredu"
 
 #. i18n: file: ui/pages/partition.ui:298
 #. i18n: ectx: property (text), widget (QPushButton, formatButton)
 #: rc.cpp:354
 msgid "Format"
-msgstr "Formatiranje"
+msgstr "Formatiraj"
 
 #. i18n: file: ui/pages/partition.ui:317
 #. i18n: ectx: property (toolTip), widget (QPushButton, undoButton)
@@ -1423,130 +1097,59 @@ msgstr "Vrati"
 #. i18n: ectx: property (toolTip), widget (QPushButton, unmountButton)
 #: rc.cpp:363
 msgid "Unmount the selected partition"
-msgstr "Otkači odabranu particiju"
+msgstr "Demontiraj odabranu particiju"
 
 #. i18n: file: ui/pages/readyinstall.ui:51
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:366
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Ready to Install</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Spreman za instalaciju</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Ready to Install</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Spreman za instalaciju</span></p></body></html>"
 
 #. i18n: file: ui/pages/readyinstall.ui:77
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:373
 msgid ""
-"The system will be installed with the following settings. Before continuing, "
-"please review your selections:\n"
-msgstr ""
-"Sistem će biti instaliran sa sledećim podešavanjima. Pre nego nastavite, "
-"pregledajte vaše izbore:\n"
+"The system will be installed with the following settings. Before continuing,"
+" please review your selections:\n"
+msgstr "Sistem će biti instaliran sa sledećim podešavanjima. Pre nego što nastavite, pregledajte vaše izbore:\n"
 
 #. i18n: file: ui/pages/readyinstall.ui:147
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: rc.cpp:377
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">The following partitions will be used:</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">Sledeće particije e biti korišćene:</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:#eeeeee;\">The following partitions will be used:</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:#eeeeee;\">Biće korišćene sledeće particije:</span></p></body></html>"
 
 #. i18n: file: ui/pages/readyinstall.ui:211
 #. i18n: ectx: property (text), widget (QLabel, formatLabel)
 #: rc.cpp:384
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">The following partitions will be formatted:</span></p></body></"
-"html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">Sledeće particije će biti formatirane:</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:#eeeeee;\">The following partitions will be formatted:</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:#eeeeee;\">Sledeće particije će biti formatirane:</span></p></body></html>"
 
 #. i18n: file: ui/pages/releasenotes.ui:47
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:394
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
-"style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Release Notes</"
-"span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
-"style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Beleške o "
-"izdanju</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Release Notes</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Beleške o izdanju</span></p></body></html>"
 
 #. i18n: file: ui/pages/releasenotes.ui:60
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -1555,44 +1158,24 @@ msgid ""
 "Check out what's new, the known issues and general information about this "
 "version of Chakra. As always, you are encouraged to tell us what you think, "
 "either by visiting our forums or bug tracker."
-msgstr ""
-"Pogledajte šta imamo novo, poznate činjenice i generalne informacije o ovoj "
-"verziji Chakre. Kao i uvek, bićete ohrabreni da nam iznesete mišljenje, "
-"posećujući naše forume ili prijajavljivač grešaka."
+msgstr "Pogledajte šta imamo novo, poznate činjenice i opšte informacije o ovoj verziji Chakre. Kao i uvek, ohrabreni ste da nam iznesete mišljenje, posećujući naše forume ili prijajavljivač grešaka."
 
 #. i18n: file: ui/pages/usercreation.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:404
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:14pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Create Users</span></p></body></"
-"html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Pravljenje Korisnika</span></"
-"p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:14pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Create Users</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Sans Serif'; font-size:14pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Kreiraj korisnika</span></p></body></html>"
 
 #. i18n: file: ui/pages/usercreation.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:411
 msgid "Enter at least one login name and password."
-msgstr "Unesite barem jedno korisničko ime i lozinku"
+msgstr "Unesite barem jedno korisničko ime i lozinku."
 
 #. i18n: file: ui/pages/usercreation.ui:178
 #. i18n: ectx: property (toolTip), widget (QPushButton, addUser)
@@ -1606,9 +1189,7 @@ msgstr "Dodaj još korisnika."
 msgid ""
 "<small>This name will be used if you make the computer visible to others on "
 "a network.</small>"
-msgstr ""
-"<small>Ovo ime će bit korišćeno ako želite da vaš računar bude vidljiv "
-"drugima na mreži.</small>"
+msgstr "<small>Ovo ime će bit korišćeno ako želite da vaš računar bude vidljiv drugima na mreži.</small>"
 
 #. i18n: file: ui/pages/usercreation.ui:299
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -1650,7 +1231,7 @@ msgstr "Potvrdi lozinku:"
 #. i18n: ectx: property (toolTip), widget (QPushButton, removeUser)
 #: rc.cpp:444
 msgid "Remove this user."
-msgstr "Uklonite ovog korisnika."
+msgstr "Ukloni ovog korisnika."
 
 #. i18n: file: ui/widgets/userwidget.ui:264
 #. i18n: ectx: property (text), widget (QLabel, label_4)
@@ -1662,7 +1243,7 @@ msgstr "Ime:"
 #. i18n: ectx: property (text), widget (QCheckBox, autoLoginCheckBox)
 #: rc.cpp:450
 msgid "Login Automatically"
-msgstr "Uloguj se Automatski"
+msgstr "Prijavi se automatski"
 
 #. i18n: file: ui/widgets/userwidget.ui:344
 #. i18n: ectx: property (text), widget (QCheckBox, rootUsesUserPwCheckBox)
@@ -1670,9 +1251,7 @@ msgstr "Uloguj se Automatski"
 msgid ""
 "Use this password as \n"
 "the Administrator password"
-msgstr ""
-"Koristi ovu lozinku kao \n"
-"administratorsku"
+msgstr "Koristi ovu lozinku kao \nadministratorsku"
 
 #. i18n: file: ui/widgets/userwidget.ui:396
 #. i18n: ectx: property (text), widget (QLabel, label_5)
@@ -1684,58 +1263,14 @@ msgstr "Korena lozinka"
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: rc.cpp:460
 msgid "Confirm Root Password:  "
-msgstr "Potvrdi lozinku:"
+msgstr "Potvrdi korenu lozinku:"
 
 #: rc.cpp:461
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Ivan Blagojević"
+msgstr "Vaša imena"
 
 #: rc.cpp:462
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "ivanblago1@gmail.com"
-
-#~ msgid "installed"
-#~ msgstr "instalirano"
-
-#~ msgid "Install Packaged Software"
-#~ msgstr "Instaliraj Paket Softvera"
-
-#~ msgid ""
-#~ "The selected volume already has a partition table.. Overwrite it? (this "
-#~ "will destroy all data on the device)"
-#~ msgstr ""
-#~ "Selektovano parče je već deo particione tabele.. Pregaziti? (ovo će "
-#~ "uništiti sve podatke na uređaju)"
-
-#~ msgid "Warning"
-#~ msgstr "Upozorenje"
-
-#~ msgid ""
-#~ "This operation will destroy all data on the selected volume.. Continue "
-#~ "anyway?"
-#~ msgstr ""
-#~ "Ova operacija će uništiti sve podatke na selektovanom parčetu.. Da "
-#~ "nastavim svakako?"
-
-#~ msgid "Primary"
-#~ msgstr "Primarno"
-
-#~ msgid "Install Packages"
-#~ msgstr "Instaliranje Paketa"
-
-#~ msgid "Install"
-#~ msgstr "Instaliraj"
-
-#~ msgid "Type: "
-#~ msgstr "Tip:"
-
-#~ msgid " MiB"
-#~ msgstr "MiB"
-
-#~ msgid "Create a new partition table on the selected device"
-#~ msgstr "Pravljenje nove particione tabele na odabranom uređaju"
-
-#~ msgid "Delete"
-#~ msgstr "Obriši"
+msgstr "Vaše elektronske adrese"

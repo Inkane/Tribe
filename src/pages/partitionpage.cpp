@@ -46,6 +46,7 @@ const int SPACING = 3;
 const int MOUNTPOINT_ROLE = Qt::UserRole + 123;
 const int PARTITION_ROLE = Qt::UserRole + 51;
 const int DEVICE_ROLE = Qt::UserRole + 50;
+const int FORMAT_ROLE = Qt::UserRole + 52; //FIXME: what's the logic behind those?
 
 QStringList s_mountPoints = QStringList() << "None" <<
                                              "/" <<
@@ -71,7 +72,8 @@ bool caseInsensitiveLessThan(const QString& s1, const QString& s2)
 
 PartitionDelegate::PartitionDelegate(QObject * parent) : QStyledItemDelegate(parent),
                                                          m_lockIcon("object-locked"),
-                                                         m_partIcon("partitionmanager")
+                                                         m_partIcon("partitionmanager"),
+                                                         m_formatIcon("configure")   // use a more suiting icon to indicate formatting, ask Malcer about this one
 { }
 
 PartitionDelegate::~PartitionDelegate()
@@ -235,13 +237,18 @@ void PartitionDelegate::paint(QPainter *painter, const QStyleOptionViewItem &opt
     }
 
     const Partition *partition = idx.data(PARTITION_ROLE).value<const Partition*>();
-    if (partition && partition->isMounted()) {
-        QRect overlayRect = optV4.rect;
-        overlayRect.setSize(iconRect.size() / 1.9);
-        overlayRect.moveTo(QPoint(iconRect.right() - overlayRect.width() + 2,
-                                  iconRect.bottom() - overlayRect.height() + 2));
+    if (partition && (partition->isMounted() || idx.data(FORMAT_ROLE).value<bool>())) {
+	  QRect overlayRect = optV4.rect;
+	  overlayRect.setSize(iconRect.size() / 1.9);
+	  overlayRect.moveTo(QPoint(iconRect.right() - overlayRect.width() + 2,
+				    iconRect.bottom() - overlayRect.height() + 2));
 
-        painter->drawPixmap(overlayRect, m_lockIcon.pixmap(overlayRect.size()));
+	// partitions being mounted and being marked for formatting is currentlly mutually exclusive, at least the GUI doesn't allow to mark a mounted partition 
+	  if (partition->isMounted()) {
+	    painter->drawPixmap(overlayRect, m_lockIcon.pixmap(overlayRect.size()));
+	}  else if (idx.data(FORMAT_ROLE).value<bool>()) {
+	    painter->drawPixmap(overlayRect, m_formatIcon.pixmap(overlayRect.size()));
+      }
     }
 
     QPen p(Qt::white);
@@ -307,30 +314,35 @@ QSize PartitionDelegate::sizeHint(const QStyleOptionViewItem & option, const QMo
 
 /////////////// tree widget item
 
-class PartitionTreeWidgetItem : public QTreeWidgetItem
+class PartitionTreeWidgetItem : public QTreeWidgetItem //TODO: check how to alter this one in the best way
 {
     Q_DISABLE_COPY(PartitionTreeWidgetItem)
 
     public:
         PartitionTreeWidgetItem(const Partition* p, Device *d) : QTreeWidgetItem(),
                                                                  m_Partition(p),
-                                                                 m_Device(d)
+                                                                 m_Device(d),
+                                                                 m_FormatMarker(false)
         {
             setData(0, DEVICE_ROLE, QVariant::fromValue(d));
             setData(0, PARTITION_ROLE, QVariant::fromValue(p));
+	    setData(0, FORMAT_ROLE, QVariant::fromValue(false));
         }
 
         PartitionTreeWidgetItem(Device* d) : QTreeWidgetItem(),
                                              m_Partition(0),
-                                             m_Device(d)
+                                             m_Device(d),
+                                             m_FormatMarker(false)
         { }
 
         const Partition* partition() const { return m_Partition; }
         Device* device() { return m_Device; }
+        bool shallBeFormatted() {return m_FormatMarker;}
 
     private:
         const Partition* m_Partition;
         Device* m_Device;
+	bool m_FormatMarker;
 };
 
 /////////////// partition view widget
@@ -679,6 +691,7 @@ void PartitionPage::formatToggled(bool status)
         m_ui->filesystemLabel->setVisible(true);
         m_ui->filesystemBox->setVisible(true);
     } else {
+        m_ui->treeWidget->selectedItems().first()->setData(0, FORMAT_ROLE, QVariant::fromValue<bool>(false));
         cancelFormat();
         return;
     }
@@ -693,6 +706,7 @@ void PartitionPage::formatToggled(bool status)
 
 void PartitionPage::applyFormat()
 {
+    m_ui->treeWidget->selectedItems().first()->setData(0, FORMAT_ROLE, QVariant::fromValue<bool>(true));
     disconnect(m_ui->treeWidget, SIGNAL(itemSelectionChanged()), this, SLOT(cancelFormat()));
     disconnect(m_ui->editPartitionCancelButton, SIGNAL(clicked(bool)), this, SLOT(cancelFormat()));
     disconnect(m_ui->editPartitionOkButton, SIGNAL(clicked(bool)), this, SLOT(applyFormat()));

@@ -66,6 +66,7 @@ private slots:
 private:
     KIcon m_lockIcon;
     KIcon m_partIcon;
+    KIcon m_formatIcon;
 };
 
 class PartitionViewWidget : public QTreeWidget

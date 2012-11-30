@@ -691,7 +691,6 @@ void PartitionPage::formatToggled(bool status)
         m_ui->filesystemLabel->setVisible(true);
         m_ui->filesystemBox->setVisible(true);
     } else {
-        m_ui->treeWidget->selectedItems().first()->setData(0, FORMAT_ROLE, QVariant::fromValue<bool>(false));
         cancelFormat();
         return;
     }
@@ -728,6 +727,7 @@ void PartitionPage::cancelFormat()
     disconnect(m_ui->editPartitionCancelButton, SIGNAL(clicked(bool)), this, SLOT(cancelFormat()));
     disconnect(m_ui->editPartitionOkButton, SIGNAL(clicked(bool)), this, SLOT(applyFormat()));
 
+     m_ui->treeWidget->selectedItems().first()->setData(0, FORMAT_ROLE, QVariant::fromValue<bool>(false));  //TODO: check if cancelFormat can be called without the tree widget having anything selected
     m_ui->formatButton->setChecked(false);
     const Partition *p = m_ui->treeWidget->selectedItems().first()->data(0, PARTITION_ROLE).value<const Partition*>();
     m_toFormat.remove(p);

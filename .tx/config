@@ -1,0 +1,8 @@
+[main]
+host = https://www.transifex.net
+
+[chakra-project.tribe]
+file_filter = translations/<lang>.po
+source_file = translations/tribe.pot
+source_lang = en
+

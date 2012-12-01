@@ -3,147 +3,147 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Josip Sokcevic <sokcevic@gmail.com>, 2010.
-# Zarko Pintar <zarko.pintar@gmail.com>, 2010.
+# khire aldin  kajjan <cransh.t2@hotmail.com>, 2012.
+# Yusuf Salah <ya9889@gmail.com>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: The Chakra Project\n"
 "Report-Msgid-Bugs-To: http://chakra-project.org/bugs/\n"
 "POT-Creation-Date: 2011-08-30 20:57+0200\n"
-"PO-Revision-Date: 2012-02-14 09:18+0000\n"
-"Last-Translator: Adrián Chaves Fernández <adriyetichaves@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2012-05-24 08:31+0000\n"
+"Last-Translator: khire aldin  kajjan <cransh.t2@hotmail.com>\n"
+"Language-Team: Arabic (http://www.transifex.com/projects/p/chakra-project/language/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: hr\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
 #: src/installationhandler.cpp:87
 msgid "Tribe was not able to initialize needed path: "
-msgstr ""
+msgstr "Tribe لم يستطع تهيئة المسار :"
 
 #: src/installationhandler.cpp:87
 msgid " , please resolve the issue, and try again."
-msgstr ""
+msgstr ", الرجاء حل المشكلة , و إعادة المحاولة."
 
 #: src/installationhandler.cpp:149
 msgid "Installing the system ..."
-msgstr "Instaliram sustav..."
+msgstr "يثبت النظام..."
 
 #: src/installationhandler.cpp:177
 msgid "Mounting partitions..."
-msgstr ""
+msgstr "ضم الأقراص..."
 
 #: src/installationhandler.cpp:185
 msgid "Preparing installation..."
-msgstr ""
+msgstr "إعداد عملية التثبيت..."
 
 #: src/installationhandler.cpp:212
 msgid "Error copying files"
-msgstr "Greška prilikom kopiranja datoteka"
+msgstr "خطأ فى نسخ الملفات"
 
 #: src/installationhandler.cpp:215
 msgid "Removing packages whose license has been declined ..."
-msgstr "Uklanjam pakete čije su licence odbijene..."
+msgstr "حذف الحزم التي رفضت رخصتها ..."
 
 #: src/installationhandler.cpp:253
 msgid "Initializing target ..."
-msgstr "Inicijaliziram cilj..."
+msgstr "تهيئة الهدف ..."
 
 #: src/installationhandler.cpp:344
 msgid "Please wait, configuring the new system ..."
-msgstr ""
+msgstr "الرجاء الانتظار, إعداد النظام الجديد ..."
 
 #: src/installationhandler.cpp:423
 msgid "Error in Postinstall script. See log for more details"
-msgstr "Greška u PostInstall skripti. Pogledajte zapis za više informacija"
+msgstr "خطأ في سكربت الإعداد , راجع السجل لمزيد من التفاصيل"
 
 #: src/installationhandler.cpp:432
 msgid "Creating user accounts ..."
-msgstr ""
+msgstr "إنشاء حساب مستخدم ..."
 
 #: src/installationhandler.cpp:435
 msgid "Configuring software management..."
-msgstr ""
+msgstr "ضبط إدارة البرمجيات..."
 
 #: src/installationhandler.cpp:439
 msgid "Removing unused packages..."
-msgstr ""
+msgstr "حذف الحزم الغير مستخدمة..."
 
 #: src/installationhandler.cpp:443
 msgid "Installing additional packages..."
-msgstr "Instaliram dodatne pakete..."
+msgstr "تثبين حزم إضافية..."
 
 #: src/installationhandler.cpp:447
 msgid "Configuring the display..."
-msgstr ""
+msgstr "إعداد جهاز العرض..."
 
 #: src/installationhandler.cpp:451
 msgid "Downloading and installing localization packages..."
-msgstr ""
+msgstr "تحميل و تنصيب حزم الإعدادات الإقليمية..."
 
 #: src/installationhandler.cpp:455
 msgid "Downloading and installing documentation packages..."
-msgstr ""
+msgstr "تنزيل وتثبيت حزم الوثائق..."
 
 #: src/installationhandler.cpp:459
 msgid "Setting up localization..."
-msgstr "Podešavam lokalizaciju..."
+msgstr "ضبط الإعدادات الإقليمية"
 
 #: src/installationhandler.cpp:463
 msgid "Creating daemon configuration..."
-msgstr "Stvaram daemon postavke..."
+msgstr "إنشاء الاعدادات الوهمية..."
 
 #: src/installationhandler.cpp:467
 msgid "Creating network configuration..."
-msgstr "Stvaram mrežne postavke"
+msgstr "إنشاء اعدادات الشبكة..."
 
 #: src/installationhandler.cpp:471
 msgid "Creating fstab..."
-msgstr "Stvaram fstab..."
+msgstr "إنشاء ال fstab..."
 
 #: src/installationhandler.cpp:478
 msgid "Configuring hardware..."
-msgstr "Podešavam sklopovlje..."
+msgstr "اعداد العتاد..."
 
 #: src/installationhandler.cpp:482
 msgid "Creating initial ramdisk images..."
-msgstr ""
+msgstr "إنشاء قرص التهيئة الأولية Ramdisk"
 
 #: src/installationhandler.cpp:486
 msgid "Generating locales..."
-msgstr ""
+msgstr "توليد المتغيرات المحلية..."
 
 #: src/installationhandler.cpp:490
 msgid "Removing unused localizations..."
-msgstr ""
+msgstr "حذف المتغيرات المحلية الغير مستخدمة..."
 
 #: src/installationhandler.cpp:494
 msgid "Removing unused drivers..."
-msgstr ""
+msgstr "حذف برامج القيادة الغير مستخدمة..."
 
 #: src/installationhandler.cpp:498
 msgid "Finishing up..."
-msgstr ""
+msgstr "العمليات النهائية..."
 
 #: src/installationhandler.cpp:502
 msgid "Installation complete!"
-msgstr "Instalacija završena!"
+msgstr "اكتمل التثبيت!"
 
 #: src/installationhandler.cpp:593
 msgid ""
 "Tribe was not able to initialize needed directories. Something is very "
 "wrong..."
-msgstr ""
+msgstr "Tribe لم يستطع تهيئة المجلدات الضرورية."
 
 #: src/installationhandler.cpp:617
 msgid "Could not mount %1"
-msgstr "Ne mogu montirati %1"
+msgstr "لا يمكن ضم %1"
 
 #: src/installationhandler.h:171
 msgid "No Further details given"
-msgstr "Bez daljnjih detalja"
+msgstr "لا يوجد المزيد من التفاصيل"
 
 #. i18n: file: ui/pages/base.ui:20
 #. i18n: ectx: property (windowTitle), widget (QWidget, Base)
@@ -153,11 +153,11 @@ msgstr "Tribe"
 
 #: src/main.cpp:42
 msgid "Graphical Installer for Chakra"
-msgstr ""
+msgstr "برنامج التنصيب الرسومي لChakra"
 
 #: src/main.cpp:43
 msgid "(c) 2008 - 2011 the Chakra Development Team"
-msgstr ""
+msgstr "(c) 2008 - 2011 فريق تطوير تشاكرا"
 
 #: src/main.cpp:43
 msgid "chakra@chakra-project.org"
@@ -169,7 +169,7 @@ msgstr "Dario Freddi"
 
 #: src/main.cpp:45
 msgid "Maintainer"
-msgstr "Održavatelj"
+msgstr "المراجع"
 
 #: src/main.cpp:46
 msgid "Lukas Appelhans"
@@ -177,7 +177,7 @@ msgstr "Lukas Appelhans"
 
 #: src/main.cpp:46 src/main.cpp:50 src/main.cpp:51 src/main.cpp:52
 msgid "Developer"
-msgstr "Razvijatelj"
+msgstr "المطوّر"
 
 #: src/main.cpp:47
 msgid "Jan Mette"
@@ -185,11 +185,11 @@ msgstr "Jan Mette"
 
 #: src/main.cpp:47
 msgid "PostInstall Backend and Artwork"
-msgstr "PostInstall podršaka i umjetnički rad"
+msgstr ""
 
 #: src/main.cpp:48
 msgid "Phil Miller"
-msgstr ""
+msgstr "Phil Miller"
 
 #: src/main.cpp:48 src/main.cpp:49
 msgid "PostInstall Backend"
@@ -201,98 +201,98 @@ msgstr ""
 
 #: src/main.cpp:50
 msgid "Drake Justice"
-msgstr ""
+msgstr "Drake Justice"
 
 #: src/main.cpp:51
 msgid "Georg Grabler"
-msgstr ""
+msgstr "Georg Grabler"
 
 #: src/main.cpp:52
 msgid "Daniele Cocca"
-msgstr ""
+msgstr "Daniele Cocca"
 
 #: src/mainwindow.cpp:99
 msgid "Do you really want to abort the installation?"
-msgstr "Jeste li sigurni da želite obustaviti instalaciju?"
+msgstr "هل تريد حقا إنهاء عملية التنصيب؟"
 
 #: src/mainwindow.cpp:509
 msgid ""
 "Installation failed! The following error has been reported: %1.\n"
 "Tribe will now quit, please check the installation logs in /tmp\n"
 "or ask for help in our forums."
-msgstr "Instalacija nije uspjela! Dogodila se sljedeća greška: %1.\nTribe će sada izaći, pogledajte instalacijske zapise u /tmp\nili pitajte za pomoć na našem forumu."
+msgstr "فشل في عملية التنصيب! تم التبليغ عن الخطأ %1.\nTribe سيغلق الآن , من فضلك راجع سجل التنصيب الموجود في \\tmp\nأو تستطيع أن تطلب المساعدة من المنتدى."
 
 #: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:539
 msgid "Installing bootloader..."
-msgstr "Instaliram bootloader..."
+msgstr "يجري تثبيت مُحمّل الإقلاع..."
 
 #: src/pages/bootloaderpage.cpp:82
 msgid "Creating OS list..."
-msgstr ""
+msgstr "بناء قائمة أنظمة التشغيل..."
 
 #: src/pages/configpage.cpp:153 src/pages/configpage.cpp:363
 msgid "Downloading"
-msgstr ""
+msgstr "يُنزل"
 
 #: src/pages/configpage.cpp:263
 msgid ""
 "Sorry, you have no internet connection at the moment \n"
 "Will stop bundle(s) installation now"
-msgstr ""
+msgstr "عذراً,ولكنك لا تملك اتصال بالإنترنت حاليا\nسيتم التوقف عن تنصيب الحزمة(الحزم) الآن"
 
 #: src/pages/configpage.cpp:349
 msgid "loading package data..."
-msgstr ""
+msgstr "يحمل الحزم..."
 
 #: src/pages/configpage.cpp:350
 msgid "Loading package data..."
-msgstr ""
+msgstr "يحمل معلومات الحزم..."
 
 #: src/pages/configpage.cpp:351
 msgid "checking dependencies..."
-msgstr ""
+msgstr "التحقق من الاعتماديات..."
 
 #: src/pages/configpage.cpp:352
 msgid "Checking dependencies..."
-msgstr ""
+msgstr "التحقق من الاعتماديات..."
 
 #: src/pages/configpage.cpp:353
 msgid "resolving dependencies..."
-msgstr ""
+msgstr "تحليل الاعتماديات..."
 
 #: src/pages/configpage.cpp:354
 msgid "Resolving dependencies..."
-msgstr ""
+msgstr "تحليل الاعتماديات..."
 
 #: src/pages/configpage.cpp:355
 msgid "checking package integrity..."
-msgstr ""
+msgstr "التحقق من سلامة الحزمة..."
 
 #: src/pages/configpage.cpp:356
 msgid "Checking package integrity..."
-msgstr ""
+msgstr "التحقق من سلامة الحزمة..."
 
 #: src/pages/configpage.cpp:357
 msgid "Total Download Size:"
-msgstr ""
+msgstr "حجم التحميل الكلي:"
 
 #. i18n: file: ui/pages/config.ui:928
 #. i18n: ectx: property (text), widget (QPushButton, downloadBundlesButton)
 #: src/pages/configpage.cpp:417 rc.cpp:166
 msgid "Download Popular Bundles"
-msgstr ""
+msgstr "تحميل الحزم المشهورة"
 
 #. i18n: file: ui/pages/config.ui:906
 #. i18n: ectx: property (text), widget (QPushButton, bootloaderSettingsButton)
 #: src/pages/configpage.cpp:435 rc.cpp:163
 msgid "Bootloader Settings"
-msgstr ""
+msgstr "اعدادات محمل الإقلاع"
 
 #. i18n: file: ui/pages/config.ui:867
 #. i18n: ectx: property (text), widget (QPushButton, initRamDiskButton)
 #: src/pages/configpage.cpp:448 rc.cpp:157
 msgid "Customize Initial Ramdisk"
-msgstr ""
+msgstr "تخصيص قرص التهيئة الأولية Ramdisk"
 
 #: src/pages/configpage.cpp:511
 msgid ""
@@ -303,119 +303,119 @@ msgstr ""
 
 #: src/pages/licensepage.cpp:53
 msgid "Proprietary ATI Driver"
-msgstr "Vlasnički ATI upravljački programi"
+msgstr "برنامج قيادة ATI المملوك"
 
 #: src/pages/licensepage.cpp:57
 msgid "Proprietary NVidia Driver"
-msgstr "Vlasnički NVidia upravljački programi"
+msgstr "برنامج قيادة NVidia المملوك"
 
 #: src/pages/licensepage.cpp:117
 msgid "Accept license for: "
-msgstr "Prihvatite licence za: "
+msgstr "الموافقة على الرخصة:"
 
 #: src/pages/localepage.cpp:309
 msgid "You need to select a timezone"
-msgstr ""
+msgstr "يجب عليك اختيار المنطقة الزمنية"
 
 #: src/pages/partitionpage.cpp:89
 msgid "Please enter a custom mountpoint"
-msgstr ""
+msgstr "يرجى إدخال نقطة الضم الخاصة "
 
 #: src/pages/partitionpage.cpp:101
 msgid "The mount point must start with /"
-msgstr ""
+msgstr "يجب أن تبدا نقطة الضم ب \\"
 
 #: src/pages/partitionpage.cpp:102
 msgid "Error"
-msgstr "Greška"
+msgstr "خطأ"
 
 #: src/pages/partitionpage.cpp:196
 msgid "New"
-msgstr ""
+msgstr "جديد"
 
 #: src/pages/partitionpage.cpp:196
 msgid "Unsupported"
-msgstr ""
+msgstr "غير مدعوم"
 
 #: src/pages/partitionpage.cpp:416
 msgid "Loading partitions..."
-msgstr ""
+msgstr "تحميل الجزء..."
 
 #: src/pages/partitionpage.cpp:664
 msgid "Extended"
-msgstr ""
+msgstr "ممدّد"
 
 #: src/pages/partitionpage.cpp:809
 msgid ""
 "Tribe detected target partitions which are mounted. Do you want Tribe to "
 "unmount them?"
-msgstr ""
+msgstr "Tribe اكتشف أن الأقراص الهدف قد تم ضمها , هل تريد من Tribe أن يقوم بإلغاء ضمهم؟"
 
 #: src/pages/partitionpage.cpp:825
 msgid ""
 "Tribe failed to unmount a partition which is target for the installation. "
 "You need to unmount the partitions manually before you can proceed."
-msgstr ""
+msgstr "فشل Tribe  بإلغاء ضم الأقراص التي استخدمت للتنصيب .يجب عليك إلغاء ضم الأقراص بشكل يدوي قبل المتابعة."
 
 #: src/pages/partitionpage.cpp:827
 msgid "Target partitions mounted"
-msgstr ""
+msgstr "تم ضم الأقراص الهدف"
 
 #: src/pages/partitionpage.cpp:838
 msgid ""
 "The partition you have chosen to mount as '/' is too small. It should have a"
 " capacity of at least %1 for a successful installation."
-msgstr ""
+msgstr "القرص الذي اخترت ضمه ك '\\' صغير جدا , يجب أن يكون على الأقل %1 حتى يكتمل التنصيب بنجاح."
 
 #: src/pages/partitionpage.cpp:841 src/pages/partitionpage.cpp:881
 msgid "Target's capacity not sufficient"
-msgstr ""
+msgstr "سعة الهدف غير كافية"
 
 #: src/pages/partitionpage.cpp:861
 msgid ""
 "The partition you have chosen to mount as '/' is not marked for formatting. "
 "This might create problems. Do you still want to continue without formating "
 "it?"
-msgstr ""
+msgstr "القرص الذي اخترت ضمه ك '\\' غير محدد لتتم تهيئته , مما قد يؤدي إلى مشاكل , هل تريد المتابعة بدون تهيئته؟"
 
 #: src/pages/partitionpage.cpp:879
 msgid ""
 "You have selected '%1' as a mountpoint, which is not valid. A valid "
 "mountpoint always starts with '/' and represents a directory on disk"
-msgstr ""
+msgstr "قمت باختيار '%1' كنقطة ضم , وهي غير مناسبة , نقطة الضم المناسبة دائما تبدأ ب '\\' و تمثل مجلد على القرص"
 
 #: src/pages/partitionpage.cpp:890
 msgid ""
 "You need to select a root partition ('/') to proceed with the installation. "
-msgstr ""
+msgstr "يجب عليك تحديد الجذر ('\\') لمتابعة عملية التنصيب."
 
 #: src/pages/partitionpage.cpp:911
 msgid ""
 "When using a GPT Partition Table you need to have a unformatted partition "
 "with the bios_grub flag!"
-msgstr ""
+msgstr "عند استخدام جدول الأقراص من نوع GPT , تجب عليك عدم تهيئة القرص بإشارة bios_grub !"
 
 #: src/pages/readyinstallpage.cpp:77
 msgid "New partition (%1) on %2"
-msgstr ""
+msgstr "قسم جديد (%1) على %2"
 
 #: src/pages/readyinstallpage.cpp:80
 msgid "%1 will be used as %2"
-msgstr "%1 će se korisiti kao %2"
+msgstr "%1 سيستخدم كـ %2"
 
 #: src/pages/readyinstallpage.cpp:100
 msgid "Continue"
-msgstr ""
+msgstr "تابع"
 
 #: src/pages/readyinstallpage.cpp:104
 msgid ""
 "The following partitions appear to be mounted: %1. To let the installation "
 "happen correctly, Tribe will now unmount them."
-msgstr ""
+msgstr "القسم %1 يبدو أنه قد تم ضمه , لإتمام عملية التنصيب بشكل صحيح, Tribe سيحاول إلغاء ضمه."
 
 #: src/pages/usercreationpage.cpp:148
 msgid "You must give at least one login name."
-msgstr ""
+msgstr "يجب عليك إدخال اسم مستخدم وحيد على الأقل"
 
 #: src/pages/usercreationpage.cpp:152
 msgid "Root Passwords do not match..."
@@ -447,7 +447,7 @@ msgstr ""
 
 #: src/widgets/avatardialog.cpp:52 src/widgets/avatardialog.cpp:71
 msgid "Custom"
-msgstr ""
+msgstr "مخصص"
 
 #. i18n: file: ui/pages/base.ui:172
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -458,7 +458,7 @@ msgid ""
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Welcome</span></p></body></html>"
-msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Dobrodošli</span></p></body></html>"
+msgstr ""
 
 #. i18n: file: ui/pages/base.ui:198
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -466,31 +466,31 @@ msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/T
 #. i18n: ectx: property (windowTitle), widget (QWidget, ReleaseNotes)
 #: rc.cpp:13 rc.cpp:391
 msgid "Release Notes"
-msgstr "Bilješke izdanja"
+msgstr "ملاحظات الإصدار"
 
 #. i18n: file: ui/pages/base.ui:224
 #. i18n: ectx: property (text), widget (QLabel, licenseLabel)
 #: rc.cpp:16
 msgid "License Approval"
-msgstr "Licencna suglasnost"
+msgstr ""
 
 #. i18n: file: ui/pages/base.ui:257
 #. i18n: ectx: property (text), widget (QLabel, label_21)
 #: rc.cpp:19
 msgid "Ready to Install"
-msgstr "Spreman za instaliranje"
+msgstr ""
 
 #. i18n: file: ui/pages/base.ui:283
 #. i18n: ectx: property (text), widget (QLabel, label_24)
 #: rc.cpp:22
 msgid "Language & Time"
-msgstr "Jezik i vrijeme"
+msgstr "اللغة والوقت"
 
 #. i18n: file: ui/pages/base.ui:297
 #. i18n: ectx: property (text), widget (QLabel, label_25)
 #: rc.cpp:25
 msgid "Disk setup"
-msgstr "Postavke diska"
+msgstr "إعداد القرص"
 
 #. i18n: file: ui/pages/base.ui:327
 #. i18n: ectx: property (text), widget (QLabel, label_26)
@@ -501,13 +501,13 @@ msgid ""
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Preparation</span></p></body></html>"
-msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Priprema</span></p></body></html>"
+msgstr ""
 
 #. i18n: file: ui/pages/base.ui:334
 #. i18n: ectx: property (text), widget (QLabel, label_15)
 #: rc.cpp:35
 msgid "Create Users"
-msgstr ""
+msgstr "أنشئ مستخدم"
 
 #. i18n: file: ui/pages/base.ui:390
 #. i18n: ectx: property (text), widget (QLabel, label_11)
@@ -518,13 +518,13 @@ msgid ""
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Installation</span></p></body></html>"
-msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Instalacija</span></p></body></html>"
+msgstr ""
 
 #. i18n: file: ui/pages/base.ui:416
 #. i18n: ectx: property (text), widget (QLabel, label_13)
 #: rc.cpp:45
 msgid "Install System"
-msgstr "Instaliraj sustav"
+msgstr "ثبت النظام"
 
 #. i18n: file: ui/pages/base.ui:453
 #. i18n: ectx: property (text), widget (QLabel, label_14)
@@ -535,7 +535,7 @@ msgid ""
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Configuration</span></p></body></html>"
-msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Podešavanje</span></p></body></html>"
+msgstr ""
 
 #. i18n: file: ui/pages/base.ui:460
 #. i18n: ectx: property (text), widget (QLabel, label_16)
@@ -547,21 +547,21 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, abortButton)
 #: rc.cpp:58
 msgid "Abort installation"
-msgstr "Odbacivanje instalacije"
+msgstr "أجهض التثبيت"
 
 #. i18n: file: ui/pages/base.ui:615
 #. i18n: ectx: property (text), widget (QPushButton, previousButton)
 #: rc.cpp:61
 msgctxt "Previous Page"
 msgid "Previous"
-msgstr "Prethodno"
+msgstr "السّابق"
 
 #. i18n: file: ui/pages/base.ui:634
 #. i18n: ectx: property (text), widget (QPushButton, nextButton)
 #: rc.cpp:64
 msgctxt "Next Page"
 msgid "Next"
-msgstr "Sljedeće"
+msgstr "التّالي"
 
 #. i18n: file: ui/pages/bootloader.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -572,7 +572,7 @@ msgid ""
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Bootloader Installation</span></p></body></html>"
-msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Instalacija Bootloader</span></p></body></html>"
+msgstr ""
 
 #. i18n: file: ui/pages/bootloader.ui:58
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -588,7 +588,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, checkBox)
 #: rc.cpp:80
 msgid "Install Bootloader"
-msgstr "Instaliram Bootloader"
+msgstr ""
 
 #. i18n: file: ui/pages/bootloader.ui:89
 #. i18n: ectx: property (text), widget (QPushButton, pushButton)
@@ -598,19 +598,19 @@ msgstr "Instaliram Bootloader"
 #. i18n: ectx: property (text), widget (QPushButton, advancedButton)
 #: rc.cpp:83 rc.cpp:348 rc.cpp:351
 msgid "Advanced..."
-msgstr "Napredno..."
+msgstr "متقدّم..."
 
 #. i18n: file: ui/pages/bootloader.ui:135
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:86
 msgid "Install to:"
-msgstr "Instaliraj u:"
+msgstr "تثبيت في:"
 
 #. i18n: file: ui/pages/bootloader.ui:142
 #. i18n: ectx: property (text), widget (QLineEdit, lineEdit)
 #: rc.cpp:89
 msgid "hd0"
-msgstr "hd0"
+msgstr ""
 
 #. i18n: file: ui/pages/config.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -688,25 +688,25 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, bundlesDownloadButton)
 #: rc.cpp:129
 msgid "Download"
-msgstr ""
+msgstr "نزّل"
 
 #. i18n: file: ui/pages/config.ui:408
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: rc.cpp:132
 msgid "Chakra"
-msgstr ""
+msgstr "تشاكرا"
 
 #. i18n: file: ui/pages/config.ui:456
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: rc.cpp:135
 msgid "Mac"
-msgstr ""
+msgstr "ماك"
 
 #. i18n: file: ui/pages/config.ui:485
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #: rc.cpp:138
 msgid "Windows"
-msgstr ""
+msgstr "ويندوز"
 
 #. i18n: file: ui/pages/config.ui:564
 #. i18n: ectx: property (text), widget (QPushButton, colorizeButton)
@@ -737,7 +737,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
 #: rc.cpp:151 rc.cpp:342 rc.cpp:429
 msgid "Cancel"
-msgstr ""
+msgstr "ألغِ"
 
 #. i18n: file: ui/pages/config.ui:839
 #. i18n: ectx: property (text), widget (QPushButton, changeAppearanceButton)
@@ -749,7 +749,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:160
 msgid "Advanced Options"
-msgstr ""
+msgstr "خيارات متقدمة"
 
 #. i18n: file: ui/pages/config.ui:940
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -793,19 +793,19 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, rebootButton)
 #: rc.cpp:195
 msgid "Restart Computer"
-msgstr "Pokreni ponovno računalo"
+msgstr ""
 
 #. i18n: file: ui/pages/finish.ui:118
 #. i18n: ectx: property (text), widget (QPushButton, chakraButton)
 #: rc.cpp:198
 msgid "Keep using the LiveCD"
-msgstr "Nastavi koristiti LiveCD"
+msgstr ""
 
 #. i18n: file: ui/pages/init.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, tribeInit)
 #: rc.cpp:201
 msgid "Ramdisk"
-msgstr "Ramdisk"
+msgstr ""
 
 #. i18n: file: ui/pages/init.ui:49
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -816,7 +816,7 @@ msgid ""
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Ramdisk Setup</span></p></body></html>"
-msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Postavke Ramdisk</span></p></body></html>"
+msgstr ""
 
 #. i18n: file: ui/pages/init.ui:58
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -828,91 +828,91 @@ msgid ""
 "options for special boot methods. If you are unsure on what this means, "
 "simply press the \"Next\" button. Otherwise check out the ramdisk options "
 "below and select the items you need for your system."
-msgstr "Vaše sklopovlje će biti automatski podešeno tijekom instalacije i početni ramdisk okolina za podizanje linux kernela će biti ugrađena. Sve bi trebalo proći bez intervencije, ali možda ćete trebati neke opcije za specijalno podizanje. Ako ste nesigurni šta ovo znači, pritisnite gumb \"Dalje\". Uprotivnom pogledajte ramdisk opcije ispod te odaberite stavke potrebne za vaš sustav."
+msgstr ""
 
 #. i18n: file: ui/pages/init.ui:81
 #. i18n: ectx: property (text), widget (QPushButton, pushButton)
 #: rc.cpp:214
 msgid "Ramdisk Options"
-msgstr "Ramdisk opcije"
+msgstr ""
 
 #. i18n: file: ui/pages/init.ui:111
 #. i18n: ectx: property (text), widget (QCheckBox, usb)
 #: rc.cpp:217
 msgid "Activate support for booting from USB devices"
-msgstr "Aktiviraj podršku za boot s USB uređaje"
+msgstr ""
 
 #. i18n: file: ui/pages/init.ui:118
 #. i18n: ectx: property (text), widget (QCheckBox, firewire)
 #: rc.cpp:220
 msgid "Activate support for booting from FireWire devices"
-msgstr "Aktiviraj podršku za boot s FireWire uređaja"
+msgstr ""
 
 #. i18n: file: ui/pages/init.ui:125
 #. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
 #: rc.cpp:223
 msgid "Activate support for booting from PCMCIA devices"
-msgstr "Aktiviraj podršku za boot s PCMCIA uređaja"
+msgstr ""
 
 #. i18n: file: ui/pages/init.ui:132
 #. i18n: ectx: property (text), widget (QCheckBox, nfs)
 #: rc.cpp:226
 msgid "Activate support for booting from NFS shares"
-msgstr "Aktiviraj podršku za boot s NFS razmjene"
+msgstr ""
 
 #. i18n: file: ui/pages/init.ui:139
 #. i18n: ectx: property (text), widget (QCheckBox, raid)
 #: rc.cpp:229
 msgid "Activate support for booting from Software Raid arrays"
-msgstr "Aktiviraj podršku za podizanje sa softverskog RAID polja"
+msgstr ""
 
 #. i18n: file: ui/pages/init.ui:146
 #. i18n: ectx: property (text), widget (QCheckBox, mdp)
 #: rc.cpp:232
 msgid "Activate support for booting from Software Raid/MDP Partition arrays"
-msgstr "Aktiviraj podršku za podizanje sa softverskih RAID/MDP polja particija"
+msgstr ""
 
 #. i18n: file: ui/pages/init.ui:153
 #. i18n: ectx: property (text), widget (QCheckBox, lvm2)
 #: rc.cpp:235
 msgid "Activate support for booting from LVM2 volumes"
-msgstr "Aktiviraj podršku za boot s LVM2 diskova"
+msgstr ""
 
 #. i18n: file: ui/pages/init.ui:160
 #. i18n: ectx: property (text), widget (QCheckBox, encrypted)
 #: rc.cpp:238
 msgid "Activate support for booting from Encrypted volumes"
-msgstr "Aktiviraj podršku za boot s kriptiranih diska"
+msgstr ""
 
 #. i18n: file: ui/pages/installation.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Installation)
 #: rc.cpp:241
 msgid "Tribe Installation"
-msgstr "Tribe instalacija"
+msgstr ""
 
 #. i18n: file: ui/pages/installation.ui:101
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
 #: rc.cpp:244
 msgid "Nine Inch Nails - Discipline"
-msgstr "Nine Inch Nails - Disciplina"
+msgstr ""
 
 #. i18n: file: ui/pages/installation.ui:106
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
 #: rc.cpp:247
 msgid "Severed Fifth - War"
-msgstr "Severed Fifth - Rat"
+msgstr ""
 
 #. i18n: file: ui/pages/installation.ui:111
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
 #: rc.cpp:250
 msgid "Dunkelstern - Out of the box"
-msgstr "Dunkelstern - Potpuno podržano"
+msgstr ""
 
 #. i18n: file: ui/pages/intro.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Intro)
 #: rc.cpp:253
 msgid "Tribe Intro"
-msgstr "Tribe informacije"
+msgstr ""
 
 #. i18n: file: ui/pages/intro.ui:105
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -944,7 +944,7 @@ msgid ""
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">License Approval</span></p></body></html>"
-msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Odobravanje licenci</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">License Approval</span></p></body></html>"
 
 #. i18n: file: ui/pages/license.ui:61
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -954,31 +954,31 @@ msgid ""
 "plugins and fonts. To install them, you have to read and accept their "
 "licenses. If you choose against a license, the installer will try to use a "
 "free solution (if one is available)."
-msgstr "Chakra uključuje neke vlasničke softvere, npr upravljački programi, multimedijalni priključci te fontove. Da bi instalirai ih, morate prvo pročitati i prihvatiti njihove licence. Ako ste protiv licence, instaler će pokušati korisitit besplatne solucije (ako su dostupne)."
+msgstr ""
 
 #. i18n: file: ui/pages/license.ui:74
 #. i18n: ectx: property (text), widget (QLabel, licenseLabel)
 #: rc.cpp:283
 msgid "Approve license for:"
-msgstr "Odobri licence za:"
+msgstr "الموافقة على الرخصة:"
 
 #. i18n: file: ui/pages/license.ui:103
 #. i18n: ectx: property (text), widget (QRadioButton, declineButton)
 #: rc.cpp:286
 msgid "Decline License"
-msgstr "Odbij licencu"
+msgstr "ارفض الترخيص"
 
 #. i18n: file: ui/pages/license.ui:110
 #. i18n: ectx: property (text), widget (QRadioButton, acceptButton)
 #: rc.cpp:289
 msgid "Accept License"
-msgstr "Prihvati licencu"
+msgstr "أقبل الترخيص"
 
 #. i18n: file: ui/pages/locale.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Locale)
 #: rc.cpp:292
 msgid "Form"
-msgstr "Forma"
+msgstr "من"
 
 #. i18n: file: ui/pages/locale.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label_4)
@@ -989,7 +989,7 @@ msgid ""
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Language &amp; Time</span></p></body></html>"
-msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Jezik i vrijeme</span></p></body></html>"
+msgstr ""
 
 #. i18n: file: ui/pages/locale.ui:45
 #. i18n: ectx: property (text), widget (QLabel, label_5)
@@ -999,31 +999,31 @@ msgid ""
 " locale and timezone settings for you. You can fine-tune the suggested "
 "settings at the bottom of the page. If you cant find your region or city on "
 "the globe, you can zoom in by using the slider on the left."
-msgstr "Izaberite najbliži grad na globusu kako bi instaler mogao sugerirati lokalizaciju i vrijemensku zonu za vas. Možete fino podesiti sugerirane postavke na kraju stranice. Ako ne možete pronaći vašu regiju ili grad na globusu, možete ju povećati korištenjem klizača lijevo"
+msgstr ""
 
 #. i18n: file: ui/pages/locale.ui:69
 #. i18n: ectx: property (clickMessage), widget (KLineEdit, locationsSearch)
 #: rc.cpp:305
 msgid "Search..."
-msgstr "Pretraga..."
+msgstr "بحث..."
 
 #. i18n: file: ui/pages/locale.ui:162
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:308
 msgid "Continent:"
-msgstr ""
+msgstr "القارة:"
 
 #. i18n: file: ui/pages/locale.ui:185
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:311
 msgid "Language:"
-msgstr "Jezik:"
+msgstr "اللغة:"
 
 #. i18n: file: ui/pages/locale.ui:208
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:314
 msgid "Locale:"
-msgstr "Lokalizacija:"
+msgstr ""
 
 #. i18n: file: ui/pages/locale.ui:263
 #. i18n: ectx: property (text), widget (QCheckBox, showLocalesCheck)
@@ -1031,19 +1031,19 @@ msgstr "Lokalizacija:"
 #. i18n: ectx: property (text), widget (QCheckBox, showKDELangsCheck)
 #: rc.cpp:317 rc.cpp:320
 msgid "Show all"
-msgstr "Prikaži sve"
+msgstr "أظهِر الكل"
 
 #. i18n: file: ui/pages/locale.ui:277
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: rc.cpp:323
 msgid "Region: "
-msgstr ""
+msgstr "المنطقة:"
 
 #. i18n: file: ui/pages/partition.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Partition)
 #: rc.cpp:326
 msgid "Partition"
-msgstr ""
+msgstr "تقسيم"
 
 #. i18n: file: ui/pages/partition.ui:43
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1054,7 +1054,7 @@ msgid ""
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Disk setup</span></p></body></html>"
-msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Postavke diska</span></p></body></html>"
+msgstr ""
 
 #. i18n: file: ui/pages/partition.ui:58
 #. i18n: ectx: property (text), widget (QLabel, descriptionLabel)
@@ -1069,7 +1069,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, filesystemLabel)
 #: rc.cpp:339
 msgid "Filesystem: "
-msgstr ""
+msgstr "نظام الملفات: "
 
 #. i18n: file: ui/pages/partition.ui:201
 #. i18n: ectx: property (text), widget (KPushButton, editPartitionOkButton)
@@ -1077,13 +1077,13 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, okButton)
 #: rc.cpp:345 rc.cpp:426
 msgid "Ok"
-msgstr ""
+msgstr "موافق"
 
 #. i18n: file: ui/pages/partition.ui:298
 #. i18n: ectx: property (text), widget (QPushButton, formatButton)
 #: rc.cpp:354
 msgid "Format"
-msgstr ""
+msgstr "تهيئة"
 
 #. i18n: file: ui/pages/partition.ui:317
 #. i18n: ectx: property (toolTip), widget (QPushButton, undoButton)
@@ -1091,13 +1091,13 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, undoButton)
 #: rc.cpp:357 rc.cpp:360
 msgid "Undo"
-msgstr ""
+msgstr "تراجع"
 
 #. i18n: file: ui/pages/partition.ui:336
 #. i18n: ectx: property (toolTip), widget (QPushButton, unmountButton)
 #: rc.cpp:363
 msgid "Unmount the selected partition"
-msgstr ""
+msgstr "افصل القسم المحدد"
 
 #. i18n: file: ui/pages/readyinstall.ui:51
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1108,7 +1108,7 @@ msgid ""
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Ready to Install</span></p></body></html>"
-msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Spreman za instalaciju</span></p></body></html>"
+msgstr ""
 
 #. i18n: file: ui/pages/readyinstall.ui:77
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -1116,7 +1116,7 @@ msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/T
 msgid ""
 "The system will be installed with the following settings. Before continuing,"
 " please review your selections:\n"
-msgstr "Sustav će biti instaliran sa sljedećim postavkama. Prije nastavka, pregledajte vaš odabir:\n"
+msgstr ""
 
 #. i18n: file: ui/pages/readyinstall.ui:147
 #. i18n: ectx: property (text), widget (QLabel, label_4)
@@ -1127,7 +1127,7 @@ msgid ""
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:#eeeeee;\">The following partitions will be used:</span></p></body></html>"
-msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:#eeeeee;\">Sljedeće particije će biti korištene:</span></p></body></html>"
+msgstr ""
 
 #. i18n: file: ui/pages/readyinstall.ui:211
 #. i18n: ectx: property (text), widget (QLabel, formatLabel)
@@ -1138,7 +1138,7 @@ msgid ""
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:#eeeeee;\">The following partitions will be formatted:</span></p></body></html>"
-msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:#eeeeee;\">Sljedeće particije će biti formatirane:</span></p></body></html>"
+msgstr ""
 
 #. i18n: file: ui/pages/releasenotes.ui:47
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1149,7 +1149,7 @@ msgid ""
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Release Notes</span></p></body></html>"
-msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Bilješke izdanja</span></p></body></html>"
+msgstr ""
 
 #. i18n: file: ui/pages/releasenotes.ui:60
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -1158,7 +1158,7 @@ msgid ""
 "Check out what's new, the known issues and general information about this "
 "version of Chakra. As always, you are encouraged to tell us what you think, "
 "either by visiting our forums or bug tracker."
-msgstr "Provjerite što je novo, poznate probleme i općenite informacije o ovoj verziji Chakra. Kao i uvijek, pozvani ste da nam kažete vaše mišljenje bilo to preko foruma ili sustava za praćenje grešaka."
+msgstr ""
 
 #. i18n: file: ui/pages/usercreation.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1207,13 +1207,13 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:432
 msgid "Login: "
-msgstr ""
+msgstr "اسم الولوج: "
 
 #. i18n: file: ui/widgets/userwidget.ui:56
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:435
 msgid "Password: "
-msgstr ""
+msgstr "كلمة المرور: "
 
 #. i18n: file: ui/widgets/userwidget.ui:94
 #. i18n: ectx: property (toolTip), widget (QPushButton, userDetails)
@@ -1225,25 +1225,25 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:441
 msgid "Confirm Password:"
-msgstr "Potvrdi zaporku:"
+msgstr "تأكيد كلمة المرور:"
 
 #. i18n: file: ui/widgets/userwidget.ui:146
 #. i18n: ectx: property (toolTip), widget (QPushButton, removeUser)
 #: rc.cpp:444
 msgid "Remove this user."
-msgstr ""
+msgstr "احذف هذا المستخدم."
 
 #. i18n: file: ui/widgets/userwidget.ui:264
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: rc.cpp:447
 msgid "Name: "
-msgstr ""
+msgstr "الاسم: "
 
 #. i18n: file: ui/widgets/userwidget.ui:307
 #. i18n: ectx: property (text), widget (QCheckBox, autoLoginCheckBox)
 #: rc.cpp:450
 msgid "Login Automatically"
-msgstr ""
+msgstr "ولوج تلقائي"
 
 #. i18n: file: ui/widgets/userwidget.ui:344
 #. i18n: ectx: property (text), widget (QCheckBox, rootUsesUserPwCheckBox)
@@ -1257,20 +1257,20 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: rc.cpp:457
 msgid "Root Password:  "
-msgstr ""
+msgstr "كلمة مرور الجذر:"
 
 #. i18n: file: ui/widgets/userwidget.ui:406
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: rc.cpp:460
 msgid "Confirm Root Password:  "
-msgstr ""
+msgstr "تأكيد كلمة مرور الجذر:"
 
 #: rc.cpp:461
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Josip Šokčević"
+msgstr "يوسف صلاح الدين"
 
 #: rc.cpp:462
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "sokcevic@gmail.com"
+msgstr "ys9889@gmail.com"

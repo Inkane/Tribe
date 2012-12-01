@@ -1,24 +1,24 @@
-# Greek translation of tribe installer.
-# Copyright (C) 2009 The Chakra Team
-# This file is distributed under the same license as the Tribe package.
-#
-# Neo Kolokotronis <tetris4@gmail.com> 2010
-# Socrates Tzagiousis <antisocrates@gmail.com>, 2009, 2010.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+#   <capoiosct@gmail.com>, 2012.
 # Neo Kolokotronis <tetris4@gmail.com>, 2011.
+# Socrates Tzagiousis <antisocrates@gmail.com>, 2009, 2010.
+# Αντώνης Γ. <capoiosct@gmail.com>, 2012.
 msgid ""
 msgstr ""
-"Project-Id-Version: 1.0\n"
-"Report-Msgid-Bugs-To: bugs@chakra-project.org\n"
+"Project-Id-Version: The Chakra Project\n"
+"Report-Msgid-Bugs-To: http://chakra-project.org/bugs/\n"
 "POT-Creation-Date: 2011-08-30 20:57+0200\n"
-"PO-Revision-Date: 2011-01-25 20:04+0200\n"
-"Last-Translator: Neo Kolokotronis <tetris4@gmail.com>\n"
-"Language-Team: American English <kde-i18n-doc@kde.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2012-08-18 23:46+0000\n"
+"Last-Translator: Αντώνης Γ. <capoiosct@gmail.com>\n"
+"Language-Team: Greek (http://www.transifex.com/projects/p/chakra-project/language/el/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: none\n"
-"X-Language: el_GR\n"
-"X-Generator: Lokalize 1.1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/installationhandler.cpp:87
@@ -31,15 +31,15 @@ msgstr ", παρακαλώ επιλύστε το πρόβλημα και ξαν�
 
 #: src/installationhandler.cpp:149
 msgid "Installing the system ..."
-msgstr "Εγκαθίσταται το σύστημα..."
+msgstr "Εγκατάσταση συστήματος..."
 
 #: src/installationhandler.cpp:177
 msgid "Mounting partitions..."
-msgstr "Συναρμολόγηση κατατμήσεων..."
+msgstr "Προσάρτηση κατατμήσεων..."
 
 #: src/installationhandler.cpp:185
 msgid "Preparing installation..."
-msgstr "Ετοιμασία εγκατάστασης..."
+msgstr "Προετοιμασία εγκατάστασης..."
 
 #: src/installationhandler.cpp:212
 msgid "Error copying files"
@@ -51,29 +51,27 @@ msgstr "Αφαίρεση πακέτων των οποίων οι άδειες α
 
 #: src/installationhandler.cpp:253
 msgid "Initializing target ..."
-msgstr "Γίνεται εκκίνηση του αντικειμένου..."
+msgstr "Αρχικοποίηση στόχου..."
 
 #: src/installationhandler.cpp:344
 msgid "Please wait, configuring the new system ..."
-msgstr "Παρακαλώ περιμένετε, γίνεται ρύθμιση του νέου συστήματος.."
+msgstr "Παρακαλώ περιμένετε, γίνεται διαμόρφωση του νέου συστήματος..."
 
 #: src/installationhandler.cpp:423
 msgid "Error in Postinstall script. See log for more details"
-msgstr ""
-"Σφάλμα στο Postinstall πρωτότυπο. Δείτε τα καταγεγραμμένα αρχεία για "
-"πληροφορίες"
+msgstr "Σφάλμα στο σενάριο της μετά-εγκατάστασης. Δείτε το αρχείο καταγραφής για περισσότερες πληροφορίες"
 
 #: src/installationhandler.cpp:432
 msgid "Creating user accounts ..."
-msgstr "Δημιουργία λογαριασμών χρήστη..."
+msgstr "Δημιουργία λογαριασμών χρηστών..."
 
 #: src/installationhandler.cpp:435
 msgid "Configuring software management..."
-msgstr "Ρύθμιση διαχείρισης λογισμικού..."
+msgstr "Διαμόρφωση διαχείρισης λογισμικού..."
 
 #: src/installationhandler.cpp:439
 msgid "Removing unused packages..."
-msgstr "Διαγραφή αχρησιμοποίητων πακέτων..."
+msgstr "Αφαίρεση αχρησιμοποίητων πακέτων..."
 
 #: src/installationhandler.cpp:443
 msgid "Installing additional packages..."
@@ -81,35 +79,35 @@ msgstr "Εγκατάσταση επιπλέον πακέτων..."
 
 #: src/installationhandler.cpp:447
 msgid "Configuring the display..."
-msgstr "Ρύθμιση οθόνης..."
+msgstr "Διαμόρφωση οθόνης..."
 
 #: src/installationhandler.cpp:451
 msgid "Downloading and installing localization packages..."
-msgstr "Γίνεται κατέβασμα και εγκατάσταση των πακέτων τοπικών ρυθμίσων.."
+msgstr "Λήψη και εγκατάσταση πακέτων τοπικότητας..."
 
 #: src/installationhandler.cpp:455
 msgid "Downloading and installing documentation packages..."
-msgstr "Κατεβάσμα και εγκατάσταση πακέτων εγχειριδίων..."
+msgstr "Λήψη και εγκατάσταση πακέτων τεκμηρίωσης..."
 
 #: src/installationhandler.cpp:459
 msgid "Setting up localization..."
-msgstr "Γίνεται ρύθμιση τοπικών παραμέτρων..."
+msgstr "Ρύθμιση τοπικών ρυθμίσεων..."
 
 #: src/installationhandler.cpp:463
 msgid "Creating daemon configuration..."
-msgstr "Δημιουργούνται οι ρυθμίσεις υπηρεσιών..."
+msgstr "Δημιουργία ρυθμίσεων δαιμόνων..."
 
 #: src/installationhandler.cpp:467
 msgid "Creating network configuration..."
-msgstr "Δημιουργούνται ρυθμίσεις δυκτίου..."
+msgstr "Δημιουργία ρυθμίσεων δικτύου..."
 
 #: src/installationhandler.cpp:471
 msgid "Creating fstab..."
-msgstr "Δημιουργείται το αρχείο fstab..."
+msgstr "Δημιουργία αρχείου fstab..."
 
 #: src/installationhandler.cpp:478
 msgid "Configuring hardware..."
-msgstr "Ρύθμιση του υλικού..."
+msgstr "Διαμόρφωση υλικού..."
 
 #: src/installationhandler.cpp:482
 msgid "Creating initial ramdisk images..."
@@ -117,19 +115,19 @@ msgstr "Δημιουργία αρχικών εικόνων ramdisk..."
 
 #: src/installationhandler.cpp:486
 msgid "Generating locales..."
-msgstr "Παραγωγή ρυθμίσεων τοποθεσίας..."
+msgstr "Παραγωγή τοπικών ρυθμίσεων..."
 
 #: src/installationhandler.cpp:490
 msgid "Removing unused localizations..."
-msgstr "Διαγραφή αχρησιμοποίητων ρυθμίσεων τοπικών..."
+msgstr "Αφαίρεση αχρησιμοποίητων τοπικών ρυθμίσεων..."
 
 #: src/installationhandler.cpp:494
 msgid "Removing unused drivers..."
-msgstr "Διαγραφή αχρησιμοποίητων οδηγών..."
+msgstr "Αφαίρεση αχρησιμοποίητων οδηγών..."
 
 #: src/installationhandler.cpp:498
 msgid "Finishing up..."
-msgstr "Ολοκλήρωση της εγκατάστασης..."
+msgstr "Γίνεται ολοκλήρωση..."
 
 #: src/installationhandler.cpp:502
 msgid "Installation complete!"
@@ -139,9 +137,7 @@ msgstr "Η εγκατάσταση ολοκληρώθηκε!"
 msgid ""
 "Tribe was not able to initialize needed directories. Something is very "
 "wrong..."
-msgstr ""
-"To Tribe δεν μπόρεσε να αρχικοποιήσει τους αναγκαίους καταλόγους. Κάτι πήγε "
-"πολύ λάθος.."
+msgstr "To Tribe δεν μπόρεσε να αρχικοποιήσει τους αναγκαίους καταλόγους. Κάτι πήγε πολύ λάθος..."
 
 #: src/installationhandler.cpp:617
 msgid "Could not mount %1"
@@ -162,9 +158,8 @@ msgid "Graphical Installer for Chakra"
 msgstr "Πρόγραμμα γραφικής εγκατάστασης Chakra"
 
 #: src/main.cpp:43
-#, fuzzy
 msgid "(c) 2008 - 2011 the Chakra Development Team"
-msgstr "(c) 2008 η oμάδα ανάπτυξης Chakra"
+msgstr "(c) 2008 - 2011 η ομάδα ανάπτυξης Chakra"
 
 #: src/main.cpp:43
 msgid "chakra@chakra-project.org"
@@ -184,7 +179,7 @@ msgstr "Lukas Appelhans"
 
 #: src/main.cpp:46 src/main.cpp:50 src/main.cpp:51 src/main.cpp:52
 msgid "Developer"
-msgstr "Προγραμματιστής Εφαρμογών"
+msgstr "Προγραμματιστής"
 
 #: src/main.cpp:47
 msgid "Jan Mette"
@@ -192,7 +187,7 @@ msgstr "Jan Mette"
 
 #: src/main.cpp:47
 msgid "PostInstall Backend and Artwork"
-msgstr "Σχέδια και Σύστημα Υποστήριξης της Μετα-Εγκατάστασης"
+msgstr "Γραφικά και σύστημα υποστήριξης της μετά-εγκατάστασης"
 
 #: src/main.cpp:48
 msgid "Phil Miller"
@@ -200,7 +195,7 @@ msgstr "Phil Miller"
 
 #: src/main.cpp:48 src/main.cpp:49
 msgid "PostInstall Backend"
-msgstr "Σύστημα υποστήριξης της μετα-εγκατάστασης"
+msgstr "Σύστημα υποστήριξης της μετά-εγκατάστασης"
 
 #: src/main.cpp:49
 msgid "Manuel Tortosa"
@@ -212,11 +207,11 @@ msgstr "Drake Justice"
 
 #: src/main.cpp:51
 msgid "Georg Grabler"
-msgstr ""
+msgstr "Georg Grabler"
 
 #: src/main.cpp:52
 msgid "Daniele Cocca"
-msgstr ""
+msgstr "Daniele Cocca"
 
 #: src/mainwindow.cpp:99
 msgid "Do you really want to abort the installation?"
@@ -227,19 +222,15 @@ msgid ""
 "Installation failed! The following error has been reported: %1.\n"
 "Tribe will now quit, please check the installation logs in /tmp\n"
 "or ask for help in our forums."
-msgstr ""
-"Η εγκατάσταση απέτυχε! Το επόμενο σφάλμα αναφέρθηκε: %1. \n"
-"To Tribe τώρα θα σταματήσει, παρακαλώ ελέγξτε τις καταγράφες της "
-"εγκατάστασης στο /tmp\n"
-"ή ζητήστε βοήθεια στα φόρουμ μας."
+msgstr "Η εγκατάσταση απέτυχε! Αναφέρθηκε το ακόλουθο σφάλμα: %1. \nTo Tribe τώρα θα τερματιστεί παρακαλώ ελέγξτε τις καταγράφες της εγκατάστασης στο /tmp\nή ζητήστε βοήθεια στα φόρουμ μας."
 
 #: src/pages/bootloaderpage.cpp:52 src/pages/configpage.cpp:539
 msgid "Installing bootloader..."
-msgstr "Εγκατάσταση του bootloader..."
+msgstr "Εγκατάσταση διαχειριστή εκκίνησης..."
 
 #: src/pages/bootloaderpage.cpp:82
 msgid "Creating OS list..."
-msgstr "Δημιουργία λίστας Λειτουργικών Συστημάτων..."
+msgstr "Δημιουργία λίστας λειτουργικών συστημάτων..."
 
 #: src/pages/configpage.cpp:153 src/pages/configpage.cpp:363
 msgid "Downloading"
@@ -249,13 +240,11 @@ msgstr "Λήψη"
 msgid ""
 "Sorry, you have no internet connection at the moment \n"
 "Will stop bundle(s) installation now"
-msgstr ""
-"Συγγνώμη αλλά δεν υπάρχει σύνδεση στο διαδίκτυο αυτή τη στιγμή Η εγκατάσταση "
-"των πακέτων θα τερματιστεί."
+msgstr "Δεν υπάρχει σύνδεση στο διαδίκτυο αυτή τη στιγμή.\n Η εγκατάσταση των δεμάτων θα σταματήσει."
 
 #: src/pages/configpage.cpp:349
 msgid "loading package data..."
-msgstr "φόρτωση δεδομένων πακέτων.."
+msgstr "φόρτωση δεδομένων πακέτων..."
 
 #: src/pages/configpage.cpp:350
 msgid "Loading package data..."
@@ -263,11 +252,11 @@ msgstr "Φόρτωση δεδομένων πακέτων..."
 
 #: src/pages/configpage.cpp:351
 msgid "checking dependencies..."
-msgstr "έλεγχος εξαρτήσεων.."
+msgstr "έλεγχος εξαρτήσεων..."
 
 #: src/pages/configpage.cpp:352
 msgid "Checking dependencies..."
-msgstr "Έλεγχος εξαρτήσεων.."
+msgstr "Έλεγχος εξαρτήσεων..."
 
 #: src/pages/configpage.cpp:353
 msgid "resolving dependencies..."
@@ -275,7 +264,7 @@ msgstr "επίλυση εξαρτήσεων..."
 
 #: src/pages/configpage.cpp:354
 msgid "Resolving dependencies..."
-msgstr "Επίλυση εξαρτήσεων.."
+msgstr "Επίλυση εξαρτήσεων..."
 
 #: src/pages/configpage.cpp:355
 msgid "checking package integrity..."
@@ -287,13 +276,13 @@ msgstr "Έλεγχος ακεραιότητας πακέτων..."
 
 #: src/pages/configpage.cpp:357
 msgid "Total Download Size:"
-msgstr "Ολικό Μέγεθος Κατεβάσματος:"
+msgstr "Ολικό μέγεθος λήψης:"
 
 #. i18n: file: ui/pages/config.ui:928
 #. i18n: ectx: property (text), widget (QPushButton, downloadBundlesButton)
 #: src/pages/configpage.cpp:417 rc.cpp:166
 msgid "Download Popular Bundles"
-msgstr "Κατέβασμα Δημοφιλών Πακέτων"
+msgstr "Λήψη δημοφιλών δεμάτων"
 
 #. i18n: file: ui/pages/config.ui:906
 #. i18n: ectx: property (text), widget (QPushButton, bootloaderSettingsButton)
@@ -305,22 +294,22 @@ msgstr "Ρυθμίσεις διαχειριστή εκκίνησης"
 #. i18n: ectx: property (text), widget (QPushButton, initRamDiskButton)
 #: src/pages/configpage.cpp:448 rc.cpp:157
 msgid "Customize Initial Ramdisk"
-msgstr "Προσαρμογή Αρχικού Ramdisk"
+msgstr "Προσαρμογή αρχικού ramdisk"
 
 #: src/pages/configpage.cpp:511
 msgid ""
 "Bootloader-Setup finished with Exitcode: %1\n"
 "Something went wrong. Before reboot it is recommended \n"
 "to check %2/boot/grub/grub.cfg. \n"
-msgstr ""
+msgstr "Η ρύθμιση του διαχειριστή εκκίνησης ολοκληρώθηκε με κωδικό λάθους: %1\nΚάτι πήγε στραβά. Πριν από την επανεκκίνηση, συνιστάται \nνα ελέγξετε το %2/boot/grub/grub.cfg.\n"
 
 #: src/pages/licensepage.cpp:53
 msgid "Proprietary ATI Driver"
-msgstr "Iδιόκτητος οδήγος συσκευών ATI"
+msgstr "Ιδιόκτητος οδηγός ATI"
 
 #: src/pages/licensepage.cpp:57
 msgid "Proprietary NVidia Driver"
-msgstr "Iδιόκτητος οδηγός συσκευών NVidia"
+msgstr "Ιδιόκτητος οδηγός NVidia"
 
 #: src/pages/licensepage.cpp:117
 msgid "Accept license for: "
@@ -328,7 +317,7 @@ msgstr "Αποδοχή αδείας για:"
 
 #: src/pages/localepage.cpp:309
 msgid "You need to select a timezone"
-msgstr "Πρέπει να επιλέξετε μια ζώνη ώρας"
+msgstr "Χρειάζεται να επιλέξετε μια ζώνη ώρας"
 
 #: src/pages/partitionpage.cpp:89
 msgid "Please enter a custom mountpoint"
@@ -336,7 +325,7 @@ msgstr "Παρακαλώ εισάγετε ένα προσαρμοσμένο ση
 
 #: src/pages/partitionpage.cpp:101
 msgid "The mount point must start with /"
-msgstr "Το σημείο προσάρτισης πρέπει να αρχίζει με /"
+msgstr "Το σημείο προσάρτησης πρέπει να αρχίζει με /"
 
 #: src/pages/partitionpage.cpp:102
 msgid "Error"
@@ -344,11 +333,11 @@ msgstr "Σφάλμα"
 
 #: src/pages/partitionpage.cpp:196
 msgid "New"
-msgstr "Νέο"
+msgstr "Νέα"
 
 #: src/pages/partitionpage.cpp:196
 msgid "Unsupported"
-msgstr "Δεν υποστηρίζεται"
+msgstr "Μη υποστηριζόμενη"
 
 #: src/pages/partitionpage.cpp:416
 msgid "Loading partitions..."
@@ -356,71 +345,61 @@ msgstr "Φόρτωση κατατμήσεων"
 
 #: src/pages/partitionpage.cpp:664
 msgid "Extended"
-msgstr "Εκτεταμένος"
+msgstr "Εκτεταμένη"
 
 #: src/pages/partitionpage.cpp:809
 msgid ""
 "Tribe detected target partitions which are mounted. Do you want Tribe to "
 "unmount them?"
-msgstr ""
+msgstr "Το Tribe εντόπισε κατατμήσεις στόχους που έχουν προσαρτηθεί. Θέλετε να αποπροσαρτηθούν;"
 
 #: src/pages/partitionpage.cpp:825
 msgid ""
 "Tribe failed to unmount a partition which is target for the installation. "
 "You need to unmount the partitions manually before you can proceed."
-msgstr ""
+msgstr "Το Tribe απέτυχε να αποπροσαρτήσει μια κατάτμηση που είναι στόχος για την εγκατάσταση. Χρειάζεται να αποπροσαρτήσετε τις κατατμήσεις χειροκίνητα πριν συνεχίσετε."
 
 #: src/pages/partitionpage.cpp:827
-#, fuzzy
 msgid "Target partitions mounted"
-msgstr "Τα διαμερίσματα συνδέθηκαν"
+msgstr "Προσαρτήθηκαν οι κατατμήσεις στόχοι"
 
 #: src/pages/partitionpage.cpp:838
 msgid ""
-"The partition you have chosen to mount as '/' is too small. It should have a "
-"capacity of at least %1 for a successful installation."
-msgstr ""
-"Η κατάτμηση που επιλέξατε  να προσαρτήσετε σαν '/' είναι πολύ μικρή. Θα "
-"πρέπει να έχει χωρητικότητα τουλάχιστο %1 για μια επιτυχημένη εγκατάσταση."
+"The partition you have chosen to mount as '/' is too small. It should have a"
+" capacity of at least %1 for a successful installation."
+msgstr "Η κατάτμηση που επιλέξατε να προσαρτήσετε σαν '/' είναι πολύ μικρή. Θα πρέπει να έχει χωρητικότητα τουλάχιστο %1 για μια επιτυχημένη εγκατάσταση."
 
 #: src/pages/partitionpage.cpp:841 src/pages/partitionpage.cpp:881
 msgid "Target's capacity not sufficient"
-msgstr "Η χωριτηκότητα του στόχου δεν είναι αρκετή"
+msgstr "Η χωρητικότητα του στόχου δεν είναι αρκετή"
 
 #: src/pages/partitionpage.cpp:861
-#, fuzzy
 msgid ""
 "The partition you have chosen to mount as '/' is not marked for formatting. "
 "This might create problems. Do you still want to continue without formating "
 "it?"
-msgstr ""
-"Η κατάτμηση που επιλέξατε να προσαρτήσετε σαν '/' δεν είναι επισημασμένη για "
-"διαμόρφωση. Αυτό μπορεί να προκαλέσει προβλήματα. Εξακολουθείτε να "
-"επιθυμείτε να συνεχίσετε χωρίς τη διαμόρφωσή της;"
+msgstr "Η κατάτμηση που επιλέξατε να προσαρτήσετε σαν '/' δεν έχει σημειωθεί για μορφοποίηση. Αυτό μπορεί να δημιουργήσει προβλήματα. Θέλετε να συνεχίσετε χωρίς να τη μορφοποιήσετε;"
 
 #: src/pages/partitionpage.cpp:879
 msgid ""
 "You have selected '%1' as a mountpoint, which is not valid. A valid "
 "mountpoint always starts with '/' and represents a directory on disk"
-msgstr ""
-"Έχετε επιλέξει '%1' σαν σημείο προσάρτησης, το οποίο δεν είναι έγκυρο. Ένα "
-"έγκυρο σημείο προσάρτησης πάντα ξεκινά με '/' και αντιπροσωπεύει ένα "
-"κατάλογο στο δίσκο."
+msgstr "Έχετε επιλέξει '%1' σαν σημείο προσάρτησης, το οποίο δεν είναι έγκυρο. Ένα έγκυρο σημείο προσάρτησης πάντα ξεκινά με '/' και αντιπροσωπεύει ένα κατάλογο στο δίσκο."
 
 #: src/pages/partitionpage.cpp:890
 msgid ""
 "You need to select a root partition ('/') to proceed with the installation. "
-msgstr ""
+msgstr "Χρειάζεται να επιλέξετε μια ριζική κατάτμηση ('/') για να συνεχίσετε με την εγκατάσταση."
 
 #: src/pages/partitionpage.cpp:911
 msgid ""
 "When using a GPT Partition Table you need to have a unformatted partition "
 "with the bios_grub flag!"
-msgstr ""
+msgstr "Όταν χρησιμοποιείτε έναν πίνακα κατατμήσεων GPT, χρειάζεται να έχετε μια μη μορφοποιημένη κατάτμηση με σημαία bios_grub!"
 
 #: src/pages/readyinstallpage.cpp:77
 msgid "New partition (%1) on %2"
-msgstr "Νέα κατάτμηση  (%1) στο %2"
+msgstr "Νέα κατάτμηση (%1) στο %2"
 
 #: src/pages/readyinstallpage.cpp:80
 msgid "%1 will be used as %2"
@@ -434,9 +413,7 @@ msgstr "Συνέχεια"
 msgid ""
 "The following partitions appear to be mounted: %1. To let the installation "
 "happen correctly, Tribe will now unmount them."
-msgstr ""
-"Τα ακόλουθα διαμερίσματα φαίνεται να έχουν προσαρτηθεί: %1. Για να "
-"πραγματοποιηθεί η εγκατάσταση σωστά, το Tribe θα τα αποπροσαρτήσει τώρα."
+msgstr "Οι ακόλουθες κατατμήσεις φαίνεται να έχουν προσαρτηθεί: %1. Για να πραγματοποιηθεί η εγκατάσταση σωστά, το Tribe θα τις αποπροσαρτήσει τώρα."
 
 #: src/pages/usercreationpage.cpp:148
 msgid "You must give at least one login name."
@@ -444,7 +421,7 @@ msgstr "Πρέπει να επιλέξετε τουλάχιστο ένα όνο�
 
 #: src/pages/usercreationpage.cpp:152
 msgid "Root Passwords do not match..."
-msgstr "Οι κωδικοί  Υπερχρήστη δεν ταιρίαζουν"
+msgstr "Οι κωδικοί υπερχρήστη δεν ταιριάζουν"
 
 #: src/pages/usercreationpage.cpp:166
 msgid "Passwords cannot be empty."
@@ -460,11 +437,11 @@ msgstr "Τα ονόματα σύνδεσης δεν μπορεί να είναι
 
 #: src/pmhandler.cpp:360
 msgid "Preparing hard drive for installation..."
-msgstr "Ετοιμασία σκληρού δίσκου για εγκατάσταση"
+msgstr "Προετοιμασία σκληρού δίσκου για εγκατάσταση..."
 
 #: src/pmhandler.cpp:381
 msgid "Analyzing disk..."
-msgstr "Ανάλυση δίσκου.."
+msgstr "Ανάλυση δίσκου..."
 
 #: src/pmhandler.cpp:445
 msgid "There was an error while formatting partitions"
@@ -478,27 +455,12 @@ msgstr "Προσαρμοσμένο"
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:6
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Welcome</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Καλωσήρθατε</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Welcome</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Καλώς ήλθατε</span></p></body></html>"
 
 #. i18n: file: ui/pages/base.ui:198
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -506,7 +468,7 @@ msgstr ""
 #. i18n: ectx: property (windowTitle), widget (QWidget, ReleaseNotes)
 #: rc.cpp:13 rc.cpp:391
 msgid "Release Notes"
-msgstr "Σημειώσεις Έκδοσης"
+msgstr "Σημειώσεις έκδοσης"
 
 #. i18n: file: ui/pages/base.ui:224
 #. i18n: ectx: property (text), widget (QLabel, licenseLabel)
@@ -524,39 +486,24 @@ msgstr "Έτοιμο για εγκατάσταση"
 #. i18n: ectx: property (text), widget (QLabel, label_24)
 #: rc.cpp:22
 msgid "Language & Time"
-msgstr "Γλώσσα & Ώρα"
+msgstr "Γλώσσα και ώρα"
 
 #. i18n: file: ui/pages/base.ui:297
 #. i18n: ectx: property (text), widget (QLabel, label_25)
 #: rc.cpp:25
 msgid "Disk setup"
-msgstr "Οργάνωση Δίσκου"
+msgstr "Ρύθμιση δίσκου"
 
 #. i18n: file: ui/pages/base.ui:327
 #. i18n: ectx: property (text), widget (QLabel, label_26)
 #: rc.cpp:28
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Preparation</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Προετοιμασία</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Preparation</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Προετοιμασία</span></p></body></html>"
 
 #. i18n: file: ui/pages/base.ui:334
 #. i18n: ectx: property (text), widget (QLabel, label_15)
@@ -568,59 +515,29 @@ msgstr "Δημιουργία χρηστών"
 #. i18n: ectx: property (text), widget (QLabel, label_11)
 #: rc.cpp:38
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Installation</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Εγκατάσταση</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Installation</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Εγκατάσταση</span></p></body></html>"
 
 #. i18n: file: ui/pages/base.ui:416
 #. i18n: ectx: property (text), widget (QLabel, label_13)
 #: rc.cpp:45
 msgid "Install System"
-msgstr "Εγκατάσταση του συστήματος"
+msgstr "Εγκατάσταση συστήματος"
 
 #. i18n: file: ui/pages/base.ui:453
 #. i18n: ectx: property (text), widget (QLabel, label_14)
 #: rc.cpp:48
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Configuration</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600; color:#ffffff;\">Παραμετροποίηση</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Configuration</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#ffffff;\">Διαμόρφωση</span></p></body></html>"
 
 #. i18n: file: ui/pages/base.ui:460
 #. i18n: ectx: property (text), widget (QLabel, label_16)
@@ -632,14 +549,14 @@ msgstr "Επανεκκίνηση / Απολαύστε"
 #. i18n: ectx: property (text), widget (QPushButton, abortButton)
 #: rc.cpp:58
 msgid "Abort installation"
-msgstr "Ακύρωση της εγκατάστασης"
+msgstr "Ακύρωση εγκατάστασης"
 
 #. i18n: file: ui/pages/base.ui:615
 #. i18n: ectx: property (text), widget (QPushButton, previousButton)
 #: rc.cpp:61
 msgctxt "Previous Page"
 msgid "Previous"
-msgstr "Προηγόυμενο"
+msgstr "Προηγούμενο"
 
 #. i18n: file: ui/pages/base.ui:634
 #. i18n: ectx: property (text), widget (QPushButton, nextButton)
@@ -652,29 +569,12 @@ msgstr "Επόμενο"
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:67
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Bootloader Installation</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Εγκατάσταση του Bootloader</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Bootloader Installation</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Εγκατάσταση διαχειριστή εκκίνησης</span></p></body></html>"
 
 #. i18n: file: ui/pages/bootloader.ui:58
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -684,17 +584,13 @@ msgid ""
 "\n"
 "If you are unsure where you should install the bootloader to, \n"
 "just leave the default value (hd0)."
-msgstr ""
-"Μπορείτε τώρα να εγκαταστήσετε τον GRUB ως τον κύριο bootloader σας.\n"
-"\n"
-"Εάν δεν είστε βέβαιοι που να εγκαταστήσετε τον bootloader, απλα αφήστε την "
-"προεπιλεγμένη τιμή (hd0)."
+msgstr "Μπορείτε τώρα να εγκαταστήσετε το GRUB ως τον κύριο διαχειριστή εκκίνησης σας.\n\nΕάν δεν είστε βέβαιοι που να εγκαταστήσετε τον διαχειριστή εκκίνησης, απλά αφήστε την προεπιλεγμένη τιμή (hd0)."
 
 #. i18n: file: ui/pages/bootloader.ui:71
 #. i18n: ectx: property (text), widget (QCheckBox, checkBox)
 #: rc.cpp:80
 msgid "Install Bootloader"
-msgstr "Εγκατάσταση Προγράμματος Εκκίνησης"
+msgstr "Εγκατάσταση διαχειριστή εκκίνησης"
 
 #. i18n: file: ui/pages/bootloader.ui:89
 #. i18n: ectx: property (text), widget (QPushButton, pushButton)
@@ -722,28 +618,12 @@ msgstr "hd0"
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:92
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:14pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Configuration</span></p></"
-"body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:14pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Ρύθμιση</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:14pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Configuration</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Sans Serif'; font-size:14pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Διαμόρφωση</span></p></body></html>"
 
 #. i18n: file: ui/pages/config.ui:119
 #. i18n: ectx: property (text), widget (QCheckBox, usb)
@@ -755,7 +635,7 @@ msgstr "USB"
 #. i18n: ectx: property (text), widget (QCheckBox, nfs)
 #: rc.cpp:102
 msgid "NFS Shares"
-msgstr "NFS Shares"
+msgstr "Κοινές χρήσεις NFS"
 
 #. i18n: file: ui/pages/config.ui:133
 #. i18n: ectx: property (text), widget (QLabel, label_4)
@@ -773,7 +653,7 @@ msgstr "Firewire"
 #. i18n: ectx: property (text), widget (QCheckBox, raid)
 #: rc.cpp:111
 msgid "Software Raid Arrays"
-msgstr "Software Raid Arrays"
+msgstr "Συστοιχίες Raid λογισμικού"
 
 #. i18n: file: ui/pages/config.ui:154
 #. i18n: ectx: property (text), widget (QCheckBox, lvm2)
@@ -785,19 +665,20 @@ msgstr "Τόμους LVM2"
 #. i18n: ectx: property (text), widget (QCheckBox, encrypted)
 #: rc.cpp:117
 msgid "Encrypted Volumes"
-msgstr "Κρυπτογραφημένους Τόμους"
+msgstr "Κρυπτογραφημένους τόμους"
 
 #. i18n: file: ui/pages/config.ui:180
-#. i18n: ectx: property (text), widget (QPushButton, generateInitRamDiskButton)
+#. i18n: ectx: property (text), widget (QPushButton,
+#. generateInitRamDiskButton)
 #: rc.cpp:120
 msgid "Generate Initial Ramdisk"
-msgstr "Δημιουργία Αρχικού Ramdisk"
+msgstr "Δημιουργία αρχικού ramdisk"
 
 #. i18n: file: ui/pages/config.ui:216
 #. i18n: ectx: property (text), widget (QCheckBox, mdp)
 #: rc.cpp:123
 msgid "MDP Partition Arrays"
-msgstr "MDP Partition Arrays"
+msgstr "Συστοιχίες κατατμήσεων MDP"
 
 #. i18n: file: ui/pages/config.ui:223
 #. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
@@ -809,7 +690,7 @@ msgstr "PCMCIA"
 #. i18n: ectx: property (text), widget (QPushButton, bundlesDownloadButton)
 #: rc.cpp:129
 msgid "Download"
-msgstr "Κατέβασμα"
+msgstr "Λήψη"
 
 #. i18n: file: ui/pages/config.ui:408
 #. i18n: ectx: property (text), widget (QLabel, label_5)
@@ -838,23 +719,22 @@ msgstr "Χρωματισμός"
 #. i18n: file: ui/pages/config.ui:679
 #. i18n: ectx: property (text), widget (QCheckBox, bootloaderCheckBox)
 #: rc.cpp:144
-#, fuzzy
 msgid "Install GRUB2"
-msgstr "Εγκατάσταση GRUB"
+msgstr "Εγκατάσταση GRUB2"
 
 #. i18n: file: ui/pages/config.ui:690
 #. i18n: ectx: property (text), widget (QLabel, bootloaderLabel)
 #: rc.cpp:147
 msgid ""
 "You can now install GRUB2 as your main bootloader. \n"
-"Tribe will install GRUB2 on the same hard drive where your \"/boot\" folder "
-"is located."
-msgstr ""
+"Tribe will install GRUB2 on the same hard drive where your \"/boot\" folder is located."
+msgstr "Μπορείτε τώρα να εγκαταστήσετε το GRUB2 ως κύριο διαχειριστή εκκίνησης σας. \nΤο Tribe θα εγκαταστήσει το GRUB2 στον ίδιο σκληρό δίσκο όπου βρίσκεται ο φάκελος \"/boot\"."
 
 #. i18n: file: ui/pages/config.ui:759
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
 #. i18n: file: ui/pages/partition.ui:149
-#. i18n: ectx: property (text), widget (KPushButton, editPartitionCancelButton)
+#. i18n: ectx: property (text), widget (KPushButton,
+#. editPartitionCancelButton)
 #. i18n: file: ui/widgets/avatardialog.ui:114
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
 #: rc.cpp:151 rc.cpp:342 rc.cpp:429
@@ -865,50 +745,31 @@ msgstr "Ακύρωση"
 #. i18n: ectx: property (text), widget (QPushButton, changeAppearanceButton)
 #: rc.cpp:154
 msgid "Change System Appearance"
-msgstr "Αλλαγή Εμφάνισης Συστήματος"
+msgstr "Αλλαγή εμφάνισης συστήματος"
 
 #. i18n: file: ui/pages/config.ui:877
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:160
 msgid "Advanced Options"
-msgstr "Προχωρημένες Επιλογές"
+msgstr "Προχωρημένες επιλογές"
 
 #. i18n: file: ui/pages/config.ui:940
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:169
 msgid ""
 "Now that you have a Chakra install, you can now configure it to your liking."
-msgstr ""
-"Τώρα που το Chakra εγκαταστήθηκε, μπορείτε να το ρυθμίσετε σύμφωνα με τις "
-"προτιμήσεις σας."
+msgstr "Τώρα που το Chakra εγκαταστάθηκε, μπορείτε να το διαμορφώσετε σύμφωνα με τις προτιμήσεις σας."
 
 #. i18n: file: ui/pages/finish.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:172
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Installation Completed!</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">H Εγκατάσταση Ολοκληρώθηκε!</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Installation Completed!</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">H εγκατάσταση ολοκληρώθηκε!</span></p></body></html>"
 
 #. i18n: file: ui/pages/finish.ui:68
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -920,39 +781,21 @@ msgid ""
 "You can now reboot into the installed system or keep using the LiveCD.\n"
 "\n"
 "In case you want to check the installation logs,\n"
-"take a look into /tmp on the live system or into /var/log on the installed "
-"system.\n"
+"take a look into /tmp on the live system or into /var/log on the installed system.\n"
 "\n"
-"Thanks for using Chakra, and get in touch with us in the forums, share "
-"opinions, give advices;\n"
+"Thanks for using Chakra, and get in touch with us in the forums, share opinions, give advices;\n"
 "To put it simple: Get involved! (http://chakra-project.org)\n"
 "\n"
 "Have Fun!\n"
 "\n"
 "The Chakra Team"
-msgstr ""
-"Συγχαρητήρια, η εγκατάσταση έχει ολοκληρωθεί! Ελπίζουμε να απολάυσατε ο,τι "
-"είδατε όσο εμείς απολάυσαμε τη δημιουργία του.\n"
-"\n"
-"Μπορείτε τωρα να κανετε επανεκκίνηση και χρησιμοποιήσετε το νέο σύστημα ή να "
-"συνεχίσετε να χρησιμοποιείτε το LiveCD.\n"
-"Σε περίπτωση που επιθυμείτε να ελέγξετε τα αρχεια καταχώρησης της "
-"εγκατάστασης, κοιτάξετε στο /tmp στο live σύστημα ή στο /var/log στο "
-"εγκατεστημένο σύστημα.\n"
-"\n"
-"Ευχαριστούμε που χρησιμοποιησατε το Chakra, επικοινωνήστε μαζί μας στο "
-"φόρουμ, μοιραστείτε απόψεις, συμβουλέψτε μας.\n"
-"Ή πιο απλά, συμμετέχετε ενεργά! (http://chakra-project.org)\n"
-"\n"
-"Καλή διασκέδαση!\n"
-"\n"
-"Η ομάδα του Chakra"
+msgstr "Συγχαρητήρια, η εγκατάσταση έχει ολοκληρωθεί! \n\nΕλπίζουμε να απολαύσατε ό,τι είδατε όσο εμείς απολαύσαμε τη δημιουργία του.\nΜπορείτε τώρα να κάνετε επανεκκίνηση και να χρησιμοποιήσετε το νέο σας σύστημα ή να συνεχίσετε να χρησιμοποιείτε το LiveCD.\n\nΣε περίπτωση που επιθυμείτε να ελέγξετε τα αρχεία καταχώρησης της εγκατάστασης,\n κοιτάξτε στο /tmp στο live σύστημα ή στο /var/log στο εγκατεστημένο σύστημα.\n\nΕυχαριστούμε που χρησιμοποιήσατε το Chakra, επικοινωνήστε μαζί μας στα φόρουμ, μοιραστείτε απόψεις, συμβουλέψτε μας.\nΉ πιο απλά, συμμετέχετε ενεργά! (http://chakra-project.org)\n\nΚαλή διασκέδαση!\n\nΗ ομάδα του Chakra"
 
 #. i18n: file: ui/pages/finish.ui:105
 #. i18n: ectx: property (text), widget (QPushButton, rebootButton)
 #: rc.cpp:195
 msgid "Restart Computer"
-msgstr "Επανεκκίνηση του υπολογιστή"
+msgstr "Επανεκκίνηση υπολογιστή"
 
 #. i18n: file: ui/pages/finish.ui:118
 #. i18n: ectx: property (text), widget (QPushButton, chakraButton)
@@ -970,111 +813,84 @@ msgstr "Ramdisk"
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:204
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Ramdisk Setup</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Οργάνωση Ramdisk</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Ramdisk Setup</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Ρύθμιση ramdisk</span></p></body></html>"
 
 #. i18n: file: ui/pages/init.ui:58
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:211
 msgid ""
-"Your hardware will be configured automatically during the installation and a "
-"initial ramdisk environment for booting the linux kernel will be built. "
+"Your hardware will be configured automatically during the installation and a"
+" initial ramdisk environment for booting the linux kernel will be built. "
 "Everything should happen without intervention, but you might need some "
 "options for special boot methods. If you are unsure on what this means, "
 "simply press the \"Next\" button. Otherwise check out the ramdisk options "
 "below and select the items you need for your system."
-msgstr ""
-"Το υλικό σας θα ρυθμιστεί αυτόματα κατα τη διάρκεια της εγκατάστασης και "
-"ενααρχικό ramdisk περιβαλλον για την έκκίνηση του πυρήνα τou linux θα "
-"χτιστεί.Όλα πρέπει να γίνουν δίχως παρέμβαση, αλλά ίσως χρειαστείτε μερικές "
-"επιπλέονεπιλογές για ειδικές μεθόδους εκκίνησης. Εάν δεν είστε βέβαιοι για "
-"το τί αυτό,σημαίνει απλα πατήστε το κουμπί \"Επόμενο\". Διαφορετικά κοιτάξτε "
-"τις επιλογέςramdisk παρακάτω και επιλέξτε τα αντικέιμενα που χρειάζεστε για "
-"το σύστημα σας."
+msgstr "Το υλικό σας θα ρυθμιστεί αυτόματα κατά τη διάρκεια της εγκατάστασης και ένα αρχικό περιβάλλον ramdisk για την εκκίνηση του πυρήνα linux θα χτιστεί. Όλα θα γίνουν δίχως παρέμβαση, αλλά ίσως χρειαστείτε μερικές επιπλέον επιλογές για ειδικές μεθόδους εκκίνησης. Εάν δεν είστε βέβαιοι για το τι σημαίνει αυτό, απλά πατήστε το κουμπί \"Επόμενο\". Διαφορετικά κοιτάξτε τις παρακάτω επιλογές ramdisk και επιλέξτε τα αντικείμενα που χρειάζεστε για το σύστημα σας."
 
 #. i18n: file: ui/pages/init.ui:81
 #. i18n: ectx: property (text), widget (QPushButton, pushButton)
 #: rc.cpp:214
 msgid "Ramdisk Options"
-msgstr "Επιλογές Ramdisk"
+msgstr "Επιλογές ramdisk"
 
 #. i18n: file: ui/pages/init.ui:111
 #. i18n: ectx: property (text), widget (QCheckBox, usb)
 #: rc.cpp:217
 msgid "Activate support for booting from USB devices"
-msgstr "Ενεργοποίηση της υποστήριξη για την εκκίνηση απο συσκευές USB"
+msgstr "Ενεργοποίηση υποστήριξης για εκκίνηση από συσκευές USB"
 
 #. i18n: file: ui/pages/init.ui:118
 #. i18n: ectx: property (text), widget (QCheckBox, firewire)
 #: rc.cpp:220
 msgid "Activate support for booting from FireWire devices"
-msgstr "Ενεργοποίηση της υποστήριξη για την εκκίνηση απο συσκευές FireWire"
+msgstr "Ενεργοποίηση υποστήριξης για εκκίνηση από συσκευές FireWire"
 
 #. i18n: file: ui/pages/init.ui:125
 #. i18n: ectx: property (text), widget (QCheckBox, pcmcia)
 #: rc.cpp:223
 msgid "Activate support for booting from PCMCIA devices"
-msgstr "Ενεργοποίηση της υποστήριξη για την εκκίνηση απο συσκευές PCMCIA"
+msgstr "Ενεργοποίηση υποστήριξης για εκκίνηση από συσκευές PCMCIA"
 
 #. i18n: file: ui/pages/init.ui:132
 #. i18n: ectx: property (text), widget (QCheckBox, nfs)
 #: rc.cpp:226
 msgid "Activate support for booting from NFS shares"
-msgstr "Ενεργοποίηση της υποστήριξη για την εκκίνηση απο μετοχές NFS"
+msgstr "Ενεργοποίηση υποστήριξης για εκκίνηση από κοινές χρήσεις NFS"
 
 #. i18n: file: ui/pages/init.ui:139
 #. i18n: ectx: property (text), widget (QCheckBox, raid)
 #: rc.cpp:229
 msgid "Activate support for booting from Software Raid arrays"
-msgstr "Ενεργοποίηση της υποστήριξη για την εκκίνηση απο σειρές Software Raid"
+msgstr "Ενεργοποίηση υποστήριξης για εκκίνηση από συστοιχίες Raid λογισμικού"
 
 #. i18n: file: ui/pages/init.ui:146
 #. i18n: ectx: property (text), widget (QCheckBox, mdp)
 #: rc.cpp:232
 msgid "Activate support for booting from Software Raid/MDP Partition arrays"
-msgstr ""
-"Ενεργοποίηση της υποστήριξη για την εκκίνηση απο σειρές διαμερίσματος "
-"Software Raid/MDP"
+msgstr "Ενεργοποίηση υποστήριξης για εκκίνηση από συστοιχίες Raid λογισμικού/κατατμήσεων MDP"
 
 #. i18n: file: ui/pages/init.ui:153
 #. i18n: ectx: property (text), widget (QCheckBox, lvm2)
 #: rc.cpp:235
 msgid "Activate support for booting from LVM2 volumes"
-msgstr "Ενεργοποίηση της υποστήριξη για την εκκίνηση απο τόμους LVM2"
+msgstr "Ενεργοποίηση υποστήριξης για εκκίνηση από τόμους LVM2"
 
 #. i18n: file: ui/pages/init.ui:160
 #. i18n: ectx: property (text), widget (QCheckBox, encrypted)
 #: rc.cpp:238
 msgid "Activate support for booting from Encrypted volumes"
-msgstr ""
-"Ενεργοποίηση της υποστήριξη για την εκκίνηση απο κρυπτογραφημένους τόμους"
+msgstr "Ενεργοποίηση υποστήριξης για εκκίνηση από κρυπτογραφημένους τόμους"
 
 #. i18n: file: ui/pages/installation.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Installation)
 #: rc.cpp:241
 msgid "Tribe Installation"
-msgstr "Eγκατάσταση του Tribe"
+msgstr "Εγκατάσταση Tribe"
 
 #. i18n: file: ui/pages/installation.ui:101
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
@@ -1104,150 +920,33 @@ msgstr "Εισαγωγή Tribe"
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:256
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:12pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-family:'Bitstream Vera Sans'; color:#eeeeee;\">Welcome to the "
-"Chakra Installation!</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;"
-"\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\">This installer will guide you through the process of "
-"installing</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\">the Chakra live system on your computer. After the "
-"installation you will</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\">have a ready-to-use Chakra Linux system.</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
-"weight:536; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\"> Please carefully read all of the instructions.</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;"
-"\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\"> Remember:</span><span style=\" font-family:'Bitstream Vera "
-"Sans'; font-size:8pt; font-weight:536;\"> </span><span style=\" font-"
-"family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#ff0000;"
-"\">THIS IS ALPHA SOFTWARE, IT COULD EAT YOUR HAMSTER</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
-"weight:536; color:#ff0000;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\">Have fun! - The Chakra Developers</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:12pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-family:'Bitstream Vera Sans'; color:#eeeeee;\">Καλωσήρθατε "
-"στην εγκατάσταση του Chakra!</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;"
-"\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\">Το πρόγραμμα εγκατάστασης θα σας καθοδηγήσει στην "
-"διαδικασία της εγκατάστασης</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\">του Chakra στον υπολογιστή σας. Μετά την εγκατάσταση θα</"
-"span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\">έχετε ένα έτοιμο προς χρήση σύστημα Chakra Linux</span></"
-"p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
-"weight:536; color:#eeeeee;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\">Παρακαλώ διαβάστε προσεκτικά όλες τις οδηγίες.</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;"
-"\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\"> Remember:</span><span style=\" font-family:'Bitstream Vera "
-"Sans'; font-size:8pt; font-weight:536;\"> </span><span style=\" font-"
-"family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#ff0000;"
-"\">Αυτό το λογισμικό είναι ακόμη σε πρόωρο στάδιο, μπορεί να φάει το χαμστερ "
-"σας!!</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-"
-"weight:536; color:#ff0000;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; "
-"color:#eeeeee;\">Καλή Διασκέδαση! Η ομάδα ανάπτυξης του Chakra</span></p></"
-"body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; color:#eeeeee;\">Welcome to the Chakra Installation!</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\">This installer will guide you through the process of installing</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\">the Chakra live system on your computer. After the installation you will</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\">have a ready-to-use Chakra Linux system.</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\"> Please carefully read all of the instructions.</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\"> Remember:</span><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536;\"> </span><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#ff0000;\">THIS IS ALPHA SOFTWARE, IT COULD EAT YOUR HAMSTER</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#ff0000;\"></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\">Have fun! - The Chakra Developers</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Sans Serif'; font-size:12pt; font-weight:400; font-style:normal;\">\n<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; color:#eeeeee;\">Καλώς ήλθατε στην εγκατάσταση του Chakra!</span></p>\n<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;\"></p>\n<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\">Το πρόγραμμα εγκατάστασης θα σας καθοδηγήσει στη διαδικασία της εγκατάστασης</span></p>\n<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\">του Chakra στον υπολογιστή σας. Μετά την εγκατάσταση θα</span></p>\n<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\">έχετε ένα έτοιμο προς χρήση σύστημα Chakra Linux</span></p>\n<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\"></p>\n<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\">Παρακαλώ διαβάστε προσεκτικά όλες τις οδηγίες.</span></p>\n<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; color:#eeeeee;\"></p>\n<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\"> Remember:</span><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536;\"> </span><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#ff0000;\">Αυτό το λογισμικό είναι ακόμη σε πρώιμο στάδιο, μπορεί να φάει το χάμστερ σας!!</span></p>\n<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#ff0000;\"></p>\n<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Bitstream Vera Sans'; font-size:8pt; font-weight:536; color:#eeeeee;\">Καλή διασκέδαση! Η ομάδα ανάπτυξης του Chakra</span></p></body></html>"
 
 #. i18n: file: ui/pages/license.ui:49
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:273
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">License Approval</span></p></"
-"body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Αποδοχή αδείας</span></p></"
-"body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">License Approval</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Αποδοχή αδείας</span></p></body></html>"
 
 #. i18n: file: ui/pages/license.ui:61
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -1257,12 +956,7 @@ msgid ""
 "plugins and fonts. To install them, you have to read and accept their "
 "licenses. If you choose against a license, the installer will try to use a "
 "free solution (if one is available)."
-msgstr ""
-"Το Chakra περιλαμβάνει μερικό ιδιώκτικο λογισμικό όπως οδηγούς υλικού, "
-"επεκτάσεις μέσων and γραμματοσειρές. Για να το εγκαταστήσετε, πρέπει να "
-"διαβάσετε και να αποδεχθείτε τις αδειές τους. Αν επιλέξετε να απορρίψετε μια "
-"άδεια, το πρόγραμμα εγκατάστασης θα προσπαθήσει να χρησιμοποιήσει μία "
-"ελεύθερη λύση (εάν υπάρχει)."
+msgstr "Το Chakra περιλαμβάνει ιδιόκτητο λογισμικό όπως οδηγούς υλικού, επεκτάσεις μέσων και γραμματοσειρές. Για να το εγκαταστήσετε, πρέπει να διαβάσετε και να αποδεχθείτε τις άδειες τους. Αν επιλέξετε να απορρίψετε μια άδεια, το πρόγραμμα εγκατάστασης θα προσπαθήσει να χρησιμοποιήσει μία ελεύθερη λύση (εάν υπάρχει)."
 
 #. i18n: file: ui/pages/license.ui:74
 #. i18n: ectx: property (text), widget (QLabel, licenseLabel)
@@ -1286,50 +980,28 @@ msgstr "Αποδοχή αδείας"
 #. i18n: ectx: property (windowTitle), widget (QWidget, Locale)
 #: rc.cpp:292
 msgid "Form"
-msgstr "Σχηματισμός"
+msgstr "Μορφή"
 
 #. i18n: file: ui/pages/locale.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: rc.cpp:295
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Language &amp; Time</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Γλώσσα &amp; Time</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Language &amp; Time</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Γλώσσα &amp; ώρα</span></p></body></html>"
 
 #. i18n: file: ui/pages/locale.ui:45
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: rc.cpp:302
 msgid ""
-"Please select the nearest city on the globe so the installer can suggest the "
-"locale and timezone settings for you. You can fine-tune the suggested "
+"Please select the nearest city on the globe so the installer can suggest the"
+" locale and timezone settings for you. You can fine-tune the suggested "
 "settings at the bottom of the page. If you cant find your region or city on "
 "the globe, you can zoom in by using the slider on the left."
-msgstr ""
-"Παρακαλώ διαλέξετε την πλησιέστερη πόλη στην υφήλιο ώστε το πρόγραμμα "
-"εγκατάστασης μα συστήσει τοπικές ρυθμίσεις και ζώνη ώρας για εσάς. Μπορείτε "
-"να ρυθμίσετε ιδανικά τις συνιστώμενες ρυθμίσεις στο τέλος της σελίδας. Εάν "
-"δεν μπορείτε να βρείτε την περιοχή ή την πόλη σας στην υφήλιο, μπορείτε να "
-"μεγενθύνετε χρησιμοποιώντας τη μπάρα ολίσθησης στα αριστερά."
+msgstr "Παρακαλώ επιλέξτε την πλησιέστερη πόλη στην υφήλιο ώστε το πρόγραμμα εγκατάστασης να συστήσει τοπικές ρυθμίσεις και ζώνη ώρας για εσάς. Μπορείτε να ρυθμίσετε ιδανικά τις συνιστώμενες ρυθμίσεις στο τέλος της σελίδας. Εάν δεν μπορείτε να βρείτε την περιοχή ή την πόλη σας στην υφήλιο, μπορείτε να μεγεθύνετε χρησιμοποιώντας τη μπάρα ολίσθησης στα αριστερά."
 
 #. i18n: file: ui/pages/locale.ui:69
 #. i18n: ectx: property (clickMessage), widget (KLineEdit, locationsSearch)
@@ -1379,41 +1051,21 @@ msgstr "Κατάτμηση:"
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:329
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Disk setup</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Ρύθμιση δίσκου</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Disk setup</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Ρύθμιση δίσκου</span></p></body></html>"
 
 #. i18n: file: ui/pages/partition.ui:58
 #. i18n: ectx: property (text), widget (QLabel, descriptionLabel)
 #: rc.cpp:336
 msgid ""
-"Please select a mountpoint for your partitions. No permanent changes to your "
-"hard drive will be made when you will press \"Next\". Note: selected "
+"Please select a mountpoint for your partitions. No permanent changes to your"
+" hard drive will be made when you will press \"Next\". Note: selected "
 "partitions are not explicitly formatted."
-msgstr ""
-"Παρακαλώ επιλεξτε ένα σημείο προσάρτησης για της κατατμήσεις σας.  Καμία "
-"μόνιμη αλλαγή στον σκληρό σας δίσκο δεν θα γίνει όταν πατήσετε \"Επόμενο\". "
-"Σημείωση: Οι επιλεγμένες κατατμήσεις δεν θα μορφοποιηθούν άμεσα."
+msgstr "Παρακαλώ επιλέξτε ένα σημείο προσάρτησης για τις κατατμήσεις σας.  Καμία μόνιμη αλλαγή στον σκληρό σας δίσκο δεν θα γίνει όταν πατήσετε \"Επόμενο\". Σημείωση: Οι επιλεγμένες κατατμήσεις δεν θα μορφοποιηθούν άμεσα."
 
 #. i18n: file: ui/pages/partition.ui:103
 #. i18n: ectx: property (text), widget (QLabel, filesystemLabel)
@@ -1453,126 +1105,53 @@ msgstr "Αποπροσάρτηση επιλεγμένης κατάτμησης"
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:366
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Ready to Install</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-"#ffffff;\">Έτοιμο πρρος εγκατάσταση</span></p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Ready to Install</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Έτοιμο για εγκατάσταση</span></p></body></html>"
 
 #. i18n: file: ui/pages/readyinstall.ui:77
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:373
 msgid ""
-"The system will be installed with the following settings. Before continuing, "
-"please review your selections:\n"
-msgstr ""
-"Το σύστημα θα εγκατασταθεί μες τις ακόλουθες ρυθμίσει. Πριν συνεχίσετε, "
-"παρακαλούμε επαληθεύστε τις επιλογές σας:\n"
+"The system will be installed with the following settings. Before continuing,"
+" please review your selections:\n"
+msgstr "Το σύστημα θα εγκατασταθεί με τις ακόλουθες ρυθμίσεις. Πριν συνεχίσετε, παρακαλούμε να επαληθεύσετε τις επιλογές σας:\n"
 
 #. i18n: file: ui/pages/readyinstall.ui:147
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: rc.cpp:377
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">The following partitions will be used:</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">Tα ακόλουθα διαμερίσματα πρόκειται να χρησιμοποιηθούν:</span></"
-"p></body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:#eeeeee;\">The following partitions will be used:</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:#eeeeee;\">Οι ακόλουθες κατατμήσεις πρόκειται να χρησιμοποιηθούν:</span></p></body></html>"
 
 #. i18n: file: ui/pages/readyinstall.ui:211
 #. i18n: ectx: property (text), widget (QLabel, formatLabel)
 #: rc.cpp:384
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">The following partitions will be formatted:</span></p></body></"
-"html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-"size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-"font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-"#eeeeee;\">Tα ακόλουθα διαμερίσματα πρόκεται να διαμορφωθούν:</span></p></"
-"body></html>"
+"</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:#eeeeee;\">The following partitions will be formatted:</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:#eeeeee;\">Οι ακόλουθες κατατμήσεις πρόκειται να μορφοποιηθούν:</span></p></body></html>"
 
 #. i18n: file: ui/pages/releasenotes.ui:47
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:394
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
-"style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Release Notes</"
-"span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
-"style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Σημειώσεις "
-"έκδοσης</span></p></body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Release Notes</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Σημειώσεις έκδοσης</span></p></body></html>"
 
 #. i18n: file: ui/pages/releasenotes.ui:60
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -1581,38 +1160,18 @@ msgid ""
 "Check out what's new, the known issues and general information about this "
 "version of Chakra. As always, you are encouraged to tell us what you think, "
 "either by visiting our forums or bug tracker."
-msgstr ""
-"Ελέγξτε οτιδήποτε καινούργιο υπάρχει, τα γνωστά προβλήματα και γενικές "
-"πληροφορίες για αυτη την έκδοση του Chakra. Όπως πάντα, ενθαρρύνεστε να μας "
-"πείτε τι νομίζεται , είτε επισκέπτοντας τα φόρουμ μας είτε με τον bug tracker"
+msgstr "Ελέγξτε οτιδήποτε καινούργιο υπάρχει, τα γνωστά προβλήματα και γενικές πληροφορίες για αυτήν την έκδοση του Chakra. Όπως πάντα, ενθαρρύνεστε να μας πείτε τι νομίζεται, με μια επίσκεψη είτε στα φόρουμ μας είτε στον καταγραφέα σφαλμάτων."
 
 #. i18n: file: ui/pages/usercreation.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:404
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:14pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Create Users</span></p></body></"
-"html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:14pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"size:22pt; font-weight:600; color:#ffffff;\">Δημιουργία Χρηστών</span></p></"
-"body></html>"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:14pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Create Users</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Sans Serif'; font-size:14pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:22pt; font-weight:600; color:#ffffff;\">Δημιουργία χρηστών</span></p></body></html>"
 
 #. i18n: file: ui/pages/usercreation.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -1624,7 +1183,7 @@ msgstr "Εισάγετε τουλάχιστο ένα όνομα σύνδεσης
 #. i18n: ectx: property (toolTip), widget (QPushButton, addUser)
 #: rc.cpp:414
 msgid "Add another user account."
-msgstr "Προσθήκη άλλου χρήστη.. "
+msgstr "Προσθήκη άλλου χρήστη."
 
 #. i18n: file: ui/pages/usercreation.ui:286
 #. i18n: ectx: property (text), widget (QLabel, hostname_extra_label)
@@ -1632,9 +1191,7 @@ msgstr "Προσθήκη άλλου χρήστη.. "
 msgid ""
 "<small>This name will be used if you make the computer visible to others on "
 "a network.</small>"
-msgstr ""
-"<small>Αυτό το όνομα θα χρησιμοποιηθεί αν κάνετε τον υπολογιστή σας ορατό σε "
-"άλλους σε ένα δίκτυο.</small>"
+msgstr "<small>Αυτό το όνομα θα χρησιμοποιηθεί αν κάνετε τον υπολογιστή σας ορατό σε άλλους σε ένα δίκτυο.</small>"
 
 #. i18n: file: ui/pages/usercreation.ui:299
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -1646,7 +1203,7 @@ msgstr "...και, ποιο είναι το όνομα αυτού του υπο�
 #. i18n: ectx: property (windowTitle), widget (QWidget, AvatarDialog)
 #: rc.cpp:423
 msgid "Select an Avatar..."
-msgstr "Επιλογή Αvatar..."
+msgstr "Επιλογή πρ. εικόνας..."
 
 #. i18n: file: ui/widgets/userwidget.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1658,13 +1215,13 @@ msgstr "Είσοδος: "
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:435
 msgid "Password: "
-msgstr "Kωδικός: "
+msgstr "Κωδικός: "
 
 #. i18n: file: ui/widgets/userwidget.ui:94
 #. i18n: ectx: property (toolTip), widget (QPushButton, userDetails)
 #: rc.cpp:438
 msgid "Include more information about this user."
-msgstr "Συμπεριλάβετε περισσότερες πληροφορίες για αυτό το χρήστη."
+msgstr "Συμπεριλάβετε περισσότερες πληροφορίες για αυτόν τον χρήστη."
 
 #. i18n: file: ui/widgets/userwidget.ui:124
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -1688,7 +1245,7 @@ msgstr "Όνομα: "
 #. i18n: ectx: property (text), widget (QCheckBox, autoLoginCheckBox)
 #: rc.cpp:450
 msgid "Login Automatically"
-msgstr "Αυτόματη Είσοδος"
+msgstr "Αυτόματη είσοδος"
 
 #. i18n: file: ui/widgets/userwidget.ui:344
 #. i18n: ectx: property (text), widget (QCheckBox, rootUsesUserPwCheckBox)
@@ -1696,763 +1253,26 @@ msgstr "Αυτόματη Είσοδος"
 msgid ""
 "Use this password as \n"
 "the Administrator password"
-msgstr ""
-"Χρησιμοποιήστε αυτόν τον κωδικό σαν \n"
-"κωδικό Διαχειριστή Συστήματος"
+msgstr "Χρήση αυτού του κωδικού σαν \nκωδικό διαχειριστή συστήματος"
 
 #. i18n: file: ui/widgets/userwidget.ui:396
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: rc.cpp:457
 msgid "Root Password:  "
-msgstr "Κωδικός Υπερχρήστη:"
+msgstr "Κωδικός υπερχρήστη:"
 
 #. i18n: file: ui/widgets/userwidget.ui:406
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: rc.cpp:460
 msgid "Confirm Root Password:  "
-msgstr "Επαλήθευση κωδικού Υπερχρήστη:"
+msgstr "Επαλήθευση κωδικού υπερχρήστη:"
 
 #: rc.cpp:461
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Neo Kolokotronis Socrates Tzagiousis"
+msgstr "Αντώνης Γέραλης, Neo Kolokotronis, Socrates Tzagiousis"
 
 #: rc.cpp:462
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "tetris4@gmail.com antisocrates@gmail.com"
-
-#~ msgid "installed"
-#~ msgstr "εγκαταστάθηκε"
-
-#~ msgid "Install Packaged Software"
-#~ msgstr "Εγκατάσταση Πακεταρισμένου Λογισμικού"
-
-#~ msgid ""
-#~ "Sorry, you have no internet connection at the moment \n"
-#~ "Will stop package(s) installation now"
-#~ msgstr ""
-#~ "Συγγνώμη αλλά δεν υπάρχει σύνδεση στο διαδίκτυο αυτή τη στιγμή Η "
-#~ "εγκατάσταση των πακέτων θα τερματιστεί."
-
-#~ msgid "Waiting for server..."
-#~ msgstr "Σε αναμονή διακομιστή.."
-
-#~ msgid ""
-#~ "The selected volume already has a partition table.. Overwrite it? (this "
-#~ "will destroy all data on the device)"
-#~ msgstr ""
-#~ "Ο επιλεγμένος τόμος έχει ήδη ένα πίνακα κατατμήσης...Να αντικατασταθεί; "
-#~ "(αυτό θα διαγράψει όλα τα δεδομένα στη συσκευή) "
-
-#~ msgid "Warning"
-#~ msgstr "Προειδοποίηση"
-
-#~ msgid ""
-#~ "This operation will destroy all data on the selected volume.. Continue "
-#~ "anyway?"
-#~ msgstr ""
-#~ "Η πράξη αυτή θα καταστρέψει όλα τα δεδομένα στον επιλεγμένο τόμο.. "
-#~ "Συνέχεια παρ' αυτά;"
-
-#~ msgid "Primary"
-#~ msgstr "Κύριος"
-
-#~ msgid "Install Packages"
-#~ msgstr "Εγκατάσταση Πακέτων"
-
-#~ msgid "Install"
-#~ msgstr "Εγκατάσταση"
-
-#~ msgid "Type: "
-#~ msgstr "Τύπος:"
-
-#~ msgid " MiB"
-#~ msgstr "ΜiB"
-
-#~ msgid "Create a new partition table on the selected device"
-#~ msgstr "Δημιουργία νέου πίνακα κατατμήσεων στην επιλεγμένη συσκευή"
-
-#~ msgid "Delete"
-#~ msgstr "Διαγραφή"
-
-#~ msgid ""
-#~ "It looks like your power adaptor is unplugged. Installation is a delicate "
-#~ "and lenghty process, hence it is strongly advised to have your PC "
-#~ "connected to AC to minimize possible risks."
-#~ msgstr ""
-#~ "Φαίνεται πως o προσαρμογέας ρεύματος έχει αποσυνδεθεί. Η εγκατάσταση "
-#~ "είναι μιαευαίσθητη και χρονοβόρα διαδικασία, επομένως συνιστάται εντόνως "
-#~ "να συνδέσεται το PC σαςστο ρεύμα ώστε να ελαχιστοποιήσετε πιθανούς "
-#~ "κινδύνους"
-
-#~ msgid "chakra-laptop"
-#~ msgstr "chakra-laptop"
-
-#~ msgid "chakra-desktop"
-#~ msgstr "chakra-desktop"
-
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Configure System</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Παραμετροποίηση του συστήματος</span></p></body></html>"
-
-#~ msgid ""
-#~ "Although the installer has created a usable default configuration "
-#~ "suitable for most users, you can now configure your newly installed "
-#~ "system.\n"
-#~ "\n"
-#~ "Please take some time to step through each section and configure your "
-#~ "system the way you want it."
-#~ msgstr ""
-#~ "Aν και το πρόγραμμα εγκατάστασης δημιούργησε μια προεπιλεγμένη "
-#~ "ρύθμισηκατάλληλη για τους περισσότερους χρήστες, μπορείτε τώρα να "
-#~ "τροποποιήσετε το νέο εγκατεστημένο σας σύστημα. Παρακαλώ διαθέστε μερικό "
-#~ "απο τον χρονο σας σε κάθε τομέα ώστε να παραμετροποιήσετε το συστήμα σας "
-#~ "όπως το θέλετε."
-
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">System Settings</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Επιλογές συστήματος</span></p></body></html>"
-
-#~ msgid "or technically, the hostname"
-#~ msgstr "ή τεχνικώς, το όνομα υπολογιστή"
-
-#~ msgid "What's the name of this computer?         "
-#~ msgstr "Τι είναι το όνομα του υπολογιστή?"
-
-#~ msgid "Download and install documentation packages"
-#~ msgstr "Κατεβάσμα και εγκατάσταση πακέτων εγχειριδίων "
-
-#~ msgid "Detect best mirror server and use it"
-#~ msgstr "Επιλογή του καλύτερου εναλλακτικου διακομιστή και χρήση του"
-
-#~ msgid "None"
-#~ msgstr "Κανένα"
-
-#~ msgid "Other..."
-#~ msgstr "Άλλα..."
-
-#~ msgid "You can only use each mountpoint once."
-#~ msgstr "Μπορείτε να χρησιμοποιήσετε το κάθε σημείο προσάρτησης μια φορά."
-
-#~ msgid "Information"
-#~ msgstr "Πληροφορίες"
-
-#~ msgid "New partition"
-#~ msgstr "Νέα κατάτμηση"
-
-#~ msgid "Unallocated space"
-#~ msgstr "Αδέσμευτος χώρος"
-
-#~ msgid "Linux / Extended"
-#~ msgstr "Linux / Εκτεταμένος"
-
-#~ msgid "Apple / %1"
-#~ msgstr "Appla / %1"
-
-#~ msgid "Linux / %1"
-#~ msgstr "Linux / %1"
-
-#~ msgid "Setting up Tribe..."
-#~ msgstr "Ρύθμiση του Tribe"
-
-#~ msgid ""
-#~ "It looks like you were not authorized to launch Tribe. Please contact "
-#~ "your system administrator for further details"
-#~ msgstr ""
-#~ "Φαίνεται πως δέν έχετε άδεια για εκκίνηση του Tribe. Παρακαλώ "
-#~ "επικοινωνήστεμε τον διαχειρηστή του συστηματός σας για περαιτέρω "
-#~ "πληροφοριες"
-
-#~ msgid ""
-#~ "It looks like an unclean start of Tribe has taken place. Please kill all "
-#~ "instances of tribe, tribelauncher and tribelauncherworker and try again"
-#~ msgstr ""
-#~ "Φαίνεται πως συνέβη μια λανθασμένη εκκίνηση του Tribe. Παρακαλώ "
-#~ "τερματήστεόλες τις εφαρμογές του tribe, tribelauncher και "
-#~ "tribelauncherworker και ξαναδοκιμάστε"
-
-#~ msgid ""
-#~ "A newer version of Tribe is available.\n"
-#~ "It is strongly advised to upgrade it. Do you want to upgrade Tribe now?"
-#~ msgstr ""
-#~ "Μια νεώτερη έκδοση το Tribe είναι διαθέσιμη.\n"
-#~ "Συνιστάται εντόνως να τον αναβαθμίσετε. Θα θέλατε να αναβαθμίσετε τον "
-#~ "Tribe τώρα;"
-
-#~ msgid ""
-#~ "A newer version of Arxin is available.\n"
-#~ "Even though not fundamental, upgrading it is recommended. Do you want to "
-#~ "upgrade Arxin now?"
-#~ msgstr ""
-#~ "Μια νεώτερη έκδοση του Arxin είναι διαθέσιμη.\n"
-#~ "Αν και δεν είναι αναγκαίο, η αναβαθμισή του συνιστάται. Θέλετε να "
-#~ "αναθαμίσεταιτο Arxin τώρα;"
-
-#~ msgid "Please Wait, Upgrading Chakra Installer..."
-#~ msgstr ""
-#~ " Παρακαλώ περιμένετε, το πρόγραμμα εγκατάστασης του Chakra "
-#~ "αναβαθμίζεται..."
-
-#~ msgctxt ""
-#~ "You just have to translate 'remaining' here. Leave everything else as it "
-#~ "is."
-#~ msgid "%p% (%1 KB/s, %2 remaining)"
-#~ msgstr "%p% (%1 KB/s, %2 υπολείπεται)"
-
-#~ msgid "Please Wait, Installing Packages..."
-#~ msgstr "Παρακαλώ περιμένετε, εγκαθίστανται πακέτα..."
-
-#~ msgid "Please Wait, Upgrading Packages..."
-#~ msgstr "Παρακαλώ περιμένετε, αναθμίζονται πακέτα..."
-
-#~ msgid "Please Wait, Downloading Packages..."
-#~ msgstr "Παρακαλώ περιμένετε, κατεβαίνουν πακέτα..."
-
-#~ msgid ""
-#~ "An error occurred while trying to upgrade.\n"
-#~ "Do you want to run Tribe anyway?"
-#~ msgstr ""
-#~ "Παρουσιάστηκε ενα σφάλμα κατα την αναβάθμηση.\n"
-#~ "Θέλετε να εκτελέσετε το Tribe παρόλα αυτα;"
-
-#~ msgid "Please wait, Tribe is being started..."
-#~ msgstr "Παρακαλώ περιμένετε, γίνεται εκκίνηση του Tribe..."
-
-#~ msgid "Tribe Launcher"
-#~ msgstr "Πρόγραμμα εγκατάστασης Tribe"
-
-#~ msgid "An auto updater and launcher for Tribe"
-#~ msgstr "Ένα πρόγραμμα αυτόματων ενημερώσεων και εκκίνησης για το Tribe"
-
-#~ msgid "team@chakra-project.org"
-#~ msgstr "team@chakra-project.org"
-
-#~ msgid ""
-#~ "We appreciate your dedication, but your backtrace has already been "
-#~ "successfully sent"
-#~ msgstr "Εκτιμάμε την αφοσίωση σας, αλλά το ίχνος έχει ήδη σταλεί επιτυχώς"
-
-#~ msgid ""
-#~ "Thanks! Your backtrace was successfully submitted. Now just wait for us "
-#~ "to fix this!"
-#~ msgstr ""
-#~ "Ευχαριστούμε! Το ίχνος σας στάλθηκε επιτυχώς. Τώρα απλά περιμένετε την "
-#~ "επιλυσή του σφάλματος πουπαρουσιάστηκε"
-
-#~ msgid ""
-#~ "There was an error while sending your backtrace!! Probably we could not "
-#~ "connect to the server: you can retry, but the best thing to do would be "
-#~ "saving the backtrace and attaching it to a bug report later."
-#~ msgstr ""
-#~ "Παρουσιάστηκε ενα σφάλμα κατά την αποστολή του ίχνους! Πιθανό να μήν "
-#~ "μπορέσαμενα συνδεθούμε τον διακομιστή, μπορείτε να ξαναδοκιμάσετε, αλλά η "
-#~ "καλύτερη λύσηειναι να σώσετε το ίχνος και να το προσκομίσετε σε αναφορά "
-#~ "σφάλματος αργότερα"
-
-#~ msgid "Preparing installation, this might take some time ..."
-#~ msgstr ""
-#~ "Προετοιμασία της εγκατάστασης, αυτό ίσως διαρκέσει για μερικη ώρα..."
-
-#~ msgid ""
-#~ "Detecting best mirror server & configuring pacman, this may take a bit..."
-#~ msgstr ""
-#~ "Εντοπισμός του καλύτερου εναλλακτικού διαμοιραστή και ρύθμιση του pacman,"
-#~ "αυτό ίσως διαρκέσει λίγη ώρα..."
-
-#~ msgid "Setting up X.Org configuration..."
-#~ msgstr "Γίνεται ρύθμιση του Χ.Οrg..."
-
-#~ msgid ""
-#~ "Downloading and installing documentation packages, this may take a bit..."
-#~ msgstr ""
-#~ "Γίνεται κατέβασμα και εγκατάσταση πακέτων εγχειριδίων, αυτό ίσως "
-#~ "διαρκέσει λίγο..."
-
-#~ msgid "Could not format %1"
-#~ msgstr "Δεν μπόρεσε να διαμορφωθεί %1"
-
-#~ msgid "Do you really want to quit the installation?"
-#~ msgstr "Θέλετε πραγματικά να σταματήσετε την εγκατάσταση;"
-
-#~ msgid "Creating menu.lst..."
-#~ msgstr "Δημιουργία menu.lst..."
-
-#~ msgid "Adobe Flash Plugin"
-#~ msgstr "Επέκταση Adobe Flash"
-
-#~ msgid "Microsoft Core TTF Fonts"
-#~ msgstr "Γραμματοσειρές Microsoft Core TTF"
-
-#~ msgid ""
-#~ "You still have pending operations, please apply or revert them before "
-#~ "continuing"
-#~ msgstr ""
-#~ "Eκκρεμούν ακόμα εργασίες, παρακαλώ εφαρμόστε τις ή αναιρέστε τις πριν "
-#~ "συνεχίσουμε"
-
-#~ msgid ""
-#~ "It looks like you have selected the mountpoint %1 twice. You can assign "
-#~ "only one partition to a mountpoint"
-#~ msgstr ""
-#~ "Φαίνεται πως επιλέξατε σας σημείο σύνδεσης το %1 δεύτερη φορά. Μπορείται "
-#~ "να αναθέσετε μόνοενα διαμέρισμα σε ένα σημείο σύνδεσης"
-
-#~ msgid ""
-#~ "Formatting the '/' partition is strongly advised. Going ahead without "
-#~ "formatting it might lead to a non working system after the installation"
-#~ msgstr ""
-#~ "Η διαμόρφωση του '/' διαμερίσματος συνιστάται εντόνως. Συνέχεια "
-#~ "δίχωςδιαμόρφωση του ίσως οδηγήσει σε μη σύστημα που δέν λειτουργεί μετα "
-#~ "την εγκατάσταση"
-
-#~ msgid ""
-#~ "You have chosen %1 to be used as swap, however you need a special "
-#~ "filesystem for that. Please mark it for being formatted to continue"
-#~ msgstr ""
-#~ "Επιλέξατε το %1 σαν χώρο swap, παρόλα αυτά χρειάζεστε ενα ειδικό σύστημα "
-#~ "αρχείων για αυτό. Παρακαλώ σημειώστε το για διαμόρφωση ώστε να συνεχίσουμε"
-
-#~ msgid ""
-#~ "The partition %1 you have chosen to use as swap has a filesystem which is "
-#~ "not linuxswap. Please note that this will be changed during installation "
-#~ "procedure"
-#~ msgstr ""
-#~ "Το διαμέρισμα %1 που επιλέξατε να χρησιμοποιήσετε ώς swap έχει ενα "
-#~ "σύστημα αρχέιων πουδεν είναι linuxswap. Παρακαλώ σημειώστε οτι αυτό θα "
-#~ "αλλάξει κατα την διαδικασία της εγκατάστασης"
-
-#~ msgid ""
-#~ "It looks like you did not assign a partition to '/'. You have to select a "
-#~ "mount point at least for it"
-#~ msgstr ""
-#~ "Φαίνεται πως δεν ορίσατε ενα διαμερίσμα για το '/'. Πρέπει να επιλέξετε "
-#~ "κάποιοσημείο σύνδεσης τουλαιστον για αυτό"
-
-#~ msgid ""
-#~ "You did not select a partition to be used as swap space. A swap partition "
-#~ "is strongly advised, especially on laptops and system with limited amount "
-#~ "of RAM"
-#~ msgstr ""
-#~ "Δεν επιλέξατε ενα διαμέρισμα για να χρησιμοποιηθεί ως χώρος swap. Ένα "
-#~ "διαμέρισμα swapσυνίσταται εντόνως. ειδικά για λάπτοπ και συστήματα με "
-#~ "περιορισμένο χώρο RAM"
-
-#~ msgid "Formatting %1 with %2..."
-#~ msgstr "Γίνεται διαμόρφωση του %1 με %2..."
-
-#~ msgid "%1 will be formatted with %2"
-#~ msgstr "Το %1 θα διαμορφωθεί με το %2"
-
-#~ msgid "Setting up root user ..."
-#~ msgstr "Γίνεται στήσιμο του χρήστη root..."
-
-#~ msgid "Configuring users ..."
-#~ msgstr "Γίνεται προσαρμογή των χρηστών..."
-
-#~ msgid "Password has to be at least 6 characters"
-#~ msgstr "Ο κωδικός πρέπει να είναι τουλάχιστον 6 χαρακτήρες"
-
-#~ msgid "Passwords match"
-#~ msgstr "Οι κωδικοί ταιριάζουν"
-
-#~ msgid "Please wait, reading partition table ..."
-#~ msgstr "Παρακαλώ περιμένετε, γίνεται ανάγνωση του πίνακα διαμερισμάτων..."
-
-#~ msgid "Configuring swap space, this could take some time ..."
-#~ msgstr "Προσαρμόζεται ο χώρος swap, αυτο ίσως διαρκέσει μερική ώρα..."
-
-#~ msgid ""
-#~ "You have selected the partition %1 to be mounted twice.\n"
-#~ "Please correct your selection."
-#~ msgstr ""
-#~ "Διαλέξατε το διαμέρισμα %1 να συνδεθεί δεύτερη φορά.\n"
-#~ "Παρακαλώ διορθώστε την επιλογή σας."
-
-#~ msgid ""
-#~ "You have chosen mount point '%1' for two partitions.\n"
-#~ "Please correct your selection."
-#~ msgstr ""
-#~ "Διαλέξατε ως σημείο σύνδεσης το '%1' για δύο διαμερίσματα. \n"
-#~ "Παρακαλώ διορθώστε την επιλογή σας."
-
-#~ msgid "You have to select a mount point at least for '/'!"
-#~ msgstr "Πρέπει να διαλέξετε ενα σημείο σύνδεσης τουλάχιστον για το '/' !"
-
-#~ msgid ""
-#~ "You have not configured a username for one user.\n"
-#~ "Please correct your settings."
-#~ msgstr ""
-#~ "Δεν έχετε καθορίσει ονόμα για έναν χρήστη.\n"
-#~ "Παρακαλώ διορθώστε τις ρυθμίσεις σας"
-
-#~ msgid ""
-#~ "You have not configured a password for user %1.\n"
-#~ "Please correct your settings."
-#~ msgstr ""
-#~ "Δεν έχετε καθορίσει ονόμα για έναν χρήστη.\n"
-#~ "Παρακαλώ διορθώστε τις ρυθμίσεις σας"
-
-#~ msgid "Setting up password ..."
-#~ msgstr "Δημιουργία κωδικού..."
-
-#~ msgid "Yes"
-#~ msgstr "Ναί"
-
-#~ msgid "Please Wait, checking Tribe Updates..."
-#~ msgstr "Παρακαλώ περιμένετε, γίνεται έλεγχος για ενημερώσεις του Tribe..."
-
-#~ msgid ""
-#~ "Tribe has crashed due to a fatal error. We are extremely sorry about "
-#~ "that, as this should not happen. However, Tribe collected some important "
-#~ "information about the crash that will be extremely useful to developers "
-#~ "for fixing this problem. The fastest way to report this, if you have an "
-#~ "active internet connection, is clicking \"Send report to developers\". "
-#~ "Otherwise, you can copy/paste the text below and send it to bugs@chakra-"
-#~ "project.org. No personal informations are included, you can see the log "
-#~ "for details."
-#~ msgstr ""
-#~ "O Tribe σταμάτησε να λειτουργεί λόγω ενός σφάλματος. Λυπούμαστε "
-#~ "πραγματικά για αυτο,καθώς δεν θα έπρεπε να συμβεί. Παρόλα αυτά, το Tribe "
-#~ "σύλλεξε κάποιες σημαντικέςπληροφορίες σχετικά με το σφάλμα οι οποίες θα "
-#~ "είναι εξαιρετικά χρήσιμες στους προγραμματιστέςγια την επίλυση αυτου του "
-#~ "προβλήματος. Ο ταχύτερος τρόπος να το αναφέρετε αυτο, αν έχετε "
-#~ "ενεργήσύνδεση στο διαδίκτυο, είναι επιλέγοντας \"Αποστολή αναφοράς στους "
-#~ "προγραμματιστές\"Διαφορετικα,μπορείτε με αντιγραφή και επικόλληση να "
-#~ "στείλετε το κείμενο στο bugs@chakra-project.org.Δεν θα περιλειφθούν "
-#~ "προσωπικές πληροφορίες, μπορείτε να δείτε τα αρχεία καταγραφής για "
-#~ "πληροφορίες."
-
-#~ msgid "Copy to clipboard"
-#~ msgstr "Αντιγραφή στον clipboard"
-
-#~ msgid "Send report to developers"
-#~ msgstr "Στείλτε αναφορά στους προγραμματιστές"
-
-#~ msgid "Surname:"
-#~ msgstr "Επώνυμο:"
-
-#~ msgid "Administrator"
-#~ msgstr "Διαχειρηστης"
-
-#~ msgid "System Settings"
-#~ msgstr "Ρυθμίσεις συστήματος"
-
-#~ msgid "Configure System"
-#~ msgstr "Παραμετροποίηση συστήματος"
-
-#~ msgid "Time Settings"
-#~ msgstr "Ρυθμίσεις ώρας"
-
-#~ msgid "Timezone:"
-#~ msgstr "Ζώνη ώρας:"
-
-#~ msgid "Language Settings"
-#~ msgstr "Ρυθμίσεις γλώσσας"
-
-#~ msgid ""
-#~ "Now you have to set up your disks for installation. Please use the tool "
-#~ "below to partition, format and select mountpoints. Once you're satisfied "
-#~ "with your choice, click \"Apply\" if you made any changes to the "
-#~ "partition table or requested to format one or more partitions, and then "
-#~ "go ahead. Formatting the partitions you will mount main system paths on "
-#~ "(such as / or /usr) is strongly advised."
-#~ msgstr ""
-#~ "Τώρα πρέπει να ετοιμάσετε τους δίσκους σας για εγκατάσταση. Παρακαλούμε "
-#~ "χρησιμοποιήστε το παρακάτω εργαλείο για να δημιουργήσετε διαμερίσματα να "
-#~ "τα διαμορφώσετε και να διαλέξετε σημεία σύνδεσης με την επιλογή σας, "
-#~ "πατήστε \"Εφαρμογή\" αν πραγματοποιήσατε αλλαγές στον πίνακα "
-#~ "διαμερισμάτων ή ζητήσατε να διαμορφώσετε ένα ή περισσότερα διαμερίσματα, "
-#~ "και έπειτε συνεχίστε. Η διαμόρφωση των διαμερισμάτων που θα συννδεθούν "
-#~ "κεντρικές διευθύνσεις του συστήματοςόπως / ή /usr) συνίσταται εντόνως."
-
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-#~ "#eeeeee;\">Formatting Partitions...</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-#~ "#eeeeee;\">Γίνεται διαμόρφωση διαμερισμάτων...</span></p></body></html>"
-
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-#~ "#eeeeee;\">Mounting Partitions...</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:12pt; font-weight:600; color:"
-#~ "#eeeeee;\">Γίνεται σύνδεση διαμερισμάτων...</span></p></body></html>"
-
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
-#~ "font-family:'Liberation Sans'; font-size:8pt;\"></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
-#~ "font-family:'Liberation Sans'; font-size:8pt;\"></p></body></html>"
-
-#~ msgid ""
-#~ "Now you can define the behaviour of the user root, who is used to manage "
-#~ "the system.\n"
-#~ "\n"
-#~ "Keeping this user is usually recommended, though you can choose to use "
-#~ "sudo only and disable the root user. Please remind that having the root "
-#~ "account disabled and sudo misconfigured may lead to an unusable system."
-#~ msgstr ""
-#~ "Τώρα μπορείτε να ορίσετε την συμπεριφοα του χρήστη root, που "
-#~ "χρησιμοποιήται για τη διαχείρηση του συστήματος.\n"
-#~ "\n"
-#~ "Η διατήρηση αυτού του χρήστη σύνηθως συνίσταται, αν και μπορείτε να "
-#~ "επιλέξετε την χρήση του sudo μόνο και να απενεργοποιήσετε τον χρήστη "
-#~ "root. Παρακαλούμε θυμηθείτε οτι η απενεργοποίηση του χρήστη root σε "
-#~ "συνδυασμό με λάθος ρυθμισμένο sudo ίσως οδηγήσει σε ένα ασταθές σύστημα."
-
-#~ msgid "Enable Root User"
-#~ msgstr "Ενεργοποίηση του χρήστη root"
-
-#~ msgid "Password"
-#~ msgstr "Κωδικός"
-
-#~ msgid "Confirm Password"
-#~ msgstr "Επαλήθευση κωδικού"
-
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Filesystem Setup</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Οργάνωση του συστήματος αρχείων</span></p></body></html>"
-
-#~ msgid ""
-#~ "Please choose what partitions should be used for the installation. Just "
-#~ "select the partition and the mountpoint. You can use the \"Add another "
-#~ "partition\" button to add more of them. To format a partition (most "
-#~ "likely accurate for all system partitions), activate the \"Format\" "
-#~ "checkbox and select a filesystem.\n"
-#~ "\n"
-#~ "You need at least a root (/) and a swap partition. When you have added "
-#~ "all desired partitions, simply press the \"Next\" button."
-#~ msgstr ""
-#~ "Παρακαλώ επιλέξτε ποιά διαμερίσματα θα χρησιμοποιήθουν για την "
-#~ "εγκατάσταση. Απλα επιλέξτε το διαμέρισμα και το σημείο σύνδηεσης. "
-#~ "Μπορείτε να χρησιμοποιείσετε το κουμπι \"Προσθήκη άλλου διαμερίσματος\" "
-#~ "για να προσθέσετε περισσότερα. Για να διαμορφώσετε ενα διαμέρισμα "
-#~ "(πιθανότατα ακριβέs για όλα τα διαμερίσματα του συστήματος), "
-#~ "ενεργοποιήστε το κουτάκι \"Διαμόρφωση\" και επιλέξτε ενα σύστημα "
-#~ "αρχείων.\n"
-#~ "\n"
-#~ "Χρειάζεστε τουλάχιστον ένα root (/) και ένα swap διαμέρισμα. Όταν έχετε "
-#~ "προσθέσει όλα τα επιθυμήτα διαμερίσματα, απλά πατήστε το κουμπί \"Επόμενο"
-#~ "\""
-
-#~ msgid "Add another Partition"
-#~ msgstr "Προσθήκη άλλου διαμερίσματος"
-
-#~ msgid "Size:"
-#~ msgstr "Μέγεθος:"
-
-#~ msgid "ext3"
-#~ msgstr "ext3"
-
-#~ msgid "ext2"
-#~ msgstr "ext2"
-
-#~ msgid "ext4"
-#~ msgstr "ext4"
-
-#~ msgid "reiserfs"
-#~ msgstr "reiserfs"
-
-#~ msgid "jfs"
-#~ msgstr "jfs"
-
-#~ msgid "xfs"
-#~ msgstr "xfs"
-
-#~ msgid "linux-swap"
-#~ msgstr "linux-swap"
-
-#~ msgid "Format with:"
-#~ msgstr "Διαμόφωση με:"
-
-#~ msgid "/"
-#~ msgstr "/"
-
-#~ msgid "/boot"
-#~ msgstr "/boot"
-
-#~ msgid "/home"
-#~ msgstr "/home"
-
-#~ msgid "/opt"
-#~ msgstr "/opt"
-
-#~ msgid "/usr"
-#~ msgstr "/usr"
-
-#~ msgid "/tmp"
-#~ msgstr "/tmp"
-
-#~ msgid "/var"
-#~ msgstr "/var"
-
-#~ msgid "swap"
-#~ msgstr "swap"
-
-#~ msgid "Remove"
-#~ msgstr "Αφαίρεση"
-
-#~ msgid "General Settings"
-#~ msgstr "Γενικές ρυθμίσεις"
-
-#~ msgid ""
-#~ "Enter your name, a corresponding login name and your password to create a "
-#~ "user account. To enable sudo for the created user and allow him to do "
-#~ "administrative tasks, enable the \"Administrator\" option below."
-#~ msgstr ""
-#~ "Είσαγετε το όνομα σας, ένα αντίστοιχο όνομα εισόδου και τον κωδικό σας "
-#~ "για ναδημιουργήσετε λογαριασμό χρήστη. Για να ενεργοποιήσετε το sudo για "
-#~ "τον δημιουργημένο χρήστη και να του επιτρέψετε να κάνει εργασίες "
-#~ "διαχειριστή ενεργοποιήστε την επιλογή \"Διαχειρηστής\" παρακάτω."
-
-#~ msgid "Install plain KDE-Configuration"
-#~ msgstr "Απλή εγκατάσταση ρυθμίσεων KDE"
-
-#~ msgid "Install Current-LiveCD-Configuration"
-#~ msgstr "Εγκατάσταση τρέχουσων ρυθμίσεων LiveCD "
-
-#~ msgid "Install plain KDEMod-Configuration"
-#~ msgstr "Απλή εγκατάσταση ρυθμίσεων KDEMod"
-
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Create User</span></p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; "
-#~ "font-size:10pt;\"><span style=\" font-size:22pt; font-weight:600; color:"
-#~ "#ffffff;\">Δημιουργία χρήστηr</span></p></body></html>"
+msgstr "capoiosct@gmail.com, tetris4@gmail.com, antisocrates@gmail.com"

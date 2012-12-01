@@ -87,8 +87,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::closeEvent(QCloseEvent *evt)
 {
-    Q_UNUSED(evt);
-
+    evt->ignore();
     abortInstallation();
 }
 

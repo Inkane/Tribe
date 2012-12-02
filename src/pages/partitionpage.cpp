@@ -723,7 +723,10 @@ void PartitionPage::cancelFormat()
     disconnect(m_ui->editPartitionCancelButton, SIGNAL(clicked(bool)), this, SLOT(cancelFormat()));
     disconnect(m_ui->editPartitionOkButton, SIGNAL(clicked(bool)), this, SLOT(applyFormat()));
 
-     m_ui->treeWidget->selectedItems().first()->setData(0, FORMAT_ROLE, QVariant::fromValue<bool>(false));  //TODO: check if cancelFormat can be called without the tree widget having anything selected
+    PartitionViewWidget *sender = qobject_cast< PartitionViewWidget* >(QObject::sender());
+    if (!sender) { // This check is necesary, because if the selected item has changed, we would modify the wrong item. Fortunately, we don't have to do anything in this case
+      m_ui->treeWidget->selectedItems().first()->setData(0, FORMAT_ROLE, QVariant::fromValue<bool>(false)); 
+    }
     m_ui->formatButton->setChecked(false);
     const Partition *p = m_ui->treeWidget->selectedItems().first()->data(0, PARTITION_ROLE).value<const Partition*>();
     m_toFormat.remove(p);
